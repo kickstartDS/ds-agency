@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/button.schema.json",
+  "title": "Button",
+  "description": "Component used for user interaction",
+  "type": "object",
+  "properties": {
+    "label": {
+      "type": "string",
+      "title": "Label",
+      "description": "Text content to display inside the button"
+    },
+    "target": {
+      "type": "string",
+      "title": "Target",
+      "description": "Target that should be linked, makes the button behave like a link semantically",
+      "format": "uri"
+    },
+    "variant": {
+      "type": "string",
+      "title": "Variant",
+      "description": "Variant of button to be used",
+      "enum": ["primary", "secondary", "tertiary"],
+      "default": "secondary"
+    },
+    "size": {
+      "type": "string",
+      "title": "Size",
+      "description": "Size of button to use",
+      "enum": ["small", "medium", "large"],
+      "default": "medium"
+    },
+    "disabled": {
+      "type": "boolean",
+      "title": "Disabled?",
+      "description": "Whether the button should be disabled",
+      "default": false
+    }
+  },
+  "required": ["label"]
+}

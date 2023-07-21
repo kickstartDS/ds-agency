@@ -1,0 +1,19 @@
+# Node
+.DS_Store
+.env
+node_modules
+
+# Storybook
+storybook-static
+
+# kickstartDS
+*.dereffed.json
+*-tokens.json
+src/token/tokens.css
+src/token/icons/IconSprite.js
+src/token/storybook/tokens.css
+src/token/storybook/tokens.js
+src/token/storybook/icons.svg
+static/*.css
+static/*.css.map
+dist

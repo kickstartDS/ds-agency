@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/section.schema.json",
+  "title": "Section",
+  "description": "Component used to layout components into pages",
+  "type": "object",
+  "properties": {
+    "headline": {
+      "type": "string",
+      "title": "Headline",
+      "description": "Headline for the section",
+      "format": "markdown"
+    },
+    "width": {
+      "type": "string",
+      "title": "Width",
+      "description": "Width of section to use",
+      "enum": ["full", "max", "wide", "default", "narrow"],
+      "default": "default"
+    },
+    "gutter": {
+      "type": "string",
+      "title": "Gutter",
+      "description": "Size of gutter to use",
+      "enum": ["large", "default", "small", "none"],
+      "default": "default"
+    },
+    "mode": {
+      "type": "string",
+      "title": "Mode",
+      "description": "Layout mode used for section contents",
+      "enum": ["default", "tile", "list"],
+      "default": "default"
+    },
+    "content": {
+      "type": "array",
+      "title": "Content",
+      "description": "Allowed content for the section",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "http://schema.mydesignsystem.com/button.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/headline.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/teaser-card.schema.json"
+          }
+        ]
+      }
+    },
+    "style": {
+      "type": "string",
+      "title": "Style",
+      "description": "Style of background",
+      "enum": ["default", "accent", "bold"],
+      "default": "default"
+    },
+    "spaceBefore": {
+      "type": "string",
+      "title": "Space Before",
+      "description": "Amount of spacing before the section",
+      "enum": ["default", "small", "none"],
+      "default": "default"
+    },
+    "spaceAfter": {
+      "type": "string",
+      "title": "Space After",
+      "description": "Amount of spacing after the section",
+      "enum": ["default", "small", "none"],
+      "default": "default"
+    },
+    "inverted": {
+      "type": "boolean",
+      "title": "Inverted",
+      "description": "Whether to invert the section",
+      "default": false
+    },
+    "ctas": {
+      "type": "array",
+      "title": "Call to actions",
+      "description": "Add Call to actions to the end of the section",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "title": "Label",
+            "description": "Label for the Call to action"
+          },
+          "target": {
+            "type": "string",
+            "title": "Target",
+            "description": "Target for the Call to action",
+            "format": "uri"
+          }
+        },
+        "required": ["label", "target"]
+      }
+    }
+  },
+  "required": []
+}
