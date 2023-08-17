@@ -2,14 +2,14 @@
   "ks": {
     "font-family": {
       "display": {
-        "value": "Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
+        "value": "Fredoka, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
         "token": {
           "category": "Font Families",
           "presenter": "FontFamily"
         }
       },
       "copy": {
-        "value": "'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "value": "'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif",
         "token": {
           "category": "Font Families",
           "presenter": "FontFamily"
@@ -45,8 +45,8 @@
           "presenter": "FontWeight"
         }
       },
-      "semi-bold": {
-        "value": 600,
+      "medium": {
+        "value": 500,
         "token": {
           "category": "Font Weights",
           "presenter": "FontWeight"
@@ -67,11 +67,11 @@
             "value": 1.167
           },
           "tablet": {
-            "value": 1.333
+            "value": 1.5
           }
         },
         "xxs-base": {
-          "value": "0.544rem",
+          "value": "0.85rem",
           "attributes": {
             "category": "size"
           },
@@ -81,26 +81,6 @@
           }
         },
         "xs-base": {
-          "value": "0.6664rem",
-          "attributes": {
-            "category": "size"
-          },
-          "token": {
-            "category": "Font Sizes: display",
-            "presenter": "FontSize"
-          }
-        },
-        "s-base": {
-          "value": "0.8163rem",
-          "attributes": {
-            "category": "size"
-          },
-          "token": {
-            "category": "Font Sizes: display",
-            "presenter": "FontSize"
-          }
-        },
-        "m-base": {
           "value": "1rem",
           "attributes": {
             "category": "size"
@@ -110,8 +90,28 @@
             "presenter": "FontSize"
           }
         },
+        "s-base": {
+          "value": "1.15rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: display",
+            "presenter": "FontSize"
+          }
+        },
+        "m-base": {
+          "value": "1.25rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: display",
+            "presenter": "FontSize"
+          }
+        },
         "l-base": {
-          "value": "1.225rem",
+          "value": "1.5rem",
           "attributes": {
             "category": "size"
           },
@@ -121,7 +121,7 @@
           }
         },
         "xl-base": {
-          "value": "1.5006rem",
+          "value": "1.75rem",
           "attributes": {
             "category": "size"
           },
@@ -131,7 +131,7 @@
           }
         },
         "xxl-base": {
-          "value": "1.8383rem",
+          "value": "2.5rem",
           "attributes": {
             "category": "size"
           },
@@ -376,94 +376,94 @@
     "line-height": {
       "display": {
         "xxs": {
-          "value": 1.75
+          "value": 1.5
         },
         "xs": {
-          "value": 1.75
+          "value": 1.5
         },
         "s": {
-          "value": 1.75
+          "value": 1.5
         },
         "m": {
-          "value": 1.75
+          "value": 1.5
         },
         "l": {
-          "value": 1.75
+          "value": 1.5
         },
         "xl": {
-          "value": 1.75
+          "value": 1.5
         },
         "xxl": {
-          "value": 1.75
+          "value": 1.5
         }
       },
       "copy": {
         "xxs": {
-          "value": 1.75
+          "value": 1.5
         },
         "xs": {
-          "value": 1.75
+          "value": 1.5
         },
         "s": {
-          "value": 1.75
+          "value": 1.5
         },
         "m": {
-          "value": 1.75
+          "value": 1.5
         },
         "l": {
-          "value": 1.75
+          "value": 1.5
         },
         "xl": {
-          "value": 1.75
+          "value": 1.5
         },
         "xxl": {
-          "value": 1.75
+          "value": 1.5
         }
       },
       "interface": {
         "xxs": {
-          "value": 1.75
+          "value": 1.5
         },
         "xs": {
-          "value": 1.75
+          "value": 1.5
         },
         "s": {
-          "value": 1.75
+          "value": 1.5
         },
         "m": {
-          "value": 1.75
+          "value": 1.5
         },
         "l": {
-          "value": 1.75
+          "value": 1.5
         },
         "xl": {
-          "value": 1.75
+          "value": 1.5
         },
         "xxl": {
-          "value": 1.75
+          "value": 1.5
         }
       },
       "mono": {
         "xxs": {
-          "value": 1.75
+          "value": 1.5
         },
         "xs": {
-          "value": 1.75
+          "value": 1.5
         },
         "s": {
-          "value": 1.75
+          "value": 1.5
         },
         "m": {
-          "value": 1.75
+          "value": 1.5
         },
         "l": {
-          "value": 1.75
+          "value": 1.5
         },
         "xl": {
-          "value": 1.75
+          "value": 1.5
         },
         "xxl": {
-          "value": 1.75
+          "value": 1.5
         }
       }
     }

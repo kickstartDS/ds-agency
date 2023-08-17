@@ -3,7 +3,7 @@
     "background-color": {
       "accent": {
         "base": {
-          "value": "{ks.color.fg.alpha.2.base}",
+          "value": "{ks.color.fg.to-bg.8.base}",
           "attributes": {
             "category": "color"
           },
@@ -15,7 +15,7 @@
       },
       "accent-inverted": {
         "base": {
-          "value": "{ks.color.fg-inverted.alpha.2.base}",
+          "value": "{ks.color.fg-inverted.to-bg.8.base}",
           "attributes": {
             "category": "color"
           },

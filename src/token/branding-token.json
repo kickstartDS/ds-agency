@@ -1,10 +1,10 @@
 {
   "color": {
-    "primary": "#333",
+    "primary": "#6642F6",
     "primary-inverted": "#fff",
-    "background": "#fff",
-    "foreground": "#000",
-    "link": "#1c7ed6",
+    "background": "#06081F",
+    "foreground": "#C9CBE3",
+    "link": "#fff",
     "link-inverted": "#a5d8ff",
     "positive": "#66a80f",
     "positive-inverted": "#94d82d",
@@ -17,7 +17,7 @@
   },
   "font": {
     "display": {
-      "family": "Garamond, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
+      "family": "Fredoka, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
       "font-size": 16,
       "line-height": 1.75,
       "scale-ratio": 1.225,
@@ -57,7 +57,7 @@
   "font-weight": {
     "light": 300,
     "regular": 400,
-    "semi-bold": 600,
+    "medium": 500,
     "bold": 700
   },
   "spacing": {

@@ -14,4 +14,5 @@ export default {
   },
 };
 
+export { Landingpage } from "./Landingpage.story";
 export { Demo } from "./Demo.story";

@@ -10,23 +10,23 @@
           }
         },
         "base": {
-          "value": "0.118",
+          "value": "0.15",
           "attributes": {
             "category": "size"
           }
         },
         "bp-factor": {
           "phone": {
-            "value": "1.414"
+            "value": "1"
           },
           "tablet": {
-            "value": "1.9994"
+            "value": "1.25"
           },
           "laptop": {
-            "value": "2.8271"
+            "value": "1.75"
           },
           "desktop": {
-            "value": "3.9976"
+            "value": "2"
           }
         }
       },
@@ -39,58 +39,29 @@
           }
         },
         "base": {
-          "value": "0.191",
+          "value": "0.35",
           "attributes": {
             "category": "size"
           }
         },
         "bp-factor": {
           "phone": {
-            "value": "1.414"
+            "value": "1"
           },
           "tablet": {
-            "value": "1.9994"
+            "value": "1.25"
           },
           "laptop": {
-            "value": "2.8271"
+            "value": "1.75"
           },
           "desktop": {
-            "value": "3.9976"
+            "value": "2"
           }
         }
       },
       "s": {
         "_": {
           "value": "{ks.spacing.s.base}",
-          "token": {
-            "category": "Spacing",
-            "presenter": "Spacing"
-          }
-        },
-        "base": {
-          "value": "0.309",
-          "attributes": {
-            "category": "size"
-          }
-        },
-        "bp-factor": {
-          "phone": {
-            "value": "1.414"
-          },
-          "tablet": {
-            "value": "1.9994"
-          },
-          "laptop": {
-            "value": "2.8271"
-          },
-          "desktop": {
-            "value": "3.9976"
-          }
-        }
-      },
-      "m": {
-        "_": {
-          "value": "{ks.spacing.m.base}",
           "token": {
             "category": "Spacing",
             "presenter": "Spacing"
@@ -104,16 +75,45 @@
         },
         "bp-factor": {
           "phone": {
-            "value": "1.414"
+            "value": "1"
           },
           "tablet": {
-            "value": "1.9994"
+            "value": "1.25"
           },
           "laptop": {
-            "value": "2.8271"
+            "value": "1.75"
           },
           "desktop": {
-            "value": "3.9976"
+            "value": "2"
+          }
+        }
+      },
+      "m": {
+        "_": {
+          "value": "{ks.spacing.m.base}",
+          "token": {
+            "category": "Spacing",
+            "presenter": "Spacing"
+          }
+        },
+        "base": {
+          "value": "0.75",
+          "attributes": {
+            "category": "size"
+          }
+        },
+        "bp-factor": {
+          "phone": {
+            "value": "1.125"
+          },
+          "tablet": {
+            "value": "1.25"
+          },
+          "laptop": {
+            "value": "1.75"
+          },
+          "desktop": {
+            "value": "2"
           }
         }
       },
@@ -126,23 +126,23 @@
           }
         },
         "base": {
-          "value": "0.809",
+          "value": "1",
           "attributes": {
             "category": "size"
           }
         },
         "bp-factor": {
           "phone": {
-            "value": "1.414"
+            "value": "1.125"
           },
           "tablet": {
-            "value": "1.9994"
+            "value": "1.25"
           },
           "laptop": {
-            "value": "2.8271"
+            "value": "1.75"
           },
           "desktop": {
-            "value": "3.9976"
+            "value": "2"
           }
         }
       },
@@ -155,7 +155,7 @@
           }
         },
         "base": {
-          "value": "1.309",
+          "value": "1.75",
           "attributes": {
             "category": "size"
           }
@@ -165,13 +165,13 @@
             "value": "1.414"
           },
           "tablet": {
-            "value": "1.9994"
+            "value": "1.25"
           },
           "laptop": {
-            "value": "2.8271"
+            "value": "1.75"
           },
           "desktop": {
-            "value": "3.9976"
+            "value": "2"
           }
         }
       },
@@ -184,23 +184,23 @@
           }
         },
         "base": {
-          "value": "2.1179",
+          "value": "2.25",
           "attributes": {
             "category": "size"
           }
         },
         "bp-factor": {
           "phone": {
-            "value": "1.414"
+            "value": "1.125"
           },
           "tablet": {
-            "value": "1.9994"
+            "value": "1.25"
           },
           "laptop": {
-            "value": "2.8271"
+            "value": "1.75"
           },
           "desktop": {
-            "value": "3.9976"
+            "value": "2"
           }
         }
       },

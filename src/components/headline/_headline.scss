@@ -1,1 +1,6 @@
 @use "headline-tokens.scss";
+
+.c-headline {
+  --c-headline--font-weight: var(--ks-font-weight-medium);
+  --c-rich-text_headline--font-weight: var(--ks-font-weight-medium);
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.de/cta-text.schema.json",
+  "title": "Cta Text",
+  "type": "object",
+  "properties": {
+    "headline": {
+      "title": "Module Headline",
+      "description": "Headline for the module element",
+      "type": "string",
+      "examples": ["Headline"]
+    },
+    "subheadline": {
+      "title": "Module Subheadline",
+      "description": "Subheadline below the module headline",
+      "type": "string",
+      "examples": ["Subheadline"]
+    },
+    "text": {
+      "title": "Module Text",
+      "description": "Info text for the module element",
+      "type": "string",
+      "examples": [
+        "Jedes Jahr werden zahlreiche Kinder bei Angriffen verletzt. Wir helfen, dass sie behandelt werden können und langfristige Unterstützung erhalten, etwa mit Prothesen. Durch den Krieg sind zudem viele Kinder verängstigt und traumatisiert. mydesignsystem sorgt für psychosoziale Hilfe."
+      ]
+    },
+    "ctaGroup": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ctaLabel": {
+            "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
+          },
+          "ctaTarget": {
+            "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "ctaToggle": {
+      "title": "CTA Toggle",
+      "description": "Toggle wether the CTA is displayed or not",
+      "type": "boolean",
+      "default": true
+    },
+    "ctaLabel": {
+      "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
+    },
+    "ctaTarget": {
+      "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
+    },
+    "align": {
+      "title": "Module aligment",
+      "description": "Choose the alginment of the module content",
+      "enum": ["left", "center"],
+      "type": "string",
+      "default": "center"
+    }
+  }
+}

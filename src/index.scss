@@ -1,34 +1,62 @@
 @use "@kickstartds/base/lib/global/base.css";
 @use "./token/tokens.css";
 
+@use "./components/component-token";
+
 @use "./components/button/button";
+@use "./components/cta-text/cta-text";
 @use "./components/teaser-card/teaser-card";
 @use "./components/section/section";
 @use "./components/headline/headline";
 
 @use "./selectors";
 
-/* dm-sans-regular - latin */
 @font-face {
-  font-family: "DM Sans";
+  font-family: "Fredoka";
+  src:
+    url("../static/fonts/Fredoka-Bold.woff") format("woff2"),
+    url("../static/fonts/Fredoka-Regular.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  src: local(""), url("/fonts/dm-sans-v11-latin-regular.woff2") format("woff2"),
-    url("/fonts/dm-sans-v11-latin-regular.woff") format("woff");
+  font-display: swap;
 }
-/* dm-sans-500 - latin */
+
 @font-face {
-  font-family: "DM Sans";
+  font-family: "Fredoka";
+  src:
+    url("../static/fonts/Fredoka-SemiBold.woff2") format("woff2"),
+    url("../static/fonts/Fredoka-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fredoka";
+  src:
+    url("../static/fonts/Fredoka-Medium.woff2") format("woff2"),
+    url("../static/fonts/Fredoka-Medium.woff") format("woff");
   font-weight: 500;
-  src: local(""), url("/fonts/dm-sans-v11-latin-500.woff2") format("woff2"),
-    url("/fonts/dm-sans-v11-latin-500.woff") format("woff");
-}
-/* dm-sans-700 - latin */
-@font-face {
-  font-family: "DM Sans";
   font-style: normal;
-  font-weight: 700;
-  src: local(""), url("/fonts/dm-sans-v11-latin-700.woff2") format("woff2"),
-    url("/fonts/dm-sans-v11-latin-700.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fredoka";
+  src:
+    url("../static/fonts/Fredoka-Light.woff2") format("woff2"),
+    url("../static/fonts/Fredoka-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fredoka";
+  src:
+    url("../static/fonts/Fredoka-Bold.woff2") format("woff2"),
+    url("../static/fonts/Fredoka-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
