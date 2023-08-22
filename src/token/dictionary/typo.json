@@ -131,7 +131,7 @@
           }
         },
         "xxl-base": {
-          "value": "2.5rem",
+          "value": "3rem",
           "attributes": {
             "category": "size"
           },
@@ -388,13 +388,13 @@
           "value": 1.5
         },
         "l": {
-          "value": 1.5
+          "value": 1.45
         },
         "xl": {
-          "value": 1.5
+          "value": 1.4
         },
         "xxl": {
-          "value": 1.5
+          "value": 1.35
         }
       },
       "copy": {

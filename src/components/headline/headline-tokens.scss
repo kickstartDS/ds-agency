@@ -1,5 +1,7 @@
 @import "../../selectors";
 
 #{$selectors} {
-
+  .c-headline {
+    --c-headline--color: var(--ks-color-fg);
+  }
 }

@@ -97,7 +97,7 @@
           }
         },
         "base": {
-          "value": "0.75",
+          "value": "1",
           "attributes": {
             "category": "size"
           }
@@ -126,7 +126,7 @@
           }
         },
         "base": {
-          "value": "1",
+          "value": "1.5",
           "attributes": {
             "category": "size"
           }
@@ -155,7 +155,7 @@
           }
         },
         "base": {
-          "value": "1.75",
+          "value": "2",
           "attributes": {
             "category": "size"
           }
@@ -184,7 +184,7 @@
           }
         },
         "base": {
-          "value": "2.25",
+          "value": "2.5",
           "attributes": {
             "category": "size"
           }
