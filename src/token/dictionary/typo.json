@@ -148,7 +148,7 @@
           }
         },
         "xxs-base": {
-          "value": "0.544rem",
+          "value": "0.5rem",
           "attributes": {
             "category": "size"
           },
@@ -158,7 +158,7 @@
           }
         },
         "xs-base": {
-          "value": "0.6664rem",
+          "value": "0.75rem",
           "attributes": {
             "category": "size"
           },
@@ -168,16 +168,6 @@
           }
         },
         "s-base": {
-          "value": "0.8163rem",
-          "attributes": {
-            "category": "size"
-          },
-          "token": {
-            "category": "Font Sizes: copy",
-            "presenter": "FontSize"
-          }
-        },
-        "m-base": {
           "value": "1rem",
           "attributes": {
             "category": "size"
@@ -187,8 +177,18 @@
             "presenter": "FontSize"
           }
         },
+        "m-base": {
+          "value": "1.25rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: copy",
+            "presenter": "FontSize"
+          }
+        },
         "l-base": {
-          "value": "1.225rem",
+          "value": "1.5rem",
           "attributes": {
             "category": "size"
           },
@@ -198,7 +198,7 @@
           }
         },
         "xl-base": {
-          "value": "1.5006rem",
+          "value": "1.75rem",
           "attributes": {
             "category": "size"
           },
@@ -208,7 +208,7 @@
           }
         },
         "xxl-base": {
-          "value": "1.8383rem",
+          "value": "2rem",
           "attributes": {
             "category": "size"
           },
