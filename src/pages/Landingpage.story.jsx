@@ -1,6 +1,7 @@
 import { Section } from "@kickstartds/base/lib/section";
 import { LogoTiles } from "@kickstartds/content/lib/logo-tiles";
 import { Storytelling } from "@kickstartds/content/lib/storytelling";
+import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { CtaText } from "../components/cta-text/CtaTextComponent";
 
 export default {
@@ -17,12 +18,19 @@ const Page = () => (
       mode="list"
     >
 
-      <CtaText
-        headline="The Sanity & Next.js Experts"
-        text="Experience the speed & scalability unlike anything seen before with our Sanity CMS powered websites web apps & composable architecture."
-        ctaLabel="Get in touch"
-        ctaToggle
-        ctaTarget="#"
+      <TextMedia
+        mediaAlignment="beside-right"
+        text={`
+# The Sanity & Next.js Experts
+
+During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from [brand identity](#), [ui/ux design](#), [development](#), to maintenance and workshops with clients teams. This knowledge and experience emerged into our design system offering.`}
+        media={[
+          {
+            image: {
+              src: "img/agency.png"
+            }
+          }
+        ]}
       />
     </Section>
 
@@ -51,6 +59,22 @@ const Page = () => (
       />
     </Section>
 
+    <Section
+      headline="Get to know us as an **agency**"
+      width="narrow"
+    >
+      <TextMedia
+        // mediaAlignment="beside-left"
+        text={`During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from [brand identity](#), [ui/ux design](#), [development](#), to maintenance and workshops with clients teams. This knowledge and experience emerged into our design system offering.`}
+        media={[
+          {
+            image: {
+              src: "img/team.png"
+            }
+          }
+        ]}
+      />
+    </Section>
     <Section
       style="accent"
     >
