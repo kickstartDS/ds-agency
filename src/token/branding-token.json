@@ -2,18 +2,20 @@
   "color": {
     "primary": "#6642F6",
     "primary-inverted": "#fff",
+    "secondary": "#FF449E",
+    "secondary-inverted": "#fff",
     "background": "#06081F",
-    "foreground": "#C9CBE3",
-    "link": "#fff",
-    "link-inverted": "#a5d8ff",
-    "positive": "#66a80f",
-    "positive-inverted": "#94d82d",
-    "informative": "#1a78cc",
-    "informative-inverted": "#4dabf7",
-    "notice": "#fab005",
-    "notice-inverted": "#f59f00",
-    "negative": "#e03131",
-    "negative-inverted": "#fa5c5c"
+    "foreground": "#fff",
+    "link": "#B7A5FF",
+    "link-inverted": "#6642F6",
+    "positive": "#6EDB64",
+    "positive-inverted": "#23831B",
+    "informative": "#64C2DB",
+    "informative-inverted": "#00718F",
+    "notice": "#F9DE55",
+    "notice-inverted": "#FF5D53",
+    "negative": "#FF1A57",
+    "negative-inverted": "#D21D48"
   },
   "font": {
     "display": {
@@ -57,7 +59,7 @@
   "font-weight": {
     "light": 300,
     "regular": 400,
-    "medium": 500,
+    "semi-bold": 500,
     "bold": 700
   },
   "spacing": {
