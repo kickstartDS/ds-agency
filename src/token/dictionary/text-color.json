@@ -63,7 +63,7 @@
       },
       "default-inverted": {
         "base": {
-          "value": "{ks.color.fg-inverted.base}",
+          "value": "{ks.color.fg-inverted.to-bg.3.base}",
           "attributes": {
             "category": "color"
           },
