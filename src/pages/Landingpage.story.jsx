@@ -2,6 +2,7 @@ import { Section } from "@kickstartds/base/lib/section";
 import { LogoTiles } from "@kickstartds/content/lib/logo-tiles";
 import { Storytelling } from "@kickstartds/content/lib/storytelling";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
+import { Button } from "@kickstartds/base/lib/button";
 import { CtaText } from "../components/cta-text/CtaTextComponent";
 
 export default {
@@ -16,12 +17,13 @@ const Page = () => (
       spaceBefore="default"
       spaceAfter="small"
       mode="list"
+
     >
 
       <TextMedia
         mediaAlignment="beside-right"
         text={`
-# The Sanity & Next.js Experts
+# The Sanity & Next.js **Experts**
 
 During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from [brand identity](#), [ui/ux design](#), [development](#), to maintenance and workshops with clients teams. This knowledge and experience emerged into our design system offering.`}
         media={[
@@ -32,6 +34,9 @@ During more than a decade in the industry, we’ve been able to touch almost any
           }
         ]}
       />
+      <div>
+        <Button variant="primary" label="Get in Contact" />
+      </div>
     </Section>
 
     <Section width="max">
@@ -62,9 +67,11 @@ During more than a decade in the industry, we’ve been able to touch almost any
     <Section
       headline="Get to know us as an **agency**"
       width="narrow"
+      inverted
+      align="left"
+      mode="list"
     >
       <TextMedia
-        // mediaAlignment="beside-left"
         text={`During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from [brand identity](#), [ui/ux design](#), [development](#), to maintenance and workshops with clients teams. This knowledge and experience emerged into our design system offering.`}
         media={[
           {
@@ -74,6 +81,9 @@ During more than a decade in the industry, we’ve been able to touch almost any
           }
         ]}
       />
+      <div>
+        <Button variant="primary" label="Get in Contact" />
+      </div>
     </Section>
     <Section
       style="accent"
