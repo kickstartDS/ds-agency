@@ -6,6 +6,8 @@
     "secondary-inverted": "#fff",
     "background": "#06081F",
     "foreground": "#fff",
+    "bg": "06081F",
+    "bg-inverted": "F0ECFF",
     "link": "#B7A5FF",
     "link-inverted": "#6642F6",
     "positive": "#6EDB64",
