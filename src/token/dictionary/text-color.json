@@ -25,7 +25,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.link.base}",
+              "value": "{ks.color.secondary.base}",
               "attributes": {
                 "category": "color"
               },
@@ -85,7 +85,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.link-inverted.base}",
+              "value": "{ks.color.secondary-inverted.base}",
               "attributes": {
                 "category": "color"
               },
@@ -145,7 +145,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.fg.base",
+              "value": "{ks.color.secondary.base",
               "attributes": {
                 "category": "color"
               },
@@ -205,7 +205,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.fg-inverted.base}",
+              "value": "{ks.color.secondary-inverted.base}",
               "attributes": {
                 "category": "color"
               },
