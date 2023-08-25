@@ -23,6 +23,11 @@
       "enum": ["primary", "secondary", "tertiary"],
       "default": "secondary"
     },
+    "icon": {
+      "type": "string",
+      "title": "Icon",
+      "description": "Choose an icon"
+    },
     "size": {
       "type": "string",
       "title": "Size",

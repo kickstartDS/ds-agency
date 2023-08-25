@@ -23,6 +23,11 @@
       "description": "Switch order of headline and subheadline",
       "default": false
     },
+    "align": {
+      "type": "string",
+      "title": "Section alignment",
+      "enum": ["left", "center"]
+    },
     "level": {
       "type": "string",
       "title": "Level",

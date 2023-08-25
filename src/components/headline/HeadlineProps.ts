@@ -17,6 +17,7 @@ export type Sub = string;
  * Switch order of headline and subheadline
  */
 export type SwitchOrder = boolean;
+export type SectionAlignment = "left" | "center";
 /**
  * Level of headline to use
  */
@@ -37,6 +38,7 @@ export interface HeadlineProps {
   text: Text;
   sub?: Sub;
   switchOrder?: SwitchOrder;
+  align?: SectionAlignment;
   level: Level;
   style?: Style;
   spaceAfter?: SpaceAfter;

@@ -10,6 +10,10 @@
  */
 export type Headline = string;
 /**
+ * Subheadline for the section
+ */
+export type Subheadline = string;
+/**
  * Width of section to use
  */
 export type Width = "full" | "max" | "wide" | "default" | "narrow";
@@ -34,6 +38,10 @@ export type Target = string;
  */
 export type Variant = "primary" | "secondary" | "tertiary";
 /**
+ * Choose an icon
+ */
+export type Icon = string;
+/**
  * Size of button to use
  */
 export type Size = "small" | "medium" | "large";
@@ -53,6 +61,7 @@ export type Sub = string;
  * Switch order of headline and subheadline
  */
 export type SwitchOrder = boolean;
+export type SectionAlignment = "left" | "center";
 /**
  * Level of headline to use
  */
@@ -127,6 +136,7 @@ export type CallToActions = {
  */
 export interface SectionProps {
   headline?: Headline;
+  sub?: Subheadline;
   width?: Width;
   gutter?: Gutter;
   mode?: Mode;
@@ -145,6 +155,7 @@ export interface Button {
   label: Label;
   target?: Target;
   variant?: Variant;
+  icon?: Icon;
   size?: Size;
   disabled?: Disabled;
   [k: string]: unknown;
@@ -156,6 +167,7 @@ export interface Headline1 {
   text: Text;
   sub?: Sub;
   switchOrder?: SwitchOrder;
+  align?: SectionAlignment;
   level: Level;
   style?: Style;
   spaceAfter?: SpaceAfter;

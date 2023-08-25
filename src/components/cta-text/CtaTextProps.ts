@@ -18,6 +18,10 @@ export type ModuleSubheadline = string;
  */
 export type ModuleText = string;
 /**
+ * Toggle wether the CTA is displayed or not
+ */
+export type CTAToggle = boolean;
+/**
  * Text content to display inside the button
  */
 export type Label = string;
@@ -26,9 +30,13 @@ export type Label = string;
  */
 export type Target = string;
 /**
+ * Choose an icon
+ */
+export type Icon = string;
+/**
  * Toggle wether the CTA is displayed or not
  */
-export type CTAToggle = boolean;
+export type CTAToggle1 = boolean;
 /**
  * Text content to display inside the button
  */
@@ -38,6 +46,10 @@ export type Label1 = string;
  */
 export type Target1 = string;
 /**
+ * Choose an icon
+ */
+export type Icon1 = string;
+/**
  * Choose the alginment of the module content
  */
 export type ModuleAligment = "left" | "center";
@@ -46,13 +58,20 @@ export interface CtaTextProps {
   headline?: ModuleHeadline;
   subheadline?: ModuleSubheadline;
   text?: ModuleText;
-  ctaGroup?: {
-    ctaLabel?: Label;
-    ctaTarget?: Target;
-  }[];
-  ctaToggle?: CTAToggle;
-  ctaLabel?: Label1;
-  ctaTarget?: Target1;
+  primaryCta?: {
+    toggle?: CTAToggle;
+    label?: Label;
+    target?: Target;
+    icon?: Icon;
+    [k: string]: unknown;
+  };
+  secondaryCta?: {
+    toggle?: CTAToggle1;
+    label?: Label1;
+    target?: Target1;
+    icon?: Icon1;
+    [k: string]: unknown;
+  };
   align?: ModuleAligment;
   [k: string]: unknown;
 }

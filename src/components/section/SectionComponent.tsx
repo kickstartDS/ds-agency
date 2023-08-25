@@ -8,10 +8,10 @@ import {
 import { SectionProps } from "./SectionProps";
 import { Button } from "../button/ButtonComponent";
 
-export const Section: FC<
-  SectionProps & HTMLAttributes<HTMLElement>
-> = ({
+export const Section: FC<SectionProps & HTMLAttributes<HTMLElement>> = ({
   headline,
+  sub,
+  align,
   width = "default",
   gutter = "default",
   mode = "default",
@@ -30,12 +30,15 @@ export const Section: FC<
         headline={{
           text: headline,
           content: !!headline,
+          sub: sub,
+          spaceAfter: "large",
+          align: align,
         }}
         width={width}
         gutter={gutter}
         mode={mode}
         spaceBefore={spaceBefore}
-        spaceAfter={ctas && ctas.length > 0 ? 'none' : spaceAfter}
+        spaceAfter={ctas && ctas.length > 0 ? "none" : spaceAfter}
         inverted={inverted}
       />
       {ctas && ctas.length > 0 && (
@@ -48,21 +51,23 @@ export const Section: FC<
           spaceAfter={spaceAfter}
           inverted={inverted}
         >
-          {ctas.filter((cta) => cta.label && cta.target).map((cta, index) => (
-            <Button
-              key={index}
-              label={cta.label}
-              target={cta.target}
-              variant={
-                index === 0
-                  ? "primary"
-                  : index === 1
+          {ctas
+            .filter((cta) => cta.label && cta.target)
+            .map((cta, index) => (
+              <Button
+                key={index}
+                label={cta.label}
+                target={cta.target}
+                variant={
+                  index === 0
+                    ? "primary"
+                    : index === 1
                     ? "secondary"
                     : "tertiary"
-              }
-              size="small"
-            />
-          ))}
+                }
+                size="small"
+              />
+            ))}
         </SectionContextDefault>
       )}
     </>

@@ -374,7 +374,7 @@
         },
         "translucent": {
           "base": {
-            "value": "{ks.color.primary.alpha.8.base}",
+            "value": "{ks.color.primary.alpha.2.base}",
             "attributes": {
               "category": "color"
             },
@@ -446,7 +446,7 @@
         },
         "translucent": {
           "base": {
-            "value": "{ks.color.primary-inverted.alpha.8.base}",
+            "value": "{ks.color.primary-inverted.alpha.2.base}",
             "attributes": {
               "category": "color"
             },

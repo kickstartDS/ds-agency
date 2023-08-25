@@ -3,61 +3,15 @@
 
 @use "./components/component-token";
 
+@use "./components/fonts";
 @use "./components/button/button";
 @use "./components/cta-text/cta-text";
+@use "./components/collapsible-box/collapsible-box";
 @use "./components/rich-text/rich-text";
+@use "./components/text-media/text-media";
 @use "./components/teaser-card/teaser-card";
 @use "./components/section/section";
+@use "./components/global/global";
 @use "./components/headline/headline";
 
 @use "./selectors";
-
-@font-face {
-  font-family: "Fredoka";
-  src:
-    url("../static/fonts/Fredoka-Bold.woff") format("woff2"),
-    url("../static/fonts/Fredoka-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Fredoka";
-  src:
-    url("../static/fonts/Fredoka-SemiBold.woff2") format("woff2"),
-    url("../static/fonts/Fredoka-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Fredoka";
-  src:
-    url("../static/fonts/Fredoka-Medium.woff2") format("woff2"),
-    url("../static/fonts/Fredoka-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Fredoka";
-  src:
-    url("../static/fonts/Fredoka-Light.woff2") format("woff2"),
-    url("../static/fonts/Fredoka-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Fredoka";
-  src:
-    url("../static/fonts/Fredoka-Bold.woff2") format("woff2"),
-    url("../static/fonts/Fredoka-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}

@@ -1,31 +1,41 @@
 @import "../../selectors";
 
-#{$selectors} {
+:root {
   .c-button {
-    --c-button--shadow: 0px 0px 2px 0px var(--ks-color-primary-inverted-alpha-9),
-      0px 0px 20px 0px var(--ks-color-primary-alpha-6);
+    transition-property: box-shadow, transform, background-color, color;
 
-    --c-button--shadow-hover: 0px 0px 20px 2px var(--ks-color-primary-inverted-alpha-9),
-      0px 0px 30px 0px var(--ks-color-primary-alpha-9);
+    &--primary {
+      --c-button--color: var(--ks-color-primary-inverted-alpha-8);
+      --c-button--color-hover: var(--ks-color-primary-inverted);
+      --c-button--background-color: var(--ks-color-primary-alpha-9);
+      --c-button--background-color-hover: var(--ks-color-primary);
 
-    &--solid {
-      transition-property: box-shadow;
-      box-shadow: var(--c-button--shadow);
-      --c-button--background-color-hover: var(--ks-background-color-primary);
+      --c-button--shadow: 0px 0px 2px 1px var(--ks-color-primary-inverted-alpha-6-base),
+        0px 0px 19px 2px var(--ks-color-primary-alpha-8-base);
 
-      &:hover {
-        box-shadow: var(--c-button--shadow-hover);
-      }
+      --c-button--shadow-hover: 0px 0px 2px 1px var(--ks-color-primary-inverted-alpha-9-base),
+        0px 0px 19px 4px var(--ks-color-primary-base);
+    }
+
+    &--secondary {
+      --c-button--color: var(--ks-color-primary-inverted);
+      --c-button--color-hover: var(--ks-color-primary-inverted);
+      --c-button--color-active: var(--ks-color-primary-inverted);
+
+      --c-button--border-width: 0;
+
+      --c-button--background-color: var(--ks-color-primary-inverted-alpha-3);
+      --c-button--background-color-hover: var(--ks-color-primary-inverted-alpha-4);
+      --c-button--background-color-active: var(--ks-color-primary-inverted-alpha-4);
     }
   }
 
-  [ks-inverted="true"] {
-    .c-button {
-      --c-button--shadow: 0px 0px 2px 0px var(--ks-color-primary-alpha-9-base),
-        0px 0px 20px 0px var(--ks-color-primary-alpha-3-base);
+  [ks-inverted="true"] .c-button--primary,
+  [ks-inverted="true"].c-button--primary {
+    --c-button--shadow: 0px 0px 2px 1px var(--ks-color-primary-alpha-3-base),
+      0px 0px 13px 0px var(--ks-color-primary-alpha-5-base);
 
-      --c-button--shadow-hover: 0px 0px 2px 0px var(--ks-color-primary-alpha-9-base),
-        0px 0px 10px 2px var(--ks-color-primary-alpha-5-base);
-    }
+    --c-button--shadow-hover: 0px 0px 2px 1px var(--ks-color-primary-alpha-4-base),
+      0px 0px 13px 0px var(--ks-color-primary-alpha-7-base);
   }
 }
