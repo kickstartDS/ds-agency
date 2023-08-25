@@ -5,13 +5,17 @@ const Recipe = () => (
   <Section
     headline="Read articles about kickstartDS"
     background="accent"
-    ctas={[{
-      label: "All articles",
-      target: "https://www.kickstartDS.com/blog"
-    }, {
-      label: "Open Source announcement",
-      target: "https://www.kickstartds.com/blog/kickstartds-is-open-source-now-lets-start-to-democratize-design-systems-today/"
-    }]}
+    ctas={[
+      {
+        label: "All articles",
+        target: "https://www.kickstartDS.com/blog",
+      },
+      {
+        label: "Open Source announcement",
+        target:
+          "https://www.kickstartds.com/blog/kickstartds-is-open-source-now-lets-start-to-democratize-design-systems-today/",
+      },
+    ]}
   >
     <TeaserCard
       headline="Release Spotlight: Semantic Token"
@@ -37,4 +41,6 @@ const Recipe = () => (
   </Section>
 );
 
-export const ArticleTeaser = Recipe.bind({});
+export const ArticleTeaser = {
+  render: Recipe,
+};
