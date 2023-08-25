@@ -1,5 +1,6 @@
 @import "../../selectors";
 
 #{$selectors} {
-
+  --g-topic--font: var(--ks-font-display-m);
+  --c-teaser--background: var(--ks-color-primary-alpha-2);
 }

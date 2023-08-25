@@ -1,0 +1,7 @@
+@import "../../selectors";
+
+#{$selectors} {
+  .text-media--beside .text-media__text {
+    overflow: visible;
+  }
+}

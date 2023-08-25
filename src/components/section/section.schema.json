@@ -11,6 +11,12 @@
       "description": "Headline for the section",
       "format": "markdown"
     },
+    "sub": {
+      "type": "string",
+      "title": "Subheadline",
+      "description": "Subheadline for the section",
+      "format": "markdown"
+    },
     "width": {
       "type": "string",
       "title": "Width",

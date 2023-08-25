@@ -18,6 +18,10 @@ export type Target = string;
  */
 export type Variant = "primary" | "secondary" | "tertiary";
 /**
+ * Choose an icon
+ */
+export type Icon = string;
+/**
  * Size of button to use
  */
 export type Size = "small" | "medium" | "large";
@@ -33,6 +37,7 @@ export interface ButtonProps {
   label: Label;
   target?: Target;
   variant?: Variant;
+  icon?: Icon;
   size?: Size;
   disabled?: Disabled;
   [k: string]: unknown;

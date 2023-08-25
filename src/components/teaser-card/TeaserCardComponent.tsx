@@ -7,9 +7,7 @@ import {
 
 import { TeaserCardProps } from "./TeaserCardProps";
 
-export const TeaserCard: FC<
-  TeaserCardProps & HTMLAttributes<HTMLElement>
-> = ({
+export const TeaserCard: FC<TeaserCardProps & HTMLAttributes<HTMLElement>> = ({
   headline,
   text,
   target,
@@ -24,6 +22,8 @@ export const TeaserCard: FC<
       text={text}
       link={{
         label: "Read more",
+        variant: "secondary",
+        inverted: inverted,
         target: target,
       }}
       image={image}

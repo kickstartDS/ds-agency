@@ -1,14 +1,16 @@
 import classnames from "classnames";
 import { HTMLAttributes, FC, PropsWithChildren } from "react";
 
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdown from "react-markdown";
 
 import { HeadlineContext } from "@kickstartds/base/lib/headline";
 import { defaultRenderFn } from "@kickstartds/core/lib/core";
 
 import { HeadlineProps } from "./HeadlineProps";
 
-const markdownRenderFn = (text) => <ReactMarkdown children={text} components={{p: 'span'}} />;
+const markdownRenderFn = (text) => (
+  <ReactMarkdown children={text} components={{ p: "span" }} />
+);
 
 interface RenderFunctions {
   renderContent?: typeof defaultRenderFn;
@@ -20,6 +22,7 @@ export const Headline: FC<
 > = ({
   text,
   sub,
+  align,
   switchOrder = false,
   level = "h2",
   style = "h2",
@@ -36,8 +39,8 @@ export const Headline: FC<
           <header
             className={classnames(
               "c-headline",
-              `c-headline--align-left`,
-              spaceAfter && `c-headline--space-after-${spaceAfter}`,
+              `c-headline--align-${align}`,
+              spaceAfter && `c-headline--space-after-${spaceAfter}`
             )}
             {...props}
           >
@@ -49,9 +52,7 @@ export const Headline: FC<
             <TagName
               className={classnames(
                 "c-headline__headline",
-                style !== "none" &&
-                  style !== level &&
-                  `c-headline__${style}`
+                style !== "none" && style !== level && `c-headline__${style}`
               )}
             >
               {renderContent(text)}

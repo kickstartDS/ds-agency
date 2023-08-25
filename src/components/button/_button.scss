@@ -1,1 +1,8 @@
 @use "button-tokens.scss";
+.c-button {
+  box-shadow: var(--c-button--shadow);
+
+  &:hover {
+    box-shadow: var(--c-button--shadow-hover);
+  }
+}
