@@ -4,10 +4,6 @@ import { Section } from "@kickstartds/base/lib/section";
 
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
 
-export default {
-  title: "Pages/Demo",
-};
-
 const Page = () => (
   <>
     <Section
@@ -221,5 +217,12 @@ If that's not your cup of tea, you can also reach out to us:
   </>
 );
 
-const Template = (args) => <Page {...args} />;
-export const Demo = Template.bind({});
+export default {
+  title: "Pages/Demo",
+  component: Page,
+  parameters: {
+    layout: "fullscreen",
+  },
+};
+
+export const Demo = {}

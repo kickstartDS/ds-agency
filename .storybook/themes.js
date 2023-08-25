@@ -1,8 +1,8 @@
 import { create } from "@storybook/theming";
 import * as tokens from '../src/token/storybook/tokens';
 
-export const light = create({
-  base: "light",
+export const dark = create({
+  base: "dark",
 
   colorPrimary: tokens.KsColorPrimaryBase,
   colorSecondary: tokens.KsColorPrimaryBase,

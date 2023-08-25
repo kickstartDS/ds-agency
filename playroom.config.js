@@ -1,5 +1,6 @@
 const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   components: "./src/playroom/components.ts",
@@ -27,9 +28,7 @@ module.exports = {
   webpackConfig: () => ({
     plugins: [
       new CopyPlugin({
-        patterns: [
-          "static",
-        ],
+        patterns: ["static"],
       }),
     ],
     module: {
@@ -37,17 +36,25 @@ module.exports = {
         {
           test: /\.(js|jsx|ts|tsx)$/,
           exclude: /node_modules\/(?!(@kickstartds)\/).*/,
-          use: ["babel-loader"],
+          use: {
+            loader: "babel-loader",
+            options: {
+              presets: [
+                "@babel/preset-env",
+                ["@babel/preset-react", { runtime: "automatic" }],
+                "@babel/preset-typescript",
+              ],
+            },
+          },
         },
         {
           test: /\.css$/,
-          use: ["style-loader", { loader: "css-loader", options: { url: false } }],
-          exclude: /node_modules\/(?!(@kickstartds)\/).*/,
+          use: [MiniCssExtractPlugin.loader, "css-loader"],
+          include: [__dirname],
         },
         {
           test: /\.scss$/,
-          use: ["style-loader", { loader: "css-loader", options: { url: false } }, "sass-loader"],
-          exclude: /node_modules\/(?!(@kickstartds)\/).*/,
+          use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
         },
       ],
     },

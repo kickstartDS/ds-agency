@@ -4,7 +4,8 @@
 node_modules
 
 # Storybook
-storybook-static
+storybook
+public/design-tokens.source.json
 
 # kickstartDS
 *.dereffed.json

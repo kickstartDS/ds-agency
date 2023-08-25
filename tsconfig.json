@@ -4,8 +4,9 @@
     "declaration": true,
     "jsx": "react-jsx",
     "outDir": "dist",
+    "esModuleInterop": true,
     "strict": false
   },
-  "include": ["src/types.ts"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }

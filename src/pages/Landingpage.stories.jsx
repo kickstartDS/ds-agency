@@ -5,10 +5,6 @@ import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { Button } from "@kickstartds/base/lib/button";
 import { CtaText } from "../components/cta-text/CtaTextComponent";
 
-export default {
-  title: "Pages/Landingpage"
-};
-
 const Page = () => (
   <>
     <Section
@@ -17,9 +13,7 @@ const Page = () => (
       spaceBefore="default"
       spaceAfter="small"
       mode="list"
-
     >
-
       <TextMedia
         mediaAlignment="beside-right"
         text={`
@@ -29,9 +23,9 @@ During more than a decade in the industry, we’ve been able to touch almost any
         media={[
           {
             image: {
-              src: "img/agency.png"
-            }
-          }
+              src: "img/agency.png",
+            },
+          },
         ]}
       />
       <div>
@@ -43,22 +37,22 @@ During more than a decade in the industry, we’ve been able to touch almost any
       <LogoTiles
         logos={[
           {
-            src: "img/logoipsum-244.svg"
+            src: "img/logoipsum-244.svg",
           },
           {
-            src: "img/logoipsum-286.svg"
+            src: "img/logoipsum-286.svg",
           },
           {
-            src: "img/logoipsum-297.svg"
+            src: "img/logoipsum-297.svg",
           },
           {
-            src: "img/logoipsum-250.svg"
+            src: "img/logoipsum-250.svg",
           },
           {
-            src: "img/logoipsum-217.svg"
+            src: "img/logoipsum-217.svg",
           },
           {
-            src: "img/logoipsum-212.svg"
+            src: "img/logoipsum-212.svg",
           },
         ]}
       />
@@ -76,18 +70,16 @@ During more than a decade in the industry, we’ve been able to touch almost any
         media={[
           {
             image: {
-              src: "img/team.png"
-            }
-          }
+              src: "img/team.png",
+            },
+          },
         ]}
       />
       <div>
         <Button variant="primary" label="Get in Contact" />
       </div>
     </Section>
-    <Section
-      style="accent"
-    >
+    <Section style="accent">
       <Storytelling
         box={{
           headline: {
@@ -96,12 +88,19 @@ During more than a decade in the industry, we’ve been able to touch almost any
           },
           text: `We develop top tier, blazing fast websites that outperform your competition
 1. We design and optimise the UI/UX of websites & web-apps to push conversion.
-2. We’re big believers in sticking to what we're best at, which is why we pair with specialised web-platforms to ensure that all our work is industry leading.`
+2. We’re big believers in sticking to what we're best at, which is why we pair with specialised web-platforms to ensure that all our work is industry leading.`,
         }}
       />
     </Section>
   </>
 );
 
-const Template = (args) => <Page {...args} />;
-export const Landingpage = Template.bind({});
+export default {
+  title: "Pages/Landingpage",
+  render: Page,
+  parameters: {
+    layout: "fullscreen",
+  },
+};
+
+export const Landingpage = {};
