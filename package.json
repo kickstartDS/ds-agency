@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "@bedrock-layout/primitives": "^3.0.20",
+    "@bedrock-layout/spacing-constants": "^3.2.5",
     "@kickstartds/base": "^2.2.0",
     "@kickstartds/content": "^2.1.0",
     "@kickstartds/core": "^2.2.0",
