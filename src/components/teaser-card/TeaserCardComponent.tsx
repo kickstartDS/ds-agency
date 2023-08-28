@@ -6,6 +6,7 @@ import {
 } from "@kickstartds/base/lib/teaser-box";
 
 import { TeaserCardProps } from "./TeaserCardProps";
+import "./teaser-card.scss";
 
 export const TeaserCard: FC<TeaserCardProps & HTMLAttributes<HTMLElement>> = ({
   headline,
@@ -22,6 +23,7 @@ export const TeaserCard: FC<TeaserCardProps & HTMLAttributes<HTMLElement>> = ({
       text={text}
       link={{
         label: "Read more",
+        // @ts-expect-error
         variant: "secondary",
         inverted: inverted,
         target: target,

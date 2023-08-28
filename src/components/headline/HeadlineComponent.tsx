@@ -7,8 +7,9 @@ import { HeadlineContext } from "@kickstartds/base/lib/headline";
 import { defaultRenderFn } from "@kickstartds/core/lib/core";
 
 import { HeadlineProps } from "./HeadlineProps";
+import "./headline.scss";
 
-const markdownRenderFn = (text) => (
+const markdownRenderFn = (text: string) => (
   <ReactMarkdown children={text} components={{ p: "span" }} />
 );
 

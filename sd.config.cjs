@@ -12,17 +12,17 @@ module.exports = StyleDictionary.extend(config).extend({
       buildPath: 'src/token/'
     },
     html: {
-      buildPath: 'src/token/icons/'
+      buildPath: 'src/token/'
     },
     jsx: {
-      buildPath: 'src/token/icons/'
+      buildPath: 'src/token/'
     },
     storybook: {
       buildPath: 'src/token/storybook/'
     },
     js: {
       transforms: ["attribute/cti", "name/cti/pascal", "size/rem", "color/css"],
-      buildPath: "src/token/storybook/",
+      buildPath: "src/token/",
       files: [
         {
           destination: "tokens.js",
