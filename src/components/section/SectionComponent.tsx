@@ -7,6 +7,7 @@ import {
 
 import { SectionProps } from "./SectionProps";
 import { Button } from "../button/ButtonComponent";
+import "./section.scss";
 
 export const Section: FC<SectionProps & HTMLAttributes<HTMLElement>> = ({
   headline,
@@ -26,12 +27,15 @@ export const Section: FC<SectionProps & HTMLAttributes<HTMLElement>> = ({
     <>
       <SectionContextDefault
         {...props}
+        // @ts-expect-error
         background={style}
         headline={{
           text: headline,
+          // @ts-expect-error
           content: !!headline,
           sub: sub,
           spaceAfter: "large",
+          // @ts-expect-error
           align: align,
         }}
         width={width}
@@ -43,6 +47,7 @@ export const Section: FC<SectionProps & HTMLAttributes<HTMLElement>> = ({
       />
       {ctas && ctas.length > 0 && (
         <SectionContextDefault
+          // @ts-expect-error
           background={style}
           width="default"
           gutter={gutter}

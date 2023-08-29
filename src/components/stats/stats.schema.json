@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Stats",
+  "description": "Display a set of stats in a grid",
+  "type": "object",
+  "properties": {
+    "stats": {
+      "type": "array",
+      "title": "Stats",
+      "description": "The stats to display in a grid",
+      "items": {
+        "type": "object",
+        "title": "Stat",
+        "properties": {
+          "value": {
+            "title": "Value",
+            "description": "The value of the stat",
+            "type": "number",
+            "examples": [1, 2, 3, 4]
+          },
+          "label": {
+            "title": "Label",
+            "description": "The label of the stat",
+            "type": "string",
+            "examples": ["Stat 1", "Stat 2", "Stat 3", "Stat 4"]
+          }
+        },
+        "required": ["value"],
+        "examples": [
+          {
+            "value": 1,
+            "label": "Stat 1"
+          },
+          {
+            "value": 2,
+            "label": "Stat 2"
+          },
+          {
+            "value": 3,
+            "label": "Stat 3"
+          },
+          {
+            "value": 4,
+            "label": "Stat 4"
+          }
+        ]
+      },
+      "minimum": 1,
+      "maximum": 4
+    }
+  },
+  "required": ["stats"]
+}

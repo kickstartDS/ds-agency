@@ -1,54 +1,59 @@
 {
-  "name": "@kickstartds/ds-starter",
-  "version": "1.0.0",
+  "name": "@kickstartds/ds-agency",
+  "version": "0.0.1",
   "description": "",
-  "homepage": "https://github.com/kickstartDS/ds-starter#readme",
+  "homepage": "https://github.com/kickstartDS/ds-agency#readme",
   "bugs": {
-    "url": "https://github.com/kickstartDS/ds-starter/issues"
+    "url": "https://github.com/kickstartDS/ds-agency/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kickstartDS/ds-starter.git"
+    "url": "git+https://github.com/kickstartDS/ds-agency.git"
   },
   "license": "(MIT OR Apache-2.0)",
   "author": "Jonas Ulrich <jonas.ulrich@kickstartds.com> (https://www.kickstartDS.com/)",
-  "main": "index.js",
-  "types": "dist/types.d.ts",
+  "sideEffects": [
+    "./dist/global.client.js",
+    "**/*.css"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    "./static/*": "./dist/static/*",
+    "./tokens/*": "./dist/tokens/*",
+    "./icon-sprite": "./dist/tokens/IconSprite.js",
+    "./*.css": "./dist/*.css",
+    "./*.js": {
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js"
+    },
+    "./*.json": "./dist/components/*.json",
+    "./*": {
+      "types": "./dist/components/*/index.d.ts",
+      "import": "./dist/components/*/index.js"
+    }
+  },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build-storybook": "yarn build-tokens && run-p sass schema && storybook build --output-dir storybook",
+    "build-storybook": "yarn build-tokens && yarn schema && storybook build --output-dir storybook",
     "build-tokens": "kickstartDS tokens compile",
     "chromatic": "chromatic --storybook-build-dir 'storybook' --skip \"@(renovate/**|dependabot/**)\" --exit-zero-on-changes --exit-once-uploaded",
-    "dist:components": "node scripts/bundleComponents.js",
-    "dist:fonts": "cp -r static/fonts dist/",
-    "dist:iconsprite": "mkdir -p dist/components && cp src/token/icons/IconSprite.js dist/components/",
-    "dist:images": "cp -r static/img static/logo.svg dist/",
-    "dist:favicons": "cp -r static/favicon dist/",
-    "dist:sass": "sass --load-path=node_modules src/dist.scss dist/index.css",
-    "dist:schema": "yarn schema && node scripts/copySchema.js && yarn tsc",
-    "dist:js": "esbuild index=src/dist.js --outdir=dist --format=esm --bundle --minify --splitting",
     "init-tokens": "kickstartDS tokens init",
     "playroom": "run-p watch:* playroom:start",
     "playroom:start": "playroom start",
     "playroom:build": "playroom build",
     "prepare": "patch-package",
-    "prepublishOnly": "rm -rf dist && mkdir -p dist && yarn build-tokens && run-p dist:*",
-    "sass": "sass --load-path=node_modules src/index.scss static/index.css",
+    "prepublishOnly": "rm -rf dist && yarn build-tokens && rollup -c",
     "schema": "run-p schema:*",
     "schema:dereference-schemas": "kickstartDS schema dereference --schema-domain schema.mydesignsystem.com",
     "schema:generate-props": "kickstartDS schema types --schema-domain schema.mydesignsystem.com",
     "start": "run-p watch:* storybook",
     "storybook": "storybook dev -p 6006",
     "token": "node scripts/customPropertyExtract.js",
-    "watch:sass": "yarn sass --watch",
     "watch:schema": "yarn schema && chokidar \"src/**/*.schema.json\" -c \"yarn schema\"",
     "watch:token": "yarn build-tokens && yarn token && chokidar \"src/**/*-tokens.scss\" -c \"yarn token {path}\"",
     "watch:dictionary": "chokidar \"src/token/dictionary/*.json\" -c \"yarn build-tokens\""
-  },
-  "resolutions": {
-    "@types/react": "17.0.2"
   },
   "dependencies": {
     "@bedrock-layout/primitives": "^3.0.20",
@@ -56,6 +61,8 @@
     "@kickstartds/base": "^2.2.0",
     "@kickstartds/content": "^2.1.0",
     "@kickstartds/core": "^2.2.0",
+    "classnames": "^2.3.2",
+    "lazysizes": "^5.3.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-markdown": "^8.0.7"
@@ -71,6 +78,7 @@
     "@storybook/addon-links": "^7.3.2",
     "@storybook/react": "^7.3.2",
     "@storybook/react-vite": "^7.3.2",
+    "@types/react": "^18.2.21",
     "@whitespace/storybook-addon-html": "git+https://github.com/lmestel/storybook-addon-html.git",
     "auto": "^11.0.1",
     "change-case": "^4.1.2",
@@ -79,17 +87,16 @@
     "copy-webpack-plugin": "^11.0.0",
     "custom-property-extract": "^1.2.1",
     "deepmerge": "^4.3.1",
-    "esbuild": "^0.19.2",
     "fast-glob": "^3.3.1",
     "fs-extra": "^11.1.1",
-    "json-schema-merge-allof": "^0.8.1",
-    "json-schema-ref-parser": "^9.0.9",
-    "json-schema-to-typescript": "^13.0.2",
     "kickstartds": "^2.1.0",
-    "lazysizes": "^5.3.2",
     "npm-run-all": "^4.1.5",
     "patch-package": "^8.0.0",
     "playroom": "^0.32.1",
+    "rollup": "^3.28.1",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-node-externals": "^6.1.1",
+    "rollup-plugin-ts": "^3.4.4",
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2",
     "storybook": "^7.3.2",
@@ -100,5 +107,11 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
+  },
+  "auto": {
+    "plugins": [
+      "npm",
+      "released"
+    ]
   }
 }

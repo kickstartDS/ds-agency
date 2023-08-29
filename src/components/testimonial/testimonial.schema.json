@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Testimonial",
+  "description": "Display a testimonial with an optional image and rating",
+  "type": "object",
+  "properties": {
+    "quote": {
+      "title": "Quote",
+      "description": "The testimonial quote",
+      "type": "string",
+      "examples": ["This product is amazing!"]
+    },
+    "name": {
+      "title": "Name",
+      "description": "The name of the quote author",
+      "type": "string",
+      "examples": ["John Doe"]
+    },
+    "title": {
+      "title": "Title",
+      "description": "The title of the quote author",
+      "type": "string",
+      "examples": ["CEO"]
+    },
+    "image": {
+      "title": "Image",
+      "description": "The image to display with the testimonial",
+      "type": "string",
+      "examples": ["https://example.com/image.jpg"]
+    },
+    "rating": {
+      "title": "Rating",
+      "description": "The rating of the testimonial, from 1 to 5",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "examples": [5]
+    }
+  },
+  "required": ["quote"]
+}
