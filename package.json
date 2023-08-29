@@ -1,14 +1,14 @@
 {
-  "name": "@kickstartds/ds-starter",
-  "version": "1.0.0",
+  "name": "@kickstartds/ds-agency",
+  "version": "0.0.0",
   "description": "",
-  "homepage": "https://github.com/kickstartDS/ds-starter#readme",
+  "homepage": "https://github.com/kickstartDS/ds-agency#readme",
   "bugs": {
-    "url": "https://github.com/kickstartDS/ds-starter/issues"
+    "url": "https://github.com/kickstartDS/ds-agency/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kickstartDS/ds-starter.git"
+    "url": "git+https://github.com/kickstartDS/ds-agency.git"
   },
   "license": "(MIT OR Apache-2.0)",
   "author": "Jonas Ulrich <jonas.ulrich@kickstartds.com> (https://www.kickstartDS.com/)",
