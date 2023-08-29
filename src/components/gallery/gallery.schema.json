@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/gallery.schema.json",
+  "title": "Gallery",
+  "description": "Component used to display a gallery of images",
+  "type": "object",
+  "properties": {
+    "headline": {
+      "type": "string",
+      "title": "Headline",
+      "description": "Headline for the gallery",
+      "examples": ["Gallery Headline"]
+    },
+    "text": {
+      "type": "string",
+      "title": "Text",
+      "description": "Text for the gallery",
+      "examples": ["This is a gallery of images"]
+    },
+    "images": {
+      "type": "array",
+      "title": "Images",
+      "description": "The images to display in the gallery",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "title": "URL",
+            "description": "The URL of the image",
+            "examples": ["https://example.com/image1.jpg"]
+          },
+          "caption": {
+            "type": "string",
+            "title": "Caption",
+            "description": "The caption of the image",
+            "examples": ["This is image 1"]
+          }
+        },
+        "required": ["url"]
+      },
+      "minItems": 1,
+      "maxItems": 10
+    },
+    "alignment": {
+      "type": "string",
+      "title": "Alignment",
+      "description": "The alignment of the text and images",
+      "enum": ["left", "above", "right", "below"],
+      "examples": ["below"]
+    }
+  },
+  "required": ["images"]
+}
