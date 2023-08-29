@@ -11,9 +11,10 @@ public/design-tokens.source.json
 *.dereffed.json
 *-tokens.json
 src/token/tokens.css
-src/token/icons/IconSprite.js
+src/token/IconSprite.js
+src/token/tokens.js
+src/token/icon-sprite.html
 src/token/storybook/tokens.css
-src/token/storybook/tokens.js
 src/token/storybook/icons.svg
 static/*.css
 static/*.css.map

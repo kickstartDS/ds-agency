@@ -1,16 +1,8 @@
-// @see https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/attrchange
-import "lazysizes/plugins/attrchange/ls.attrchange";
 import { actions } from "@storybook/addon-actions";
 import { DocsContainer } from "@storybook/addon-docs";
 import { unpackDecorator } from "@kickstartds/core/lib/storybook";
 
-import "@kickstartds/base/lib/global/base.js";
-import "@kickstartds/base/lib/global/base.css";
-import "../src/index.js";
-import "../static/index.css";
-
-import IconSprite from "../src/token/icons/IconSprite";
-import Providers from "../src/components/Providers";
+import { PageWrapper } from "../src/components/page-wrapper/PageWrapperComponent";
 import { LinkProvider } from "../src/docs/LinkProvider";
 
 const myActions = actions("radio");
@@ -46,10 +38,9 @@ const preview = {
     docs: {
       container: (props) => (
         <LinkProvider>
-          <Providers>
-            <IconSprite />
+          <PageWrapper>
             <DocsContainer {...props} />
-          </Providers>
+          </PageWrapper>
         </LinkProvider>
       ),
     },
@@ -63,15 +54,14 @@ const preview = {
   html: {
     decorator: unpackDecorator,
   },
-  decorators:  [
+  decorators: [
     unpackDecorator,
     (Story) => (
-      <Providers>
-        <IconSprite />
+      <PageWrapper>
         <Story />
-      </Providers>
+      </PageWrapper>
     ),
-  ]
+  ],
 };
 
 export default preview;

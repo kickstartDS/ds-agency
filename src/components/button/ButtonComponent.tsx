@@ -5,6 +5,7 @@ import {
 } from "@kickstartds/base/lib/button";
 
 import { ButtonProps } from "./ButtonProps";
+import "./button.scss";
 
 export const Button = forwardRef<
   HTMLAnchorElement | HTMLButtonElement,
@@ -27,6 +28,7 @@ export const Button = forwardRef<
       href={target}
       label={label}
       size={size}
+      // @ts-expect-error
       variant={variant}
       disabled={disabled}
       iconAfter={{

@@ -1,10 +1,10 @@
 import classnames from "classnames";
 import { FC } from "react";
 import { CtaTextProps } from "./CtaTextProps";
-import React from "react";
 import { Headline } from "@kickstartds/base/lib/headline";
 import { RichText } from "@kickstartds/base/lib/rich-text";
 import { Button } from "@kickstartds/base/lib/button";
+import "./cta-text.scss";
 
 export const CtaText: FC<CtaTextProps> = ({
   headline,
@@ -17,18 +17,21 @@ export const CtaText: FC<CtaTextProps> = ({
   <div className={classnames("c-cta-text", `c-cta-text--align-${align}`)}>
     <Headline
       level="h1"
+      // @ts-expect-error
       style="h1"
       align={align}
       text={headline}
       sub={subheadline}
-      spaceAfter="minimal"
+      spaceAfter="minimum"
     />
+    {/* @ts-expect-error */}
     {text ? <RichText align={align} text={text} /> : ""}
 
     {primaryCta?.toggle || secondaryCta?.toggle ? (
       <div className="c-cta-text__links">
         {primaryCta?.toggle ? (
           <Button
+            // @ts-expect-error
             variant="primary"
             label={primaryCta.label}
             href={primaryCta.target}
@@ -39,6 +42,7 @@ export const CtaText: FC<CtaTextProps> = ({
         )}
         {secondaryCta?.toggle ? (
           <Button
+            // @ts-expect-error
             variant="secondary"
             label={secondaryCta.label}
             href={secondaryCta.target}
