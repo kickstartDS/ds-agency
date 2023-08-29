@@ -85,7 +85,6 @@ We also have a fully featured guide creating much of the code you use with this 
       <TeaserCard
         target="https://www.kickstartds.com/docs/guides/use-our-starter#design-token-integration"
         headline="Design Token integration"
-        inverted={true}
         text={`
 One important part of a **Design System** is having a well structured and semantic token system in place. With **kickstartDS** this means using [**Branding Token**](https://www.kickstartds.com/docs/foundations/token/branding-token), [**Design Token**](https://www.kickstartds.com/docs/foundations/token/design-token/), and [**Component Token**](https://www.kickstartds.com/docs/foundations/token/component-token).
 
@@ -95,7 +94,6 @@ Learn about customizing your **Design Token** set in [our dedicated section](htt
       <TeaserCard
         target="https://www.kickstartds.com/docs/guides/use-our-starter#storybook-integration"
         headline="Storybook integration"
-        inverted={true}
         text={`
 **Storybook** is used as your all around workbench, when working with your **Design System**. We've written two addons to help with this, and tried making best practice use of **Storybook** as effortless for you as possible.
 
@@ -105,7 +103,6 @@ Learn more about it in the [dedicated doc section about this](https://www.kickst
       <TeaserCard
         target="https://www.kickstartds.com/docs/guides/use-our-starter#react-integration"
         headline="React integration"
-        inverted={true}
         text={`
 There are some **React** concepts already in use deep in **kickstartDS**, and its base components you build upon. This includes using [**Render Props**](https://reactjs.org/docs/render-props.html), and adding [**Context** / **Provider**](https://reactjs.org/docs/context.html) to all components, both to enable flexible and efficient mix-and-match of components.
 
@@ -115,7 +112,6 @@ Learn more about it in the [docs section about this](https://www.kickstartds.com
       <TeaserCard
         target="https://www.kickstartds.com/docs/guides/use-our-starter#bedrock-layout-primitives-integration"
         headline="Bedrock Layout Primitives integration"
-        inverted={true}
         text={`
 When you have more general layout needs, not covered by simply using a "Section" component, we usually recommend using [**Bedrock Layout Primitives**](https://www.bedrock-layout.dev/) for those cases. We think it meshes really well with our approach to **Design Token**, you simply connect your existing **Design Token** set [to their theming approach](https://www.bedrock-layout.dev/?path=/docs/getting-started-lesson-3-spacing--page).
 
@@ -125,7 +121,6 @@ Learn [more about this](https://www.kickstartds.com/docs/guides/use-our-starter#
       <TeaserCard
         target="https://www.kickstartds.com/docs/guides/use-our-starter#playroom-integration"
         headline="Playroom integration"
-        inverted={true}
         text={`
 We're big proponents of prototyping interface as close to your real **Design System** as possible. For developers, and even code-affine designers, we really love the DX [**Playroom**](https://github.com/seek-oss/playroom) by [seek-oss](https://github.com/seek-oss) offers for this.
 
@@ -137,7 +132,6 @@ Want to know more? Head to [our docs about it](https://www.kickstartds.com/docs/
       <TeaserCard
         target="https://www.kickstartds.com/docs/guides/use-our-starter#bundling"
         headline="Bundling"
-        inverted={true}
         text={`
 With this starter we want to cover the complete life-cycle of a **Design System**. This includes **Bundling** and [**Release handling**](#release-handling). We also want to show what we mean when we say **kickstartDS** is framework-agnostic.
 
@@ -149,7 +143,6 @@ This is also described in more details [as part of our docs here](https://www.ki
       <TeaserCard
         target="https://www.kickstartds.com/docs/guides/use-our-starter#release-handling"
         headline="Release Handling"
-        inverted={true}
         text={`
 Release handling for this starter is configured to use [**auto**](https://github.com/intuit/auto), and its semantic versioning. We use this setup for **kickstartDS** itself, you can learn more about it [in our documentation](https://www.kickstartds.com/docs/intro/upgrading#semantic-versioning-with-auto).
 
@@ -163,7 +156,6 @@ Learn more about release handling in [the dedicated docs section](https://www.ki
     <Section
       width="max"
       headline="Read articles about kickstartDS"
-      inverted={true}
       ctas={[{
         label: "All articles",
         target: "https://www.kickstartDS.com/blog"
@@ -174,21 +166,21 @@ Learn more about release handling in [the dedicated docs section](https://www.ki
     >
       <TeaserCard
         headline="Release Spotlight: Semantic Token"
-        text="#tldr: Design Token are all the rage these days. In almost every channel from the Design System space, you can feel a crispy white noise around the broad topic of Design Token..."
+        text=" Design Token are all the rage these days. In almost every channel from the Design System space, you can feel a crispy white noise around the broad topic of Design Token..."
         target="https://www.kickstartds.com/blog/release-spotlight-semantic-token/"
         image="https://www.kickstartds.com/static/95c85bb44b1a2efbe2b33e75b99754bd/Blog-Post_Release-Notes-01-1.png"
         inverted={false}
       />
       <TeaserCard
         headline="Release Spotlight: Container Queries"
-        text="#tldr: Container Queries are another new feature coming with the Open Source release of kickstartDS. It's a proposed feature for CSS that allows the styling of elements to be..."
+        text=" Container Queries are another new feature coming with the Open Source release of kickstartDS. It's a proposed feature for CSS that allows the styling of elements to be..."
         target="https://www.kickstartds.com/blog/release-spotlight-container-queries/"
         image="https://www.kickstartds.com/static/3d484cc97ab1a34975e6abaa6dc28fed/Blog-Post_Release-Spotlight-02.png"
         inverted={false}
       />
       <TeaserCard
         headline="Release Spotlight: Documentation &amp; Starter"
-        text="#tldr We’ve added extensive documentation around the creation of Design Systems with kickstartDS. From general intro and foundation articles and component example guides to our..."
+        text="We’ve added extensive documentation around the creation of Design Systems with kickstartDS. From general intro and foundation articles and component example guides to our..."
         target="https://www.kickstartds.com/blog/release-spotlight-documentation-starter/"
         image="https://www.kickstartds.com/static/18e344141b89464fc885591443650ee6/Blog-Post_Release-Spotlight-03.png"
         inverted={false}

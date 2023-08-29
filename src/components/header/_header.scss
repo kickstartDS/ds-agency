@@ -1,0 +1,42 @@
+:root {
+  --g-logo--height: 2rem;
+
+  @media (min-width: 42rem) {
+    --g-logo--height: 2.5rem;
+  }
+
+  @media (min-width: 60rem) {
+    --g-logo--height: 3rem;
+  }
+}
+
+.c-header {
+  @media (min-width: 640px) {
+    position: absolute;
+    background-color: transparent;
+  }
+
+  position: relative;
+  background-color: var(--ks-background-color-default);
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  padding: var(--ks-spacing-stack-m) 0;
+
+  &__content {
+    padding: 0 var(--l-section--content-padding);
+    max-width: var(--l-section--content-width-max);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: block;
+
+    img {
+      height: var(--g-logo--height);
+    }
+  }
+}

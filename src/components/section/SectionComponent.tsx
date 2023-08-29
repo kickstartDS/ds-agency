@@ -65,7 +65,7 @@ export const Section: FC<SectionProps & HTMLAttributes<HTMLElement>> = ({
                     ? "secondary"
                     : "tertiary"
                 }
-                size="small"
+                size="default"
               />
             ))}
         </SectionContextDefault>

@@ -57,7 +57,7 @@ Ready to make your digital journey exceptional?`}
         media={[
           {
             image: {
-              src: "img/agency.png",
+              src: "img/team.png",
             },
           },
         ]}
@@ -239,11 +239,11 @@ Alex Chen, CEO of LaunchPad Innovations`}
 );
 
 export default {
-  title: "Pages/Landingpage",
+  title: "Pages/Landingpage Base",
   render: Page,
   parameters: {
     layout: "fullscreen",
   },
 };
 
-export const Landingpage = {};
+export const LandingpageBase = {};

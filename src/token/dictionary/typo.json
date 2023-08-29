@@ -64,10 +64,16 @@
       "display": {
         "bp-factor": {
           "phone": {
-            "value": 1.167
+            "value": 1.125
           },
           "tablet": {
+            "value": 1.25
+          },
+          "laptop": {
             "value": 1.5
+          },
+          "desktop": {
+            "value": 1.75
           }
         },
         "xxs-base": {
@@ -131,7 +137,7 @@
           }
         },
         "xxl-base": {
-          "value": "3rem",
+          "value": "2.5rem",
           "attributes": {
             "category": "size"
           },
@@ -385,16 +391,16 @@
           "value": 1.5
         },
         "m": {
-          "value": 1.5
-        },
-        "l": {
           "value": 1.45
         },
+        "l": {
+          "value": 1.35
+        },
         "xl": {
-          "value": 1.4
+          "value": 1.25
         },
         "xxl": {
-          "value": 1.25
+          "value": 1.15
         }
       },
       "copy": {

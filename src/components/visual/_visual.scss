@@ -1,0 +1,29 @@
+@use "visual-tokens.scss";
+
+.c-visual {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ks-spacing-stack-m);
+
+  &.c-visual--full {
+    height: 100%;
+  }
+
+  .c-visual__box {
+    max-width: 100%;
+  }
+
+  @container visual (min-width: 640px) {
+    &.c-visual--full {
+      height: 100vh;
+    }
+
+    .c-visual__box {
+      max-width: var(--c-visual_box--max-width);
+    }
+  }
+
+  .c-visual__content--indent {
+    max-width: var(--l-section--content-width-wide);
+  }
+}

@@ -3,4 +3,13 @@
 #{$selectors} {
   --g-topic--font-weight: var(--ks-font-weight-medium);
   --g-topic--color: var(--ks-color-fg);
+  --l-section--content-padding: var(--ks-spacing-inset-l) !important;
+
+  @media (min-width: 42rem) {
+    --l-section--content-padding: var(--ks-spacing-inset-xl) !important;
+  }
+
+  --l-section--content-width-wide: 1440px !important;
+
+  --g-header-height: calc(var(--g-logo--height) + var(--ks-spacing-stack-m) + var(--ks-spacing-stack-m));
 }

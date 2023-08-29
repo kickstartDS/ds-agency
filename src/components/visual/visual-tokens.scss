@@ -1,0 +1,25 @@
+:root {
+  .c-visual {
+    @container visual (min-width: 640px) {
+      --c-visual_image--indent-left: 80%;
+      --c-visual_image--indent-right: 80%;
+    }
+    .c-visual__box {
+      --c-visual_headline--color: var(--ks-color-fg);
+      --c-visual_box--color: var(--ks-text-color-default);
+
+      --c-visual_box--max-width: 50%;
+    }
+  }
+
+  .c-visual-slide--preview {
+    color: var(--ks-text-color-interface);
+  }
+
+  .c-visual-slider {
+    --c-visual-slider_nav--border-bottom-color: var(--ks-color-fg-alpha-2);
+    --c-visual-slider_preview--color-hover: var(--ks-color-secondary);
+    --c-visual-slider_preview--color-active: var(--ks-color-secondary);
+    --c-visual-slider_preview--background-hover: transparent;
+  }
+}
