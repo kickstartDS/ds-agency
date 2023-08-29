@@ -18,11 +18,9 @@ const meta: Meta<typeof Testimonial> = {
 };
 
 export default meta;
+type Story = StoryObj<typeof Testimonial>;
 
-type TestimonialStory = StoryObj<typeof Testimonial>;
-
-export const Default: TestimonialStory = (args) => <Testimonial {...args} />;
-
+export const Default: Story = {};
 Default.args = pack({
   quote: "This product is amazing!",
   name: "John Doe",
