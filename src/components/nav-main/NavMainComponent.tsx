@@ -3,6 +3,7 @@ import { FC } from "react";
 import React from "react";
 import { Button } from "@kickstartds/base/lib/button";
 import { Link } from "@kickstartds/base/lib/link";
+import "./nav-main.scss";
 
 export const NavMainItem: FC = ({ label, href }) => (
   <li className="c-nav-main__item">

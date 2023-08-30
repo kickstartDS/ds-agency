@@ -6,6 +6,7 @@ import { Button } from "@kickstartds/base/lib/button";
 import { Picture } from "@kickstartds/base/lib/picture";
 import { Link } from "@kickstartds/base/lib/link";
 import { NavMain } from "../nav-main/NavMainComponent";
+import "./header.scss";
 
 export const Header: FC<HeaderProps> = ({}) => (
   <div className={classnames("c-header")}>
