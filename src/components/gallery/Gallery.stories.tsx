@@ -24,8 +24,12 @@ Default.args = pack({
   headline: "Gallery Headline",
   text: "This is a gallery of images",
   images: [
-    { url: "https://example.com/image1.jpg", caption: "Image 1" },
-    { url: "https://example.com/image2.jpg", caption: "Image 2" },
+    { url: "img/agency.png", caption: "Caption Image 1" },
+    { url: "img/team.png", caption: "Caption Image 2" },
+    { url: "img/agency.png", caption: "Caption Image 3" },
+    { url: "img/agency.png", caption: "Caption Image 1" },
+    { url: "img/team.png", caption: "Caption Image 2" },
+    { url: "img/agency.png", caption: "Caption Image 3" },
   ],
-  align: "below",
+  align: "smallTiles",
 });

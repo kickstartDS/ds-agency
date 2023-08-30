@@ -1,0 +1,26 @@
+.c-gallery {
+  &__grid {
+    &--align {
+      &-stack {
+        display: flex;
+        gap: var(--ks-spacing-stack-m);
+        flex-direction: column;
+      }
+
+      &-smallTiles {
+        display: grid;
+        gap: var(--ks-spacing-inline-m);
+        grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+      }
+      &-largeTiles {
+        display: grid;
+        gap: var(--ks-spacing-inline-m);
+        grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+      }
+    }
+  }
+
+  &__image {
+    flex: 1 1;
+  }
+}

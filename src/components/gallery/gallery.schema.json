@@ -34,7 +34,7 @@
             "type": "string",
             "title": "Caption",
             "description": "The caption of the image",
-            "examples": ["This is image 1"]
+            "examples": ["Caption Image"]
           }
         },
         "required": ["url"]
@@ -45,8 +45,8 @@
     "align": {
       "type": "string",
       "title": "Align",
-      "description": "The alignment of the text and images",
-      "enum": ["left", "above", "right", "below"],
+      "description": "The alignment gallery images",
+      "enum": ["stack", "smallTiles", "largeTiles"],
       "examples": ["below"]
     }
   },

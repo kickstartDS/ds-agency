@@ -324,9 +324,9 @@ export type URL = string;
  */
 export type Caption = string;
 /**
- * The alignment of the text and images
+ * The alignment gallery images
  */
-export type Align = "left" | "above" | "right" | "below";
+export type Align = "stack" | "smallTiles" | "largeTiles";
 
 /**
  * Component used to display a gallery of images
