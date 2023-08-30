@@ -12,7 +12,7 @@ export type Headline = string;
 /**
  * The alignment of the headline
  */
-export type HeadlineAlignment = "left" | "center" | "right";
+export type HeadlineAlign = "left" | "center" | "right";
 /**
  * The logos to display
  *
@@ -1132,7 +1132,7 @@ export type CallToActionText = string;
  */
 export interface LogosProps {
   headline?: Headline;
-  headlineAlignment?: HeadlineAlignment;
+  headlineAlign?: HeadlineAlign;
   logos: Logos;
   logosPerRow?: LogosPerRow;
   ctaText?: CallToActionText;

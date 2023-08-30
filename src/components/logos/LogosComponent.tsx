@@ -5,13 +5,13 @@ import "./logos.scss";
 
 export const Logos: FC<LogosProps & HTMLAttributes<HTMLElement>> = ({
   headline,
-  headlineAlignment,
+  headlineAlign,
   logos,
   logosPerRow,
   ctaText,
 }) => {
   return (
-    <div className={`logos ${headlineAlignment}`}>
+    <div className={`logos ${headlineAlign}`}>
       {headline && <h2>{headline}</h2>}
       <div className="logos-container">
         {logos.map((logo, index) => (

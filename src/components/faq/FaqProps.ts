@@ -45,7 +45,7 @@ export type Variant = "default" | "accordion" | "dropdown";
 /**
  * The alignment of the text
  */
-export type Alignment = "left" | "center" | "right";
+export type Align = "left" | "center" | "right";
 
 /**
  * Component used to display a FAQ section
@@ -55,6 +55,6 @@ export interface FAQProps {
   intro?: Intro;
   questions: Questions;
   variant?: Variant;
-  alignment?: Alignment;
+  align?: Align;
   [k: string]: unknown;
 }

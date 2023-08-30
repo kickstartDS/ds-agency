@@ -72,7 +72,7 @@ Ready to make your digital journey exceptional?`}
     </Section>
     <Section width="wide" style="accent" align="left" mode="list">
       <TextMedia
-        mediaAlignment="beside-right"
+        mediaAlign="beside-right"
         text={`
 ## Our **Approach** to Design Systems
 Own a design system without investing years of development. Our approach to design systems
@@ -105,7 +105,7 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
     </Section>
     <Section width="default" mode="list" headline="Testimonials" align="center">
       <TextMedia
-        mediaAlignment="beside-left"
+        mediaAlign="beside-left"
         media={[
           {
             image: {
@@ -118,7 +118,7 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
 John Smith, Chief Marketing Officer at TechFusion Enterprises`}
       />
       <TextMedia
-        mediaAlignment="beside-right"
+        mediaAlign="beside-right"
         media={[
           {
             image: {
@@ -131,7 +131,7 @@ John Smith, Chief Marketing Officer at TechFusion Enterprises`}
 Emily Johnson, Director of Digital Strategy at EcoTech Solutions`}
       />
       <TextMedia
-        mediaAlignment="beside-left"
+        mediaAlign="beside-left"
         media={[
           {
             image: {

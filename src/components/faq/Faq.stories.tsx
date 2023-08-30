@@ -28,5 +28,5 @@ Default.args = pack({
     { question: "Question 2", answer: "Answer 2" },
   ],
   variant: "default",
-  alignment: "left",
+  align: "left",
 });

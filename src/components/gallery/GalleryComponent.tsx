@@ -7,10 +7,10 @@ export const Gallery: FC<GalleryProps & HTMLAttributes<HTMLElement>> = ({
   headline,
   text,
   images,
-  alignment,
+  align,
 }) => {
   return (
-    <div className={`gallery ${alignment}`}>
+    <div className={`gallery ${align}`}>
       {headline && <h2>{headline}</h2>}
       {text && <p>{text}</p>}
       <div className="images">

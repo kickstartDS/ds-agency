@@ -27,5 +27,5 @@ Default.args = pack({
     { url: "https://example.com/image1.jpg", caption: "Image 1" },
     { url: "https://example.com/image2.jpg", caption: "Image 2" },
   ],
-  alignment: "below",
+  align: "below",
 });

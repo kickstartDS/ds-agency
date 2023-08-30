@@ -42,9 +42,9 @@
       "minItems": 1,
       "maxItems": 10
     },
-    "alignment": {
+    "align": {
       "type": "string",
-      "title": "Alignment",
+      "title": "Align",
       "description": "The alignment of the text and images",
       "enum": ["left", "above", "right", "below"],
       "examples": ["below"]

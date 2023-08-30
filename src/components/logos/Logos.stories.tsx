@@ -21,7 +21,7 @@ type Story = StoryObj<typeof Logos>;
 export const Default: Story = {};
 Default.args = pack({
   headline: "Our Partners",
-  headlineAlignment: "center",
+  headlineAlign: "center",
   logos: [
     { url: "https://example.com/logo1.jpg", caption: "Logo 1" },
     { url: "https://example.com/logo2.jpg", caption: "Logo 2" },
