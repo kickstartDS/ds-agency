@@ -29,7 +29,7 @@
     "./*.json": "./dist/components/*.json",
     "./*": {
       "types": "./dist/components/*/index.d.ts",
-      "import": "./dist/components/*/index.js"
+      "default": "./dist/components/*/index.js"
     }
   },
   "files": [

@@ -4,7 +4,10 @@ import React from "react";
 import { Button } from "@kickstartds/base/lib/button";
 import { Link } from "@kickstartds/base/lib/link";
 
-export const NavMainItem: FC = ({ label, href }) => (
+export const NavMainItem: FC<{ label: string; href: string }> = ({
+  label,
+  href,
+}) => (
   <li className="c-nav-main__item">
     <Link className="c-nav-main__link" href={href}>
       {label}

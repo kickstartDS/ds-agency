@@ -19,6 +19,7 @@ export const Visual: FC<VisualProps> = ({
       enabled: true,
       horizontal: align,
       headline: {
+        // @ts-expect-error
         text: headline,
         style: "h1",
       },
