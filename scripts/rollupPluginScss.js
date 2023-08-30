@@ -2,11 +2,16 @@ const path = require("node:path");
 const { pathToFileURL } = require("node:url");
 const crypto = require("node:crypto");
 const sass = require("sass");
+const postcss = require("postcss");
+const postcssUrl = require("postcss-url");
 const sassNodeModulesImporter = require("./sassNodeModulesImporter");
+
+const postcssProcessor = postcss([postcssUrl({ url: "rebase" })]);
 
 module.exports = (options = {}) => {
   const styleRe = /\.s?css$/;
   const styles = {};
+  let absoluteOutputdir;
 
   return {
     name: "styles",
@@ -39,23 +44,34 @@ module.exports = (options = {}) => {
       return "";
     },
 
-    renderChunk(code, chunk) {
-      const cssModuleIds = chunk.moduleIds.filter((moduleId) =>
+    renderStart(outputOptions) {
+      absoluteOutputdir = path.join(process.cwd(), outputOptions.dir);
+    },
+
+    async renderChunk(code, chunk) {
+      const scssModuleIds = chunk.moduleIds.filter((moduleId) =>
         styleRe.test(moduleId)
       );
 
-      if (!cssModuleIds.length) return null;
+      if (!scssModuleIds.length) return null;
 
+      const chunkDir = path.dirname(chunk.fileName);
       let imports = "";
-      for (const moduleId of cssModuleIds) {
-        const style = styles[moduleId];
+      for (const scssModuleId of scssModuleIds) {
+        const style = styles[scssModuleId];
         if (!style.referenceId) {
           const { source, fileName } = style;
+
+          const processed = await postcssProcessor.process(source, {
+            from: scssModuleId,
+            to: path.join(absoluteOutputdir, chunkDir),
+          });
+
           style.referenceId = this.emitFile({
             type: "asset",
             name: fileName,
-            fileName: path.join(path.parse(chunk.fileName).dir, fileName),
-            source,
+            fileName: path.join(chunkDir, fileName),
+            source: processed.css,
           });
           chunk.imports.push(fileName);
           chunk.importedBindings[fileName] = [];

@@ -20,7 +20,6 @@ const componentEntryPoints = Object.fromEntries(
     fileName,
   ])
 );
-console.log(componentEntryPoints);
 
 export default {
   input: { ...componentEntryPoints, "global.client": "src/global.client.ts" },
