@@ -31,8 +31,6 @@ export const Section: FC<SectionProps & HTMLAttributes<HTMLElement>> = ({
         background={style}
         headline={{
           text: headline,
-          // @ts-expect-error
-          content: !!headline,
           sub: sub,
           spaceAfter: "large",
           // @ts-expect-error

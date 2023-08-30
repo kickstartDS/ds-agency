@@ -3,6 +3,7 @@ import { FC } from "react";
 import React from "react";
 import { Visual as VisualComponent } from "@kickstartds/content/lib/visual";
 import { VisualProps } from "./VisualProps";
+import "./visual.scss";
 
 export const Visual: FC<VisualProps> = ({
   headline,
@@ -19,6 +20,7 @@ export const Visual: FC<VisualProps> = ({
       enabled: true,
       horizontal: align,
       headline: {
+        // @ts-expect-error
         text: headline,
         style: "h1",
       },

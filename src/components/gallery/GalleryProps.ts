@@ -326,7 +326,7 @@ export type Caption = string;
 /**
  * The alignment of the text and images
  */
-export type Alignment = "left" | "above" | "right" | "below";
+export type Align = "left" | "above" | "right" | "below";
 
 /**
  * Component used to display a gallery of images
@@ -335,6 +335,6 @@ export interface GalleryProps {
   headline?: Headline;
   text?: Text;
   images: Images;
-  alignment?: Alignment;
+  align?: Align;
   [k: string]: unknown;
 }

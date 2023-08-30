@@ -49,9 +49,9 @@
       "default": "default",
       "examples": ["accordion"]
     },
-    "alignment": {
+    "align": {
       "type": "string",
-      "title": "Alignment",
+      "title": "Align",
       "description": "The alignment of the text",
       "enum": ["left", "center", "right"],
       "default": "left",

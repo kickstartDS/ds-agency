@@ -8,10 +8,10 @@ export const FAQ: FC<FAQProps & HTMLAttributes<HTMLElement>> = ({
   intro,
   questions,
   variant = "default",
-  alignment = "left",
+  align = "left",
 }) => {
   return (
-    <div className={`faq ${variant} ${alignment}`}>
+    <div className={`faq ${variant} ${align}`}>
       {headline && <h2>{headline}</h2>}
       {intro && <p>{intro}</p>}
       {questions.map((question, index) => (

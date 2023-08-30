@@ -11,9 +11,9 @@
       "description": "Headline for the logos",
       "examples": ["Our Partners"]
     },
-    "headlineAlignment": {
+    "headlineAlign": {
       "type": "string",
-      "title": "Headline Alignment",
+      "title": "Headline Align",
       "description": "The alignment of the headline",
       "enum": ["left", "center", "right"],
       "examples": ["center"]
