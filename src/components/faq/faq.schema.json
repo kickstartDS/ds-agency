@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/faq.schema.json",
+  "title": "FAQ",
+  "description": "Component used to display a FAQ section",
+  "type": "object",
+  "properties": {
+    "headline": {
+      "type": "string",
+      "title": "Headline",
+      "description": "Headline for the FAQ section",
+      "examples": ["Frequently Asked Questions"]
+    },
+    "intro": {
+      "type": "string",
+      "title": "Intro",
+      "description": "Introductory text for the FAQ section",
+      "examples": ["Here are some common questions about our product"]
+    },
+    "questions": {
+      "type": "array",
+      "title": "Questions",
+      "description": "The questions and answers in the FAQ section",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string",
+            "title": "Question",
+            "description": "The question",
+            "examples": ["What is the product made of?"]
+          },
+          "answer": {
+            "type": "string",
+            "title": "Answer",
+            "description": "The answer to the question",
+            "examples": ["The product is made of high-quality materials"]
+          }
+        },
+        "required": ["question", "answer"]
+      },
+      "minItems": 1
+    },
+    "variant": {
+      "type": "string",
+      "title": "Variant",
+      "description": "The layout variant for the FAQ section",
+      "enum": ["default", "accordion", "dropdown"],
+      "default": "default",
+      "examples": ["accordion"]
+    },
+    "alignment": {
+      "type": "string",
+      "title": "Alignment",
+      "description": "The alignment of the text",
+      "enum": ["left", "center", "right"],
+      "default": "left",
+      "examples": ["left"]
+    }
+  },
+  "required": ["questions"]
+}

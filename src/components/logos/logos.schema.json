@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/logos.schema.json",
+  "title": "Logos",
+  "description": "Component used to display a set of logos",
+  "type": "object",
+  "properties": {
+    "headline": {
+      "type": "string",
+      "title": "Headline",
+      "description": "Headline for the logos",
+      "examples": ["Our Partners"]
+    },
+    "headlineAlignment": {
+      "type": "string",
+      "title": "Headline Alignment",
+      "description": "The alignment of the headline",
+      "enum": ["left", "center", "right"],
+      "examples": ["center"]
+    },
+    "logos": {
+      "type": "array",
+      "title": "Logos",
+      "description": "The logos to display",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "title": "URL",
+            "description": "The URL of the logo image",
+            "examples": ["https://example.com/logo1.jpg"]
+          },
+          "caption": {
+            "type": "string",
+            "title": "Caption",
+            "description": "The caption of the logo image",
+            "examples": ["Logo 1"]
+          }
+        },
+        "required": ["url"]
+      },
+      "minItems": 1,
+      "maxItems": 20
+    },
+    "logosPerRow": {
+      "type": "integer",
+      "title": "Logos Per Row",
+      "description": "The amount of logos to display per row",
+      "minimum": 1,
+      "maximum": 10,
+      "examples": [5]
+    },
+    "ctaText": {
+      "type": "string",
+      "title": "Call to Action Text",
+      "description": "The call to action text",
+      "examples": ["See all our partners"]
+    }
+  },
+  "required": ["logos"]
+}
