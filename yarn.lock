@@ -2436,6 +2436,15 @@
     photoswipe "^5.3.7"
     vhtml "^2.2.0"
 
+"@kickstartds/blog@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.npmjs.org/@kickstartds/blog/-/blog-2.2.0.tgz#c68ff77f08f51399af907fa8a25bc7fa902bde39"
+  integrity sha512-FcmwmfV8nLJCSfB1SQmuKQ2WWXy4YDw1/K5pSfRF5TWPyCVCWvkoE0xyI8HuqB1liqh8CtdVdw7SUyV3HVtJ+A==
+  dependencies:
+    "@babel/runtime" "^7.21.5"
+    classnames "^2.3.2"
+    date-fns "^2.30.0"
+
 "@kickstartds/content@^2.1.0":
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@kickstartds/content/-/content-2.1.0.tgz#540b44fb4c482ec69f456583b0e9609bda235a2d"
@@ -2465,6 +2474,14 @@
     lodash-es "^4.17.21"
     pubsub-js "^1.9.4"
     sass "^1.62.1"
+
+"@kickstartds/form@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.npmjs.org/@kickstartds/form/-/form-2.2.0.tgz#49c4343aac35584cd774d3a3616dba4752bef5d5"
+  integrity sha512-dgiz9mVpRyY/ZWaUQ13cbO1g85SJFYstuHqDsnDNLRxxuydPZlKNZJH/5/46DGYK5rLcglh9gf7HFH8O4/93kA==
+  dependencies:
+    "@babel/runtime" "^7.21.5"
+    classnames "^2.3.2"
 
 "@kickstartds/json-schema-viewer@^1.1.0":
   version "1.1.0"
@@ -6322,6 +6339,13 @@ data-urls@^4.0.0:
     abab "^2.0.6"
     whatwg-mimetype "^3.0.0"
     whatwg-url "^12.0.0"
+
+date-fns@^2.30.0:
+  version "2.30.0"
+  resolved "https://registry.npmjs.org/date-fns/-/date-fns-2.30.0.tgz#f367e644839ff57894ec6ac480de40cae4b0f4d0"
+  integrity sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==
+  dependencies:
+    "@babel/runtime" "^7.21.0"
 
 debug@2.6.9, debug@^2.6.9:
   version "2.6.9"
@@ -12873,6 +12897,7 @@ strict-uri-encode@^2.0.0:
   integrity sha512-QwiXZgpRcKkhTj2Scnn++4PKtWsH0kpzZ62L2R6c/LUVYv7hVnZqcg2+sMuT6R7Jusu1vviK/MFsu6kNJfWlEQ==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -14375,6 +14400,7 @@ wordwrapjs@^4.0.0:
     typical "^5.2.0"
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==

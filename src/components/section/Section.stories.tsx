@@ -1,3 +1,5 @@
+import { Meta, StoryObj } from "@storybook/react";
+import { JSONSchema7 } from "json-schema";
 import merge from "deepmerge";
 import { pack, unpack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import sectionStories from "@kickstartds/base/lib/section/section.stories";
@@ -5,63 +7,61 @@ import TeaserCardStory, {
   CardWithImage,
 } from "../teaser-card/TeaserCard.stories";
 import schema from "./section.schema.dereffed.json";
+import { TeaserCard } from "../teaser-card/TeaserCardComponent";
 
 const Section = sectionStories.component;
-CardWithImage.displayName = "Teaser Card";
 const Template = (args) => {
   return (
     <Section {...args}>
-      <CardWithImage
+      <TeaserCard
         {...merge(TeaserCardStory.args, unpack(CardWithImage.args))}
       />
-      <CardWithImage
+      <TeaserCard
         {...merge(TeaserCardStory.args, unpack(CardWithImage.args))}
       />
-      <CardWithImage
+      <TeaserCard
         {...merge(TeaserCardStory.args, unpack(CardWithImage.args))}
       />
     </Section>
   );
 };
 
-const { args, argTypes } = getArgsShared(schema);
-
-export default {
+const meta: Meta<typeof Section> = {
   ...sectionStories,
   title: "Layout/Section",
-  args,
-  argTypes,
+  ...getArgsShared(schema as JSONSchema7),
   component: Template,
   parameters: {
     jsonschema: schema,
   },
+  render: Template,
 };
+export default meta;
+type Story = StoryObj<typeof Section>;
 
-export const TeaserCards = {
-  args: pack({
-    headline: "Section headline",
-    mode: "tile",
-    ctas: [],
-  }),
-};
+export const TeaserCards: Story = {};
+TeaserCards.args = pack({
+  headline: "Section headline",
+  mode: "tile",
+  ctas: [],
+});
 
-export const WithCtas = {
-  args: pack({
-    headline: "Section headline",
-    mode: "tile",
-    ctas: [
-      {
-        label: "Section CTA 1",
-        target: "#",
-      },
-      {
-        label: "Section CTA 2",
-        target: "#",
-      },
-      {
-        label: "Section CTA 3",
-        target: "#",
-      },
-    ],
-  }),
-};
+export const WithCtas: Story = {};
+WithCtas.args = pack({
+  headline: "Section headline",
+  mode: "tile",
+  ctas: [
+    {
+      label: "Section CTA 1",
+      target: "#",
+    },
+    {
+      label: "Section CTA 2",
+      target: "#",
+    },
+    {
+      label: "Section CTA 3",
+      target: "#",
+    },
+  ],
+});
