@@ -2,6 +2,8 @@ import { HTMLAttributes, FC } from "react";
 
 import { FAQProps } from "./FaqProps";
 import "./faq.scss";
+import { Headline } from "../headline/HeadlineComponent";
+import { CollapsibleBox, RichText } from "../../playroom/components";
 
 export const FAQ: FC<FAQProps & HTMLAttributes<HTMLElement>> = ({
   headline,
@@ -11,14 +13,23 @@ export const FAQ: FC<FAQProps & HTMLAttributes<HTMLElement>> = ({
   align = "left",
 }) => {
   return (
-    <div className={`faq ${variant} ${align}`}>
-      {headline && <h2>{headline}</h2>}
-      {intro && <p>{intro}</p>}
+    <div className={`c-faq ${variant} ${align}`}>
+      {headline && (
+        <Headline
+          className="c-faq__headline"
+          spaceAfter="large"
+          text={headline}
+          align={align}
+          level={"h2"}
+        />
+      )}
+      {intro && <RichText className="c-faq__intro" text={intro} />}
       {questions.map((question, index) => (
-        <div key={index} className="question">
-          <h3>{question.question}</h3>
-          <p>{question.answer}</p>
-        </div>
+        <CollapsibleBox
+          key={index}
+          summary={question.question}
+          text={question.answer}
+        />
       ))}
     </div>
   );

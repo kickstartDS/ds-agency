@@ -28,6 +28,7 @@ export const Headline: FC<
   level = "h2",
   style = "h2",
   spaceAfter = "small",
+  className,
   renderContent = markdownRenderFn,
   renderSubheadline = markdownRenderFn,
   ...props
@@ -41,7 +42,8 @@ export const Headline: FC<
             className={classnames(
               "c-headline",
               `c-headline--align-${align}`,
-              spaceAfter && `c-headline--space-after-${spaceAfter}`
+              spaceAfter && `c-headline--space-after-${spaceAfter}`,
+              className
             )}
             {...props}
           >

@@ -61,7 +61,7 @@ export type Sub = string;
  * Switch order of headline and subheadline
  */
 export type SwitchOrder = boolean;
-export type SectionAlignment = "left" | "center";
+export type SectionAlignment = "left" | "center" | "right";
 /**
  * Level of headline to use
  */
@@ -74,6 +74,10 @@ export type Style = "h1" | "h2" | "h3" | "h4" | "p";
  * Whether to display space after headline
  */
 export type SpaceAfter = "minimum" | "small" | "large";
+/**
+ * Set a custom class name
+ */
+export type ClassName = string;
 /**
  * Headline for the teaser card
  */
@@ -171,6 +175,7 @@ export interface Headline1 {
   level: Level;
   style?: Style;
   spaceAfter?: SpaceAfter;
+  className?: ClassName;
   [k: string]: unknown;
 }
 /**
