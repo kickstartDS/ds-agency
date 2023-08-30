@@ -3,15 +3,15 @@ const { pathToFileURL } = require("node:url");
 const crypto = require("node:crypto");
 const sass = require("sass");
 const postcss = require("postcss");
-const postcssUrl = require("postcss-url");
 const sassNodeModulesImporter = require("./sassNodeModulesImporter");
 
-const postcssProcessor = postcss([postcssUrl({ url: "rebase" })]);
-
 module.exports = (options = {}) => {
+  const { postcssPlugins = [] } = options;
   const styleRe = /\.s?css$/;
   const styles = {};
   let absoluteOutputdir;
+
+  const postcssProcessor = postcss(postcssPlugins);
 
   return {
     name: "styles",
@@ -22,16 +22,16 @@ module.exports = (options = {}) => {
       const hash = crypto.createHash("sha1").update(code).digest("hex");
 
       if (styles[id]?.hash !== hash) {
-        const comiled = sass.compileString(code, {
+        const compiled = sass.compileString(code, {
           url: pathToFileURL(id),
           importers: [sassNodeModulesImporter],
         });
 
-        if (comiled.css.length) {
+        if (compiled.css.length) {
           styles[id] = {
-            source: comiled.css,
-            // fileName: `${path.parse(id).name}-${hash.slice(0, 4)}.css`,
-            fileName: `${path.parse(id).name}.css`,
+            source: compiled.css,
+            // name: `${path.parse(id).name}-${hash.slice(0, 4)}.css`,
+            name: `${path.parse(id).name}.css`,
           };
 
           return {
@@ -55,27 +55,27 @@ module.exports = (options = {}) => {
 
       if (!scssModuleIds.length) return null;
 
-      const chunkDir = path.dirname(chunk.fileName);
       let imports = "";
       for (const scssModuleId of scssModuleIds) {
         const style = styles[scssModuleId];
         if (!style.referenceId) {
-          const { source, fileName } = style;
+          const { source, name } = style;
+          const fileName = path.join(path.dirname(chunk.fileName), name);
 
           const processed = await postcssProcessor.process(source, {
             from: scssModuleId,
-            to: path.join(absoluteOutputdir, chunkDir),
+            to: path.join(absoluteOutputdir, fileName),
           });
 
           style.referenceId = this.emitFile({
             type: "asset",
-            name: fileName,
-            fileName: path.join(chunkDir, fileName),
+            name,
+            fileName,
             source: processed.css,
           });
-          chunk.imports.push(fileName);
-          chunk.importedBindings[fileName] = [];
-          imports += `import "./${fileName}";\n`;
+          chunk.imports.push(name);
+          chunk.importedBindings[name] = [];
+          imports += `import "./${name}";\n`;
         }
       }
 

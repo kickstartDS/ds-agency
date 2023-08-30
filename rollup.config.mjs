@@ -4,6 +4,7 @@ import copy from "rollup-plugin-copy";
 import fg from "fast-glob";
 import { paramCase } from "change-case";
 import { nodeExternals } from "rollup-plugin-node-externals";
+import postcssUrl from "postcss-url";
 import scss from "./scripts/rollupPluginScss.js";
 
 const componentFiles = fg.sync([
@@ -30,7 +31,14 @@ export default {
   plugins: [
     nodeExternals(),
     ts(),
-    scss(),
+    scss({
+      postcssPlugins: [
+        postcssUrl({
+          url: "rebase",
+          assetsPath: process.cwd(),
+        }),
+      ],
+    }),
     copy({
       targets: [
         {
