@@ -1,3 +1,15 @@
+# v1.0.0 (Thu Aug 31 2023)
+
+#### 💥 Breaking Change
+
+- bump version to 1.0.0 [#11](https://github.com/kickstartDS/ds-agency/pull/11) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v0.0.4 (Thu Aug 31 2023)
 
 #### 🐛 Bug Fix
