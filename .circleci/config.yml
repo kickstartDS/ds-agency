@@ -98,6 +98,9 @@ workflows:
 
       - update_website:
           context: kickstartDS
+          filters:
+            branches:
+              only: main
           requires:
             - release
 
