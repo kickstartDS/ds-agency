@@ -4,7 +4,7 @@ import { StatsProps } from "./StatsProps";
 import "./stats.scss";
 
 export const Stats: FC<StatsProps & HTMLAttributes<HTMLElement>> = ({
-  stats,
+  stats = [],
 }) => {
   return (
     <div>

@@ -1,7 +1,7 @@
 import classnames from "classnames";
 import { FC } from "react";
 import { CtaTextProps } from "./CtaTextProps";
-import { Headline } from "@kickstartds/base/lib/headline";
+import { Headline } from "../headline/HeadlineComponent";
 import { RichText } from "@kickstartds/base/lib/rich-text";
 import { Button } from "@kickstartds/base/lib/button";
 import "./cta-text.scss";
@@ -17,7 +17,6 @@ export const CtaText: FC<CtaTextProps> = ({
   <div className={classnames("c-cta-text", `c-cta-text--align-${align}`)}>
     <Headline
       level="h1"
-      // @ts-expect-error
       style="h1"
       align={align}
       text={headline}

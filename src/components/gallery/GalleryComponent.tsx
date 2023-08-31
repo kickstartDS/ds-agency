@@ -9,7 +9,7 @@ import { RichText } from "@kickstartds/base/lib/rich-text";
 export const Gallery: FC<GalleryProps & HTMLAttributes<HTMLElement>> = ({
   headline,
   text,
-  images,
+  images = [],
   align = "tiles",
 }) => {
   return (
@@ -18,9 +18,8 @@ export const Gallery: FC<GalleryProps & HTMLAttributes<HTMLElement>> = ({
       {text && <RichText text={text} />}
       <div className={`c-gallery__grid c-gallery__grid--align-${align}`}>
         {images.map((image, index) => (
-          <div className="c-gallery__image">
+          <div className="c-gallery__image" key={index}>
             <TextMedia
-              key={index}
               media={[
                 {
                   image: {

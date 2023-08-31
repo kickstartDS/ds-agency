@@ -6,7 +6,7 @@ import "./logos.scss";
 export const Logos: FC<LogosProps & HTMLAttributes<HTMLElement>> = ({
   headline,
   headlineAlign,
-  logos,
+  logos = [],
   logosPerRow,
   ctaText,
 }) => {

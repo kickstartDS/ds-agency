@@ -1,8 +1,6 @@
 import classnames from "classnames";
 import { FC } from "react";
 import { HeaderProps } from "./HeaderProps";
-import React from "react";
-import { Button } from "@kickstartds/base/lib/button";
 import { Picture } from "@kickstartds/base/lib/picture";
 import { Link } from "@kickstartds/base/lib/link";
 import { NavMain } from "../nav-main/NavMainComponent";
