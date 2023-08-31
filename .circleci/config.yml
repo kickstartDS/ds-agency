@@ -2,7 +2,7 @@ version: 2.1
 
 defaults: &defaults
   docker:
-    - image: cimg/node:16.14
+    - image: cimg/node:18.16
   working_directory: /mnt/ramdisk
   resource_class: medium+
 
@@ -47,6 +47,21 @@ jobs:
           name: Create Release
           command: yarn auto shipit
 
+  update_website:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - run:
+          name: Update ds-agency version in 11ty Starter
+          command: |
+            curl --request POST \
+              --url https://api.github.com/repos/kickstartDS/11ty-starter/dispatches \
+              --header "Accept: application/vnd.github+json" \
+              --header "Authorization: Bearer ${GH_TOKEN}" \
+              --header "X-GitHub-Api-Version: 2022-11-28" \
+              --data '{"event_type":"update_ds"}' \
+              --location
+
   build:
     <<: *defaults
     steps:
@@ -59,11 +74,6 @@ jobs:
           root: .
           paths:
             - storybook
-      - run:
-          name: Compress storybook folder
-          command: tar -czf storybook.tar.gz storybook
-      - store_artifacts:
-          path: storybook.tar.gz
 
   chromatic:
     <<: *defaults
@@ -82,16 +92,19 @@ workflows:
       - install
 
       - release:
-          context: UnistartDS
+          context: kickstartDS
           requires:
             - install
 
+      - update_website:
+          context: kickstartDS
+          requires:
+            - release
+
       - build:
-          context: UnistartDS
           requires:
             - install
 
       - chromatic:
-          context: UnistartDS
           requires:
             - build
