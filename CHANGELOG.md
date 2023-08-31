@@ -1,3 +1,15 @@
+# v1.0.1 (Thu Aug 31 2023)
+
+#### ⚠️ Pushed to `main`
+
+- build: fix production storybook build ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.0 (Thu Aug 31 2023)
 
 #### 💥 Breaking Change
