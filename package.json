@@ -36,9 +36,9 @@
     "dist"
   ],
   "scripts": {
-    "build-storybook": "yarn build-tokens && yarn schema && storybook build --output-dir storybook",
+    "build-storybook": "yarn build-tokens && yarn schema && storybook build",
     "build-tokens": "kickstartDS tokens compile",
-    "chromatic": "chromatic --storybook-build-dir 'storybook' --skip \"@(renovate/**|dependabot/**)\" --exit-zero-on-changes --exit-once-uploaded",
+    "chromatic": "chromatic --build-script-name \"build-storybook\" --skip \"@(renovate/**|dependabot/**)\" --exit-zero-on-changes --exit-once-uploaded",
     "init-tokens": "kickstartDS tokens init",
     "playroom": "run-p watch:* playroom:start",
     "playroom:start": "playroom start",
