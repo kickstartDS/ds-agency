@@ -13,6 +13,7 @@
   "license": "(MIT OR Apache-2.0)",
   "author": "Jonas Ulrich <jonas.ulrich@kickstartds.com> (https://www.kickstartDS.com/)",
   "sideEffects": [
+    "./src/global.client.ts",
     "./dist/global.client.js",
     "**/*.css"
   ],
@@ -44,7 +45,7 @@
     "playroom:start": "playroom start",
     "playroom:build": "playroom build",
     "prepare": "patch-package",
-    "prepublishOnly": "rm -rf dist && yarn build-tokens && rollup -c",
+    "prepublishOnly": "rm -rf dist && yarn build-tokens && yarn schema && rollup -c",
     "schema": "run-p schema:*",
     "schema:dereference-schemas": "kickstartDS schema dereference --schema-domain schema.mydesignsystem.com",
     "schema:generate-props": "kickstartDS schema types --schema-domain schema.mydesignsystem.com",
@@ -52,8 +53,8 @@
     "storybook": "storybook dev -p 6006",
     "token": "node scripts/customPropertyExtract.js",
     "watch:schema": "yarn schema && chokidar \"src/**/*.schema.json\" -c \"yarn schema\"",
-    "watch:token": "yarn build-tokens && yarn token && chokidar \"src/**/*-tokens.scss\" -c \"yarn token {path}\"",
-    "watch:dictionary": "chokidar \"src/token/dictionary/*.json\" -c \"yarn build-tokens\""
+    "watch:token": "yarn token && chokidar \"src/**/*-tokens.scss\" -c \"yarn token {path}\"",
+    "watch:dictionary": "yarn build-tokens && chokidar \"src/token/dictionary/*.json\" -c \"yarn build-tokens\""
   },
   "dependencies": {
     "@bedrock-layout/primitives": "^3.0.23",
