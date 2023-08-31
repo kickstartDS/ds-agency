@@ -62,19 +62,6 @@ jobs:
               --data '{"event_type":"update_ds"}' \
               --location
 
-  build:
-    <<: *defaults
-    steps:
-      - checkout
-      - restore_cache: *restore-cache-node
-      - run:
-          name: Build Storybook
-          command: yarn build-storybook
-      - persist_to_workspace:
-          root: .
-          paths:
-            - storybook
-
   chromatic:
     <<: *defaults
     steps:
@@ -83,13 +70,17 @@ jobs:
       - attach_workspace:
           at: .
       - run:
-          name: Deploy Storybook
+          name: Build & Deploy Storybook
           command: yarn chromatic
 
 workflows:
   release:
     jobs:
       - install
+
+      - chromatic:
+          requires:
+            - install
 
       - release:
           context: kickstartDS
@@ -98,13 +89,8 @@ workflows:
 
       - update_website:
           context: kickstartDS
+          filters:
+            branches:
+              only: main
           requires:
             - release
-
-      - build:
-          requires:
-            - install
-
-      - chromatic:
-          requires:
-            - build

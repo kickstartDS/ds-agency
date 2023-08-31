@@ -5,6 +5,7 @@ node_modules
 
 # Storybook
 storybook
+storybook-static
 public/design-tokens.source.json
 
 # kickstartDS
