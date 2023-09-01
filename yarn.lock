@@ -2547,10 +2547,10 @@
     react-router-dom "^5.3.0"
     styled-components "^5.3.1"
 
-"@kickstartds/style-dictionary@^2.0.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/style-dictionary/-/style-dictionary-2.2.0.tgz#65fef204bd4dfe9f8afb0007ca410c0b72e24fa1"
-  integrity sha512-hvI5+xHlAphaE3WkjW5wMgr7Z6PrzRKSxKjKDqTmazY5pXXqh9K757myAIVj6coXi6YSm3ue5KCznyvBAe04ag==
+"@kickstartds/style-dictionary@2.2.1-next.0", "@kickstartds/style-dictionary@^2.0.0":
+  version "2.2.1-next.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/style-dictionary/-/style-dictionary-2.2.1-next.0.tgz#9080358e8744bccc49fdb05eb02dfe9999eb2b79"
+  integrity sha512-1JUyQeSd3eQ4DXrBu/pgdHUViKEK1R4GoiimIE2748lRs1apyDeWy9DpedtbYo4lMhcFifYMU9WpyBc5yLiwRg==
   dependencies:
     "@babel/core" "^7.21.4"
     "@babel/preset-react" "^7.18.6"
