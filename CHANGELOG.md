@@ -1,3 +1,15 @@
+# v1.0.2 (Fri Sep 01 2023)
+
+#### ⚠️ Pushed to `main`
+
+- build: update style-dictionary package ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.1 (Thu Aug 31 2023)
 
 #### ⚠️ Pushed to `main`
