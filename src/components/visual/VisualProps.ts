@@ -129,8 +129,8 @@ export interface MediaWrapper {
  */
 export interface BackgroundImage {
   srcMobile: MobileImageSource;
-  srcTablet: TabletImageSource;
-  srcDesktop: DesktopImageSource;
+  srcTablet?: TabletImageSource;
+  srcDesktop?: DesktopImageSource;
   src?: OptionalSource;
   indent?: ImageIndent;
   alt?: AltText;
@@ -140,6 +140,6 @@ export interface BackgroundImage {
  */
 export interface BackgroundVideo {
   srcMobile: MobileVideoSource;
-  srcTablet: TabletVideoSource;
-  srcDesktop: DesktopVideoSource;
+  srcTablet?: TabletVideoSource;
+  srcDesktop?: DesktopVideoSource;
 }
