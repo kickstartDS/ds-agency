@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/blog-head.schema.json",
+  "title": "Blog Head",
+  "description": "Intro portion of a singular blog entry",
+  "type": "object",
+  "properties": {
+    "date": {
+      "title": "Published Date",
+      "description": "The date when the blog post was published",
+      "type": "string",
+      "format": "date",
+      "examples": ["12/30/2022"]
+    },
+    "tags": {
+      "type": "array",
+      "title": "Tags",
+      "description": "The tags associated with the blog post",
+      "items": {
+        "type": "string",
+        "examples": ["tech", "programming"]
+      }
+    },
+    "headline": {
+      "title": "Headline",
+      "description": "The headline of the blog post",
+      "type": "string",
+      "examples": ["This is a blog post headline"]
+    },
+    "image": {
+      "title": "Cover Image",
+      "description": "The source of the cover image for the blog post",
+      "type": "string",
+      "format": "uri",
+      "examples": ["img/agency.png"]
+    }
+  },
+  "required": ["headline"]
+}

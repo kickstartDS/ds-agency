@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/blog-teaser.schema.json",
+  "title": "Blog Teaser",
+  "description": "Display a blog teaser with date, tags, headline, teaser text and author",
+  "type": "object",
+  "properties": {
+    "date": {
+      "title": "Date",
+      "description": "The date of the blog post",
+      "type": "string",
+      "format": "date",
+      "examples": ["12/30/2022"]
+    },
+    "tags": {
+      "type": "array",
+      "title": "Tags",
+      "description": "The tags for the blog post",
+      "items": {
+        "type": "string",
+        "examples": ["tech", "programming"]
+      }
+    },
+    "headline": {
+      "title": "Headline",
+      "description": "The headline of the blog post",
+      "type": "string",
+      "examples": ["This is a blog post headline"]
+    },
+    "teaserText": {
+      "title": "Teaser Text",
+      "description": "The teaser text of the blog post",
+      "type": "string",
+      "examples": ["This is a teaser text for the blog post"]
+    },
+    "image": {
+      "title": "Image",
+      "description": "The preview image for the blog post",
+      "type": "string",
+      "format": "image",
+      "examples": ["img/agency.png"]
+    },
+    "link": {
+      "type": "object",
+      "title": "Link",
+      "description": "URL and label for the blog post linked",
+      "properties": {
+        "url": {
+          "title": "URL",
+          "description": "The blog entry URL to link",
+          "type": "string",
+          "format": "uri",
+          "examples": ["https://example.com"]
+        },
+        "label": {
+          "title": "Label",
+          "description": "The label to use for the link",
+          "type": "string",
+          "examples": ["Read more"],
+          "default": "Read more"
+        }
+      },
+      "required": ["url"]
+    },
+    "readingTime": {
+      "title": "Reading Time",
+      "description": "Time to read for the blog post",
+      "type": "string",
+      "examples": ["5 min read"]
+    },
+    "author": {
+      "type": "object",
+      "title": "Author",
+      "description": "The author of the blog post",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "description": "The name of the author",
+          "type": "string",
+          "examples": ["John Doe"]
+        },
+        "title": {
+          "title": "Title",
+          "description": "The title of the author",
+          "type": "string",
+          "examples": ["CEO"]
+        },
+        "image": {
+          "title": "Image",
+          "description": "The image URL of the author",
+          "type": "string",
+          "examples": ["img/customer-1.png"]
+        }
+      },
+      "required": ["name"]
+    }
+  },
+  "required": ["headline", "teaserText"]
+}

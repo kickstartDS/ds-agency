@@ -25,6 +25,7 @@ const preview = {
           ["Welcome", "Integration"],
           "Pages",
           "Components",
+          "Blog",
           "Layout",
           "Recipes",
           "Design Tokens",
