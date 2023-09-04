@@ -38,6 +38,13 @@
       "enum": ["default", "tile", "list"],
       "default": "default"
     },
+    "align": {
+      "type": "string",
+      "title": "alignment",
+      "description": "Alignment for the section headline and cta's",
+      "enum": ["left", "center"],
+      "default": "left"
+    },
     "content": {
       "type": "array",
       "title": "Content",

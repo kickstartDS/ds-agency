@@ -3,7 +3,6 @@ import { LogoTiles } from "@kickstartds/content/lib/logo-tiles";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
 import { Button } from "@kickstartds/base/lib/button";
-import { CollapsibleBox } from "@kickstartds/base/lib/collapsible-box";
 import { CtaText } from "../components/cta-text/CtaTextComponent";
 import { FAQ } from "../components/faq/FaqComponent";
 

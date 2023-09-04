@@ -1,6 +1,15 @@
 @use "headline-tokens.scss";
 
 .c-headline {
+  max-width: unset;
+
+  &--align-center {
+    .c-headline__headline {
+      text-align: center;
+    }
+  }
+
   &__headline {
+    text-align: left;
   }
 }

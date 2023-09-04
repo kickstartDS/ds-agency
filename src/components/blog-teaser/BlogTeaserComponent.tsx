@@ -4,6 +4,7 @@ import { PostTeaser } from "@kickstartds/blog/lib/post-teaser";
 
 import { BlogTeaserProps } from "./BlogTeaserProps";
 import "./blog-teaser.scss";
+import { Container } from "@kickstartds/core/lib/container";
 
 export const BlogTeaser: FC<BlogTeaserProps & HTMLAttributes<HTMLElement>> = ({
   date,
@@ -31,24 +32,26 @@ export const BlogTeaser: FC<BlogTeaserProps & HTMLAttributes<HTMLElement>> = ({
     });
 
   return (
-    <PostTeaser
-      image={{ src: image }}
-      meta={{
-        author: {
-          image: author.image && { src: author.image },
-          name: author.name,
-        },
-        items: teaserMetaItems,
-      }}
-      link={{
-        label: link.label || "Read more",
-        href: link.url,
-      }}
-      title={headline}
-      body={teaserText}
-      categories={tags.map((tag) => {
-        return { label: tag };
-      })}
-    />
+    <Container name="post-teaser">
+      <PostTeaser
+        image={{ src: image }}
+        meta={{
+          author: {
+            image: author.image && { src: author.image },
+            name: author.name,
+          },
+          items: teaserMetaItems,
+        }}
+        link={{
+          label: link.label || "Read more",
+          href: link.url,
+        }}
+        title={headline}
+        body={teaserText}
+        categories={tags.map((tag) => {
+          return { label: tag };
+        })}
+      />
+    </Container>
   );
 };

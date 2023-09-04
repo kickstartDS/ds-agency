@@ -26,6 +26,10 @@ export type Gutter = "large" | "default" | "small" | "none";
  */
 export type Mode = "default" | "tile" | "list";
 /**
+ * Alignment for the section headline and cta's
+ */
+export type Alignment = "left" | "center";
+/**
  * Text content to display inside the button
  */
 export type Label = string;
@@ -144,6 +148,7 @@ export interface SectionProps {
   width?: Width;
   gutter?: Gutter;
   mode?: Mode;
+  align?: Alignment;
   content?: Content;
   style?: Style1;
   spaceBefore?: SpaceBefore;

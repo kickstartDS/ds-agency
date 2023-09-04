@@ -5,7 +5,7 @@ import { BlogTeaser } from "../components/blog-teaser/BlogTeaserComponent";
 
 const Page = () => (
   <>
-    <Section width="wide" headline="Featured article">
+    <Section align="left" width="wide" headline="Featured article">
       <BlogTeaser
         date="12/30/2022"
         tags={["Design Systems", "Headless Websites", "Training"]}

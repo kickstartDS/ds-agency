@@ -23,7 +23,7 @@ export const Headline: FC<
 > = ({
   text,
   sub,
-  align,
+  align = "left",
   switchOrder = false,
   level = "h2",
   style = "h2",

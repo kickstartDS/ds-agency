@@ -1,1 +1,18 @@
 @use "section-tokens.scss";
+
+.l-section {
+  &.l-section--align-center {
+    .l-section__ctas {
+      justify-content: center;
+    }
+  }
+
+  &__ctas {
+    display: flex;
+    gap: var(--ks-spacing-stack-s) var(--ks-spacing-inline-s);
+
+    .l-section--align-center & {
+      justify-content: center;
+    }
+  }
+}
