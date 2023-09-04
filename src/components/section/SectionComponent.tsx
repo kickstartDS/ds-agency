@@ -13,7 +13,7 @@ import classnames from "classnames";
 export const Section: FC<SectionProps> = ({
   headline,
   sub,
-  align = "left",
+  align,
   width = "default",
   gutter = "default",
   mode = "default",
@@ -30,8 +30,8 @@ export const Section: FC<SectionProps> = ({
       <SectionContextDefault
         {...props}
         // @ts-expect-error
+        align={undefined}
         background={style}
-        align={align}
         headline={{
           content: headline,
           // @ts-expect-error

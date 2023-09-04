@@ -25,6 +25,6 @@ Default.args = pack({
   quote: "This product is amazing!",
   name: "John Doe",
   title: "CEO",
-  image: "https://example.com/image.jpg",
+  image: "img/customer-1.png",
   rating: 5,
 });

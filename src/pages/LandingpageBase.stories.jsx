@@ -1,5 +1,4 @@
 import { Section } from "@kickstartds/base/lib/section";
-import { LogoTiles } from "@kickstartds/content/lib/logo-tiles";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
 import { Button } from "@kickstartds/base/lib/button";

@@ -18,6 +18,7 @@ const Page = () => (
       />
     </Section>
     <Section
+      align="center"
       width="wide"
       headline="More articles"
       ctas={[{ label: "Load more", target: "#" }]}

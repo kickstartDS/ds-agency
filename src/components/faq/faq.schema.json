@@ -5,18 +5,6 @@
   "description": "Component used to display a FAQ section",
   "type": "object",
   "properties": {
-    "headline": {
-      "type": "string",
-      "title": "Headline",
-      "description": "Headline for the FAQ section",
-      "examples": ["Frequently Asked Questions"]
-    },
-    "intro": {
-      "type": "string",
-      "title": "Intro",
-      "description": "Introductory text for the FAQ section",
-      "examples": ["Here are some common questions about our product"]
-    },
     "questions": {
       "type": "array",
       "title": "Questions",

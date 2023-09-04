@@ -6,14 +6,6 @@
  */
 
 /**
- * Headline for the FAQ section
- */
-export type Headline = string;
-/**
- * Introductory text for the FAQ section
- */
-export type Intro = string;
-/**
  * The questions and answers in the FAQ section
  *
  * @minItems 1
@@ -51,8 +43,6 @@ export type Align = "left" | "center" | "right";
  * Component used to display a FAQ section
  */
 export interface FAQProps {
-  headline?: Headline;
-  intro?: Intro;
   questions: Questions;
   variant?: Variant;
   align?: Align;
