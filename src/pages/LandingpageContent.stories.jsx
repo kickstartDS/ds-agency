@@ -9,6 +9,7 @@ import { Button } from "@kickstartds/base/lib/button";
 import { FAQ } from "../components/faq/FaqComponent";
 import { CtaText } from "../components/cta-text/CtaTextComponent";
 import { Header } from "../components/header/HeaderComponent";
+import { Footer } from "../components/footer/FooterComponent";
 
 import { Visual } from "../components/visual/VisualComponent";
 
@@ -291,6 +292,7 @@ We value efficiency without compromising quality.Our secret weapon? kickstartDS,
         ctaToggle
       />
     </Section>
+    <Footer />
   </>
 );
 

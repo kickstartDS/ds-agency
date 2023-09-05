@@ -4,9 +4,12 @@ import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
 import { Button } from "@kickstartds/base/lib/button";
 import { CtaText } from "../components/cta-text/CtaTextComponent";
 import { FAQ } from "../components/faq/FaqComponent";
+import { Header } from "../components/header/HeaderComponent";
+import { Footer } from "../components/footer/FooterComponent";
 
 const Page = () => (
   <>
+    <Header />
     <Section width="default">
       <CtaText
         align="left"
@@ -239,6 +242,7 @@ Alex Chen, CEO of LaunchPad Innovations`}
         ctaToggle
       />
     </Section>
+    <Footer />
   </>
 );
 
