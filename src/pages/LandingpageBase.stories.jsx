@@ -222,7 +222,7 @@ Alex Chen, CEO of LaunchPad Innovations`}
         }
       />
     </Section>
-    <Section style="accent">
+    <Section >
       <CtaText
         align="left"
         headline="Ready to embark on a transformative digital journey?"

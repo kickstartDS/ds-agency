@@ -12,16 +12,15 @@
 
 .c-footer {
   position: relative;
-  background-color: var(--ks-background-color-default);
   z-index: 1;
   width: 100%;
   display: flex;
-  padding: var(--l-section--space-small) 0;
+  background-color: var(--ks-background-color-default);
 
   &__content {
-    border-top: var(--ks-border-color-accent);
-    padding: 0 var(--l-section--content-padding);
-    max-width: var(--l-section--content-width-max);
+    padding: var(--l-section--space-small) var(--l-section--content-padding);
+    border-top: 1px solid var(--ks-border-color-accent);
+    max-width: var(--l-section--content-width-wide);
     width: 100%;
     margin: auto;
     display: flex;
