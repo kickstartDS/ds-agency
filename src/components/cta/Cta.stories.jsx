@@ -1,14 +1,14 @@
-import { CtaText } from "./CtaTextComponent";
+import { Cta } from "./CtaComponent";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
-import schema from "./cta-text.schema.dereffed.json";
+import schema from "./cta.schema.dereffed.json";
 
 const { args, argTypes } = getArgsShared(schema);
 
 export default {
-  title: "Components/CtaText",
+  title: "Components/Cta",
   args,
   argTypes,
-  component: CtaText,
+  component: Cta,
   parameters: {
     jsonschema: schema,
   },

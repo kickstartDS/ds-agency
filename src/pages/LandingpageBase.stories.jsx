@@ -2,7 +2,7 @@ import { Section } from "@kickstartds/base/lib/section";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
 import { Button } from "@kickstartds/base/lib/button";
-import { CtaText } from "../components/cta-text/CtaTextComponent";
+import { Cta } from "../components/cta/CtaComponent";
 import { FAQ } from "../components/faq/FaqComponent";
 import { Header } from "../components/header/HeaderComponent";
 import { Footer } from "../components/footer/FooterComponent";
@@ -11,7 +11,7 @@ const Page = () => (
   <>
     <Header />
     <Section width="default">
-      <CtaText
+      <Cta
         align="left"
         headline="We simplify the process of building and scaling your **Design System**"
         text={`
@@ -147,7 +147,7 @@ Alex Chen, CEO of LaunchPad Innovations`}
       />
     </Section>
     <Section inverted>
-      <CtaText
+      <Cta
         align="left"
         headline="Get in touch and chat with us about getting your product or platform to market faster"
         primaryCta={{
@@ -223,7 +223,7 @@ Alex Chen, CEO of LaunchPad Innovations`}
       />
     </Section>
     <Section >
-      <CtaText
+      <Cta
         align="left"
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."

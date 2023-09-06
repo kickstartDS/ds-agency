@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://schema.mydesignsystem.de/cta-text.schema.json",
+  "$id": "http://schema.mydesignsystem.de/cta.schema.json",
   "title": "Cta Text",
   "type": "object",
   "properties": {

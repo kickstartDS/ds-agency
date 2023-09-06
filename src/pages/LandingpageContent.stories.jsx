@@ -7,11 +7,12 @@ import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
 import { Button } from "@kickstartds/base/lib/button";
 import { FAQ } from "../components/faq/FaqComponent";
-import { CtaText } from "../components/cta-text/CtaTextComponent";
+import { Cta } from "../components/cta/CtaComponent";
 import { Header } from "../components/header/HeaderComponent";
 import { Footer } from "../components/footer/FooterComponent";
 
 import { Visual } from "../components/visual/VisualComponent";
+import { Logos } from "../components/logos/LogosComponent";
 
 const Page = () => (
   <>
@@ -34,7 +35,10 @@ const Page = () => (
     </Section>
 
     <Section width="max">
-      <LogoTiles
+      <Logos
+        tagline="Your Success, Our Commitment"
+        align="center"
+        logosPerRow={6}
         logos={[
           {
             src: "img/logoipsum-212.svg"
@@ -55,6 +59,12 @@ const Page = () => (
             src: "img/logoipsum-286.svg"
           }
         ]}
+        cta={{
+          text: "Explore the success stories of our valued customers and discover more about their journey.",
+          link: "#",
+          label: "See all our partners",
+          style: "text"
+        }}
       />
     </Section>
 
@@ -197,7 +207,7 @@ We value efficiency without compromising quality.Our secret weapon? kickstartDS,
 
     </Section>
     <Section inverted>
-      <CtaText
+      <Cta
         align="left"
         headline="Get in touch and chat with us about getting your product or platform to market faster"
         primaryCta={{
@@ -273,7 +283,7 @@ We value efficiency without compromising quality.Our secret weapon? kickstartDS,
       />
     </Section>
     <Section style="accent">
-      <CtaText
+      <Cta
         align="left"
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."

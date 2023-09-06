@@ -6,13 +6,9 @@
  */
 
 /**
- * Headline for the logos
+ * A short tagline atop the logos
  */
-export type Headline = string;
-/**
- * The alignment of the headline
- */
-export type HeadlineAlign = "left" | "center" | "right";
+export type LogoTagline = string;
 /**
  * The logos to display
  *
@@ -22,1091 +18,1091 @@ export type HeadlineAlign = "left" | "center" | "right";
 export type Logos =
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ]
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      }
-    ]
-  | [
-      {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      },
-      {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      },
-      {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ]
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      },
-      {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ]
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      },
-      {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ]
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      },
-      {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ]
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      },
-      {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ]
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      },
-      {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ]
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      },
-      {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ]
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      },
-      {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ]
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      },
-      {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ]
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      },
-      {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ]
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      },
-      {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ]
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      },
-      {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ]
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      },
-      {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ]
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      },
-      {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ]
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      },
-      {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ]
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      },
-      {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ]
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
-        [k: string]: unknown;
-      },
-      {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ]
   | [
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      }
+    ]
+  | [
+      {
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       },
       {
-        url: URL;
-        caption?: Caption;
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      },
+      {
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      },
+      {
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      },
+      {
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      },
+      {
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      },
+      {
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      },
+      {
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      },
+      {
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      },
+      {
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      },
+      {
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      },
+      {
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      },
+      {
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      },
+      {
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      },
+      {
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      },
+      {
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      },
+      {
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      },
+      {
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      },
+      {
+        src: URL;
+        alt?: Caption;
+        [k: string]: unknown;
+      },
+      {
+        src: URL;
+        alt?: Caption;
         [k: string]: unknown;
       }
     ];
@@ -1115,26 +1111,48 @@ export type Logos =
  */
 export type URL = string;
 /**
- * The caption of the logo image
+ * The alt text of the logo
  */
 export type Caption = string;
+/**
+ * The alignment of the logo layout
+ */
+export type Alignment = "left" | "center";
 /**
  * The amount of logos to display per row
  */
 export type LogosPerRow = number;
 /**
- * The call to action text
+ * A short CTA text
  */
 export type CallToActionText = string;
+/**
+ * The CTA link
+ */
+export type CallToActionLink = string;
+/**
+ * The text label displayed on the link
+ */
+export type LinkLabel = string;
 
 /**
  * Component used to display a set of logos
  */
 export interface LogosProps {
-  headline?: Headline;
-  headlineAlign?: HeadlineAlign;
+  tagline?: LogoTagline;
   logos: Logos;
+  align?: Alignment;
   logosPerRow?: LogosPerRow;
-  ctaText?: CallToActionText;
+  cta?: CallToAction;
+  [k: string]: unknown;
+}
+/**
+ * The call to action
+ */
+export interface CallToAction {
+  text?: CallToActionText;
+  link: CallToActionLink;
+  label: LinkLabel;
+  style: "button" | "text";
   [k: string]: unknown;
 }

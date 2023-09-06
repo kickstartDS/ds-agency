@@ -1,11 +1,11 @@
-.c-cta-text {
+.c-cta {
   display: flex;
   flex-direction: column;
   gap: var(--ks-spacing-stack-m);
   max-width: var(--l-section--content-width-default);
 
   &--align-center {
-    .c-cta-text__links {
+    .c-cta__links {
       justify-content: center;
     }
   }
