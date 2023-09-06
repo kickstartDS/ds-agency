@@ -42,11 +42,11 @@ const Page = () => (
         </div>
         <BlogAside
           author={{
-            name: "John Doe",
+            name: "Jane Doe",
             byline: "Senior Developer",
             image: "img/author-1.png",
-            twitter: "johndoe",
-            email: "john.doe@example.com",
+            twitter: "Janedoe",
+            email: "Jane.doe@example.com",
           }}
           socialSharing={[
             {
