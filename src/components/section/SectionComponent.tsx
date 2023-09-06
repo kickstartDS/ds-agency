@@ -13,7 +13,7 @@ import classnames from "classnames";
 export const Section: FC<SectionProps> = ({
   headline,
   sub,
-  align,
+  align = "left",
   width = "default",
   gutter = "default",
   mode = "default",

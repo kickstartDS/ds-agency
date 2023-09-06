@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import { Split } from "@bedrock-layout/split";
+import { Split } from "../components/split/SplitComponent";
 
 import { BlogHead } from "../components/blog-head/BlogHeadComponent";
 import { Section } from "../components/section/SectionComponent";
@@ -10,17 +10,16 @@ import { RichText } from "@kickstartds/base/lib/rich-text";
 const Page = () => (
   <>
     <Section width="wide">
-      <BlogHead
-        date="12/30/2022"
-        tags={["Technology", "AI"]}
-        headline="The Future of AI: A Glimpse into the Unseen"
-        image="img/agency.png"
-      />
-    </Section>
-    <Section width="full">
-      <Split fraction="3/4">
-        <RichText
-          text={`
+      <Split layout="sidebarRight">
+        <div>
+          <BlogHead
+            date="12/30/2022"
+            tags={["Technology", "AI"]}
+            headline="The Future of AI: A Glimpse into the Unseen"
+            image="img/agency.png"
+          />
+          <RichText
+            text={`
   ## Introduction
   The future of **Artificial Intelligence (AI)** is a topic that has been the subject of much debate. It's a field that's constantly evolving, with new advancements and breakthroughs happening all the time. [Learn more about AI](https://en.wikipedia.org/wiki/Artificial_intelligence)
 
@@ -39,12 +38,13 @@ const Page = () => (
   ## Conclusion
   The future of AI is exciting and full of potential. However, it's important that we navigate this future with caution, ensuring that the benefits of AI are accessible to all, while minimizing its potential risks.
           `}
-        />
+          />
+        </div>
         <BlogAside
           author={{
             name: "John Doe",
             byline: "Senior Developer",
-            image: "img/customer-1.png",
+            image: "img/author-1.png",
             twitter: "johndoe",
             email: "john.doe@example.com",
           }}

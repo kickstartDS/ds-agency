@@ -7,13 +7,16 @@ import { NavMain } from "../nav-main/NavMainComponent";
 import "./header.scss";
 
 export const Header: FC<HeaderProps> = ({}) => (
-  <div className={classnames("c-header")}>
-    <div className="c-header__content">
-      <Link className="c-header__logo" href="#">
-        <Picture src="logo.svg" />
-      </Link>
+  <>
+    <div className={classnames("c-header")}>
+      <div className="c-header__content">
+        <Link className="c-header__logo" href="#">
+          <Picture src="logo.svg" />
+        </Link>
 
-      <NavMain />
+        <NavMain />
+      </div>
     </div>
-  </div>
+    <div className="c-header--spacer"></div>
+  </>
 );

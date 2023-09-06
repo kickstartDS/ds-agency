@@ -40,3 +40,10 @@
     }
   }
 }
+
+.c-header--spacer {
+  height: var(--g-header-height);
+  z-index: -1;
+  position: relative;
+  background-color: var(--ks-background-color-default);
+}
