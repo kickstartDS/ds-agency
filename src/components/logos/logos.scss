@@ -48,15 +48,15 @@
   }
 
   .c-logo-tiles {
-    display: grid;
-    grid-template-columns: repeat(var(--c-logo-tiles--cols), 1fr);
-    grid-gap: var(--c-logo-tiles--gutter);
+    gap: calc(var(--c-logo-tiles--gutter) / 2) var(--c-logo-tiles--gutter);
     margin: 0;
 
     &__col {
       margin: 0;
-      max-width: unset;
       aspect-ratio: 16/9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       &::after {
         content: none;
