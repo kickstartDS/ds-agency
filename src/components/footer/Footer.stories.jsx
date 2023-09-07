@@ -5,7 +5,7 @@ import schema from "./footer.schema.dereffed.json";
 const { args, argTypes } = getArgsShared(schema);
 
 export default {
-  title: "Components/Footer",
+  title: "Layout/Footer",
   args,
   argTypes,
   component: Footer,

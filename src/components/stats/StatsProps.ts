@@ -10,6 +10,10 @@
  */
 export type Value = number;
 /**
+ * The icon of the stat
+ */
+export type Icon = string;
+/**
  * The label of the stat
  */
 export type Label = string;
@@ -27,6 +31,7 @@ export interface StatsProps {
 }
 export interface Stat {
   value: Value;
+  icon?: Icon;
   label?: Label;
   [k: string]: unknown;
 }

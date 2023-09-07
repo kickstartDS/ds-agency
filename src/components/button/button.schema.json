@@ -8,7 +8,8 @@
     "label": {
       "type": "string",
       "title": "Label",
-      "description": "Text content to display inside the button"
+      "description": "Text content to display inside the button",
+      "examples": ["Book a meeting"]
     },
     "target": {
       "type": "string",

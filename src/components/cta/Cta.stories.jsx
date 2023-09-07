@@ -17,9 +17,9 @@ export default {
 export const Default = {
   args: pack({
     headline: "The Sanity & Next.js Experts",
-    text: "Experience the speed & scalability unlike anything seen before with our Sanity CMS powered websites, web apps & composable architecture.",
-    ctaLabel: "Get in touch",
-    ctaToggle: true,
-    ctaTarget: "#",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+    secondaryCta: {
+      label: "Contact us"
+    }
   }),
 };

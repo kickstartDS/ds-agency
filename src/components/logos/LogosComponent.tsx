@@ -10,7 +10,7 @@ export const Logos: FC<LogosProps & HTMLAttributes<HTMLElement>> = ({
   logos = [],
   tagline,
   align,
-  cta = { style: "text" },
+  cta,
   logosPerRow = "6",
 }) => {
   return (
@@ -21,27 +21,30 @@ export const Logos: FC<LogosProps & HTMLAttributes<HTMLElement>> = ({
           className={classnames(`c-logo-tiles--cols-${logosPerRow}`)}
           logos={logos}
         />
-
-        <div className="c-logos__cta">
-          <div className="c-logos__cta__text">
-            {cta?.text}
-            {cta?.style === "text" ? (
-              <>
-                &#32;
-                <Link className="c-logos__cta__link" href={cta.link}>
-                  {cta.label}
-                </Link>
-              </>
+        {cta?.toggle ? (
+          <div className="c-logos__cta">
+            <div className="c-logos__cta__text">
+              {cta?.text}
+              {cta?.style === "text" ? (
+                <>
+                  &#32;
+                  <Link className="c-logos__cta__link" href={cta.link}>
+                    {cta.label}
+                  </Link>
+                </>
+              ) : (
+                ""
+              )}
+            </div>
+            {cta?.style === "button" ? (
+              <Button href={cta.link} label={cta.label} />
             ) : (
               ""
             )}
           </div>
-          {cta?.style === "button" ? (
-            <Button href={cta.link} label={cta.label} />
-          ) : (
-            ""
-          )}
-        </div>
+        ) : (
+          ""
+        )}
       </div>
     </>
   );

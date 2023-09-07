@@ -24,8 +24,16 @@ Default.args = pack({
   headline: "FAQ Headline",
   intro: "This is an introduction to the FAQ",
   questions: [
-    { question: "Question 1", answer: "Answer 1" },
-    { question: "Question 2", answer: "Answer 2" },
+    {
+      question: "What is a Design System?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+    },
+    {
+      question: "What are the benefits of investing in a Design System?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+    },
   ],
   variant: "default",
   align: "left",

@@ -18,6 +18,12 @@
             "type": "number",
             "examples": [1, 2, 3, 4]
           },
+          "icon": {
+            "title": "Icon",
+            "description": "The icon of the stat",
+            "type": "string",
+            "examples": ["person", "home", "map"]
+          },
           "label": {
             "title": "Label",
             "description": "The label of the stat",

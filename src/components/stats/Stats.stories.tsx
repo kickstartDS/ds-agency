@@ -21,8 +21,8 @@ type Story = StoryObj<typeof Stats>;
 export const Default: Story = {};
 Default.args = pack({
   stats: [
-    { value: 10, label: "Stat 1" },
-    { value: 20, label: "Stat 2" },
-    { value: 30, label: "Stat 3" },
+    { value: 10, label: "Stat 1", icon: "person" },
+    { value: 20, label: "Stat 2", icon: "home" },
+    { value: 30, label: "Stat 3", icon: "map" },
   ],
 });

@@ -18,34 +18,71 @@ const meta: Meta<typeof Logos> = {
 export default meta;
 type Story = StoryObj<typeof Logos>;
 
-export const Default: Story = {};
-Default.args = pack({
-  logos: [
-    {
-      src: "img/logoipsum-212.svg",
-      alt: "Logo 1",
+export const Basic = {
+  args: pack({
+    logos: [
+      {
+        src: "img/logoipsum-212.svg",
+        alt: "Logo 1",
+      },
+      {
+        src: "img/logoipsum-217.svg",
+        alt: "Logo 2",
+      },
+      {
+        src: "img/logoipsum-239.svg",
+        alt: "Logo 3",
+      },
+      {
+        src: "img/logoipsum-244.svg",
+        alt: "Logo 4",
+      },
+      {
+        src: "img/logoipsum-250.svg",
+        alt: "Logo 5",
+      },
+      {
+        src: "img/logoipsum-286.svg",
+        alt: "Logo 6",
+      },
+    ],
+    cta: {
+      toggle: false,
     },
-    {
-      src: "img/logoipsum-217.svg",
-      alt: "Logo 2",
+  }),
+};
+
+export const LeftAlignedWithTextLink = {
+  args: pack({
+    logos: [
+      {
+        src: "img/logoipsum-212.svg",
+        alt: "Logo 1",
+      },
+      {
+        src: "img/logoipsum-217.svg",
+        alt: "Logo 2",
+      },
+      {
+        src: "img/logoipsum-239.svg",
+        alt: "Logo 3",
+      },
+      {
+        src: "img/logoipsum-244.svg",
+        alt: "Logo 4",
+      },
+      {
+        src: "img/logoipsum-250.svg",
+        alt: "Logo 5",
+      },
+      {
+        src: "img/logoipsum-286.svg",
+        alt: "Logo 6",
+      },
+    ],
+    cta: {
+      toggle: true,
     },
-    {
-      src: "img/logoipsum-239.svg",
-      alt: "Logo 3",
-    },
-    {
-      src: "img/logoipsum-244.svg",
-      alt: "Logo 4",
-    },
-    {
-      src: "img/logoipsum-250.svg",
-      alt: "Logo 5",
-    },
-    {
-      src: "img/logoipsum-286.svg",
-      alt: "Logo 6",
-    },
-  ],
-  logosPerRow: 2,
-  ctaText: "See More",
-});
+    align: "left",
+  }),
+};

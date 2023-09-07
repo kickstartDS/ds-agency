@@ -5,7 +5,7 @@ import schema from "./header.schema.dereffed.json";
 const { args, argTypes } = getArgsShared(schema);
 
 export default {
-  title: "Components/Header",
+  title: "Layout/Header",
   args,
   argTypes,
   component: Header,

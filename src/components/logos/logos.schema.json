@@ -63,6 +63,12 @@
       "title": "Call to Action",
       "description": "The call to action",
       "properties": {
+        "toggle": {
+          "type": "boolean",
+          "default": "false",
+          "title": "CTA Toggle",
+          "description": "Activate/disable the CTA"
+        },
         "text": {
           "type": "string",
           "title": "Call to Action Text",

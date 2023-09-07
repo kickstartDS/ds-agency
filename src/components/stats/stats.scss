@@ -1,0 +1,25 @@
+.c-stats {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__value {
+    color: var(--ks-color-fg);
+    font: var(--ks-font-interface-xl);
+    font-weight: var(--ks-font-weight-medium);
+  }
+
+  &__icon {
+    color: var(--ks-color-fg);
+  }
+
+  &__label {
+    color: var(--ks-color-fg);
+    font: var(--ks-font-interface-m);
+  }
+}
