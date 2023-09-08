@@ -205,6 +205,9 @@
         }
       },
       "stack": {
+        "xxs": {
+          "value": "{ks.spacing.xxs._}"
+        },
         "xs": {
           "value": "{ks.spacing.xs._}"
         },
@@ -219,9 +222,15 @@
         },
         "xl": {
           "value": "{ks.spacing.xl._}"
+        },
+        "xxl": {
+          "value": "{ks.spacing.xxl._}"
         }
       },
       "inline": {
+        "xxs": {
+          "value": "{ks.spacing.xxs._}"
+        },
         "xs": {
           "value": "{ks.spacing.xs._}"
         },
@@ -236,9 +245,15 @@
         },
         "xl": {
           "value": "{ks.spacing.xl._}"
+        },
+        "xxl": {
+          "value": "{ks.spacing.xxl._}"
         }
       },
       "inset": {
+        "xxs": {
+          "value": "{ks.spacing.xxs._}"
+        },
         "xs": {
           "value": "{ks.spacing.xs._}"
         },
@@ -253,6 +268,9 @@
         },
         "xl": {
           "value": "{ks.spacing.xl._}"
+        },
+        "xxl": {
+          "value": "{ks.spacing.xxl._}"
         }
       },
       "inset-squish": {

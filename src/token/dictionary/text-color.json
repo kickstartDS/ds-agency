@@ -243,7 +243,7 @@
       },
       "primary": {
         "base": {
-          "value": "{ks.color.primary.base}",
+          "value": "{ks.color.secondary.base}",
           "attributes": {
             "category": "color"
           },
@@ -254,7 +254,7 @@
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.primary.alpha.8.base}",
+            "value": "{ks.color.secondary.alpha.8.base}",
             "attributes": {
               "category": "color"
             },
@@ -265,7 +265,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.primary.alpha.8.base}",
+              "value": "{ks.color.secondary.alpha.8.base}",
               "attributes": {
                 "category": "color"
               },
@@ -277,7 +277,7 @@
           },
           "active": {
             "base": {
-              "value": "{ks.color.primary.alpha.8.base}",
+              "value": "{ks.color.secondary.alpha.8.base}",
               "attributes": {
                 "category": "color"
               },
@@ -289,7 +289,7 @@
           },
           "visited": {
             "base": {
-              "value": "{ks.color.primary.alpha.8.base}",
+              "value": "{ks.color.secondary.alpha.8.base}",
               "attributes": {
                 "category": "color"
               },

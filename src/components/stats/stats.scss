@@ -1,25 +1,41 @@
 .c-stats {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: var(--ks-spacing-stack-l) var(--ks-spacing-inline-m);
+  flex-wrap: wrap;
+  align-items: center;
 
   &__item {
+    flex: 1 1;
+    flex-basis: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: var(--ks-spacing-stack-xs);
+    max-width: 400px;
   }
 
   &__value {
     color: var(--ks-color-fg);
-    font: var(--ks-font-interface-xl);
+    font: var(--ks-font-display-xl);
     font-weight: var(--ks-font-weight-medium);
   }
 
   &__icon {
-    color: var(--ks-color-fg);
+    color: var(--ks-text-color-primary);
+    width: 4em;
+    height: 4em;
   }
 
   &__label {
     color: var(--ks-color-fg);
-    font: var(--ks-font-interface-m);
+    font: var(--ks-font-interface-xl);
+    text-align: center;
+  }
+
+  &__description {
+    color: var(--ks-text-color-default);
+    font: var(--ks-font-copy-s);
+    text-align: center;
   }
 }

@@ -29,9 +29,14 @@
             "description": "The label of the stat",
             "type": "string",
             "examples": ["Stat 1", "Stat 2", "Stat 3", "Stat 4"]
+          },
+          "description": {
+            "title": "Label",
+            "description": "The description of the stat",
+            "type": "string"
           }
         },
-        "required": ["value"],
+        "required": ["value", "label"],
         "examples": [
           {
             "value": 1,

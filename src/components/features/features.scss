@@ -1,0 +1,115 @@
+.c-feature {
+  --c-features-icon--color: var(--ks-text-color-primary);
+
+  &--small {
+    --c-features-icon--size: calc(var(--ks-line-height-interface-m) * var(--ks-font-size-interface-m));
+    --c-feature--stack: var(--ks-spacing-stack-xs);
+    --c-feature-icon--gap: var(--ks-spacing-xs);
+  }
+
+  &--large {
+    --c-features-icon--size: calc(var(--ks-font-size-copy-m) * 2.5);
+    --c-feature--stack: var(--ks-spacing-stack-s);
+    --c-feature-icon--gap: var(--ks-spacing-s);
+  }
+
+  &--stack.c-feature--large {
+    --c-feature-icon--gap: var(--ks-spacing-xs);
+  }
+}
+
+.c-features {
+  &--list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ks-spacing-stack-m);
+  }
+
+  &--small-tiles,
+  &--large-tiles {
+    display: grid;
+
+    .c-feature {
+      flex-basis: 300px;
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
+  }
+
+  &--small-tiles {
+    gap: var(--ks-spacing-stack-m) var(--ks-spacing-inline-s);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  &--large-tiles {
+    gap: var(--ks-spacing-stack-l) var(--ks-spacing-inline-m);
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+
+.c-feature {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: var(--c-feature--stack);
+
+  &--beside {
+    padding-left: calc(var(--c-features-icon--size) + var(--c-feature-icon--gap));
+
+    .c-feature__icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &--stack {
+    .c-feature__header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: var(--c-feature-icon--gap);
+  }
+
+  &__title {
+    font: var(--ks-font-interface-m);
+    color: var(--ks-color-fg);
+    font-family: var(--ks-font-family-display);
+    font-weight: var(--ks-font-weight-medium);
+  }
+
+  &__text {
+    color: var(--ks-text-color-default);
+    font: var(--ks-font-copy-s);
+    margin: 0;
+  }
+
+  &__icon {
+    color: var(--c-features-icon--color);
+    width: var(--c-features-icon--size);
+    height: var(--c-features-icon--size);
+  }
+
+  &__link {
+    font: var(--ks-font-copy-s);
+    display: flex;
+    align-items: center;
+    gap: var(--ks-spacing-xxs);
+    font-weight: var(--ks-font-weight-semi-bold) !important;
+
+    width: fit-content;
+    .icon {
+      width: 1.125em;
+      height: 1.125em;
+    }
+  }
+  &__button {
+    margin-top: calc(var(--c-feature--stack) * 0.5);
+  }
+}

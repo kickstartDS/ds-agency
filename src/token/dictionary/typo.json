@@ -52,6 +52,13 @@
           "presenter": "FontWeight"
         }
       },
+      "semi-bold": {
+        "value": 600,
+        "token": {
+          "category": "Font Weights",
+          "presenter": "FontWeight"
+        }
+      },
       "bold": {
         "value": 700,
         "token": {

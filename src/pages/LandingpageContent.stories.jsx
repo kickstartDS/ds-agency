@@ -1,12 +1,12 @@
 import { Section } from "@kickstartds/base/lib/section";
 import { QuotesSlider } from "@kickstartds/content/lib/quotes-slider";
-import { LogoTiles } from "@kickstartds/content/lib/logo-tiles";
 import { VisualSlider } from "@kickstartds/content/lib/visual-slider";
 import { Storytelling } from "@kickstartds/content/lib/storytelling";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
 import { Button } from "@kickstartds/base/lib/button";
 import { FAQ } from "../components/faq/FaqComponent";
+import { Stats } from "../components/stats/StatsComponent";
 import { Cta } from "../components/cta/CtaComponent";
 import { Header } from "../components/header/HeaderComponent";
 import { Footer } from "../components/footer/FooterComponent";
@@ -33,6 +33,29 @@ const Page = () => (
         }}
       />
     </Section>
+
+    <Section width="wide">
+      <Stats
+        stats={[
+          {
+            label: "Components",
+            value: "50+",
+            description: "We offer a rich library of over 50 meticulously crafted components to help you create cohesive and visually stunning user interfaces."
+          },
+          {
+            value: "30.000+",
+            label: "Lines of Documentation",
+            description: "Our comprehensive documentation consists of over 30,000 lines, making it easy for your team to understand and implement our design system."
+          },
+          {
+            label: "Customizability",
+            value: "100%",
+            description: "Our design system is 100% customizable, allowing you to tailor it to your brand's unique identity and design requirements."
+          },
+        ]}
+      />
+    </Section>
+
 
     <Section width="max">
       <Logos
@@ -67,6 +90,7 @@ const Page = () => (
         }}
       />
     </Section>
+
 
     <Section
       headline="Design System Services"
@@ -108,6 +132,8 @@ Ready to make your digital journey exceptional?`}
         />
       </div>
     </Section>
+
+
     <Section width="full" style="accent" align="left" mode="list">
       <Storytelling
         box={{

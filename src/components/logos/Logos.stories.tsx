@@ -18,7 +18,7 @@ const meta: Meta<typeof Logos> = {
 export default meta;
 type Story = StoryObj<typeof Logos>;
 
-export const Basic = {
+export const Basic: Story = {
   args: pack({
     logos: [
       {
@@ -52,7 +52,7 @@ export const Basic = {
   }),
 };
 
-export const LeftAlignedWithTextLink = {
+export const LeftAlignedWithTextLink: Story = {
   args: pack({
     logos: [
       {

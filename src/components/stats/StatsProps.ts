@@ -18,6 +18,10 @@ export type Icon = string;
  */
 export type Label = string;
 /**
+ * The description of the stat
+ */
+export type Label1 = string;
+/**
  * The stats to display in a grid
  */
 export type Stats = Stat[];
@@ -32,6 +36,7 @@ export interface StatsProps {
 export interface Stat {
   value: Value;
   icon?: Icon;
-  label?: Label;
+  label: Label;
+  description?: Label1;
   [k: string]: unknown;
 }

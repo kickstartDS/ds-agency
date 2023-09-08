@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/features.schema.json",
+  "title": "Features",
+  "description": "Component used to display a set of features",
+  "type": "object",
+  "properties": {
+    "layout": {
+      "type": "string",
+      "title": "Layout",
+      "description": "The layout variant to use for the features",
+      "enum": ["largeTiles", "smallTiles", "list"],
+      "default": "largeTiles"
+    },
+    "style": {
+      "type": "string",
+      "enum": ["intext", "stack", "besideLarge", "besideSmall"],
+      "default": "besideLarge"
+    },
+    "ctas": {
+      "type": "object",
+      "properties": {
+        "toggle": {
+          "type": "boolean",
+          "default": "false",
+          "title": "CTA Toggle",
+          "description": "Activate/disable the CTA"
+        },
+        "style": {
+          "type": "string",
+          "enum": ["button", "link", "intext"],
+          "default": "text"
+        }
+      }
+    },
+    "features": {
+      "type": "array",
+      "title": "Features",
+      "description": "The features to display",
+      "items": {
+        "type": "object",
+        "properties": {
+          "icon": {
+            "type": "string",
+            "title": "Icon",
+            "description": "The icon for the feature",
+            "examples": ["person"]
+          },
+          "title": {
+            "type": "string",
+            "title": "Title",
+            "description": "The title of the feature",
+            "examples": ["Feature 1"]
+          },
+          "text": {
+            "type": "string",
+            "title": "Text",
+            "description": "The description of the feature",
+            "examples": ["This is a feature"]
+          },
+          "cta": {
+            "type": "object",
+            "title": "Call to Action",
+            "description": "The call to action",
+            "properties": {
+              "link": {
+                "type": "string",
+                "title": "Call to Action Link",
+                "description": "The CTA link",
+                "default": "#",
+                "format": "uri"
+              },
+              "label": {
+                "type": "string",
+                "title": "Link Label",
+                "description": "The text label displayed on the link",
+                "examples": ["See all our partners"]
+              }
+            },
+            "required": ["style", "link", "label"]
+          }
+        },
+        "required": ["title", "text"]
+      },
+      "minItems": 1,
+      "maxItems": 8
+    }
+  },
+  "required": ["layout", "features"]
+}

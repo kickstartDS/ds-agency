@@ -6,6 +6,7 @@ import { Cta } from "../components/cta/CtaComponent";
 import { FAQ } from "../components/faq/FaqComponent";
 import { Header } from "../components/header/HeaderComponent";
 import { Footer } from "../components/footer/FooterComponent";
+import { Stats } from "../components/stats/StatsComponent";
 
 const Page = () => (
   <>
@@ -32,6 +33,27 @@ Elevate your digital presence with us. We create impactful digital experiences t
       />
     </Section>
 
+    <Section width="wide">
+      <Stats
+        stats={[
+          {
+            label: "Components",
+            value: "50+",
+            description: "We offer a rich library of over 50 meticulously crafted components to help you create cohesive and visually stunning user interfaces."
+          },
+          {
+            value: "30.000+",
+            label: "Lines of Documentation",
+            description: "Our comprehensive documentation consists of over 30,000 lines, making it easy for your team to understand and implement our design system."
+          },
+          {
+            label: "Customizability",
+            value: "100%",
+            description: "Our design system is 100% customizable, allowing you to tailor it to your brand's unique identity and design requirements."
+          },
+        ]}
+      />
+    </Section>
     <Section
       headline="Design System Services"
       sub="Crafting Consistency, Fostering Growth"

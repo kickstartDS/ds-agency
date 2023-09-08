@@ -82,14 +82,13 @@
           "title": "Call to Action Link",
           "description": "The CTA link",
           "default": "#",
-          "format": "url"
+          "format": "uri"
         },
         "label": {
           "type": "string",
           "title": "Link Label",
           "description": "The text label displayed on the link",
-          "examples": ["See all our partners"],
-          "format": "url"
+          "examples": ["See all our partners"]
         },
         "style": {
           "type": "string",
