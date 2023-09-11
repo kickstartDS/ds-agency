@@ -14,7 +14,7 @@
     },
     "style": {
       "type": "string",
-      "enum": ["intext", "stack", "besideLarge", "besideSmall"],
+      "enum": ["intext", "stack", "centered", "besideLarge", "besideSmall"],
       "default": "besideLarge"
     },
     "ctas": {

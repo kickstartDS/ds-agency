@@ -316,7 +316,7 @@ export type LinkLabel = string;
  */
 export interface FeaturesProps {
   layout: Layout;
-  style?: "intext" | "stack" | "besideLarge" | "besideSmall";
+  style?: "intext" | "stack" | "centered" | "besideLarge" | "besideSmall";
   ctas?: {
     toggle?: CTAToggle;
     style?: "button" | "link" | "intext";

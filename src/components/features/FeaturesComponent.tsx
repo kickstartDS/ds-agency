@@ -37,6 +37,8 @@ export const Features: FC<FeaturesProps & HTMLAttributes<HTMLElement>> = ({
                 ? `beside c-feature--large`
                 : style === `intext`
                 ? `intext c-feature--small`
+                : style === `centered`
+                ? `centered c-feature--large`
                 : `${style}`
             }`
           )}
