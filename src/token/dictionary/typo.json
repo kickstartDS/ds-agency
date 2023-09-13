@@ -77,10 +77,10 @@
             "value": 1.25
           },
           "laptop": {
-            "value": 1.5
+            "value": 1.75
           },
           "desktop": {
-            "value": 1.75
+            "value": 2
           }
         },
         "xxs-base": {
@@ -124,7 +124,7 @@
           }
         },
         "l-base": {
-          "value": "1.5rem",
+          "value": "1.35rem",
           "attributes": {
             "category": "size"
           },
@@ -134,7 +134,7 @@
           }
         },
         "xl-base": {
-          "value": "1.75rem",
+          "value": "1.65rem",
           "attributes": {
             "category": "size"
           },
@@ -144,7 +144,7 @@
           }
         },
         "xxl-base": {
-          "value": "2.5rem",
+          "value": "2.25rem",
           "attributes": {
             "category": "size"
           },
