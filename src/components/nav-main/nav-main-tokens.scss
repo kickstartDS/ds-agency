@@ -1,5 +1,26 @@
 .c-nav-main {
+  --c-nav-main--gap: var(--ks-spacing-inline-s);
+
+  --c-nav-main--background-color: var(--ks-background-color-default);
+
   --c-nav-main--color: var(--ks-text-color-default);
   --c-nav-main--color-hover: var(--ks-color-secondary);
-  --c-nav-main--font: var(--ks-font-interface-m);
+  --c-nav-main--color-active: var(--ks-text-color-primary-interactive-active);
+
+  --c-nav-main--font: var(--ks-font-interface-l);
+
+  --c-nav-main--font-weight: var(--ks-font-weight-medium);
+  --c-nav-main--font-weight-active: var(--ks-font-weight-bold);
+
+  --c-nav-main--padding: 0.5rem 0;
+  --c-nav-main--background-color-hover: var(--ks-color-primary-inverted);
+
+  @media (min-width: "62rem") {
+    --c-nav-main--font: var(--ks-font-interface-m);
+    --c-nav-main--padding: 1px;
+  }
+
+  @media (min-width: "80rem") {
+    --c-nav-main--gap: var(--ks-spacing-inline-m);
+  }
 }

@@ -1,31 +1,177 @@
-@use "nav-main-tokens.scss";
+@use "sass:meta";
+@use "bourbon/core/bourbon";
+@use "./nav-main-tokens";
 
 .c-nav-main {
-  ul,
-  li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  ul {
+    /* critical:start */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style: none;
+
+    li {
+      display: block;
+      margin: 0;
+    }
+    /* critical:end */
   }
-  gap: var(--ks-spacing-inline-m);
-  display: none;
 
-  @media (min-width: "640px") {
-    display: flex;
-  }
+  &__item {
+    position: relative;
 
-  .c-nav-main__item {
-    display: flex;
-    align-items: center;
-
-    .c-nav-main__link {
-      color: var(--c-nav-main--color);
-      font: var(--c-nav-main--font);
-      font-weight: var(--ks-font-weight-medium);
-
-      &:hover {
-        color: var(--c-nav-main--color-hover);
+    &--active {
+      .nav-main__link {
+        color: var(--c-nav-main--color-active);
+        font-weight: var(--c-nav-main--font-weight-active);
       }
     }
+
+    &.nav-main__item--icon {
+      .icon {
+        border-radius: var(--ks-border-radius-circle);
+        transition: all var(--ks-transition-hover);
+      }
+
+      &:hover {
+        .icon {
+          background-color: var(--ks-color-primary-inverted);
+        }
+      }
+    }
+  }
+
+  &__link {
+    /* critical:start */
+    font: var(--c-nav-main--font);
+    position: relative;
+    display: block;
+    width: fit-content;
+    padding: var(--c-nav-main--padding);
+    --ks-text-color-default-interactive: var(--c-nav-main--color);
+    --ks-text-color-default-interactive-hover: var(--c-nav-main--color-hover);
+    --g-link--font-weight: var(--c-nav-main--font-weight);
+    /* critical:end */
+  }
+
+  &__logo {
+    padding: var(--g-header--spacing-v) 0;
+    img {
+      height: var(--g-logo--height);
+    }
+  }
+
+  &__wrap {
+    flex-grow: 0;
+    flex-shrink: 1;
+  }
+
+  // Mobile Nav
+  @media (max-width: "62rem") {
+    /* critical:start */
+    left: -100%;
+    /* critical:end */
+    height: 100vh;
+    overflow: hidden;
+
+    position: fixed;
+    width: 77vw;
+    max-width: 23rem;
+    transition: all var(--ks-duration-slow);
+    padding: 0 var(--l-section--content-padding);
+
+    right: 0;
+    bottom: 0;
+    top: 0;
+    overflow-y: auto;
+    background-color: var(--c-nav-main--background-color);
+    backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 20px 0px 30px #00000000;
+
+    &__item {
+      &--icon {
+        @include bourbon.hide-visually;
+      }
+    }
+
+    .overlay-open & {
+      left: 0;
+      box-shadow: 20px 0px 30px #00000021;
+    }
+
+    > .c-nav-main__logo {
+      margin: var(--g-header-spacing);
+    }
+
+    ul.nav-main__list {
+      padding-top: calc(var(--g-header-spacing-v) - var(--ks-spacing-s));
+
+      .nav-main--button {
+        margin-left: var(--g-header-spacing-h);
+        margin-top: var(--g-header-spacing-v);
+
+        .c-button {
+          --c-button--font: var(--ks-font-interface-s);
+          .c-button__content {
+            --c-button--padding: 0.4rem 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  // Desktop Nav
+  @media (min-width: "62rem") {
+    /* critical:start */
+    > .c-nav-main__logo {
+      display: none;
+    }
+    /* critical:end */
+
+    .c-button--wrapper {
+      margin-left: var(--ks-spacing-inline-xs);
+    }
+
+    &__wrap {
+      display: flex;
+      align-items: flex-end;
+    }
+
+    &__list {
+      /* critical:start */
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: var(--c-nav-main--gap);
+
+      .nav-main--button {
+        .c-button {
+          --c-button--font: var(--ks-font-interface-s);
+          span {
+            font-size: 98%;
+          }
+        }
+      }
+      /* critical:end */
+    }
+
+    &__item {
+      /* critical:start */
+      flex-shrink: 0;
+
+      /* critical:end */
+      outline: 0;
+    }
+  }
+}
+
+.nav-main-toggle {
+  &[aria-expanded="true"] + .nav-main {
+    display: block;
   }
 }

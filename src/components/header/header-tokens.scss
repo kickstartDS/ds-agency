@@ -1,0 +1,13 @@
+:root {
+  --g-logo--height: 2rem;
+
+  @media (min-width: 42rem) {
+    --g-logo--height: 2.5rem;
+  }
+
+  @media (min-width: 60rem) {
+    --g-logo--height: 3rem;
+  }
+  --g-header--spacing-v: var(--ks-spacing-stack-m);
+  --g-header-spacing-h: var(--l-section--content-padding);
+}

@@ -1,3 +1,5 @@
+@import "./header-tokens.scss";
+
 :root {
   --g-logo--height: 2rem;
 
@@ -11,6 +13,9 @@
 }
 
 .c-header {
+  --g-header--spacing-v: var(--ks-spacing-stack-m);
+  --g-header-spacing-h: var(--l-section--content-padding);
+
   @media (min-width: 640px) {
     position: absolute;
     background-color: transparent;
@@ -21,10 +26,10 @@
   z-index: 1;
   width: 100%;
   display: flex;
-  padding: var(--ks-spacing-stack-m) 0;
+  padding: var(--g-header--spacing-v) 0;
 
   &__content {
-    padding: 0 var(--l-section--content-padding);
+    padding: 0 var(--g-header-spacing-h);
     max-width: var(--l-section--content-width-max);
     width: 100%;
     margin: auto;
