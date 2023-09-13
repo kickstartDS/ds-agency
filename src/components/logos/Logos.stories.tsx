@@ -18,7 +18,7 @@ const meta: Meta<typeof Logos> = {
 export default meta;
 type Story = StoryObj<typeof Logos>;
 
-export const Basic: Story = {
+export const Centered: Story = {
   args: pack({
     logos: [
       {
