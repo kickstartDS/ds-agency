@@ -15,8 +15,8 @@
           "value": {
             "title": "Value",
             "description": "The value of the stat",
-            "type": "number",
-            "examples": [1, 2, 3, 4]
+            "type": "string",
+            "examples": ["1", "2", "3", "4"]
           },
           "icon": {
             "title": "Icon",

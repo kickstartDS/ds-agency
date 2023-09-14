@@ -8,7 +8,7 @@
 /**
  * The value of the stat
  */
-export type Value = number;
+export type Value = string;
 /**
  * The icon of the stat
  */
