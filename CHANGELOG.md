@@ -1,3 +1,43 @@
+# v1.0.3 (Thu Sep 14 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(logo): add paid logos component variant ([@fleven-kds](https://github.com/fleven-kds))
+- feat(stats): change stats value to a string ([@fleven-kds](https://github.com/fleven-kds))
+- feat(Stats): add icon funcionality to stats ([@fleven-kds](https://github.com/fleven-kds))
+- feat(components): fix faulity imports ([@fleven-kds](https://github.com/fleven-kds))
+- feat(themes): add dark theme to docs ([@fleven-kds](https://github.com/fleven-kds))
+- feat(docs): add documentation to components ([@fleven-kds](https://github.com/fleven-kds))
+- feat(rich-text): adjust rich-text alignment ([@fleven-kds](https://github.com/fleven-kds))
+- feat(faq): remove unused properties ([@fleven-kds](https://github.com/fleven-kds))
+- feat(nav-main): nav-main styling ([@fleven-kds](https://github.com/fleven-kds))
+- feat(header + nav): add responsive nav main ([@fleven-kds](https://github.com/fleven-kds))
+- feat(text): add text component ([@fleven-kds](https://github.com/fleven-kds))
+- feat(features): add new stories ([@fleven-kds](https://github.com/fleven-kds))
+- feat(feature): develop feature component ([@fleven-kds](https://github.com/fleven-kds))
+- feat(stats):develop stats component ([@fleven-kds](https://github.com/fleven-kds))
+- feat(logoComponent): develop logo component ([@fleven-kds](https://github.com/fleven-kds))
+- feat(logos): develop logos component ([@fleven-kds](https://github.com/fleven-kds))
+- feat(favicon): replace favicon ([@fleven-kds](https://github.com/fleven-kds))
+- feat(blogEntry): add custom layout for blog entry ([@fleven-kds](https://github.com/fleven-kds))
+- feat(footer): add border to footer ([@fleven-kds](https://github.com/fleven-kds))
+- feat(footer): add footer component ([@fleven-kds](https://github.com/fleven-kds))
+- feat(testimonial): add testimonial template ([@fleven-kds](https://github.com/fleven-kds))
+- feat(blog): develop blog components ([@fleven-kds](https://github.com/fleven-kds))
+- fix: add examples to Section ([@julrich](https://github.com/julrich))
+- feature: add blog components, and sample pages ([@julrich](https://github.com/julrich))
+- fix: update Visual props ([@julrich](https://github.com/julrich))
+- fix: article teaser story ([@julrich](https://github.com/julrich))
+- buid: update kickstartDS ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 3
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.2 (Fri Sep 01 2023)
 
 #### ⚠️ Pushed to `main`
