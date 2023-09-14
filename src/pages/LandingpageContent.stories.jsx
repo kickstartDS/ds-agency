@@ -3,7 +3,6 @@ import { QuotesSlider } from "@kickstartds/content/lib/quotes-slider";
 import { VisualSlider } from "@kickstartds/content/lib/visual-slider";
 import { Storytelling } from "@kickstartds/content/lib/storytelling";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
-import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
 import { Button } from "@kickstartds/base/lib/button";
 import { FAQ } from "../components/faq/FaqComponent";
 import { Stats } from "../components/stats/StatsComponent";
@@ -12,7 +11,7 @@ import { Header } from "../components/header/HeaderComponent";
 import { Footer } from "../components/footer/FooterComponent";
 
 import { Visual } from "../components/visual/VisualComponent";
-import { Logos } from "../components/logos-paid/LogosComponent";
+import { LogosPaid } from "../components/logos-paid/LogosComponent";
 
 const Page = () => (
   <>
@@ -58,7 +57,7 @@ const Page = () => (
 
 
     <Section width="max">
-      <Logos
+      <LogosPaid
         tagline="Your Success, Our Commitment"
         align="center"
         logosPerRow={6}
