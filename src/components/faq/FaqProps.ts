@@ -30,21 +30,11 @@ export type Question = string;
  * The answer to the question
  */
 export type Answer = string;
-/**
- * The layout variant for the FAQ section
- */
-export type Variant = "default" | "accordion" | "dropdown";
-/**
- * The alignment of the text
- */
-export type Align = "left" | "center" | "right";
 
 /**
  * Component used to display a FAQ section
  */
 export interface FAQProps {
   questions: Questions;
-  variant?: Variant;
-  align?: Align;
   [k: string]: unknown;
 }

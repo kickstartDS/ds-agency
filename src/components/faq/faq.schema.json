@@ -28,22 +28,6 @@
         "required": ["question", "answer"]
       },
       "minItems": 1
-    },
-    "variant": {
-      "type": "string",
-      "title": "Variant",
-      "description": "The layout variant for the FAQ section",
-      "enum": ["default", "accordion", "dropdown"],
-      "default": "default",
-      "examples": ["accordion"]
-    },
-    "align": {
-      "type": "string",
-      "title": "Align",
-      "description": "The alignment of the text",
-      "enum": ["left", "center", "right"],
-      "default": "left",
-      "examples": ["left"]
     }
   },
   "required": ["questions"]
