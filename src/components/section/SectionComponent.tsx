@@ -29,7 +29,6 @@ export const Section: FC<SectionProps> = ({
     <>
       <SectionContextDefault
         {...props}
-        // @ts-expect-error
         align={undefined}
         background={style}
         headline={{
@@ -51,7 +50,6 @@ export const Section: FC<SectionProps> = ({
       {ctas && ctas.length > 0 && (
         <SectionContextDefault
           className={classnames(`l-section--align-${align}`)}
-          // @ts-expect-error
           background={style}
           width={width}
           gutter={gutter}

@@ -12,6 +12,7 @@ export const BlogHead: FC<BlogHeadProps & HTMLAttributes<HTMLElement>> = ({
   return (
     <PostHead
       date={date}
+      // @ts-expect-error
       headline={{ text: headline, align: "left" }}
       image={{ src: image }}
       categories={tags.map((tag) => {

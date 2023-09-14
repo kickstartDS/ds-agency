@@ -54,9 +54,9 @@ export type Icon1 = string;
  */
 export type ModuleAligment = "left" | "center";
 
-export interface CtaTextProps {
+export interface CtaProps {
   headline?: ModuleHeadline;
-  subheadline?: ModuleSubheadline;
+  sub?: ModuleSubheadline;
   text?: ModuleText;
   primaryCta?: {
     toggle?: CTAToggle;

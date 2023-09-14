@@ -12,7 +12,7 @@ import { Header } from "../components/header/HeaderComponent";
 import { Footer } from "../components/footer/FooterComponent";
 
 import { Visual } from "../components/visual/VisualComponent";
-import { Logos } from "../components/logos/LogosComponent";
+import { Logos } from "../components/logos-paid/LogosComponent";
 
 const Page = () => (
   <>

@@ -3,11 +3,11 @@ import classnames from "classnames";
 
 import { LogosProps } from "./LogosProps";
 import "./logos.scss";
+import { LogoTiles } from "@kickstartds/content/lib/logo-tiles";
 import { Button } from "@kickstartds/base/lib/button";
 import { Link } from "@kickstartds/base/lib/link";
-import { Picture } from "@kickstartds/base/lib/picture";
 
-export const Logos: FC<LogosProps & HTMLAttributes<HTMLElement>> = ({
+export const LogosPaid: FC<LogosProps & HTMLAttributes<HTMLElement>> = ({
   logos = [],
   tagline,
   align,
@@ -18,13 +18,10 @@ export const Logos: FC<LogosProps & HTMLAttributes<HTMLElement>> = ({
     <>
       <div className={classnames(`c-logos c-logos--align-${align}`)}>
         <div className="c-logos__tagline">{tagline}</div>
-        <div className="c-logos__grid">
-          {logos.map((logo, index) => (
-            <div className="c-logos__logo" key={index}>
-              <Picture src={logo.src} />
-            </div>
-          ))}
-        </div>
+        <LogoTiles
+          className={classnames(`c-logo-tiles--cols-${logosPerRow}`)}
+          logos={logos}
+        />
         {cta?.toggle ? (
           <div className="c-logos__cta">
             <div className="c-logos__cta__text">

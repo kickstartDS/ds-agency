@@ -57,6 +57,7 @@ export const BlogAside: FC<BlogAsideProps & HTMLAttributes<HTMLElement>> = ({
         links: authorLinks,
       }}
       shareBar={{
+        // @ts-expect-error
         headline: { text: "Share this post" },
         links: socialLinks,
       }}

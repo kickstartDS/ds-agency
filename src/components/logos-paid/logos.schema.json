@@ -50,6 +50,14 @@
       "enum": ["left", "center"],
       "default": "center"
     },
+    "logosPerRow": {
+      "type": "integer",
+      "title": "Logos Per Row",
+      "description": "The amount of logos to display per row",
+      "minimum": 1,
+      "maximum": 10,
+      "examples": [5]
+    },
     "cta": {
       "type": "object",
       "title": "Call to Action",

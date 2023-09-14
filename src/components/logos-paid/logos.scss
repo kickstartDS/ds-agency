@@ -3,11 +3,6 @@
   flex-direction: column;
   gap: var(--ks-spacing-stack-m);
 
-  &__grid {
-    display: flex;
-    gap: var(--ks-spacing-m);
-  }
-
   &__tagline {
     font: var(--ks-font-display-m);
     max-width: var(--l-section--content-width-narrow);
@@ -44,9 +39,6 @@
   &--align-center {
     .c-logos__cta {
       align-items: center;
-    }
-    .c-logos__grid {
-      justify-content: center;
     }
 
     .c-logos__cta__text,

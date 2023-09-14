@@ -8,7 +8,7 @@ import "./cta.scss";
 
 export const Cta: FC<CtaProps> = ({
   headline,
-  subheadline,
+  sub,
   text,
   primaryCta,
   secondaryCta,
@@ -20,10 +20,9 @@ export const Cta: FC<CtaProps> = ({
       style="h1"
       align={align}
       text={headline}
-      sub={subheadline}
+      sub={sub}
       spaceAfter="minimum"
     />
-    {/* @ts-expect-error */}
     {text ? <RichText align={align} text={text} /> : ""}
 
     {primaryCta?.toggle || secondaryCta?.toggle ? (

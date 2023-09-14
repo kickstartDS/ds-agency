@@ -1119,6 +1119,10 @@ export type Caption = string;
  */
 export type Alignment = "left" | "center";
 /**
+ * The amount of logos to display per row
+ */
+export type LogosPerRow = number;
+/**
  * Activate/disable the CTA
  */
 export type CTAToggle = CTAToggle1 & CTAToggle2;
@@ -1144,6 +1148,7 @@ export interface LogosProps {
   tagline?: LogoTagline;
   logos: Logos;
   align?: Alignment;
+  logosPerRow?: LogosPerRow;
   cta?: CallToAction;
   [k: string]: unknown;
 }
