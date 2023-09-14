@@ -4,7 +4,8 @@ import classnames from "classnames";
 import { LogosProps } from "./LogosProps";
 import "./logos.scss";
 import { LogoTiles } from "@kickstartds/content/lib/logo-tiles";
-import { Button, Link, RichText } from "../../playroom/components";
+import { Button } from "@kickstartds/base/lib/button";
+import { Link } from "@kickstartds/base/lib/link";
 
 export const Logos: FC<LogosProps & HTMLAttributes<HTMLElement>> = ({
   logos = [],

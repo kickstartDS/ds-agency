@@ -2,7 +2,7 @@ import { HTMLAttributes, FC } from "react";
 
 import { StatsProps } from "./StatsProps";
 import "./stats.scss";
-import { Picture } from "../../playroom/components";
+import { Picture } from "@kickstartds/base/lib/picture";
 
 export const Stats: FC<StatsProps & HTMLAttributes<HTMLElement>> = ({
   stats = [],
