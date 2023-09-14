@@ -7,3 +7,7 @@
 #storybook-preview-iframe {
   background: transparent;
 }
+
+.sbdocs {
+  background-color: var(--ks-background-color-default) !important;
+}

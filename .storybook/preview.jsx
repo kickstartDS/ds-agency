@@ -1,6 +1,7 @@
 import { actions } from "@storybook/addon-actions";
 import { DocsContainer } from "@storybook/addon-docs";
 import { unpackDecorator } from "@kickstartds/core/lib/storybook";
+import { dark } from './themes';
 
 import { PageWrapper } from "../src/components/page-wrapper/PageWrapperComponent";
 import { LinkProvider } from "../src/docs/LinkProvider";
@@ -37,6 +38,7 @@ const preview = {
       disable: true,
     },
     docs: {
+      theme: dark,
       container: (props) => (
         <LinkProvider>
           <PageWrapper>
