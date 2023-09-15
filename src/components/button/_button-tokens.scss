@@ -28,6 +28,22 @@
       --c-button--background-color-hover: var(--ks-color-primary-inverted-alpha-4);
       --c-button--background-color-active: var(--ks-color-primary-inverted-alpha-4);
     }
+
+    &--tertiary {
+      --c-button--color: var(--ks-color-fg-alpha-7);
+      --c-button--color-hover: var(--ks-color-fg);
+      --c-button--color-active: var(--ks-color-fg);
+
+      --c-button--border-color: var(--ks-color-fg-alpha-7);
+      --c-button--border-color-hover: var(--ks-color-fg);
+      --c-button--border-color-active: var(--ks-color-fg);
+
+      --c-button--border-width: 1px;
+
+      --c-button--background-color: transparent;
+      --c-button--background-color-hover: transparent;
+      --c-button--background-color-active: transparent;
+    }
   }
 
   [ks-inverted="true"] .c-button--primary,

@@ -5,18 +5,6 @@
   "description": "Component used to display a gallery of images",
   "type": "object",
   "properties": {
-    "headline": {
-      "type": "string",
-      "title": "Headline",
-      "description": "Headline for the gallery",
-      "examples": ["Gallery Headline"]
-    },
-    "text": {
-      "type": "string",
-      "title": "Text",
-      "description": "Text for the gallery",
-      "examples": ["This is a gallery of images"]
-    },
     "images": {
       "type": "array",
       "title": "Images",

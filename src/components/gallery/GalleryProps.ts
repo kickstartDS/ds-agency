@@ -6,14 +6,6 @@
  */
 
 /**
- * Headline for the gallery
- */
-export type Headline = string;
-/**
- * Text for the gallery
- */
-export type Text = string;
-/**
  * The images to display in the gallery
  *
  * @minItems 1
@@ -332,8 +324,6 @@ export type Align = "stack" | "smallTiles" | "largeTiles";
  * Component used to display a gallery of images
  */
 export interface GalleryProps {
-  headline?: Headline;
-  text?: Text;
   images: Images;
   align?: Align;
   [k: string]: unknown;

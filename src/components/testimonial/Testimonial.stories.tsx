@@ -20,8 +20,17 @@ const meta: Meta<typeof Testimonial> = {
 export default meta;
 type Story = StoryObj<typeof Testimonial>;
 
-export const Default: Story = {};
-Default.args = pack({
+export const PortraitText: Story = {};
+PortraitText.args = pack({
+  quote: "This product is amazing!",
+  name: "John Doe",
+  title: "CEO",
+  image: "img/customer-1.png",
+  rating: undefined,
+});
+
+export const PortraitTextWithRating: Story = {};
+PortraitTextWithRating.args = pack({
   quote: "This product is amazing!",
   name: "John Doe",
   title: "CEO",

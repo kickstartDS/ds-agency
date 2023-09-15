@@ -18,7 +18,103 @@ const meta: Meta<typeof LogosPaid> = {
 export default meta;
 type Story = StoryObj<typeof LogosPaid>;
 
-export const Centered: Story = {
+export const FourInARowWall: Story = {
+  args: pack({
+    logosPerRow: 4,
+    logos: [
+      {
+        src: "img/logoipsum-212.svg",
+        alt: "Logo 1",
+      },
+      {
+        src: "img/logoipsum-217.svg",
+        alt: "Logo 2",
+      },
+      {
+        src: "img/logoipsum-239.svg",
+        alt: "Logo 3",
+      },
+      {
+        src: "img/logoipsum-244.svg",
+        alt: "Logo 4",
+      },
+      {
+        src: "img/logoipsum-250.svg",
+        alt: "Logo 5",
+      },
+      {
+        src: "img/logoipsum-286.svg",
+        alt: "Logo 6",
+      },
+      {
+        src: "img/logoipsum-244.svg",
+        alt: "Logo 4",
+      },
+      {
+        src: "img/logoipsum-250.svg",
+        alt: "Logo 5",
+      },
+      {
+        src: "img/logoipsum-286.svg",
+        alt: "Logo 6",
+      },
+      {
+        src: "img/logoipsum-244.svg",
+        alt: "Logo 4",
+      },
+      {
+        src: "img/logoipsum-250.svg",
+        alt: "Logo 5",
+      },
+      {
+        src: "img/logoipsum-286.svg",
+        alt: "Logo 6",
+      },
+    ],
+
+    cta: {
+      toggle: false,
+    },
+  }),
+};
+
+export const SixInARowLine: Story = {
+  args: pack({
+    logosPerRow: 6,
+    logos: [
+      {
+        src: "img/logoipsum-212.svg",
+        alt: "Logo 1",
+      },
+      {
+        src: "img/logoipsum-217.svg",
+        alt: "Logo 2",
+      },
+      {
+        src: "img/logoipsum-239.svg",
+        alt: "Logo 3",
+      },
+      {
+        src: "img/logoipsum-244.svg",
+        alt: "Logo 4",
+      },
+      {
+        src: "img/logoipsum-250.svg",
+        alt: "Logo 5",
+      },
+      {
+        src: "img/logoipsum-286.svg",
+        alt: "Logo 6",
+      },
+    ],
+
+    cta: {
+      toggle: false,
+    },
+  }),
+};
+
+export const CenteredWithButton: Story = {
   args: pack({
     logos: [
       {
@@ -47,7 +143,8 @@ export const Centered: Story = {
       },
     ],
     cta: {
-      toggle: false,
+      toggle: true,
+      style: "button",
     },
   }),
 };

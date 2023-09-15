@@ -18,7 +18,7 @@ const meta: Meta<typeof Logos> = {
 export default meta;
 type Story = StoryObj<typeof Logos>;
 
-export const Centered: Story = {
+export const CenteredWithButton: Story = {
   args: pack({
     logos: [
       {
@@ -47,7 +47,8 @@ export const Centered: Story = {
       },
     ],
     cta: {
-      toggle: false,
+      toggle: true,
+      style: "button",
     },
   }),
 };

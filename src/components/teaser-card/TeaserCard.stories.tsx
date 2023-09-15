@@ -8,7 +8,7 @@ const meta: Meta<typeof TeaserCard> = {
   title: "Components/Teaser Card",
   ...getArgsShared(schema as JSONSchema7),
   parameters: {
-    conmponent: TeaserCard,
+    component: TeaserCard,
     jsonschema: schema,
   },
 };

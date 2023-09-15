@@ -19,8 +19,8 @@ const meta: Meta<typeof Gallery> = {
 export default meta;
 type Story = StoryObj<typeof Gallery>;
 
-export const Default: Story = {};
-Default.args = pack({
+export const SmallTiles: Story = {};
+SmallTiles.args = pack({
   headline: "Gallery Headline",
   text: "This is a gallery of images",
   images: [
@@ -32,4 +32,19 @@ Default.args = pack({
     { url: "img/agency.png", caption: "Caption Image 3" },
   ],
   align: "smallTiles",
+});
+
+export const LargeTiles: Story = {};
+LargeTiles.args = pack({
+  headline: "Gallery Headline",
+  text: "This is a gallery of images",
+  images: [
+    { url: "img/agency.png", caption: "Caption Image 1" },
+    { url: "img/team.png", caption: "Caption Image 2" },
+    { url: "img/agency.png", caption: "Caption Image 3" },
+    { url: "img/agency.png", caption: "Caption Image 1" },
+    { url: "img/team.png", caption: "Caption Image 2" },
+    { url: "img/agency.png", caption: "Caption Image 3" },
+  ],
+  align: "largeTiles",
 });

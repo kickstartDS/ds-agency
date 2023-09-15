@@ -22,7 +22,7 @@ export const dark = create({
   textInverseColor: tokens.KsTextColorDefaultInvertedBase,
 
   // Toolbar default and active colors
-  barTextColor: tokens.KsColorSecondaryAlpha6Base,
+  barTextColor: tokens.KsColorFgAlpha7Base,
   barSelectedColor: tokens.KsColorSecondaryBase,
   barBg: tokens.KsBackgroundColorDefaultBase,
 

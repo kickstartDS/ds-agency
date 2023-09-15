@@ -17,13 +17,16 @@ export const Testimonial: FC<
         text={quote}
         renderSource={() => (
           <>
-            {rating && (
-              <div>
-                {[...Array(rating)].map((_, index) => (
-                  <span key={index}>★</span>
-                ))}
-              </div>
-            )}
+            {rating &&
+              (rating ? (
+                <div>
+                  {[...Array(rating)].map((_, index) => (
+                    <span key={index}>★</span>
+                  ))}
+                </div>
+              ) : (
+                ""
+              ))}
             <div className="c-quote__source">John Doe</div>
           </>
         )}

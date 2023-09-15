@@ -21,8 +21,6 @@ type Story = StoryObj<typeof FAQ>;
 
 export const Default: Story = {};
 Default.args = pack({
-  headline: "FAQ Headline",
-  intro: "This is an introduction to the FAQ",
   questions: [
     {
       question: "What is a Design System?",
@@ -35,6 +33,4 @@ Default.args = pack({
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
     },
   ],
-  variant: "default",
-  align: "left",
 });
