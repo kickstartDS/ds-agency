@@ -1,5 +1,13 @@
+@use "testimonial-tokens.scss";
+
 .c-quote {
-  .c-quote__text {
+  &__source {
+    color: var(--c-quote_source--color);
+  }
+  &__byline {
+    color: var(--c-quote_byline--color);
+  }
+  &__text {
     margin-bottom: var(--ks-spacing-stack-s);
   }
 }

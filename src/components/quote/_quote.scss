@@ -1,9 +1,0 @@
-@use "quote-tokens.scss";
-.c-quote {
-  &__source {
-    color: var(--c-quote_source--color);
-  }
-  &__byline {
-    color: var(--c-quote_byline--color);
-  }
-}
