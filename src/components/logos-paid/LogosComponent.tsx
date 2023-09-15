@@ -2,7 +2,7 @@ import { HTMLAttributes, FC } from "react";
 import classnames from "classnames";
 
 import { LogosProps } from "./LogosProps";
-import "./logos.scss";
+import "./logos-paid.scss";
 import { LogoTiles } from "@kickstartds/content/lib/logo-tiles";
 import { Button } from "@kickstartds/base/lib/button";
 import { Link } from "@kickstartds/base/lib/link";

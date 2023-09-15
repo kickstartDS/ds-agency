@@ -2,6 +2,11 @@
 
 .c-button {
   box-shadow: var(--c-button--shadow);
+  transition-property: box-shadow, transform, background-color, color;
+
+  &:disabled {
+    pointer-events: none;
+  }
 
   &:hover {
     box-shadow: var(--c-button--shadow-hover);

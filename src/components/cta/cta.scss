@@ -5,6 +5,8 @@
   max-width: var(--l-section--content-width-default);
 
   &--align-center {
+    margin: auto;
+
     .c-cta__links {
       justify-content: center;
     }

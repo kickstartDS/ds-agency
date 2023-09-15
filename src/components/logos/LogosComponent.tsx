@@ -12,7 +12,6 @@ export const Logos: FC<LogosProps & HTMLAttributes<HTMLElement>> = ({
   tagline,
   align,
   cta,
-  logosPerRow = "6",
 }) => {
   return (
     <>

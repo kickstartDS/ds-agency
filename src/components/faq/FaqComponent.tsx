@@ -1,9 +1,7 @@
 import { HTMLAttributes, FC } from "react";
-
 import { FAQProps } from "./FaqProps";
 import "./faq.scss";
-import { Headline } from "../headline/HeadlineComponent";
-import { CollapsibleBox, RichText } from "../../playroom/components";
+import { CollapsibleBox } from "@kickstartds/base/lib/collapsible-box";
 
 export const FAQ: FC<FAQProps & HTMLAttributes<HTMLElement>> = ({
   questions,

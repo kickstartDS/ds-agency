@@ -19,8 +19,8 @@ const meta: Meta<typeof FAQ> = {
 export default meta;
 type Story = StoryObj<typeof FAQ>;
 
-export const Default: Story = {};
-Default.args = pack({
+export const DropdownsInAList: Story = {};
+DropdownsInAList.args = pack({
   questions: [
     {
       question: "What is a Design System?",

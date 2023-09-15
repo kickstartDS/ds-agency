@@ -19,19 +19,6 @@
   --l-section--content-width-wide: 1440px !important;
   --g-header-height: calc(var(--g-logo--height) + var(--ks-spacing-stack-m) + var(--ks-spacing-stack-m));
 
-  .c-button {
-    --c-button--border-radius: var(--ks-border-radius-pill);
-    --c-button--padding: 0.75em 2em;
-    --c-button--font-weight: var(--ks-font-weight-medium);
-  }
-
-  .c-logo-tiles {
-    @container logo-tiles (min-width: 640px) {
-      --c-logo-tiles--gutter: 3rem;
-      --c-logo-tiles--cols: 6;
-    }
-  }
-
   .c-divider {
     --c-divider--background: var(--ks-border-color-accent);
   }

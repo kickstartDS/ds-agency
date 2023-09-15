@@ -76,6 +76,10 @@
       position: relative;
     }
 
+    @container logo-tiles (min-width:"640px") {
+      --c-logo-tiles--cols: 3 !important;
+    }
+
     &--cols-1 {
       --c-logo-tiles--cols: 1;
     }

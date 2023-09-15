@@ -31,7 +31,7 @@ export const LinkButton = {
   }),
 };
 
-export const DisabledButton = {
+export const PrimaryDisabledButton = {
   args: pack({
     label: "Disabled Button",
     variant: "primary",
