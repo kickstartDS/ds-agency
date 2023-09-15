@@ -4,9 +4,9 @@
       "primary": {
         "base": {
           "value": {
-            "r": 102,
-            "g": 66,
-            "b": 246,
+            "r": 84,
+            "g": 53,
+            "b": 210,
             "a": 1
           },
           "attributes": {
@@ -18,115 +18,13 @@
           }
         },
         "alpha": {
-          "1": {
+          "9": {
             "base": {
               "value": {
-                "r": 102,
-                "g": 66,
-                "b": 246,
-                "a": 0.05
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Primary",
-                "presenter": "Color"
-              }
-            }
-          },
-          "2": {
-            "base": {
-              "value": {
-                "r": 102,
-                "g": 66,
-                "b": 246,
-                "a": 0.13
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Primary",
-                "presenter": "Color"
-              }
-            }
-          },
-          "3": {
-            "base": {
-              "value": {
-                "r": 102,
-                "g": 66,
-                "b": 246,
-                "a": 0.24
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Primary",
-                "presenter": "Color"
-              }
-            }
-          },
-          "4": {
-            "base": {
-              "value": {
-                "r": 102,
-                "g": 66,
-                "b": 246,
-                "a": 0.37
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Primary",
-                "presenter": "Color"
-              }
-            }
-          },
-          "5": {
-            "base": {
-              "value": {
-                "r": 102,
-                "g": 66,
-                "b": 246,
-                "a": 0.5
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Primary",
-                "presenter": "Color"
-              }
-            }
-          },
-          "6": {
-            "base": {
-              "value": {
-                "r": 102,
-                "g": 66,
-                "b": 246,
-                "a": 0.63
-              },
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Primary",
-                "presenter": "Color"
-              }
-            }
-          },
-          "7": {
-            "base": {
-              "value": {
-                "r": 102,
-                "g": 66,
-                "b": 246,
-                "a": 0.76
+                "r": 84,
+                "g": 53,
+                "b": 210,
+                "a": 0.95
               },
               "attributes": {
                 "category": "color"
@@ -140,9 +38,9 @@
           "8": {
             "base": {
               "value": {
-                "r": 102,
-                "g": 66,
-                "b": 246,
+                "r": 84,
+                "g": 53,
+                "b": 210,
                 "a": 0.87
               },
               "attributes": {
@@ -154,13 +52,115 @@
               }
             }
           },
-          "9": {
+          "7": {
             "base": {
               "value": {
-                "r": 102,
-                "g": 66,
-                "b": 246,
-                "a": 0.95
+                "r": 84,
+                "g": 53,
+                "b": 210,
+                "a": 0.76
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Primary",
+                "presenter": "Color"
+              }
+            }
+          },
+          "6": {
+            "base": {
+              "value": {
+                "r": 84,
+                "g": 53,
+                "b": 210,
+                "a": 0.63
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Primary",
+                "presenter": "Color"
+              }
+            }
+          },
+          "5": {
+            "base": {
+              "value": {
+                "r": 84,
+                "g": 53,
+                "b": 210,
+                "a": 0.5
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Primary",
+                "presenter": "Color"
+              }
+            }
+          },
+          "4": {
+            "base": {
+              "value": {
+                "r": 84,
+                "g": 53,
+                "b": 210,
+                "a": 0.37
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Primary",
+                "presenter": "Color"
+              }
+            }
+          },
+          "3": {
+            "base": {
+              "value": {
+                "r": 84,
+                "g": 53,
+                "b": 210,
+                "a": 0.24
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Primary",
+                "presenter": "Color"
+              }
+            }
+          },
+          "2": {
+            "base": {
+              "value": {
+                "r": 84,
+                "g": 53,
+                "b": 210,
+                "a": 0.13
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Primary",
+                "presenter": "Color"
+              }
+            }
+          },
+          "1": {
+            "base": {
+              "value": {
+                "r": 84,
+                "g": 53,
+                "b": 210,
+                "a": 0.050000000000000044
               },
               "attributes": {
                 "category": "color"
@@ -176,9 +176,9 @@
           "1": {
             "base": {
               "value": {
-                "r": 97,
-                "g": 63,
-                "b": 235,
+                "r": 80,
+                "g": 51,
+                "b": 201,
                 "a": 1
               },
               "attributes": {
@@ -193,9 +193,9 @@
           "2": {
             "base": {
               "value": {
-                "r": 90,
-                "g": 58,
-                "b": 218,
+                "r": 74,
+                "g": 47,
+                "b": 187,
                 "a": 1
               },
               "attributes": {
@@ -210,9 +210,9 @@
           "3": {
             "base": {
               "value": {
-                "r": 79,
-                "g": 52,
-                "b": 194,
+                "r": 65,
+                "g": 42,
+                "b": 167,
                 "a": 1
               },
               "attributes": {
@@ -227,9 +227,9 @@
           "4": {
             "base": {
               "value": {
-                "r": 66,
-                "g": 45,
-                "b": 166,
+                "r": 55,
+                "g": 36,
+                "b": 144,
                 "a": 1
               },
               "attributes": {
@@ -244,9 +244,9 @@
           "5": {
             "base": {
               "value": {
-                "r": 54,
-                "g": 37,
-                "b": 139,
+                "r": 45,
+                "g": 31,
+                "b": 121,
                 "a": 1
               },
               "attributes": {
@@ -261,9 +261,9 @@
           "6": {
             "base": {
               "value": {
-                "r": 42,
-                "g": 29,
-                "b": 111,
+                "r": 35,
+                "g": 25,
+                "b": 97,
                 "a": 1
               },
               "attributes": {
@@ -278,9 +278,9 @@
           "7": {
             "base": {
               "value": {
-                "r": 29,
-                "g": 22,
-                "b": 83,
+                "r": 25,
+                "g": 19,
+                "b": 74,
                 "a": 1
               },
               "attributes": {
@@ -295,9 +295,9 @@
           "8": {
             "base": {
               "value": {
-                "r": 18,
-                "g": 16,
-                "b": 59,
+                "r": 16,
+                "g": 14,
+                "b": 54,
                 "a": 1
               },
               "attributes": {
@@ -312,9 +312,9 @@
           "9": {
             "base": {
               "value": {
-                "r": 11,
-                "g": 11,
-                "b": 42,
+                "r": 10,
+                "g": 10,
+                "b": 40,
                 "a": 1
               },
               "attributes": {
