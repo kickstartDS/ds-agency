@@ -18,6 +18,12 @@
             "description": "The URL of the image",
             "examples": ["https://example.com/image1.jpg"]
           },
+          "alt": {
+            "type": "string",
+            "title": "Alt text",
+            "description": "Alt text of the image",
+            "examples": ["https://example.com/image1.jpg"]
+          },
           "caption": {
             "type": "string",
             "title": "Caption",
@@ -30,10 +36,10 @@
       "minItems": 1,
       "maxItems": 10
     },
-    "align": {
+    "layout": {
       "type": "string",
-      "title": "Align",
-      "description": "The alignment gallery images",
+      "title": "Layout",
+      "description": "The layout of the gallery images",
       "enum": ["stack", "smallTiles", "largeTiles"],
       "examples": ["below"]
     }

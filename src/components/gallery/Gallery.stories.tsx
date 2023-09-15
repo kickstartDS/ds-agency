@@ -21,8 +21,6 @@ type Story = StoryObj<typeof Gallery>;
 
 export const SmallTiles: Story = {};
 SmallTiles.args = pack({
-  headline: "Gallery Headline",
-  text: "This is a gallery of images",
   images: [
     { url: "img/agency.png", caption: "Caption Image 1" },
     { url: "img/team.png", caption: "Caption Image 2" },
@@ -31,13 +29,11 @@ SmallTiles.args = pack({
     { url: "img/team.png", caption: "Caption Image 2" },
     { url: "img/agency.png", caption: "Caption Image 3" },
   ],
-  align: "smallTiles",
+  layout: "smallTiles",
 });
 
 export const LargeTiles: Story = {};
 LargeTiles.args = pack({
-  headline: "Gallery Headline",
-  text: "This is a gallery of images",
   images: [
     { url: "img/agency.png", caption: "Caption Image 1" },
     { url: "img/team.png", caption: "Caption Image 2" },
@@ -46,5 +42,5 @@ LargeTiles.args = pack({
     { url: "img/team.png", caption: "Caption Image 2" },
     { url: "img/agency.png", caption: "Caption Image 3" },
   ],
-  align: "largeTiles",
+  layout: "largeTiles",
 });
