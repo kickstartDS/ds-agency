@@ -1,3 +1,15 @@
+# v1.0.8 (Mon Sep 18 2023)
+
+#### ⚠️ Pushed to `main`
+
+- refactor: rewrite stories in typescript ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.7 (Mon Sep 18 2023)
 
 #### ⚠️ Pushed to `main`
