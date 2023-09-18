@@ -1,3 +1,21 @@
+# v1.0.6 (Mon Sep 18 2023)
+
+#### ⚠️ Pushed to `main`
+
+- refactor: rewrite storybook config in typescript ([@lmestel](https://github.com/lmestel))
+- refactor: fix ts errors ([@lmestel](https://github.com/lmestel))
+- feat(token): adjust color token ([@fleven-kds](https://github.com/fleven-kds))
+- feat(scss): clean up scss ([@fleven-kds](https://github.com/fleven-kds))
+- feat(gallery): rename align to layout ([@fleven-kds](https://github.com/fleven-kds))
+- feat(various): various minor fixes ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.5 (Fri Sep 15 2023)
 
 #### ⚠️ Pushed to `main`
