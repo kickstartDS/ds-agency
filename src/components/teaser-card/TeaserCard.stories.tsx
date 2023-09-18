@@ -7,8 +7,8 @@ import schema from "./teaser-card.schema.dereffed.json";
 const meta: Meta<typeof TeaserCard> = {
   title: "Components/Teaser Card",
   ...getArgsShared(schema as JSONSchema7),
+  component: TeaserCard,
   parameters: {
-    component: TeaserCard,
     jsonschema: schema,
   },
 };
