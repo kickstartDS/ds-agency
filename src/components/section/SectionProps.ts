@@ -189,7 +189,7 @@ export interface Headline1 {
 export interface TeaserCard {
   headline: Headline2;
   text: Text1;
-  target: Target1;
+  target?: Target1;
   image?: Image;
   inverted?: InvertCard;
   [k: string]: unknown;

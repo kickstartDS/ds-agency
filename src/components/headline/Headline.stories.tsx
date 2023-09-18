@@ -1,12 +1,11 @@
-import { Headline } from "./HeadlineComponent";
+import { Meta, StoryObj } from "@storybook/react";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
-import HeadlineStories from "@kickstartds/base/lib/headline/headline.stories";
+import { JSONSchema7 } from "json-schema";
+import { Headline } from "./HeadlineComponent";
 import schema from "./headline.schema.dereffed.json";
 
-const { args, argTypes } = getArgsShared(schema);
-
-export default {
-  ...HeadlineStories,
+const { args, argTypes } = getArgsShared(schema as JSONSchema7);
+const meta: Meta = {
   title: "Components/Headline",
   args,
   argTypes,
@@ -15,8 +14,11 @@ export default {
     jsonschema: schema,
   },
 };
+type Story = StoryObj<typeof Headline>;
 
-export const H1 = {
+export default meta;
+
+export const H1: Story = {
   args: pack({
     level: "h1",
     style: "h1",
@@ -24,7 +26,7 @@ export const H1 = {
   }),
 };
 
-export const H2 = {
+export const H2: Story = {
   args: pack({
     level: "h2",
     style: "h2",
@@ -32,7 +34,7 @@ export const H2 = {
   }),
 };
 
-export const H3 = {
+export const H3: Story = {
   args: pack({
     level: "h3",
     style: "h3",
@@ -40,7 +42,7 @@ export const H3 = {
   }),
 };
 
-export const H4 = {
+export const H4: Story = {
   args: pack({
     level: "h4",
     style: "h4",
@@ -48,14 +50,14 @@ export const H4 = {
   }),
 };
 
-export const Subheadline = {
+export const Subheadline: Story = {
   args: pack({
     text: "With a subheadline",
     sub: "This is a subheadline, displayed below the headline",
   }),
 };
 
-export const SubheadlineOrderSwapped = {
+export const SubheadlineOrderSwapped: Story = {
   args: pack({
     text: "With a swapped subheadline",
     sub: "This is a subheadline, displayed above the headline",
@@ -63,7 +65,7 @@ export const SubheadlineOrderSwapped = {
   }),
 };
 
-export const Markdown = {
+export const Markdown: Story = {
   args: pack({
     text: "With *Markdown* use",
     sub: "This is a subheadline, displayed **below the headline**",

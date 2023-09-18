@@ -2,7 +2,7 @@ import { actions } from "@storybook/addon-actions";
 import { DocsContainer, DocsContainerProps } from "@storybook/addon-docs";
 import { Preview } from "@storybook/react";
 import { unpackDecorator } from "@kickstartds/core/lib/storybook";
-import { dark } from './themes';
+import { dark } from "./themes";
 
 import { PageWrapper } from "../src/components/page-wrapper/PageWrapperComponent";
 import { LinkProvider } from "../src/docs/LinkProvider";

@@ -36,5 +36,5 @@
       "default": false
     }
   },
-  "required": ["headline", "text", "target"]
+  "required": ["headline", "text"]
 }

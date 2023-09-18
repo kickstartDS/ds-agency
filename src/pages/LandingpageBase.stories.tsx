@@ -39,17 +39,20 @@ Elevate your digital presence with us. We create impactful digital experiences t
           {
             label: "Components",
             value: "50+",
-            description: "We offer a rich library of over 50 meticulously crafted components to help you create cohesive and visually stunning user interfaces."
+            description:
+              "We offer a rich library of over 50 meticulously crafted components to help you create cohesive and visually stunning user interfaces.",
           },
           {
             value: "30.000+",
             label: "Lines of Documentation",
-            description: "Our comprehensive documentation consists of over 30,000 lines, making it easy for your team to understand and implement our design system."
+            description:
+              "Our comprehensive documentation consists of over 30,000 lines, making it easy for your team to understand and implement our design system.",
           },
           {
             label: "Customizability",
             value: "100%",
-            description: "Our design system is 100% customizable, allowing you to tailor it to your brand's unique identity and design requirements."
+            description:
+              "Our design system is 100% customizable, allowing you to tailor it to your brand's unique identity and design requirements.",
           },
         ]}
       />
@@ -88,6 +91,7 @@ Ready to make your digital journey exceptional?`}
       />
       <div>
         <Button
+          // @ts-expect-error
           variant="primary"
           label="Reach out today!"
           icon="chevron-right"
@@ -187,64 +191,78 @@ Alex Chen, CEO of LaunchPad Innovations`}
         ctaToggle
       />
     </Section>
-    <Section >
+    <Section>
       <FAQ
         headline="Design Systems & Headless FAQs"
-        questions={
-          [
-            {
-              question: "What is a Design System?",
-              answer: "A Design System is a comprehensive set of guidelines, components, and tools that facilitate the consistent creation and maintenance of digital products. It serves as a single source of truth for designers, developers, and content creators, ensuring a cohesive brand identity and user experience across all platforms and devices.",
-            },
-            {
-              question: "What are the benefits of investing in a Design System?",
-              answer: "Investing in a Design System offers numerous benefits, including increased efficiency, improved collaboration, enhanced consistency, and streamlined workflows. It ensures a unified brand voice, facilitates faster product development, and enables teams to create scalable, maintainable, and adaptable digital experiences.",
-            },
-            {
-              question: "How do we help enterprise companies with a complex SaaS product?",
-              answer: "We assist enterprise companies by creating tailored Design Systems that cater to the unique requirements of their complex SaaS products. Our approach involves understanding the product's goals, user needs, and brand identity, and then crafting a comprehensive Design System that streamlines workflows, enhances collaboration, and ensures a consistent user experience.",
-            },
-            {
-              question: "Is a Design System not too expensive for a Startup?",
-              answer: "While Design Systems may initially seem expensive, they are a long-term investment that can save startups time, resources, and money in the long run. By establishing a solid foundation for design and development, startups can reduce inconsistencies, minimize rework, and improve overall product quality, which ultimately leads to a more successful and sustainable business.",
-            },
-            {
-              question: "How long does a Design System take to build?",
-              answer: "The time required to build a Design System varies depending on the project's complexity, scope, and specific requirements. On average, a Design System can take anywhere from a few weeks to several months to develop. However, it is essential to remember that a Design System is an evolving entity that requires ongoing maintenance and updates.",
-            },
-            {
-              question: "What’s the difference between a Design System and a Style Guide?",
-              answer: "A Style Guide is a subset of a Design System, focusing primarily on the visual aspects of a brand, such as colors, typography, and iconography. A Design System, on the other hand, is a more comprehensive framework that encompasses not only visual elements but also components, patterns, guidelines, and tools for design, development, and content creation.",
-            },
-            {
-              question: "Why are Design Systems all the rage these days?",
-              answer: "Design Systems have gained popularity due to the growing need for consistency, efficiency, and scalability in digital product development. As organizations recognize the value of a unified brand identity and seamless user experiences, Design Systems have emerged as a crucial tool in achieving these goals while streamlining workflows and fostering collaboration across teams.",
-            },
-            {
-              question: "How much does a Design System cost?",
-              answer: "The cost of a Design System varies depending on factors such as project scope, complexity, and specific requirements. It is essential to view a Design System as a long-term investment that yields significant returns in terms of improved efficiency, reduced rework, and enhanced brand consistency. If you start at zero and the design system should serve at least 5 digital touchpoints, it could take months to years to develop all the code base. We believe in tailored solutions, so get in touch with us to discuss your specific requirements. As we work with kickstartDS, you can save lots of money because all the main concepts and aspects are already covered. Invest in its paid modules is really low in comparison to the development time you normally need to spend. For the rest, we'll provide you with a transparent, customized quote that aligns with your goals.",
-            },
-            {
-              question: "How do Headless CMSs fit into the picture?",
-              answer: "A Headless CMS fits perfectly into the picture by offering a content-first approach that complements a Design System. It decouples the back-end content repository from the front-end presentation layer, allowing for seamless integration with any design system. The result is a flexible, scalable, and platform-agnostic system that ensures content consistency across all platforms and devices.",
-            },
-            {
-              question: "How does the combination of Headless CMS and Design System create value?",
-              answer: "The combination of a Headless CMS and a Design System creates value by enhancing efficiency, consistency, and scalability. A Headless CMS allows for seamless content management across various platforms, while a Design System ensures a consistent user experience and brand identity. Together, they enable teams to create and manage digital experiences more effectively, resulting in improved user engagement and business growth.",
-            },
-            {
-              question: "Is transitioning to a Headless Web complicated?",
-              answer: "Transitioning to a Headless Web can be a significant change, but it doesn't have to be complicated. With the right planning, tools, and expertise, the transition can be smooth and beneficial. It's about understanding your specific needs and goals, choosing the right Headless CMS, and effectively integrating it with your Design System.",
-            },
-            {
-              question: "How can I ensure a consistent design across various channels with a Headless Web setup? ",
-              answer: "Ensuring a consistent design across various channels with a Headless Web setup is achieved through the integration of a Design System. The Design System serves as a single source of truth for design elements and guidelines, ensuring a unified brand identity and user experience across all platforms and devices. Combined with the platform-agnostic nature of a Headless CMS, you can deliver a consistent and engaging user experience across all channels.",
-            }
-          ]
-        }
+        questions={[
+          {
+            question: "What is a Design System?",
+            answer:
+              "A Design System is a comprehensive set of guidelines, components, and tools that facilitate the consistent creation and maintenance of digital products. It serves as a single source of truth for designers, developers, and content creators, ensuring a cohesive brand identity and user experience across all platforms and devices.",
+          },
+          {
+            question: "What are the benefits of investing in a Design System?",
+            answer:
+              "Investing in a Design System offers numerous benefits, including increased efficiency, improved collaboration, enhanced consistency, and streamlined workflows. It ensures a unified brand voice, facilitates faster product development, and enables teams to create scalable, maintainable, and adaptable digital experiences.",
+          },
+          {
+            question:
+              "How do we help enterprise companies with a complex SaaS product?",
+            answer:
+              "We assist enterprise companies by creating tailored Design Systems that cater to the unique requirements of their complex SaaS products. Our approach involves understanding the product's goals, user needs, and brand identity, and then crafting a comprehensive Design System that streamlines workflows, enhances collaboration, and ensures a consistent user experience.",
+          },
+          {
+            question: "Is a Design System not too expensive for a Startup?",
+            answer:
+              "While Design Systems may initially seem expensive, they are a long-term investment that can save startups time, resources, and money in the long run. By establishing a solid foundation for design and development, startups can reduce inconsistencies, minimize rework, and improve overall product quality, which ultimately leads to a more successful and sustainable business.",
+          },
+          {
+            question: "How long does a Design System take to build?",
+            answer:
+              "The time required to build a Design System varies depending on the project's complexity, scope, and specific requirements. On average, a Design System can take anywhere from a few weeks to several months to develop. However, it is essential to remember that a Design System is an evolving entity that requires ongoing maintenance and updates.",
+          },
+          {
+            question:
+              "What’s the difference between a Design System and a Style Guide?",
+            answer:
+              "A Style Guide is a subset of a Design System, focusing primarily on the visual aspects of a brand, such as colors, typography, and iconography. A Design System, on the other hand, is a more comprehensive framework that encompasses not only visual elements but also components, patterns, guidelines, and tools for design, development, and content creation.",
+          },
+          {
+            question: "Why are Design Systems all the rage these days?",
+            answer:
+              "Design Systems have gained popularity due to the growing need for consistency, efficiency, and scalability in digital product development. As organizations recognize the value of a unified brand identity and seamless user experiences, Design Systems have emerged as a crucial tool in achieving these goals while streamlining workflows and fostering collaboration across teams.",
+          },
+          {
+            question: "How much does a Design System cost?",
+            answer:
+              "The cost of a Design System varies depending on factors such as project scope, complexity, and specific requirements. It is essential to view a Design System as a long-term investment that yields significant returns in terms of improved efficiency, reduced rework, and enhanced brand consistency. If you start at zero and the design system should serve at least 5 digital touchpoints, it could take months to years to develop all the code base. We believe in tailored solutions, so get in touch with us to discuss your specific requirements. As we work with kickstartDS, you can save lots of money because all the main concepts and aspects are already covered. Invest in its paid modules is really low in comparison to the development time you normally need to spend. For the rest, we'll provide you with a transparent, customized quote that aligns with your goals.",
+          },
+          {
+            question: "How do Headless CMSs fit into the picture?",
+            answer:
+              "A Headless CMS fits perfectly into the picture by offering a content-first approach that complements a Design System. It decouples the back-end content repository from the front-end presentation layer, allowing for seamless integration with any design system. The result is a flexible, scalable, and platform-agnostic system that ensures content consistency across all platforms and devices.",
+          },
+          {
+            question:
+              "How does the combination of Headless CMS and Design System create value?",
+            answer:
+              "The combination of a Headless CMS and a Design System creates value by enhancing efficiency, consistency, and scalability. A Headless CMS allows for seamless content management across various platforms, while a Design System ensures a consistent user experience and brand identity. Together, they enable teams to create and manage digital experiences more effectively, resulting in improved user engagement and business growth.",
+          },
+          {
+            question: "Is transitioning to a Headless Web complicated?",
+            answer:
+              "Transitioning to a Headless Web can be a significant change, but it doesn't have to be complicated. With the right planning, tools, and expertise, the transition can be smooth and beneficial. It's about understanding your specific needs and goals, choosing the right Headless CMS, and effectively integrating it with your Design System.",
+          },
+          {
+            question:
+              "How can I ensure a consistent design across various channels with a Headless Web setup? ",
+            answer:
+              "Ensuring a consistent design across various channels with a Headless Web setup is achieved through the integration of a Design System. The Design System serves as a single source of truth for design elements and guidelines, ensuring a unified brand identity and user experience across all platforms and devices. Combined with the platform-agnostic nature of a Headless CMS, you can deliver a consistent and engaging user experience across all channels.",
+          },
+        ]}
       />
     </Section>
-    <Section >
+    <Section>
       <Cta
         align="left"
         headline="Ready to embark on a transformative digital journey?"

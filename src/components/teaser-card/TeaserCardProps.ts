@@ -32,7 +32,7 @@ export type InvertCard = boolean;
 export interface TeaserCardProps {
   headline: Headline;
   text: Text;
-  target: Target;
+  target?: Target;
   image?: Image;
   inverted?: InvertCard;
   [k: string]: unknown;
