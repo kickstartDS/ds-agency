@@ -3,7 +3,6 @@ import { HTMLAttributes, FC } from "react";
 import { TestimonialProps } from "./TestimonialProps";
 import "./testimonial.scss";
 import { Quote } from "@kickstartds/content/lib/quote";
-import { QuotesSlider } from "@kickstartds/content/lib/quotes-slider";
 
 export const Testimonial: FC<
   TestimonialProps & HTMLAttributes<HTMLElement>
