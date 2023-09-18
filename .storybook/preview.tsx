@@ -1,5 +1,6 @@
 import { actions } from "@storybook/addon-actions";
-import { DocsContainer } from "@storybook/addon-docs";
+import { DocsContainer, DocsContainerProps } from "@storybook/addon-docs";
+import { Preview } from "@storybook/react";
 import { unpackDecorator } from "@kickstartds/core/lib/storybook";
 import { dark } from './themes';
 
@@ -9,8 +10,7 @@ import { LinkProvider } from "../src/docs/LinkProvider";
 const myActions = actions("radio");
 window._ks.radio.on("*", myActions.radio);
 
-/** @type { import('@storybook/react').Preview } */
-const preview = {
+const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
@@ -39,7 +39,7 @@ const preview = {
     },
     docs: {
       theme: dark,
-      container: (props) => (
+      container: (props: DocsContainerProps) => (
         <LinkProvider>
           <PageWrapper>
             <DocsContainer {...props} />
@@ -54,6 +54,7 @@ const preview = {
           : "http://localhost:9000",
     },
   },
+  // @ts-expect-error
   html: {
     decorator: unpackDecorator,
   },

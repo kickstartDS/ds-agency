@@ -1,6 +1,8 @@
 import { create } from "@storybook/theming";
 import * as tokens from "../src/token/tokens";
 
+const pxToNumber = (px: string) => Number(px.replace("px", ""));
+
 export const dark = create({
   base: "dark",
 
@@ -11,7 +13,7 @@ export const dark = create({
   appBg: tokens.KsColorPrimaryToBg9Base,
   appContentBg: tokens.KsBackgroundColorDefaultBase,
   appBorderColor: tokens.KsColorPrimaryAlpha2Base,
-  appBorderRadius: tokens.KsBorderRadiusCard,
+  appBorderRadius: pxToNumber(tokens.KsBorderRadiusCard),
 
   // Typography
   fontBase: tokens.KsFontFamilyInterface,
@@ -30,7 +32,7 @@ export const dark = create({
   inputBg: tokens.KsBackgroundColorInterfaceInteractiveBase,
   inputBorder: tokens.KsColorFgToBg7Base,
   inputTextColor: tokens.KsTextColorInterfaceInteractiveBase,
-  inputBorderRadius: tokens.KsBorderRadiusControl,
+  inputBorderRadius: pxToNumber(tokens.KsBorderRadiusControl),
 
   brandTitle: "Your kickstartDS Storybook",
   brandUrl: "https://www.kickstartDS.com",
@@ -46,7 +48,7 @@ export const docsTheme = create({
   appBg: tokens.KsColorPrimaryToBg9Base,
   appContentBg: tokens.KsBackgroundColorDefaultBase,
   appBorderColor: tokens.KsColorPrimaryAlpha2Base,
-  appBorderRadius: tokens.KsBorderRadiusCard,
+  appBorderRadius: pxToNumber(tokens.KsBorderRadiusCard),
 
   // Typography
   fontBase: tokens.KsFontFamilyInterface,
@@ -65,7 +67,7 @@ export const docsTheme = create({
   inputBg: tokens.KsBackgroundColorInterfaceInteractiveBase,
   inputBorder: tokens.KsColorFgToBg7Base,
   inputTextColor: tokens.KsTextColorInterfaceInteractiveBase,
-  inputBorderRadius: tokens.KsBorderRadiusControl,
+  inputBorderRadius: pxToNumber(tokens.KsBorderRadiusControl),
 
   brandTitle: "Cusotm docs theme",
   brandUrl: "https://example.com",
