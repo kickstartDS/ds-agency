@@ -26,5 +26,6 @@
       "default": "normal"
     }
   },
+  "additionalProperties": false,
   "required": ["layoutVariant", "features"]
 }

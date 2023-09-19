@@ -3,5 +3,6 @@
   "$id": "http://schema.mydesignsystem.com/header.schema.json",
   "title": "Footer",
   "type": "object",
-  "properties": {}
+  "properties": {},
+  "additionalProperties": false
 }

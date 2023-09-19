@@ -42,7 +42,8 @@
         "icon": {
           "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "secondaryCta": {
       "type": "object",
@@ -62,7 +63,8 @@
         "icon": {
           "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "align": {
       "title": "Module aligment",
@@ -71,5 +73,6 @@
       "type": "string",
       "default": "left"
     }
-  }
+  },
+  "additionalProperties": false
 }

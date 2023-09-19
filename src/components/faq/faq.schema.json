@@ -25,10 +25,12 @@
             "examples": ["The product is made of high-quality materials"]
           }
         },
+        "additionalProperties": false,
         "required": ["question", "answer"]
       },
       "minItems": 1
     }
   },
+  "additionalProperties": false,
   "required": ["questions"]
 }

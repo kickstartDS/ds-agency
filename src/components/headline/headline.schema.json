@@ -55,5 +55,6 @@
       "description": "Set a custom class name"
     }
   },
+  "additionalProperties": false,
   "required": ["level", "text"]
 }

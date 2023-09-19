@@ -114,6 +114,7 @@
             "format": "uri"
           }
         },
+        "additionalProperties": false,
         "required": ["label", "target"]
       },
       "examples": [
@@ -123,5 +124,6 @@
       ]
     }
   },
+  "additionalProperties": false,
   "required": []
 }

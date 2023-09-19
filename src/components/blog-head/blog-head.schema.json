@@ -35,5 +35,6 @@
       "examples": ["img/agency.png"]
     }
   },
+  "additionalProperties": false,
   "required": ["headline"]
 }

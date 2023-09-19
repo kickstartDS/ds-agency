@@ -8,5 +8,6 @@
       "type": "string",
       "enum": ["sidebarRight", "sidebarLeft", "even"]
     }
-  }
+  },
+  "additionalProperties": false
 }

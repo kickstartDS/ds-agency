@@ -31,7 +31,8 @@
           "enum": ["button", "link", "intext"],
           "default": "text"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "features": {
       "type": "array",
@@ -77,14 +78,17 @@
                 "examples": ["See all our partners"]
               }
             },
+            "additionalProperties": false,
             "required": ["style", "link", "label"]
           }
         },
+        "additionalProperties": false,
         "required": ["title", "text"]
       },
       "minItems": 1,
       "maxItems": 8
     }
   },
+  "additionalProperties": false,
   "required": ["layout", "features"]
 }

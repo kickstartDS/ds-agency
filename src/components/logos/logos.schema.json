@@ -38,6 +38,7 @@
             "examples": ["Logo 1"]
           }
         },
+        "additionalProperties": false,
         "required": ["src"]
       },
       "minItems": 1,
@@ -88,8 +89,10 @@
           "default": "text"
         }
       },
+      "additionalProperties": false,
       "required": ["style", "link", "label"]
     }
   },
+  "additionalProperties": false,
   "required": ["logos"]
 }

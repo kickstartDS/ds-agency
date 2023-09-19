@@ -43,5 +43,6 @@
       "default": false
     }
   },
+  "additionalProperties": false,
   "required": ["label"]
 }

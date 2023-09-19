@@ -60,6 +60,7 @@
           "default": "Read more"
         }
       },
+      "additionalProperties": false,
       "required": ["url"]
     },
     "readingTime": {
@@ -92,8 +93,10 @@
           "examples": ["img/customer-1.png"]
         }
       },
+      "additionalProperties": false,
       "required": ["name"]
     }
   },
+  "additionalProperties": false,
   "required": ["headline", "teaserText"]
 }

@@ -36,5 +36,6 @@
       "default": false
     }
   },
+  "additionalProperties": false,
   "required": ["headline", "text"]
 }

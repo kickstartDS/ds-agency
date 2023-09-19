@@ -37,6 +37,7 @@
             "type": "string"
           }
         },
+        "additionalProperties": false,
         "required": ["value", "label"],
         "examples": [
           {
@@ -61,5 +62,6 @@
       "maximum": 4
     }
   },
+  "additionalProperties": false,
   "required": ["stats"]
 }

@@ -31,6 +31,7 @@
             "examples": ["Caption Image"]
           }
         },
+        "additionalProperties": false,
         "required": ["url"]
       },
       "minItems": 1,
@@ -44,5 +45,6 @@
       "examples": ["below"]
     }
   },
+  "additionalProperties": false,
   "required": ["images"]
 }

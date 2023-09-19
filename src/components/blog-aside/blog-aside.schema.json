@@ -44,6 +44,7 @@
           "examples": ["johndoe@example.com"]
         }
       },
+      "additionalProperties": false,
       "required": ["name"]
     },
     "socialSharing": {
@@ -75,6 +76,7 @@
             "examples": ["Share on Twitter"]
           }
         },
+        "additionalProperties": false,
         "required": ["icon", "href", "title"]
       }
     },
@@ -92,5 +94,6 @@
       "examples": ["12/30/2022"]
     }
   },
+  "additionalProperties": false,
   "required": ["author", "date"]
 }
