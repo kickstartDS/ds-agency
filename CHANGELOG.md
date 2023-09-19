@@ -1,3 +1,16 @@
+# v1.0.9 (Tue Sep 19 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat: cofigure header component with props ([@lmestel](https://github.com/lmestel))
+- fix: fix schema ids ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.8 (Mon Sep 18 2023)
 
 #### ⚠️ Pushed to `main`
