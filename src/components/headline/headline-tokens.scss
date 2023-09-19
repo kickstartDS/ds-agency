@@ -19,27 +19,41 @@
   .c-headline {
     --c-headline--color: var(--g-headline--color);
     --c-headline--font-weight: var(--g-headline--font-weight);
+
+    &--h1 {
+      --c-headline--font: var(--ks-font-display-xxl);
+
+      .c-headline__subheadline {
+        --c-headline_subheadline--font: var(--ks-font-copy-l);
+        @media (min-width: 42rem) {
+          --c-headline_subheadline--font: var(--ks-font-copy-xl);
+        }
+      }
+    }
+
+    &--h2 {
+      --c-headline--font: var(--ks-font-display-xl);
+      .c-headline__subheadline {
+        @media (min-width: 42rem) {
+          --c-headline_subheadline--font: var(--ks-font-copy-l);
+        }
+      }
+    }
+    &--h3 {
+      --c-headline--font: var(--ks-font-display-l);
+    }
+    &--h4 {
+      --c-headline--font: var(--ks-font-display-m);
+    }
+    &--p {
+      --c-headline--font: var(--ks-font-copy-m);
+    }
   }
 
   .c-headline__subheadline {
-    --c-headline_subheadline--font: var(--ks-font-display-s);
+    --c-headline_subheadline--font: var(--ks-font-copy-m);
     --c-headline_subheadline--color: var(--ks-text-color-primary);
-    --c-headline_subheadline--font-weight: var(--ks-font-weight-medium);
+    --c-headline_subheadline--font-weight: var(--ks-font-weight-semi-bold);
     --c-headline_subheadline--margin: 0.25em 0 0;
-  }
-}
-
-.c-headline,
-h1,
-h2,
-h3,
-h4,
-h5 {
-  strong {
-    font-weight: inherit;
-    background: linear-gradient(135deg, var(--ks-color-primary-base) 0%, var(--ks-color-secondary-base) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: var(--g-filter-drop-shadow--higlight);
   }
 }

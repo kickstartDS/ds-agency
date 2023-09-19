@@ -19,7 +19,8 @@ const Page = () => (
     <Section spaceAfter="none" spaceBefore="none" width="full">
       <Visual
         headline="We simplify the process of building and scaling your Design System"
-        text="Elevate your digital presence with us. We create impactful digital experiences that deliver tangible results. With over 15+ years of expertise in design systems, headless CMSs, and frontend development, let's shape your digital future together."
+        sub="Elevate your digital presence with us."
+        text="We create impactful digital experiences that deliver tangible results. With over 15+ years of expertise in design systems, headless CMSs, and frontend development, let's shape your digital future together."
         align="left"
         media={{
           mode: "image",

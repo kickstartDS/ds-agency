@@ -1,14 +1,20 @@
 :root {
   .c-visual {
+    .c-visual__box {
+      --c-visual_box--background: var(--ks-background-color-default);
+      --c-visual_box--color: var(--ks-text-color-default);
+    }
+
     @container visual (min-width: 640px) {
       --c-visual_image--indent-left: 80%;
       --c-visual_image--indent-right: 80%;
-    }
-    .c-visual__box {
-      --c-visual_headline--color: var(--ks-color-fg);
-      --c-visual_box--color: var(--ks-text-color-default);
 
-      --c-visual_box--max-width: 50%;
+      .c-visual__box {
+        --c-visual_headline--color: var(--ks-color-fg);
+        --c-visual_box--color: var(--ks-text-color-default);
+        --c-visual_box--max-width: 50%;
+        --c-visual_box--background: var(--ks-color-bg-alpha-7);
+      }
     }
   }
 

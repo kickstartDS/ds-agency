@@ -41,6 +41,8 @@ export const Headline: FC<
           <header
             className={classnames(
               "c-headline",
+              `c-headline--${style}`,
+              style !== "none" && style !== level && `c-headline--${style}`,
               `c-headline--align-${align}`,
               spaceAfter && `c-headline--space-after-${spaceAfter}`,
               className
@@ -52,12 +54,7 @@ export const Headline: FC<
                 {renderSubheadline(sub)}
               </p>
             )}
-            <TagName
-              className={classnames(
-                "c-headline__headline",
-                style !== "none" && style !== level && `c-headline__${style}`
-              )}
-            >
+            <TagName className={classnames("c-headline__headline")}>
               {renderContent(text)}
             </TagName>
             {sub && !switchOrder && (

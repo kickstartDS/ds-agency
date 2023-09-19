@@ -11,7 +11,14 @@
 .c-visual {
   display: flex;
   flex-direction: column;
-  gap: var(--ks-spacing-stack-m);
+
+  .c-headline {
+    --c-headline--color: var(--ks-color-fg);
+
+    .c-headline__subheadline {
+      --c-headline_subheadline--color: var(--ks-text-color-primary);
+    }
+  }
 
   &.c-visual--full {
     height: 100%;

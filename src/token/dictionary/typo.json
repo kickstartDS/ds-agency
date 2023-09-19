@@ -392,13 +392,13 @@
           "value": 1.5
         },
         "xs": {
-          "value": 1.5
+          "value": 1.35
         },
         "s": {
-          "value": 1.5
+          "value": 1.25
         },
         "m": {
-          "value": 1.45
+          "value": 1.25
         },
         "l": {
           "value": 1.25
@@ -424,13 +424,13 @@
           "value": 1.5
         },
         "l": {
-          "value": 1.5
+          "value": 1.45
         },
         "xl": {
-          "value": 1.5
+          "value": 1.35
         },
         "xxl": {
-          "value": 1.5
+          "value": 1.35
         }
       },
       "interface": {

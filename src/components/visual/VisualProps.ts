@@ -96,7 +96,7 @@ export type ModuleAligment = "left" | "center";
 
 export interface VisualProps {
   headline?: Headline;
-  subheadline?: ModuleSubheadline;
+  sub?: ModuleSubheadline;
   text?: ModuleText;
   primaryCta?: {
     toggle?: CTAToggle;

@@ -2,6 +2,7 @@
 
 .c-headline {
   max-width: unset;
+  font: var(--c-headline--font);
 
   &--align-center {
     .c-headline__headline {
@@ -11,5 +12,22 @@
 
   &__headline {
     text-align: left;
+    font: var(--c-headline--font);
+    font-weight: var(--c-headline--font-weight);
+  }
+}
+
+.c-headline,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  strong {
+    font-weight: inherit;
+    background: linear-gradient(135deg, var(--ks-color-primary-base) 0%, var(--ks-color-secondary-base) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: var(--g-filter-drop-shadow--higlight);
   }
 }

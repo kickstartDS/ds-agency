@@ -10,7 +10,7 @@
       "type": "string",
       "examples": ["Headline"]
     },
-    "subheadline": {
+    "sub": {
       "title": "Module Subheadline",
       "description": "Subheadline below the module headline",
       "type": "string",
