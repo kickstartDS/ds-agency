@@ -1,3 +1,15 @@
+# v1.0.15 (Tue Sep 19 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: schemas, update build ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.14 (Tue Sep 19 2023)
 
 #### ⚠️ Pushed to `main`
