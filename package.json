@@ -13,8 +13,8 @@
   "license": "(MIT OR Apache-2.0)",
   "author": "Jonas Ulrich <jonas.ulrich@kickstartds.com> (https://www.kickstartDS.com/)",
   "sideEffects": [
-    "./src/global.client.ts",
-    "./dist/global.client.js",
+    "./src/**/*.client.ts",
+    "./dist/**/*.client.js",
     "**/*.css"
   ],
   "exports": {
