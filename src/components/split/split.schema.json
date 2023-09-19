@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://schema.mydesignsystem.de/split.schema.json",
+  "$id": "http://schema.mydesignsystem.com/split.schema.json",
   "title": "Split",
   "type": "object",
   "properties": {
