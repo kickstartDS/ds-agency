@@ -1,3 +1,16 @@
+# v1.0.10 (Tue Sep 19 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(headline + typo): adjust headline and typo styles ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.9 (Tue Sep 19 2023)
 
 #### ⚠️ Pushed to `main`
