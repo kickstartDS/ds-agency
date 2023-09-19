@@ -1,3 +1,16 @@
+# v1.0.12 (Tue Sep 19 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat: cofigure main nav component with props ([@lmestel](https://github.com/lmestel))
+- build: mark client js as side effect ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.11 (Tue Sep 19 2023)
 
 #### ⚠️ Pushed to `main`
