@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Header } from "./HeaderComponent";
+import { Header as HeaderComponent } from "./HeaderComponent";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
 import schema from "./header.schema.dereffed.json";
@@ -9,20 +9,22 @@ const meta: Meta = {
   title: "Layout/Header",
   args,
   argTypes,
-  component: Header,
+  component: HeaderComponent,
   parameters: {
     jsonschema: schema,
   },
 };
-type Story = StoryObj<typeof Header>;
+type Story = StoryObj<typeof HeaderComponent>;
 
 export default meta;
-export const Default: Story = {
+export const Header: Story = {
   args: pack({
-    headline: "The Sanity & Next.js Experts",
-    text: "Experience the speed & scalability unlike anything seen before with our Sanity CMS powered websites, web apps & composable architecture.",
-    ctaLabel: "Get in touch",
-    ctaToggle: true,
-    ctaTarget: "#",
+    logo: {
+      src: "/logo.svg",
+      alt: "Systemics Logo",
+      width: 176,
+      height: 40,
+      lazy: false,
+    },
   }),
 };

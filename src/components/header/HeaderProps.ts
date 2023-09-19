@@ -6,72 +6,102 @@
  */
 
 /**
- * Headline for the module element
+ * Picture source
  */
-export type ModuleHeadline = string;
+export type Source = string;
 /**
- * Subheadline below the module headline
+ * Use a srcSet to display picture
  */
-export type ModuleSubheadline = string;
+export type PictureSourceset = string;
 /**
- * Info text for the module element
+ * Alt text to display for picture
  */
-export type ModuleText = string;
+export type AltText = string;
 /**
- * Toggle wether the CTA is displayed or not
+ * Width of the picture
  */
-export type CTAToggle = boolean;
+export type Width = number;
 /**
- * Text content to display inside the button
+ * Height of the picture
  */
-export type Label = string;
+export type Height = number;
 /**
- * Target that should be linked, makes the button behave like a link semantically
+ * Add additional css classes that should be applied to the button
  */
-export type Target = string;
+export type AdditionalClasses = string;
 /**
- * Choose an icon
+ * Optional custom component identifier
  */
-export type Icon = string;
+export type KsComponentAttribute = string;
 /**
- * Toggle wether the CTA is displayed or not
+ * Add id attribute to the image
  */
-export type CTAToggle1 = boolean;
+export type Id = string;
 /**
- * Text content to display inside the button
+ * Define an itemprop attribute for the picture
  */
-export type Label1 = string;
+export type ItempropAttribute = string;
 /**
- * Target that should be linked, makes the button behave like a link semantically
+ * Define a style attribute for the picture
  */
-export type Target1 = string;
+export type StyleAttribute = string;
 /**
- * Choose an icon
+ * Render noscript fallback
  */
-export type Icon1 = string;
+export type Noscript = boolean;
 /**
- * Choose the alginment of the module content
+ * Load the picture lazily
  */
-export type ModuleAligment = "left" | "center";
+export type Lazy = boolean;
+/**
+ * Use a srcSet to display picture
+ */
+export type PictureSourceset1 = string;
+/**
+ * TODO MEDIA DESCRIPTION
+ */
+export type TODOMEDIATITLE = string;
+/**
+ * TODO TYPE DESCRIPTION
+ */
+export type TODOTYPETITLE = string;
+/**
+ * Additional sources. This will result in a `picture`-Element
+ */
+export type Sources = {
+  srcSet?: PictureSourceset1;
+  media?: TODOMEDIATITLE;
+  type?: TODOTYPETITLE;
+}[];
+/**
+ * Set additional class(es) to the picture
+ */
+export type ClassAttribute = string;
 
 export interface HeaderProps {
-  headline?: ModuleHeadline;
-  subheadline?: ModuleSubheadline;
-  text?: ModuleText;
-  primaryCta?: {
-    toggle?: CTAToggle;
-    label?: Label;
-    target?: Target;
-    icon?: Icon;
-    [k: string]: unknown;
-  };
-  secondaryCta?: {
-    toggle?: CTAToggle1;
-    label?: Label1;
-    target?: Target1;
-    icon?: Icon1;
-    [k: string]: unknown;
-  };
-  align?: ModuleAligment;
-  [k: string]: unknown;
+  logo: Picture;
+  logoHref?: string;
+  navItems?: {
+    href: string;
+    label: string;
+  }[];
+}
+/**
+ * Base component to display a picture
+ */
+export interface Picture {
+  src?: Source;
+  srcSet?: PictureSourceset;
+  alt?: AltText;
+  width?: Width;
+  height?: Height;
+  className?: AdditionalClasses;
+  component?: KsComponentAttribute;
+  id?: Id;
+  itemProp?: ItempropAttribute;
+  style?: StyleAttribute;
+  noscript?: Noscript;
+  lazy?: Lazy;
+  sources?: Sources;
+  pictureClassName?: ClassAttribute;
 }

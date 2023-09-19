@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/nav-main.schema.json",
+  "title": "Nav Main",
+  "definitions": {
+    "navItem": {
+      "type": "object",
+      "properties": {
+        "href": { "type": "string" },
+        "label": { "type": "string" }
+      },
+      "additionalProperties": false,
+      "required": ["href", "label"]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/navItem"
+      },
+      "examples": [
+        [
+          {
+            "href": "#about",
+            "label": "About us"
+          },
+          {
+            "href": "#services",
+            "label": "Our Services"
+          },
+          {
+            "href": "#project",
+            "label": "Project"
+          },
+          {
+            "href": "#showcase",
+            "label": "Showcase"
+          },
+          {
+            "href": "#blog",
+            "label": "Blog"
+          }
+        ]
+      ]
+    }
+  },
+  "additionalProperties": false
+}
