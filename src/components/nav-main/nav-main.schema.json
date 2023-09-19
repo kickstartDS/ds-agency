@@ -15,6 +15,13 @@
   },
   "type": "object",
   "properties": {
+    "logo": {
+      "$ref": "http://schema.kickstartds.com/base/picture.definitions.json"
+    },
+    "logoHref": {
+      "type": "string",
+      "default": "/"
+    },
     "items": {
       "type": "array",
       "items": {
@@ -46,5 +53,6 @@
       ]
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "required": ["logo"]
 }

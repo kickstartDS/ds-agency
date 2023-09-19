@@ -34,13 +34,13 @@ export const NavMainItem: FC<{ label: string; href: string }> = ({
   </li>
 );
 
-export const NavMain: FC<NavMainProps> = ({ items }) =>
+export const NavMain: FC<NavMainProps> = ({ logo, logoHref = "/", items }) =>
   items && items.length > 0 ? (
     <div className="c-nav-main__wrap">
       <NavToggleComponent />
       <nav className="c-nav-main" id="nav-main" aria-label="Hauptnavigation">
-        <Link className="c-nav-main__logo" href="#">
-          <Picture src="logo.svg" />
+        <Link className="c-nav-main__logo" href={logoHref}>
+          <Picture {...logo} />
         </Link>
         <ul className="c-nav-main__list">
           {items.map((item) => (

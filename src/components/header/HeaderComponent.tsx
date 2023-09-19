@@ -14,7 +14,7 @@ export const Header: FC<HeaderProps> = ({ logo, logoHref = "/", navItems }) => (
           <Picture {...logo} />
         </Link>
 
-        <NavMain items={navItems} />
+        <NavMain logo={logo} logoHref={logoHref} items={navItems} />
       </div>
     </div>
     <div className="c-header--spacer"></div>
