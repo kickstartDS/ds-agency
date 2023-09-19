@@ -1,10 +1,11 @@
 import { FC } from "react";
 import { Link } from "@kickstartds/base/lib/link";
+import { Picture } from "@kickstartds/base/lib/picture";
+import { NavMainProps } from "./NavMainProps";
 import "./nav-main.scss";
 import "./nav-toggle.scss";
 import "./js/NavToggle";
 import "./js/navMainEvents";
-import { Picture } from "@kickstartds/base/lib/picture";
 
 export const NavToggleComponent: FC = () => (
   <button
@@ -15,10 +16,10 @@ export const NavToggleComponent: FC = () => (
     aria-expanded="false"
     ks-component="base.nav-toggle"
   >
-    <span className="nav-toggle__label">Navigation öffnen/schließen</span>
-    <div className="nav-toggle__icon">
-      <div className="nav-toggle__icon__middle"></div>
-    </div>
+    <span className="nav-toggle__label">toggle navigation</span>
+    <span className="nav-toggle__icon">
+      <span className="nav-toggle__icon__middle"></span>
+    </span>
   </button>
 );
 
@@ -33,20 +34,19 @@ export const NavMainItem: FC<{ label: string; href: string }> = ({
   </li>
 );
 
-export const NavMain: FC = ({}) => (
-  <div className="c-nav-main__wrap">
-    <NavToggleComponent />
-    <nav className="c-nav-main" id="nav-main" aria-label="Hauptnavigation">
-      <Link className="c-nav-main__logo" href="#">
-        <Picture src="logo.svg" />
-      </Link>
-      <ul className="c-nav-main__list">
-        <NavMainItem href="#" label="About us" />
-        <NavMainItem href="#" label="Our Services" />
-        <NavMainItem href="#" label="Project" />
-        <NavMainItem href="#" label="Showcase" />
-        <NavMainItem href="#" label="Blog" />
-      </ul>
-    </nav>
-  </div>
-);
+export const NavMain: FC<NavMainProps> = ({ items }) =>
+  items && items.length > 0 ? (
+    <div className="c-nav-main__wrap">
+      <NavToggleComponent />
+      <nav className="c-nav-main" id="nav-main" aria-label="Hauptnavigation">
+        <Link className="c-nav-main__logo" href="#">
+          <Picture src="logo.svg" />
+        </Link>
+        <ul className="c-nav-main__list">
+          {items.map((item) => (
+            <NavMainItem {...item} key={item.href + item.label} />
+          ))}
+        </ul>
+      </nav>
+    </div>
+  ) : null;

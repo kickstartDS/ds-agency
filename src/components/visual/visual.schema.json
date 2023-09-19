@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://schema.mydesignsystem.de/visual.schema.json",
+  "$id": "http://schema.mydesignsystem.com/visual.schema.json",
   "title": "Visual",
   "type": "object",
   "properties": {
