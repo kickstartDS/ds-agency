@@ -23,8 +23,8 @@ export const Cta: FC<CtaProps> = ({
       sub={sub}
       spaceAfter="minimum"
     />
+    {/* @ts-expect-error */}
     {text ? <RichText align={align} text={text} /> : ""}
-
     {primaryCta?.toggle || secondaryCta?.toggle ? (
       <div className="c-cta__links">
         {primaryCta?.toggle ? (

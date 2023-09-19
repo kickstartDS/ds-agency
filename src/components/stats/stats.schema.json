@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/stats.schema.json",
   "title": "Stats",
   "description": "Display a set of stats in a grid",
   "type": "object",
