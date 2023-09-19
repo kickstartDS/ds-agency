@@ -1,3 +1,15 @@
+# v1.0.11 (Tue Sep 19 2023)
+
+#### ⚠️ Pushed to `main`
+
+- build: add client js to bundle ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.10 (Tue Sep 19 2023)
 
 #### ⚠️ Pushed to `main`
