@@ -1,6 +1,6 @@
 import { Component, define } from "@kickstartds/core/lib/component";
-import { navMainEvents } from "./navMainEvents";
-import body from "./body";
+import { navMainEvents } from "./navMainEvents.client";
+import body from "./body.client";
 
 export default class NavToggle extends Component {
   static identifier = "base.nav-toggle";

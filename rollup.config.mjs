@@ -21,9 +21,19 @@ const componentEntryPoints = Object.fromEntries(
     fileName,
   ])
 );
+const clientJsFiles = fg.sync(["src/**/*.client.(t|j)s"]);
+const clientJsEntryPoints = Object.fromEntries(
+  clientJsFiles.map((fileName) => [
+    path.join(
+      path.relative("src", path.dirname(fileName)),
+      path.basename(fileName, path.extname(fileName))
+    ),
+    fileName,
+  ])
+);
 
 export default {
-  input: { ...componentEntryPoints, "global.client": "src/global.client.ts" },
+  input: { ...componentEntryPoints, ...clientJsEntryPoints },
   output: {
     dir: "dist",
     format: "es",

@@ -4,8 +4,8 @@ import { Picture } from "@kickstartds/base/lib/picture";
 import { NavMainProps } from "./NavMainProps";
 import "./nav-main.scss";
 import "./nav-toggle.scss";
-import "./js/NavToggle";
-import "./js/navMainEvents";
+import "./js/NavToggle.client";
+import "./js/navMainEvents.client";
 
 export const NavToggleComponent: FC = () => (
   <button
