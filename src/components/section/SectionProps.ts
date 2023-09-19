@@ -14,6 +14,10 @@ export type Headline = string;
  */
 export type Subheadline = string;
 /**
+ * Switch the order of headline and subheadline
+ */
+export type SwitchHeadlineOrder = boolean;
+/**
  * Width of section to use
  */
 export type Width = "full" | "max" | "wide" | "default" | "narrow";
@@ -145,6 +149,7 @@ export type CallToActions = {
 export interface SectionProps {
   headline?: Headline;
   sub?: Subheadline;
+  switchHeadlineOrder?: SwitchHeadlineOrder;
   width?: Width;
   gutter?: Gutter;
   mode?: Mode;

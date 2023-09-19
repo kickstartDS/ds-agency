@@ -17,6 +17,11 @@
       "description": "Subheadline for the section",
       "format": "markdown"
     },
+    "switchHeadlineOrder": {
+      "type": "boolean",
+      "title": "Switch Headline Order",
+      "description": "Switch the order of headline and subheadline"
+    },
     "width": {
       "type": "string",
       "title": "Width",

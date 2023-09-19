@@ -22,6 +22,7 @@ export const Section: FC<SectionProps> = ({
   spaceAfter = "default",
   className,
   inverted = false,
+  switchHeadlineOrder = false,
   ctas = [],
   ...props
 }) => {
@@ -38,6 +39,7 @@ export const Section: FC<SectionProps> = ({
           sub: sub,
           spaceAfter: "large",
           align: align,
+          switchOrder: switchHeadlineOrder,
         }}
         className={classnames(`l-section--align-${align}`)}
         width={width}
