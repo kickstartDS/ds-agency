@@ -3,6 +3,39 @@
   "$id": "http://schema.mydesignsystem.com/header.schema.json",
   "title": "Footer",
   "type": "object",
-  "properties": {},
+  "properties": {
+    "logo": {
+      "$ref": "http://schema.kickstartds.com/base/picture.definitions.json"
+    },
+    "logoHref": {
+      "type": "string",
+      "default": "/"
+    },
+    "navItems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "href": { "type": "string" },
+          "label": { "type": "string" }
+        },
+        "additionalProperties": false,
+        "required": ["href", "label"]
+      },
+      "examples": [
+        [
+          {
+            "href": "#privacy-policy",
+            "label": "Privacy policy"
+          },
+          {
+            "href": "#changelog",
+            "label": "Changelog"
+          }
+        ]
+      ]
+    }
+  },
+  "required": ["logo"],
   "additionalProperties": false
 }

@@ -5,12 +5,14 @@ import { Button } from "@kickstartds/base/lib/button";
 import { Cta } from "../components/cta/CtaComponent";
 import { FAQ } from "../components/faq/FaqComponent";
 import { Header } from "../components/header/HeaderComponent";
+import { headerProps } from "../components/header/Header.stories";
 import { Footer } from "../components/footer/FooterComponent";
+import { footerProps } from "../components/footer/Footer.stories";
 import { Stats } from "../components/stats/StatsComponent";
 
 const Page = () => (
   <>
-    <Header />
+    <Header {...headerProps} />
     <Section width="default">
       <Cta
         align="left"
@@ -282,7 +284,7 @@ Alex Chen, CEO of LaunchPad Innovations`}
         ctaToggle
       />
     </Section>
-    <Footer />
+    <Footer {...footerProps} />
   </>
 );
 
