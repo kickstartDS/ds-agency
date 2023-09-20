@@ -1,3 +1,18 @@
+# v1.0.16 (Wed Sep 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add first draft of types, hopefully fix CI ([@julrich](https://github.com/julrich))
+- fix: update lockfile ([@julrich](https://github.com/julrich))
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- fix: additionalProperties false everywhere ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.15 (Tue Sep 19 2023)
 
 #### ⚠️ Pushed to `main`
