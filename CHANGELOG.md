@@ -1,3 +1,15 @@
+# v1.0.17 (Wed Sep 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat: cofigure footer component with props ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.16 (Wed Sep 20 2023)
 
 #### ⚠️ Pushed to `main`
