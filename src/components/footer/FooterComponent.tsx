@@ -24,7 +24,7 @@ export const Footer: FC<FooterProps> = ({
       {navItems.length > 0 ? (
         <div className="c-footer__links">
           {navItems.map(({ href, label }) => (
-            <Link href={href} className="c-footer__link">
+            <Link href={href} className="c-footer__link" key={href + label}>
               {label}
             </Link>
           ))}
