@@ -28,7 +28,6 @@ export type Features =
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       }
     ]
   | [
@@ -37,14 +36,12 @@ export type Features =
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       }
     ]
   | [
@@ -53,21 +50,18 @@ export type Features =
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       }
     ]
   | [
@@ -76,28 +70,24 @@ export type Features =
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       }
     ]
   | [
@@ -106,35 +96,30 @@ export type Features =
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       }
     ]
   | [
@@ -143,42 +128,36 @@ export type Features =
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       }
     ]
   | [
@@ -187,49 +166,42 @@ export type Features =
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       }
     ]
   | [
@@ -238,56 +210,48 @@ export type Features =
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       },
       {
         icon?: Icon;
         title: Title;
         text: Text;
         cta?: CallToAction;
-        [k: string]: unknown;
       }
     ];
 /**
@@ -320,10 +284,8 @@ export interface FeaturesProps {
   ctas?: {
     toggle?: CTAToggle;
     style?: "button" | "link" | "intext";
-    [k: string]: unknown;
   };
   features: Features;
-  [k: string]: unknown;
 }
 /**
  * The call to action
@@ -331,5 +293,4 @@ export interface FeaturesProps {
 export interface CallToAction {
   link: CallToActionLink;
   label: LinkLabel;
-  [k: string]: unknown;
 }

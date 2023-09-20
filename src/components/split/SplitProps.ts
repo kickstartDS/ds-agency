@@ -7,5 +7,4 @@
 
 export interface SplitProps {
   layout?: "sidebarRight" | "sidebarLeft" | "even";
-  [k: string]: unknown;
 }

@@ -14,12 +14,10 @@ export type Questions = [
   {
     question: Question;
     answer: Answer;
-    [k: string]: unknown;
   },
   ...{
     question: Question;
     answer: Answer;
-    [k: string]: unknown;
   }[]
 ];
 /**
@@ -36,5 +34,4 @@ export type Answer = string;
  */
 export interface FAQProps {
   questions: Questions;
-  [k: string]: unknown;
 }

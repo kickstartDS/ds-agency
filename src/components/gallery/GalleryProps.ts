@@ -17,7 +17,6 @@ export type Images =
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
@@ -25,13 +24,11 @@ export type Images =
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
@@ -39,19 +36,16 @@ export type Images =
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
@@ -59,25 +53,21 @@ export type Images =
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
@@ -85,31 +75,26 @@ export type Images =
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
@@ -117,37 +102,31 @@ export type Images =
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
@@ -155,43 +134,36 @@ export type Images =
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
@@ -199,49 +171,41 @@ export type Images =
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
@@ -249,55 +213,46 @@ export type Images =
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
@@ -305,61 +260,51 @@ export type Images =
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       },
       {
         url: URL;
         alt?: AltText;
         caption?: Caption;
-        [k: string]: unknown;
       }
     ];
 /**
@@ -385,5 +330,4 @@ export type Layout = "stack" | "smallTiles" | "largeTiles";
 export interface GalleryProps {
   images: Images;
   layout?: Layout;
-  [k: string]: unknown;
 }

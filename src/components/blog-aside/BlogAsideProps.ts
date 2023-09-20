@@ -44,7 +44,6 @@ export type SocialSharing = {
   icon: Icon;
   href: Href;
   title: Title;
-  [k: string]: unknown;
 }[];
 /**
  * The reading time for the blog post
@@ -63,7 +62,6 @@ export interface BlogAsideProps {
   socialSharing?: SocialSharing;
   readingTime?: ReadingTime;
   date: PublishedDate;
-  [k: string]: unknown;
 }
 /**
  * The author of the blog post
@@ -74,5 +72,4 @@ export interface Author {
   image?: Image;
   twitter?: Twitter;
   email?: Email;
-  [k: string]: unknown;
 }

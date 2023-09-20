@@ -85,7 +85,7 @@ export const Section = forwardRef<
                         ? "secondary"
                         : "tertiary"
                     }
-                    size="default"
+                    size="medium"
                   />
                 ))}
             </div>

@@ -71,6 +71,7 @@ export const Features: FC<FeaturesProps & HTMLAttributes<HTMLElement>> = ({
                   <Button
                     className="c-feature__button"
                     size="small"
+                    // @ts-expect-error
                     href={feature.cta.link}
                     label={feature.cta.label}
                   />

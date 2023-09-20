@@ -30,5 +30,4 @@ export interface BlogHeadProps {
   tags?: Tags;
   headline: Headline;
   image?: CoverImage;
-  [k: string]: unknown;
 }

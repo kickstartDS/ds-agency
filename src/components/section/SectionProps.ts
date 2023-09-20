@@ -140,7 +140,6 @@ export type Target2 = string;
 export type CallToActions = {
   label: Label1;
   target: Target2;
-  [k: string]: unknown;
 }[];
 
 /**
@@ -160,7 +159,6 @@ export interface SectionProps {
   spaceAfter?: SpaceAfter1;
   inverted?: Inverted;
   ctas?: CallToActions;
-  [k: string]: unknown;
 }
 /**
  * Component used for user interaction
@@ -172,7 +170,6 @@ export interface Button {
   icon?: Icon;
   size?: Size;
   disabled?: Disabled;
-  [k: string]: unknown;
 }
 /**
  * Component used for headlines
@@ -186,7 +183,6 @@ export interface Headline1 {
   style?: Style;
   spaceAfter?: SpaceAfter;
   className?: ClassName;
-  [k: string]: unknown;
 }
 /**
  * Component used to tease content
@@ -197,5 +193,4 @@ export interface TeaserCard {
   target?: Target1;
   image?: Image;
   inverted?: InvertCard;
-  [k: string]: unknown;
 }

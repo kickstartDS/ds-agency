@@ -5,11 +5,9 @@ import { CollapsibleBox } from "@kickstartds/base/lib/collapsible-box";
 
 export const FAQ: FC<FAQProps & HTMLAttributes<HTMLElement>> = ({
   questions,
-  variant = "default",
-  align = "left",
 }) => {
   return (
-    <div className={`c-faq ${variant} ${align}`}>
+    <div className={`c-faq`}>
       {questions.map((question, index) => (
         <CollapsibleBox
           key={index}

@@ -35,5 +35,4 @@ export interface TeaserCardProps {
   target?: Target;
   image?: Image;
   inverted?: InvertCard;
-  [k: string]: unknown;
 }

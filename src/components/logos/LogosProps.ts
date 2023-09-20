@@ -20,1090 +20,880 @@ export type Logos =
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ]
   | [
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       },
       {
         src: URL;
         alt?: Caption;
-        [k: string]: unknown;
       }
     ];
 /**
@@ -1145,7 +935,6 @@ export interface LogosProps {
   logos: Logos;
   align?: Alignment;
   cta?: CallToAction;
-  [k: string]: unknown;
 }
 /**
  * The call to action
@@ -1156,5 +945,4 @@ export interface CallToAction {
   link: CallToActionLink;
   label: LinkLabel;
   style: "button" | "text";
-  [k: string]: unknown;
 }

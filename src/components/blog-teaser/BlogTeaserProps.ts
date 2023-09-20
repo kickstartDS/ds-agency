@@ -62,7 +62,6 @@ export interface BlogTeaserProps {
   link?: Link;
   readingTime?: ReadingTime;
   author?: Author;
-  [k: string]: unknown;
 }
 /**
  * URL and label for the blog post linked
@@ -70,7 +69,6 @@ export interface BlogTeaserProps {
 export interface Link {
   url: URL;
   label?: Label;
-  [k: string]: unknown;
 }
 /**
  * The author of the blog post
@@ -79,5 +77,4 @@ export interface Author {
   name: Name;
   title?: Title;
   image?: Image1;
-  [k: string]: unknown;
 }

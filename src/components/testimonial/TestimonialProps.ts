@@ -35,5 +35,4 @@ export interface TestimonialProps {
   title?: Title;
   image?: Image;
   rating?: Rating;
-  [k: string]: unknown;
 }

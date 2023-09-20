@@ -63,15 +63,12 @@ export interface CtaProps {
     label?: Label;
     target?: Target;
     icon?: Icon;
-    [k: string]: unknown;
   };
   secondaryCta?: {
     toggle?: CTAToggle1;
     label?: Label1;
     target?: Target1;
     icon?: Icon1;
-    [k: string]: unknown;
   };
   align?: ModuleAligment;
-  [k: string]: unknown;
 }

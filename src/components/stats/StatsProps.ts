@@ -31,12 +31,10 @@ export type Stats = Stat[];
  */
 export interface StatsProps {
   stats: Stats;
-  [k: string]: unknown;
 }
 export interface Stat {
   value: Value;
   icon?: Icon;
   label: Label;
   description?: Label1;
-  [k: string]: unknown;
 }

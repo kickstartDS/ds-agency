@@ -25,5 +25,4 @@ export interface TextProps {
   text?: TextStyle;
   layoutVariant: LayoutVariant;
   textStyle?: TextStyle1;
-  [k: string]: unknown;
 }
