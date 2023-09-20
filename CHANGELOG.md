@@ -1,3 +1,15 @@
+# v1.0.18 (Wed Sep 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add key prop to footer link list ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.17 (Wed Sep 20 2023)
 
 #### ⚠️ Pushed to `main`
