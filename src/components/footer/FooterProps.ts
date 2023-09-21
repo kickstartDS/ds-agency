@@ -84,6 +84,7 @@ export interface FooterProps {
   navItems?: {
     href: string;
     label: string;
+    target?: string;
   }[];
 }
 /**

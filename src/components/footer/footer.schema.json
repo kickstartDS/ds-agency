@@ -17,7 +17,8 @@
         "type": "object",
         "properties": {
           "href": { "type": "string" },
-          "label": { "type": "string" }
+          "label": { "type": "string" },
+          "target": { "type": "string" }
         },
         "additionalProperties": false,
         "required": ["href", "label"]
@@ -31,6 +32,11 @@
           {
             "href": "#changelog",
             "label": "Changelog"
+          },
+          {
+            "href": "https://main--64f08cbba622af835d382b4f.chromatic.com/",
+            "label": "Storybook",
+            "target": "_blank"
           }
         ]
       ]
