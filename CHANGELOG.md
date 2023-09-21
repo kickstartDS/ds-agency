@@ -1,3 +1,15 @@
+# v1.0.20 (Thu Sep 21 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat: add ability to open footer link in new tab ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.19 (Wed Sep 20 2023)
 
 #### ⚠️ Pushed to `main`
