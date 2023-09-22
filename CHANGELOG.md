@@ -1,3 +1,66 @@
+# v1.0.20 (Thu Sep 21 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat: add ability to open footer link in new tab ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.0.19 (Wed Sep 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: fix header- & footer-logo width ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.0.18 (Wed Sep 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add key prop to footer link list ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.0.17 (Wed Sep 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat: cofigure footer component with props ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.0.16 (Wed Sep 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add first draft of types, hopefully fix CI ([@julrich](https://github.com/julrich))
+- fix: update lockfile ([@julrich](https://github.com/julrich))
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- fix: additionalProperties false everywhere ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.15 (Tue Sep 19 2023)
 
 #### ⚠️ Pushed to `main`

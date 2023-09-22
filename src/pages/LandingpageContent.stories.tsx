@@ -8,14 +8,16 @@ import { FAQ } from "../components/faq/FaqComponent";
 import { Stats } from "../components/stats/StatsComponent";
 import { Cta } from "../components/cta/CtaComponent";
 import { Header } from "../components/header/HeaderComponent";
+import { headerProps } from "../components/header/Header.stories";
 import { Footer } from "../components/footer/FooterComponent";
+import { footerProps } from "../components/footer/Footer.stories";
 
 import { Visual } from "../components/visual/VisualComponent";
 import { LogosPaid } from "../components/logos-paid/LogosComponent";
 
 const Page = () => (
   <>
-    <Header logo={{ src: "img/logo.svg" }} />
+    <Header {...headerProps} />
     <Section spaceAfter="none" spaceBefore="none" width="full">
       <Visual
         headline="We simplify the process of building and scaling your Design System"
@@ -325,7 +327,7 @@ We value efficiency without compromising quality.Our secret weapon? kickstartDS,
         }}
       />
     </Section>
-    <Footer />
+    <Footer {...footerProps} />
   </>
 );
 

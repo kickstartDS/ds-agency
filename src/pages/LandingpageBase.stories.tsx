@@ -5,12 +5,14 @@ import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
 import { Cta } from "../components/cta/CtaComponent";
 import { FAQ } from "../components/faq/FaqComponent";
 import { Header } from "../components/header/HeaderComponent";
+import { headerProps } from "../components/header/Header.stories";
 import { Footer } from "../components/footer/FooterComponent";
+import { footerProps } from "../components/footer/Footer.stories";
 import { Stats } from "../components/stats/StatsComponent";
 
 const Page = () => (
   <>
-    <Header logo={{ src: "img/logo.svg" }} />
+    <Header {...headerProps} />
     <Section width="default">
       <Cta
         align="left"
@@ -277,7 +279,7 @@ Alex Chen, CEO of LaunchPad Innovations`}
         }}
       />
     </Section>
-    <Footer />
+    <Footer {...footerProps} />
   </>
 );
 
