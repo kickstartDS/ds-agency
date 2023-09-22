@@ -44,6 +44,6 @@ export const Button = forwardRef<
   )
 );
 
-export const ButtonProvider: FC<PropsWithChildren<any>> = (props) => (
+export const ButtonProvider: FC<PropsWithChildren> = (props) => (
   <ButtonContext.Provider {...props} value={Button} />
 );

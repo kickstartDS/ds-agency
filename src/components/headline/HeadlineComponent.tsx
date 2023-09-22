@@ -1,5 +1,5 @@
 import classnames from "classnames";
-import { HTMLAttributes, FC, PropsWithChildren } from "react";
+import { HTMLAttributes, FC, PropsWithChildren, forwardRef } from "react";
 
 import ReactMarkdown from "react-markdown";
 
@@ -18,59 +18,54 @@ interface RenderFunctions {
   renderSubheadline?: typeof defaultRenderFn;
 }
 
-export const Headline: FC<
+export const Headline = forwardRef<
+  HTMLElement,
   HeadlineProps & RenderFunctions & HTMLAttributes<HTMLElement>
-> = ({
-  text,
-  sub,
-  align = "left",
-  switchOrder = false,
-  level = "h2",
-  style = "h2",
-  spaceAfter = "small",
-  className,
-  renderContent = markdownRenderFn,
-  renderSubheadline = markdownRenderFn,
-  ...props
-}) => {
-  const TagName = level;
-  return (
-    <>
-      {text || sub ? (
-        <>
-          <header
-            className={classnames(
-              "c-headline",
-              `c-headline--${style}`,
-              style !== "none" && style !== level && `c-headline--${style}`,
-              `c-headline--align-${align}`,
-              spaceAfter && `c-headline--space-after-${spaceAfter}`,
-              className
-            )}
-            {...props}
-          >
-            {sub && switchOrder && (
-              <p className="c-headline__subheadline">
-                {renderSubheadline(sub)}
-              </p>
-            )}
-            <TagName className={classnames("c-headline__headline")}>
-              {renderContent(text)}
-            </TagName>
-            {sub && !switchOrder && (
-              <p className="c-headline__subheadline">
-                {renderSubheadline(sub)}
-              </p>
-            )}
-          </header>
-        </>
-      ) : (
-        ""
-      )}
-    </>
-  );
-};
+>(
+  (
+    {
+      text,
+      sub,
+      align = "left",
+      switchOrder = false,
+      level = "h2",
+      style = "h2",
+      spaceAfter = "small",
+      className,
+      renderContent = markdownRenderFn,
+      renderSubheadline = markdownRenderFn,
+      ...props
+    },
+    ref
+  ) => {
+    const TagName = level;
+    return text || sub ? (
+      <header
+        className={classnames(
+          "c-headline",
+          `c-headline--${style}`,
+          style !== "none" && style !== level && `c-headline--${style}`,
+          `c-headline--align-${align}`,
+          spaceAfter && `c-headline--space-after-${spaceAfter}`,
+          className
+        )}
+        ref={ref}
+        {...props}
+      >
+        {sub && switchOrder && (
+          <p className="c-headline__subheadline">{renderSubheadline(sub)}</p>
+        )}
+        <TagName className={classnames("c-headline__headline")}>
+          {renderContent(text)}
+        </TagName>
+        {sub && !switchOrder && (
+          <p className="c-headline__subheadline">{renderSubheadline(sub)}</p>
+        )}
+      </header>
+    ) : null;
+  }
+);
 
-export const HeadlineProvider: FC<PropsWithChildren<any>> = (props) => (
+export const HeadlineProvider: FC<PropsWithChildren> = (props) => (
   <HeadlineContext.Provider {...props} value={Headline} />
 );

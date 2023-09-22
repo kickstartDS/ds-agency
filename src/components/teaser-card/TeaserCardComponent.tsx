@@ -1,4 +1,4 @@
-import { HTMLAttributes, FC, PropsWithChildren } from "react";
+import { HTMLAttributes, FC, PropsWithChildren, forwardRef } from "react";
 
 import {
   TeaserBoxContextDefault,
@@ -8,14 +8,10 @@ import {
 import { TeaserCardProps } from "./TeaserCardProps";
 import "./teaser-card.scss";
 
-export const TeaserCard: FC<TeaserCardProps & HTMLAttributes<HTMLElement>> = ({
-  headline,
-  text,
-  target,
-  image,
-  inverted,
-  ...props
-}) => {
+export const TeaserCard = forwardRef<
+  HTMLDivElement,
+  TeaserCardProps & HTMLAttributes<HTMLDivElement>
+>(({ headline, text, target, image, inverted, ...props }, ref) => {
   return (
     <TeaserBoxContextDefault
       {...props}
@@ -30,10 +26,11 @@ export const TeaserCard: FC<TeaserCardProps & HTMLAttributes<HTMLElement>> = ({
       }}
       image={image}
       inverted={inverted}
+      ref={ref}
     />
   );
-};
+});
 
-export const TeaserBoxProvider: FC<PropsWithChildren<any>> = (props) => (
+export const TeaserBoxProvider: FC<PropsWithChildren> = (props) => (
   <TeaserBoxContext.Provider {...props} value={TeaserCard} />
 );
