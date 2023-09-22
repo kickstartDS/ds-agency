@@ -1,7 +1,7 @@
 import { Section } from "@kickstartds/base/lib/section";
+import { Button } from "@kickstartds/base/lib/button";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
-import { Button } from "@kickstartds/base/lib/button";
 import { Cta } from "../components/cta/CtaComponent";
 import { FAQ } from "../components/faq/FaqComponent";
 import { Header } from "../components/header/HeaderComponent";
@@ -10,7 +10,7 @@ import { Stats } from "../components/stats/StatsComponent";
 
 const Page = () => (
   <>
-    <Header />
+    <Header logo={{ src: "img/logo.svg" }} />
     <Section width="default">
       <Cta
         align="left"
@@ -29,7 +29,6 @@ Elevate your digital presence with us. We create impactful digital experiences t
           target: "#",
           icon: "date",
         }}
-        ctaToggle
       />
     </Section>
 
@@ -91,7 +90,6 @@ Ready to make your digital journey exceptional?`}
       />
       <div>
         <Button
-          // @ts-expect-error
           variant="primary"
           label="Reach out today!"
           icon="chevron-right"
@@ -100,7 +98,7 @@ Ready to make your digital journey exceptional?`}
     </Section>
     <Section width="default" style="accent" align="left" mode="list">
       <TextMedia
-        mediaAlign="beside-right"
+        mediaAlignment="beside-right"
         text={`
 ## Our **Approach** to Design Systems
 Own a design system without investing years of development. Our approach to design systems
@@ -116,24 +114,24 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
     </Section>
     <Section width="wide" headline="3 Customer Show Cases" align="center">
       <TeaserCard
-        href="#"
+        target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
       />
       <TeaserCard
-        href="#"
+        target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
       />
       <TeaserCard
-        href="#"
+        target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
       />
     </Section>
     <Section width="default" mode="list" headline="Testimonials" align="center">
       <TextMedia
-        mediaAlign="beside-left"
+        mediaAlignment="beside-left"
         media={[
           {
             image: {
@@ -146,7 +144,7 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
 John Smith, Chief Marketing Officer at TechFusion Enterprises`}
       />
       <TextMedia
-        mediaAlign="beside-right"
+        mediaAlignment="beside-right"
         media={[
           {
             image: {
@@ -159,7 +157,7 @@ John Smith, Chief Marketing Officer at TechFusion Enterprises`}
 Emily Johnson, Director of Digital Strategy at EcoTech Solutions`}
       />
       <TextMedia
-        mediaAlign="beside-left"
+        mediaAlignment="beside-left"
         media={[
           {
             image: {
@@ -188,12 +186,10 @@ Alex Chen, CEO of LaunchPad Innovations`}
           target: "#",
           icon: "date",
         }}
-        ctaToggle
       />
     </Section>
-    <Section>
+    <Section headline="Design Systems & Headless FAQs">
       <FAQ
-        headline="Design Systems & Headless FAQs"
         questions={[
           {
             question: "What is a Design System?",
@@ -279,7 +275,6 @@ Alex Chen, CEO of LaunchPad Innovations`}
           target: "#",
           icon: "date",
         }}
-        ctaToggle
       />
     </Section>
     <Footer />

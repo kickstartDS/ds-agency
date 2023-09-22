@@ -19,14 +19,14 @@ export const TeaserCard: FC<TeaserCardProps & HTMLAttributes<HTMLElement>> = ({
   return (
     <TeaserBoxContextDefault
       {...props}
+      ratio={"4:3"}
       topic={headline}
       text={text}
       link={{
         label: "Read more",
-        // @ts-expect-error
-        variant: "secondary",
+        variant: "outline",
         inverted: inverted,
-        target: target,
+        href: target,
       }}
       image={image}
       inverted={inverted}

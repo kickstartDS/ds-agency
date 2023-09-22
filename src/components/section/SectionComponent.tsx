@@ -7,12 +7,12 @@ import {
 } from "@kickstartds/base/lib/section";
 
 import { SectionProps } from "./SectionProps";
-import { Button } from "../button/ButtonComponent";
+import { Button } from "@kickstartds/base/lib/button";
 import "./section.scss";
 
 export const Section = forwardRef<
   HTMLDivElement,
-  SectionProps & HTMLAttributes<HTMLElement>
+  SectionProps & Omit<HTMLAttributes<HTMLElement>, "style">
 >(
   (
     {
@@ -35,20 +35,11 @@ export const Section = forwardRef<
   ) => {
     return (
       <>
+        {/* @ts-expect-error */}
         <SectionContextDefault
           {...props}
-          align={undefined}
-          // @ts-expect-error
           background={style}
-          headline={{
-            content: headline,
-            // @ts-expect-error
-            text: headline,
-            sub: sub,
-            spaceAfter: "large",
-            align: align,
-            switchOrder: switchHeadlineOrder,
-          }}
+          headline={{ content: headline }}
           className={classnames(`l-section--align-${align}`)}
           width={width}
           gutter={gutter}
@@ -61,7 +52,6 @@ export const Section = forwardRef<
         {ctas && ctas.length > 0 && (
           <SectionContextDefault
             className={classnames(`l-section--align-${align}`)}
-            // @ts-expect-error
             background={style}
             width={width}
             gutter={gutter}

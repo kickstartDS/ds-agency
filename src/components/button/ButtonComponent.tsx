@@ -28,8 +28,13 @@ export const Button = forwardRef<
       href={target}
       label={label}
       size={size}
-      // @ts-expect-error
-      variant={variant}
+      variant={
+        variant === "primary"
+          ? "solid"
+          : variant === "secondary"
+          ? "outline"
+          : "clear"
+      }
       disabled={disabled}
       iconAfter={{
         icon: icon,

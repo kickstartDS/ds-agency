@@ -15,7 +15,7 @@ import { LogosPaid } from "../components/logos-paid/LogosComponent";
 
 const Page = () => (
   <>
-    <Header />
+    <Header logo={{ src: "img/logo.svg" }} />
     <Section spaceAfter="none" spaceBefore="none" width="full">
       <Visual
         headline="We simplify the process of building and scaling your Design System"
@@ -127,7 +127,6 @@ Ready to make your digital journey exceptional?`}
       />
       <div>
         <Button
-          // @ts-expect-error
           variant="primary"
           label="Reach out today!"
           icon="chevron-right"
@@ -139,8 +138,8 @@ Ready to make your digital journey exceptional?`}
       <Storytelling
         box={{
           headline: {
-            // @ts-expect-error
             text: "Our **Approach** to Design Systems",
+            level: "h2",
           },
           text: `Own a design system without investing years of development. Our approach to design systems
 We value efficiency without compromising quality.Our secret weapon? kickstartDS, a revolutionary code- first framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever.`,
@@ -154,52 +153,41 @@ We value efficiency without compromising quality.Our secret weapon? kickstartDS,
       <VisualSlider
         slides={[
           {
-            box: {
-              horizontal: "left",
-              inverted: true,
-              enabled: true,
-              // @ts-expect-error
-              headline: { text: "Lorem Ipsum dolor" },
-              text: "During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from",
-            },
+            headline: "Lorem Ipsum dolor",
+            align: "left",
+            text: "During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from",
             media: {
               mode: "image",
               image: {
                 srcMobile: "img/screenshot-ds.png",
+                srcTablet: "img/screenshot-ds.png",
+                srcDesktop: "img/screenshot-ds.png",
               },
             },
           },
           {
+            headline: "Lorem Ipsum dolor",
             align: "left",
-            box: {
-              horizontal: "left",
-              inverted: true,
-              enabled: true,
-              // @ts-expect-error
-              headline: { text: "Lorem Ipsum dolor" },
-              text: "During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from",
-            },
+            text: "During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from",
             media: {
               mode: "image",
               image: {
                 srcMobile: "img/screenshot-ds.png",
+                srcTablet: "img/screenshot-ds.png",
+                srcDesktop: "img/screenshot-ds.png",
               },
             },
           },
           {
+            headline: "Lorem Ipsum dolor",
             align: "left",
-            box: {
-              horizontal: "left",
-              inverted: true,
-              enabled: true,
-              // @ts-expect-error
-              headline: { text: "Lorem Ipsum dolor" },
-              text: "During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from",
-            },
+            text: "During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from",
             media: {
               mode: "image",
               image: {
                 srcMobile: "img/screenshot-ds.png",
+                srcTablet: "img/screenshot-ds.png",
+                srcDesktop: "img/screenshot-ds.png",
               },
             },
           },
@@ -246,12 +234,10 @@ We value efficiency without compromising quality.Our secret weapon? kickstartDS,
           target: "#",
           icon: "date",
         }}
-        ctaToggle
       />
     </Section>
     <Section headline="Design Systems & Headless FAQs" mode="list">
       <FAQ
-        headline="Design Systems & Headless FAQs"
         questions={[
           {
             question: "What is a Design System?",
@@ -337,7 +323,6 @@ We value efficiency without compromising quality.Our secret weapon? kickstartDS,
           target: "#",
           icon: "date",
         }}
-        ctaToggle
       />
     </Section>
     <Footer />
