@@ -30,8 +30,8 @@ export type InvertCard = boolean;
  * Component used to tease content
  */
 export interface TeaserCardProps {
-  headline: Headline;
-  text: Text;
+  headline?: Headline;
+  text?: Text;
   target?: Target;
   image?: Image;
   inverted?: InvertCard;
