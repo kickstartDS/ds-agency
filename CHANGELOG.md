@@ -1,3 +1,16 @@
+# v1.0.21 (Fri Sep 22 2023)
+
+#### 🐛 Bug Fix
+
+- Add corrected, layered types [#17](https://github.com/kickstartDS/ds-agency/pull/17) ([@julrich](https://github.com/julrich) [@lmestel](https://github.com/lmestel))
+
+#### Authors: 2
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.20 (Thu Sep 21 2023)
 
 #### ⚠️ Pushed to `main`
