@@ -15,25 +15,27 @@ kickstartDS Agency Starter is a specialized version of the kickstartDS Starter, 
 
 The Agency Starter includes several components that are immediately useful for creating marketing pages. These components are built using the kickstartDS Starter and kickstartDS itself, showcasing its features and best practices:
 
-- **Blog Aside**: This component provides meta info for a singular blog entry. Main properties include author, social sharing links, reading time, and published date.
-- **Blog Head**: This component serves as the intro portion of a singular blog entry. Main properties include published date, tags, headline, and cover image.
-- **Blog Teaser**: This component is used to display a blog teaser with date, tags, headline, teaser text and author. Main properties include date, tags, headline, teaser text, image, link, reading time, and author.
-- **Button**: A basic button component for user interaction. Main properties include label, target, variant, icon, size, and disabled state.
-- **CTA**: A Call to Action component. Main properties include headline, subheadline, text, button, and alignment.
-- **FAQ**: This component is used to display a FAQ section. Main properties include an array of questions and answers.
-- **Features**: This component is used to display a set of features. Main properties include layout and features.
-- **Footer**: A basic footer component. Main properties include logo, navigation, and social links.
-- **Gallery**: This component is used to display a gallery of images. Main properties include images and captions.
-- **Header**: A basic header component. Main properties include logo, navigation, and social links.
-- **Logos**: This component is used to display a set of logos. Main properties include an array of logos.
-- **Nav Main**: This component is used for main navigation. Main properties include an array of navigation items.
-- **Section**: This component is used to layout components into pages. Main properties include title, content, and layout.
-- **Split**: This component is used to create a split layout. Main properties include left and right content.
-- **Stats**: This component is used to display a set of statistics. Main properties include an array of stats.
-- **Teaser Card**: This component is used to display a teaser card. Main properties include image, headline, text, and link.
-- **Testimonial**: This component is used to display a testimonial. Main properties include author, quote, and image.
-- **Text**: A basic text component. Main properties include content and variant.
-- **Visual**: This component is used to display a visual element. Main properties include image, alt text, and caption.
+| Component       | Description                                                                                        | Main Properties                                                          |
+| --------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| **Blog Aside**  | This component provides meta info for a singular blog entry.                                       | author, social sharing links, reading time, and published date           |
+| **Blog Head**   | This component serves as the intro portion of a singular blog entry.                               | published date, tags, headline, and cover image                          |
+| **Blog Teaser** | This component is used to display a blog teaser with date, tags, headline, teaser text and author. | date, tags, headline, teaser text, image, link, reading time, and author |
+| **Button**      | A basic button component for user interaction.                                                     | label, target, variant, icon, size, and disabled state                   |
+| **CTA**         | A Call to Action component.                                                                        | headline, subheadline, text, button, and alignment                       |
+| **FAQ**         | This component is used to display a FAQ section.                                                   | an array of questions and answers                                        |
+| **Features**    | This component is used to display a set of features.                                               | layout and features                                                      |
+| **Footer**      | A basic footer component.                                                                          | logo, navigation, and social links                                       |
+| **Gallery**     | This component is used to display a gallery of images.                                             | images and captions                                                      |
+| **Header**      | A basic header component.                                                                          | logo, navigation, and social links                                       |
+| **Logos**       | This component is used to display a set of logos.                                                  | an array of logos                                                        |
+| **Nav Main**    | This component is used for main navigation.                                                        | an array of navigation items                                             |
+| **Section**     | This component is used to layout components into pages.                                            | title, content, and layout                                               |
+| **Split**       | This component is used to create a split layout.                                                   | left and right content                                                   |
+| **Stats**       | This component is used to display a set of statistics.                                             | an array of stats                                                        |
+| **Teaser Card** | This component is used to display a teaser card.                                                   | image, headline, text, and link                                          |
+| **Testimonial** | This component is used to display a testimonial.                                                   | author, quote, and image                                                 |
+| **Text**        | A basic text component.                                                                            | content and variant                                                      |
+| **Visual**      | This component is used to display a visual element.                                                | image, alt text, and caption                                             |
 
 ## Installation
 
