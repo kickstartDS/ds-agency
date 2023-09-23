@@ -1,3 +1,16 @@
+# v1.0.22 (Sat Sep 23 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'feature/add-correct-types' ([@julrich](https://github.com/julrich))
+- chore: update README.md ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.21 (Fri Sep 22 2023)
 
 #### 🐛 Bug Fix
