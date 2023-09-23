@@ -1,3 +1,16 @@
+# v1.0.24 (Sat Sep 23 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- chore: add more sections to README.md ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.23 (Sat Sep 23 2023)
 
 #### ⚠️ Pushed to `main`
