@@ -11,6 +11,20 @@ kickstartDS Agency Starter is a specialized version of the kickstartDS Starter, 
 - **Release Handling:** Semantic release handling is configured using auto.
 - **Content:** Includes components, recipes, pages, and docs.
 
+## Installation
+
+To install the Agency Starter, you need to have Node.js installed. We recommend managing your local Node.js versions using [nvm](https://github.com/nvm-sh/nvm).
+
+## Getting Started
+
+To get started with the Agency Starter, follow these steps:
+
+1. Create a new repository based on this template.
+2. Update the `package.json` file with your project details.
+3. Add your own logo.
+4. Install the dependencies (`npm install` / `yarn install`).
+5. Start Storybook (`npm start`, `yarn start`).
+
 ## Components
 
 The Agency Starter includes several components that are immediately useful for creating marketing pages. These components are built using the kickstartDS Starter and kickstartDS itself, showcasing its features and best practices:
@@ -37,19 +51,34 @@ The Agency Starter includes several components that are immediately useful for c
 | **Text**        | A basic text component.                                                                            | content and variant                                                      |
 | **Visual**      | This component is used to display a visual element.                                                | image, alt text, and caption                                             |
 
-## Installation
+## Customizing
 
-To install the Agency Starter, you need to have Node.js installed. We recommend managing your local Node.js versions using [nvm](https://github.com/nvm-sh/nvm).
+### Applying your Design / Brand
 
-## Getting Started
+To apply your branding and corporate design to kickstartDS, you need to follow two main steps:
 
-To get started with the Agency Starter, follow these steps:
+1. Use a reduced set of Branding Token to generate your initial Design Token set in `src/token/branding-token.json`.
+2. Fine-tune the resulting Design Token set in `src/token/dictionary` to closely fit your corporate identity.
 
-1. Create a new repository based on this template.
-2. Update the `package.json` file with your project details.
-3. Add your own logo.
-4. Install the dependencies (`npm install` / `yarn install`).
-5. Start Storybook (`npm start`, `yarn start`).
+For a more in-depth overview of those tokens, have a look at our [foundations page](https://www.kickstartds.com/docs/foundations/token/) about [Branding Token](https://www.kickstartds.com/docs/foundations/token/branding-token/), detailing all values in use.
+
+You can change some select values around to match your brand. For example, you might want to change the `primary` color to `#05566a`, the `primary-inverted` color to `#ecff00`, and the `font-family` to `-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'` if you're trying to recreate the kickstartDS branding.
+
+After you've selected your Branding Tokens, you can apply them by updating the `branding-token.json` file with your chosen values, and running `npm run init-tokens` / `yarn init-tokens`.
+
+With this, you have completed your Design Token setup, and your branding should be successfully applied to kickstartDS!
+
+### Adding Your Own Component
+
+To add your own component to this project, you can follow the guide ["Create a component"](https://www.kickstartds.com/docs/guides/examples/components/teaser-card/). Alternatively you can read about the ideas behind [component creation](https://www.kickstartds.com/docs/guides/components/create/). Here is a brief overview of the steps involved:
+
+1. **Create your component file:** This should be a .tsx file in the src/components directory. The component should be a functional component and should follow the structure of existing components. For example, if you're creating a MyComponent component, you would create a MyComponent.tsx file in the src/components/my-component directory.
+
+2. **Create your component's JSON Schema:** This should be a .json file in the same directory as your component file. This file should define the component API for your component. For example, if you're creating a MyComponent component, you would create a MyComponent.schema.json file in the src/components/my-component directory. The .ts file for props will be generated based on this JSON Schema definition.
+
+3. **Create your component's Storybook file:** This should be a .stories.tsx file in the same directory as your component file. This file should define the Storybook stories for your component. For example, if you're creating a MyComponent component, you would create a MyComponent.stories.tsx file in the src/components/my-component directory.
+
+4. **Add your component to the Playroom components:** This involves adding an export statement for your component in the src/playroom/components.ts file.
 
 ## Contributing
 
