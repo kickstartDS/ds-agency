@@ -1,3 +1,16 @@
+# v1.0.25 (Sun Sep 24 2023)
+
+#### ⚠️ Pushed to `main`
+
+- chore: update kickstartDS dependencies ([@julrich](https://github.com/julrich))
+- chore: update README.md ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.24 (Sat Sep 23 2023)
 
 #### ⚠️ Pushed to `main`
