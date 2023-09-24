@@ -72,13 +72,13 @@ With this, you have completed your Design Token setup, and your branding should 
 
 To add your own component to this project, you can follow the guide ["Create a component"](https://www.kickstartds.com/docs/guides/examples/components/teaser-card/). Alternatively you can read about the ideas behind [component creation](https://www.kickstartds.com/docs/guides/components/create/). Here is a brief overview of the steps involved:
 
-1. **Create your component file:** This should be a .tsx file in the src/components directory. The component should be a functional component and should follow the structure of existing components. For example, if you're creating a MyComponent component, you would create a MyComponent.tsx file in the src/components/my-component directory.
+1. **Create your component file:** This should be a `.tsx` file in the `src/components` directory. The component should be a functional component and should follow the structure of existing components. For example, if you're creating a `MyComponent` component, you would create a `MyComponent.tsx` file in the `src/components/my-component` directory.
 
-2. **Create your component's JSON Schema:** This should be a .json file in the same directory as your component file. This file should define the component API for your component. For example, if you're creating a MyComponent component, you would create a MyComponent.schema.json file in the src/components/my-component directory. The .ts file for props will be generated based on this JSON Schema definition.
+2. **Create your component's JSON Schema:** This should be a `.schema.json` file in the same directory as your component file. This file should define the [component API](https://www.kickstartds.com/docs/foundations/components/component-api/) for your component. For example, if you're creating a `MyComponent` component, you would create a `my-component.schema.json` file in the `src/components/my-component` directory. The `.ts` file for props will be generated based on this JSON Schema definition.
 
-3. **Create your component's Storybook file:** This should be a .stories.tsx file in the same directory as your component file. This file should define the Storybook stories for your component. For example, if you're creating a MyComponent component, you would create a MyComponent.stories.tsx file in the src/components/my-component directory.
+3. **Create your component's Storybook file:** This should be a `.stories.tsx` file in the same directory as your component file. This file should define the Storybook stories for your component. For example, if you're creating a `MyComponent` component, you would create a `MyComponent.stories.tsx` file in the `src/components/my-component` directory.
 
-4. **Add your component to the Playroom components:** This involves adding an export statement for your component in the src/playroom/components.ts file.
+4. **Add your component to the Playroom components:** This involves adding an export statement for your component in the `src/playroom/components.ts` file.
 
 ## Contributing
 
