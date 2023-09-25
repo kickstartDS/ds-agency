@@ -35,11 +35,18 @@ export const Section = forwardRef<
   ) => {
     return (
       <>
-        {/* @ts-expect-error */}
         <SectionContextDefault
           {...props}
           background={style}
-          headline={{ content: headline }}
+          headline={
+            headline
+              ? {
+                  content: headline,
+                  // @ts-expect-error
+                  text: headline,
+                }
+              : undefined
+          }
           className={classnames(`l-section--align-${align}`)}
           width={width}
           gutter={gutter}
