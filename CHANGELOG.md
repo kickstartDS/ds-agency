@@ -1,3 +1,15 @@
+# v1.0.27 (Mon Sep 25 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: bring back section sub-headlines ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.26 (Mon Sep 25 2023)
 
 #### ⚠️ Pushed to `main`
