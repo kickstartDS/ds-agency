@@ -44,6 +44,7 @@ export const Section = forwardRef<
                   content: headline,
                   // @ts-expect-error
                   text: headline,
+                  subheadline: sub,
                 }
               : undefined
           }
