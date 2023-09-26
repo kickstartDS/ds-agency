@@ -1,3 +1,17 @@
+# v1.0.29 (Tue Sep 26 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(testimonials): adjust testimonials component naming ([@fleven-kds](https://github.com/fleven-kds))
+- feat(mosaic): add mosaic component ([@fleven-kds](https://github.com/fleven-kds))
+- feat(Button): adjust button variant props ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.28 (Tue Sep 26 2023)
 
 #### ⚠️ Pushed to `main`
