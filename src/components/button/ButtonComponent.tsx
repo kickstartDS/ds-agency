@@ -28,13 +28,7 @@ export const Button = forwardRef<
       href={target}
       label={label}
       size={size}
-      variant={
-        variant === "primary"
-          ? "solid"
-          : variant === "secondary"
-          ? "outline"
-          : "clear"
-      }
+      variant={variant}
       disabled={disabled}
       iconAfter={{
         icon: icon,
