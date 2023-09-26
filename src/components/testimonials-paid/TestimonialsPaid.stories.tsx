@@ -2,9 +2,9 @@ import { Meta, StoryObj } from "@storybook/react";
 import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
-import { TestimonialsPaid } from "./TestimonialsComponent";
+import { TestimonialsPaid } from "./TestimonialsPaidComponent";
 
-import schema from "./testimonials.schema.json";
+import schema from "./testimonials-paid.schema.json";
 
 const meta: Meta<typeof TestimonialsPaid> = {
   title: "Components/Testimonials Paid",

@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://schema.mydesignsystem.com/testimonials.schema.json",
-  "title": "Testimonials",
+  "$id": "http://schema.mydesignsystem.com/testimonials-paid.schema.json",
+  "title": "Testimonials Paid",
   "description": "Display testimonials with an optional image and rating",
   "type": "object",
   "properties": {

@@ -13,11 +13,12 @@ export const Mosaic: FC<MosaicProps> = ({ tiles }) => (
           headline: {
             text: tile.headline,
             sub: tile.sub,
+            level: "h2",
           },
           text: tile.text,
           textColor: tile.textColor,
           link: {
-            href: tile.cta.target,
+            target: tile.cta.target,
             label: tile.cta.label,
           },
         }}

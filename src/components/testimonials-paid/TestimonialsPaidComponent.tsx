@@ -1,11 +1,11 @@
 import { HTMLAttributes, FC } from "react";
 
-import { TestimonialsProps } from "./TestimonialsProps";
-import "./testimonials.scss";
+import { TestimonialsPaidProps } from "./TestimonialsPaidProps";
+import "./testimonials-paid.scss";
 import { QuotesSlider } from "@kickstartds/content/lib/quotes-slider";
 
 export const TestimonialsPaid: FC<
-  TestimonialsProps & HTMLAttributes<HTMLElement>
+  TestimonialsPaidProps & HTMLAttributes<HTMLElement>
 > = ({ testimonials }) => {
   return (
     <div className="c-testimonials">
