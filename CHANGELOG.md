@@ -1,3 +1,15 @@
+# v1.0.30 (Tue Sep 26 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(TestimonialsPaidDocs): fix story imports ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.29 (Tue Sep 26 2023)
 
 #### ⚠️ Pushed to `main`
