@@ -1,3 +1,16 @@
+# v1.0.28 (Tue Sep 26 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge remote-tracking branch 'origin/main' ([@fleven-kds](https://github.com/fleven-kds))
+- feat(testimonials): add base & paid variant for tesimonials ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.27 (Mon Sep 25 2023)
 
 #### ⚠️ Pushed to `main`
