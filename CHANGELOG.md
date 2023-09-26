@@ -1,3 +1,15 @@
+# v1.0.32 (Tue Sep 26 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feature: add layered types ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.31 (Tue Sep 26 2023)
 
 #### ⚠️ Pushed to `main`
