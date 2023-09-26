@@ -1,17 +1,19 @@
 import { Section } from "@kickstartds/base/lib/section";
+import { Button } from "@kickstartds/base/lib/button";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
-import { Button } from "@kickstartds/base/lib/button";
 import { Cta } from "../components/cta/CtaComponent";
 import { FAQ } from "../components/faq/FaqComponent";
 import { Header } from "../components/header/HeaderComponent";
+import { headerProps } from "../components/header/Header.stories";
 import { Footer } from "../components/footer/FooterComponent";
+import { footerProps } from "../components/footer/Footer.stories";
 import { Stats } from "../components/stats/StatsComponent";
 import { Testimonials } from "../components/testimonials/TestimonialsComponent";
 
 const Page = () => (
   <>
-    <Header />
+    <Header {...headerProps} />
     <Section width="default">
       <Cta
         align="left"
@@ -30,7 +32,6 @@ Elevate your digital presence with us. We create impactful digital experiences t
           target: "#",
           icon: "date",
         }}
-        ctaToggle
       />
     </Section>
 
@@ -92,7 +93,6 @@ Ready to make your digital journey exceptional?`}
       />
       <div>
         <Button
-          // @ts-expect-error
           variant="primary"
           label="Reach out today!"
           icon="chevron-right"
@@ -117,17 +117,17 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
     </Section>
     <Section width="wide" headline="3 Customer Show Cases" align="center">
       <TeaserCard
-        href="#"
+        target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
       />
       <TeaserCard
-        href="#"
+        target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
       />
       <TeaserCard
-        href="#"
+        target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
       />
@@ -181,12 +181,10 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
           target: "#",
           icon: "date",
         }}
-        ctaToggle
       />
     </Section>
-    <Section>
+    <Section headline="Design Systems & Headless FAQs">
       <FAQ
-        headline="Design Systems & Headless FAQs"
         questions={[
           {
             question: "What is a Design System?",
@@ -272,10 +270,9 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
           target: "#",
           icon: "date",
         }}
-        ctaToggle
       />
     </Section>
-    <Footer />
+    <Footer {...footerProps} />
   </>
 );
 

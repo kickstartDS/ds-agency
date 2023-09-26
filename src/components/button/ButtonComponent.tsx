@@ -28,8 +28,13 @@ export const Button = forwardRef<
       href={target}
       label={label}
       size={size}
-      // @ts-expect-error
-      variant={variant}
+      variant={
+        variant === "primary"
+          ? "solid"
+          : variant === "secondary"
+          ? "outline"
+          : "clear"
+      }
       disabled={disabled}
       iconAfter={{
         icon: icon,
@@ -39,6 +44,6 @@ export const Button = forwardRef<
   )
 );
 
-export const ButtonProvider: FC<PropsWithChildren<any>> = (props) => (
+export const ButtonProvider: FC<PropsWithChildren> = (props) => (
   <ButtonContext.Provider {...props} value={Button} />
 );

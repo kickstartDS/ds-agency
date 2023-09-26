@@ -3,6 +3,45 @@
   "$id": "http://schema.mydesignsystem.com/header.schema.json",
   "title": "Footer",
   "type": "object",
-  "properties": {},
+  "properties": {
+    "logo": {
+      "$ref": "http://schema.kickstartds.com/base/picture.definitions.json"
+    },
+    "logoHref": {
+      "type": "string",
+      "default": "/"
+    },
+    "navItems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "href": { "type": "string" },
+          "label": { "type": "string" },
+          "target": { "type": "string" }
+        },
+        "additionalProperties": false,
+        "required": ["href", "label"]
+      },
+      "examples": [
+        [
+          {
+            "href": "#privacy-policy",
+            "label": "Privacy policy"
+          },
+          {
+            "href": "#changelog",
+            "label": "Changelog"
+          },
+          {
+            "href": "https://main--64f08cbba622af835d382b4f.chromatic.com/",
+            "label": "Storybook",
+            "target": "_blank"
+          }
+        ]
+      ]
+    }
+  },
+  "required": ["logo"],
   "additionalProperties": false
 }

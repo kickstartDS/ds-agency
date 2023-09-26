@@ -188,8 +188,8 @@ export interface Headline1 {
  * Component used to tease content
  */
 export interface TeaserCard {
-  headline: Headline2;
-  text: Text1;
+  headline?: Headline2;
+  text?: Text1;
   target?: Target1;
   image?: Image;
   inverted?: InvertCard;

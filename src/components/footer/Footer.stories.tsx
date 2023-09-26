@@ -1,28 +1,31 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
+import { pack, unpack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
-import { Footer } from "./FooterComponent";
+import { Footer as FooterComponent } from "./FooterComponent";
 import schema from "./footer.schema.dereffed.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
+export const footerProps = {
+  ...unpack(args),
+  logo: {
+    src: "/logo.svg",
+    alt: "Systemics Logo",
+    width: 176,
+    height: 40,
+    lazy: false,
+  },
+};
 const meta: Meta = {
   title: "Layout/Footer",
-  args,
+  args: pack(footerProps),
   argTypes,
-  component: Footer,
+  component: FooterComponent,
   parameters: {
     jsonschema: schema,
   },
+  excludeStories: ["footerProps"]
 };
-type Story = StoryObj<typeof Footer>;
+type Story = StoryObj<typeof FooterComponent>;
 
 export default meta;
-export const Default: Story = {
-  args: pack({
-    headline: "The Sanity & Next.js Experts",
-    text: "Experience the speed & scalability unlike anything seen before with our Sanity CMS powered websites, web apps & composable architecture.",
-    ctaLabel: "Get in touch",
-    ctaToggle: true,
-    ctaTarget: "#",
-  }),
-};
+export const Footer: Story = {};

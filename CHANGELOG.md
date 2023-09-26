@@ -1,3 +1,140 @@
+# v1.0.27 (Mon Sep 25 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: bring back section sub-headlines ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.0.26 (Mon Sep 25 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: bring back section headlines ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.0.25 (Sun Sep 24 2023)
+
+#### ⚠️ Pushed to `main`
+
+- chore: update kickstartDS dependencies ([@julrich](https://github.com/julrich))
+- chore: update README.md ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v1.0.24 (Sat Sep 23 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- chore: add more sections to README.md ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v1.0.23 (Sat Sep 23 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- chore: format component list in README.md as a table ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v1.0.22 (Sat Sep 23 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'feature/add-correct-types' ([@julrich](https://github.com/julrich))
+- chore: update README.md ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v1.0.21 (Fri Sep 22 2023)
+
+#### 🐛 Bug Fix
+
+- Add corrected, layered types [#17](https://github.com/kickstartDS/ds-agency/pull/17) ([@julrich](https://github.com/julrich) [@lmestel](https://github.com/lmestel))
+
+#### Authors: 2
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.0.20 (Thu Sep 21 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat: add ability to open footer link in new tab ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.0.19 (Wed Sep 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: fix header- & footer-logo width ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.0.18 (Wed Sep 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add key prop to footer link list ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.0.17 (Wed Sep 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat: cofigure footer component with props ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.16 (Wed Sep 20 2023)
 
 #### ⚠️ Pushed to `main`
