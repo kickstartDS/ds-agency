@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/testimonials.schema.json",
+  "title": "Testimonials",
+  "description": "Display testimonials with an optional image and rating",
+  "type": "object",
+  "properties": {
+    "testimonials": {
+      "type": "array",
+      "title": "Testimonials",
+      "description": "Add testimonials featuring an image, a quote, a source and a rating",
+      "items": {
+        "properties": {
+          "quote": {
+            "title": "Quote",
+            "description": "The testimonial quote",
+            "type": "string",
+            "examples": ["This product is amazing!"]
+          },
+          "name": {
+            "title": "Name",
+            "description": "The name of the quote author",
+            "type": "string",
+            "examples": ["John Doe"]
+          },
+          "title": {
+            "title": "Title",
+            "description": "The title of the quote author",
+            "type": "string",
+            "examples": ["CEO"]
+          },
+          "image": {
+            "type": "object",
+            "properties": {
+              "src": {
+                "title": "Source",
+                "description": "The image to display with the testimonial",
+                "type": "string",
+                "examples": ["https://example.com/image.jpg"]
+              },
+              "alt": {
+                "title": "Alt Text",
+                "description": "The alt text of the image file",
+                "type": "string"
+              }
+            }
+          },
+          "rating": {
+            "title": "Rating",
+            "description": "The rating of the testimonial, from 1 to 5",
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5,
+            "examples": [5]
+          }
+        },
+        "additionalProperties": false,
+        "required": ["quote", "name", "image"]
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": ["quote"]
+}

@@ -12,10 +12,11 @@ import { Footer } from "../components/footer/FooterComponent";
 
 import { Visual } from "../components/visual/VisualComponent";
 import { LogosPaid } from "../components/logos-paid/LogosComponent";
+import { Testimonials } from "../components/testimonials-paid/TestimonialsComponent";
 
 const Page = () => (
   <>
-    <Header />
+    <Header logo={undefined} />
     <Section spaceAfter="none" spaceBefore="none" width="full">
       <Visual
         headline="We simplify the process of building and scaling your Design System"
@@ -345,11 +346,11 @@ We value efficiency without compromising quality.Our secret weapon? kickstartDS,
 );
 
 export default {
-  title: "Pages/Landingpage Content",
+  title: "Pages/Landingpage Paid",
   render: Page,
   parameters: {
     layout: "fullscreen",
   },
 };
 
-export const LandingpageContent = {};
+export const LandingpagePaid = {};

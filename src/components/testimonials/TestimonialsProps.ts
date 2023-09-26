@@ -20,19 +20,28 @@ export type Title = string;
 /**
  * The image to display with the testimonial
  */
-export type Image = string;
+export type Source = string;
 /**
- * The rating of the testimonial, from 1 to 5
+ * The alt text of the image file
  */
-export type Rating = number;
+export type AltText = string;
+/**
+ * Add testimonials featuring an image, a quote, a source and a rating
+ */
+export type Testimonials = {
+  quote: Quote;
+  name: Name;
+  title?: Title;
+  image: {
+    src?: Source;
+    alt?: AltText;
+    [k: string]: unknown;
+  };
+}[];
 
 /**
- * Display a testimonial with an optional image and rating
+ * Display testimonials with an optional image and rating
  */
-export interface TestimonialProps {
-  quote: Quote;
-  name?: Name;
-  title?: Title;
-  image?: Image;
-  rating?: Rating;
+export interface TestimonialsProps {
+  testimonials?: Testimonials;
 }

@@ -1,0 +1,31 @@
+@use "testimonials-tokens.scss";
+
+.c-testimonials {
+  .c-quote {
+    &__source {
+      color: var(--c-quote_source--color);
+    }
+
+    &__byline {
+      color: var(--c-quote_byline--color);
+    }
+
+    &__text {
+      margin-bottom: var(--ks-spacing-stack-s);
+    }
+
+    .c-quote__content {
+      font: var(--c-quote_text--font);
+
+      &::before {
+        line-height: 0.7;
+      }
+    }
+  }
+
+  .c-slider {
+    .c-slider-nav {
+      margin-top: var(--ks-spacing-stack-s);
+    }
+  }
+}
