@@ -1,3 +1,15 @@
+# v1.0.35 (Wed Sep 27 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(section): add alignment to section headline ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.34 (Wed Sep 27 2023)
 
 #### ⚠️ Pushed to `main`
