@@ -9,9 +9,6 @@
     },
     "logoHref": {
       "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/logoHref"
-    },
-    "navItems": {
-      "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/items"
     }
   },
   "additionalProperties": false,

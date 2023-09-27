@@ -6,7 +6,7 @@ import { Link } from "@kickstartds/base/lib/link";
 import { NavMain } from "../nav-main/NavMainComponent";
 import "./header.scss";
 
-export const Header: FC<HeaderProps> = ({ logo, logoHref = "/", navItems }) => (
+export const Header: FC<HeaderProps> = ({ logo, logoHref = "/" }) => (
   <>
     <div className={classnames("c-header")}>
       <div className="c-header__content">
@@ -14,7 +14,7 @@ export const Header: FC<HeaderProps> = ({ logo, logoHref = "/", navItems }) => (
           <Picture {...logo} />
         </Link>
 
-        <NavMain logo={logo} logoHref={logoHref} items={navItems} />
+        <NavMain logo={logo} logoHref={logoHref} items={[]} />
       </div>
     </div>
     <div className="c-header--spacer"></div>
