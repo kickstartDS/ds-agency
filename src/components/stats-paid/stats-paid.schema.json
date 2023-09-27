@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/stats-.schema.json",
+  "title": "Stats Paid",
+  "description": "Component used to display a set of logos",
+  "type": "object",
+  "properties": {
+    "tagline": {
+      "type": "string",
+      "title": "Logo Tagline",
+      "description": "A short tagline atop the logos",
+      "examples": ["Your Success, Our Commitment"]
+    }
+  },
+  "additionalProperties": false,
+  "required": ["logos"]
+}
