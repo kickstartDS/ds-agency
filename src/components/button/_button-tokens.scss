@@ -6,7 +6,7 @@
     --c-button--padding: 0.75em 2em;
     --c-button--font-weight: var(--ks-font-weight-medium);
 
-    &--primary {
+    &--solid {
       --c-button--color: var(--ks-color-primary-inverted-alpha-8);
       --c-button--color-hover: var(--ks-color-primary-inverted);
       --c-button--background-color: var(--ks-color-primary-alpha-9);
@@ -19,19 +19,20 @@
         0px 0px 19px 4px var(--ks-color-primary-base);
     }
 
-    &--secondary {
+    &--clear {
       --c-button--color: var(--ks-color-primary-inverted);
       --c-button--color-hover: var(--ks-color-primary-inverted);
       --c-button--color-active: var(--ks-color-primary-inverted);
 
       --c-button--border-width: 0;
+      padding: var(--c-button--padding);
 
       --c-button--background-color: var(--ks-color-primary-inverted-alpha-2);
       --c-button--background-color-hover: var(--ks-color-primary-inverted-alpha-3);
       --c-button--background-color-active: var(--ks-color-primary-inverted-alpha-3);
     }
 
-    &--tertiary {
+    &--outline {
       --c-button--color: var(--ks-color-fg-alpha-7);
       --c-button--color-hover: var(--ks-color-fg);
       --c-button--color-active: var(--ks-color-fg);

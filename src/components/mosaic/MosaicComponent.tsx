@@ -8,6 +8,7 @@ export const Mosaic: FC<MosaicProps> = ({ tiles }) => (
     {tiles.map((tile, index) => (
       <Storytelling
         key={index}
+        full
         backgroundColor={tile.backgroundColor}
         box={{
           headline: {

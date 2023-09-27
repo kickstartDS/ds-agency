@@ -23,14 +23,17 @@ export const BackgroundImage: Story = {
       {
         backgroundColor: "#81005a",
         textColor: "#fdbce9",
+        image: "img/mosaic-1.png",
       },
       {
         backgroundColor: "#003380",
         textColor: "#cddffa",
+        image: "img/mosaic-2.png",
       },
       {
         backgroundColor: "#004241",
         textColor: "#81c7c6",
+        image: "img/mosaic-1.png",
       },
     ],
   }),
