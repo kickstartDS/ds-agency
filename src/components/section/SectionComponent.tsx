@@ -17,6 +17,7 @@ export const Section = forwardRef<
   (
     {
       headline,
+      largeHeadline,
       sub,
       align = "left",
       width = "default",
@@ -45,6 +46,7 @@ export const Section = forwardRef<
                   // @ts-expect-error
                   text: headline,
                   subheadline: sub,
+                  style: largeHeadline ? "h1" : undefined,
                 }
               : undefined
           }

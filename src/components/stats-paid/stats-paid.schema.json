@@ -1,17 +1,56 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://schema.mydesignsystem.com/stats-.schema.json",
+  "$id": "http://schema.mydesignsystem.com/stats-paid.schema.json",
   "title": "Stats Paid",
-  "description": "Component used to display a set of logos",
+  "description": "Component used to display stats with a number upcounter",
   "type": "object",
   "properties": {
-    "tagline": {
-      "type": "string",
-      "title": "Logo Tagline",
-      "description": "A short tagline atop the logos",
-      "examples": ["Your Success, Our Commitment"]
+    "stats": {
+      "type": "array",
+      "title": "Stats",
+      "description": "The stats to display with a number upcounter",
+      "items": {
+        "type": "object",
+        "title": "Stat",
+        "properties": {
+          "number": {
+            "title": "Number",
+            "description": "The number of the stat",
+            "type": "integer",
+            "examples": [1, 2, 3, 4]
+          },
+          "character": {
+            "title": "Character",
+            "description": "Optional character to display after the number",
+            "type": "string",
+            "examples": ["%", "$", "€"]
+          },
+          "description": {
+            "title": "Description",
+            "description": "Optional description of the stat",
+            "type": "string",
+            "examples": ["This is a description", "Another description"]
+          },
+          "title": {
+            "title": "Title",
+            "description": "Title of the stat",
+            "type": "string",
+            "examples": ["Stat 1", "Stat 2", "Stat 3", "Stat 4"]
+          },
+          "icon": {
+            "title": "Icon",
+            "description": "Optional icon of the stat",
+            "type": "string",
+            "examples": ["person", "home", "map"]
+          }
+        },
+        "additionalProperties": false,
+        "required": ["number", "title"]
+      },
+      "minimum": 1,
+      "maximum": 4
     }
   },
   "additionalProperties": false,
-  "required": ["logos"]
+  "required": ["stats"]
 }

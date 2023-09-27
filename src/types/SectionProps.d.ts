@@ -11,6 +11,10 @@ declare module "@kickstartds/base/lib/section/typing" {
  */
 export type Headline = string;
 /**
+ * Make the headline larger
+ */
+export type LargeHeadline = boolean;
+/**
  * Subheadline for the section
  */
 export type Subheadline = string;
@@ -71,6 +75,7 @@ export type CallToActions = {
  */
 export interface SectionProps {
   headline?: Headline;
+  largeHeadline?: LargeHeadline;
   sub?: Subheadline;
   switchHeadlineOrder?: SwitchHeadlineOrder;
   width?: Width;

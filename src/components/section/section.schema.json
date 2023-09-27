@@ -11,6 +11,12 @@
       "description": "Headline for the section",
       "format": "markdown"
     },
+    "largeHeadline": {
+      "type": "boolean",
+      "title": "Large Headline",
+      "description": "Make the headline larger",
+      "default": false
+    },
     "sub": {
       "type": "string",
       "title": "Subheadline",
