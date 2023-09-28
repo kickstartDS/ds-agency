@@ -1,3 +1,17 @@
+# v1.0.37 (Thu Sep 28 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(PictureText): remove unused import ([@fleven-kds](https://github.com/fleven-kds))
+- feat(global):remove outdated import ([@fleven-kds](https://github.com/fleven-kds))
+- feat(PictureText): add PictureText Component ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.36 (Thu Sep 28 2023)
 
 #### ⚠️ Pushed to `main`
