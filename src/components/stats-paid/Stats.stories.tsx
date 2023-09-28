@@ -7,7 +7,7 @@ import { StatsPaid } from "./StatsPaidComponent";
 import schema from "./stats-paid.schema.json";
 
 const meta: Meta<typeof StatsPaid> = {
-  title: "Components/StatsPaid",
+  title: "Paid Components/Stats",
   component: StatsPaid,
   parameters: {
     jsonSchema: {

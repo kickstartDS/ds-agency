@@ -7,7 +7,7 @@ import { TestimonialsPaid } from "./TestimonialsPaidComponent";
 import schema from "./testimonials-paid.schema.json";
 
 const meta: Meta<typeof TestimonialsPaid> = {
-  title: "Components/Testimonials Paid",
+  title: "Paid Components/Testimonials",
   component: TestimonialsPaid,
   parameters: {
     jsonSchema: {

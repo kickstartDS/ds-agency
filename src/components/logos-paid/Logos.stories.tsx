@@ -6,7 +6,7 @@ import { LogosPaid } from "./LogosComponent";
 import schema from "./logos.schema.json";
 
 const meta: Meta<typeof LogosPaid> = {
-  title: "Components/Logos Paid",
+  title: "Paid Components/Logos",
   component: LogosPaid,
   parameters: {
     jsonSchema: {

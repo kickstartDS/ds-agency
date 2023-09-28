@@ -6,7 +6,7 @@ import schema from "./mosaic.schema.dereffed.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
-  title: "Components/Mosaic",
+  title: "Paid Components/Mosaic",
   args,
   argTypes,
   component: Mosaic,
