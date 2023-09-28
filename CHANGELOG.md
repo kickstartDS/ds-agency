@@ -1,3 +1,15 @@
+# v1.0.36 (Thu Sep 28 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(picture): add PictureComponent ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.35 (Wed Sep 27 2023)
 
 #### ⚠️ Pushed to `main`
