@@ -2,7 +2,6 @@ import { HTMLAttributes, FC, PropsWithChildren } from "react";
 import {
   TextMediaContextDefault,
   TextMediaContext,
-  TextMedia,
 } from "@kickstartds/base/lib/text-media";
 import { PictureTextProps } from "./PictureTextProps";
 import { Container } from "@kickstartds/core/lib/container";
