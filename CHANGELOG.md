@@ -1,3 +1,15 @@
+# v1.0.39 (Thu Oct 05 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add type object to testimonials schemas ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.37 (Thu Sep 28 2023)
 
 #### ⚠️ Pushed to `main`
