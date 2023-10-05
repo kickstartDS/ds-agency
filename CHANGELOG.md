@@ -1,3 +1,15 @@
+# v1.0.40 (Thu Oct 05 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add correct min / max to stats component schemas ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.39 (Thu Oct 05 2023)
 
 #### ⚠️ Pushed to `main`
