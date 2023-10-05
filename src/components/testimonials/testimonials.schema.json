@@ -10,6 +10,7 @@
       "title": "Testimonials",
       "description": "Add testimonials featuring an image, a quote, a source and a rating",
       "items": {
+        "type": "object",
         "properties": {
           "quote": {
             "title": "Quote",
