@@ -6,6 +6,13 @@
  */
 
 /**
+ * The stats to display in a grid
+ *
+ * @minItems 1
+ * @maxItems 4
+ */
+export type Stats = [Stat] | [Stat, Stat] | [Stat, Stat, Stat] | [Stat, Stat, Stat, Stat];
+/**
  * The value of the stat
  */
 export type Value = string;
@@ -21,10 +28,6 @@ export type Label = string;
  * The description of the stat
  */
 export type Label1 = string;
-/**
- * The stats to display in a grid
- */
-export type Stats = Stat[];
 
 /**
  * Display a set of stats in a grid

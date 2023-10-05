@@ -6,6 +6,13 @@
  */
 
 /**
+ * The stats to display with a number upcounter
+ *
+ * @minItems 1
+ * @maxItems 4
+ */
+export type Stats = [Stat] | [Stat, Stat] | [Stat, Stat, Stat] | [Stat, Stat, Stat, Stat];
+/**
  * The number of the stat
  */
 export type Number = number;
@@ -25,10 +32,6 @@ export type Title = string;
  * Optional icon of the stat
  */
 export type Icon = string;
-/**
- * The stats to display with a number upcounter
- */
-export type Stats = Stat[];
 
 /**
  * Component used to display stats with a number upcounter
