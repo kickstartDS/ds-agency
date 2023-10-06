@@ -29,7 +29,9 @@ export const Headline = forwardRef<
       align = "left",
       switchOrder = false,
       level = "h2",
-      style = "h2",
+      // @ts-expect-error: Some kDS Components set the `styleAs`Props (e.g. https://github.com/kickstartDS/content/blob/next/source/storytelling/StorytellingComponent.tsx#L146)
+      styleAs,
+      style = styleAs || "h2",
       spaceAfter = "small",
       className,
       renderContent = markdownRenderFn,

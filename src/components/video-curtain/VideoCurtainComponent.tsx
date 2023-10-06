@@ -33,7 +33,8 @@ export const VideoCurtain: FC<VideoCurtainProps> = ({
         headline: {
           content: headline,
           subheadline: sub,
-          styleAs: "h1",
+          // @ts-expect-error
+          style: "h1",
         },
         text: text,
       }}
