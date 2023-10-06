@@ -21,8 +21,20 @@ export default meta;
 export const ResponsivePicture: Story = {
   args: pack({
     alt: "Agency",
-    srcSet:
-      "img/responsive-s.png 420w, img/responsive-m.png 980w, img/responsive-l.png",
+    sources: [
+      {
+        srcSet:
+          "img/responsive-s.png 420w, img/responsive-m.png 980w, img/responsive-l.png",
+      },
+      {
+        srcSet:
+          "img/responsive-s.png 420w, img/responsive-m.png 980w, img/responsive-l.png",
+      },
+      {
+        srcSet:
+          "img/responsive-s.png 420w, img/responsive-m.png 980w, img/responsive-l.png",
+      },
+    ],
   }),
 };
 

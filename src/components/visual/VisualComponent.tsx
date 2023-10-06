@@ -23,6 +23,13 @@ export const Visual: FC<VisualProps> = ({
       },
       text: text,
     }}
-    media={media}
+    media={{
+      mode: "video",
+      video: {
+        srcMobile: media.video.srcMobile,
+        srcTablet: media.video.srcTablet,
+        srcDesktop: media.video.srcDesktop,
+      },
+    }}
   />
 );

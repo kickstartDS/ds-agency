@@ -18,29 +18,6 @@ type Story = StoryObj<typeof Button>;
 
 export default meta;
 
-export const NativeButton: Story = {
-  args: pack({
-    label: "Native Button",
-    variant: "primary",
-  }),
-};
-
-export const LinkButton: Story = {
-  args: pack({
-    label: "Link Button",
-    variant: "secondary",
-    target: "#",
-  }),
-};
-
-export const PrimaryDisabledButton: Story = {
-  args: pack({
-    label: "Disabled Button",
-    variant: "primary",
-    disabled: true,
-  }),
-};
-
 export const PrimaryButton: Story = {
   args: pack({
     label: "Primary Button",
@@ -59,5 +36,13 @@ export const TertiaryButton: Story = {
   args: pack({
     label: "Tertiary Button",
     variant: "tertiary",
+  }),
+};
+
+export const PrimaryDisabledButton: Story = {
+  args: pack({
+    label: "Disabled Button",
+    variant: "primary",
+    disabled: true,
   }),
 };

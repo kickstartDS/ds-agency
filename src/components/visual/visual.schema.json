@@ -72,7 +72,7 @@
     "align": {
       "title": "Module aligment",
       "description": "Choose the alginment of the module content",
-      "enum": ["left", "center"],
+      "enum": ["left", "center", "right"],
       "type": "string",
       "default": "left"
     }

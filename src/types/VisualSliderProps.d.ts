@@ -101,7 +101,7 @@ export type DesktopVideoSource = string;
 /**
  * Choose the alginment of the module content
  */
-export type ModuleAligment = "left" | "center";
+export type ModuleAligment = "left" | "center" | "right";
 /**
  * Additional css classes attached to the wrapping element
  */

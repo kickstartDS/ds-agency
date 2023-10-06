@@ -12,26 +12,22 @@ import { headerProps } from "../components/header/Header.stories";
 import { Footer } from "../components/footer/FooterComponent";
 import { footerProps } from "../components/footer/Footer.stories";
 
-import { Visual } from "../components/visual/VisualComponent";
+import { VideoCurtain } from "../components/video-curtain/VideoCurtainComponent";
 import { LogosPaid } from "../components/logos-paid/LogosComponent";
 
 const Page = () => (
   <>
     <Header {...headerProps} />
     <Section spaceAfter="none" spaceBefore="none" width="full">
-      <Visual
+      <VideoCurtain
         headline="We simplify the process of building and scaling your Design System"
         sub="Elevate your digital presence with us."
         text="We create impactful digital experiences that deliver tangible results. With over 15+ years of expertise in design systems, headless CMSs, and frontend development, let's shape your digital future together."
         align="left"
-        media={{
-          mode: "image",
-          image: {
-            srcMobile: "img/agency.svg",
-            srcTablet: "img/visual-tablet.svg",
-            srcDesktop: "img/visual.svg",
-            indent: "right",
-          },
+        video={{
+          srcMobile: "img/agency.svg",
+          srcTablet: "img/visual-tablet.svg",
+          srcDesktop: "img/visual.svg",
         }}
       />
     </Section>

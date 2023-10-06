@@ -2,7 +2,7 @@
 
 .c-button {
   box-shadow: var(--c-button--shadow);
-  transition-property: box-shadow, transform, background-color, color;
+  transition-property: box-shadow, transform, background-color, color, border;
 
   &:disabled {
     pointer-events: none;
