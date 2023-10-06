@@ -48,11 +48,10 @@ export const Section = forwardRef<
                   text: headline,
                   subheadline: sub,
                   style: largeHeadline ? "h1" : undefined,
-                  align: align,
                 }
               : undefined
           }
-          className={classnames(`l-section--align-${align}`)}
+          contentAlign={align}
           width={width}
           gutter={gutter}
           mode={mode}
@@ -64,6 +63,7 @@ export const Section = forwardRef<
         {ctas && ctas.length > 0 && (
           <SectionContextDefault
             className={classnames(`l-section--align-${align}`)}
+            contentAlign={align}
             background={style}
             width={width}
             gutter={gutter}
