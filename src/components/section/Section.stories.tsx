@@ -6,12 +6,19 @@ import sectionStories from "@kickstartds/base/lib/section/section.stories";
 import TeaserCardStory, {
   CardWithImage,
 } from "../teaser-card/TeaserCard.stories";
-import schema from "./section.schema.dereffed.json";
 import { TeaserCard } from "../teaser-card/TeaserCardComponent";
+import schema from "./section.schema.dereffed.json";
+import { Section } from "./SectionComponent";
 
-const Section = sectionStories.component;
-const Template = (args) => {
-  return (
+const meta: Meta<typeof Section> = {
+  ...sectionStories,
+  title: "Layout/Section",
+  ...getArgsShared(schema as JSONSchema7),
+  component: Section,
+  parameters: {
+    jsonschema: schema,
+  },
+  render: (args) => (
     <Section {...args}>
       <TeaserCard
         {...merge(TeaserCardStory.args, unpack(CardWithImage.args))}
@@ -23,45 +30,22 @@ const Template = (args) => {
         {...merge(TeaserCardStory.args, unpack(CardWithImage.args))}
       />
     </Section>
-  );
-};
-
-const meta: Meta<typeof Section> = {
-  ...sectionStories,
-  title: "Layout/Section",
-  ...getArgsShared(schema as JSONSchema7),
-  component: Template,
-  parameters: {
-    jsonschema: schema,
-  },
-  render: Template,
+  ),
 };
 export default meta;
 type Story = StoryObj<typeof Section>;
 
-export const TeaserCards: Story = {};
-TeaserCards.args = pack({
-  headline: "Section headline",
-  mode: "tile",
-  ctas: [],
-});
+export const TeaserCards: Story = {
+  args: pack({
+    headline: "Section headline",
+    mode: "tile",
+    ctas: [],
+  }),
+};
 
-export const WithCtas: Story = {};
-WithCtas.args = pack({
-  headline: "Section headline",
-  mode: "tile",
-  ctas: [
-    {
-      label: "Section CTA 1",
-      target: "#",
-    },
-    {
-      label: "Section CTA 2",
-      target: "#",
-    },
-    {
-      label: "Section CTA 3",
-      target: "#",
-    },
-  ],
-});
+export const WithCtas: Story = {
+  args: pack({
+    headline: "Section headline",
+    mode: "tile",
+  }),
+};

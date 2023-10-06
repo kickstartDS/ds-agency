@@ -106,9 +106,11 @@
         "required": ["label", "target"]
       },
       "examples": [
-        { "label": "Contact Us", "target": "#" },
-        { "label": "Read more", "target": "#" },
-        { "label": "Sitemap", "target": "#" }
+        [
+          { "label": "Contact Us", "target": "#" },
+          { "label": "Read more", "target": "#" },
+          { "label": "Sitemap", "target": "#" }
+        ]
       ]
     }
   },
