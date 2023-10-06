@@ -1,3 +1,15 @@
+# v1.0.42 (Fri Oct 06 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(LandingpagePaid): remove LandingpagePaid ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.41 (Fri Oct 06 2023)
 
 #### ⚠️ Pushed to `main`
