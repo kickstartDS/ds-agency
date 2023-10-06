@@ -33,7 +33,9 @@ export const Button = forwardRef<
           ? "solid"
           : variant === "secondary"
           ? "outline"
-          : "clear"
+          : variant === "tertiary"
+          ? "clear"
+          : "solid"
       }
       disabled={disabled}
       iconAfter={{

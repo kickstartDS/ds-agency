@@ -26,13 +26,13 @@ export const VideoCurtain: FC<VideoCurtainProps> = ({
         vertical: verticalAlign,
         link: {
           label: cta.label,
-          target: cta.target,
+          href: cta.target,
           enabled: cta.toggle,
-          variant: "secondary",
+          variant: "outline",
         },
         headline: {
-          text: headline,
-          sub: sub,
+          content: headline,
+          subheadline: sub,
           styleAs: "h1",
         },
         text: text,
