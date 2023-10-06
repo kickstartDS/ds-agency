@@ -1,3 +1,16 @@
+# v1.0.41 (Fri Oct 06 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(components): resolve faulty properties in components ([@fleven-kds](https://github.com/fleven-kds))
+- feat(VideoCurtain): add VideoCurtain component ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.40 (Thu Oct 05 2023)
 
 #### ⚠️ Pushed to `main`
