@@ -1,4 +1,3 @@
-import classnames from "classnames";
 import { FC } from "react";
 import { CtaPaidProps } from "./CtaPaidProps";
 import "./cta-paid.scss";
@@ -9,9 +8,6 @@ export const CtaPaid: FC<CtaPaidProps> = ({
   largeHeadline,
   sub,
   text,
-  primaryCta,
-  secondaryCta,
-  align = "left",
 }) => (
   <Storytelling
     image={{}}

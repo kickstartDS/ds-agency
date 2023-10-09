@@ -909,6 +909,10 @@ export type Caption = string;
  */
 export type Alignment = "left" | "center";
 /**
+ * The amount of logos to display per row
+ */
+export type LogosPerRow = number;
+/**
  * Activate/disable the CTA
  */
 export type CTAToggle = CTAToggle1 & CTAToggle2;
@@ -930,10 +934,11 @@ export type LinkLabel = string;
 /**
  * Component used to display a set of logos
  */
-export interface LogosProps {
+export interface LogosPaidProps {
   tagline?: LogoTagline;
   logos: Logos;
   align?: Alignment;
+  logosPerRow?: LogosPerRow;
   cta?: CallToAction;
 }
 /**

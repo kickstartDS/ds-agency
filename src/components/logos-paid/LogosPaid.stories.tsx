@@ -2,8 +2,8 @@ import { Meta, StoryObj } from "@storybook/react";
 import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
-import { LogosPaid } from "./LogosComponent";
-import schema from "./logos.schema.json";
+import { LogosPaid } from "./LogosPaidComponent";
+import schema from "./logos-paid.schema.json";
 
 const meta: Meta<typeof LogosPaid> = {
   title: "Paid Components/Logos",
