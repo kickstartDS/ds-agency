@@ -20,6 +20,10 @@ export const Section = forwardRef<
       largeHeadline = false,
       sub,
       align = "left",
+      headlineWidth = "unset",
+      headlineAlign = "left",
+      contentWidth = "unset",
+      contentAlign = "left",
       width = "default",
       gutter = "default",
       mode = "default",
@@ -38,6 +42,13 @@ export const Section = forwardRef<
       <>
         <SectionContextDefault
           {...props}
+          largeHeadline={largeHeadline}
+          sub={sub}
+          align={align}
+          headlineWidth={headlineWidth}
+          headlineAlign={headlineAlign}
+          contentWidth={contentWidth}
+          contentAlign={contentAlign}
           background={style}
           headline={
             headline
@@ -51,7 +62,6 @@ export const Section = forwardRef<
                 }
               : undefined
           }
-          contentAlign={align}
           width={width}
           gutter={gutter}
           mode={mode}
