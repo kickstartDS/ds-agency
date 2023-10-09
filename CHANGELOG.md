@@ -1,3 +1,39 @@
+# v1.0.45 (Fri Oct 06 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: bring back teaser card link ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.0.44 (Fri Oct 06 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: fix some typescript errors ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.0.43 (Fri Oct 06 2023)
+
+#### ⚠️ Pushed to `main`
+
+- build: fix storybook html addon panel ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.42 (Fri Oct 06 2023)
 
 #### ⚠️ Pushed to `main`

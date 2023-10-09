@@ -23,6 +23,6 @@ export type TextStyle1 = "highlight" | "default";
  */
 export interface TextProps {
   text?: TextStyle;
-  layoutVariant: LayoutVariant;
+  layoutVariant?: LayoutVariant;
   textStyle?: TextStyle1;
 }

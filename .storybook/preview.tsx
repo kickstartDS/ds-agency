@@ -1,10 +1,13 @@
 import { actions } from "@storybook/addon-actions";
+import { LegacyStoryFn } from "@storybook/types";
 import { DocsContainer, DocsContainerProps } from "@storybook/addon-docs";
-import { Preview } from "@storybook/react";
+import { defaultDecorateStory } from "@storybook/preview-api";
+import { Preview, ReactRenderer, StoryContext } from "@storybook/react";
 import { unpackDecorator } from "@kickstartds/core/lib/storybook";
 import { dark } from "./themes";
 
 import { PageWrapper } from "../src/components/page-wrapper/PageWrapperComponent";
+import { providerDecorator } from "../src/components/Providers";
 import { LinkProvider } from "../src/docs/LinkProvider";
 
 const myActions = actions("radio");
@@ -54,10 +57,12 @@ const preview: Preview = {
           ? "http://localhost:9000/playroom/"
           : "http://localhost:9000",
     },
-  },
-  // @ts-expect-error
-  html: {
-    decorator: unpackDecorator,
+    html: {
+      decorator: (Story: LegacyStoryFn<ReactRenderer>, context: StoryContext) =>
+        defaultDecorateStory(Story, [unpackDecorator, providerDecorator])(
+          context
+        ),
+    },
   },
   decorators: [
     unpackDecorator,

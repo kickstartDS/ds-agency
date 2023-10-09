@@ -22,7 +22,8 @@ export const TeaserCard = forwardRef<
         label: "Read more",
         variant: "outline",
         inverted: inverted,
-        href: target,
+        // @ts-expect-error: Missing type layering
+        target: target,
       }}
       image={image}
       inverted={inverted}
