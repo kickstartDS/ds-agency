@@ -1,3 +1,15 @@
+# v1.0.47 (Mon Oct 09 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(LogosPaid.mdx): fix faulty references ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.46 (Mon Oct 09 2023)
 
 #### ⚠️ Pushed to `main`
