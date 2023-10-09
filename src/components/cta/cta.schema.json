@@ -10,6 +10,12 @@
       "type": "string",
       "examples": ["Headline"]
     },
+    "largeHeadline": {
+      "type": "boolean",
+      "title": "Large Headline",
+      "description": "Make the headline larger",
+      "default": false
+    },
     "sub": {
       "title": "Module Subheadline",
       "description": "Subheadline below the module headline",

@@ -1,0 +1,25 @@
+:root {
+  .c-visual.c-hero {
+    --c-visual_overlay--background: linear-gradient(145deg, var(--ks-color-primary-to-bg-8), transparent);
+    --c-visual_overlay--background: radial-gradient(
+      50% 126.2% at 100% 0%,
+      rgba(255, 68, 158, 0.5) 0%,
+      rgba(7, 8, 32, 0.75) 100%
+    );
+    --c-visual_overlay--background-size: 100%;
+
+    .c-visual__box {
+      --c-visual_box--background: var(--ks-color-bg-alpha-8);
+      --c-visual_box--color: var(--ks-color-fg);
+      --c-visual_subheadline--color: var(--ks-text-color-primary);
+      --c-visual_headline--color: var(--ks-color-fg);
+      --c-visual_box--border-radius: var(--ks-border-radius-surface);
+    }
+
+    @container visual (min-width: 640px) {
+      .c-visual__box {
+        --c-visual_box--max-width: 50rem;
+      }
+    }
+  }
+}

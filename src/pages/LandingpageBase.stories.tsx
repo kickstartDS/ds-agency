@@ -10,10 +10,32 @@ import { Footer } from "../components/footer/FooterComponent";
 import { footerProps } from "../components/footer/Footer.stories";
 import { Stats } from "../components/stats/StatsComponent";
 import { Testimonials } from "../components/testimonials/TestimonialsComponent";
+import { Hero } from "../components/hero/HeroComponent";
 
 const Page = () => (
   <>
     <Header {...headerProps} />
+    <Section spaceAfter="none" spaceBefore="none" width="full">
+      <Hero
+        headline="The Sanity & Next.js Experts"
+        sub="We are the experts in Sanity & Next.js"
+        text="Experience the speed & scalability unlike anything seen before with our Sanity CMS powered websites, web apps & composable architecture."
+        cta={{
+          toggle: true,
+          label: "Learn More",
+          target: "#",
+          icon: "arrow-right",
+        }}
+        image={{
+          srcMobile: "img/hero.png",
+          srcTablet: "img/hero-centered.png",
+          srcDesktop: "img/hero-centered.png",
+          indent: "none",
+          alt: "Hero Image",
+        }}
+        textPosition="center"
+      />
+    </Section>
     <Section width="default">
       <Cta
         align="left"

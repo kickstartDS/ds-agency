@@ -1,12 +1,13 @@
 import { FC } from "react";
-import { VisualContextDefault as VisualComponent } from "@kickstartds/content/lib/visual";
+import { VisualContextDefault } from "@kickstartds/content/lib/visual";
 import { VideoCurtainProps } from "./VideoCurtainProps";
-import "../visual/visual.scss";
+import "./video-curtain.scss";
 import { Container } from "@kickstartds/core/lib/container";
 
 export const VideoCurtain: FC<VideoCurtainProps> = ({
   headline,
   sub,
+  largeHeadline,
   text,
   horizontalAlign,
   verticalAlign,
@@ -15,7 +16,7 @@ export const VideoCurtain: FC<VideoCurtainProps> = ({
   cta,
 }) => (
   <Container name="visual">
-    <VisualComponent
+    <VisualContextDefault
       className="c-video-curtain"
       height="fullScreen"
       inbox
@@ -28,12 +29,14 @@ export const VideoCurtain: FC<VideoCurtainProps> = ({
           label: cta.label,
           href: cta.target,
           enabled: cta.toggle,
-          variant: "outline",
+          // @ts-expect-error
+          variant: "secondary",
         },
         headline: {
-          content: headline,
-          subheadline: sub,
-          styleAs: "h1",
+          // @ts-expect-error
+          text: headline,
+          sub: sub,
+          style: largeHeadline ? "h1" : undefined,
         },
         text: text,
       }}

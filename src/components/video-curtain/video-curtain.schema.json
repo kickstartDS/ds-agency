@@ -10,6 +10,12 @@
       "type": "string",
       "examples": ["Headline"]
     },
+    "largeHeadline": {
+      "title": "Large Headline",
+      "description": "Boolean to set if the headline is supposed to resemble a h1 headline at the start of the page",
+      "type": "boolean",
+      "default": false
+    },
     "sub": {
       "title": "Module Subheadline",
       "description": "Subheadline below the module headline",

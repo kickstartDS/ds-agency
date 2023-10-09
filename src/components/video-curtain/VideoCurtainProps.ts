@@ -10,6 +10,10 @@
  */
 export type Headline = string;
 /**
+ * Boolean to set if the headline is supposed to resemble a h1 headline at the start of the page
+ */
+export type LargeHeadline = boolean;
+/**
  * Subheadline below the module headline
  */
 export type ModuleSubheadline = string;
@@ -60,6 +64,7 @@ export type ModuleAligment1 = "left" | "center" | "right";
 
 export interface VideoCurtainProps {
   headline?: Headline;
+  largeHeadline?: LargeHeadline;
   sub?: ModuleSubheadline;
   text?: ModuleText;
   cta?: {

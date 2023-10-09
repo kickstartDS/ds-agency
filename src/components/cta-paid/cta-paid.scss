@@ -1,0 +1,32 @@
+.c-cta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ks-spacing-stack-m);
+  max-width: var(--l-section--content-width-default);
+
+  &--align-center {
+    margin: auto;
+
+    .c-cta__links {
+      justify-content: center;
+    }
+
+    .c-rich-text {
+      text-align: center;
+    }
+  }
+
+  .c-headline {
+    max-width: 100%;
+  }
+
+  &__links {
+    display: flex;
+    gap: var(--ks-spacing-stack-m) var(--ks-spacing-inline-s);
+    flex-wrap: wrap;
+  }
+
+  .c-button {
+    width: fit-content;
+  }
+}

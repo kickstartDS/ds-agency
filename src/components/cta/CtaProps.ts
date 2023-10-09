@@ -10,6 +10,10 @@
  */
 export type ModuleHeadline = string;
 /**
+ * Make the headline larger
+ */
+export type LargeHeadline = boolean;
+/**
  * Subheadline below the module headline
  */
 export type ModuleSubheadline = string;
@@ -44,6 +48,7 @@ export type ModuleAligment = "left" | "center";
 
 export interface CtaProps {
   headline?: ModuleHeadline;
+  largeHeadline?: LargeHeadline;
   sub?: ModuleSubheadline;
   text?: ModuleText;
   primaryCta?: {
