@@ -1,3 +1,17 @@
+# v1.0.46 (Mon Oct 09 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(CtaPaid): add CtaPaidComponent ([@fleven-kds](https://github.com/fleven-kds))
+- feat(hero): add hero component ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.45 (Fri Oct 06 2023)
 
 #### ⚠️ Pushed to `main`
