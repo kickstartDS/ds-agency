@@ -32,7 +32,7 @@
     },
     "fullWidth": {
       "title": "Width",
-      "description": "Width of the module element",
+      "description": "Set the width of the content to the full width of the element",
       "type": "boolean",
       "default": false
     },

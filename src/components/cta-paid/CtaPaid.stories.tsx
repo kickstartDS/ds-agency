@@ -18,7 +18,32 @@ type Story = StoryObj<typeof CtaPaid>;
 
 export default meta;
 
-export const AlignLeft: Story = {
+export const ImageNextToText: Story = {
+  args: pack({
+    headline: "The Sanity & Next.js Experts",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+    largeHeadline: true,
+    backgroundColor: "#06081f",
+    image: {
+      order: {
+        desktopImageLast: false,
+      },
+    },
+    width: "wide",
+    ctas: [
+      {
+        label: "Learn More",
+        target: "#",
+      },
+      {
+        label: "Contact Us",
+        target: "#",
+      },
+    ],
+  }),
+};
+
+export const ImageOnBackground: Story = {
   args: pack({
     headline: "The Sanity & Next.js Experts",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
@@ -26,6 +51,11 @@ export const AlignLeft: Story = {
     largeHeadline: true,
     backgroundColor: "#06081f",
     width: "wide",
+    image: {
+      order: {
+        desktopImageLast: true,
+      },
+    },
     ctas: [
       {
         label: "Learn More",

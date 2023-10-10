@@ -22,7 +22,7 @@ export type ModuleSubheadline = string;
  */
 export type ModuleText = string;
 /**
- * Width of the module element
+ * Set the width of the content to the full width of the element
  */
 export type Width = boolean;
 /**

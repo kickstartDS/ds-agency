@@ -10,38 +10,10 @@ import { Footer } from "../components/footer/FooterComponent";
 import { footerProps } from "../components/footer/Footer.stories";
 import { Stats } from "../components/stats/StatsComponent";
 import { Testimonials } from "../components/testimonials/TestimonialsComponent";
-import { CtaPaid } from "../components/cta-paid/CtaPaidComponent";
 
 const Page = () => (
   <>
     <Header {...headerProps} />
-    <Section width="full" spaceBefore="none">
-      <CtaPaid
-        align="left"
-        headline="We simplify the process of building your **Design System**"
-        text={`
-Elevate your digital presence with us. We create impactful digital experiences that deliver tangible results. With over 15+ years of expertise in design systems, headless CMSs, and frontend development, let's shape your digital future together.`}
-        largeHeadline
-        backgroundImage="img/cta-background.png"
-        width="full"
-        image={{
-          source: "img/agency.png",
-          order: {
-            desktopImageLast: true,
-          },
-        }}
-        ctas={[
-          {
-            label: "Learn More",
-            target: "#",
-          },
-          {
-            label: "Contact Us",
-            target: "#",
-          },
-        ]}
-      />
-    </Section>
     <Section width="default">
       <Cta
         align="left"
