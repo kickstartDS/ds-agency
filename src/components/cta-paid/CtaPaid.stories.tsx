@@ -22,19 +22,19 @@ export const AlignLeft: Story = {
   args: pack({
     headline: "The Sanity & Next.js Experts",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
-    secondaryCta: {
-      label: "Contact us",
-    },
-  }),
-};
-
-export const AlignCenter: Story = {
-  args: pack({
-    headline: "The Sanity & Next.js Experts",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
-    align: "center",
-    secondaryCta: {
-      label: "Contact us",
-    },
+    backgroundImage: "img/cta-background.png",
+    largeHeadline: true,
+    backgroundColor: "#06081f",
+    width: "wide",
+    ctas: [
+      {
+        label: "Learn More",
+        target: "#",
+      },
+      {
+        label: "Contact Us",
+        target: "#",
+      },
+    ],
   }),
 };

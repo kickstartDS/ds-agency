@@ -30,51 +30,38 @@
         "Jedes Jahr werden zahlreiche Kinder bei Angriffen verletzt. Wir helfen, dass sie behandelt werden können und langfristige Unterstützung erhalten, etwa mit Prothesen. Durch den Krieg sind zudem viele Kinder verängstigt und traumatisiert. mydesignsystem sorgt für psychosoziale Hilfe."
       ]
     },
-    "primaryCta": {
-      "type": "object",
-      "properties": {
-        "toggle": {
-          "title": "CTA Toggle",
-          "description": "Toggle wether the CTA is displayed or not",
-          "type": "boolean",
-          "default": true
+    "ctas": {
+      "type": "array",
+      "title": "Call to actions",
+      "description": "Add Call to actions to the end of the section",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "title": "Label",
+            "description": "Label for the Call to action"
+          },
+          "target": {
+            "type": "string",
+            "title": "Target",
+            "description": "Target for the Call to action",
+            "format": "uri"
+          }
         },
-        "label": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
-        },
-        "target": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
-        },
-        "icon": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
-        }
+        "additionalProperties": false,
+        "required": ["label", "target"]
       },
-      "additionalProperties": false
-    },
-    "secondaryCta": {
-      "type": "object",
-      "properties": {
-        "toggle": {
-          "title": "CTA Toggle",
-          "description": "Toggle wether the CTA is displayed or not",
-          "type": "boolean",
-          "default": true
-        },
-        "label": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
-        },
-        "target": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
-        },
-        "icon": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
-        }
-      },
-      "additionalProperties": false
+      "examples": [
+        [
+          { "label": "Contact Us", "target": "#" },
+          { "label": "Read more", "target": "#" }
+        ]
+      ]
     },
     "align": {
-      "title": "Module aligment",
-      "description": "Choose the alginment of the module content",
+      "title": "Text Alignment",
+      "description": "Choose the alginment of the text",
       "enum": ["left", "center"],
       "type": "string",
       "default": "left"

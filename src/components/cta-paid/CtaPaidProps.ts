@@ -22,46 +22,92 @@ export type ModuleSubheadline = string;
  */
 export type ModuleText = string;
 /**
- * Toggle wether the CTA is displayed or not
+ * Width of the module element
  */
-export type CTAToggle = boolean;
+export type Width = boolean;
 /**
- * Text content to display inside the button
+ * Label for the Call to action
  */
 export type Label = string;
 /**
- * Target that should be linked, makes the button behave like a link semantically
+ * Target for the Call to action
  */
 export type Target = string;
 /**
- * Choose an icon
+ * Add Call to actions to the end of the section
  */
-export type Icon = string;
+export type CallToActions = {
+  label: Label;
+  target: Target;
+}[];
 /**
- * Toggle wether the CTA is displayed or not
+ * Background color for the whole element
  */
-export type CTAToggle1 = boolean;
+export type BackgroundColor = string;
 /**
- * Choose the alginment of the module content
+ * Background image for the whole element
  */
-export type ModuleAligment = "left" | "center";
+export type BackgroundImage = string;
+/**
+ * Image source to use
+ */
+export type ImageSource = string;
+/**
+ * Select an aspect ratio to use for cropping and displaying the image
+ */
+export type ImageAspectRatio = "4:3" | "3:2" | "16:9" | "1:1" | "none";
+/**
+ * Select a vertical alignment for the image
+ */
+export type ImageVerticalAlignment = "center" | "top" | "top-edge" | "bottom" | "bottom-edge";
+/**
+ * Select a horizontal alignment for the image
+ */
+export type ImageHorizontalAlignment = "center" | "left" | "left-edge" | "right" | "right-edge";
+/**
+ * Switch to displaying the image after the text on mobile
+ */
+export type MobileImageAfterText = boolean;
+/**
+ * Switch to displaying the image after the text on desktop
+ */
+export type DesktopImageAfterText = boolean;
+/**
+ * Image description
+ */
+export type AltText = string;
+/**
+ * Choose the alginment of the text
+ */
+export type TextAlignment = "left" | "center";
 
 export interface CtaPaidProps {
   headline?: ModuleHeadline;
   largeHeadline?: LargeHeadline;
   sub?: ModuleSubheadline;
   text?: ModuleText;
-  primaryCta?: {
-    toggle?: CTAToggle;
-    label?: Label;
-    target?: Target;
-    icon?: Icon;
-  };
-  secondaryCta?: {
-    toggle?: CTAToggle1;
-    label?: Label;
-    target?: Target;
-    icon?: Icon;
-  };
-  align?: ModuleAligment;
+  fullWidth?: Width;
+  ctas?: CallToActions;
+  backgroundColor?: BackgroundColor;
+  backgroundImage?: BackgroundImage;
+  image?: Image;
+  align?: TextAlignment;
+}
+/**
+ * Image displayed alongside the text content
+ */
+export interface Image {
+  source?: ImageSource;
+  ratio?: ImageAspectRatio;
+  vAlign?: ImageVerticalAlignment;
+  hAlign?: ImageHorizontalAlignment;
+  order?: Order;
+  alt?: AltText;
+}
+/**
+ * Choose what comes first on mobile and desktop: image or text
+ */
+export interface Order {
+  mobileImageLast?: MobileImageAfterText;
+  desktopImageLast?: DesktopImageAfterText;
 }

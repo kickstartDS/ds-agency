@@ -1,8 +1,9 @@
 .c-cta {
+  --c-cta--gap: var(--ks-spacing-m);
+
   display: flex;
   flex-direction: column;
-  gap: var(--ks-spacing-stack-m);
-  max-width: var(--l-section--content-width-default);
+  gap: var(--c-cta--gap);
 
   &--align-center {
     margin: auto;

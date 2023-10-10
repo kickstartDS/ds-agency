@@ -8,6 +8,7 @@ import { Container } from "@kickstartds/core/lib/container";
 export const Hero: FC<HeroProps> = ({
   headline,
   sub,
+  largeHeadline,
   height,
   text,
   textPosition = "center",
@@ -39,10 +40,14 @@ export const Hero: FC<HeroProps> = ({
         },
         renderHeadline: () => <>{headline}</>,
         headline: {
+          align:
+            textPosition === "below" || textPosition === "center"
+              ? "center"
+              : "left",
           // @ts-expect-error
           text: headline,
           sub: sub,
-          style: "h1",
+          style: largeHeadline ? "h1" : undefined,
         },
         text: text,
       }}

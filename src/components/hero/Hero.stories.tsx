@@ -20,6 +20,7 @@ export default meta;
 export const TextBelowImage: Story = {
   args: pack({
     headline: "The Sanity & Next.js Experts",
+    largeHeadline: true,
     text: "Experience the speed & scalability unlike anything seen before with our Sanity CMS powered websites, web apps & composable architecture.",
     textbox: false,
     overlay: true,
@@ -32,6 +33,7 @@ export const TextBelowImage: Story = {
     },
   }),
 };
+
 export const TextCenteredOverBackgroundImage: Story = {
   args: pack({
     headline: "The Sanity & Next.js Experts",
@@ -47,6 +49,7 @@ export const TextCenteredOverBackgroundImage: Story = {
     },
   }),
 };
+
 export const TextBoxOverBackgroundImage: Story = {
   args: pack({
     headline: "The Sanity & Next.js Experts",
@@ -55,7 +58,7 @@ export const TextBoxOverBackgroundImage: Story = {
     overlay: true,
     textPosition: "left",
     image: {
-      srcMobile: "img/hero.png",
+      srcMobile: "img/hero-textbox.png",
       srcTablet: "img/hero-textbox.png",
       srcDesktop: "img/hero-textbox.png",
     },

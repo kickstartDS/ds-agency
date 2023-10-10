@@ -10,8 +10,7 @@ export const Cta: FC<CtaProps> = ({
   headline,
   sub,
   text,
-  primaryCta,
-  secondaryCta,
+  ctas,
   align = "left",
 }) => (
   <div className={classnames("c-cta", `c-cta--align-${align}`)}>
@@ -24,31 +23,21 @@ export const Cta: FC<CtaProps> = ({
       spaceAfter="minimum"
     />
     {text ? <RichText text={text} /> : ""}
-    {primaryCta?.toggle || secondaryCta?.toggle ? (
-      <div className="c-cta__links">
-        {primaryCta?.toggle ? (
-          <Button
-            variant="primary"
-            label={primaryCta.label}
-            href={primaryCta.target}
-            icon={primaryCta.icon}
-          />
-        ) : (
-          ""
-        )}
-        {secondaryCta?.toggle ? (
-          <Button
-            variant="secondary"
-            label={secondaryCta.label}
-            href={secondaryCta.target}
-            icon={secondaryCta.icon}
-          />
-        ) : (
-          ""
-        )}
-      </div>
-    ) : (
-      ""
-    )}
+
+    <div className="c-cta__links">
+      {ctas
+        ? ctas.map((cta, index) => (
+            <Button
+              key={index}
+              label={cta.label}
+              target={cta.target}
+              variant={
+                index === 0 ? "primary" : index === 1 ? "secondary" : "tertiary"
+              }
+              size="medium"
+            />
+          ))
+        : ""}
+    </div>
   </div>
 );

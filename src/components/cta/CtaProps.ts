@@ -22,46 +22,30 @@ export type ModuleSubheadline = string;
  */
 export type ModuleText = string;
 /**
- * Toggle wether the CTA is displayed or not
- */
-export type CTAToggle = boolean;
-/**
- * Text content to display inside the button
+ * Label for the Call to action
  */
 export type Label = string;
 /**
- * Target that should be linked, makes the button behave like a link semantically
+ * Target for the Call to action
  */
 export type Target = string;
 /**
- * Choose an icon
+ * Add Call to actions to the end of the section
  */
-export type Icon = string;
+export type CallToActions = {
+  label: Label;
+  target: Target;
+}[];
 /**
- * Toggle wether the CTA is displayed or not
+ * Choose the alginment of the text
  */
-export type CTAToggle1 = boolean;
-/**
- * Choose the alginment of the module content
- */
-export type ModuleAligment = "left" | "center";
+export type TextAlignment = "left" | "center";
 
 export interface CtaProps {
   headline?: ModuleHeadline;
   largeHeadline?: LargeHeadline;
   sub?: ModuleSubheadline;
   text?: ModuleText;
-  primaryCta?: {
-    toggle?: CTAToggle;
-    label?: Label;
-    target?: Target;
-    icon?: Icon;
-  };
-  secondaryCta?: {
-    toggle?: CTAToggle1;
-    label?: Label;
-    target?: Target;
-    icon?: Icon;
-  };
-  align?: ModuleAligment;
+  ctas?: CallToActions;
+  align?: TextAlignment;
 }

@@ -30,51 +30,112 @@
         "Jedes Jahr werden zahlreiche Kinder bei Angriffen verletzt. Wir helfen, dass sie behandelt werden können und langfristige Unterstützung erhalten, etwa mit Prothesen. Durch den Krieg sind zudem viele Kinder verängstigt und traumatisiert. mydesignsystem sorgt für psychosoziale Hilfe."
       ]
     },
-    "primaryCta": {
-      "type": "object",
-      "properties": {
-        "toggle": {
-          "title": "CTA Toggle",
-          "description": "Toggle wether the CTA is displayed or not",
-          "type": "boolean",
-          "default": true
-        },
-        "label": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
-        },
-        "target": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
-        },
-        "icon": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
-        }
-      },
-      "additionalProperties": false
+    "fullWidth": {
+      "title": "Width",
+      "description": "Width of the module element",
+      "type": "boolean",
+      "default": false
     },
-    "secondaryCta": {
+    "ctas": {
+      "type": "array",
+      "title": "Call to actions",
+      "description": "Add Call to actions to the end of the section",
+      "items": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "title": "Label",
+            "description": "Label for the Call to action"
+          },
+          "target": {
+            "type": "string",
+            "title": "Target",
+            "description": "Target for the Call to action",
+            "format": "uri"
+          }
+        },
+        "additionalProperties": false,
+        "required": ["label", "target"]
+      },
+      "examples": [
+        [
+          { "label": "Contact Us", "target": "#" },
+          { "label": "Read more", "target": "#" }
+        ]
+      ]
+    },
+    "backgroundColor": {
+      "$ref": "http://schema.kickstartds.com/content/storytelling.schema.json#/properties/backgroundColor"
+    },
+    "backgroundImage": {
+      "$ref": "http://schema.kickstartds.com/content/storytelling.schema.json#/properties/backgroundImage"
+    },
+
+    "image": {
+      "title": "Image",
+      "description": "Image displayed alongside the text content",
       "type": "object",
       "properties": {
-        "toggle": {
-          "title": "CTA Toggle",
-          "description": "Toggle wether the CTA is displayed or not",
-          "type": "boolean",
-          "default": true
+        "source": {
+          "title": "Image source",
+          "description": "Image source to use",
+          "type": "string",
+          "format": "image",
+          "examples": ["img/agency.png"]
         },
-        "label": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
+        "ratio": {
+          "title": "Image aspect ratio",
+          "description": "Select an aspect ratio to use for cropping and displaying the image",
+          "type": "string",
+          "enum": ["4:3", "3:2", "16:9", "1:1", "none"],
+          "default": "none"
         },
-        "target": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
+        "vAlign": {
+          "title": "Image vertical alignment",
+          "description": "Select a vertical alignment for the image",
+          "type": "string",
+          "enum": ["center", "top", "top-edge", "bottom", "bottom-edge"],
+          "default": "center"
         },
-        "icon": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
+        "hAlign": {
+          "title": "Image horizontal alignment",
+          "description": "Select a horizontal alignment for the image",
+          "type": "string",
+          "enum": ["center", "left", "left-edge", "right", "right-edge"],
+          "default": "center"
+        },
+        "order": {
+          "title": "Order",
+          "description": "Choose what comes first on mobile and desktop: image or text",
+          "type": "object",
+          "properties": {
+            "mobileImageLast": {
+              "title": "Mobile image after text",
+              "description": "Switch to displaying the image after the text on mobile",
+              "type": "boolean",
+              "default": false
+            },
+            "desktopImageLast": {
+              "title": "Desktop image after text",
+              "description": "Switch to displaying the image after the text on desktop",
+              "type": "boolean",
+              "default": true
+            }
+          },
+          "additionalProperties": false
+        },
+        "alt": {
+          "title": "Alt text",
+          "description": "Image description",
+          "type": "string"
         }
       },
       "additionalProperties": false
     },
     "align": {
-      "title": "Module aligment",
-      "description": "Choose the alginment of the module content",
+      "title": "Text Alignment",
+      "description": "Choose the alginment of the text",
       "enum": ["left", "center"],
       "type": "string",
       "default": "left"
