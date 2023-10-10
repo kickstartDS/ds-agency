@@ -4,8 +4,29 @@ import * as ButtonStories from "./Button.stories";
 
 <Meta of={ButtonStories} />
 
-<Canvas of={ButtonStories.NativeButton} />
+# Button
 
-### Properties
+The [Button](file:///home/julrich/Projects/kickstartDS/code/ds-agency/src/components/button/Button.mdx#3%2C35-3%2C35) component is used for user interaction. It can be customized with various props.
+
+<Canvas of={ButtonStories.PrimaryButton} />
+
+## Properties
 
 <ArgTypes />
+
+## Variants
+
+<Canvas of={ButtonStories.PrimaryButton} />
+<Canvas of={ButtonStories.SecondaryButton} />
+<Canvas of={ButtonStories.TertiaryButton} />
+<Canvas of={ButtonStories.PrimaryDisabledButton} />
+
+## Usage
+
+```jsx
+<Button label="My Button" variant="primary" />
+```
+
+## Design Tokens
+
+Refer to the [Colors](#) and [Typography](#) documentation for design tokens related to the [Button](#) component.
