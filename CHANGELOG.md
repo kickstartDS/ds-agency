@@ -1,3 +1,16 @@
+# v1.0.49 (Tue Oct 10 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(ctaPaidStories): add stories ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.48 (Tue Oct 10 2023)
 
 #### ⚠️ Pushed to `main`
