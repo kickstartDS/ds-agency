@@ -1,3 +1,15 @@
+# v1.0.50 (Tue Oct 10 2023)
+
+#### ⚠️ Pushed to `main`
+
+- chore: add some skeleton content to button doc page ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.49 (Tue Oct 10 2023)
 
 #### ⚠️ Pushed to `main`
