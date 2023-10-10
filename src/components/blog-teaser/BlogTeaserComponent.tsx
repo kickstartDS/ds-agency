@@ -1,6 +1,6 @@
 import { HTMLAttributes, FC } from "react";
 
-import { PostTeaser } from "@kickstartds/blog/lib/post-teaser";
+import { PostTeaserContextDefault } from "@kickstartds/blog/lib/post-teaser";
 
 import { BlogTeaserProps } from "./BlogTeaserProps";
 import "./blog-teaser.scss";
@@ -33,7 +33,7 @@ export const BlogTeaser: FC<BlogTeaserProps & HTMLAttributes<HTMLElement>> = ({
 
   return (
     <Container name="post-teaser">
-      <PostTeaser
+      <PostTeaserContextDefault
         image={{ src: image }}
         meta={{
           author: {
