@@ -1,3 +1,15 @@
+# v1.0.48 (Tue Oct 10 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(CTA): overhaul cta + ctaPaid components ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.47 (Mon Oct 09 2023)
 
 #### ⚠️ Pushed to `main`
