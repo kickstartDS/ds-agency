@@ -19,7 +19,6 @@ export const Hero: FC<HeroProps> = ({
   <Container name="visual">
     <VisualContextDefault
       className={classnames(`c-hero c-hero--content-${textPosition}`)}
-      renderBox={() => <>test</>}
       height={height}
       box={{
         background: textbox === true ? "solid" : "transparent",

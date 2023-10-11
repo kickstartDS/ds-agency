@@ -13,43 +13,37 @@
         "type": "object",
         "title": "Stat",
         "properties": {
-          "value": {
-            "title": "Value",
-            "description": "The value of the stat",
-            "type": "string",
-            "examples": ["1", "2", "3", "4"]
-          },
-          "icon": {
-            "title": "Icon",
-            "description": "The icon of the stat",
-            "type": "string",
-            "examples": ["person", "home", "map"]
-          },
-          "label": {
-            "title": "Label",
-            "description": "The label of the stat",
-            "type": "string",
-            "examples": ["Stat 1", "Stat 2", "Stat 3", "Stat 4"]
+          "number": {
+            "title": "Number",
+            "description": "The number of the stat",
+            "type": "integer",
+            "examples": [1, 2, 3, 4]
           },
           "description": {
-            "title": "Label",
-            "description": "The description of the stat",
+            "title": "Description",
+            "description": "Optional description of the stat",
             "type": "string"
+          },
+          "title": {
+            "title": "Title",
+            "description": "Title of the stat",
+            "type": "string",
+            "examples": ["Stat 1", "Stat 2", "Stat 3", "Stat 4"]
           }
         },
         "additionalProperties": false,
-        "required": ["value", "label"],
+        "required": ["number", "label"],
         "examples": [
           {
-            "value": 1,
+            "number": 1,
             "label": "Stat 1"
           },
           {
-            "value": 2,
+            "number": 2,
             "label": "Stat 2"
           },
           {
-            "value": 3,
+            "number": 3,
             "label": "Stat 3"
           },
           {

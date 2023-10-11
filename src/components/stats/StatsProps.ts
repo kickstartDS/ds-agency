@@ -13,21 +13,17 @@
  */
 export type Stats = [Stat] | [Stat, Stat] | [Stat, Stat, Stat] | [Stat, Stat, Stat, Stat];
 /**
- * The value of the stat
+ * The number of the stat
  */
-export type Value = string;
+export type Number = number;
 /**
- * The icon of the stat
+ * Optional description of the stat
  */
-export type Icon = string;
+export type Description = string;
 /**
- * The label of the stat
+ * Title of the stat
  */
-export type Label = string;
-/**
- * The description of the stat
- */
-export type Label1 = string;
+export type Title = string;
 
 /**
  * Display a set of stats in a grid
@@ -36,8 +32,7 @@ export interface StatsProps {
   stats: Stats;
 }
 export interface Stat {
-  value: Value;
-  icon?: Icon;
-  label: Label;
-  description?: Label1;
+  number: Number;
+  description?: Description;
+  title?: Title;
 }

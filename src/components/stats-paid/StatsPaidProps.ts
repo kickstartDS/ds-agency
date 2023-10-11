@@ -17,10 +17,6 @@ export type Stats = [Stat] | [Stat, Stat] | [Stat, Stat, Stat] | [Stat, Stat, St
  */
 export type Number = number;
 /**
- * Optional character to display after the number
- */
-export type Character = string;
-/**
  * Optional description of the stat
  */
 export type Description = string;
@@ -41,7 +37,6 @@ export interface StatsPaidProps {
 }
 export interface Stat {
   number: Number;
-  character?: Character;
   description?: Description;
   title: Title;
   icon?: Icon;
