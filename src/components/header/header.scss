@@ -46,10 +46,13 @@
     }
   }
 }
-
 .c-header--spacer {
-  height: var(--g-header-height);
-  z-index: -1;
-  position: relative;
-  background-color: var(--ks-background-color-default);
+  display: none;
+  @media (min-width: 640px) {
+    display: block;
+    height: var(--g-header-height);
+    z-index: -1;
+    position: relative;
+    background-color: var(--ks-background-color-default);
+  }
 }

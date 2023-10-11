@@ -21,10 +21,10 @@ export const TestimonialsPaid: FC<
               image: testimonial.image.src,
               renderSource: () => (
                 <>
-                  {testimonial.rating &&
-                    (testimonial.rating ? (
+                  {testimonial?.rating &&
+                    (testimonial?.rating ? (
                       <div>
-                        {[...Array(testimonial.rating)].map((_, index) => (
+                        {[...Array(testimonial?.rating)].map((_, index) => (
                           <span key={index}>★</span>
                         ))}
                       </div>

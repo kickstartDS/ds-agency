@@ -33,11 +33,11 @@ export const Hero: FC<HeroProps> = ({
         link: {
           label: cta.label,
           href: cta.target,
-          enabled: cta.toggle,
+          enabled: cta?.toggle,
+          icon: cta?.icon,
           // @ts-expect-error
-          variant: "secondary",
+          variant: "primary",
         },
-        renderHeadline: () => <>{headline}</>,
         headline: {
           align:
             textPosition === "below" || textPosition === "center"

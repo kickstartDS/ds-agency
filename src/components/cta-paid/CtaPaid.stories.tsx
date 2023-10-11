@@ -18,7 +18,7 @@ type Story = StoryObj<typeof CtaPaid>;
 
 export default meta;
 
-export const ImageNextToText: Story = {
+export const ImageBesideText: Story = {
   args: pack({
     headline: "The Sanity & Next.js Experts",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
@@ -43,7 +43,7 @@ export const ImageNextToText: Story = {
   }),
 };
 
-export const ImageOnBackground: Story = {
+export const ImageAndTextOverBackground: Story = {
   args: pack({
     headline: "The Sanity & Next.js Experts",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",

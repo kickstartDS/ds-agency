@@ -27,7 +27,7 @@ export const Section = forwardRef<
       spaceBefore = "default",
       spaceAfter = "default",
       className,
-      inverted = false,
+      inverted,
       switchHeadlineOrder = false,
       ctas = [],
       ...props
@@ -83,6 +83,7 @@ export const Section = forwardRef<
                     key={index}
                     label={cta.label}
                     target={cta.target}
+                    icon={cta.icon}
                     variant={
                       index === 0
                         ? "primary"
