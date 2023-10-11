@@ -1,3 +1,15 @@
+# v1.0.51 (Wed Oct 11 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(mosaic): make cta optional #24 ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.50 (Tue Oct 10 2023)
 
 #### ⚠️ Pushed to `main`
