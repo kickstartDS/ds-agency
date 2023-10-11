@@ -14,7 +14,7 @@ import { Testimonials } from "../components/testimonials/TestimonialsComponent";
 const Page = () => (
   <>
     <Header {...headerProps} />
-    <Section width="default">
+    <Section headline="Section Headline" width="default">
       <Cta
         align="left"
         headline="We simplify the process of building and scaling your **Design System**"
@@ -22,12 +22,14 @@ const Page = () => (
 Elevate your digital presence with us. We create impactful digital experiences that deliver tangible results. With over 15+ years of expertise in design systems, headless CMSs, and frontend development, let's shape your digital future together.`}
         ctas={[
           {
-            label: "Learn More",
-            target: "#",
-          },
-          {
             label: "Contact Us",
             target: "#",
+            icon: "person",
+          },
+          {
+            label: "Book a meeting",
+            target: "#",
+            icon: "date",
           },
         ]}
       />
@@ -254,18 +256,18 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
         align="left"
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
-        primaryCta={{
-          toggle: true,
-          label: "Contact us",
-          target: "#",
-          icon: "person",
-        }}
-        secondaryCta={{
-          toggle: true,
-          label: "Book a meeting",
-          target: "#",
-          icon: "date",
-        }}
+        ctas={[
+          {
+            label: "Contact Us",
+            target: "#",
+            icon: "person",
+          },
+          {
+            label: "Book a meeting",
+            target: "#",
+            icon: "date",
+          },
+        ]}
       />
     </Section>
     <Footer {...footerProps} />

@@ -24,6 +24,9 @@ export const BackgroundImage: Story = {
         backgroundColor: "#81005a",
         textColor: "#fdbce9",
         image: "img/mosaic-1.png",
+        cta: {
+          toggle: false,
+        },
       },
       {
         backgroundColor: "#003380",
@@ -32,7 +35,7 @@ export const BackgroundImage: Story = {
       },
       {
         backgroundColor: "#004241",
-        textColor: "#81c7c6",
+        textColor: "#a3d5d4",
         image: "img/mosaic-1.png",
       },
     ],

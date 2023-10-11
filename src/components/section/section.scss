@@ -15,4 +15,10 @@
       justify-content: center;
     }
   }
+
+  &__headline {
+    &--switch-order.c-headline {
+      flex-direction: column-reverse;
+    }
+  }
 }

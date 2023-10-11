@@ -42,11 +42,14 @@ export const Section = forwardRef<
           headline={
             headline
               ? {
+                  className: switchHeadlineOrder
+                    ? "l-section__headline l-section__headline--switch-order"
+                    : "l-section__headline",
                   spaceAfter: "large",
                   content: headline,
                   // @ts-expect-error
                   text: headline,
-                  subheadline: sub,
+                  sub: sub,
                   style: largeHeadline ? "h1" : undefined,
                   align: align,
                 }
