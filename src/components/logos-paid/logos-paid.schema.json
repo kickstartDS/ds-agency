@@ -55,8 +55,8 @@
       "type": "integer",
       "title": "Logos Per Row",
       "description": "The amount of logos to display per row",
-      "minimum": 1,
-      "maximum": 10,
+      "minimum": 2,
+      "maximum": 8,
       "examples": [5]
     },
     "cta": {

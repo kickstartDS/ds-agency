@@ -1,3 +1,5 @@
+@use "./logos-paid-tokens.scss";
+
 .c-logos {
   display: flex;
   flex-direction: column;
@@ -66,56 +68,6 @@
 
     img {
       position: relative;
-    }
-
-    --c-logo-tiles--cols: 2;
-    --c-logo-tiles--gutter: 2em;
-
-    @container logo-tiles (min-width: 420px) {
-      --c-logo-tiles--cols: 3;
-      --c-logo-tiles--gutter: 2em;
-    }
-
-    @container logo-tiles (min-width: 640px) {
-      &--cols-1 {
-        --c-logo-tiles--cols: 1;
-      }
-
-      &--cols-2 {
-        --c-logo-tiles--cols: 2;
-      }
-
-      &--cols-3 {
-        --c-logo-tiles--cols: 3;
-      }
-
-      &--cols-4 {
-        --c-logo-tiles--cols: 4;
-      }
-
-      &--cols-5 {
-        --c-logo-tiles--cols: 5;
-      }
-
-      &--cols-6 {
-        --c-logo-tiles--cols: 6;
-      }
-
-      &--cols-7 {
-        --c-logo-tiles--cols: 7;
-      }
-
-      &--cols-8 {
-        --c-logo-tiles--cols: 8;
-      }
-
-      &--cols-9 {
-        --c-logo-tiles--cols: 9;
-      }
-
-      &--cols-10 {
-        --c-logo-tiles--cols: 10;
-      }
     }
   }
 }

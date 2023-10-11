@@ -1,12 +1,9 @@
+@use "./logos-tokens.scss";
+
 .c-logos {
   display: flex;
   flex-direction: column;
   gap: var(--ks-spacing-stack-m);
-
-  &__grid {
-    display: flex;
-    gap: var(--ks-spacing-m);
-  }
 
   &__tagline {
     font: var(--ks-font-display-m);
@@ -35,6 +32,28 @@
     }
   }
 
+  &__grid {
+    gap: calc(var(--c-logo-tiles--gutter) / 2) var(--c-logo-tiles--gutter);
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    max-width: calc(100% / var(--c-logo-tiles--cols) - var(--c-logo-tiles--gutter));
+    width: 100%;
+    aspect-ratio: 16/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+
   &--align-left {
     .c-logo-tiles {
       justify-content: start;
@@ -45,6 +64,7 @@
     .c-logos__cta {
       align-items: center;
     }
+
     .c-logos__grid {
       justify-content: center;
     }
@@ -53,71 +73,6 @@
     .c-logos__tagline {
       text-align: center;
       margin: auto;
-    }
-  }
-
-  .c-logo-tiles {
-    gap: calc(var(--c-logo-tiles--gutter) / 2) var(--c-logo-tiles--gutter);
-    margin: 0;
-
-    &__col {
-      margin: 0;
-      aspect-ratio: 16/9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      &::after {
-        content: none;
-      }
-    }
-
-    img {
-      position: relative;
-    }
-
-    @container logo-tiles (min-width:"640px") {
-      --c-logo-tiles--cols: 3 !important;
-    }
-
-    &--cols-1 {
-      --c-logo-tiles--cols: 1;
-    }
-
-    &--cols-2 {
-      --c-logo-tiles--cols: 2;
-    }
-
-    &--cols-3 {
-      --c-logo-tiles--cols: 3;
-    }
-
-    &--cols-4 {
-      --c-logo-tiles--cols: 4;
-    }
-
-    &--cols-5 {
-      --c-logo-tiles--cols: 5;
-    }
-
-    &--cols-6 {
-      --c-logo-tiles--cols: 6;
-    }
-
-    &--cols-7 {
-      --c-logo-tiles--cols: 7;
-    }
-
-    &--cols-8 {
-      --c-logo-tiles--cols: 8;
-    }
-
-    &--cols-9 {
-      --c-logo-tiles--cols: 9;
-    }
-
-    &--cols-10 {
-      --c-logo-tiles--cols: 10;
     }
   }
 }

@@ -18,23 +18,36 @@ type Story = StoryObj<typeof Cta>;
 
 export default meta;
 
-export const AlignLeft: Story = {
+export const LeftAlignedWithSingleButton: Story = {
   args: pack({
     headline: "The Sanity & Next.js Experts",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
-    secondaryCta: {
-      label: "Contact us",
-    },
+    ctas: [
+      {
+        label: "Contact us",
+        target: "#",
+        icon: "person",
+      },
+    ],
   }),
 };
 
-export const AlignCenter: Story = {
+export const CenteredWithmultipleButtons: Story = {
   args: pack({
     headline: "The Sanity & Next.js Experts",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
     align: "center",
-    secondaryCta: {
-      label: "Contact us",
-    },
+    ctas: [
+      {
+        label: "Contact us",
+        target: "#",
+        icon: "person",
+      },
+      {
+        label: "Book a meeting",
+        target: "#",
+        icon: "date",
+      },
+    ],
   }),
 };
