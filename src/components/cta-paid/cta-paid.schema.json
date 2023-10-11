@@ -53,6 +53,11 @@
             "title": "Target",
             "description": "Target for the Call to action",
             "format": "uri"
+          },
+          "icon": {
+            "type": "string",
+            "title": "Icon",
+            "description": "Choose an icon"
           }
         },
         "additionalProperties": false,

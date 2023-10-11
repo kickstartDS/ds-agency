@@ -2,20 +2,20 @@ import { Section } from "@kickstartds/base/lib/section";
 import { Button } from "@kickstartds/base/lib/button";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
-import { Cta } from "../components/cta/CtaComponent";
+import { CtaPaid } from "../components/cta-paid/CtaPaidComponent";
 import { FAQ } from "../components/faq/FaqComponent";
 import { Header } from "../components/header/HeaderComponent";
 import { headerProps } from "../components/header/Header.stories";
 import { Footer } from "../components/footer/FooterComponent";
 import { footerProps } from "../components/footer/Footer.stories";
-import { Stats } from "../components/stats/StatsComponent";
+import { StatsPaid } from "../components/stats-paid/StatsPaidComponent";
 import { Testimonials } from "../components/testimonials/TestimonialsComponent";
 
 const Page = () => (
   <>
     <Header {...headerProps} />
     <Section width="default">
-      <Cta
+      <CtaPaid
         align="left"
         headline="We simplify the process of building and scaling your **Design System**"
         text={`
@@ -36,7 +36,7 @@ Elevate your digital presence with us. We create impactful digital experiences t
     </Section>
 
     <Section width="wide">
-      <Stats
+      <StatsPaid
         stats={[
           {
             label: "Components",
@@ -166,7 +166,7 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
       />
     </Section>
     <Section inverted>
-      <Cta
+      <CtaPaid
         align="left"
         headline="Get in touch and chat with us about getting your product or platform to market faster"
         ctas={[
@@ -252,7 +252,7 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
       />
     </Section>
     <Section>
-      <Cta
+      <CtaPaid
         align="left"
         headline="Ready to embark on a transformative digital journey?"
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
@@ -282,4 +282,4 @@ export default {
   },
 };
 
-export const LandingpageBase = {};
+export const LandingpageWithPaidComponents = {};

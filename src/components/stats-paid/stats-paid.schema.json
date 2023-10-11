@@ -19,17 +19,10 @@
             "type": "integer",
             "examples": [1, 2, 3, 4]
           },
-          "character": {
-            "title": "Character",
-            "description": "Optional character to display after the number",
-            "type": "string",
-            "examples": ["%", "$", "€"]
-          },
           "description": {
             "title": "Description",
             "description": "Optional description of the stat",
-            "type": "string",
-            "examples": ["This is a description", "Another description"]
+            "type": "string"
           },
           "title": {
             "title": "Title",

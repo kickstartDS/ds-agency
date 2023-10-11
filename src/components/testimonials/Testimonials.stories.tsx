@@ -20,8 +20,8 @@ const meta: Meta<typeof Testimonials> = {
 export default meta;
 type Story = StoryObj<typeof Testimonials>;
 
-export const PortraitText: Story = {};
-PortraitText.args = pack({
+export const PortraitWithText: Story = {};
+PortraitWithText.args = pack({
   testimonials: [
     {
       quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,

@@ -1,3 +1,27 @@
+# v1.0.54 (Wed Oct 11 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(text): rename case sensitive file ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.0.53 (Wed Oct 11 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(docs): add missing doc files ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.52 (Wed Oct 11 2023)
 
 #### ⚠️ Pushed to `main`
