@@ -4,6 +4,13 @@
   "title": "Mosaic",
   "type": "object",
   "properties": {
+    "layout": {
+      "title": "Layout",
+      "description": "Layout of the mosaic component",
+      "type": "string",
+      "enum": ["swap", "textLeft", "textRight"],
+      "default": "swap"
+    },
     "tiles": {
       "type": "array",
       "items": {

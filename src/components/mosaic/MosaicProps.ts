@@ -6,6 +6,10 @@
  */
 
 /**
+ * Layout of the mosaic component
+ */
+export type Layout = "swap" | "textLeft" | "textRight";
+/**
  * Headline for the visual
  */
 export type Headline = string;
@@ -47,6 +51,7 @@ export type BackgroundColor = string;
 export type TextColor = string;
 
 export interface MosaicProps {
+  layout?: Layout;
   tiles?: {
     headline?: Headline;
     sub?: ModuleSubheadline;
