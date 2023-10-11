@@ -8,7 +8,7 @@
 /**
  * Layout of the mosaic component
  */
-export type Layout = "swap" | "textLeft" | "textRight";
+export type Layout = "alternate" | "textLeft" | "textRight";
 /**
  * Headline for the visual
  */

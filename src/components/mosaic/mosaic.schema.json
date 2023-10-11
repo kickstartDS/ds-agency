@@ -8,8 +8,8 @@
       "title": "Layout",
       "description": "Layout of the mosaic component",
       "type": "string",
-      "enum": ["swap", "textLeft", "textRight"],
-      "default": "swap"
+      "enum": ["alternate", "textLeft", "textRight"],
+      "default": "alternate"
     },
     "tiles": {
       "type": "array",
