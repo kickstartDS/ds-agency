@@ -6,9 +6,9 @@ declare module "@kickstartds/base/lib/text-media/typing" {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {TextMediaMediavideoProps as MediaMediavideoProps} from "@kickstartds/base/lib/media-mediavideo/typing";
-import type {TextMediaMediaimageProps as MediaMediaimageProps} from "@kickstartds/base/lib/media-mediaimage/typing";
-import type {TextMediaMedialazyimageProps as MediaMedialazyimageProps} from "@kickstartds/base/lib/media-medialazyimage/typing";
+import type {TextMediaVideoProps as MediaVideoProps} from "@kickstartds/base/lib/media-video/typing";
+import type {TextMediaImageProps as MediaImageProps} from "@kickstartds/base/lib/media-image/typing";
+import type {TextMediaLazyImageProps as MediaLazyImageProps} from "@kickstartds/base/lib/media-lazy-image/typing";
 
 /**
  * Copy text for the element
@@ -31,7 +31,7 @@ export type MediaAlignment =
 /**
  * Collection of media items to display
  */
-export type Media = (MediaMediavideoProps | MediaMediaimageProps | MediaMedialazyimageProps)[];
+export type Media = (MediaVideoProps | MediaImageProps | MediaLazyImageProps)[];
 /**
  * Additional css classes attached to the wrapping element
  */

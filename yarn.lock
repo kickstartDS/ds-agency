@@ -2424,10 +2424,10 @@
   resolved "https://registry.npmjs.org/@juggle/resize-observer/-/resize-observer-3.4.0.tgz"
   integrity sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==
 
-"@kickstartds/base@3.0.0-canary.1489.6255.0":
-  version "3.0.0-canary.1489.6255.0"
-  resolved "https://registry.npmjs.org/@kickstartds/base/-/base-3.0.0-canary.1489.6255.0.tgz#f60d8994d412719059f6a84caccff602fe3886d8"
-  integrity sha512-kqvJ6ElgRyvRpPjuxeRpvvo/vA9RTV6w5rMANS3XYwwbCL0twCNxzd78XTtFOkTr9BLLAlpxXnXHMyDazVJerw==
+"@kickstartds/base@^3.0.0-next.1":
+  version "3.0.0-next.1"
+  resolved "https://registry.npmjs.org/@kickstartds/base/-/base-3.0.0-next.1.tgz#04d69d6b939dfab4b2c0bbe72ff7f366b133f912"
+  integrity sha512-MUzlsp9l3PF3C/TTBs11pPm1Bfjp0FKtzcE2Ln4ift338E5h3AuOrdenV19qARSYCnEj3VdsdC8/uA1Omc/Icg==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
@@ -2436,29 +2436,29 @@
     photoswipe "^5.3.7"
     vhtml "^2.2.0"
 
-"@kickstartds/blog@3.0.0-canary.1489.6255.0":
-  version "3.0.0-canary.1489.6255.0"
-  resolved "https://registry.npmjs.org/@kickstartds/blog/-/blog-3.0.0-canary.1489.6255.0.tgz#0f47f1efd3f440b48c25f52e1e039fbcecc1934a"
-  integrity sha512-DP4S6+meE9xpLU24f67hAptus5dPr0CCt6roc/8fLSCXv9bFJNKMyitQJ1aKeagwfcemDsjs0hmXvbq4BfZZ+g==
+"@kickstartds/blog@^3.0.0-next.1":
+  version "3.0.0-next.1"
+  resolved "https://registry.npmjs.org/@kickstartds/blog/-/blog-3.0.0-next.1.tgz#8c9e2a9e412f65abc9199e15075c6f733a146a72"
+  integrity sha512-zmZ0cE+bOBqFzih2zYBe1i2AvTndwQhjUt7qQ90Xq/qc+ldX6evU1UiFmDhCWMmbkB9IEnl9BfHNC38N33zHog==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
     date-fns "^2.30.0"
 
-"@kickstartds/content@3.0.0--canary.154.102.0":
-  version "3.0.0--canary.154.102.0"
-  resolved "https://registry.npmjs.org/@kickstartds/content/-/content-3.0.0--canary.154.102.0.tgz#9bd94d43d9d5d71c936a94d2ecbf8d0de3b39cd6"
-  integrity sha512-s243m7koBvnkJHi+c7ObepWv8fHfC8xyiJvi1ao63FXt5wj2mHPG+MTjCCF5XzEihcNR+WA65uYopLFGk8NSRA==
+"@kickstartds/content@^3.0.0-next.1":
+  version "3.0.0-next.1"
+  resolved "https://registry.npmjs.org/@kickstartds/content/-/content-3.0.0-next.1.tgz#fd2224fe30c26566b7a66e97c29b9582b1aee30e"
+  integrity sha512-yt3MtjUm3Umf5TKgfgzAv0mamwHvtPU/2zPD6yFDEtXyQnTwUUlsZHfGU2xKg7FM1T/IYW45gXzXQeO9r8Xekg==
   dependencies:
     "@babel/runtime" "^7.21.0"
     classnames "^2.3.2"
     countup.js "^2.6.2"
     lodash-es "^4.17.21"
 
-"@kickstartds/core@3.0.0-canary.1489.6255.0":
-  version "3.0.0-canary.1489.6255.0"
-  resolved "https://registry.npmjs.org/@kickstartds/core/-/core-3.0.0-canary.1489.6255.0.tgz#cb3287516a85893aad3d52dc9ce2e5a2d0d3ba94"
-  integrity sha512-57QNVxDR1dVwTCoVa6uSO4BKTKbokYio68CGe4fEgwIQqEXcHhp7gGT2grOCOzcoZG0A4IYRcIgknd6jGHkMxw==
+"@kickstartds/core@^3.0.0-next.1":
+  version "3.0.0-next.1"
+  resolved "https://registry.npmjs.org/@kickstartds/core/-/core-3.0.0-next.1.tgz#0ddf465fb39082122c737872c6daa9935e63fce3"
+  integrity sha512-E1IvLE+b+bwVRTsTZxAdZTjZNF6ptQY93YjhwwQHrfp7Lb0DqHwRReXQsJAXFDyHEAmXjScLLsxhO8rjSwfq8A==
   dependencies:
     "@babel/runtime" "^7.21.5"
     bourbon "^7.3.0"
@@ -2473,10 +2473,10 @@
     pubsub-js "^1.9.4"
     sass "^1.62.1"
 
-"@kickstartds/form@3.0.0-canary.1489.6255.0":
-  version "3.0.0-canary.1489.6255.0"
-  resolved "https://registry.npmjs.org/@kickstartds/form/-/form-3.0.0-canary.1489.6255.0.tgz#1f80cb4f2cd48001159156977b835175de9b4d20"
-  integrity sha512-a9WU+QbOFFihM5F3tDzU+ZXTiUy08093nlBnYkg4nuHcS7Mv4jT7Q+0u27Mwk+ummdSd6MPnTBvJENyb0q1nZw==
+"@kickstartds/form@^3.0.0-next.1":
+  version "3.0.0-next.1"
+  resolved "https://registry.npmjs.org/@kickstartds/form/-/form-3.0.0-next.1.tgz#65b27c634c4b980f4c1fa49942ea952dac10f25e"
+  integrity sha512-qiGaA/Ul91jPmVkKfsXUUSxZCCJQ4O3QeT1AuJKqZGYUrzC19eyi7fb/q6+RqmhCLxgm2MTHW/iyh0Q7c69YqQ==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
@@ -2531,27 +2531,28 @@
     throttle-debounce "^3.0.1"
     ts-is-present "^1.2.1"
 
-"@kickstartds/jsonschema-utils@2.4.12", "@kickstartds/jsonschema-utils@^2.4.12":
-  version "2.4.12"
-  resolved "https://registry.npmjs.org/@kickstartds/jsonschema-utils/-/jsonschema-utils-2.4.12.tgz#c40a15971e2495fd00350f4e6774fdbc428d7358"
-  integrity sha512-gECEg4pQRC4eTJo8asi88P9X4rN9E6kgOX3dMncoR5ATOXdoMYA3hrADS9Tg0taIqpwPWjvi0S3s0dV3EGZN6g==
+"@kickstartds/jsonschema-utils@2.5.1", "@kickstartds/jsonschema-utils@^2.5.1":
+  version "2.5.1"
+  resolved "https://registry.npmjs.org/@kickstartds/jsonschema-utils/-/jsonschema-utils-2.5.1.tgz#aafa580c477cfda559ecbc26544aa3644440e2d8"
+  integrity sha512-HoE1EnVHdtj17fptfCmbB2/52fBxoXY8vvuEo1wBtKIubL6l6qCqpqaMUjERsRfbR+0DtJuC4E0S3ja/w++HtQ==
   dependencies:
+    "@bcherny/json-schema-ref-parser" "10.0.5-fork"
     ajv "^8.12.0"
+    change-case "^5.0.2"
     fast-glob "^3.2.12"
     import-meta-resolve "~3.0.0"
     json-schema-traverse "^1.0.0"
     jsonpointer "~5.0.1"
     lodash "^4.17.21"
     ramda "^0.28.0"
-    uppercamelcase "^3.0.0"
 
-"@kickstartds/jsonschema2types@^1.1.5":
-  version "1.1.5"
-  resolved "https://registry.npmjs.org/@kickstartds/jsonschema2types/-/jsonschema2types-1.1.5.tgz#85e8c3171a4c594f95623cb8513a734ab57b0aeb"
-  integrity sha512-GnYX5OItbbUeNhKzHUeAbrN7Vq26lXDQljUsQKGxIOTEn8Yi8JuQ+DwmxLZ4hfA6P9vcqDDfr0QMNmAFSW1+KQ==
+"@kickstartds/jsonschema2types@^1.1.14":
+  version "1.1.14"
+  resolved "https://registry.npmjs.org/@kickstartds/jsonschema2types/-/jsonschema2types-1.1.14.tgz#dfae20d411adf3b77237d5d0f97162217d4d6d5a"
+  integrity sha512-ptlQ7tMBnwcPAewc5M4EyyZ0dTEOvJObZsN7k6i5IiLRY1a5hsw6O6TLKgdCCuB3G6PLZXexYJBcO3+MY871vA==
   dependencies:
     "@kickstartds/json-schema-to-typescript" "~13.1.20"
-    "@kickstartds/jsonschema-utils" "2.4.12"
+    "@kickstartds/jsonschema-utils" "2.5.1"
     ajv "^8.12.0"
     object-traversal "^1.0.1"
 
@@ -2578,7 +2579,7 @@
     react-router-dom "^5.3.0"
     styled-components "^5.3.1"
 
-"@kickstartds/style-dictionary@2.2.1-next.1", "@kickstartds/style-dictionary@^2.0.0":
+"@kickstartds/style-dictionary@2.2.1-next.1", "@kickstartds/style-dictionary@^3.0.0-next.0":
   version "2.2.1-next.1"
   resolved "https://registry.npmjs.org/@kickstartds/style-dictionary/-/style-dictionary-2.2.1-next.1.tgz#4d5b5fd02d42ebe399a1d869fd9a2a824088af0b"
   integrity sha512-lCVwx23FHOeAd379I24oWzJG/IPe+11OdE1bb6p2QMwx+23ikOztExysQLYYM2ggrr7v/JXoei1Q99BfQbRnWA==
@@ -5613,6 +5614,11 @@ change-case@^4.1.2:
     sentence-case "^3.0.4"
     snake-case "^3.0.4"
     tslib "^2.0.3"
+
+change-case@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.npmjs.org/change-case/-/change-case-5.0.2.tgz#0f1885d310b84065a17b20e8231c7dff37207627"
+  integrity sha512-tH6YZXViaeC2/Mnt8m4gSmbZfNorC2rhwCX2bXw8SYZWr8ljCPB7iA+1TLG9t7yroWBFauc63LlOZ1gucMVCWw==
 
 character-entities-html4@^1.0.0:
   version "1.1.4"
@@ -9124,18 +9130,18 @@ kebab-case@^1.0.0:
   resolved "https://registry.npmjs.org/kebab-case/-/kebab-case-1.0.2.tgz#5eac97d5d220acf606d40e3c0ecfea21f1f9e1eb"
   integrity sha512-7n6wXq4gNgBELfDCpzKc+mRrZFs7D+wgfF5WRFLNAr4DA/qtr9Js8uOAVAfHhuLMfAcQ0pRKqbpjx+TcJVdE1Q==
 
-kickstartds@2.2.0--canary.37.217.0:
-  version "2.2.0--canary.37.217.0"
-  resolved "https://registry.npmjs.org/kickstartds/-/kickstartds-2.2.0--canary.37.217.0.tgz#62b76502ffa60a43558e20cc3f8d4935b68bf359"
-  integrity sha512-NL6sZ8uMdWCFSXX8gt3AscHqxDcnY7XWhnWbHiqsZ284AZve6VCyHoQ9oXAsPi1I99LsINw7ZyuYuT7R64aaBQ==
+kickstartds@^3.0.0-next.0:
+  version "3.0.0-next.0"
+  resolved "https://registry.npmjs.org/kickstartds/-/kickstartds-3.0.0-next.0.tgz#38ed9f08314c58964247339d7cd190170b5e893c"
+  integrity sha512-2e3iZvdZQbTlFv5LLuwkl+j8+LY6V6uOqtMBdlmgWhmx78wxv1RrXmKPubCuvfW+1WgnKOyNW0Cym+tNgcd82Q==
   dependencies:
     "@apidevtools/json-schema-ref-parser" "^9.0.9"
     "@babel/preset-react" "^7.17.12"
     "@influxdata/influxdb-client" "^1.25.0"
     "@influxdata/influxdb-client-apis" "^1.25.0"
-    "@kickstartds/jsonschema-utils" "^2.4.12"
-    "@kickstartds/jsonschema2types" "^1.1.5"
-    "@kickstartds/style-dictionary" "^2.0.0"
+    "@kickstartds/jsonschema-utils" "^2.5.1"
+    "@kickstartds/jsonschema2types" "^1.1.14"
+    "@kickstartds/style-dictionary" "^3.0.0-next.0"
     ajv "^8.11.0"
     byline "^5.0.0"
     chalk "^5.0.1"
