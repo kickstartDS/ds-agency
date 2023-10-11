@@ -63,11 +63,16 @@ export type Label = string;
  */
 export type Target = string;
 /**
+ * Choose an icon
+ */
+export type Icon = string;
+/**
  * Add Call to actions to the end of the section
  */
 export type CallToActions = {
   label: Label;
   target: Target;
+  icon?: Icon;
 }[];
 
 /**

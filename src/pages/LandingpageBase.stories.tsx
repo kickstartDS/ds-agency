@@ -1,6 +1,4 @@
-import { Section } from "@kickstartds/base/lib/section";
-import { Button } from "@kickstartds/base/lib/button";
-import { TextMedia } from "@kickstartds/base/lib/text-media";
+import { Section } from "../components/section/SectionComponent";
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
 import { Cta } from "../components/cta/CtaComponent";
 import { FAQ } from "../components/faq/FaqComponent";
@@ -10,6 +8,7 @@ import { Footer } from "../components/footer/FooterComponent";
 import { footerProps } from "../components/footer/Footer.stories";
 import { Stats } from "../components/stats/StatsComponent";
 import { Testimonials } from "../components/testimonials/TestimonialsComponent";
+import { PictureText } from "../components/picture-text/PictureTextComponent";
 
 const Page = () => (
   <>
@@ -39,20 +38,20 @@ Elevate your digital presence with us. We create impactful digital experiences t
       <Stats
         stats={[
           {
-            label: "Components",
-            value: "50+",
+            title: "Components",
+            number: 50,
             description:
               "We offer a rich library of over 50 meticulously crafted components to help you create cohesive and visually stunning user interfaces.",
           },
           {
-            value: "30.000+",
-            label: "Lines of Documentation",
+            number: 30.0,
+            title: "Lines of Documentation",
             description:
               "Our comprehensive documentation consists of over 30,000 lines, making it easy for your team to understand and implement our design system.",
           },
           {
-            label: "Customizability",
-            value: "100%",
+            title: "Customizability",
+            number: 100,
             description:
               "Our design system is 100% customizable, allowing you to tailor it to your brand's unique identity and design requirements.",
           },
@@ -65,8 +64,15 @@ Elevate your digital presence with us. We create impactful digital experiences t
       width="default"
       align="left"
       mode="list"
+      ctas={[
+        {
+          label: "Reach out today!",
+          target: "#",
+          icon: "chevron-right",
+        },
+      ]}
     >
-      <TextMedia
+      <PictureText
         text={`
 Here at Systemics, we bring a range of design system services that can make a difference:
 
@@ -83,36 +89,25 @@ We leverage the power of headless CMSs to provide scalable, flexible, and versat
 We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.
 
 Ready to make your digital journey exceptional?`}
-        media={[
-          {
-            image: {
-              src: "img/team.png",
-            },
-          },
-        ]}
+        image={{
+          source: "img/team.png",
+          alt: "Alt text for the image",
+        }}
+        layout="above"
       />
-      <div>
-        <Button
-          variant="primary"
-          label="Reach out today!"
-          icon="chevron-right"
-        />
-      </div>
     </Section>
     <Section width="default" style="accent" align="left" mode="list">
-      <TextMedia
+      <PictureText
         mediaAlignment="beside-right"
         text={`
 ## Our **Approach** to Design Systems
 Own a design system without investing years of development. Our approach to design systems
 We value efficiency without compromising quality. Our secret weapon? kickstartDS, a revolutionary code-first framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever. `}
-        media={[
-          {
-            image: {
-              src: "img/agency.png",
-            },
-          },
-        ]}
+        image={{
+          source: "img/agency.png",
+          alt: "Alt text for the image",
+        }}
+        layout="below"
       />
     </Section>
     <Section width="wide" headline="3 Customer Show Cases" align="center">

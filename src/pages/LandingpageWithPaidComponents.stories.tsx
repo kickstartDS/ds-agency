@@ -1,25 +1,55 @@
-import { Section } from "@kickstartds/base/lib/section";
-import { Button } from "@kickstartds/base/lib/button";
-import { TextMedia } from "@kickstartds/base/lib/text-media";
+import { Section } from "../components/section/SectionComponent";
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
 import { CtaPaid } from "../components/cta-paid/CtaPaidComponent";
+import { Hero } from "../components/hero/HeroComponent";
 import { FAQ } from "../components/faq/FaqComponent";
 import { Header } from "../components/header/HeaderComponent";
 import { headerProps } from "../components/header/Header.stories";
 import { Footer } from "../components/footer/FooterComponent";
 import { footerProps } from "../components/footer/Footer.stories";
 import { StatsPaid } from "../components/stats-paid/StatsPaidComponent";
-import { Testimonials } from "../components/testimonials/TestimonialsComponent";
+import { TestimonialsPaid } from "../components/testimonials-paid/TestimonialsPaidComponent";
+import { PictureText } from "../components/picture-text/PictureTextComponent";
 
 const Page = () => (
   <>
     <Header {...headerProps} />
-    <Section width="default">
+    <Section spaceBefore="none" width="full">
+      {/* <Hero
+        cta={{
+          icon: "person",
+          label: "Book a meeting",
+          target: undefined,
+          toggle: true,
+        }}
+        headline="We simplify the process of building and scaling your **Design System**"
+        height="fullImage"
+        image={{
+          alt: undefined,
+          indent: "none",
+          src: "https://picsum.photos/seed/kdsvisual/640/270",
+          srcDesktop: "img/hero-below.png",
+          srcMobile: "img/hero.png",
+          srcTablet: "img/hero-below.png",
+        }}
+        largeHeadline
+        overlay
+        text="Elevate your digital presence with us. We create impactful digital experiences that deliver tangible results. With over 15+ years of expertise in design systems, headless CMSs, and frontend development, let's shape your digital future together."
+        textPosition="below"
+      /> */}
       <CtaPaid
         align="left"
         headline="We simplify the process of building and scaling your **Design System**"
+        largeHeadline
         text={`
 Elevate your digital presence with us. We create impactful digital experiences that deliver tangible results. With over 15+ years of expertise in design systems, headless CMSs, and frontend development, let's shape your digital future together.`}
+        image={{
+          source: "img/agency.png",
+          order: {
+            desktopImageLast: true,
+          },
+        }}
+        backgroundImage="img/cta-background.png"
         ctas={[
           {
             label: "Contact Us",
@@ -39,20 +69,23 @@ Elevate your digital presence with us. We create impactful digital experiences t
       <StatsPaid
         stats={[
           {
-            label: "Components",
-            value: "50+",
+            title: "Components",
+            number: 50,
+            icon: "components",
             description:
               "We offer a rich library of over 50 meticulously crafted components to help you create cohesive and visually stunning user interfaces.",
           },
           {
-            value: "30.000+",
-            label: "Lines of Documentation",
+            number: 30.0,
+            title: "Lines of Documentation",
+            icon: "documentation",
             description:
               "Our comprehensive documentation consists of over 30,000 lines, making it easy for your team to understand and implement our design system.",
           },
           {
-            label: "Customizability",
-            value: "100%",
+            title: "Customizability",
+            number: 100,
+            icon: "customizability",
             description:
               "Our design system is 100% customizable, allowing you to tailor it to your brand's unique identity and design requirements.",
           },
@@ -65,8 +98,15 @@ Elevate your digital presence with us. We create impactful digital experiences t
       width="default"
       align="left"
       mode="list"
+      ctas={[
+        {
+          label: "Reach out today!",
+          target: "#",
+          icon: "chevron-right",
+        },
+      ]}
     >
-      <TextMedia
+      <PictureText
         text={`
 Here at Systemics, we bring a range of design system services that can make a difference:
 
@@ -83,36 +123,25 @@ We leverage the power of headless CMSs to provide scalable, flexible, and versat
 We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.
 
 Ready to make your digital journey exceptional?`}
-        media={[
-          {
-            image: {
-              src: "img/team.png",
-            },
-          },
-        ]}
+        image={{
+          source: "img/team.png",
+          alt: "Alt text for the image",
+        }}
+        layout="above"
       />
-      <div>
-        <Button
-          variant="primary"
-          label="Reach out today!"
-          icon="chevron-right"
-        />
-      </div>
     </Section>
     <Section width="default" style="accent" align="left" mode="list">
-      <TextMedia
+      <PictureText
         mediaAlignment="beside-right"
         text={`
 ## Our **Approach** to Design Systems
 Own a design system without investing years of development. Our approach to design systems
 We value efficiency without compromising quality. Our secret weapon? kickstartDS, a revolutionary code-first framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever. `}
-        media={[
-          {
-            image: {
-              src: "img/agency.png",
-            },
-          },
-        ]}
+        image={{
+          source: "img/agency.png",
+          alt: "Alt text for the image",
+        }}
+        layout="below"
       />
     </Section>
     <Section width="wide" headline="3 Customer Show Cases" align="center">
@@ -133,7 +162,7 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
       />
     </Section>
     <Section width="default" mode="list" headline="Testimonials" align="center">
-      <Testimonials
+      <TestimonialsPaid
         testimonials={[
           {
             quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
