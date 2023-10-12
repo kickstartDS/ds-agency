@@ -50,7 +50,7 @@ Elevate your digital presence with us. We create impactful digital experiences t
               "Our comprehensive documentation consists of over 30,000 lines, making it easy for your team to understand and implement our design system.",
           },
           {
-            title: "Customizability",
+            title: "Percent Customizability",
             number: 100,
             description:
               "Our design system is 100% customizable, allowing you to tailor it to your brand's unique identity and design requirements.",

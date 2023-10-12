@@ -20,9 +20,9 @@ export const TeaserCard = forwardRef<
       text={text}
       link={{
         label: "Read more",
-        variant: "outline",
+        // @ts-expect-error
+        variant: "secondary",
         inverted: inverted,
-        // @ts-expect-error: Missing type layering
         target: target,
       }}
       image={image}
