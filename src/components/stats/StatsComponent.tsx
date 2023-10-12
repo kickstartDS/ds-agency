@@ -11,7 +11,7 @@ export const Stats: FC<StatsProps & HTMLAttributes<HTMLElement>> = ({
       {stats.map((stat, index) => (
         <div className="c-stats__item" key={index}>
           <span className="c-stats__value">{stat.number}</span>
-          <span className="c-stats__label">{stat.label}</span>
+          <span className="c-stats__label">{stat.title}</span>
           {stat?.description ? (
             <span className="c-stats__description">{stat?.description}</span>
           ) : (

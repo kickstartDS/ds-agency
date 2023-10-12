@@ -15,28 +15,6 @@ const Page = () => (
   <>
     <Header {...headerProps} />
     <Section spaceBefore="none" width="full">
-      {/* <Hero
-        cta={{
-          icon: "person",
-          label: "Book a meeting",
-          target: undefined,
-          toggle: true,
-        }}
-        headline="We simplify the process of building and scaling your **Design System**"
-        height="fullImage"
-        image={{
-          alt: undefined,
-          indent: "none",
-          src: "https://picsum.photos/seed/kdsvisual/640/270",
-          srcDesktop: "img/hero-below.png",
-          srcMobile: "img/hero.png",
-          srcTablet: "img/hero-below.png",
-        }}
-        largeHeadline
-        overlay
-        text="Elevate your digital presence with us. We create impactful digital experiences that deliver tangible results. With over 15+ years of expertise in design systems, headless CMSs, and frontend development, let's shape your digital future together."
-        textPosition="below"
-      /> */}
       <CtaPaid
         align="left"
         headline="We simplify the process of building and scaling your **Design System**"
@@ -70,20 +48,20 @@ Elevate your digital presence with us. We create impactful digital experiences t
         stats={[
           {
             title: "Components",
-            number: 50,
+            number: 65,
             icon: "components",
             description:
               "We offer a rich library of over 50 meticulously crafted components to help you create cohesive and visually stunning user interfaces.",
           },
           {
-            number: 30.0,
-            title: "Lines of Documentation",
+            number: 50,
+            title: "Pages of Documentation",
             icon: "documentation",
             description:
               "Our comprehensive documentation consists of over 30,000 lines, making it easy for your team to understand and implement our design system.",
           },
           {
-            title: "Customizability",
+            title: "Percent Customizability",
             number: 100,
             icon: "customizability",
             description:
@@ -130,21 +108,37 @@ Ready to make your digital journey exceptional?`}
         layout="above"
       />
     </Section>
-    <Section width="default" style="accent" align="left" mode="list">
-      <PictureText
-        mediaAlignment="beside-right"
-        text={`
-## Our **Approach** to Design Systems
-Own a design system without investing years of development. Our approach to design systems
-We value efficiency without compromising quality. Our secret weapon? kickstartDS, a revolutionary code-first framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever. `}
-        image={{
-          source: "img/agency.png",
-          alt: "Alt text for the image",
+    <Section width="full" spaceBefore="none" style="accent">
+      <Hero
+        cta={{
+          icon: "person",
+          label: "Book a meeting",
+          target: undefined,
+          toggle: true,
         }}
-        layout="below"
+        headline="Our Approach to Design Systems"
+        height="fullImage"
+        image={{
+          alt: undefined,
+          indent: "none",
+          src: "https://picsum.photos/seed/kdsvisual/640/270",
+          srcDesktop: "img/hero-below.png",
+          srcMobile: "img/hero.png",
+          srcTablet: "img/hero-below.png",
+        }}
+        largeHeadline
+        overlay
+        text="Own a design system without investing years of development. Our approach to design systems
+We value efficiency without compromising quality. Our secret weapon? kickstartDS, a revolutionary code-first framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever."
+        textPosition="below"
       />
     </Section>
-    <Section width="wide" headline="3 Customer Show Cases" align="center">
+    <Section
+      width="wide"
+      headline="3 Customer Show Cases"
+      align="center"
+      style="accent"
+    >
       <TeaserCard
         target="#"
         headline="Lorem Ipsum dolor"
@@ -194,9 +188,10 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
         ]}
       />
     </Section>
-    <Section inverted>
+    <Section spaceAfter="none" spaceBefore="none" width="full" inverted>
       <CtaPaid
         align="left"
+        largeHeadline
         headline="Get in touch and chat with us about getting your product or platform to market faster"
         ctas={[
           {
@@ -284,6 +279,7 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
       <CtaPaid
         align="left"
         headline="Ready to embark on a transformative digital journey?"
+        largeHeadline
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
         ctas={[
           {

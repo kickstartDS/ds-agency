@@ -1,3 +1,5 @@
+@import "./stats-paid-tokens.scss";
+
 .c-stats {
   display: flex;
   justify-content: center;
@@ -34,8 +36,8 @@
 
   .c-count-up__icon {
     color: var(--ks-text-color-primary);
-    width: 4em;
-    height: 4em;
+    width: var(--c-stats-icon--size);
+    height: var(--c-stats-icon--size);
   }
 
   .c-count-up__topic {
