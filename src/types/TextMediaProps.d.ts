@@ -8,7 +8,7 @@ declare module "@kickstartds/base/lib/text-media/typing" {
 
 import type {TextMediaVideoProps as MediaVideoProps} from "@kickstartds/base/lib/media-video/typing";
 import type {TextMediaImageProps as MediaImageProps} from "@kickstartds/base/lib/media-image/typing";
-import type {TextMediaLazyImageProps as MediaLazyimageProps} from "@kickstartds/base/lib/media-lazyimage/typing";
+import type {TextMediaLazyImageProps as MediaLazyImageProps} from "@kickstartds/base/lib/media-lazy-image/typing";
 
 /**
  * Copy text for the element
@@ -31,7 +31,7 @@ export type MediaAlignment =
 /**
  * Collection of media items to display
  */
-export type Media = (MediaVideoProps | MediaImageProps | MediaLazyimageProps)[];
+export type Media = (MediaVideoProps | MediaImageProps | MediaLazyImageProps)[];
 /**
  * Additional css classes attached to the wrapping element
  */
