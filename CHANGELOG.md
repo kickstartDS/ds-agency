@@ -1,3 +1,15 @@
+# v2.0.0 (Thu Oct 12 2023)
+
+#### 💥 Breaking Change
+
+- Adopt breaking kickstartDS release [#27](https://github.com/kickstartDS/ds-agency/pull/27) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v1.0.57 (Thu Oct 12 2023)
 
 #### ⚠️ Pushed to `main`
