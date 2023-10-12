@@ -1,3 +1,15 @@
+# v1.0.57 (Thu Oct 12 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(LandingPages): adjust landingpage content ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v1.0.56 (Wed Oct 11 2023)
 
 #### ⚠️ Pushed to `main`
