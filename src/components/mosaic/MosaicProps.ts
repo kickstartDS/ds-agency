@@ -10,6 +10,10 @@
  */
 export type Layout = "alternate" | "textLeft" | "textRight";
 /**
+ * Make the headlines larger
+ */
+export type LargeHeadlines = boolean;
+/**
  * Headline for the visual
  */
 export type Headline = string;
@@ -52,6 +56,7 @@ export type TextColor = string;
 
 export interface MosaicProps {
   layout?: Layout;
+  largeHeadlines?: LargeHeadlines;
   tiles?: {
     headline?: Headline;
     sub?: ModuleSubheadline;

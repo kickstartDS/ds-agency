@@ -11,6 +11,12 @@
       "enum": ["alternate", "textLeft", "textRight"],
       "default": "alternate"
     },
+    "largeHeadlines": {
+      "type": "boolean",
+      "title": "Large Headlines",
+      "description": "Make the headlines larger",
+      "default": false
+    },
     "tiles": {
       "type": "array",
       "items": {

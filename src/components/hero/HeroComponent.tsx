@@ -31,8 +31,8 @@ export const Hero: FC<HeroProps> = ({
             ? "right"
             : "center",
         link: {
-          label: cta.label,
-          href: cta.target,
+          label: cta?.label,
+          href: cta?.target,
           enabled: cta?.toggle,
           icon: cta?.icon,
           // @ts-expect-error

@@ -1,7 +1,7 @@
 @import "../../selectors";
 
 :root {
-  .c-teaser {
+  .c-teaser.c-teaser--card {
     --g-topic--font: var(--ks-font-display-m);
     --c-teaser--background: var(--ks-color-primary-to-bg-7);
     --c-teaser--color: var(--ks-color-fg-to-bg-3);

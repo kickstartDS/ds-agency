@@ -9,7 +9,7 @@ import { Footer } from "../components/footer/FooterComponent";
 import { footerProps } from "../components/footer/Footer.stories";
 import { StatsPaid } from "../components/stats-paid/StatsPaidComponent";
 import { TestimonialsPaid } from "../components/testimonials-paid/TestimonialsPaidComponent";
-import { PictureText } from "../components/picture-text/PictureTextComponent";
+import { Mosaic } from "../components/mosaic/MosaicComponent";
 
 const Page = () => (
   <>
@@ -71,44 +71,53 @@ Elevate your digital presence with us. We create impactful digital experiences t
       />
     </Section>
     <Section
-      headline="Design System Services"
-      sub="Crafting Consistency, Fostering Growth"
-      width="default"
-      align="left"
+      headline="Design System Services - Crafting Consistency, Fostering Growth"
+      sub="Here at Systemics, we bring a range of design system services that can make a difference:"
+      width="full"
+      align="center"
       mode="list"
-      ctas={[
-        {
-          label: "Reach out today!",
-          target: "#",
-          icon: "chevron-right",
-        },
-      ]}
+      gutter="none"
+      spaceAfter="none"
     >
-      <PictureText
-        text={`
-Here at Systemics, we bring a range of design system services that can make a difference:
+      <Mosaic
+        layout="textRight"
+        tiles={[
+          {
+            headline: `Design System Consulting`,
+            text: "Let's work side by side to shape a design system strategy that aligns perfectly with your goals. It's not just about tools; it's about guiding principles, stakeholder management und making the right decisions at the right time.",
+            backgroundColor: "rgba(84, 53, 210, 0.2)",
+            image: "img/mosaic-1.png",
+          },
+          {
+            headline: "Design System Creation & Development",
+            text: "We'll bring your design system from concept to production, giving you consistent and engaging user experiences across different platforms. We will work together with your digital teams to transfer all complex Figma ideas into code using kickstartDS.",
+            backgroundColor: "rgba(84, 53, 210, 0.4)",
+            image: "img/mosaic-2.png",
+          },
+          {
+            headline: "Headless CMS & Websites",
+            text: "We leverage the power of headless CMSs to provide scalable, flexible, and versatile websites that drive your online presence.",
+            backgroundColor: "rgba(84, 53, 210, 0.6)",
+            image: "img/mosaic-1.png",
+          },
+          {
+            headline: "Design System Training",
+            text: `We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.
 
-### 1. Design System Consulting
-Let's work side by side to shape a design system strategy that aligns perfectly with your goals. It's not just about tools; it's about guiding principles, stakeholder management und making the right decisions at the right time.
-
-### 2. Design System Creation & Development
-We'll bring your design system from concept to production, giving you consistent and engaging user experiences across different platforms. We will work together with your digital teams to transfer all complex Figma ideas into code using kickstartDS.
-
-### 3. Headless CMS & Websites
-We leverage the power of headless CMSs to provide scalable, flexible, and versatile websites that drive your online presence.
-
-### 4. Design System Training
-We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.
-
-Ready to make your digital journey exceptional?`}
-        image={{
-          source: "img/team.png",
-          alt: "Alt text for the image",
-        }}
-        layout="above"
+Ready to make your digital journey exceptional?`,
+            cta: {
+              label: "Rach out today!",
+              target: "#",
+              icon: "chevron-right",
+            },
+            backgroundColor: "rgba(84, 53, 210, 0.8)",
+            image: "img/mosaic-2.png",
+          },
+        ]}
       />
     </Section>
-    <Section width="full" spaceBefore="none" style="accent">
+
+    <Section width="full">
       <Hero
         cta={{
           icon: "person",
@@ -133,12 +142,7 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
         textPosition="below"
       />
     </Section>
-    <Section
-      width="wide"
-      headline="3 Customer Show Cases"
-      align="center"
-      style="accent"
-    >
+    <Section width="wide" headline="3 Customer Show Cases" align="center">
       <TeaserCard
         target="#"
         headline="Lorem Ipsum dolor"

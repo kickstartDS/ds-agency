@@ -62,6 +62,7 @@ export const CtaPaid: FC<CtaPaidProps> = ({
             level: "h2",
             style: largeHeadline === true ? "h1" : undefined,
             sub: sub,
+            spaceAfter: largeHeadline === true ? "large" : undefined,
             align: align,
           },
         }}

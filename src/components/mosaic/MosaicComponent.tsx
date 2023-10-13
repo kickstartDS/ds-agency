@@ -3,7 +3,7 @@ import { MosaicProps } from "./MosaicProps";
 import "./mosaic.scss";
 import { Storytelling } from "@kickstartds/content/lib/storytelling";
 
-export const Mosaic: FC<MosaicProps> = ({ layout, tiles }) => (
+export const Mosaic: FC<MosaicProps> = ({ layout, largeHeadlines, tiles }) => (
   <div className="c-mosaic">
     {tiles.map((tile, index) => (
       <Storytelling
@@ -15,6 +15,7 @@ export const Mosaic: FC<MosaicProps> = ({ layout, tiles }) => (
             text: tile?.headline,
             sub: tile?.sub,
             level: "h2",
+            style: largeHeadlines ? "h1" : undefined,
           },
           text: tile?.text,
           textColor: tile?.textColor,
