@@ -1,3 +1,15 @@
+# v2.0.1 (Fri Oct 13 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(landingpagePaid): adjust landingpagePaid template ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.0.0 (Thu Oct 12 2023)
 
 #### 💥 Breaking Change
