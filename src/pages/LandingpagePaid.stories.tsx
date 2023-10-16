@@ -10,6 +10,7 @@ import { footerProps } from "../components/footer/Footer.stories";
 import { StatsPaid } from "../components/stats-paid/StatsPaidComponent";
 import { TestimonialsPaid } from "../components/testimonials-paid/TestimonialsPaidComponent";
 import { Mosaic } from "../components/mosaic/MosaicComponent";
+import { ImageStory } from "../components/image-story/ImageStoryComponent";
 
 const Page = () => (
   <>
@@ -79,7 +80,7 @@ Elevate your digital presence with us. We create impactful digital experiences t
       gutter="none"
       spaceAfter="none"
     >
-      <Mosaic
+      {/* <Mosaic
         layout="textRight"
         tiles={[
           {
@@ -112,6 +113,43 @@ Ready to make your digital journey exceptional?`,
             },
             backgroundColor: "rgba(84, 53, 210, 0.8)",
             image: "img/mosaic-2.png",
+          },
+        ]}
+      /> */}
+      <ImageStory
+        headline="Design System Services"
+        sub="Crafting Consistency, Fostering Growth"
+        layout="imageLeft"
+        text={`
+Here at Systemics, we bring a range of design system services that can make a difference:
+
+### Design System Consulting
+Let's work side by side to shape a design system strategy that aligns perfectly with your goals. It's not just about tools; it's about guiding principles, stakeholder management und making the right decisions at the right time.
+
+### Design System Creation & Development
+We'll bring your design system from concept to production, giving you consistent and engaging user experiences across different platforms. We will work together with your digital teams to transfer all complex Figma ideas into code using kickstartDS.
+
+### Headless CMS & Websites
+We leverage the power of headless CMSs to provide scalable, flexible, and versatile websites that drive your online presence.
+
+### Design System Training
+We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.
+
+Ready to make your digital journey exceptional?
+       `}
+        backgroundColor="#06001D"
+        image={{
+          source: "img/agency.png",
+          padding: true,
+        }}
+        ctas={[
+          {
+            label: "Learn More",
+            target: "#",
+          },
+          {
+            label: "Contact Us",
+            target: "#",
           },
         ]}
       />

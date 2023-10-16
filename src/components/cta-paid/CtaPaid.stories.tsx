@@ -18,12 +18,12 @@ type Story = StoryObj<typeof CtaPaid>;
 
 export default meta;
 
-export const ImageBesideText: Story = {
+export const ImageAndTextOnColoredBackground: Story = {
   args: pack({
     headline: "The Sanity & Next.js Experts",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
     largeHeadline: true,
-    backgroundColor: "#06081f",
+    backgroundColor: "#1a4378",
     image: {
       order: {
         desktopImageLast: false,

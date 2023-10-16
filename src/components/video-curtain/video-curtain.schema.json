@@ -14,7 +14,7 @@
       "title": "Large Headline",
       "description": "Boolean to set if the headline is supposed to resemble a h1 headline at the start of the page",
       "type": "boolean",
-      "default": false
+      "default": true
     },
     "sub": {
       "title": "Module Subheadline",
@@ -57,19 +57,12 @@
     "video": {
       "$ref": "http://schema.kickstartds.com/content/visual.schema.json#/properties/media/properties/video"
     },
-    "verticalAlign": {
+    "textPosition": {
       "title": "Module aligment",
       "description": "Choose the alginment of the module content",
-      "enum": ["top", "center", "bottom"],
+      "enum": ["center", "left", "right"],
       "type": "string",
-      "default": "left"
-    },
-    "horizontalAlign": {
-      "title": "Module aligment",
-      "description": "Choose the alginment of the module content",
-      "enum": ["left", "center", "right"],
-      "type": "string",
-      "default": "left"
+      "default": "bottom"
     }
   },
   "additionalProperties": false

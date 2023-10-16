@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://schema.mydesignsystem.com/cta.schema.json",
-  "title": "Cta",
+  "$id": "http://schema.mydesignsystem.com/image-story.schema.json",
+  "title": "Image Story",
   "type": "object",
   "properties": {
     "headline": {
@@ -14,7 +14,7 @@
       "type": "boolean",
       "title": "Large Headline",
       "description": "Make the headline larger",
-      "default": true
+      "default": false
     },
     "sub": {
       "title": "Module Subheadline",
@@ -29,6 +29,19 @@
       "examples": [
         "Jedes Jahr werden zahlreiche Kinder bei Angriffen verletzt. Wir helfen, dass sie behandelt werden können und langfristige Unterstützung erhalten, etwa mit Prothesen. Durch den Krieg sind zudem viele Kinder verängstigt und traumatisiert. mydesignsystem sorgt für psychosoziale Hilfe."
       ]
+    },
+    "layout": {
+      "type": "string",
+      "title": "Layout",
+      "description": "Choose the layout for the component",
+      "enum": ["textLeft", "imageLeft"],
+      "default": "imageLeft"
+    },
+    "padding": {
+      "type": "boolean",
+      "title": "Padding",
+      "default": true,
+      "description": "Give the component padding"
     },
     "ctas": {
       "type": "array",
@@ -64,7 +77,34 @@
         ]
       ]
     },
-    "align": {
+    "image": {
+      "title": "Image",
+      "description": "Image displayed alongside the text content",
+      "type": "object",
+      "properties": {
+        "source": {
+          "title": "Image source",
+          "description": "Image source to use",
+          "type": "string",
+          "format": "image",
+          "examples": ["img/agency.png"]
+        },
+        "ratio": {
+          "title": "Image aspect ratio",
+          "description": "Select an aspect ratio to use for cropping and displaying the image",
+          "type": "string",
+          "enum": ["4:3", "3:2", "16:9", "1:1", "none"],
+          "default": "none"
+        },
+        "alt": {
+          "title": "Alt text",
+          "description": "Image description",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "textAlign": {
       "title": "Text Alignment",
       "description": "Choose the alginment of the text",
       "enum": ["left", "center"],

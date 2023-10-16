@@ -10,13 +10,14 @@ export const Cta: FC<CtaProps> = ({
   headline,
   sub,
   text,
+  largeHeadline = true,
   ctas,
   align = "left",
 }) => (
   <div className={classnames("c-cta", `c-cta--align-${align}`)}>
     <Headline
       level="h1"
-      style="h1"
+      style={largeHeadline === true ? "h1" : "h2"}
       align={align}
       text={headline}
       sub={sub}

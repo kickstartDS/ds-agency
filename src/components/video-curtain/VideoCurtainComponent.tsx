@@ -7,10 +7,9 @@ import { Container } from "@kickstartds/core/lib/container";
 export const VideoCurtain: FC<VideoCurtainProps> = ({
   headline,
   sub,
-  largeHeadline,
+  largeHeadline = true,
   text,
-  horizontalAlign,
-  verticalAlign,
+  textPosition,
   overlay,
   video,
   cta,
@@ -23,8 +22,8 @@ export const VideoCurtain: FC<VideoCurtainProps> = ({
       box={{
         background: "transparent",
         enabled: true,
-        horizontal: horizontalAlign,
-        vertical: verticalAlign,
+        vertical: "center",
+        horizontal: textPosition,
         link: {
           label: cta.label,
           href: cta.target,

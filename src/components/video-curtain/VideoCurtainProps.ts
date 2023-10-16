@@ -56,11 +56,7 @@ export type DesktopVideoSource = string;
 /**
  * Choose the alginment of the module content
  */
-export type ModuleAligment = "top" | "center" | "bottom";
-/**
- * Choose the alginment of the module content
- */
-export type ModuleAligment1 = "left" | "center" | "right";
+export type ModuleAligment = "center" | "left" | "right";
 
 export interface VideoCurtainProps {
   headline?: Headline;
@@ -75,8 +71,7 @@ export interface VideoCurtainProps {
   };
   overlay?: GridLayer;
   video?: BackgroundVideo;
-  verticalAlign?: ModuleAligment;
-  horizontalAlign?: ModuleAligment1;
+  textPosition?: ModuleAligment;
 }
 /**
  * Sources of background videos for different screen sizes
