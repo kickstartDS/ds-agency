@@ -1,3 +1,16 @@
+# v2.0.4 (Tue Oct 17 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(imageText): rename imageText component ([@fleven-kds](https://github.com/fleven-kds))
+- feat(text): rename properties ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.0.3 (Tue Oct 17 2023)
 
 #### ⚠️ Pushed to `main`
