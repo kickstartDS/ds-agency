@@ -3,12 +3,15 @@ import {
   TextMediaContextDefault,
   TextMediaContext,
 } from "@kickstartds/base/lib/text-media";
-import { PictureTextProps } from "./PictureTextProps";
+import { ImageTextProps } from "./ImageTextProps";
 import { Container } from "@kickstartds/core/lib/container";
 
-export const PictureText: FC<
-  PictureTextProps & HTMLAttributes<HTMLElement>
-> = ({ text, image, layout, ...props }) => (
+export const ImageText: FC<ImageTextProps & HTMLAttributes<HTMLElement>> = ({
+  text,
+  image,
+  layout,
+  ...props
+}) => (
   <>
     <Container name="text-media">
       <TextMediaContextDefault
@@ -33,6 +36,6 @@ export const PictureText: FC<
   </>
 );
 
-export const PictureTextProvider: FC<PropsWithChildren<any>> = (props) => (
-  <TextMediaContext.Provider {...props} value={PictureText} />
+export const ImageTextProvider: FC<PropsWithChildren<any>> = (props) => (
+  <TextMediaContext.Provider {...props} value={ImageText} />
 );

@@ -1,20 +1,20 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
-import { PictureText } from "./PictureTextComponent";
-import schema from "./pictureText.schema.dereffed.json";
+import { ImageText } from "./ImageTextComponent";
+import schema from "./imageText.schema.dereffed.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
-  title: "Components/Picture Text",
+  title: "Components/Image Text",
   args,
   argTypes,
-  component: PictureText,
+  component: ImageText,
   parameters: {
     jsonschema: schema,
   },
 };
-type Story = StoryObj<typeof PictureText>;
+type Story = StoryObj<typeof ImageText>;
 
 export default meta;
 

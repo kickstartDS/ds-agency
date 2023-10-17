@@ -25,7 +25,7 @@ export type Layout = "above" | "below" | "beside-right" | "beside-left";
 /**
  * Component used to display an image beside or above/below a text block
  */
-export interface PictureTextProps {
+export interface ImageTextProps {
   text: Text;
   image: {
     source?: ImageSource;

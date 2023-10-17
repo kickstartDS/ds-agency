@@ -8,7 +8,7 @@ import { Footer } from "../components/footer/FooterComponent";
 import { footerProps } from "../components/footer/Footer.stories";
 import { Stats } from "../components/stats/StatsComponent";
 import { Testimonials } from "../components/testimonials/TestimonialsComponent";
-import { PictureText } from "../components/picture-text/PictureTextComponent";
+import { ImageText } from "../components/image-text/ImageTextComponent";
 
 const Page = () => (
   <>
@@ -72,7 +72,7 @@ Elevate your digital presence with us. We create impactful digital experiences t
         },
       ]}
     >
-      <PictureText
+      <ImageText
         text={`
 Here at Systemics, we bring a range of design system services that can make a difference:
 
@@ -97,7 +97,7 @@ Ready to make your digital journey exceptional?`}
       />
     </Section>
     <Section width="default" style="accent" align="left" mode="list">
-      <PictureText
+      <ImageText
         mediaAlignment="beside-right"
         text={`
 ## Our **Approach** to Design Systems

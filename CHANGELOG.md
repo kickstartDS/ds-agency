@@ -287,9 +287,9 @@
 #### ⚠️ Pushed to `main`
 
 - build: add precommit hook ([@lmestel](https://github.com/lmestel))
-- feat(PictureText): remove unused import ([@fleven-kds](https://github.com/fleven-kds))
+- feat(ImageText): remove unused import ([@fleven-kds](https://github.com/fleven-kds))
 - feat(global):remove outdated import ([@fleven-kds](https://github.com/fleven-kds))
-- feat(PictureText): add PictureText Component ([@fleven-kds](https://github.com/fleven-kds))
+- feat(ImageText): add ImageText Component ([@fleven-kds](https://github.com/fleven-kds))
 
 #### Authors: 2
 
