@@ -31,9 +31,25 @@ export type Height = number;
  */
 export type AdditionalClasses = string;
 /**
+ * Optional custom component identifier
+ */
+export type KsComponentAttribute = string;
+/**
+ * Add id attribute to the image
+ */
+export type Id = string;
+/**
+ * Define an itemprop attribute for the picture
+ */
+export type ItempropAttribute = string;
+/**
  * Define a style attribute for the picture
  */
 export type StyleAttribute = string;
+/**
+ * Render noscript fallback
+ */
+export type Noscript = boolean;
 /**
  * Load the picture lazily
  */
@@ -73,7 +89,11 @@ export interface PictureProps {
   width?: Width;
   height?: Height;
   className?: AdditionalClasses;
+  component?: KsComponentAttribute;
+  id?: Id;
+  itemProp?: ItempropAttribute;
   style?: StyleAttribute;
+  noscript?: Noscript;
   lazy?: Lazy;
   sources?: Sources;
   pictureClassName?: ClassAttribute;

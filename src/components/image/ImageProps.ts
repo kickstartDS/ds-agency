@@ -65,7 +65,7 @@ export type ClassAttribute = string;
 /**
  * Base component to display a picture
  */
-export interface PictureProps {
+export interface ImageProps {
   src?: Source;
   srcSet?: PictureSourceset;
   alt?: AltText;

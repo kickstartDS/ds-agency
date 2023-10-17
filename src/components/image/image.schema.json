@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://schema.mydesignsystem.com/picture.schema.json",
-  "title": "Picture",
+  "$id": "http://schema.mydesignsystem.com/image.schema.json",
+  "title": "Image",
   "description": "Base component to display a picture",
   "type": "object",
   "properties": {

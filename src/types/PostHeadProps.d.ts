@@ -33,9 +33,25 @@ export type Height = number;
  */
 export type AdditionalClasses = string;
 /**
+ * Optional custom component identifier
+ */
+export type KsComponentAttribute = string;
+/**
+ * Add id attribute to the image
+ */
+export type Id = string;
+/**
+ * Define an itemprop attribute for the picture
+ */
+export type ItempropAttribute = string;
+/**
  * Define a style attribute for the picture
  */
 export type StyleAttribute = string;
+/**
+ * Render noscript fallback
+ */
+export type Noscript = boolean;
 /**
  * Load the picture lazily
  */
@@ -109,7 +125,7 @@ export type Class = string;
 /**
  * Optional custom component identifier
  */
-export type KsComponentAttribute = string;
+export type KsComponentAttribute1 = string;
 
 /**
  * Post Head
@@ -121,7 +137,7 @@ export interface PostHeadProps {
   headline?: Headline;
   categories?: Categories;
   className?: Class;
-  component?: KsComponentAttribute;
+  component?: KsComponentAttribute1;
 }
 /**
  * Base component to display a picture
@@ -133,7 +149,11 @@ export interface Picture {
   width?: Width;
   height?: Height;
   className?: AdditionalClasses;
+  component?: KsComponentAttribute;
+  id?: Id;
+  itemProp?: ItempropAttribute;
   style?: StyleAttribute;
+  noscript?: Noscript;
   lazy?: Lazy;
   sources?: Sources;
   pictureClassName?: ClassAttribute;

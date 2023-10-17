@@ -3,10 +3,10 @@ import {
   PictureContextDefault,
   PictureContext,
 } from "@kickstartds/base/lib/picture";
-import { PictureProps } from "./PictureProps";
-export const Picture = forwardRef<
+import { ImageProps } from "./ImageProps";
+export const Image = forwardRef<
   HTMLImageElement,
-  PictureProps & HTMLAttributes<HTMLElement>
+  ImageProps & HTMLAttributes<HTMLElement>
 >(
   (
     {
@@ -45,6 +45,6 @@ export const Picture = forwardRef<
   )
 );
 
-export const PictureProvider: FC<PropsWithChildren> = (props) => (
-  <PictureContext.Provider {...props} value={Picture} />
+export const ImageProvider: FC<PropsWithChildren> = (props) => (
+  <PictureContext.Provider {...props} value={Image} />
 );
