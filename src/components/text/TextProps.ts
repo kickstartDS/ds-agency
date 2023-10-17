@@ -8,21 +8,21 @@
 /**
  * Text
  */
-export type TextStyle = string;
+export type Text = string;
 /**
  * Variant of layout to be used
  */
-export type LayoutVariant = "singleColumn" | "multiColumn";
+export type Layout = "singleColumn" | "multiColumn";
 /**
  * Style of the text
  */
-export type TextStyle1 = "highlight" | "default";
+export type Style = "highlight" | "default";
 
 /**
  * Component used for displaying text in chapters
  */
 export interface TextProps {
-  text?: TextStyle;
-  layoutVariant?: LayoutVariant;
-  textStyle?: TextStyle1;
+  text: Text;
+  layout?: Layout;
+  style?: Style;
 }
