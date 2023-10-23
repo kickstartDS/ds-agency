@@ -1,3 +1,15 @@
+# v2.0.5 (Mon Oct 23 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(Hero): make link object optional ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.0.4 (Tue Oct 17 2023)
 
 #### ⚠️ Pushed to `main`
