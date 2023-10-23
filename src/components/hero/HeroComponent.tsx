@@ -30,12 +30,12 @@ export const Hero: FC<HeroProps> = ({
             : textPosition === "right"
             ? "right"
             : "center",
-        link: {
-          label: cta?.label,
-          href: cta?.target,
-          enabled: cta?.toggle,
-          icon: cta?.icon,
+        link: cta.toggle && {
+          label: cta.label,
+          href: cta.target,
+          enabled: cta.toggle,
           // @ts-expect-error
+          icon: cta.icon,
           variant: "primary",
         },
         headline: {
