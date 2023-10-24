@@ -1,3 +1,15 @@
+# v2.0.7 (Tue Oct 24 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(buttons): add a central buttons schema ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.0.6 (Tue Oct 24 2023)
 
 #### ⚠️ Pushed to `main`
