@@ -1,3 +1,16 @@
+# v2.0.10 (Tue Oct 24 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(buttons): update buttons properties ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.0.9 (Tue Oct 24 2023)
 
 #### ⚠️ Pushed to `main`
