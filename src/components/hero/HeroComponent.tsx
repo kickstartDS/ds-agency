@@ -30,7 +30,7 @@ export const Hero: FC<HeroProps> = ({
             : textPosition === "right"
             ? "right"
             : "center",
-        link: cta.toggle && {
+        link: cta?.toggle && {
           label: cta.label,
           href: cta.target,
           enabled: cta.toggle,
