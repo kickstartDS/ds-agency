@@ -32,7 +32,7 @@ export const Cta: FC<CtaProps> = ({
               key={index}
               label={cta.label}
               target={cta.target}
-              icon={cta.icon}
+              icon={cta?.icon}
               variant={
                 index === 0 ? "primary" : index === 1 ? "secondary" : "tertiary"
               }

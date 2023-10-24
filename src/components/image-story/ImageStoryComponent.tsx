@@ -7,12 +7,12 @@ import classnames from "classnames";
 
 export const ImageStory: FC<ImageStoryProps> = ({
   headline,
-  largeHeadline,
+  largeHeadline = false,
   sub,
   image,
-  padding,
-  textAlign,
-  layout,
+  padding = false,
+  textAlign = "left",
+  layout = "textLeft",
   buttons = [],
   text,
 }) => {
@@ -28,6 +28,7 @@ export const ImageStory: FC<ImageStoryProps> = ({
               }
               label={button.label}
               target={button.target}
+              icon={button?.icon}
               key={index}
             />
           ) : (

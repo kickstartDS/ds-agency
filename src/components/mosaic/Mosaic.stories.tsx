@@ -24,9 +24,6 @@ export const ColorfulAlternatingLayout: Story = {
         backgroundColor: "#81005a",
         textColor: "#fdbce9",
         image: "img/mosaic-1.png",
-        cta: {
-          toggle: false,
-        },
       },
       {
         backgroundColor: "#003380",

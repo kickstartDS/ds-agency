@@ -6,11 +6,11 @@
  */
 
 /**
- * Label for the Call to action
+ * Text content to display inside the button
  */
 export type Label = string;
 /**
- * Target for the Call to action
+ * Target that should be linked, makes the button behave like a link semantically
  */
 export type Target = string;
 /**

@@ -19,10 +19,11 @@ export const Mosaic: FC<MosaicProps> = ({ layout, largeHeadlines, tiles }) => (
           },
           text: tile?.text,
           textColor: tile?.textColor,
-          ...(tile?.cta && {
+          ...(tile?.button?.toggle && {
             link: {
-              target: tile?.cta?.target,
-              label: tile?.cta?.label,
+              target: tile?.button?.target,
+              label: tile?.button?.label,
+              icon: tile?.button?.icon,
             },
           }),
         }}

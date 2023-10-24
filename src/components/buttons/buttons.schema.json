@@ -8,20 +8,13 @@
     "type": "object",
     "properties": {
       "label": {
-        "type": "string",
-        "title": "Label",
-        "description": "Label for the Call to action"
+        "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
       },
       "target": {
-        "type": "string",
-        "title": "Target",
-        "description": "Target for the Call to action",
-        "format": "uri"
+        "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
       },
       "icon": {
-        "type": "string",
-        "title": "Icon",
-        "description": "Choose an icon"
+        "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
       }
     },
     "additionalProperties": false,

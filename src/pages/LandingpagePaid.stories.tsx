@@ -10,7 +10,6 @@ import { footerProps } from "../components/footer/Footer.stories";
 import { StatsPaid } from "../components/stats-paid/StatsPaidComponent";
 import { TestimonialsPaid } from "../components/testimonials-paid/TestimonialsPaidComponent";
 import { ImageStory } from "../components/image-story/ImageStoryComponent";
-// import { Mosaic } from "../components/mosaic/MosaicComponent";
 
 const Page = () => (
   <>
@@ -80,46 +79,11 @@ Elevate your digital presence with us. We create impactful digital experiences t
       gutter="none"
       spaceAfter="none"
     >
-      {/* <Mosaic
-        layout="textRight"
-        tiles={[
-          {
-            headline: `Design System Consulting`,
-            text: "Let's work side by side to shape a design system strategy that aligns perfectly with your goals. It's not just about tools; it's about guiding principles, stakeholder management und making the right decisions at the right time.",
-            backgroundColor: "rgba(84, 53, 210, 0.2)",
-            image: "img/mosaic-1.png",
-          },
-          {
-            headline: "Design System Creation & Development",
-            text: "We'll bring your design system from concept to production, giving you consistent and engaging user experiences across different platforms. We will work together with your digital teams to transfer all complex Figma ideas into code using kickstartDS.",
-            backgroundColor: "rgba(84, 53, 210, 0.4)",
-            image: "img/mosaic-2.png",
-          },
-          {
-            headline: "Headless CMS & Websites",
-            text: "We leverage the power of headless CMSs to provide scalable, flexible, and versatile websites that drive your online presence.",
-            backgroundColor: "rgba(84, 53, 210, 0.6)",
-            image: "img/mosaic-1.png",
-          },
-          {
-            headline: "Design System Training",
-            text: `We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.
-
-Ready to make your digital journey exceptional?`,
-            cta: {
-              label: "Rach out today!",
-              target: "#",
-              icon: "chevron-right",
-            },
-            backgroundColor: "rgba(84, 53, 210, 0.8)",
-            image: "img/mosaic-2.png",
-          },
-        ]}
-      /> */}
       <ImageStory
         headline="Design System Services"
         sub="Crafting Consistency, Fostering Growth"
         layout="imageLeft"
+        padding
         text={`
 Here at Systemics, we bring a range of design system services that can make a difference:
 
@@ -137,8 +101,6 @@ We empower your digital teams with the knowledge and skills to manage and evolve
 
 Ready to make your digital journey exceptional?
        `}
-        padding
-        backgroundColor="#06001D"
         image={{
           source: "img/agency.png",
         }}
@@ -146,10 +108,12 @@ Ready to make your digital journey exceptional?
           {
             label: "Learn More",
             target: "#",
+            icon: "chevron-right",
           },
           {
             label: "Contact Us",
             target: "#",
+            icon: "person",
           },
         ]}
       />
@@ -157,12 +121,13 @@ Ready to make your digital journey exceptional?
 
     <Section width="full">
       <Hero
-        cta={{
-          icon: "person",
-          label: "Book a meeting",
-          target: undefined,
-          toggle: true,
-        }}
+        buttons={[
+          {
+            icon: "person",
+            label: "Book a meeting",
+            target: undefined,
+          },
+        ]}
         headline="Our Approach to Design Systems"
         height="fullImage"
         image={{
@@ -174,7 +139,6 @@ Ready to make your digital journey exceptional?
           srcTablet: "img/hero-below.png",
         }}
         largeHeadline
-        overlay
         text="Own a design system without investing years of development. Our approach to design systems
 We value efficiency without compromising quality. Our secret weapon? kickstartDS, a revolutionary code-first framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever."
         textPosition="below"

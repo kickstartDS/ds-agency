@@ -30,6 +30,7 @@ export const Hero: FC<HeroProps> = ({
               }
               label={button.label}
               target={button.target}
+              icon={button?.icon}
               key={index}
             />
           ) : (

@@ -40,7 +40,7 @@
     "padding": {
       "type": "boolean",
       "title": "Padding",
-      "default": true,
+      "default": false,
       "description": "Give the component padding"
     },
     "buttons": {

@@ -75,6 +75,7 @@
                 "type": "string",
                 "title": "Link Label",
                 "description": "The text label displayed on the link",
+                "default": "See more",
                 "examples": ["See all our partners"]
               }
             },

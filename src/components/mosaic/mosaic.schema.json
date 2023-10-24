@@ -48,12 +48,12 @@
             "type": "string",
             "examples": ["img/team.png", "img/agency.png"]
           },
-          "cta": {
+          "button": {
             "type": "object",
             "properties": {
               "toggle": {
-                "title": "CTA Toggle",
-                "description": "Toggle wether the CTA is displayed or not",
+                "title": "Button Toggle",
+                "description": "Toggle wether the Button is displayed or not",
                 "type": "boolean",
                 "default": true
               },

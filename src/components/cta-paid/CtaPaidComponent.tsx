@@ -29,6 +29,7 @@ export const CtaPaid: FC<CtaPaidProps> = ({
               }
               label={button.label}
               target={button.target}
+              icon={button?.icon}
               key={index}
             />
           ) : (

@@ -26,6 +26,7 @@ export const VideoCurtain: FC<VideoCurtainProps> = ({
                 index === 0 ? "primary" : index === 1 ? "secondary" : "tertiary"
               }
               label={button.label}
+              icon={button?.icon}
               target={button.target}
               key={index}
             />
