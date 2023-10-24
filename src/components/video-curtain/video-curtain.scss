@@ -4,16 +4,29 @@
 
 .c-header--spacer + .l-container {
   position: relative;
-  .c-visual {
+  .c-visual.c-visual.c-video-curtain {
     margin-top: calc(var(--g-header-height) * -1);
     z-index: 1;
   }
 }
 
-.c-visual {
+.c-visual.c-video-curtain {
   .c-headline {
     .c-headline__subheadline {
       color: var(--c-visual_subheadline--color);
+    }
+  }
+
+  .c-visual__link {
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--ks-spacing-stack-m) var(--ks-spacing-inline-m);
+    flex-wrap: wrap;
+  }
+
+  .c-visual__content--center {
+    .c-visual__link {
+      justify-content: center;
     }
   }
 

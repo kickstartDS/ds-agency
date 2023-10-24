@@ -11,10 +11,32 @@ import { StatsPaid } from "../components/stats-paid/StatsPaidComponent";
 import { TestimonialsPaid } from "../components/testimonials-paid/TestimonialsPaidComponent";
 import { Mosaic } from "../components/mosaic/MosaicComponent";
 import { ImageStory } from "../components/image-story/ImageStoryComponent";
+import { VideoCurtain } from "../components/video-curtain/VideoCurtainComponent";
 
 const Page = () => (
   <>
     <Header {...headerProps} />
+    <VideoCurtain
+      headline="Your headline here"
+      sub="Your subheadline here"
+      largeHeadline={true}
+      text="Your text here"
+      textPosition="center"
+      overlay={true}
+      video={{
+        srcMobile: "Your mobile video source here",
+        srcTablet: "Your tablet video source here",
+        srcDesktop: "Your desktop video source here",
+      }}
+      buttons={[
+        {
+          label: "Your CTA label here",
+          target: "#",
+          icon: "Your CTA icon here",
+        },
+      ]}
+    />
+
     <Section spaceBefore="none" width="full">
       <CtaPaid
         align="left"
@@ -29,7 +51,7 @@ Elevate your digital presence with us. We create impactful digital experiences t
           },
         }}
         backgroundImage="img/cta-background.png"
-        ctas={[
+        buttons={[
           {
             label: "Contact Us",
             target: "#",
@@ -142,7 +164,7 @@ Ready to make your digital journey exceptional?
           source: "img/agency.png",
           padding: true,
         }}
-        ctas={[
+        buttons={[
           {
             label: "Learn More",
             target: "#",
@@ -235,7 +257,7 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
         align="left"
         largeHeadline
         headline="Get in touch and chat with us about getting your product or platform to market faster"
-        ctas={[
+        buttons={[
           {
             label: "Contact us",
             target: "#",
@@ -323,7 +345,7 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
         headline="Ready to embark on a transformative digital journey?"
         largeHeadline
         text="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
-        ctas={[
+        buttons={[
           {
             label: "Contact Us",
             target: "#",

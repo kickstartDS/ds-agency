@@ -30,7 +30,7 @@ export const ImageAndTextOnColoredBackground: Story = {
       },
     },
     width: "wide",
-    ctas: [
+    buttons: [
       {
         label: "Learn More",
         target: "#",
@@ -56,7 +56,7 @@ export const ImageAndTextOverBackground: Story = {
         desktopImageLast: true,
       },
     },
-    ctas: [
+    buttons: [
       {
         label: "Learn More",
         target: "#",

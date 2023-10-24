@@ -14,11 +14,11 @@ export const CtaPaid: FC<CtaPaidProps> = ({
   backgroundColor,
   align,
   fullWidth = false,
-  ctas = [],
+  buttons = [],
   text,
 }) => {
   const Button = useContext(ButtonContext);
-  const ButtonGroup = ({ ctas: buttons }) => {
+  const ButtonGroup = ({ buttons: buttons }) => {
     return buttons.length ? (
       <div className="c-cta__links">
         {buttons.map((button, index) =>
@@ -56,7 +56,7 @@ export const CtaPaid: FC<CtaPaidProps> = ({
           text: text,
           textAlign: align,
           // @ts-expect-error
-          link: { ctas },
+          link: { buttons },
           headline: {
             text: headline,
             level: "h2",

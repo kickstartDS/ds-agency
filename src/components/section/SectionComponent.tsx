@@ -29,7 +29,7 @@ export const Section = forwardRef<
       className,
       inverted,
       switchHeadlineOrder = false,
-      ctas = [],
+      buttons = [],
       ...props
     },
     ref
@@ -60,11 +60,11 @@ export const Section = forwardRef<
           gutter={gutter}
           mode={mode}
           spaceBefore={spaceBefore}
-          spaceAfter={ctas && ctas.length > 0 ? "none" : spaceAfter}
+          spaceAfter={buttons && buttons.length > 0 ? "none" : spaceAfter}
           inverted={inverted}
           ref={ref}
         />
-        {ctas && ctas.length > 0 && (
+        {buttons && buttons.length > 0 && (
           <SectionContextDefault
             className={classnames(`l-section--align-${align}`)}
             background={style}
@@ -75,8 +75,8 @@ export const Section = forwardRef<
             spaceAfter={spaceAfter}
             inverted={inverted}
           >
-            <div className="l-section__ctas">
-              {ctas
+            <div className="l-section__buttons">
+              {buttons
                 .filter((cta) => cta.label && cta.target)
                 .map((cta, index) => (
                   <Button

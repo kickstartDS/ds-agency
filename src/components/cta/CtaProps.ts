@@ -5,6 +5,8 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {ButtonsProps} from "../buttons/ButtonsProps";
+
 /**
  * Headline for the module element
  */
@@ -22,26 +24,6 @@ export type ModuleSubheadline = string;
  */
 export type ModuleText = string;
 /**
- * Label for the Call to action
- */
-export type Label = string;
-/**
- * Target for the Call to action
- */
-export type Target = string;
-/**
- * Choose an icon
- */
-export type Icon = string;
-/**
- * Add Call to actions to the end of the section
- */
-export type CallToActions = {
-  label: Label;
-  target: Target;
-  icon?: Icon;
-}[];
-/**
  * Choose the alginment of the text
  */
 export type TextAlignment = "left" | "center";
@@ -51,6 +33,9 @@ export interface CtaProps {
   largeHeadline?: LargeHeadline;
   sub?: ModuleSubheadline;
   text?: ModuleText;
-  ctas?: CallToActions;
+  /**
+   * Referenced component ButtonsProps
+   */
+  buttons?: ButtonsProps;
   align?: TextAlignment;
 }

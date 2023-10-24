@@ -22,7 +22,7 @@ export const LeftAlignedWithSingleButton: Story = {
   args: pack({
     headline: "The Sanity & Next.js Experts",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
-    ctas: [
+    buttons: [
       {
         label: "Contact us",
         target: "#",
@@ -37,7 +37,7 @@ export const CenteredWithmultipleButtons: Story = {
     headline: "The Sanity & Next.js Experts",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
     align: "center",
-    ctas: [
+    buttons: [
       {
         label: "Contact us",
         target: "#",

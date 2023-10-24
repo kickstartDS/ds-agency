@@ -21,7 +21,7 @@ const Page = () => (
       align="center"
       width="wide"
       headline="More articles"
-      ctas={[{ label: "Load more", target: "#" }]}
+      buttons={[{ label: "Load more", target: "#" }]}
     >
       <BlogTeaser
         date="12/30/2022"

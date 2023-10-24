@@ -11,7 +11,7 @@ export const Cta: FC<CtaProps> = ({
   sub,
   text,
   largeHeadline = true,
-  ctas,
+  buttons,
   align = "left",
 }) => (
   <div className={classnames("c-cta", `c-cta--align-${align}`)}>
@@ -26,8 +26,8 @@ export const Cta: FC<CtaProps> = ({
     {text ? <RichText text={text} /> : ""}
 
     <div className="c-cta__links">
-      {ctas
-        ? ctas.map((cta, index) => (
+      {buttons
+        ? buttons.map((cta, index) => (
             <Button
               key={index}
               label={cta.label}

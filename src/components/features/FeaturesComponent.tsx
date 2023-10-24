@@ -9,7 +9,7 @@ import { Icon } from "@kickstartds/base/lib/icon";
 export const Features: FC<FeaturesProps & HTMLAttributes<HTMLElement>> = ({
   layout = "largeTiles",
   ctas,
-  style,
+  style = "link",
   features = [],
 }) => {
   return (

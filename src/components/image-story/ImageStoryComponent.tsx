@@ -13,11 +13,11 @@ export const ImageStory: FC<ImageStoryProps> = ({
   padding,
   textAlign,
   layout,
-  ctas = [],
+  buttons = [],
   text,
 }) => {
   const Button = useContext(ButtonContext);
-  const ButtonGroup = ({ ctas: buttons }) => {
+  const ButtonGroup = ({ buttons: buttons }) => {
     return buttons.length ? (
       <div className="c-image-story__links">
         {buttons.map((button, index) =>
@@ -58,7 +58,7 @@ export const ImageStory: FC<ImageStoryProps> = ({
           textAlign: textAlign,
           vAlign: "top",
           // @ts-expect-error
-          link: { ctas },
+          link: { buttons },
           headline: {
             text: headline,
             level: "h2",

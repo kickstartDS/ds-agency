@@ -5,6 +5,8 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {ButtonsProps} from "../buttons/ButtonsProps";
+
 /**
  * Headline for the module element
  */
@@ -30,26 +32,6 @@ export type Layout = "textLeft" | "imageLeft";
  */
 export type Padding = boolean;
 /**
- * Label for the Call to action
- */
-export type Label = string;
-/**
- * Target for the Call to action
- */
-export type Target = string;
-/**
- * Choose an icon
- */
-export type Icon = string;
-/**
- * Add Call to actions to the end of the section
- */
-export type CallToActions = {
-  label: Label;
-  target: Target;
-  icon?: Icon;
-}[];
-/**
  * Image source to use
  */
 export type ImageSource = string;
@@ -73,7 +55,10 @@ export interface ImageStoryProps {
   text?: ModuleText;
   layout?: Layout;
   padding?: Padding;
-  ctas?: CallToActions;
+  /**
+   * Referenced component ButtonsProps
+   */
+  buttons?: ButtonsProps;
   image?: Image;
   textAlign?: TextAlignment;
 }

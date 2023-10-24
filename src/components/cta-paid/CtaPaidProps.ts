@@ -5,6 +5,8 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {ButtonsProps} from "../buttons/ButtonsProps";
+
 /**
  * Headline for the module element
  */
@@ -25,26 +27,6 @@ export type ModuleText = string;
  * Set the width of the content to the full width of the element
  */
 export type Width = boolean;
-/**
- * Label for the Call to action
- */
-export type Label = string;
-/**
- * Target for the Call to action
- */
-export type Target = string;
-/**
- * Choose an icon
- */
-export type Icon = string;
-/**
- * Add Call to actions to the end of the section
- */
-export type CallToActions = {
-  label: Label;
-  target: Target;
-  icon?: Icon;
-}[];
 /**
  * Background color for the whole element
  */
@@ -92,7 +74,10 @@ export interface CtaPaidProps {
   sub?: ModuleSubheadline;
   text?: ModuleText;
   fullWidth?: Width;
-  ctas?: CallToActions;
+  /**
+   * Referenced component ButtonsProps
+   */
+  buttons?: ButtonsProps;
   backgroundColor?: BackgroundColor;
   backgroundImage?: BackgroundImage;
   image?: Image;

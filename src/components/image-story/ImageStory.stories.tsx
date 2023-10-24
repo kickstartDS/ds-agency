@@ -45,7 +45,7 @@ Ready to make your digital journey exceptional?
       },
     },
     width: "wide",
-    ctas: [
+    buttons: [
       {
         label: "Learn More",
         target: "#",

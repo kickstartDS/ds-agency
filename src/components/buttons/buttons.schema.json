@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/buttons.schema.json",
+  "title": "Buttons",
+  "type": "array",
+  "description": "Add a Button group",
+  "items": {
+    "type": "object",
+    "properties": {
+      "label": {
+        "type": "string",
+        "title": "Label",
+        "description": "Label for the Call to action"
+      },
+      "target": {
+        "type": "string",
+        "title": "Target",
+        "description": "Target for the Call to action",
+        "format": "uri"
+      },
+      "icon": {
+        "type": "string",
+        "title": "Icon",
+        "description": "Choose an icon"
+      }
+    },
+    "additionalProperties": false,
+    "required": ["label", "target"]
+  },
+  "examples": [
+    [
+      { "label": "Contact Us", "target": "#" },
+      { "label": "Read more", "target": "#" }
+    ]
+  ]
+}

@@ -180,7 +180,7 @@ export default [
     group: "Section",
     name: "With CTAs",
     code: `
-      <Section mode="tile" headline="Section headline" ctas={[
+      <Section mode="tile" headline="Section headline" buttons={[
         {
           label: "Section CTA 1",
           target: "#",
@@ -225,7 +225,7 @@ export default [
       <Section
         headline="Read articles about kickstartDS"
         background="accent"
-        ctas={[{
+        buttons={[{
           label: "All articles",
           target: "https://www.kickstartDS.com/blog"
         }, {
@@ -255,6 +255,6 @@ export default [
           inverted={false}
         />
       </Section>
-    `
-  }
+    `,
+  },
 ];

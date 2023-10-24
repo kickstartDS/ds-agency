@@ -42,26 +42,8 @@
       "default": true,
       "description": "Toggle wether you want your text to be displayed within in box"
     },
-    "cta": {
-      "type": "object",
-      "properties": {
-        "toggle": {
-          "title": "CTA Toggle",
-          "description": "Toggle wether the CTA is displayed or not",
-          "type": "boolean",
-          "default": true
-        },
-        "label": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
-        },
-        "target": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
-        },
-        "icon": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
-        }
-      },
-      "additionalProperties": false
+    "buttons": {
+      "$ref": "http://schema.mydesignsystem.com/buttons.schema.json"
     },
     "overlay": {
       "$ref": "http://schema.kickstartds.com/content/visual.schema.json#/properties/overlay"

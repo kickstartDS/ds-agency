@@ -5,6 +5,8 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {ButtonsProps} from "../buttons/ButtonsProps";
+
 /**
  * Headline for the visual
  */
@@ -26,22 +28,6 @@ export type Height = "small" | "default" | "fullImage" | "fullScreen";
  * Toggle wether you want your text to be displayed within in box
  */
 export type Textbox = boolean;
-/**
- * Toggle wether the CTA is displayed or not
- */
-export type CTAToggle = boolean;
-/**
- * Text content to display inside the button
- */
-export type Label = string;
-/**
- * Target that should be linked, makes the button behave like a link semantically
- */
-export type Target = string;
-/**
- * Choose an icon
- */
-export type Icon = string;
 /**
  * Enable grid layer
  */
@@ -82,12 +68,10 @@ export interface HeroProps {
   text?: ModuleText;
   height?: Height;
   textbox?: Textbox;
-  cta?: {
-    toggle?: CTAToggle;
-    label?: Label;
-    target?: Target;
-    icon?: Icon;
-  };
+  /**
+   * Referenced component ButtonsProps
+   */
+  buttons?: ButtonsProps;
   overlay?: GridLayer;
   image?: BackgroundImage;
   textPosition?: ModuleAligment;

@@ -30,39 +30,8 @@
         "Jedes Jahr werden zahlreiche Kinder bei Angriffen verletzt. Wir helfen, dass sie behandelt werden können und langfristige Unterstützung erhalten, etwa mit Prothesen. Durch den Krieg sind zudem viele Kinder verängstigt und traumatisiert. mydesignsystem sorgt für psychosoziale Hilfe."
       ]
     },
-    "ctas": {
-      "type": "array",
-      "title": "Call to actions",
-      "description": "Add Call to actions to the end of the section",
-      "items": {
-        "type": "object",
-        "properties": {
-          "label": {
-            "type": "string",
-            "title": "Label",
-            "description": "Label for the Call to action"
-          },
-          "target": {
-            "type": "string",
-            "title": "Target",
-            "description": "Target for the Call to action",
-            "format": "uri"
-          },
-          "icon": {
-            "type": "string",
-            "title": "Icon",
-            "description": "Choose an icon"
-          }
-        },
-        "additionalProperties": false,
-        "required": ["label", "target"]
-      },
-      "examples": [
-        [
-          { "label": "Contact Us", "target": "#" },
-          { "label": "Read more", "target": "#" }
-        ]
-      ]
+    "buttons": {
+      "$ref": "http://schema.mydesignsystem.com/buttons.schema.json"
     },
     "align": {
       "title": "Text Alignment",

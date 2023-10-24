@@ -83,38 +83,8 @@
       "description": "Whether to invert the section",
       "default": false
     },
-    "ctas": {
-      "type": "array",
-      "title": "Call to actions",
-      "description": "Add Call to actions to the end of the section",
-      "items": {
-        "type": "object",
-        "properties": {
-          "label": {
-            "type": "string",
-            "title": "Label",
-            "description": "Label for the Call to action"
-          },
-          "target": {
-            "type": "string",
-            "title": "Target",
-            "description": "Target for the Call to action",
-            "format": "uri"
-          },
-          "icon": {
-            "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
-          }
-        },
-        "additionalProperties": false,
-        "required": ["label", "target"]
-      },
-      "examples": [
-        [
-          { "label": "Contact Us", "target": "#" },
-          { "label": "Read more", "target": "#" },
-          { "label": "Sitemap", "target": "#" }
-        ]
-      ]
+    "buttons": {
+      "$ref": "http://schema.mydesignsystem.com/buttons.schema.json"
     }
   },
   "additionalProperties": false,

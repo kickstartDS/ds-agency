@@ -2,12 +2,12 @@
 
 .l-section {
   &.l-section--align-center {
-    .l-section__ctas {
+    .l-section__buttons {
       justify-content: center;
     }
   }
 
-  &__ctas {
+  &__buttons {
     display: flex;
     gap: var(--ks-spacing-stack-s) var(--ks-spacing-inline-s);
 

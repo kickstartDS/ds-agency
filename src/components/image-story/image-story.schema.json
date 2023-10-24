@@ -43,39 +43,8 @@
       "default": true,
       "description": "Give the component padding"
     },
-    "ctas": {
-      "type": "array",
-      "title": "Call to actions",
-      "description": "Add Call to actions to the end of the section",
-      "items": {
-        "type": "object",
-        "properties": {
-          "label": {
-            "type": "string",
-            "title": "Label",
-            "description": "Label for the Call to action"
-          },
-          "target": {
-            "type": "string",
-            "title": "Target",
-            "description": "Target for the Call to action",
-            "format": "uri"
-          },
-          "icon": {
-            "type": "string",
-            "title": "Icon",
-            "description": "Choose an icon"
-          }
-        },
-        "additionalProperties": false,
-        "required": ["label", "target"]
-      },
-      "examples": [
-        [
-          { "label": "Contact Us", "target": "#" },
-          { "label": "Read more", "target": "#" }
-        ]
-      ]
+    "buttons": {
+      "$ref": "http://schema.mydesignsystem.com/buttons.schema.json"
     },
     "image": {
       "title": "Image",
