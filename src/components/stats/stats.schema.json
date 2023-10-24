@@ -16,8 +16,8 @@
           "number": {
             "title": "Number",
             "description": "The number of the stat",
-            "type": "integer",
-            "examples": [1, 2, 3, 4]
+            "type": "string",
+            "examples": ["1", "2", "3", "4"]
           },
           "description": {
             "title": "Description",
