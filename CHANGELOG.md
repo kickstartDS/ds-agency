@@ -1,3 +1,16 @@
+# v2.0.6 (Tue Oct 24 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: allow strings in stats number prop ([@lmestel](https://github.com/lmestel))
+- fix: make cta in hero optional ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.0.5 (Mon Oct 23 2023)
 
 #### ⚠️ Pushed to `main`
