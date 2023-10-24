@@ -22,9 +22,9 @@
       "properties": {
         "toggle": {
           "type": "boolean",
-          "default": "false",
+          "default": true,
           "title": "CTA Toggle",
-          "description": "Activate/disable the CTA"
+          "description": "Activate/disable the CTAs"
         },
         "style": {
           "type": "string",
@@ -78,8 +78,7 @@
                 "examples": ["See all our partners"]
               }
             },
-            "additionalProperties": false,
-            "required": ["target", "label"]
+            "additionalProperties": false
           }
         },
         "additionalProperties": false,

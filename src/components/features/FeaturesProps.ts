@@ -10,11 +10,9 @@
  */
 export type Layout = "largeTiles" | "smallTiles" | "list";
 /**
- * Activate/disable the CTA
+ * Activate/disable the CTAs
  */
-export type CTAToggle = CTAToggle1 & CTAToggle2;
-export type CTAToggle1 = boolean;
-export type CTAToggle2 = string;
+export type CTAToggle = boolean;
 /**
  * The features to display
  *
@@ -291,6 +289,6 @@ export interface FeaturesProps {
  * The call to action
  */
 export interface CallToAction {
-  target: CallToActionTarget;
-  label: LinkLabel;
+  target?: CallToActionTarget;
+  label?: LinkLabel;
 }

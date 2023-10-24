@@ -8,7 +8,7 @@ import { Icon } from "@kickstartds/base/lib/icon";
 
 export const Features: FC<FeaturesProps & HTMLAttributes<HTMLElement>> = ({
   layout = "largeTiles",
-  ctas,
+  ctas = { style: "link", toggle: true },
   style = "stack",
   features = [],
 }) => {
@@ -53,7 +53,10 @@ export const Features: FC<FeaturesProps & HTMLAttributes<HTMLElement>> = ({
             {feature.text}
             {ctas.style === "intext" && ctas.toggle ? (
               <>
-                &#32; <Link href={feature.cta.target}>{feature.cta.label}</Link>
+                &#32;{" "}
+                <Link href={feature?.cta?.target}>
+                  {feature?.cta?.label ? feature?.cta?.label : "See more"}
+                </Link>
               </>
             ) : (
               ""
@@ -63,16 +66,18 @@ export const Features: FC<FeaturesProps & HTMLAttributes<HTMLElement>> = ({
             (ctas.style === "link" || ctas.style === "button") && (
               <div className="c-feature__cta">
                 {ctas.style === "link" ? (
-                  <Link className="c-feature__link" href={feature.cta.target}>
-                    {feature.cta.label}
+                  <Link className="c-feature__link" href={feature?.cta?.target}>
+                    {feature?.cta?.label ? feature?.cta?.label : "See more"}
                     <Icon icon="arrow-right" />
                   </Link>
                 ) : ctas.style === "button" ? (
                   <Button
                     className="c-feature__button"
                     size="small"
-                    target={feature.cta.target}
-                    label={feature.cta.label}
+                    target={feature?.cta?.target}
+                    label={
+                      feature?.cta?.label ? feature?.cta?.label : "See more"
+                    }
                   />
                 ) : (
                   ""

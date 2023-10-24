@@ -9,34 +9,12 @@ import { Footer } from "../components/footer/FooterComponent";
 import { footerProps } from "../components/footer/Footer.stories";
 import { StatsPaid } from "../components/stats-paid/StatsPaidComponent";
 import { TestimonialsPaid } from "../components/testimonials-paid/TestimonialsPaidComponent";
-import { Mosaic } from "../components/mosaic/MosaicComponent";
 import { ImageStory } from "../components/image-story/ImageStoryComponent";
-import { VideoCurtain } from "../components/video-curtain/VideoCurtainComponent";
+// import { Mosaic } from "../components/mosaic/MosaicComponent";
 
 const Page = () => (
   <>
     <Header {...headerProps} />
-    <VideoCurtain
-      headline="Your headline here"
-      sub="Your subheadline here"
-      largeHeadline={true}
-      text="Your text here"
-      textPosition="center"
-      overlay={true}
-      video={{
-        srcMobile: "Your mobile video source here",
-        srcTablet: "Your tablet video source here",
-        srcDesktop: "Your desktop video source here",
-      }}
-      buttons={[
-        {
-          label: "Your CTA label here",
-          target: "#",
-          icon: "Your CTA icon here",
-        },
-      ]}
-    />
-
     <Section spaceBefore="none" width="full">
       <CtaPaid
         align="left"
@@ -159,10 +137,10 @@ We empower your digital teams with the knowledge and skills to manage and evolve
 
 Ready to make your digital journey exceptional?
        `}
+        padding
         backgroundColor="#06001D"
         image={{
           source: "img/agency.png",
-          padding: true,
         }}
         buttons={[
           {
