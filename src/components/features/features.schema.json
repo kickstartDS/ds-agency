@@ -15,7 +15,7 @@
     "style": {
       "type": "string",
       "enum": ["intext", "stack", "centered", "besideLarge", "besideSmall"],
-      "default": "besideLarge"
+      "default": "stack"
     },
     "ctas": {
       "type": "object",
@@ -29,7 +29,7 @@
         "style": {
           "type": "string",
           "enum": ["button", "link", "intext"],
-          "default": "text"
+          "default": "link"
         }
       },
       "additionalProperties": false
@@ -64,10 +64,10 @@
             "title": "Call to Action",
             "description": "The call to action",
             "properties": {
-              "link": {
+              "target": {
                 "type": "string",
-                "title": "Call to Action Link",
-                "description": "The CTA link",
+                "title": "Call to Action target",
+                "description": "The CTA target",
                 "default": "#",
                 "format": "uri"
               },
@@ -79,7 +79,7 @@
               }
             },
             "additionalProperties": false,
-            "required": ["style", "link", "label"]
+            "required": ["target", "label"]
           }
         },
         "additionalProperties": false,
@@ -90,5 +90,5 @@
     }
   },
   "additionalProperties": false,
-  "required": ["layout", "features"]
+  "required": ["features"]
 }

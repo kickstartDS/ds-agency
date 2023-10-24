@@ -267,9 +267,9 @@ export type Title = string;
  */
 export type Text = string;
 /**
- * The CTA link
+ * The CTA target
  */
-export type CallToActionLink = string;
+export type CallToActionTarget = string;
 /**
  * The text label displayed on the link
  */
@@ -279,7 +279,7 @@ export type LinkLabel = string;
  * Component used to display a set of features
  */
 export interface FeaturesProps {
-  layout: Layout;
+  layout?: Layout;
   style?: "intext" | "stack" | "centered" | "besideLarge" | "besideSmall";
   ctas?: {
     toggle?: CTAToggle;
@@ -291,6 +291,6 @@ export interface FeaturesProps {
  * The call to action
  */
 export interface CallToAction {
-  link: CallToActionLink;
+  target: CallToActionTarget;
   label: LinkLabel;
 }

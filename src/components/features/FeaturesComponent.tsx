@@ -9,7 +9,7 @@ import { Icon } from "@kickstartds/base/lib/icon";
 export const Features: FC<FeaturesProps & HTMLAttributes<HTMLElement>> = ({
   layout = "largeTiles",
   ctas,
-  style = "link",
+  style = "stack",
   features = [],
 }) => {
   return (
@@ -53,7 +53,7 @@ export const Features: FC<FeaturesProps & HTMLAttributes<HTMLElement>> = ({
             {feature.text}
             {ctas.style === "intext" && ctas.toggle ? (
               <>
-                &#32; <Link href={feature.cta.link}>{feature.cta.label}</Link>
+                &#32; <Link href={feature.cta.target}>{feature.cta.label}</Link>
               </>
             ) : (
               ""
@@ -63,7 +63,7 @@ export const Features: FC<FeaturesProps & HTMLAttributes<HTMLElement>> = ({
             (ctas.style === "link" || ctas.style === "button") && (
               <div className="c-feature__cta">
                 {ctas.style === "link" ? (
-                  <Link className="c-feature__link" href={feature.cta.link}>
+                  <Link className="c-feature__link" href={feature.cta.target}>
                     {feature.cta.label}
                     <Icon icon="arrow-right" />
                   </Link>
@@ -71,7 +71,7 @@ export const Features: FC<FeaturesProps & HTMLAttributes<HTMLElement>> = ({
                   <Button
                     className="c-feature__button"
                     size="small"
-                    target={feature.cta.link}
+                    target={feature.cta.target}
                     label={feature.cta.label}
                   />
                 ) : (
