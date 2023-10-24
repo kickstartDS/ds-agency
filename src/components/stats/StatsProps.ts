@@ -15,7 +15,7 @@ export type Stats = [Stat] | [Stat, Stat] | [Stat, Stat, Stat] | [Stat, Stat, St
 /**
  * The number of the stat
  */
-export type Number = string;
+export type Number = number;
 /**
  * Optional description of the stat
  */

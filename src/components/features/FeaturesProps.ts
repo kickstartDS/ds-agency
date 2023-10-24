@@ -283,7 +283,7 @@ export interface FeaturesProps {
     toggle?: CTAToggle;
     style?: "button" | "link" | "intext";
   };
-  features: Features;
+  features?: Features;
 }
 /**
  * The call to action

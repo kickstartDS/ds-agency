@@ -89,6 +89,5 @@
       "maxItems": 8
     }
   },
-  "additionalProperties": false,
-  "required": ["features"]
+  "additionalProperties": false
 }
