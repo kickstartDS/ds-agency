@@ -1,3 +1,17 @@
+# v2.0.17 (Wed Oct 25 2023)
+
+#### 🐛 Bug Fix
+
+- Enhance section component [#25](https://github.com/kickstartDS/ds-agency/pull/25) ([@lmestel](https://github.com/lmestel) [@fleven-kds](https://github.com/fleven-kds) [@julrich](https://github.com/julrich))
+
+#### Authors: 3
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.0.16 (Wed Oct 25 2023)
 
 #### ⚠️ Pushed to `main`
