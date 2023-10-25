@@ -1,3 +1,15 @@
+# v2.0.12 (Wed Oct 25 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(hero + video-curtain): remove conflicting selector ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.0.11 (Tue Oct 24 2023)
 
 #### ⚠️ Pushed to `main`
