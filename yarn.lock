@@ -2424,10 +2424,10 @@
   resolved "https://registry.npmjs.org/@juggle/resize-observer/-/resize-observer-3.4.0.tgz"
   integrity sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==
 
-"@kickstartds/base@^3.0.0-next.1":
-  version "3.0.0-next.1"
-  resolved "https://registry.npmjs.org/@kickstartds/base/-/base-3.0.0-next.1.tgz#04d69d6b939dfab4b2c0bbe72ff7f366b133f912"
-  integrity sha512-MUzlsp9l3PF3C/TTBs11pPm1Bfjp0FKtzcE2Ln4ift338E5h3AuOrdenV19qARSYCnEj3VdsdC8/uA1Omc/Icg==
+"@kickstartds/base@^3.0.0-next.4":
+  version "3.0.0-next.4"
+  resolved "https://registry.npmjs.org/@kickstartds/base/-/base-3.0.0-next.4.tgz#ff961461424f45267136713b5921d44ddbe9ad8a"
+  integrity sha512-+bdW20HuKNBMepS/lHDHr5INR0dLPukTIzumZ30K5ZCjmOykAfXoDFPTWbtzQkCULpvOWhm1tNIsw56KSJZ/NQ==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
@@ -2436,10 +2436,10 @@
     photoswipe "^5.3.7"
     vhtml "^2.2.0"
 
-"@kickstartds/blog@^3.0.0-next.1":
-  version "3.0.0-next.1"
-  resolved "https://registry.npmjs.org/@kickstartds/blog/-/blog-3.0.0-next.1.tgz#8c9e2a9e412f65abc9199e15075c6f733a146a72"
-  integrity sha512-zmZ0cE+bOBqFzih2zYBe1i2AvTndwQhjUt7qQ90Xq/qc+ldX6evU1UiFmDhCWMmbkB9IEnl9BfHNC38N33zHog==
+"@kickstartds/blog@^3.0.0-next.3":
+  version "3.0.0-next.3"
+  resolved "https://registry.npmjs.org/@kickstartds/blog/-/blog-3.0.0-next.3.tgz#789e88db54b089a632bb9c578b2386a44cd47fff"
+  integrity sha512-7sbTTSP1XR9fbCKdholYMUWstUXb2jSjIKAP9Yxlk7yVGQ5pthXyhUJthgMqe/LzsbQ0f8TQ3WnYICRjfnxF5Q==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
@@ -2455,10 +2455,10 @@
     countup.js "^2.6.2"
     lodash-es "^4.17.21"
 
-"@kickstartds/core@^3.0.0-next.1":
-  version "3.0.0-next.1"
-  resolved "https://registry.npmjs.org/@kickstartds/core/-/core-3.0.0-next.1.tgz#0ddf465fb39082122c737872c6daa9935e63fce3"
-  integrity sha512-E1IvLE+b+bwVRTsTZxAdZTjZNF6ptQY93YjhwwQHrfp7Lb0DqHwRReXQsJAXFDyHEAmXjScLLsxhO8rjSwfq8A==
+"@kickstartds/core@^3.0.0-next.3":
+  version "3.0.0-next.3"
+  resolved "https://registry.npmjs.org/@kickstartds/core/-/core-3.0.0-next.3.tgz#144b04a393a74d3bdbd6941b8cc2c04067e28ca9"
+  integrity sha512-5waD45xmsdNdgFtUKufX8TZy0XeyAWmbXcx7S9FanupDR+YbtZZHo8tQipM0bEhKkW3WW6rToyN9JhUkAAm5Vg==
   dependencies:
     "@babel/runtime" "^7.21.5"
     bourbon "^7.3.0"
@@ -2473,10 +2473,10 @@
     pubsub-js "^1.9.4"
     sass "^1.62.1"
 
-"@kickstartds/form@^3.0.0-next.1":
-  version "3.0.0-next.1"
-  resolved "https://registry.npmjs.org/@kickstartds/form/-/form-3.0.0-next.1.tgz#65b27c634c4b980f4c1fa49942ea952dac10f25e"
-  integrity sha512-qiGaA/Ul91jPmVkKfsXUUSxZCCJQ4O3QeT1AuJKqZGYUrzC19eyi7fb/q6+RqmhCLxgm2MTHW/iyh0Q7c69YqQ==
+"@kickstartds/form@^3.0.0-next.3":
+  version "3.0.0-next.3"
+  resolved "https://registry.npmjs.org/@kickstartds/form/-/form-3.0.0-next.3.tgz#bd8bdaa0a77dc4af19f33eb45c0aa9470f66fa0e"
+  integrity sha512-Gz+VoTPIcHfZcEmxxGCOGmTx1omx6nM3Vlp5Vg2UMY4qE01Z5KmevYLVMmEJI0KfCcsA0tMojLlEntbZOACq5w==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"

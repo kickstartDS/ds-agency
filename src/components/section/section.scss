@@ -19,9 +19,10 @@
   &__buttons {
     display: flex;
     gap: var(--ks-spacing-stack-s) var(--ks-spacing-inline-s);
+    justify-content: center;
 
-    .l-section--align-center & {
-      justify-content: center;
+    .l-section__container--left & {
+      justify-content: flex-start;
     }
   }
 

@@ -17,6 +17,22 @@ export type Headline = string;
  */
 export type LargeHeadline = boolean;
 /**
+ * Width of headline to use
+ */
+export type HeadlineWidth = "unset" | "narrow" | "default" | "wide";
+/**
+ * Choose an alignment for the headline
+ */
+export type HeadlineAlignment = "left" | "center" | "right";
+/**
+ * Width of content to use
+ */
+export type ContentWidth = "unset" | "narrow" | "default" | "wide";
+/**
+ * Choose an alignment for the content
+ */
+export type ContentAlignment = "left" | "center" | "right";
+/**
  * Subheadline for the section
  */
 export type Subheadline = string;
@@ -63,6 +79,10 @@ export type Inverted = boolean;
 export interface SectionProps {
   headline?: Headline;
   largeHeadline?: LargeHeadline;
+  headlineWidth?: HeadlineWidth;
+  headlineAlign?: HeadlineAlignment;
+  contentWidth?: ContentWidth;
+  contentAlign?: ContentAlignment;
   sub?: Subheadline;
   switchHeadlineOrder?: SwitchHeadlineOrder;
   width?: Width;
