@@ -1,3 +1,16 @@
+# v2.0.13 (Wed Oct 25 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(cta): fix width issue ([@fleven-kds](https://github.com/fleven-kds))
+- feat(landingpage): change icon ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.0.12 (Wed Oct 25 2023)
 
 #### ⚠️ Pushed to `main`
