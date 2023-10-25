@@ -1,3 +1,16 @@
+# v2.0.18 (Wed Oct 25 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(section): increase selector specificity for section styles ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.0.17 (Wed Oct 25 2023)
 
 #### 🐛 Bug Fix
