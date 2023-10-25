@@ -1,3 +1,18 @@
+# v2.0.19 (Wed Oct 25 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(videoCurtain): add skipbutton to VideoCurtain ([@fleven-kds](https://github.com/fleven-kds))
+- fix: remove customized align property in Section ([@julrich](https://github.com/julrich))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.0.18 (Wed Oct 25 2023)
 
 #### ⚠️ Pushed to `main`
