@@ -20,6 +20,10 @@ export const Section = forwardRef<
       largeHeadline = false,
       sub,
       align = "left",
+      headlineWidth = "unset",
+      headlineAlign = "left",
+      contentWidth = "unset",
+      contentAlign = "left",
       width = "default",
       gutter = "default",
       mode = "default",
@@ -38,6 +42,13 @@ export const Section = forwardRef<
       <>
         <SectionContextDefault
           {...props}
+          largeHeadline={largeHeadline}
+          sub={sub}
+          align={align}
+          headlineWidth={headlineWidth}
+          headlineAlign={headlineAlign}
+          contentWidth={contentWidth}
+          contentAlign={contentAlign}
           // @ts-expect-error
           background={style}
           headline={
@@ -52,11 +63,9 @@ export const Section = forwardRef<
                   text: headline,
                   sub: sub,
                   style: largeHeadline ? "h1" : undefined,
-                  align: align,
                 }
               : undefined
           }
-          className={classnames(`l-section--align-${align}`)}
           width={width}
           gutter={gutter}
           mode={mode}
@@ -68,6 +77,7 @@ export const Section = forwardRef<
         {buttons && buttons.length > 0 && (
           <SectionContextDefault
             className={classnames(`l-section--align-${align}`)}
+            contentAlign={align}
             // @ts-expect-error
             background={style}
             width={width}
