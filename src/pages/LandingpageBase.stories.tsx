@@ -62,7 +62,6 @@ Elevate your digital presence with us. We create impactful digital experiences t
       headline="Design System Services"
       sub="Crafting Consistency, Fostering Growth"
       width="default"
-      align="left"
       mode="list"
       buttons={[
         {
@@ -96,7 +95,7 @@ Ready to make your digital journey exceptional?`}
         layout="above"
       />
     </Section>
-    <Section width="default" style="accent" align="left" mode="list">
+    <Section width="default" style="accent" mode="list">
       <ImageText
         mediaAlignment="beside-right"
         text={`
@@ -110,7 +109,7 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
         layout="below"
       />
     </Section>
-    <Section width="wide" headline="3 Customer Show Cases" align="center">
+    <Section width="wide" headline="3 Customer Show Cases">
       <TeaserCard
         target="#"
         headline="Lorem Ipsum dolor"
@@ -127,7 +126,7 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
       />
     </Section>
-    <Section width="default" mode="list" headline="Testimonials" align="center">
+    <Section width="default" mode="list" headline="Testimonials">
       <Testimonials
         testimonials={[
           {

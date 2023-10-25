@@ -75,7 +75,6 @@ Elevate your digital presence with us. We create impactful digital experiences t
       headline="Design System Services - Crafting Consistency, Fostering Growth"
       sub="Here at Systemics, we bring a range of design system services that can make a difference:"
       width="full"
-      align="center"
       mode="list"
       gutter="none"
       spaceAfter="none"
@@ -145,7 +144,7 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
         textPosition="below"
       />
     </Section>
-    <Section width="wide" headline="3 Customer Show Cases" align="center">
+    <Section width="wide" headline="3 Customer Show Cases">
       <TeaserCard
         target="#"
         headline="Lorem Ipsum dolor"
@@ -162,7 +161,7 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
       />
     </Section>
-    <Section width="default" mode="list" headline="Testimonials" align="center">
+    <Section width="default" mode="list" headline="Testimonials">
       <TestimonialsPaid
         testimonials={[
           {
