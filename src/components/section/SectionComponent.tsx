@@ -38,6 +38,7 @@ export const Section = forwardRef<
       <>
         <SectionContextDefault
           {...props}
+          // @ts-expect-error
           background={style}
           headline={
             headline
@@ -67,6 +68,7 @@ export const Section = forwardRef<
         {buttons && buttons.length > 0 && (
           <SectionContextDefault
             className={classnames(`l-section--align-${align}`)}
+            // @ts-expect-error
             background={style}
             width={width}
             gutter={gutter}
