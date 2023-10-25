@@ -16,7 +16,7 @@
   "type": "object",
   "properties": {
     "logo": {
-      "$ref": "http://schema.kickstartds.com/base/picture.definitions.json"
+      "$ref": "http://schema.kickstartds.com/base/picture.schema.json"
     },
     "logoHref": {
       "type": "string",

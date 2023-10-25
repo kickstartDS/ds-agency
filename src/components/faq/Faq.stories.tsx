@@ -19,6 +19,17 @@ const meta: Meta<typeof FAQ> = {
 export default meta;
 type Story = StoryObj<typeof FAQ>;
 
+export const SingleDropdown: Story = {};
+SingleDropdown.args = pack({
+  questions: [
+    {
+      question: "What is a Design System?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+    },
+  ],
+});
+
 export const DropdownsInAList: Story = {};
 DropdownsInAList.args = pack({
   questions: [

@@ -18,20 +18,29 @@ const meta: Meta<typeof Stats> = {
 export default meta;
 type Story = StoryObj<typeof Stats>;
 
-export const WithIcons: Story = {};
-WithIcons.args = pack({
+export const NumbersWithLabel: Story = {};
+NumbersWithLabel.args = pack({
   stats: [
-    { value: "10", label: "Stat 1", icon: "person" },
-    { value: "20", label: "Stat 2", icon: "home" },
-    { value: "30", label: "Stat 3", icon: "map" },
+    { number: "1500", label: "Users" },
+    { number: "350", label: "Subscribers" },
+    { number: "125", label: "Components" },
   ],
 });
 
-export const Numbers: Story = {};
-Numbers.args = pack({
+export const NumbersWithDescription: Story = {};
+NumbersWithDescription.args = pack({
   stats: [
-    { value: "10", label: "Stat 1", icon: "" },
-    { value: "20", label: "Stat 2", icon: "" },
-    { value: "30", label: "Stat 3", icon: "" },
+    {
+      number: "1500",
+      label: "Users",
+      description:
+        "Experience the power of our platform, embraced by a vast community of users. Our user base is diverse and dynamic, including both active and inactive members. Join us and become part of this ever-growing community.",
+    },
+    {
+      number: "350",
+      label: "Subscribers",
+      description:
+        "Stay ahead with our regular updates and newsletters. Our subscribers are always in the loop, receiving the latest news and features. Subscribe now and never miss an update from us.",
+    },
   ],
 });

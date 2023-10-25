@@ -35,7 +35,7 @@ export type FullWidthMedia = boolean;
  */
 export type Caption = string;
 
-export interface TextMediaVideoProps {
+export interface MediaVideoProps {
   video?: Video;
   full?: FullWidthMedia;
   caption?: Caption;

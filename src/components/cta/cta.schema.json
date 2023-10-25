@@ -10,6 +10,12 @@
       "type": "string",
       "examples": ["Headline"]
     },
+    "largeHeadline": {
+      "type": "boolean",
+      "title": "Large Headline",
+      "description": "Make the headline larger",
+      "default": true
+    },
     "sub": {
       "title": "Module Subheadline",
       "description": "Subheadline below the module headline",
@@ -24,51 +30,12 @@
         "Jedes Jahr werden zahlreiche Kinder bei Angriffen verletzt. Wir helfen, dass sie behandelt werden können und langfristige Unterstützung erhalten, etwa mit Prothesen. Durch den Krieg sind zudem viele Kinder verängstigt und traumatisiert. mydesignsystem sorgt für psychosoziale Hilfe."
       ]
     },
-    "primaryCta": {
-      "type": "object",
-      "properties": {
-        "toggle": {
-          "title": "CTA Toggle",
-          "description": "Toggle wether the CTA is displayed or not",
-          "type": "boolean",
-          "default": true
-        },
-        "label": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
-        },
-        "target": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
-        },
-        "icon": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
-        }
-      },
-      "additionalProperties": false
-    },
-    "secondaryCta": {
-      "type": "object",
-      "properties": {
-        "toggle": {
-          "title": "CTA Toggle",
-          "description": "Toggle wether the CTA is displayed or not",
-          "type": "boolean",
-          "default": true
-        },
-        "label": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
-        },
-        "target": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
-        },
-        "icon": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
-        }
-      },
-      "additionalProperties": false
+    "buttons": {
+      "$ref": "http://schema.mydesignsystem.com/buttons.schema.json"
     },
     "align": {
-      "title": "Module aligment",
-      "description": "Choose the alginment of the module content",
+      "title": "Text Alignment",
+      "description": "Choose the alginment of the text",
       "enum": ["left", "center"],
       "type": "string",
       "default": "left"

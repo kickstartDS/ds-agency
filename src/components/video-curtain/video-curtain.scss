@@ -1,0 +1,36 @@
+@use "video-curtain-tokens.scss";
+@use "@kickstartds/core/source/core/container";
+@include container.wrapper("visual");
+
+.c-visual.c-video-curtain {
+  .c-headline {
+    .c-headline__subheadline {
+      color: var(--c-visual_subheadline--color);
+    }
+  }
+
+  .c-visual__link {
+    display: flex;
+    justify-content: flex-start;
+    gap: var(--ks-spacing-stack-m) var(--ks-spacing-inline-m);
+    flex-wrap: wrap;
+  }
+
+  .c-visual__content--center {
+    .c-visual__link {
+      justify-content: center;
+    }
+  }
+
+  &.c-visual--full {
+    height: 100vh;
+  }
+
+  .c-visual__box {
+    max-width: var(--c-visual_box--max-width);
+  }
+
+  .c-visual__content--indent {
+    max-width: var(--l-section--content-width-wide);
+  }
+}

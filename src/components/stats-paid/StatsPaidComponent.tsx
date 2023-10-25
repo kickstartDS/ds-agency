@@ -14,9 +14,9 @@ export const StatsPaid: FC<StatsPaidProps & HTMLAttributes<HTMLElement>> = ({
           key={index}
           to={stat.number}
           icon={{
-            icon: stat.icon,
+            icon: stat?.icon,
           }}
-          text={stat.description}
+          text={stat?.description}
           topic={stat.title}
         />
       ))}

@@ -17,7 +17,7 @@ export type FullWidthMedia = boolean;
  */
 export type Caption = string;
 
-export interface TextMediaImageProps {
+export interface MediaImageProps {
   /**
    * Referenced component PictureProps
    */

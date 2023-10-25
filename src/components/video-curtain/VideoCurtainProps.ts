@@ -5,10 +5,16 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {ButtonsProps} from "../buttons/ButtonsProps";
+
 /**
  * Headline for the visual
  */
 export type Headline = string;
+/**
+ * Boolean to set if the headline is supposed to resemble a h1 headline at the start of the page
+ */
+export type LargeHeadline = boolean;
 /**
  * Subheadline below the module headline
  */
@@ -17,22 +23,6 @@ export type ModuleSubheadline = string;
  * Info text for the module element
  */
 export type ModuleText = string;
-/**
- * Toggle wether the CTA is displayed or not
- */
-export type CTAToggle = boolean;
-/**
- * Text content to display inside the button
- */
-export type Label = string;
-/**
- * Target that should be linked, makes the button behave like a link semantically
- */
-export type Target = string;
-/**
- * Choose an icon
- */
-export type Icon = string;
 /**
  * Enable grid layer
  */
@@ -52,26 +42,20 @@ export type DesktopVideoSource = string;
 /**
  * Choose the alginment of the module content
  */
-export type ModuleAligment = "top" | "center" | "bottom";
-/**
- * Choose the alginment of the module content
- */
-export type ModuleAligment1 = "left" | "center" | "right";
+export type ModuleAligment = "center" | "left" | "right";
 
 export interface VideoCurtainProps {
   headline?: Headline;
+  largeHeadline?: LargeHeadline;
   sub?: ModuleSubheadline;
   text?: ModuleText;
-  cta?: {
-    toggle?: CTAToggle;
-    label?: Label;
-    target?: Target;
-    icon?: Icon;
-  };
+  /**
+   * Referenced component ButtonsProps
+   */
+  buttons?: ButtonsProps;
   overlay?: GridLayer;
   video?: BackgroundVideo;
-  verticalAlign?: ModuleAligment;
-  horizontalAlign?: ModuleAligment1;
+  textPosition?: ModuleAligment;
 }
 /**
  * Sources of background videos for different screen sizes

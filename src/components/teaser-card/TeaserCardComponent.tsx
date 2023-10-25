@@ -15,14 +15,16 @@ export const TeaserCard = forwardRef<
   return (
     <TeaserBoxContextDefault
       {...props}
+      className="c-teaser--card"
       ratio={"4:3"}
       topic={headline}
       text={text}
       link={{
         label: "Read more",
-        variant: "outline",
+        // @ts-expect-error
+        variant: "secondary",
         inverted: inverted,
-        href: target,
+        target: target,
       }}
       image={image}
       inverted={inverted}

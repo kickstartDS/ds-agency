@@ -65,7 +65,7 @@ export const SubheadlineOrderSwapped: Story = {
   }),
 };
 
-export const Markdown: Story = {
+export const HeadlineWithMarkdown: Story = {
   args: pack({
     text: "With *Markdown* use",
     sub: "This is a subheadline, displayed **below the headline**",

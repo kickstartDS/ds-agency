@@ -1,0 +1,119 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/cta-paid.schema.json",
+  "title": "Cta Paid",
+  "type": "object",
+  "properties": {
+    "headline": {
+      "title": "Module Headline",
+      "description": "Headline for the module element",
+      "type": "string",
+      "examples": ["Headline"]
+    },
+    "largeHeadline": {
+      "type": "boolean",
+      "title": "Large Headline",
+      "description": "Make the headline larger",
+      "default": false
+    },
+    "sub": {
+      "title": "Module Subheadline",
+      "description": "Subheadline below the module headline",
+      "type": "string",
+      "examples": ["Subheadline"]
+    },
+    "text": {
+      "title": "Module Text",
+      "description": "Info text for the module element",
+      "type": "string",
+      "examples": [
+        "Jedes Jahr werden zahlreiche Kinder bei Angriffen verletzt. Wir helfen, dass sie behandelt werden können und langfristige Unterstützung erhalten, etwa mit Prothesen. Durch den Krieg sind zudem viele Kinder verängstigt und traumatisiert. mydesignsystem sorgt für psychosoziale Hilfe."
+      ]
+    },
+    "fullWidth": {
+      "title": "Width",
+      "description": "Set the width of the content to the full width of the element",
+      "type": "boolean",
+      "default": false
+    },
+    "buttons": {
+      "$ref": "http://schema.mydesignsystem.com/buttons.schema.json"
+    },
+    "backgroundColor": {
+      "$ref": "http://schema.kickstartds.com/content/storytelling.schema.json#/properties/backgroundColor"
+    },
+    "backgroundImage": {
+      "$ref": "http://schema.kickstartds.com/content/storytelling.schema.json#/properties/backgroundImage"
+    },
+
+    "image": {
+      "title": "Image",
+      "description": "Image displayed alongside the text content",
+      "type": "object",
+      "properties": {
+        "source": {
+          "title": "Image source",
+          "description": "Image source to use",
+          "type": "string",
+          "format": "image",
+          "examples": ["img/agency.png"]
+        },
+        "ratio": {
+          "title": "Image aspect ratio",
+          "description": "Select an aspect ratio to use for cropping and displaying the image",
+          "type": "string",
+          "enum": ["4:3", "3:2", "16:9", "1:1", "none"],
+          "default": "none"
+        },
+        "vAlign": {
+          "title": "Image vertical alignment",
+          "description": "Select a vertical alignment for the image",
+          "type": "string",
+          "enum": ["center", "top", "top-edge", "bottom", "bottom-edge"],
+          "default": "center"
+        },
+        "hAlign": {
+          "title": "Image horizontal alignment",
+          "description": "Select a horizontal alignment for the image",
+          "type": "string",
+          "enum": ["center", "left", "left-edge", "right", "right-edge"],
+          "default": "center"
+        },
+        "order": {
+          "title": "Order",
+          "description": "Choose what comes first on mobile and desktop: image or text",
+          "type": "object",
+          "properties": {
+            "mobileImageLast": {
+              "title": "Mobile image after text",
+              "description": "Switch to displaying the image after the text on mobile",
+              "type": "boolean",
+              "default": false
+            },
+            "desktopImageLast": {
+              "title": "Desktop image after text",
+              "description": "Switch to displaying the image after the text on desktop",
+              "type": "boolean",
+              "default": true
+            }
+          },
+          "additionalProperties": false
+        },
+        "alt": {
+          "title": "Alt text",
+          "description": "Image description",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "align": {
+      "title": "Text Alignment",
+      "description": "Choose the alginment of the text",
+      "enum": ["left", "center"],
+      "type": "string",
+      "default": "left"
+    }
+  },
+  "additionalProperties": false
+}

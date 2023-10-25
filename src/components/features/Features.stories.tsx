@@ -28,7 +28,7 @@ IconCentered.args = pack({
       title: "Feature 1",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
       cta: {
-        link: "/feature1",
+        target: "/feature1",
         label: "Read more",
       },
     },
@@ -37,7 +37,7 @@ IconCentered.args = pack({
       title: "Feature 2",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
       cta: {
-        link: "/feature2",
+        target: "/feature2",
         label: "Read more",
       },
     },
@@ -46,7 +46,7 @@ IconCentered.args = pack({
       title: "Feature 3",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
       cta: {
-        link: "/feature2",
+        target: "/feature2",
         label: "Read more",
       },
     },
@@ -66,7 +66,7 @@ StackWithButton.args = pack({
       title: "Feature 1",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
       cta: {
-        link: "/feature1",
+        target: "/feature1",
         label: "Read more",
       },
     },
@@ -75,7 +75,7 @@ StackWithButton.args = pack({
       title: "Feature 2",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
       cta: {
-        link: "/feature2",
+        target: "/feature2",
         label: "Read more",
       },
     },
@@ -84,7 +84,7 @@ StackWithButton.args = pack({
       title: "Feature 3",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
       cta: {
-        link: "/feature2",
+        target: "/feature2",
         label: "Read more",
       },
     },
@@ -93,7 +93,7 @@ StackWithButton.args = pack({
       title: "Feature 4",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
       cta: {
-        link: "/feature2",
+        target: "/feature2",
         label: "Read more",
       },
     },
@@ -102,7 +102,7 @@ StackWithButton.args = pack({
       title: "Feature 5",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
       cta: {
-        link: "/feature2",
+        target: "/feature2",
         label: "Read more",
       },
     },
@@ -122,7 +122,7 @@ IconBesideWithLinkInText.args = pack({
       title: "Feature 1",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
       cta: {
-        link: "/feature1",
+        target: "/feature1",
         label: "Read more",
       },
     },
@@ -131,7 +131,7 @@ IconBesideWithLinkInText.args = pack({
       title: "Feature 2",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
       cta: {
-        link: "/feature2",
+        target: "/feature2",
         label: "Read more",
       },
     },
@@ -140,7 +140,7 @@ IconBesideWithLinkInText.args = pack({
       title: "Feature 3",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
       cta: {
-        link: "/feature2",
+        target: "/feature2",
         label: "Read more",
       },
     },
@@ -149,7 +149,7 @@ IconBesideWithLinkInText.args = pack({
       title: "Feature 4",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
       cta: {
-        link: "/feature2",
+        target: "/feature2",
         label: "Read more",
       },
     },
@@ -158,7 +158,7 @@ IconBesideWithLinkInText.args = pack({
       title: "Feature 5",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
       cta: {
-        link: "/feature2",
+        target: "/feature2",
         label: "Read more",
       },
     },
@@ -178,7 +178,7 @@ IconIntextWithLink.args = pack({
       title: "Feature 1",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
       cta: {
-        link: "/feature1",
+        target: "/feature1",
         label: "Read more",
       },
     },
@@ -187,7 +187,7 @@ IconIntextWithLink.args = pack({
       title: "Feature 2",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
       cta: {
-        link: "/feature2",
+        target: "/feature2",
         label: "Read more",
       },
     },
@@ -196,7 +196,7 @@ IconIntextWithLink.args = pack({
       title: "Feature 3",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
       cta: {
-        link: "/feature2",
+        target: "/feature2",
         label: "Read more",
       },
     },
@@ -205,7 +205,7 @@ IconIntextWithLink.args = pack({
       title: "Feature 4",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
       cta: {
-        link: "/feature2",
+        target: "/feature2",
         label: "Read more",
       },
     },
@@ -214,7 +214,7 @@ IconIntextWithLink.args = pack({
       title: "Feature 5",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
       cta: {
-        link: "/feature2",
+        target: "/feature2",
         label: "Read more",
       },
     },

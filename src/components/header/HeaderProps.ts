@@ -7,10 +7,16 @@
 
 import type {PictureProps} from "@kickstartds/base/lib/picture/typing";
 
+/**
+ * Make the header float over the first Section
+ */
+export type Floating = boolean;
+
 export interface HeaderProps {
   /**
    * Referenced component PictureProps
    */
   logo: PictureProps;
   logoHref?: string;
+  floating?: Floating;
 }

@@ -22,8 +22,7 @@ export const AtmosphericVideoWithOverlay: Story = {
     headline: "The Sanity & Next.js Experts",
     text: "Experience the speed & scalability unlike anything seen before with our Sanity CMS powered websites, web apps & composable architecture.",
     overlay: true,
-    verticalAlign: "center",
-    horizontalAlign: "center",
+    textPosition: "center",
     video: {
       srcMobile: "img/video-720.mp4",
       srcTablet: "img/video-1080.mp4",

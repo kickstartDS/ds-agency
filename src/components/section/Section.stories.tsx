@@ -39,7 +39,7 @@ export const TeaserCards: Story = {
   args: pack({
     headline: "Section headline",
     mode: "tile",
-    ctas: [],
+    buttons: [],
   }),
 };
 

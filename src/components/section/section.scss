@@ -1,13 +1,25 @@
 @use "section-tokens.scss";
 
 .l-section {
-  &__ctas {
+  &.l-section--align-center {
+    .l-section__buttons {
+      justify-content: center;
+    }
+  }
+
+  &__buttons {
     display: flex;
     gap: var(--ks-spacing-stack-s) var(--ks-spacing-inline-s);
     justify-content: center;
 
     .l-section__container--left & {
       justify-content: flex-start;
+    }
+  }
+
+  &__headline {
+    &--switch-order.c-headline {
+      flex-direction: column-reverse;
     }
   }
 }

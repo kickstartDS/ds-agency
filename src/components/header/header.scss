@@ -16,9 +16,9 @@
   --g-header--spacing-v: var(--ks-spacing-stack-m);
   --g-header-spacing-h: var(--l-section--content-padding);
 
-  @media (min-width: 640px) {
-    position: absolute;
+  &--floating {
     background-color: transparent;
+    position: absolute;
   }
 
   position: relative;
@@ -46,10 +46,13 @@
     }
   }
 }
-
 .c-header--spacer {
-  height: var(--g-header-height);
-  z-index: -1;
-  position: relative;
-  background-color: var(--ks-background-color-default);
+  display: none;
+  @media (min-width: 640px) {
+    display: block;
+    height: var(--g-header-height);
+    z-index: -1;
+    position: relative;
+    background-color: var(--ks-background-color-default);
+  }
 }

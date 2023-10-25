@@ -15,21 +15,21 @@
     "style": {
       "type": "string",
       "enum": ["intext", "stack", "centered", "besideLarge", "besideSmall"],
-      "default": "besideLarge"
+      "default": "stack"
     },
     "ctas": {
       "type": "object",
       "properties": {
         "toggle": {
           "type": "boolean",
-          "default": "false",
+          "default": true,
           "title": "CTA Toggle",
-          "description": "Activate/disable the CTA"
+          "description": "Activate/disable the CTAs"
         },
         "style": {
           "type": "string",
           "enum": ["button", "link", "intext"],
-          "default": "text"
+          "default": "link"
         }
       },
       "additionalProperties": false
@@ -64,10 +64,10 @@
             "title": "Call to Action",
             "description": "The call to action",
             "properties": {
-              "link": {
+              "target": {
                 "type": "string",
-                "title": "Call to Action Link",
-                "description": "The CTA link",
+                "title": "Call to Action target",
+                "description": "The CTA target",
                 "default": "#",
                 "format": "uri"
               },
@@ -75,11 +75,11 @@
                 "type": "string",
                 "title": "Link Label",
                 "description": "The text label displayed on the link",
+                "default": "See more",
                 "examples": ["See all our partners"]
               }
             },
-            "additionalProperties": false,
-            "required": ["style", "link", "label"]
+            "additionalProperties": false
           }
         },
         "additionalProperties": false,
@@ -89,6 +89,5 @@
       "maxItems": 8
     }
   },
-  "additionalProperties": false,
-  "required": ["layout", "features"]
+  "additionalProperties": false
 }

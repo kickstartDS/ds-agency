@@ -10,11 +10,9 @@
  */
 export type Layout = "largeTiles" | "smallTiles" | "list";
 /**
- * Activate/disable the CTA
+ * Activate/disable the CTAs
  */
-export type CTAToggle = CTAToggle1 & CTAToggle2;
-export type CTAToggle1 = boolean;
-export type CTAToggle2 = string;
+export type CTAToggle = boolean;
 /**
  * The features to display
  *
@@ -267,9 +265,9 @@ export type Title = string;
  */
 export type Text = string;
 /**
- * The CTA link
+ * The CTA target
  */
-export type CallToActionLink = string;
+export type CallToActionTarget = string;
 /**
  * The text label displayed on the link
  */
@@ -279,18 +277,18 @@ export type LinkLabel = string;
  * Component used to display a set of features
  */
 export interface FeaturesProps {
-  layout: Layout;
+  layout?: Layout;
   style?: "intext" | "stack" | "centered" | "besideLarge" | "besideSmall";
   ctas?: {
     toggle?: CTAToggle;
     style?: "button" | "link" | "intext";
   };
-  features: Features;
+  features?: Features;
 }
 /**
  * The call to action
  */
 export interface CallToAction {
-  link: CallToActionLink;
-  label: LinkLabel;
+  target?: CallToActionTarget;
+  label?: LinkLabel;
 }

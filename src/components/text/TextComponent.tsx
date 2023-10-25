@@ -6,21 +6,17 @@ import { RichText } from "@kickstartds/base/lib/rich-text";
 
 export const Text: FC<TextProps & HTMLAttributes<HTMLElement>> = ({
   text,
-  layoutVariant = "singleColumn",
-  textStyle = "default",
+  layout = "singleColumn",
+  style = "default",
   ...props
 }) => {
-  const layoutClass = `${
-    layoutVariant === "multiColumn" ? "c-text--columns" : ""
-  }`;
+  const layoutClass = `${layout === "multiColumn" ? "c-text--columns" : ""}`;
 
-  const textStyleClass = `${
-    textStyle === "highlight" ? "c-text--highlight" : ""
-  }`;
+  const styleClass = `${style === "highlight" ? "c-text--highlight" : ""}`;
 
   return (
     <div
-      className={classnames("c-text", `${layoutClass}`, `${textStyleClass}`)}
+      className={classnames("c-text", `${layoutClass}`, `${styleClass}`)}
       {...props}
     >
       <RichText text={text} />

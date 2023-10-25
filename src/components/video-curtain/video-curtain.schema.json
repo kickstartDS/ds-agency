@@ -10,6 +10,12 @@
       "type": "string",
       "examples": ["Headline"]
     },
+    "largeHeadline": {
+      "title": "Large Headline",
+      "description": "Boolean to set if the headline is supposed to resemble a h1 headline at the start of the page",
+      "type": "boolean",
+      "default": true
+    },
     "sub": {
       "title": "Module Subheadline",
       "description": "Subheadline below the module headline",
@@ -24,26 +30,8 @@
         "Jedes Jahr werden zahlreiche Kinder bei Angriffen verletzt. Wir helfen, dass sie behandelt werden können und langfristige Unterstützung erhalten, etwa mit Prothesen. Durch den Krieg sind zudem viele Kinder verängstigt und traumatisiert. mydesignsystem sorgt für psychosoziale Hilfe."
       ]
     },
-    "cta": {
-      "type": "object",
-      "properties": {
-        "toggle": {
-          "title": "CTA Toggle",
-          "description": "Toggle wether the CTA is displayed or not",
-          "type": "boolean",
-          "default": true
-        },
-        "label": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
-        },
-        "target": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
-        },
-        "icon": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
-        }
-      },
-      "additionalProperties": false
+    "buttons": {
+      "$ref": "http://schema.mydesignsystem.com/buttons.schema.json"
     },
     "overlay": {
       "$ref": "http://schema.kickstartds.com/content/visual.schema.json#/properties/overlay"
@@ -51,19 +39,12 @@
     "video": {
       "$ref": "http://schema.kickstartds.com/content/visual.schema.json#/properties/media/properties/video"
     },
-    "verticalAlign": {
+    "textPosition": {
       "title": "Module aligment",
       "description": "Choose the alginment of the module content",
-      "enum": ["top", "center", "bottom"],
+      "enum": ["center", "left", "right"],
       "type": "string",
-      "default": "left"
-    },
-    "horizontalAlign": {
-      "title": "Module aligment",
-      "description": "Choose the alginment of the module content",
-      "enum": ["left", "center", "right"],
-      "type": "string",
-      "default": "left"
+      "default": "bottom"
     }
   },
   "additionalProperties": false

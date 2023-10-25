@@ -14,50 +14,7 @@ export type AutoPlay = boolean;
  * preview label
  */
 export type SlidePreviewLabel = string;
-/**
- * Headline for the visual
- */
-export type Headline = string;
-/**
- * Subheadline below the module headline
- */
-export type ModuleSubheadline = string;
-/**
- * Info text for the module element
- */
-export type ModuleText = string;
-/**
- * Toggle wether the CTA is displayed or not
- */
-export type CTAToggle = boolean;
-/**
- * Text content to display inside the button
- */
-export type Label = string;
-/**
- * Target that should be linked, makes the button behave like a link semantically
- */
-export type Target = string;
-/**
- * Choose an icon
- */
-export type Icon = string;
-/**
- * Toggle wether the CTA is displayed or not
- */
-export type CTAToggle1 = boolean;
-/**
- * Text content to display inside the button
- */
-export type Label1 = string;
-/**
- * Target that should be linked, makes the button behave like a link semantically
- */
-export type Target1 = string;
-/**
- * Choose an icon
- */
-export type Icon1 = string;
+export type Height = "small" | "default" | "fullImage" | "fullScreen";
 /**
  * Choose a media type between image, video and none
  */
@@ -99,9 +56,108 @@ export type TabletVideoSource = string;
  */
 export type DesktopVideoSource = string;
 /**
- * Choose the alginment of the module content
+ * Enable grid layer
  */
-export type ModuleAligment = "left" | "center" | "right";
+export type GridLayer = boolean;
+/**
+ * Toggles visibility of the box
+ */
+export type DisplayBox = boolean;
+/**
+ * Text content of headline
+ */
+export type Text = string;
+/**
+ * Subheadline content
+ */
+export type Sub = string;
+/**
+ * Switch order of headline and subheadline
+ */
+export type SwitchOrder = boolean;
+export type SectionAlignment = "left" | "center" | "right";
+/**
+ * Level of headline to use
+ */
+export type Level = "h1" | "h2" | "h3" | "h4" | "p";
+/**
+ * Style of headline to show
+ */
+export type Style = "h1" | "h2" | "h3" | "h4" | "p";
+/**
+ * Whether to display space after headline
+ */
+export type SpaceAfter = "minimum" | "small" | "large";
+/**
+ * Set a custom class name
+ */
+export type ClassName = string;
+/**
+ * Text box copy text
+ */
+export type Text1 = string;
+/**
+ * Text content to display inside the button
+ */
+export type Label = string;
+/**
+ * Target that should be linked, makes the button behave like a link semantically
+ */
+export type Target = string;
+/**
+ * Variant of button to be used
+ */
+export type Variant = "primary" | "secondary" | "tertiary";
+/**
+ * Choose an icon
+ */
+export type Icon = string;
+/**
+ * Size of button to use
+ */
+export type Size = "small" | "medium" | "large";
+/**
+ * Whether the button should be disabled
+ */
+export type Disabled = boolean;
+/**
+ * Toggles visibility of the link
+ */
+export type DisplayLink = boolean;
+/**
+ * The text box is aligned inside the content grid
+ */
+export type Indent = boolean;
+/**
+ * Horizontal orientation of the box inside the keyvisual
+ */
+export type HorizontalOrientation = "left" | "center" | "right";
+/**
+ * Vertical orientation of the box inside the keyvisual
+ */
+export type VerticalOrientation = "top" | "center" | "bottom";
+/**
+ * Choose a style for the box
+ */
+export type StyleOfTheBox = "solid" | "transparent";
+export type Inverted = boolean;
+/**
+ * Custom css background color
+ */
+export type CustomBackgroundColor = string;
+/**
+ * The text box is in front of the image on small screens
+ */
+export type Inbox = boolean;
+/**
+ * Show skip button
+ */
+export type SkipButton = boolean;
+export type AdditionalClasses = string;
+/**
+ * Optional custom component identifier
+ */
+export type KsComponentAttribute = string;
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -109,7 +165,7 @@ export type Class = string;
 /**
  * Optional custom component identifier
  */
-export type KsComponentAttribute = string;
+export type KsComponentAttribute1 = string;
 
 /**
  * Visual Slider
@@ -118,27 +174,22 @@ export interface VisualSliderProps {
   autoplay?: AutoPlay;
   slides: Visual[];
   className?: Class;
-  component?: KsComponentAttribute;
+  component?: KsComponentAttribute1;
 }
+/**
+ * visual
+ */
 export interface Visual {
   label?: SlidePreviewLabel;
-  headline?: Headline;
-  sub?: ModuleSubheadline;
-  text?: ModuleText;
-  primaryCta?: {
-    toggle?: CTAToggle;
-    label?: Label;
-    target?: Target;
-    icon?: Icon;
-  };
-  secondaryCta?: {
-    toggle?: CTAToggle1;
-    label?: Label1;
-    target?: Target1;
-    icon?: Icon1;
-  };
+  height?: Height;
   media?: MediaWrapper;
-  align?: ModuleAligment;
+  overlay?: GridLayer;
+  box?: TextBox;
+  backgroundColor?: CustomBackgroundColor;
+  inbox?: Inbox;
+  skipButton?: SkipButton;
+  className?: AdditionalClasses;
+  component?: KsComponentAttribute;
 }
 /**
  * Wrapper for all media types
@@ -166,6 +217,47 @@ export interface BackgroundVideo {
   srcMobile: MobileVideoSource;
   srcTablet?: TabletVideoSource;
   srcDesktop?: DesktopVideoSource;
+}
+/**
+ * Content and style configuration for the text box
+ */
+export interface TextBox {
+  enabled?: DisplayBox;
+  headline?: Headline;
+  text?: Text1;
+  link?: Button;
+  indent?: Indent;
+  horizontal?: HorizontalOrientation;
+  vertical?: VerticalOrientation;
+  background?: StyleOfTheBox;
+  inverted?: Inverted;
+}
+/**
+ * Headline for the box
+ */
+export interface Headline {
+  text: Text;
+  sub?: Sub;
+  switchOrder?: SwitchOrder;
+  align?: SectionAlignment;
+  level: Level;
+  style?: Style;
+  spaceAfter?: SpaceAfter;
+  className?: ClassName;
+  styleAs?: string;
+  content?: string;
+}
+/**
+ * Component used for user interaction
+ */
+export interface Button {
+  label: Label;
+  target?: Target;
+  variant?: Variant;
+  icon?: Icon;
+  size?: Size;
+  disabled?: Disabled;
+  enabled?: DisplayLink;
 }
 
 }

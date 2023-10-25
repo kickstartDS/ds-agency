@@ -6,7 +6,7 @@ const Recipe = () => (
     headline="Read articles about kickstartDS"
     background="accent"
     width="max"
-    ctas={[
+    buttons={[
       {
         label: "All articles",
         target: "https://www.kickstartDS.com/blog",

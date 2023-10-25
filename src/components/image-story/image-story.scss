@@ -1,0 +1,45 @@
+@import "./image-story-tokens.scss";
+
+.c-storytelling.c-image-story {
+  gap: var(--c-storytelling--horizontal-padding);
+
+  .c-storytelling__box {
+    &__content {
+      max-width: var(--l-section--content-width-narrow);
+    }
+  }
+
+  .c-storytelling__box,
+  .c-storytelling__image {
+    padding: 0;
+  }
+
+  .c-storytelling__image img {
+    position: sticky;
+    top: calc(var(--c-storytelling--vertical-padding) * 2);
+  }
+
+  &.c-storytelling--full {
+    .c-storytelling__image {
+      img {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .c-storytelling__box {
+    &__content {
+      .c-image-story__links {
+        display: flex;
+        gap: var(--ks-spacing-stack-m) var(--ks-spacing-inline-s);
+      }
+
+      &--center {
+        .c-image-story__links {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

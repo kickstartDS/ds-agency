@@ -6,6 +6,8 @@ declare module "@kickstartds/base/lib/section/typing" {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {ButtonsProps} from "@kickstartds/buttons.schema.json/lib/buttons/typing";
+
 /**
  * Headline for the section
  */
@@ -70,21 +72,6 @@ export type SpaceAfter = "default" | "small" | "none";
  * Whether to invert the section
  */
 export type Inverted = boolean;
-/**
- * Label for the Call to action
- */
-export type Label = string;
-/**
- * Target for the Call to action
- */
-export type Target = string;
-/**
- * Add Call to actions to the end of the section
- */
-export type CallToActions = {
-  label: Label;
-  target: Target;
-}[];
 
 /**
  * Component used to layout components into pages
@@ -106,7 +93,10 @@ export interface SectionProps {
   spaceBefore?: SpaceBefore;
   spaceAfter?: SpaceAfter;
   inverted?: Inverted;
-  ctas?: CallToActions;
+  /**
+   * Referenced component ButtonsProps
+   */
+  buttons?: ButtonsProps;
 }
 
 }

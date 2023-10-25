@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/imageText.schema.json",
+  "title": "Image Text",
+  "description": "Component used to display an image beside or above/below a text block",
+  "type": "object",
+  "properties": {
+    "text": {
+      "type": "string",
+      "title": "Text",
+      "description": "Text content to display beside the image",
+      "examples": ["This is a sample text"]
+    },
+    "image": {
+      "type": "object",
+      "properties": {
+        "source": {
+          "type": "string",
+          "title": "Image Source",
+          "description": "URL of the image to display",
+          "examples": ["http://example.com/image.jpg"]
+        },
+        "alt": {
+          "type": "string",
+          "title": "Alt Text",
+          "description": "Alt text of the image",
+          "examples": ["http://example.com/image.jpg"]
+        }
+      }
+    },
+    "layout": {
+      "type": "string",
+      "enum": ["above", "below", "beside-right", "beside-left"],
+      "title": "Layout",
+      "description": "Position of the image relative to the text",
+      "examples": ["above"]
+    }
+  },
+  "required": ["text", "image", "layout"]
+}

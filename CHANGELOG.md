@@ -1,3 +1,365 @@
+# v2.0.14 (Wed Oct 25 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(header): add floating prop to header ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.0.13 (Wed Oct 25 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(cta): fix width issue ([@fleven-kds](https://github.com/fleven-kds))
+- feat(landingpage): change icon ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.0.12 (Wed Oct 25 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(hero + video-curtain): remove conflicting selector ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.0.11 (Tue Oct 24 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(features): split features into partials ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.0.10 (Tue Oct 24 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(buttons): update buttons properties ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.0.9 (Tue Oct 24 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(Features): update Features Component ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.0.8 (Tue Oct 24 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(feature): adjust feature schema ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.0.7 (Tue Oct 24 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(buttons): add a central buttons schema ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.0.6 (Tue Oct 24 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: allow strings in stats number prop ([@lmestel](https://github.com/lmestel))
+- fix: make cta in hero optional ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v2.0.5 (Mon Oct 23 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(Hero): make link object optional ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.0.4 (Tue Oct 17 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(imageText): rename imageText component ([@fleven-kds](https://github.com/fleven-kds))
+- feat(text): rename properties ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.0.3 (Tue Oct 17 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(Image): rename picture component to image ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.0.2 (Mon Oct 16 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(imageStory): add image story ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.0.1 (Fri Oct 13 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(landingpagePaid): adjust landingpagePaid template ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.0.0 (Thu Oct 12 2023)
+
+#### 💥 Breaking Change
+
+- Adopt breaking kickstartDS release [#27](https://github.com/kickstartDS/ds-agency/pull/27) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v1.0.57 (Thu Oct 12 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(LandingPages): adjust landingpage content ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.0.56 (Wed Oct 11 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(PaidComponentsLP): add paid components page ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.0.55 (Wed Oct 11 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(logos): clean up scss ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.0.54 (Wed Oct 11 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(text): rename case sensitive file ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.0.53 (Wed Oct 11 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(docs): add missing doc files ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.0.52 (Wed Oct 11 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(section): add headlineSwitchOrder functionality ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.0.51 (Wed Oct 11 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(mosaic): make cta optional #24 ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.0.50 (Tue Oct 10 2023)
+
+#### ⚠️ Pushed to `main`
+
+- chore: add some skeleton content to button doc page ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v1.0.49 (Tue Oct 10 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(ctaPaidStories): add stories ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.0.48 (Tue Oct 10 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(CTA): overhaul cta + ctaPaid components ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.0.47 (Mon Oct 09 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(LogosPaid.mdx): fix faulty references ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.0.46 (Mon Oct 09 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of https://github.com/kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(CtaPaid): add CtaPaidComponent ([@fleven-kds](https://github.com/fleven-kds))
+- feat(hero): add hero component ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v1.0.45 (Fri Oct 06 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: bring back teaser card link ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v1.0.44 (Fri Oct 06 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: fix some typescript errors ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v1.0.43 (Fri Oct 06 2023)
 
 #### ⚠️ Pushed to `main`
@@ -64,9 +426,9 @@
 #### ⚠️ Pushed to `main`
 
 - build: add precommit hook ([@lmestel](https://github.com/lmestel))
-- feat(PictureText): remove unused import ([@fleven-kds](https://github.com/fleven-kds))
+- feat(ImageText): remove unused import ([@fleven-kds](https://github.com/fleven-kds))
 - feat(global):remove outdated import ([@fleven-kds](https://github.com/fleven-kds))
-- feat(PictureText): add PictureText Component ([@fleven-kds](https://github.com/fleven-kds))
+- feat(ImageText): add ImageText Component ([@fleven-kds](https://github.com/fleven-kds))
 
 #### Authors: 2
 

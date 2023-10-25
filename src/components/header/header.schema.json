@@ -5,10 +5,16 @@
   "type": "object",
   "properties": {
     "logo": {
-      "$ref": "http://schema.kickstartds.com/base/picture.definitions.json"
+      "$ref": "http://schema.kickstartds.com/base/picture.schema.json"
     },
     "logoHref": {
       "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/logoHref"
+    },
+    "floating": {
+      "type": "boolean",
+      "title": "Floating",
+      "description": "Make the header float over the first Section",
+      "default": false
     }
   },
   "additionalProperties": false,

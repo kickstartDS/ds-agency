@@ -17,7 +17,7 @@ const meta: Meta = {
 type Story = StoryObj<typeof Mosaic>;
 
 export default meta;
-export const BackgroundImage: Story = {
+export const ColorfulAlternatingLayout: Story = {
   args: pack({
     tiles: [
       {
@@ -32,7 +32,7 @@ export const BackgroundImage: Story = {
       },
       {
         backgroundColor: "#004241",
-        textColor: "#81c7c6",
+        textColor: "#a3d5d4",
         image: "img/mosaic-1.png",
       },
     ],

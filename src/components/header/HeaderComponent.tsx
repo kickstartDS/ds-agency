@@ -6,9 +6,11 @@ import { Link } from "@kickstartds/base/lib/link";
 import { NavMain } from "../nav-main/NavMainComponent";
 import "./header.scss";
 
-export const Header: FC<HeaderProps> = ({ logo, logoHref = "/" }) => (
+export const Header: FC<HeaderProps> = ({ logo, floating, logoHref = "/" }) => (
   <>
-    <div className={classnames("c-header")}>
+    <div
+      className={classnames("c-header", floating ? `c-header--floating` : "")}
+    >
       <div className="c-header__content">
         <Link className="c-header__logo" href={logoHref}>
           <Picture {...logo} />
@@ -17,6 +19,5 @@ export const Header: FC<HeaderProps> = ({ logo, logoHref = "/" }) => (
         <NavMain logo={logo} logoHref={logoHref} items={[]} />
       </div>
     </div>
-    <div className="c-header--spacer"></div>
   </>
 );

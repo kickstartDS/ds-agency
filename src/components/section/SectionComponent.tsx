@@ -31,9 +31,9 @@ export const Section = forwardRef<
       spaceBefore = "default",
       spaceAfter = "default",
       className,
-      inverted = false,
+      inverted,
       switchHeadlineOrder = false,
-      ctas = [],
+      buttons = [],
       ...props
     },
     ref
@@ -53,11 +53,14 @@ export const Section = forwardRef<
           headline={
             headline
               ? {
+                  className: switchHeadlineOrder
+                    ? "l-section__headline l-section__headline--switch-order"
+                    : "l-section__headline",
                   spaceAfter: "large",
                   content: headline,
                   // @ts-expect-error
                   text: headline,
-                  subheadline: sub,
+                  sub: sub,
                   style: largeHeadline ? "h1" : undefined,
                 }
               : undefined
@@ -66,11 +69,11 @@ export const Section = forwardRef<
           gutter={gutter}
           mode={mode}
           spaceBefore={spaceBefore}
-          spaceAfter={ctas && ctas.length > 0 ? "none" : spaceAfter}
+          spaceAfter={buttons && buttons.length > 0 ? "none" : spaceAfter}
           inverted={inverted}
           ref={ref}
         />
-        {ctas && ctas.length > 0 && (
+        {buttons && buttons.length > 0 && (
           <SectionContextDefault
             className={classnames(`l-section--align-${align}`)}
             contentAlign={align}
@@ -82,14 +85,15 @@ export const Section = forwardRef<
             spaceAfter={spaceAfter}
             inverted={inverted}
           >
-            <div className="l-section__ctas">
-              {ctas
+            <div className="l-section__buttons">
+              {buttons
                 .filter((cta) => cta.label && cta.target)
                 .map((cta, index) => (
                   <Button
                     key={index}
                     label={cta.label}
                     target={cta.target}
+                    icon={cta.icon}
                     variant={
                       index === 0
                         ? "primary"

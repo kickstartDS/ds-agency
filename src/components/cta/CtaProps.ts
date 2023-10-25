@@ -5,10 +5,16 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {ButtonsProps} from "../buttons/ButtonsProps";
+
 /**
  * Headline for the module element
  */
 export type ModuleHeadline = string;
+/**
+ * Make the headline larger
+ */
+export type LargeHeadline = boolean;
 /**
  * Subheadline below the module headline
  */
@@ -18,45 +24,18 @@ export type ModuleSubheadline = string;
  */
 export type ModuleText = string;
 /**
- * Toggle wether the CTA is displayed or not
+ * Choose the alginment of the text
  */
-export type CTAToggle = boolean;
-/**
- * Text content to display inside the button
- */
-export type Label = string;
-/**
- * Target that should be linked, makes the button behave like a link semantically
- */
-export type Target = string;
-/**
- * Choose an icon
- */
-export type Icon = string;
-/**
- * Toggle wether the CTA is displayed or not
- */
-export type CTAToggle1 = boolean;
-/**
- * Choose the alginment of the module content
- */
-export type ModuleAligment = "left" | "center";
+export type TextAlignment = "left" | "center";
 
 export interface CtaProps {
   headline?: ModuleHeadline;
+  largeHeadline?: LargeHeadline;
   sub?: ModuleSubheadline;
   text?: ModuleText;
-  primaryCta?: {
-    toggle?: CTAToggle;
-    label?: Label;
-    target?: Target;
-    icon?: Icon;
-  };
-  secondaryCta?: {
-    toggle?: CTAToggle1;
-    label?: Label;
-    target?: Target;
-    icon?: Icon;
-  };
-  align?: ModuleAligment;
+  /**
+   * Referenced component ButtonsProps
+   */
+  buttons?: ButtonsProps;
+  align?: TextAlignment;
 }

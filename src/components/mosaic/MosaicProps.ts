@@ -6,6 +6,14 @@
  */
 
 /**
+ * Layout of the mosaic component
+ */
+export type Layout = "alternate" | "textLeft" | "textRight";
+/**
+ * Make the headlines larger
+ */
+export type LargeHeadlines = boolean;
+/**
  * Headline for the visual
  */
 export type Headline = string;
@@ -22,9 +30,9 @@ export type ModuleText = string;
  */
 export type TileImage = string;
 /**
- * Toggle wether the CTA is displayed or not
+ * Toggle wether the Button is displayed or not
  */
-export type CTAToggle = boolean;
+export type ButtonToggle = boolean;
 /**
  * Text content to display inside the button
  */
@@ -47,13 +55,15 @@ export type BackgroundColor = string;
 export type TextColor = string;
 
 export interface MosaicProps {
+  layout?: Layout;
+  largeHeadlines?: LargeHeadlines;
   tiles?: {
     headline?: Headline;
     sub?: ModuleSubheadline;
     text?: ModuleText;
     image?: TileImage;
-    cta?: {
-      toggle?: CTAToggle;
+    button?: {
+      toggle?: ButtonToggle;
       label?: Label;
       target?: Target;
       icon?: Icon;

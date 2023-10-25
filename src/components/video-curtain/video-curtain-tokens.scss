@@ -1,0 +1,23 @@
+:root {
+  .c-visual {
+    --c-visual_overlay--background: radial-gradient(
+      50% 126.2% at 100% 0%,
+      rgba(255, 68, 158, 0.5) 0%,
+      rgba(7, 8, 32, 0.75) 100%
+    );
+    --c-visual_overlay--background-size: 100%;
+
+    .c-visual__box {
+      --c-visual_box--background: var(--ks-background-color-default);
+      --c-visual_box--color: var(--ks-color-fg);
+      --c-visual_subheadline--color: var(--ks-text-color-primary);
+      --c-visual_headline--color: var(--ks-color-fg);
+    }
+
+    @container visual (min-width: 640px) {
+      .c-visual__box {
+        --c-visual_box--max-width: 50rem;
+      }
+    }
+  }
+}
