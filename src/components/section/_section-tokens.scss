@@ -1,9 +1,9 @@
 @import "../../selectors";
 
-#{$selectors} {
-  --l-section--background-bold: var(--ks-color-primary);
+:root {
+  --l-section--background-bold: var(--ks-background-color-primary) !important;
 }
 
-[ks-inverted="true"] {
-  --l-section--background-bold: var(--ks-color-secondary-inverted);
+[ks-inverted] {
+  --l-section--background-bold: var(--ks-background-color-primary) !important;
 }

@@ -87,7 +87,7 @@
       "type": "string",
       "title": "Style",
       "description": "Style of background",
-      "enum": ["default", "accent", "bold"],
+      "enum": ["default", "accent", "bold", "stagelights", "gradient"],
       "default": "default"
     },
     "spaceBefore": {

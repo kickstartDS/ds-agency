@@ -58,7 +58,7 @@ export type Alignment = "left" | "center";
 /**
  * Style of background
  */
-export type Style = "default" | "accent" | "bold";
+export type Style = "default" | "accent" | "bold" | "stagelights" | "gradient";
 /**
  * Amount of spacing before the section
  */

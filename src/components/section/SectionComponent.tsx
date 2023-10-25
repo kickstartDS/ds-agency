@@ -49,6 +49,7 @@ export const Section = forwardRef<
           headlineAlign={headlineAlign}
           contentWidth={contentWidth}
           contentAlign={contentAlign}
+          // @ts-expect-error
           background={style}
           headline={
             headline
@@ -77,6 +78,7 @@ export const Section = forwardRef<
           <SectionContextDefault
             className={classnames(`l-section--align-${align}`)}
             contentAlign={align}
+            // @ts-expect-error
             background={style}
             width={width}
             gutter={gutter}

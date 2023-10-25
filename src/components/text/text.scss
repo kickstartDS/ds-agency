@@ -1,20 +1,19 @@
-.c-text {
+.c-rich-text {
   --ks-text-col-width: 16em;
 
   &--highlight {
-    .c-rich-text {
-      color: var(--ks-color-fg);
-      font: var(--ks-font-copy-l);
-      font-weight: var(--ks-font-weight-semi-bold);
-    }
+    color: var(--ks-color-fg);
+    font: var(--ks-font-copy-l);
+    font-weight: var(--ks-font-weight-semi-bold);
+  }
+
+  &--center {
+    text-align: center;
   }
 
   &--columns {
-    .c-rich-text {
-      column-gap: var(--ks-spacing-inline-m);
-      column-count: auto;
-
-      column-width: var(--ks-text-col-width);
-    }
+    column-gap: var(--ks-spacing-inline-m);
+    column-count: auto;
+    column-width: var(--ks-text-col-width);
   }
 }

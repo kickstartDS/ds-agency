@@ -14,6 +14,10 @@ export type Text = string;
  */
 export type Layout = "singleColumn" | "multiColumn";
 /**
+ * Alignment of text
+ */
+export type Alignment = "left" | "center";
+/**
  * Style of the text
  */
 export type Style = "highlight" | "default";
@@ -24,5 +28,6 @@ export type Style = "highlight" | "default";
 export interface TextProps {
   text: Text;
   layout?: Layout;
+  align?: Alignment;
   style?: Style;
 }

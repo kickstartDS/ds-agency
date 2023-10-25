@@ -10,7 +10,6 @@ import { footerProps } from "../components/footer/Footer.stories";
 import { StatsPaid } from "../components/stats-paid/StatsPaidComponent";
 import { TestimonialsPaid } from "../components/testimonials-paid/TestimonialsPaidComponent";
 import { ImageStory } from "../components/image-story/ImageStoryComponent";
-import { VideoCurtain } from "../components/video-curtain/VideoCurtainComponent";
 
 const Page = () => (
   <>
@@ -283,7 +282,7 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
         ]}
       />
     </Section>
-    <Section>
+    <Section spaceAfter="none" spaceBefore="none">
       <CtaPaid
         align="left"
         headline="Ready to embark on a transformative digital journey?"

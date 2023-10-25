@@ -20,6 +20,13 @@
       "enum": ["singleColumn", "multiColumn"],
       "default": "singleColumn"
     },
+    "align": {
+      "type": "string",
+      "title": "Alignment",
+      "description": "Alignment of text",
+      "enum": ["left", "center"],
+      "default": "center"
+    },
     "style": {
       "type": "string",
       "title": "Style",
