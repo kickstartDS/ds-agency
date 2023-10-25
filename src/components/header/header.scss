@@ -16,9 +16,9 @@
   --g-header--spacing-v: var(--ks-spacing-stack-m);
   --g-header-spacing-h: var(--l-section--content-padding);
 
-  @media (min-width: 640px) {
-    position: absolute;
+  &--floating {
     background-color: transparent;
+    position: absolute;
   }
 
   position: relative;

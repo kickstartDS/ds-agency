@@ -9,6 +9,12 @@
     },
     "logoHref": {
       "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/logoHref"
+    },
+    "floating": {
+      "type": "boolean",
+      "title": "Floating",
+      "description": "Make the header float over the first Section",
+      "default": false
     }
   },
   "additionalProperties": false,

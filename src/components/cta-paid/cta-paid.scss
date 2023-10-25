@@ -1,12 +1,9 @@
 @import "./cta-paid-tokens.scss";
 
-.c-header--spacer + .l-section,
-.c-header--spacer + .l-container {
+.c-header--floating + .l-container--storytelling,
+.c-header--floating + .l-section .l-container--storytelling:first-child {
   @media (min-width: 640px) {
-    position: relative;
-
     .c-storytelling.c-cta {
-      margin-top: calc(var(--g-header-height) * -1);
       padding-top: calc(var(--g-header-height) + var(--c-storytelling--horizontal-padding));
       z-index: 1;
     }

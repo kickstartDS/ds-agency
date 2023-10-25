@@ -10,10 +10,12 @@ import { footerProps } from "../components/footer/Footer.stories";
 import { StatsPaid } from "../components/stats-paid/StatsPaidComponent";
 import { TestimonialsPaid } from "../components/testimonials-paid/TestimonialsPaidComponent";
 import { ImageStory } from "../components/image-story/ImageStoryComponent";
+import { VideoCurtain } from "../components/video-curtain/VideoCurtainComponent";
 
 const Page = () => (
   <>
-    <Header {...headerProps} />
+    <Header {...headerProps} floating />
+
     <Section spaceBefore="none" width="full">
       <CtaPaid
         align="left"

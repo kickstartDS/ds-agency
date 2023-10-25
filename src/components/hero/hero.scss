@@ -2,16 +2,6 @@
 @use "@kickstartds/core/source/core/container";
 @include container.wrapper("visual");
 
-.c-header--spacer + .l-section,
-.c-header--spacer + .l-container {
-  position: relative;
-
-  .l-container--visual {
-    margin-top: calc(var(--g-header-height) * -1);
-    z-index: 1;
-  }
-}
-
 .c-visual.c-hero {
   .c-headline {
     .c-headline__subheadline {
