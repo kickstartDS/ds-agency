@@ -52,10 +52,6 @@ export type Gutter = "large" | "default" | "small" | "none";
  */
 export type Mode = "default" | "tile" | "list";
 /**
- * Alignment for the section headline and cta's
- */
-export type Alignment = "left" | "center";
-/**
  * Style of background
  */
 export type Style = "default" | "accent" | "bold" | "stagelights" | "gradient";
@@ -87,7 +83,6 @@ export interface SectionProps {
   width?: Width;
   gutter?: Gutter;
   mode?: Mode;
-  align?: Alignment;
   style?: Style;
   spaceBefore?: SpaceBefore;
   spaceAfter?: SpaceAfter;

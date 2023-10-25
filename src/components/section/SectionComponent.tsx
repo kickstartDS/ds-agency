@@ -19,7 +19,6 @@ export const Section = forwardRef<
       headline,
       largeHeadline = false,
       sub,
-      align = "left",
       headlineWidth = "unset",
       headlineAlign = "left",
       contentWidth = "unset",
@@ -42,9 +41,6 @@ export const Section = forwardRef<
       <>
         <SectionContextDefault
           {...props}
-          largeHeadline={largeHeadline}
-          sub={sub}
-          align={align}
           headlineWidth={headlineWidth}
           headlineAlign={headlineAlign}
           contentWidth={contentWidth}
@@ -76,8 +72,8 @@ export const Section = forwardRef<
         />
         {buttons && buttons.length > 0 && (
           <SectionContextDefault
-            className={classnames(`l-section--align-${align}`)}
-            contentAlign={align}
+            className={classnames(`l-section--align-${contentAlign}`)}
+            contentAlign={contentAlign}
             // @ts-expect-error
             background={style}
             width={width}
