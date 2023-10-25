@@ -45,6 +45,7 @@ export const VideoCurtain: FC<VideoCurtainProps> = ({
     >
       <Container name="visual">
         <VisualContextDefault
+          skipButton
           className="c-video-curtain"
           height="fullScreen"
           inbox
