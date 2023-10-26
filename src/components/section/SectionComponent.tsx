@@ -55,7 +55,7 @@ export const Section = forwardRef<
                     ? "l-section__headline l-section__headline--switch-order"
                     : "l-section__headline",
                   spaceAfter: "large",
-                  content: headline,
+                  content: headline?.text,
                   align: headline?.textAlign,
                   // @ts-expect-error
                   text: headline,
