@@ -23,11 +23,13 @@ export const Section = forwardRef<
         headlineTextAlign: "left",
         switchOrder: false,
       },
+      content = {
+        width: "unset",
+        align: "center",
+        gutter: "default",
+        mode: "default",
+      },
       width = "default",
-      contentWidth = "unset",
-      contentAlign = "left",
-      gutter = "default",
-      mode = "default",
       style = "default",
       spaceBefore = "default",
       spaceAfter = "default",
@@ -44,8 +46,8 @@ export const Section = forwardRef<
           {...props}
           headlineWidth={headline?.width}
           headlineAlign={headline?.align}
-          contentWidth={contentWidth}
-          contentAlign={contentAlign}
+          contentWidth={content?.width}
+          contentAlign={content?.align}
           // @ts-expect-error
           background={style}
           headline={
@@ -65,8 +67,8 @@ export const Section = forwardRef<
               : undefined
           }
           width={width}
-          gutter={gutter}
-          mode={mode}
+          gutter={content?.gutter}
+          mode={content?.mode}
           spaceBefore={spaceBefore}
           spaceAfter={buttons && buttons.length > 0 ? "none" : spaceAfter}
           inverted={inverted}
@@ -74,12 +76,12 @@ export const Section = forwardRef<
         />
         {buttons && buttons.length > 0 && (
           <SectionContextDefault
-            className={classnames(`l-section--align-${contentAlign}`)}
-            contentAlign={contentAlign}
+            className={classnames(`l-section--align-${content?.align}`)}
+            contentAlign={content?.align}
             // @ts-expect-error
             background={style}
+            gutter={content?.gutter}
             width={width}
-            gutter={gutter}
             mode="default"
             spaceBefore="small"
             spaceAfter={spaceAfter}

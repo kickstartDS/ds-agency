@@ -9,6 +9,26 @@ declare module "@kickstartds/base/lib/section/typing" {
 import type {ButtonsProps} from "@kickstartds/buttons.schema.json/lib/buttons/typing";
 
 /**
+ * Width of section to use
+ */
+export type Width = "full" | "max" | "wide" | "default" | "narrow";
+/**
+ * Style of background
+ */
+export type Style = "default" | "accent" | "bold" | "stagelights" | "gradient";
+/**
+ * Amount of spacing before the section
+ */
+export type SpaceBefore = "default" | "small" | "none";
+/**
+ * Amount of spacing after the section
+ */
+export type SpaceAfter = "default" | "small" | "none";
+/**
+ * Whether to invert the section
+ */
+export type Inverted = boolean;
+/**
  * Headline Text for the section
  */
 export type Headline = string;
@@ -37,10 +57,6 @@ export type Subheadline = string;
  */
 export type SwitchHeadlineOrder = boolean;
 /**
- * Width of section to use
- */
-export type Width = "full" | "max" | "wide" | "default" | "narrow";
-/**
  * Width of content to use
  */
 export type ContentWidth = "unset" | "narrow" | "default" | "wide";
@@ -56,27 +72,16 @@ export type Gutter = "large" | "default" | "small" | "none";
  * Layout mode used for section contents
  */
 export type Mode = "default" | "tile" | "list";
-/**
- * Style of background
- */
-export type Style = "default" | "accent" | "bold" | "stagelights" | "gradient";
-/**
- * Amount of spacing before the section
- */
-export type SpaceBefore = "default" | "small" | "none";
-/**
- * Amount of spacing after the section
- */
-export type SpaceAfter = "default" | "small" | "none";
-/**
- * Whether to invert the section
- */
-export type Inverted = boolean;
 
 /**
  * Component used to layout components into pages
  */
 export interface SectionProps {
+  width?: Width;
+  style?: Style;
+  spaceBefore?: SpaceBefore;
+  spaceAfter?: SpaceAfter;
+  inverted?: Inverted;
   headline?: {
     text?: Headline;
     large?: LargeHeadline;
@@ -87,15 +92,13 @@ export interface SectionProps {
     switchOrder?: SwitchHeadlineOrder;
     [k: string]: unknown;
   };
-  width?: Width;
-  contentWidth?: ContentWidth;
-  contentAlign?: ContentAlignment;
-  gutter?: Gutter;
-  mode?: Mode;
-  style?: Style;
-  spaceBefore?: SpaceBefore;
-  spaceAfter?: SpaceAfter;
-  inverted?: Inverted;
+  content?: {
+    width?: ContentWidth;
+    align?: ContentAlignment;
+    gutter?: Gutter;
+    mode?: Mode;
+    [k: string]: unknown;
+  };
   /**
    * Referenced component ButtonsProps
    */

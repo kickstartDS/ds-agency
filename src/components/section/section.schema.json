@@ -5,6 +5,41 @@
   "description": "Component used to layout components into pages",
   "type": "object",
   "properties": {
+    "width": {
+      "type": "string",
+      "title": "Width",
+      "description": "Width of section to use",
+      "enum": ["full", "max", "wide", "default", "narrow"],
+      "default": "default"
+    },
+    "style": {
+      "type": "string",
+      "title": "Style",
+      "description": "Style of background",
+      "enum": ["default", "accent", "bold", "stagelights", "gradient"],
+      "default": "default"
+    },
+    "spaceBefore": {
+      "type": "string",
+      "title": "Space Before",
+      "description": "Amount of spacing before the section",
+      "enum": ["default", "small", "none"],
+      "default": "default"
+    },
+    "spaceAfter": {
+      "type": "string",
+      "title": "Space After",
+      "description": "Amount of spacing after the section",
+      "enum": ["default", "small", "none"],
+      "default": "default"
+    },
+    "inverted": {
+      "type": "boolean",
+      "title": "Inverted",
+      "description": "Whether to invert the section",
+      "default": false
+    },
+
     "headline": {
       "type": "object",
       "properties": {
@@ -52,67 +87,38 @@
         }
       }
     },
-    "width": {
-      "type": "string",
-      "title": "Width",
-      "description": "Width of section to use",
-      "enum": ["full", "max", "wide", "default", "narrow"],
-      "default": "default"
-    },
-    "contentWidth": {
-      "type": "string",
-      "title": "Content Width",
-      "description": "Width of content to use",
-      "enum": ["unset", "narrow", "default", "wide"],
-      "default": "unset"
-    },
-    "contentAlign": {
-      "title": "Content Alignment",
-      "description": "Choose an alignment for the content",
-      "type": "string",
-      "enum": ["left", "center", "right"],
-      "default": "center"
-    },
-    "gutter": {
-      "type": "string",
-      "title": "Gutter",
-      "description": "Size of gutter to use",
-      "enum": ["large", "default", "small", "none"],
-      "default": "default"
-    },
-    "mode": {
-      "type": "string",
-      "title": "Mode",
-      "description": "Layout mode used for section contents",
-      "enum": ["default", "tile", "list"],
-      "default": "default"
-    },
-    "style": {
-      "type": "string",
-      "title": "Style",
-      "description": "Style of background",
-      "enum": ["default", "accent", "bold", "stagelights", "gradient"],
-      "default": "default"
-    },
-    "spaceBefore": {
-      "type": "string",
-      "title": "Space Before",
-      "description": "Amount of spacing before the section",
-      "enum": ["default", "small", "none"],
-      "default": "default"
-    },
-    "spaceAfter": {
-      "type": "string",
-      "title": "Space After",
-      "description": "Amount of spacing after the section",
-      "enum": ["default", "small", "none"],
-      "default": "default"
-    },
-    "inverted": {
-      "type": "boolean",
-      "title": "Inverted",
-      "description": "Whether to invert the section",
-      "default": false
+    "content": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "type": "string",
+          "title": "Content Width",
+          "description": "Width of content to use",
+          "enum": ["unset", "narrow", "default", "wide"],
+          "default": "unset"
+        },
+        "align": {
+          "title": "Content Alignment",
+          "description": "Choose an alignment for the content",
+          "type": "string",
+          "enum": ["left", "center", "right"],
+          "default": "center"
+        },
+        "gutter": {
+          "type": "string",
+          "title": "Gutter",
+          "description": "Size of gutter to use",
+          "enum": ["large", "default", "small", "none"],
+          "default": "default"
+        },
+        "mode": {
+          "type": "string",
+          "title": "Mode",
+          "description": "Layout mode used for section contents",
+          "enum": ["default", "tile", "list"],
+          "default": "default"
+        }
+      }
     },
     "buttons": {
       "$ref": "http://schema.mydesignsystem.com/buttons.schema.json"

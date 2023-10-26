@@ -38,7 +38,9 @@ type Story = StoryObj<typeof Section>;
 export const TeaserCards: Story = {
   args: pack({
     headline: "Section headline",
-    mode: "tile",
+    content: {
+      mode: "tile",
+    },
     buttons: [],
   }),
 };
@@ -46,6 +48,8 @@ export const TeaserCards: Story = {
 export const WithCtas: Story = {
   args: pack({
     headline: "Section headline",
-    mode: "tile",
+    content: {
+      mode: "tile",
+    },
   }),
 };
