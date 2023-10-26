@@ -6,35 +6,59 @@
   "type": "object",
   "properties": {
     "headline": {
-      "type": "string",
-      "title": "Headline",
-      "description": "Headline for the section",
-      "format": "markdown"
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "title": "Headline",
+          "description": "Headline Text for the section",
+          "format": "markdown"
+        },
+        "large": {
+          "type": "boolean",
+          "title": "Large Headline",
+          "description": "Make the headline larger",
+          "default": false
+        },
+        "width": {
+          "type": "string",
+          "title": "Headline Width",
+          "description": "Width of headline to use",
+          "enum": ["unset", "narrow", "default", "wide"],
+          "default": "unset"
+        },
+        "textAlign": {
+          "title": "Headline Text Alignment",
+          "description": "Choose the text alignment for the headline",
+          "type": "string",
+          "enum": ["left", "center", "right"]
+        },
+        "align": {
+          "title": "Headline Alignment",
+          "description": "Choose an alignment for positioning the headline",
+          "type": "string",
+          "enum": ["left", "center", "right"]
+        },
+
+        "sub": {
+          "type": "string",
+          "title": "Subheadline",
+          "description": "Subheadline for the section",
+          "format": "markdown"
+        },
+        "switchOrder": {
+          "type": "boolean",
+          "title": "Switch Headline Order",
+          "description": "Switch the order of headline and subheadline"
+        }
+      }
     },
-    "largeHeadline": {
-      "type": "boolean",
-      "title": "Large Headline",
-      "description": "Make the headline larger",
-      "default": false
-    },
-    "headlineWidth": {
+    "width": {
       "type": "string",
-      "title": "Headline Width",
-      "description": "Width of headline to use",
-      "enum": ["unset", "narrow", "default", "wide"],
-      "default": "unset"
-    },
-    "headlineTextAlign": {
-      "title": "Headline Text Alignment",
-      "description": "Choose an alignment for the headline",
-      "type": "string",
-      "enum": ["left", "center", "right"]
-    },
-    "headlineAlign": {
-      "title": "Headline Alignment",
-      "description": "Choose an alignment for the headline",
-      "type": "string",
-      "enum": ["left", "center", "right"]
+      "title": "Width",
+      "description": "Width of section to use",
+      "enum": ["full", "max", "wide", "default", "narrow"],
+      "default": "default"
     },
     "contentWidth": {
       "type": "string",
@@ -49,24 +73,6 @@
       "type": "string",
       "enum": ["left", "center", "right"],
       "default": "center"
-    },
-    "sub": {
-      "type": "string",
-      "title": "Subheadline",
-      "description": "Subheadline for the section",
-      "format": "markdown"
-    },
-    "switchHeadlineOrder": {
-      "type": "boolean",
-      "title": "Switch Headline Order",
-      "description": "Switch the order of headline and subheadline"
-    },
-    "width": {
-      "type": "string",
-      "title": "Width",
-      "description": "Width of section to use",
-      "enum": ["full", "max", "wide", "default", "narrow"],
-      "default": "default"
     },
     "gutter": {
       "type": "string",

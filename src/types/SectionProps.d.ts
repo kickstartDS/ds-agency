@@ -9,7 +9,7 @@ declare module "@kickstartds/base/lib/section/typing" {
 import type {ButtonsProps} from "@kickstartds/buttons.schema.json/lib/buttons/typing";
 
 /**
- * Headline for the section
+ * Headline Text for the section
  */
 export type Headline = string;
 /**
@@ -21,21 +21,13 @@ export type LargeHeadline = boolean;
  */
 export type HeadlineWidth = "unset" | "narrow" | "default" | "wide";
 /**
- * Choose an alignment for the headline
+ * Choose the text alignment for the headline
  */
 export type HeadlineTextAlignment = "left" | "center" | "right";
 /**
- * Choose an alignment for the headline
+ * Choose an alignment for positioning the headline
  */
 export type HeadlineAlignment = "left" | "center" | "right";
-/**
- * Width of content to use
- */
-export type ContentWidth = "unset" | "narrow" | "default" | "wide";
-/**
- * Choose an alignment for the content
- */
-export type ContentAlignment = "left" | "center" | "right";
 /**
  * Subheadline for the section
  */
@@ -48,6 +40,14 @@ export type SwitchHeadlineOrder = boolean;
  * Width of section to use
  */
 export type Width = "full" | "max" | "wide" | "default" | "narrow";
+/**
+ * Width of content to use
+ */
+export type ContentWidth = "unset" | "narrow" | "default" | "wide";
+/**
+ * Choose an alignment for the content
+ */
+export type ContentAlignment = "left" | "center" | "right";
 /**
  * Size of gutter to use
  */
@@ -77,16 +77,19 @@ export type Inverted = boolean;
  * Component used to layout components into pages
  */
 export interface SectionProps {
-  headline?: Headline;
-  largeHeadline?: LargeHeadline;
-  headlineWidth?: HeadlineWidth;
-  headlineTextAlign?: HeadlineTextAlignment;
-  headlineAlign?: HeadlineAlignment;
+  headline?: {
+    text?: Headline;
+    large?: LargeHeadline;
+    width?: HeadlineWidth;
+    textAlign?: HeadlineTextAlignment;
+    align?: HeadlineAlignment;
+    sub?: Subheadline;
+    switchOrder?: SwitchHeadlineOrder;
+    [k: string]: unknown;
+  };
+  width?: Width;
   contentWidth?: ContentWidth;
   contentAlign?: ContentAlignment;
-  sub?: Subheadline;
-  switchHeadlineOrder?: SwitchHeadlineOrder;
-  width?: Width;
   gutter?: Gutter;
   mode?: Mode;
   style?: Style;

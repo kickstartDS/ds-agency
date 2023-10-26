@@ -59,8 +59,10 @@ Elevate your digital presence with us. We create impactful digital experiences t
       />
     </Section>
     <Section
-      headline="Design System Services"
-      sub="Crafting Consistency, Fostering Growth"
+      headline={{
+        text: "Design System Services",
+        sub: "Crafting Consistency, Fostering Growth",
+      }}
       width="default"
       mode="list"
       buttons={[
@@ -109,7 +111,12 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
         layout="below"
       />
     </Section>
-    <Section width="wide" headline="3 Customer Show Cases">
+    <Section
+      width="wide"
+      headline={{
+        text: "3 Customer Show Cases",
+      }}
+    >
       <TeaserCard
         target="#"
         headline="Lorem Ipsum dolor"
@@ -126,7 +133,13 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
       />
     </Section>
-    <Section width="default" mode="list" headline="Testimonials">
+    <Section
+      width="default"
+      mode="list"
+      headline={{
+        text: "Testimonials",
+      }}
+    >
       <Testimonials
         testimonials={[
           {
@@ -175,7 +188,11 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
         ]}
       />
     </Section>
-    <Section headline="Design Systems & Headless FAQs">
+    <Section
+      headline={{
+        text: "Design Systems & Headless FAQs",
+      }}
+    >
       <FAQ
         questions={[
           {

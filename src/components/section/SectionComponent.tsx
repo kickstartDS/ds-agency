@@ -16,15 +16,16 @@ export const Section = forwardRef<
 >(
   (
     {
-      headline,
-      largeHeadline = false,
-      sub,
-      headlineWidth = "unset",
-      headlineAlign = "left",
-      headlineTextAlign = "left",
+      headline = {
+        large: false,
+        width: "unset",
+        align: "left",
+        headlineTextAlign: "left",
+        switchOrder: false,
+      },
+      width = "default",
       contentWidth = "unset",
       contentAlign = "left",
-      width = "default",
       gutter = "default",
       mode = "default",
       style = "default",
@@ -32,7 +33,6 @@ export const Section = forwardRef<
       spaceAfter = "default",
       className,
       inverted,
-      switchHeadlineOrder = false,
       buttons = [],
       ...props
     },
@@ -42,8 +42,8 @@ export const Section = forwardRef<
       <>
         <SectionContextDefault
           {...props}
-          headlineWidth={headlineWidth}
-          headlineAlign={headlineAlign}
+          headlineWidth={headline?.width}
+          headlineAlign={headline?.align}
           contentWidth={contentWidth}
           contentAlign={contentAlign}
           // @ts-expect-error
@@ -51,16 +51,16 @@ export const Section = forwardRef<
           headline={
             headline
               ? {
-                  className: switchHeadlineOrder
+                  className: headline?.switchOrder
                     ? "l-section__headline l-section__headline--switch-order"
                     : "l-section__headline",
                   spaceAfter: "large",
                   content: headline,
-                  align: headlineTextAlign,
+                  align: headline?.textAlign,
                   // @ts-expect-error
                   text: headline,
-                  sub: sub,
-                  style: largeHeadline ? "h1" : undefined,
+                  sub: headline?.sub,
+                  style: headline?.largeHeadline ? "h1" : undefined,
                 }
               : undefined
           }
