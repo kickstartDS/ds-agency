@@ -22,6 +22,10 @@ export type HeadlineWidth = "unset" | "narrow" | "default" | "wide";
 /**
  * Choose an alignment for the headline
  */
+export type HeadlineTextAlignment = "left" | "center" | "right";
+/**
+ * Choose an alignment for the headline
+ */
 export type HeadlineAlignment = "left" | "center" | "right";
 /**
  * Width of content to use
@@ -75,6 +79,7 @@ export interface SectionProps {
   headline?: Headline;
   largeHeadline?: LargeHeadline;
   headlineWidth?: HeadlineWidth;
+  headlineTextAlign?: HeadlineTextAlignment;
   headlineAlign?: HeadlineAlignment;
   contentWidth?: ContentWidth;
   contentAlign?: ContentAlignment;

@@ -24,6 +24,12 @@
       "enum": ["unset", "narrow", "default", "wide"],
       "default": "unset"
     },
+    "headlineTextAlign": {
+      "title": "Headline Text Alignment",
+      "description": "Choose an alignment for the headline",
+      "type": "string",
+      "enum": ["left", "center", "right"]
+    },
     "headlineAlign": {
       "title": "Headline Alignment",
       "description": "Choose an alignment for the headline",

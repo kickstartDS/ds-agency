@@ -21,6 +21,7 @@ export const Section = forwardRef<
       sub,
       headlineWidth = "unset",
       headlineAlign = "left",
+      headlineTextAlign = "left",
       contentWidth = "unset",
       contentAlign = "left",
       width = "default",
@@ -55,6 +56,7 @@ export const Section = forwardRef<
                     : "l-section__headline",
                   spaceAfter: "large",
                   content: headline,
+                  align: headlineTextAlign,
                   // @ts-expect-error
                   text: headline,
                   sub: sub,
