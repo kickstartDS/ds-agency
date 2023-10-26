@@ -1,3 +1,15 @@
+# v2.0.24 (Thu Oct 26 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(section): rename largeHeadline to large ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.0.23 (Thu Oct 26 2023)
 
 #### ⚠️ Pushed to `main`
