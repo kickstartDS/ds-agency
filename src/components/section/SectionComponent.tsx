@@ -58,7 +58,7 @@ export const Section = forwardRef<
                   content: headline?.text,
                   align: headline?.textAlign,
                   // @ts-expect-error
-                  text: headline,
+                  text: headline?.text,
                   sub: headline?.sub,
                   style: headline?.large ? "h1" : undefined,
                 }
