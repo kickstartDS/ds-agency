@@ -1,3 +1,15 @@
+# v2.0.28 (Thu Oct 26 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feature: update type generation and kds deps ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.0.27 (Thu Oct 26 2023)
 
 #### ⚠️ Pushed to `main`
