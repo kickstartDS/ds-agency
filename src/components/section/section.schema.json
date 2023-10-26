@@ -39,7 +39,6 @@
           "type": "string",
           "enum": ["left", "center", "right"]
         },
-
         "sub": {
           "type": "string",
           "title": "Subheadline",
