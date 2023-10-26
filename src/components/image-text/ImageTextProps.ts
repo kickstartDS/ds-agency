@@ -30,8 +30,6 @@ export interface ImageTextProps {
   image: {
     source?: ImageSource;
     alt?: AltText;
-    [k: string]: unknown;
   };
   layout: Layout;
-  [k: string]: unknown;
 }

@@ -90,14 +90,12 @@ export interface SectionProps {
     align?: HeadlineAlignment;
     sub?: Subheadline;
     switchOrder?: SwitchHeadlineOrder;
-    [k: string]: unknown;
   };
   content?: {
     width?: ContentWidth;
     align?: ContentAlignment;
     gutter?: Gutter;
     mode?: Mode;
-    [k: string]: unknown;
   };
   /**
    * Referenced component ButtonsProps

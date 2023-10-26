@@ -6,52 +6,16 @@ declare module "@kickstartds/blog/lib/post-aside/typing" {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {PictureProps} from "@kickstartds/base/lib/picture/typing";
+import type {ContactProps} from "@kickstartds/base/lib/contact/typing";
+import type {HeadlineProps} from "@kickstartds/base/lib/headline/typing";
 import type {PostMetaProps} from "@kickstartds/blog/lib/post-meta/typing";
 import type {PostShareBarProps} from "@kickstartds/blog/lib/post-share-bar/typing";
 
-/**
- * Text content of headline
- */
-export type Text = string;
-/**
- * Subheadline content
- */
-export type Sub = string;
-/**
- * Switch order of headline and subheadline
- */
-export type SwitchOrder = boolean;
-export type SectionAlignment = "left" | "center" | "right";
-/**
- * Level of headline to use
- */
-export type Level = "h1" | "h2" | "h3" | "h4" | "p";
-/**
- * Style of headline to show
- */
-export type Style = "h1" | "h2" | "h3" | "h4" | "p";
-/**
- * Whether to display space after headline
- */
-export type SpaceAfter = "minimum" | "small" | "large";
-/**
- * Set a custom class name
- */
-export type ClassName = string;
-/**
- * Name, company name, etc.
- */
-export type Title = string;
-/**
- * Position, profession, department, location, etc.
- */
-export type Subtitle = string;
-/**
- * Open link in new Tab
- */
-export type OpenLinkInNewTab = boolean;
-export type CopyText = string;
+export type Author = ContactProps & {
+  headline?: {
+    [k: string]: unknown;
+  } & HeadlineProps;
+};
 /**
  * Additional css classes attached to the wrapping element
  */
@@ -60,20 +24,12 @@ export type Class = string;
  * Optional custom component identifier
  */
 export type KsComponentAttribute = string;
-/**
- * Additional css classes attached to the wrapping element
- */
-export type Class1 = string;
-/**
- * Optional custom component identifier
- */
-export type KsComponentAttribute1 = string;
 
 /**
  * Post Aside
  */
 export interface PostAsideProps {
-  author?: Contact;
+  author?: Author;
   /**
    * Referenced component PostMetaProps
    */
@@ -82,42 +38,8 @@ export interface PostAsideProps {
    * Referenced component PostShareBarProps
    */
   shareBar?: PostShareBarProps;
-  className?: Class1;
-  component?: KsComponentAttribute1;
-}
-/**
- * Component to show contact information
- */
-export interface Contact {
-  headline?: Headline;
-  /**
-   * Referenced component PictureProps
-   */
-  image?: PictureProps;
-  title?: Title;
-  subtitle?: Subtitle;
-  links?: {
-    icon?: string;
-    label?: string;
-    href?: string;
-    newTab?: OpenLinkInNewTab;
-  }[];
-  copy?: CopyText;
   className?: Class;
   component?: KsComponentAttribute;
-}
-/**
- * Component used for headlines
- */
-export interface Headline {
-  text: Text;
-  sub?: Sub;
-  switchOrder?: SwitchOrder;
-  align?: SectionAlignment;
-  level: Level;
-  style?: Style;
-  spaceAfter?: SpaceAfter;
-  className?: ClassName;
 }
 
 }

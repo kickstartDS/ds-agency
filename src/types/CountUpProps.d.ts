@@ -7,6 +7,7 @@ declare module "@kickstartds/content/lib/count-up/typing" {
  */
 
 import type {IconProps} from "@kickstartds/base/lib/icon/typing";
+import type {ButtonProps} from "@kickstartds/base/lib/button/typing";
 
 /**
  * Final number to count to
@@ -20,30 +21,10 @@ export type Topic = string;
  * Copy text for the element
  */
 export type TextContent = string;
-/**
- * Text content to display inside the button
- */
-export type Label = string;
-/**
- * Target that should be linked, makes the button behave like a link semantically
- */
-export type Target = string;
-/**
- * Variant of button to be used
- */
-export type Variant = "primary" | "secondary" | "tertiary";
-/**
- * Choose an icon
- */
-export type Icon = string;
-/**
- * Size of button to use
- */
-export type Size = "small" | "medium" | "large";
-/**
- * Whether the button should be disabled
- */
-export type Disabled = boolean;
+export type Link = {
+  enabled?: DisplayLink;
+  [k: string]: unknown;
+} & ButtonProps;
 /**
  * Toggles visibility of the link
  */
@@ -68,25 +49,13 @@ export interface CountUpProps {
   icon?: IconProps;
   topic?: Topic;
   text?: TextContent;
-  link?: Button;
+  link?: Link;
   className?: Class;
   /**
    * See https://github.com/aFarkas/lazysizes/blob/gh-pages/README.md#data-expand-attribute
    */
   expand?: number;
   component?: KsComponentAttribute;
-}
-/**
- * Component used for user interaction
- */
-export interface Button {
-  label: Label;
-  target?: Target;
-  variant?: Variant;
-  icon?: Icon;
-  size?: Size;
-  disabled?: Disabled;
-  enabled?: DisplayLink;
 }
 
 }

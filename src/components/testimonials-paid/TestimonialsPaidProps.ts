@@ -39,7 +39,6 @@ export type Testimonials = {
   image: {
     src?: Source;
     alt?: AltText;
-    [k: string]: unknown;
   };
   rating?: Rating;
 }[];

@@ -6,6 +6,7 @@ declare module "@kickstartds/content/lib/storytelling/typing" {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {HeadlineProps} from "@kickstartds/base/lib/headline/typing";
 import type {ButtonProps} from "@kickstartds/base/lib/button/typing";
 
 /**
@@ -49,38 +50,9 @@ export type DesktopImageAfterText = boolean;
  */
 export type AltText = string;
 /**
- * Text content of headline
- */
-export type Text = string;
-/**
- * Subheadline content
- */
-export type Sub = string;
-/**
- * Switch order of headline and subheadline
- */
-export type SwitchOrder = boolean;
-export type SectionAlignment = "left" | "center" | "right";
-/**
- * Level of headline to use
- */
-export type Level = "h1" | "h2" | "h3" | "h4" | "p";
-/**
- * Style of headline to show
- */
-export type Style = "h1" | "h2" | "h3" | "h4" | "p";
-/**
- * Whether to display space after headline
- */
-export type SpaceAfter = "minimum" | "small" | "large";
-/**
- * Set a custom class name
- */
-export type ClassName = string;
-/**
  * Text content to display inside the element
  */
-export type Text1 = string;
+export type Text = string;
 /**
  * Switch text alignment between left and center
  */
@@ -142,8 +114,8 @@ export interface Order {
  * Text content to display
  */
 export interface TextBox {
-  headline?: Headline;
-  text?: Text1;
+  headline?: Headline & HeadlineProps;
+  text?: Text;
   textAlign?: TextAlignment;
   textColor?: TextColor;
   vAlign?: BoxVerticalAlignment;
@@ -157,15 +129,9 @@ export interface TextBox {
  * Headline for the box
  */
 export interface Headline {
-  text: Text;
-  sub?: Sub;
-  switchOrder?: SwitchOrder;
-  align?: SectionAlignment;
-  level: Level;
-  style?: Style;
-  spaceAfter?: SpaceAfter;
-  className?: ClassName;
+  level?: string;
   styleAs?: string;
+  spaceAfter?: string;
   content?: string;
 }
 

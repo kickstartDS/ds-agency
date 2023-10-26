@@ -6,99 +6,8 @@ declare module "@kickstartds/blog/lib/post-share-bar/typing" {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-/**
- * Text content of headline
- */
-export type Text = string;
-/**
- * Subheadline content
- */
-export type Sub = string;
-/**
- * Switch order of headline and subheadline
- */
-export type SwitchOrder = boolean;
-export type SectionAlignment = "left" | "center" | "right";
-/**
- * Level of headline to use
- */
-export type Level = "h1" | "h2" | "h3" | "h4" | "p";
-/**
- * Style of headline to show
- */
-export type Style = "h1" | "h2" | "h3" | "h4" | "p";
-/**
- * Component used for headlines
- */
-export type Headline1 = Headline2 & Headline3;
-/**
- * Text content of headline
- */
-export type Text1 = string;
-/**
- * Subheadline content
- */
-export type Sub1 = string;
-/**
- * Switch order of headline and subheadline
- */
-export type SwitchOrder1 = boolean;
-export type SectionAlignment1 = "left" | "center" | "right";
-/**
- * Level of headline to use
- */
-export type Level1 = "h1" | "h2" | "h3" | "h4" | "p";
-/**
- * Style of headline to show
- */
-export type Style1 = "h1" | "h2" | "h3" | "h4" | "p";
-/**
- * Whether to display space after headline
- */
-export type SpaceAfter = "minimum" | "small" | "large";
-/**
- * Set a custom class name
- */
-export type ClassName = string;
-export type Headline3 = "minimum" | "small" | "large";
-/**
- * Set a custom class name
- */
-export type ClassName1 = string;
-/**
- * Component used for headlines
- */
-export type Headline4 = Headline5 & Headline6;
-/**
- * Text content of headline
- */
-export type Text2 = string;
-/**
- * Subheadline content
- */
-export type Sub2 = string;
-/**
- * Switch order of headline and subheadline
- */
-export type SwitchOrder2 = boolean;
-export type SectionAlignment2 = "left" | "center" | "right";
-/**
- * Level of headline to use
- */
-export type Level2 = "h1" | "h2" | "h3" | "h4" | "p";
-/**
- * Style of headline to show
- */
-export type Style2 = "h1" | "h2" | "h3" | "h4" | "p";
-/**
- * Whether to display space after headline
- */
-export type SpaceAfter1 = "minimum" | "small" | "large";
-/**
- * Set a custom class name
- */
-export type ClassName2 = string;
-export type Headline6 = string;
+import type {HeadlineProps} from "@kickstartds/base/lib/headline/typing";
+
 /**
  * Open link in new Tab
  */
@@ -116,51 +25,19 @@ export type KsComponentAttribute = string;
  * Post Share Bar
  */
 export interface PostShareBarProps {
-  headline?: Headline;
+  headline?: {
+    content?: string & HeadlineProps;
+    spaceAfter?: string & HeadlineProps;
+  } & HeadlineProps;
   links?: ShareLink[];
   className?: Class;
   component?: KsComponentAttribute;
-}
-/**
- * Component used for headlines
- */
-export interface Headline {
-  text: Text;
-  sub?: Sub;
-  switchOrder?: SwitchOrder;
-  align?: SectionAlignment;
-  level: Level;
-  style?: Style;
-  spaceAfter?: Headline1;
-  className?: ClassName1;
-  content?: Headline4;
-}
-export interface Headline2 {
-  text: Text1;
-  sub?: Sub1;
-  switchOrder?: SwitchOrder1;
-  align?: SectionAlignment1;
-  level: Level1;
-  style?: Style1;
-  spaceAfter?: SpaceAfter;
-  className?: ClassName;
-}
-export interface Headline5 {
-  text: Text2;
-  sub?: Sub2;
-  switchOrder?: SwitchOrder2;
-  align?: SectionAlignment2;
-  level: Level2;
-  style?: Style2;
-  spaceAfter?: SpaceAfter1;
-  className?: ClassName2;
 }
 export interface ShareLink {
   href?: string;
   icon?: string;
   title?: string;
   newTab?: OpenLinkInNewTab;
-  [k: string]: unknown;
 }
 
 }

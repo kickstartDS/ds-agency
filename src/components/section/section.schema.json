@@ -85,7 +85,8 @@
           "title": "Switch Headline Order",
           "description": "Switch the order of headline and subheadline"
         }
-      }
+      },
+      "additionalProperties": false
     },
     "content": {
       "type": "object",

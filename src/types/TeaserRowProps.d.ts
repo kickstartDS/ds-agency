@@ -6,75 +6,12 @@ declare module "@kickstartds/base/lib/teaser-row/typing" {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-/**
- * Topic for the teaser box. Displayed before the text, in bold
- */
-export type Topic = string;
-/**
- * Text for the teaser box
- */
-export type TextContent = string;
-export type Inverted = boolean;
-/**
- * Hides the link. The box as a whole keeps being clickable
- */
-export type HideLink = boolean;
-/**
- * Text content to display inside the button
- */
-export type Label = string;
-/**
- * Target that should be linked, makes the button behave like a link semantically
- */
-export type Target = string;
-/**
- * Variant of button to be used
- */
-export type Variant = "primary" | "secondary" | "tertiary";
-/**
- * Choose an icon
- */
-export type Icon = string;
-/**
- * Size of button to use
- */
-export type Size = "small" | "medium" | "large";
-/**
- * Whether the button should be disabled
- */
-export type Disabled = boolean;
-/**
- * Additional css classes attached to the box
- */
-export type Class = string;
-/**
- * Optional custom component identifier
- */
-export type KsComponentAttribute = string;
+import type {TeaserProps} from "@kickstartds/base/lib/teaser/typing";
 
 /**
  * Component to tease external content
  */
-export interface TeaserRowProps {
-  topic?: Topic;
-  text?: TextContent;
-  inverted?: Inverted;
-  link?: Button;
-  className?: Class;
-  component?: KsComponentAttribute;
-}
-/**
- * Component used for user interaction
- */
-export interface Button {
-  hidden?: HideLink;
-  label: Label;
-  target?: Target;
-  variant?: Variant;
-  icon?: Icon;
-  size?: Size;
-  disabled?: Disabled;
-}
+export type TeaserRowProps = TeaserProps;
 
 }
       

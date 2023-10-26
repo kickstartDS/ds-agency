@@ -6,6 +6,8 @@ declare module "@kickstartds/form/lib/select-field/typing" {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {IconProps} from "@kickstartds/base/lib/icon/typing";
+
 /**
  * The label for the element
  */
@@ -43,7 +45,6 @@ export type InvalidMessage = string;
  * Help text that gives more context about what a user needs to input
  */
 export type HintMessage = string;
-export type IconIdentifier = string;
 /**
  * Additional css classes attached to the select element
  */
@@ -66,7 +67,7 @@ export interface SelectFieldProps {
   invalid?: Invalid;
   invalidMessage?: InvalidMessage;
   hint?: HintMessage;
-  icon?: IconIdentifier;
+  icon?: string & IconProps;
   className?: Class;
   component?: KsComponentAttribute;
 }

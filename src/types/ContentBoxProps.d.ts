@@ -6,6 +6,8 @@ declare module "@kickstartds/base/lib/content-box/typing" {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {ButtonProps} from "@kickstartds/base/lib/button/typing";
+
 /**
  * Choose one of the set ratios, all ratios except `none` stretch the image to 100% width
  */
@@ -27,29 +29,12 @@ export type Topic = string;
  */
 export type TextContent = string;
 /**
- * Text content to display inside the button
+ * Content box link configuration
  */
-export type Label = string;
-/**
- * Target that should be linked, makes the button behave like a link semantically
- */
-export type Target = string;
-/**
- * Variant of button to be used
- */
-export type Variant = "primary" | "secondary" | "tertiary";
-/**
- * Choose an icon
- */
-export type Icon = string;
-/**
- * Size of button to use
- */
-export type Size = "small" | "medium" | "large";
-/**
- * Whether the button should be disabled
- */
-export type Disabled = boolean;
+export type Link = {
+  enabled?: DisplayLink;
+  [k: string]: unknown;
+} & ButtonProps;
 /**
  * Toggles visibility of the link
  */
@@ -72,21 +57,9 @@ export interface ContentBoxProps {
   image?: ImageSource;
   topic?: Topic;
   text?: TextContent;
-  link?: Button;
+  link?: Link;
   className?: AdditionalClasses;
   component?: KsComponentAttribute;
-}
-/**
- * Component used for user interaction
- */
-export interface Button {
-  label: Label;
-  target?: Target;
-  variant?: Variant;
-  icon?: Icon;
-  size?: Size;
-  disabled?: Disabled;
-  enabled?: DisplayLink;
 }
 
 }

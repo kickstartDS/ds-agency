@@ -70,6 +70,5 @@ export interface MosaicProps {
     };
     backgroundColor?: BackgroundColor;
     textColor?: TextColor;
-    [k: string]: unknown;
   }[];
 }

@@ -68,7 +68,6 @@ export interface PageProps {
   sections?: Sections;
   updated?: Updated;
   created?: Created;
-  [k: string]: unknown;
 }
 
 }

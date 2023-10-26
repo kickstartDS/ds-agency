@@ -6,80 +6,10 @@ declare module "@kickstartds/blog/lib/post-head/typing" {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {PictureProps} from "@kickstartds/base/lib/picture/typing";
+import type {HeadlineProps} from "@kickstartds/base/lib/headline/typing";
 import type {TagLabelProps} from "@kickstartds/base/lib/tag-label/typing";
 
-/**
- * Picture source
- */
-export type Source = string;
-/**
- * Use a srcSet to display picture
- */
-export type PictureSourceset = string;
-/**
- * Alt text to display for picture
- */
-export type AltText = string;
-/**
- * Width of the picture
- */
-export type Width = number;
-/**
- * Height of the picture
- */
-export type Height = number;
-/**
- * Add additional css classes that should be applied to the button
- */
-export type AdditionalClasses = string;
-/**
- * Optional custom component identifier
- */
-export type KsComponentAttribute = string;
-/**
- * Add id attribute to the image
- */
-export type Id = string;
-/**
- * Define an itemprop attribute for the picture
- */
-export type ItempropAttribute = string;
-/**
- * Define a style attribute for the picture
- */
-export type StyleAttribute = string;
-/**
- * Render noscript fallback
- */
-export type Noscript = boolean;
-/**
- * Load the picture lazily
- */
-export type Lazy = boolean;
-/**
- * Use a srcSet to display picture
- */
-export type PictureSourceset1 = string;
-/**
- * TODO MEDIA DESCRIPTION
- */
-export type TODOMEDIATITLE = string;
-/**
- * TODO TYPE DESCRIPTION
- */
-export type TODOTYPETITLE = string;
-/**
- * Additional sources. This will result in a `picture`-Element
- */
-export type Sources = {
-  srcSet?: PictureSourceset1;
-  media?: TODOMEDIATITLE;
-  type?: TODOTYPETITLE;
-}[];
-/**
- * Set additional class(es) to the picture
- */
-export type ClassAttribute = string;
 /**
  * Choose an horizontal alignment for the image.
  */
@@ -88,35 +18,6 @@ export type Alignment = "left" | "center" | "right";
  * Date for news item
  */
 export type Date = string;
-/**
- * Text content of headline
- */
-export type Text = string;
-/**
- * Subheadline content
- */
-export type Sub = string;
-/**
- * Switch order of headline and subheadline
- */
-export type SwitchOrder = boolean;
-export type SectionAlignment = "left" | "center" | "right";
-/**
- * Level of headline to use
- */
-export type Level = "h1" | "h2" | "h3" | "h4" | "p";
-/**
- * Style of headline to show
- */
-export type Style = "h1" | "h2" | "h3" | "h4" | "p";
-/**
- * Whether to display space after headline
- */
-export type SpaceAfter = "minimum" | "small" | "large";
-/**
- * Set a custom class name
- */
-export type ClassName = string;
 export type Categories = TagLabelProps[];
 /**
  * Additional css classes attached to the wrapping element
@@ -125,52 +26,27 @@ export type Class = string;
 /**
  * Optional custom component identifier
  */
-export type KsComponentAttribute1 = string;
+export type KsComponentAttribute = string;
 
 /**
  * Post Head
  */
 export interface PostHeadProps {
-  image?: Picture;
+  image?: {
+    src?: string;
+    width?: number;
+    height?: number;
+  } & PictureProps;
   imageAlignment?: Alignment;
   date?: Date;
-  headline?: Headline;
+  headline?: {
+    content?: string;
+    level?: string;
+    spaceAfter?: string;
+  } & HeadlineProps;
   categories?: Categories;
   className?: Class;
-  component?: KsComponentAttribute1;
-}
-/**
- * Base component to display a picture
- */
-export interface Picture {
-  src?: Source;
-  srcSet?: PictureSourceset;
-  alt?: AltText;
-  width?: Width;
-  height?: Height;
-  className?: AdditionalClasses;
   component?: KsComponentAttribute;
-  id?: Id;
-  itemProp?: ItempropAttribute;
-  style?: StyleAttribute;
-  noscript?: Noscript;
-  lazy?: Lazy;
-  sources?: Sources;
-  pictureClassName?: ClassAttribute;
-}
-/**
- * Component used for headlines
- */
-export interface Headline {
-  text: Text;
-  sub?: Sub;
-  switchOrder?: SwitchOrder;
-  align?: SectionAlignment;
-  level: Level;
-  style?: Style;
-  spaceAfter?: SpaceAfter;
-  className?: ClassName;
-  content?: string;
 }
 
 }

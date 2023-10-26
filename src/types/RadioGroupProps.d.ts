@@ -59,7 +59,6 @@ export interface RadioButton {
   label: Label;
   disabled?: Disabled;
   hint?: HintMessage;
-  [k: string]: unknown;
 }
 
 }

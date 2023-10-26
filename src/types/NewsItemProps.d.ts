@@ -9,9 +9,7 @@ declare module "@kickstartds/blog/lib/news-item/typing" {
 /**
  * News List / Latest Definitions
  */
-export interface NewsListLatestDefinitionsProps {
-  [k: string]: unknown;
-}
+export interface NewsListLatestDefinitionsProps {}
 
 }
       

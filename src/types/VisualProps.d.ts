@@ -6,6 +6,9 @@ declare module "@kickstartds/content/lib/visual/typing" {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {HeadlineProps} from "@kickstartds/base/lib/headline/typing";
+import type {ButtonProps} from "@kickstartds/base/lib/button/typing";
+
 export type Height = "small" | "default" | "fullImage" | "fullScreen";
 /**
  * Choose a media type between image, video and none
@@ -56,62 +59,16 @@ export type GridLayer = boolean;
  */
 export type DisplayBox = boolean;
 /**
- * Text content of headline
+ * Text box copy text
  */
 export type Text = string;
 /**
- * Subheadline content
+ * Text box link configuration
  */
-export type Sub = string;
-/**
- * Switch order of headline and subheadline
- */
-export type SwitchOrder = boolean;
-export type SectionAlignment = "left" | "center" | "right";
-/**
- * Level of headline to use
- */
-export type Level = "h1" | "h2" | "h3" | "h4" | "p";
-/**
- * Style of headline to show
- */
-export type Style = "h1" | "h2" | "h3" | "h4" | "p";
-/**
- * Whether to display space after headline
- */
-export type SpaceAfter = "minimum" | "small" | "large";
-/**
- * Set a custom class name
- */
-export type ClassName = string;
-/**
- * Text box copy text
- */
-export type Text1 = string;
-/**
- * Text content to display inside the button
- */
-export type Label = string;
-/**
- * Target that should be linked, makes the button behave like a link semantically
- */
-export type Target = string;
-/**
- * Variant of button to be used
- */
-export type Variant = "primary" | "secondary" | "tertiary";
-/**
- * Choose an icon
- */
-export type Icon = string;
-/**
- * Size of button to use
- */
-export type Size = "small" | "medium" | "large";
-/**
- * Whether the button should be disabled
- */
-export type Disabled = boolean;
+export type Link = {
+  enabled?: DisplayLink;
+  variant?: string;
+} & ButtonProps;
 /**
  * Toggles visibility of the link
  */
@@ -197,9 +154,9 @@ export interface BackgroundVideo {
  */
 export interface TextBox {
   enabled?: DisplayBox;
-  headline?: Headline;
-  text?: Text1;
-  link?: Button;
+  headline?: Headline & HeadlineProps;
+  text?: Text;
+  link?: Link;
   indent?: Indent;
   horizontal?: HorizontalOrientation;
   vertical?: VerticalOrientation;
@@ -210,28 +167,9 @@ export interface TextBox {
  * Headline for the box
  */
 export interface Headline {
-  text: Text;
-  sub?: Sub;
-  switchOrder?: SwitchOrder;
-  align?: SectionAlignment;
-  level: Level;
-  style?: Style;
-  spaceAfter?: SpaceAfter;
-  className?: ClassName;
+  level?: string;
   styleAs?: string;
   content?: string;
-}
-/**
- * Component used for user interaction
- */
-export interface Button {
-  label: Label;
-  target?: Target;
-  variant?: Variant;
-  icon?: Icon;
-  size?: Size;
-  disabled?: Disabled;
-  enabled?: DisplayLink;
 }
 
 }

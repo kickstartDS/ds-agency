@@ -6,9 +6,7 @@ declare module "@kickstartds/form/lib/input/typing" {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface InputProps {
-  [k: string]: unknown;
-}
+export interface InputProps {}
 
 }
       
