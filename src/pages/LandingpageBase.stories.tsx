@@ -64,7 +64,9 @@ Elevate your digital presence with us. We create impactful digital experiences t
         sub: "Crafting Consistency, Fostering Growth",
       }}
       width="default"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       buttons={[
         {
           label: "Reach out today!",
@@ -97,9 +99,14 @@ Ready to make your digital journey exceptional?`}
         layout="above"
       />
     </Section>
-    <Section width="default" style="accent" mode="list">
+    <Section
+      width="default"
+      style="accent"
+      content={{
+        mode: "list",
+      }}
+    >
       <ImageText
-        mediaAlignment="beside-right"
         text={`
 ## Our **Approach** to Design Systems
 Own a design system without investing years of development. Our approach to design systems
@@ -135,7 +142,9 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
     </Section>
     <Section
       width="default"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       headline={{
         text: "Testimonials",
       }}

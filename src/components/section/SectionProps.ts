@@ -95,6 +95,7 @@ export interface SectionProps {
     align?: ContentAlignment;
     gutter?: Gutter;
     mode?: Mode;
+    additionalProperties?: never;
   };
   /**
    * Referenced component ButtonsProps

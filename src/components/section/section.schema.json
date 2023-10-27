@@ -39,7 +39,6 @@
       "description": "Whether to invert the section",
       "default": false
     },
-
     "headline": {
       "type": "object",
       "properties": {
@@ -118,7 +117,8 @@
           "description": "Layout mode used for section contents",
           "enum": ["default", "tile", "list"],
           "default": "default"
-        }
+        },
+        "additionalProperties": false
       }
     },
     "buttons": {

@@ -77,8 +77,10 @@ Elevate your digital presence with us. We create impactful digital experiences t
         sub: "Here at Systemics, we bring a range of design system services that can make a difference:",
       }}
       width="full"
-      mode="list"
-      gutter="none"
+      content={{
+        mode: "list",
+        gutter: "none",
+      }}
       spaceAfter="none"
     >
       <ImageStory
@@ -170,7 +172,9 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
     </Section>
     <Section
       width="default"
-      mode="list"
+      content={{
+        mode: "list",
+      }}
       headline={{
         text: "Testimonials",
       }}

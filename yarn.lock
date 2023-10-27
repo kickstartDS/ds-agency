@@ -2424,10 +2424,10 @@
   resolved "https://registry.npmjs.org/@juggle/resize-observer/-/resize-observer-3.4.0.tgz"
   integrity sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==
 
-"@kickstartds/base@^3.0.0-next.5":
-  version "3.0.0-next.5"
-  resolved "https://registry.npmjs.org/@kickstartds/base/-/base-3.0.0-next.5.tgz#fdc76504cd395b327836ef74c87fadb70fd374af"
-  integrity sha512-+KQozFOJOcCyHUgQ69Cbrd5qcMk+IG+a750XJ5H1vCmnOEO8VkFN6M2lpLiNF+BYQw3YPcnaJRXctuANxDTaxA==
+"@kickstartds/base@^3.0.0-next.6":
+  version "3.0.0-next.6"
+  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-3.0.0-next.6.tgz#70977c4b6570ae9ca5c23b6a87f22a6443f86405"
+  integrity sha512-8h1mqzpJNKx6fhaTgVfKW1OtTNHhjoda3oeHMZEM+cysdU9dQnpYQ7D1TWfutTmOa4w+OxI26tWnS5DuZj2c0Q==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
@@ -2436,10 +2436,10 @@
     photoswipe "^5.3.7"
     vhtml "^2.2.0"
 
-"@kickstartds/blog@^3.0.0-next.4":
-  version "3.0.0-next.4"
-  resolved "https://registry.npmjs.org/@kickstartds/blog/-/blog-3.0.0-next.4.tgz#744a917d7196abebff4fb4e5e89f6d28bf2c14ec"
-  integrity sha512-YKaASRkW0niAMWBbv1Bkhgo0hjXL4+XdNwJJjOnfsLooWOtVZf1tBb11oDndnLvtv3zpCllGvribEBhgQGdJ9w==
+"@kickstartds/blog@^3.0.0-next.5":
+  version "3.0.0-next.5"
+  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-3.0.0-next.5.tgz#201a11f37640bd60f747c4f3a89d384f7df06311"
+  integrity sha512-GgsOwbTYg3aAG/y3ejzWtiwR5widWvwdEdQ5xqgqljepVtdYXi0MlK3a8v1PrECyyqVa43ARCz3IkysGiI5gKQ==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
@@ -2473,10 +2473,10 @@
     pubsub-js "^1.9.4"
     sass "^1.62.1"
 
-"@kickstartds/form@^3.0.0-next.4":
-  version "3.0.0-next.4"
-  resolved "https://registry.npmjs.org/@kickstartds/form/-/form-3.0.0-next.4.tgz#fcab813729a78ba0c02c8e17dc39cdf566866377"
-  integrity sha512-1/WvkDRBhk/sMZss27UKRahVsA9kvLRpjflCEXIwdffGNAaP4Oft8P02MDx9h0Dl4CmgSy6GWgPBfnqahUkDsg==
+"@kickstartds/form@^3.0.0-next.5":
+  version "3.0.0-next.5"
+  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-3.0.0-next.5.tgz#9fea3f4336b1d5bf7addb8dd22e3689d217b3940"
+  integrity sha512-6gxJsYtlueyZztYLTxdD1CXrGYko+qZhGfOj7Sw6rYf4WrTakRlOSdCJ5U7Zr7tV9quixfTvx2OdVVXEM/TmqQ==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
