@@ -1,3 +1,15 @@
+# v2.0.29 (Fri Oct 27 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(section): fix typing on content property ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.0.28 (Thu Oct 26 2023)
 
 #### ⚠️ Pushed to `main`
