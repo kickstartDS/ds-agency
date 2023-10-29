@@ -34,6 +34,7 @@ export const BlogTeaser: FC<BlogTeaserProps & HTMLAttributes<HTMLElement>> = ({
   return (
     <Container name="post-teaser">
       <PostTeaserContextDefault
+        // @ts-expect-error
         image={{ src: image }}
         meta={{
           author: {

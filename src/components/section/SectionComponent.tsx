@@ -12,7 +12,7 @@ import "./section.scss";
 
 export const Section = forwardRef<
   HTMLDivElement,
-  SectionProps & Omit<HTMLAttributes<HTMLElement>, "style" | "content">
+  SectionProps & Omit<HTMLAttributes<HTMLElement>, "style">
 >(
   (
     {
@@ -57,11 +57,12 @@ export const Section = forwardRef<
                     ? "l-section__headline l-section__headline--switch-order"
                     : "l-section__headline",
                   spaceAfter: "large",
-                  content: headline?.text,
                   align: headline?.textAlign,
-                  // @ts-expect-error
                   text: headline?.text,
+                  // @ts-expect-error
+                  content: headline?.text,
                   sub: headline?.sub,
+                  level: "h2",
                   style: headline?.large ? "h1" : "h2",
                 }
               : undefined

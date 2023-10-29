@@ -21,9 +21,7 @@ export const TeaserCard = forwardRef<
       text={text}
       link={{
         label: "Read more",
-        // @ts-expect-error
         variant: "secondary",
-        inverted: inverted,
         target: target,
       }}
       image={image}

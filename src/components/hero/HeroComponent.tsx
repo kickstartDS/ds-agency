@@ -68,9 +68,9 @@ export const Hero: FC<HeroProps> = ({
                 textPosition === "below" || textPosition === "center"
                   ? "center"
                   : "left",
-              // @ts-expect-error
               text: headline,
               sub: sub,
+              level: "h3",
               style: largeHeadline ? "h1" : undefined,
             },
             text: text,
