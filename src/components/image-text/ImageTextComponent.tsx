@@ -20,7 +20,7 @@ export const ImageText: FC<ImageTextProps & HTMLAttributes<HTMLElement>> = ({
         media={[
           {
             image: {
-              src: image.source,
+              src: image.src,
             },
           },
         ]}
