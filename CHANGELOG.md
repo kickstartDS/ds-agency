@@ -1,3 +1,16 @@
+# v2.0.30 (Mon Oct 30 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(ImageText): apply consitency changes to the component ([@fleven-kds](https://github.com/fleven-kds))
+- feat(props): change "source" properties to "src" for consistency ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.0.29 (Fri Oct 27 2023)
 
 #### ⚠️ Pushed to `main`
