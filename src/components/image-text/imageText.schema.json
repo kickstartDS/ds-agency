@@ -14,7 +14,7 @@
     "image": {
       "type": "object",
       "properties": {
-        "source": {
+        "src": {
           "type": "string",
           "title": "Image Source",
           "description": "URL of the image to display",

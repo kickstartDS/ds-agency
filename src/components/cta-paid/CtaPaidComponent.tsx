@@ -50,7 +50,7 @@ export const CtaPaid: FC<CtaPaidProps> = ({
         backgroundImage={backgroundImage}
         backgroundColor={backgroundColor}
         image={{
-          source: image?.source,
+          source: image?.src,
           order: image?.order,
         }}
         box={{

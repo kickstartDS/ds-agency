@@ -24,19 +24,19 @@
         "properties": {
           "headline": {
             "title": "Headline",
-            "description": "Headline for the visual",
+            "description": "Headline for the tile",
             "type": "string",
             "examples": ["Headline"]
           },
           "sub": {
             "title": "Module Subheadline",
-            "description": "Subheadline below the module headline",
+            "description": "Subheadline below the tile headline",
             "type": "string",
             "examples": ["Subheadline"]
           },
           "text": {
             "title": "Module Text",
-            "description": "Info text for the module element",
+            "description": "Text for tile",
             "type": "string",
             "examples": [
               "Autem voluptas quis facere et qui voluptate earum. Dolorum totam animi perferendis. Est est et dolor maiores vero architecto aperiam. Quo et et aut neque neque reiciendis nihil aut. Culpa et consequuntur omnis."
@@ -44,7 +44,7 @@
           },
           "image": {
             "title": "Tile Image",
-            "description": "Info text for the module element",
+            "description": "Image source for the tile",
             "type": "string",
             "examples": ["img/team.png", "img/agency.png"]
           },

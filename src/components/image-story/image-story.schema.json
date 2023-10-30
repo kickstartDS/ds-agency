@@ -51,7 +51,7 @@
       "description": "Image displayed alongside the text content",
       "type": "object",
       "properties": {
-        "source": {
+        "src": {
           "title": "Image source",
           "description": "Image source to use",
           "type": "string",

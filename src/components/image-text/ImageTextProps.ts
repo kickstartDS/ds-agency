@@ -28,7 +28,7 @@ export type Layout = "above" | "below" | "beside-right" | "beside-left";
 export interface ImageTextProps {
   text: Text;
   image: {
-    source?: ImageSource;
+    src?: ImageSource;
     alt?: AltText;
   };
   layout: Layout;

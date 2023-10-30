@@ -22,7 +22,7 @@ export const AboveLayout: Story = {
   args: pack({
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
     image: {
-      source: "img/agency.png",
+      src: "img/agency.png",
       alt: "Agency",
     },
     layout: "above",
@@ -33,7 +33,7 @@ export const BesideRightLayout: Story = {
   args: pack({
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
     image: {
-      source: "img/agency.png",
+      src: "img/agency.png",
       alt: "Agency",
     },
     layout: "beside-right",

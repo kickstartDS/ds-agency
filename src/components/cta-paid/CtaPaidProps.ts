@@ -87,7 +87,7 @@ export interface CtaPaidProps {
  * Image displayed alongside the text content
  */
 export interface Image {
-  source?: ImageSource;
+  src?: ImageSource;
   ratio?: ImageAspectRatio;
   vAlign?: ImageVerticalAlignment;
   hAlign?: ImageHorizontalAlignment;

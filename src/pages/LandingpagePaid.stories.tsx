@@ -23,7 +23,7 @@ const Page = () => (
         text={`
 Elevate your digital presence with us. We create impactful digital experiences that deliver tangible results. With over 15+ years of expertise in design systems, headless CMSs, and frontend development, let's shape your digital future together.`}
         image={{
-          source: "img/agency.png",
+          src: "img/agency.png",
           order: {
             desktopImageLast: true,
           },
@@ -106,7 +106,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
 Ready to make your digital journey exceptional?
        `}
         image={{
-          source: "img/agency.png",
+          src: "img/agency.png",
         }}
         buttons={[
           {

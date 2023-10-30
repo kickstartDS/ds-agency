@@ -48,7 +48,7 @@ export const ImageStory: FC<ImageStoryProps> = ({
         className={classnames("c-image-story")}
         full={padding === false ? true : false}
         image={{
-          source: image?.source,
+          source: image?.src,
           order: {
             desktopImageLast: layout === "imageLeft" ? false : true,
           },

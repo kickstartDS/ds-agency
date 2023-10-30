@@ -93,7 +93,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
 
 Ready to make your digital journey exceptional?`}
         image={{
-          source: "img/team.png",
+          src: "img/team.png",
           alt: "Alt text for the image",
         }}
         layout="above"
@@ -112,7 +112,7 @@ Ready to make your digital journey exceptional?`}
 Own a design system without investing years of development. Our approach to design systems
 We value efficiency without compromising quality. Our secret weapon? kickstartDS, a revolutionary code-first framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever. `}
         image={{
-          source: "img/agency.png",
+          src: "img/agency.png",
           alt: "Alt text for the image",
         }}
         layout="below"

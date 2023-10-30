@@ -66,7 +66,7 @@ export interface ImageStoryProps {
  * Image displayed alongside the text content
  */
 export interface Image {
-  source?: ImageSource;
+  src?: ImageSource;
   ratio?: ImageAspectRatio;
   alt?: AltText;
 }

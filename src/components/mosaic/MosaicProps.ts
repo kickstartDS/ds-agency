@@ -14,19 +14,19 @@ export type Layout = "alternate" | "textLeft" | "textRight";
  */
 export type LargeHeadlines = boolean;
 /**
- * Headline for the visual
+ * Headline for the tile
  */
 export type Headline = string;
 /**
- * Subheadline below the module headline
+ * Subheadline below the tile headline
  */
 export type ModuleSubheadline = string;
 /**
- * Info text for the module element
+ * Text for tile
  */
 export type ModuleText = string;
 /**
- * Info text for the module element
+ * Image source for the tile
  */
 export type TileImage = string;
 /**
