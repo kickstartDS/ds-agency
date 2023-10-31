@@ -12,8 +12,32 @@
       radial-gradient(50% 150% at 0% -50%, rgba(102, 66, 247, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
   }
 
-  &--gradient.l-section {
-    background-image: linear-gradient(90deg, rgba(102, 66, 247, 0.2) 0%, rgba(255, 68, 158, 0.2) 100%);
+  &--glow.l-section {
+    background-image: radial-gradient(
+      50% 50% at 50% 100%,
+      var(--ks-color-secondary-alpha-5) 0%,
+      var(--ks-color-bg-alpha-1) 100%
+    );
+  }
+
+  &--accent-transition.l-section {
+    background-image: linear-gradient(
+      180deg,
+      var(--ks-background-color-default) 0%,
+      var(--ks-background-color-accent) 100%
+    );
+  }
+
+  &--vertical-gradient.l-section {
+    background-image: linear-gradient(0deg, var(--ks-color-primary-alpha-3) 0%, var(--ks-color-secondary-alpha-3) 100%);
+  }
+
+  &--horizontal-gradient.l-section {
+    background-image: linear-gradient(
+      90deg,
+      var(--ks-color-primary-alpha-3) 0%,
+      var(--ks-color-secondary-alpha-3) 100%
+    );
   }
 
   &__buttons {

@@ -15,7 +15,15 @@ export type Width = "full" | "max" | "wide" | "default" | "narrow";
 /**
  * Style of background
  */
-export type Style = "default" | "accent" | "bold" | "stagelights" | "gradient";
+export type Style =
+  | "default"
+  | "accent"
+  | "bold"
+  | "stagelights"
+  | "horizontalGradient"
+  | "verticalGradient"
+  | "accentTransition"
+  | "glow";
 /**
  * Amount of spacing before the section
  */

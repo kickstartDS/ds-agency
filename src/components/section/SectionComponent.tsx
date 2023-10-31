@@ -44,12 +44,22 @@ export const Section = forwardRef<
       <>
         <SectionContextDefault
           {...props}
+          className={classnames(
+            style !== "default" &&
+              `l-section--${
+                style === "verticalGradient"
+                  ? "vertical-gradient"
+                  : style === "horizontalGradient"
+                  ? "horizontal-gradient"
+                  : style === "accentTransition"
+                  ? "accent-transition"
+                  : style
+              }`
+          )}
           headlineWidth={headline?.width}
           headlineAlign={headline?.align}
           contentWidth={content?.width}
           contentAlign={content?.align}
-          // @ts-expect-error
-          background={style}
           headline={
             headline
               ? {
