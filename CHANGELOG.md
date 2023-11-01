@@ -1,3 +1,15 @@
+# v2.1.1 (Wed Nov 01 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: update kickstartDS to next releases ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.1.0 (Wed Nov 01 2023)
 
 #### 🚀 Enhancement
