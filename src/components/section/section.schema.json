@@ -126,8 +126,26 @@
           "description": "Layout mode used for section contents",
           "enum": ["default", "tile", "list"],
           "default": "default"
-        },
-        "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "components": {
+      "type": "array",
+      "title": "Content",
+      "description": "Allowed components for content",
+      "items": {
+        "anyOf": [
+          {
+            "$ref": "http://schema.mydesignsystem.com/hero.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/cta.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/mosaic.schema.json"
+          }
+        ]
       }
     },
     "buttons": {

@@ -57,8 +57,8 @@ export const VideoCurtain: FC<VideoCurtainProps> = ({
             // @ts-expect-error
             link: { buttons, enabled: buttons.length > 0 },
             headline: {
-              // @ts-expect-error
               text: headline,
+              level: "h1",
               sub: sub,
               style: largeHeadline ? "h1" : undefined,
             },

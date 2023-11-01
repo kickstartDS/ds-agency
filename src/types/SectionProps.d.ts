@@ -6,6 +6,9 @@ declare module "@kickstartds/base/lib/section/typing" {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {HeroProps} from "@kickstartds/hero.schema.json/lib/hero/typing";
+import type {CtaProps} from "@kickstartds/cta.schema.json/lib/cta/typing";
+import type {MosaicProps} from "@kickstartds/mosaic.schema.json/lib/mosaic/typing";
 import type {ButtonsProps} from "@kickstartds/buttons.schema.json/lib/buttons/typing";
 
 /**
@@ -80,6 +83,10 @@ export type Gutter = "large" | "default" | "small" | "none";
  * Layout mode used for section contents
  */
 export type Mode = "default" | "tile" | "list";
+/**
+ * Allowed components for content
+ */
+export type Content = (HeroProps | CtaProps | MosaicProps)[];
 
 /**
  * Component used to layout components into pages
@@ -104,8 +111,8 @@ export interface SectionProps {
     align?: ContentAlignment;
     gutter?: Gutter;
     mode?: Mode;
-    additionalProperties?: never;
   };
+  components?: Content;
   /**
    * Referenced component ButtonsProps
    */

@@ -5,6 +5,9 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {HeroProps} from "../hero/HeroProps";
+import type {CtaProps} from "../cta/CtaProps";
+import type {MosaicProps} from "../mosaic/MosaicProps";
 import type {ButtonsProps} from "../buttons/ButtonsProps";
 
 /**
@@ -79,6 +82,10 @@ export type Gutter = "large" | "default" | "small" | "none";
  * Layout mode used for section contents
  */
 export type Mode = "default" | "tile" | "list";
+/**
+ * Allowed components for content
+ */
+export type Content = (HeroProps | CtaProps | MosaicProps)[];
 
 /**
  * Component used to layout components into pages
@@ -103,8 +110,8 @@ export interface SectionProps {
     align?: ContentAlignment;
     gutter?: Gutter;
     mode?: Mode;
-    additionalProperties?: never;
   };
+  components?: Content;
   /**
    * Referenced component ButtonsProps
    */
