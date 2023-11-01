@@ -1,3 +1,15 @@
+# v2.1.0 (Wed Nov 01 2023)
+
+#### 🚀 Enhancement
+
+- Update to more modular types [#28](https://github.com/kickstartDS/ds-agency/pull/28) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.0.31 (Tue Oct 31 2023)
 
 #### ⚠️ Pushed to `main`
