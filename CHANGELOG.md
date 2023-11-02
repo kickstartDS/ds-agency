@@ -1,3 +1,15 @@
+# v2.1.2 (Thu Nov 02 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(token): adjust token + token implementation ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.1 (Wed Nov 01 2023)
 
 #### ⚠️ Pushed to `main`
