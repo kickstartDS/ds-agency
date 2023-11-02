@@ -24,7 +24,7 @@
         "horizontalGradient",
         "verticalGradient",
         "accentTransition",
-        "primaryTransition",
+        "boldTransition",
         "glow"
       ],
       "default": "default"

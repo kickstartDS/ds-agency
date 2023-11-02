@@ -53,8 +53,8 @@ export const Section = forwardRef<
                   ? "horizontal-gradient"
                   : style === "accentTransition"
                   ? "accent-transition"
-                  : style === "primaryTransition"
-                  ? "primary-transition"
+                  : style === "boldTransition"
+                  ? "bold-transition"
                   : style
               }`
           )}

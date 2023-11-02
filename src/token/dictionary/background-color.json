@@ -459,7 +459,7 @@
       },
       "bold": {
         "base": {
-          "value": "{ks.color.primary.alpha.5.base}",
+          "value": "{ks.color.primary.to-bg.6.base}",
           "attributes": {
             "category": "color"
           },
@@ -471,7 +471,7 @@
       },
       "bold-inverted": {
         "base": {
-          "value": "{ks.color.primary-inverted.alpha.5.base}",
+          "value": "{ks.color.primary-inverted.to-bg.6.base}",
           "attributes": {
             "category": "color"
           },
