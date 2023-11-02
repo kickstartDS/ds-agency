@@ -11,7 +11,7 @@ import "./teaser-card.scss";
 export const TeaserCard = forwardRef<
   HTMLDivElement,
   TeaserCardProps & HTMLAttributes<HTMLDivElement>
->(({ headline, text, target, image, inverted, ...props }, ref) => {
+>(({ headline, text, target, image, label, ...props }, ref) => {
   return (
     <TeaserBoxContextDefault
       {...props}
@@ -19,13 +19,19 @@ export const TeaserCard = forwardRef<
       ratio={"4:3"}
       topic={headline}
       text={text}
+      // @ts-expect-error
+      renderTopic={() => (
+        <>
+          {label ? <span className="c-teaser__label">{label}</span> : ""}
+          {headline}
+        </>
+      )}
       link={{
         label: "Read more",
         variant: "secondary",
         target: target,
       }}
       image={image}
-      inverted={inverted}
       ref={ref}
     />
   );

@@ -17,6 +17,11 @@
       "description": "Body text for the teaser card",
       "format": "markdown"
     },
+    "label": {
+      "type": "string",
+      "title": "Label",
+      "description": "Label for the Teaser Card"
+    },
     "target": {
       "type": "string",
       "title": "Target",
@@ -28,12 +33,6 @@
       "title": "Image",
       "description": "Image to display as cover",
       "format": "uri"
-    },
-    "inverted": {
-      "type": "boolean",
-      "title": "Invert card?",
-      "description": "Whether to invert the card",
-      "default": false
     }
   },
   "additionalProperties": false,

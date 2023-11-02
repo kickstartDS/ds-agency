@@ -153,16 +153,19 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
       }}
     >
       <TeaserCard
+        label="Label"
         target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
       />
       <TeaserCard
+        label="Label"
         target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
       />
       <TeaserCard
+        label="Label"
         target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"

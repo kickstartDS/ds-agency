@@ -14,6 +14,10 @@ export type Headline = string;
  */
 export type Text = string;
 /**
+ * Label for the Teaser Card
+ */
+export type Label = string;
+/**
  * Target that should be linked
  */
 export type Target = string;
@@ -21,10 +25,6 @@ export type Target = string;
  * Image to display as cover
  */
 export type Image = string;
-/**
- * Whether to invert the card
- */
-export type InvertCard = boolean;
 
 /**
  * Component used to tease content
@@ -32,7 +32,7 @@ export type InvertCard = boolean;
 export interface TeaserCardProps {
   headline?: Headline;
   text?: Text;
+  label?: Label;
   target?: Target;
   image?: Image;
-  inverted?: InvertCard;
 }

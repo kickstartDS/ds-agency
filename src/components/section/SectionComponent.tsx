@@ -12,7 +12,7 @@ import "./section.scss";
 
 export const Section = forwardRef<
   HTMLDivElement,
-  SectionProps & Omit<HTMLAttributes<HTMLElement>, "style">
+  SectionProps & Omit<HTMLAttributes<HTMLElement>, "style" | "content">
 >(
   (
     {
