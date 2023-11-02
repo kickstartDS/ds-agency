@@ -1,3 +1,15 @@
+# v2.1.10 (Thu Nov 02 2023)
+
+#### 🐛 Bug Fix
+
+- Prepare schemas for CMS consumption [#30](https://github.com/kickstartDS/ds-agency/pull/30) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.1.9 (Thu Nov 02 2023)
 
 #### ⚠️ Pushed to `main`
