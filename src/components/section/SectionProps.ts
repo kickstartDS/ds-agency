@@ -8,6 +8,23 @@
 import type {HeroProps} from "../hero/HeroProps";
 import type {CtaProps} from "../cta/CtaProps";
 import type {MosaicProps} from "../mosaic/MosaicProps";
+import type {CtaPaidProps} from "../cta-paid/CtaPaidProps";
+import type {FaqProps} from "../faq/FaqProps";
+import type {FeaturesProps} from "../features/FeaturesProps";
+import type {GalleryProps} from "../gallery/GalleryProps";
+import type {HeadlineProps} from "../headline/HeadlineProps";
+import type {ImageStoryProps} from "../image-story/ImageStoryProps";
+import type {SplitProps} from "../split/SplitProps";
+import type {StatsProps} from "../stats/StatsProps";
+import type {StatsPaidProps} from "../stats-paid/StatsPaidProps";
+import type {TeaserCardProps} from "../teaser-card/TeaserCardProps";
+import type {TestimonialsProps} from "../testimonials/TestimonialsProps";
+import type {TestimonialsPaidProps} from "../testimonials-paid/TestimonialsPaidProps";
+import type {TextProps} from "../text/TextProps";
+import type {VideoCurtainProps} from "../video-curtain/VideoCurtainProps";
+import type {ImageTextProps} from "../image-text/ImageTextProps";
+import type {LogosProps} from "../logos/LogosProps";
+import type {LogosPaidProps} from "../logos-paid/LogosPaidProps";
 import type {ButtonsProps} from "../buttons/ButtonsProps";
 
 /**
@@ -85,7 +102,28 @@ export type Mode = "default" | "tile" | "list";
 /**
  * Allowed components for content
  */
-export type Content = (HeroProps | CtaProps | MosaicProps)[];
+export type Content = (
+  | HeroProps
+  | CtaProps
+  | MosaicProps
+  | CtaPaidProps
+  | FaqProps
+  | FeaturesProps
+  | GalleryProps
+  | HeadlineProps
+  | ImageStoryProps
+  | SplitProps
+  | StatsProps
+  | StatsPaidProps
+  | TeaserCardProps
+  | TestimonialsProps
+  | TestimonialsPaidProps
+  | TextProps
+  | VideoCurtainProps
+  | ImageTextProps
+  | LogosProps
+  | LogosPaidProps
+)[];
 
 /**
  * Component used to layout components into pages

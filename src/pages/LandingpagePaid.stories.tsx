@@ -2,7 +2,7 @@ import { Section } from "../components/section/SectionComponent";
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
 import { CtaPaid } from "../components/cta-paid/CtaPaidComponent";
 import { Hero } from "../components/hero/HeroComponent";
-import { FAQ } from "../components/faq/FaqComponent";
+import { Faq } from "../components/faq/FaqComponent";
 import { Header } from "../components/header/HeaderComponent";
 import { headerProps } from "../components/header/Header.stories";
 import { Footer } from "../components/footer/FooterComponent";
@@ -234,7 +234,7 @@ We value efficiency without compromising quality. Our secret weapon? kickstartDS
         text: "Design Systems & Headless FAQs",
       }}
     >
-      <FAQ
+      <Faq
         questions={[
           {
             question: "What is a Design System?",

@@ -1,9 +1,9 @@
 import { HTMLAttributes, FC } from "react";
-import { FAQProps } from "./FaqProps";
+import { FaqProps } from "./FaqProps";
 import "./faq.scss";
 import { CollapsibleBox } from "@kickstartds/base/lib/collapsible-box";
 
-export const FAQ: FC<FAQProps & HTMLAttributes<HTMLElement>> = ({
+export const Faq: FC<FaqProps & HTMLAttributes<HTMLElement>> = ({
   questions,
 }) => {
   return (

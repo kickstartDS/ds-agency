@@ -6,7 +6,7 @@
  */
 
 /**
- * The questions and answers in the FAQ section
+ * The questions and answers in the Faq section
  *
  * @minItems 1
  */
@@ -30,8 +30,8 @@ export type Question = string;
 export type Answer = string;
 
 /**
- * Component used to display a FAQ section
+ * Component used to display a Faq section
  */
-export interface FAQProps {
+export interface FaqProps {
   questions: Questions;
 }

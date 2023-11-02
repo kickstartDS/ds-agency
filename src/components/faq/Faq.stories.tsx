@@ -2,12 +2,12 @@ import { Meta, StoryObj } from "@storybook/react";
 import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
-import { FAQ } from "./FaqComponent";
+import { Faq } from "./FaqComponent";
 import schema from "./faq.schema.json";
 
-const meta: Meta<typeof FAQ> = {
-  title: "Components/FAQ",
-  component: FAQ,
+const meta: Meta<typeof Faq> = {
+  title: "Components/Faq",
+  component: Faq,
   parameters: {
     jsonSchema: {
       schema,
@@ -17,7 +17,7 @@ const meta: Meta<typeof FAQ> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof FAQ>;
+type Story = StoryObj<typeof Faq>;
 
 export const SingleDropdown: Story = {};
 SingleDropdown.args = pack({

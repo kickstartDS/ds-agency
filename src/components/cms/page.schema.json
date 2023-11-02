@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://schema.kickstartds.com/cms/page.schema.json",
+  "$id": "http://schema.mydesignsystem.com/cms/page.schema.json",
   "title": "Page",
   "description": "Abstracts a page concept into JSON schema",
   "type": "object",

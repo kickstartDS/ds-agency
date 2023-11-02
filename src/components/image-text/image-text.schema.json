@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://schema.mydesignsystem.com/imageText.schema.json",
+  "$id": "http://schema.mydesignsystem.com/image-text.schema.json",
   "title": "Image Text",
   "description": "Component used to display an image beside or above/below a text block",
   "type": "object",
