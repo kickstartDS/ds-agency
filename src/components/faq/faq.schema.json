@@ -1,14 +1,14 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://schema.mydesignsystem.com/faq.schema.json",
-  "title": "FAQ",
-  "description": "Component used to display a FAQ section",
+  "title": "Faq",
+  "description": "Component used to display a Faq section",
   "type": "object",
   "properties": {
     "questions": {
       "type": "array",
       "title": "Questions",
-      "description": "The questions and answers in the FAQ section",
+      "description": "The questions and answers in the Faq section",
       "items": {
         "type": "object",
         "properties": {

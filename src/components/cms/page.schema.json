@@ -1,33 +1,17 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://schema.kickstartds.com/cms/page.schema.json",
+  "$id": "http://schema.mydesignsystem.com/cms/page.schema.json",
   "title": "Page",
   "description": "Abstracts a page concept into JSON schema",
   "type": "object",
   "required": ["id", "slug", "layout", "title"],
   "properties": {
-    "id": {
-      "type": "string",
-      "title": "ID",
-      "description": "Identifying uuid for the page",
-      "format": "uuid"
-    },
-    "slug": {
-      "type": "string",
-      "title": "Slug",
-      "description": "URL slug for the page"
-    },
     "layout": {
       "type": "string",
       "title": "Layout",
       "description": "Choose a layout for the page",
       "enum": ["default", "content", "blog-list", "blog-detail", "glossary"],
       "default": "default"
-    },
-    "title": {
-      "type": "string",
-      "title": "Title",
-      "description": "Title used for the page"
     },
     "description": {
       "type": "string",

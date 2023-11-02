@@ -145,6 +145,57 @@
           },
           {
             "$ref": "http://schema.mydesignsystem.com/mosaic.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/cta-paid.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/faq.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/features.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/gallery.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/headline.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/image-story.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/split.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/stats.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/stats-paid.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/teaser-card.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/testimonials.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/testimonials-paid.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/text.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/video-curtain.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/image-text.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/logos.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/logos-paid.schema.json"
           }
         ]
       }
