@@ -1,5 +1,7 @@
 import { HTMLAttributes, FC, PropsWithChildren, forwardRef } from "react";
 
+import classnames from "classnames";
+
 import {
   TeaserBoxContextDefault,
   TeaserBoxContext,
@@ -15,7 +17,7 @@ export const TeaserCard = forwardRef<
   return (
     <TeaserBoxContextDefault
       {...props}
-      className="c-teaser--card"
+      className={classnames(`c-teaser-card`, label && `c-teaser-card--label`)}
       ratio={"4:3"}
       topic={headline}
       text={text}

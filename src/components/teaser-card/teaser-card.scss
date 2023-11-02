@@ -1,23 +1,28 @@
 @use "teaser-card-tokens.scss";
 
-.c-teaser--card {
+.c-teaser-card {
   position: relative;
   overflow: visible;
 
-  margin-top: calc(calc(var(--ks-line-height-interface-m) * 0.5rem) + var(--ks-spacing-xs));
+  img {
+    border-radius: var(--c-teaser--border-radius) var(--c-teaser--border-radius) 0 0;
+  }
 
-  .c-teaser__label {
-    border-radius: var(--ks-border-radius-pill);
-    pointer-events: initial;
-    padding: var(--ks-spacing-xs) 1em;
-    transform: translate(0.5em, -50%);
-    font: var(--ks-font-interface-m);
-    text-align: center;
-    font-weight: var(--ks-font-weight-medium);
-    color: var(--ks-color-fg);
-    position: absolute;
-    background: var(--ks-background-color-primary);
-    top: 0;
-    right: 0;
+  &--label {
+    margin-top: calc(calc(var(--ks-line-height-interface-m) * 0.5rem) + var(--ks-spacing-xs));
+    .c-teaser__label {
+      border-radius: var(--ks-border-radius-pill);
+      pointer-events: initial;
+      padding: var(--ks-spacing-xs) 1em;
+      transform: translate(0.5em, -50%);
+      font: var(--ks-font-interface-m);
+      text-align: center;
+      font-weight: var(--ks-font-weight-medium);
+      color: var(--ks-color-fg-base);
+      position: absolute;
+      background: var(--ks-color-primary-inverted);
+      top: 0;
+      right: 0;
+    }
   }
 }
