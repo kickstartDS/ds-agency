@@ -43,7 +43,7 @@ Elevate your digital presence with us. We create impactful digital experiences t
       />
     </Section>
 
-    <Section style="primaryTransition" width="wide">
+    <Section width="wide">
       <StatsPaid
         stats={[
           {
