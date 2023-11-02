@@ -1317,13 +1317,167 @@
             "b": 31,
             "a": 1
           },
-
           "attributes": {
             "category": "color"
           },
           "token": {
             "category": "Colors: Foreground",
             "presenter": "Color"
+          }
+        },
+        "alpha": {
+          "9": {
+            "base": {
+              "value": {
+                "r": 6,
+                "g": 8,
+                "b": 31,
+                "a": 0.95
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background",
+                "presenter": "Color"
+              }
+            }
+          },
+          "8": {
+            "base": {
+              "value": {
+                "r": 6,
+                "g": 8,
+                "b": 31,
+                "a": 0.87
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background",
+                "presenter": "Color"
+              }
+            }
+          },
+          "7": {
+            "base": {
+              "value": {
+                "r": 6,
+                "g": 8,
+                "b": 31,
+                "a": 0.76
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background",
+                "presenter": "Color"
+              }
+            }
+          },
+          "6": {
+            "base": {
+              "value": {
+                "r": 6,
+                "g": 8,
+                "b": 31,
+                "a": 0.63
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background",
+                "presenter": "Color"
+              }
+            }
+          },
+          "5": {
+            "base": {
+              "value": {
+                "r": 6,
+                "g": 8,
+                "b": 31,
+                "a": 0.5
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background",
+                "presenter": "Color"
+              }
+            }
+          },
+          "4": {
+            "base": {
+              "value": {
+                "r": 6,
+                "g": 8,
+                "b": 31,
+                "a": 0.37
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background",
+                "presenter": "Color"
+              }
+            }
+          },
+          "3": {
+            "base": {
+              "value": {
+                "r": 6,
+                "g": 8,
+                "b": 31,
+                "a": 0.24
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background",
+                "presenter": "Color"
+              }
+            }
+          },
+          "2": {
+            "base": {
+              "value": {
+                "r": 6,
+                "g": 8,
+                "b": 31,
+                "a": 0.13
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background",
+                "presenter": "Color"
+              }
+            }
+          },
+          "1": {
+            "base": {
+              "value": {
+                "r": 6,
+                "g": 8,
+                "b": 31,
+                "a": 0.050000000000000044
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background",
+                "presenter": "Color"
+              }
+            }
           }
         }
       },
@@ -1341,6 +1495,161 @@
           "token": {
             "category": "Colors: Foreground",
             "presenter": "Color"
+          }
+        },
+        "alpha": {
+          "9": {
+            "base": {
+              "value": {
+                "r": 247,
+                "g": 250,
+                "b": 252,
+                "a": 0.95
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background",
+                "presenter": "Color"
+              }
+            }
+          },
+          "8": {
+            "base": {
+              "value": {
+                "r": 247,
+                "g": 250,
+                "b": 252,
+                "a": 0.87
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background",
+                "presenter": "Color"
+              }
+            }
+          },
+          "7": {
+            "base": {
+              "value": {
+                "r": 247,
+                "g": 250,
+                "b": 252,
+                "a": 0.76
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background",
+                "presenter": "Color"
+              }
+            }
+          },
+          "6": {
+            "base": {
+              "value": {
+                "r": 247,
+                "g": 250,
+                "b": 252,
+                "a": 0.63
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background",
+                "presenter": "Color"
+              }
+            }
+          },
+          "5": {
+            "base": {
+              "value": {
+                "r": 247,
+                "g": 250,
+                "b": 252,
+                "a": 0.5
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background",
+                "presenter": "Color"
+              }
+            }
+          },
+          "4": {
+            "base": {
+              "value": {
+                "r": 247,
+                "g": 250,
+                "b": 252,
+                "a": 0.37
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background",
+                "presenter": "Color"
+              }
+            }
+          },
+          "3": {
+            "base": {
+              "value": {
+                "r": 247,
+                "g": 250,
+                "b": 252,
+                "a": 0.24
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background",
+                "presenter": "Color"
+              }
+            }
+          },
+          "2": {
+            "base": {
+              "value": {
+                "r": 247,
+                "g": 250,
+                "b": 252,
+                "a": 0.13
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background",
+                "presenter": "Color"
+              }
+            }
+          },
+          "1": {
+            "base": {
+              "value": {
+                "r": 247,
+                "g": 250,
+                "b": 252,
+                "a": 0.050000000000000044
+              },
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background",
+                "presenter": "Color"
+              }
+            }
           }
         }
       },
