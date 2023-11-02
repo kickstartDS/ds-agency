@@ -456,6 +456,30 @@
             }
           }
         }
+      },
+      "bold": {
+        "base": {
+          "value": "{ks.color.primary.alpha.5.base}",
+          "attributes": {
+            "category": "color"
+          },
+          "token": {
+            "category": "Colors: Background bold",
+            "presenter": "Color"
+          }
+        }
+      },
+      "bold-inverted": {
+        "base": {
+          "value": "{ks.color.primary-inverted.alpha.5.base}",
+          "attributes": {
+            "category": "color"
+          },
+          "token": {
+            "category": "Colors: Background Bold",
+            "presenter": "Color"
+          }
+        }
       }
     }
   }

@@ -48,11 +48,15 @@
     );
   }
 
-  &--primary-transition.l-section {
+  &--bold.l-section {
+    background-color: var(--ks-background-color-bold);
+  }
+
+  &--bold-transition.l-section {
     background-image: linear-gradient(
       180deg,
       var(--ks-background-color-default) 0%,
-      var(--ks-background-color-primary) 100%
+      var(--ks-background-color-bold) 100%
     );
   }
 
