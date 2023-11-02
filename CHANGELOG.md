@@ -1,3 +1,16 @@
+# v2.1.3 (Thu Nov 02 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(teaser-card): additional styling for teaserCard tag ([@fleven-kds](https://github.com/fleven-kds))
+- feat(TeaserCard): add label to teaser Card ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.2 (Thu Nov 02 2023)
 
 #### ⚠️ Pushed to `main`
