@@ -6,28 +6,12 @@
   "type": "object",
   "required": ["id", "slug", "layout", "title"],
   "properties": {
-    "id": {
-      "type": "string",
-      "title": "ID",
-      "description": "Identifying uuid for the page",
-      "format": "uuid"
-    },
-    "slug": {
-      "type": "string",
-      "title": "Slug",
-      "description": "URL slug for the page"
-    },
     "layout": {
       "type": "string",
       "title": "Layout",
       "description": "Choose a layout for the page",
       "enum": ["default", "content", "blog-list", "blog-detail", "glossary"],
       "default": "default"
-    },
-    "title": {
-      "type": "string",
-      "title": "Title",
-      "description": "Title used for the page"
     },
     "description": {
       "type": "string",
