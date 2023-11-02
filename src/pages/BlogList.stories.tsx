@@ -5,7 +5,12 @@ import { BlogTeaser } from "../components/blog-teaser/BlogTeaserComponent";
 
 const Page = () => (
   <>
-    <Section align="left" width="wide" headline="Featured article">
+    <Section
+      width="wide"
+      headline={{
+        text: "Featured article",
+      }}
+    >
       <BlogTeaser
         date="12/30/2022"
         tags={["Design Systems", "Headless Websites", "Training"]}
@@ -18,9 +23,10 @@ const Page = () => (
       />
     </Section>
     <Section
-      align="center"
       width="wide"
-      headline="More articles"
+      headline={{
+        text: "More articles",
+      }}
       buttons={[{ label: "Load more", target: "#" }]}
     >
       <BlogTeaser

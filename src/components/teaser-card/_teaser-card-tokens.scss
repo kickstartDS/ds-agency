@@ -3,10 +3,10 @@
 :root {
   .c-teaser.c-teaser--card {
     --g-topic--font: var(--ks-font-display-m);
-    --c-teaser--background: var(--ks-color-primary-to-bg-7);
+    --c-teaser--background: var(--ks-color-fg-inverted-alpha-7);
     --c-teaser--color: var(--ks-color-fg-to-bg-3);
     --c-teaser--border: 1px solid var(--ks-color-fg-alpha-2);
-    --c-teaser--shadow-hover: 0px 0px 1px 1px var(--ks-color-primary-inverted-alpha-5-base),
-      0px 0px 10px 2px var(--ks-color-primary-base);
+    --c-teaser--border-radius: var(--ks-border-radius-card);
+    --c-teaser--shadow-hover: 0px 0px 10px 2px var(--ks-color-fg-alpha-5);
   }
 }

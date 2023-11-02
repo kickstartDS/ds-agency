@@ -1,6 +1,26 @@
 @use "section-tokens.scss";
 
 .l-section {
+  .l-section__content {
+    padding: 0;
+
+    .l-section__container {
+      padding: 0 var(--l-section--content-padding);
+    }
+
+    &.l-section__content--full {
+      .l-section__container {
+        padding: 0;
+
+        &--default,
+        &--narrow,
+        &--wide {
+          padding: 0 var(--l-section--content-padding);
+        }
+      }
+    }
+  }
+
   &.l-section--align-center {
     .l-section__buttons {
       justify-content: center;

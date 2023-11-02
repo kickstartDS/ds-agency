@@ -7,16 +7,16 @@
     --c-button--font-weight: var(--ks-font-weight-medium);
 
     &--solid {
-      --c-button--color: var(--ks-color-primary-inverted-alpha-8);
-      --c-button--color-hover: var(--ks-color-primary-inverted);
-      --c-button--background-color: var(--ks-color-primary-alpha-9);
+      --c-button--color: var(--ks-color-fg-alpha-8-base);
+      --c-button--color-hover: var(--ks-color-fg-base);
+      --c-button--background-color: var(--ks-color-primary);
       --c-button--background-color-hover: var(--ks-color-primary);
 
-      --c-button--shadow: 0px 0px 2px 1px var(--ks-color-primary-inverted-alpha-6-base),
-        0px 0px 19px 2px var(--ks-color-primary-alpha-8-base);
+      --c-button--shadow: 0px 0px 2px 1px var(--ks-color-fg-alpha-6-base),
+        0px 0px 19px 2px var(--ks-color-primary-alpha-8);
 
-      --c-button--shadow-hover: 0px 0px 2px 1px var(--ks-color-primary-inverted-alpha-9-base),
-        0px 0px 19px 4px var(--ks-color-primary-base);
+      --c-button--shadow-hover: 0px 0px 2px 1px var(--ks-color-fg-alpha-9-base),
+        0px 0px 19px 4px var(--ks-color-primary);
     }
 
     &--clear {
@@ -37,15 +37,15 @@
       --c-button--color-hover: var(--ks-color-fg);
       --c-button--color-active: var(--ks-color-fg);
 
-      --c-button--border-color: var(--ks-color-fg-alpha-6);
-      --c-button--border-color-hover: var(--ks-color-fg);
-      --c-button--border-color-active: var(--ks-color-fg);
+      --c-button--border-color: transparent;
+      --c-button--border-color-hover: transparent;
+      --c-button--border-color-active: transparent;
 
-      --c-button--border-width: 1px;
+      --c-button--border-width: 2px;
 
-      --c-button--background-color: transparent;
-      --c-button--background-color-hover: transparent;
-      --c-button--background-color-active: transparent;
+      --c-button--background-color: var(--ks-color-fg-alpha-2);
+      --c-button--background-color-hover: var(--ks-color-fg-alpha-3);
+      --c-button--background-color-active: var(--ks-color-fg-alpha-3);
     }
   }
 

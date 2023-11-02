@@ -14,33 +14,6 @@ import { ImageStory } from "../components/image-story/ImageStoryComponent";
 const Page = () => (
   <>
     <Header {...headerProps} floating />
-
-    <Section inverted style="accentTransition" width="full">
-      <Hero
-        buttons={[
-          {
-            icon: "person",
-            label: "Book a meeting",
-            target: undefined,
-          },
-        ]}
-        headline="Our Approach to Design Systems"
-        height="fullImage"
-        image={{
-          alt: undefined,
-          indent: "none",
-          src: "https://picsum.photos/seed/kdsvisual/640/270",
-          srcDesktop: "img/hero-below.png",
-          srcMobile: "img/hero.png",
-          srcTablet: "img/hero-below.png",
-        }}
-        largeHeadline
-        text="Own a design system without investing years of development. Our approach to design systems
-We value efficiency without compromising quality. Our secret weapon? kickstartDS, a revolutionary code-first framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever."
-        textPosition="below"
-      />
-    </Section>
-
     <Section spaceBefore="none" width="full">
       <CtaPaid
         align="left"
@@ -101,12 +74,10 @@ Elevate your digital presence with us. We create impactful digital experiences t
       headline={{
         text: "Design System Services - Crafting Consistency, Fostering Growth",
         sub: "Here at Systemics, we bring a range of design system services that can make a difference:",
+        width: "default",
+        textAlign: "center",
       }}
       width="full"
-      content={{
-        mode: "list",
-        gutter: "none",
-      }}
       spaceAfter="none"
     >
       <ImageStory
@@ -146,6 +117,32 @@ Ready to make your digital journey exceptional?
             icon: "person",
           },
         ]}
+      />
+    </Section>
+
+    <Section style="accentTransition" width="full">
+      <Hero
+        buttons={[
+          {
+            icon: "person",
+            label: "Book a meeting",
+            target: undefined,
+          },
+        ]}
+        headline="Our Approach to Design Systems"
+        height="fullImage"
+        image={{
+          alt: undefined,
+          indent: "none",
+          src: "https://picsum.photos/seed/kdsvisual/640/270",
+          srcDesktop: "img/hero-below.png",
+          srcMobile: "img/hero.png",
+          srcTablet: "img/hero-below.png",
+        }}
+        largeHeadline
+        text="Own a design system without investing years of development. Our approach to design systems
+We value efficiency without compromising quality. Our secret weapon? kickstartDS, a revolutionary code-first framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever."
+        textPosition="below"
       />
     </Section>
 
@@ -212,7 +209,7 @@ Ready to make your digital journey exceptional?
         ]}
       />
     </Section>
-    <Section spaceAfter="none" spaceBefore="none" width="full" inverted>
+    <Section spaceAfter="none" spaceBefore="none" width="full">
       <CtaPaid
         align="left"
         largeHeadline

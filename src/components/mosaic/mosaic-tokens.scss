@@ -24,8 +24,8 @@
 
   .c-visual-slider {
     --c-visual-slider_nav--border-bottom-color: var(--ks-color-fg-alpha-2);
-    --c-visual-slider_preview--color-hover: var(--ks-color-secondary);
-    --c-visual-slider_preview--color-active: var(--ks-color-secondary);
+    --c-visual-slider_preview--color-hover: var(--ks-text-color-primary-interactive);
+    --c-visual-slider_preview--color-active: var(--ks-text-color-primary-interactive);
     --c-visual-slider_preview--background-hover: transparent;
   }
 }
