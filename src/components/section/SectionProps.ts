@@ -25,6 +25,7 @@ export type Style =
   | "horizontalGradient"
   | "verticalGradient"
   | "accentTransition"
+  | "primaryTransition"
   | "glow";
 /**
  * Amount of spacing before the section

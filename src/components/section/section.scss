@@ -48,6 +48,14 @@
     );
   }
 
+  &--primary-transition.l-section {
+    background-image: linear-gradient(
+      180deg,
+      var(--ks-background-color-default) 0%,
+      var(--ks-background-color-primary) 100%
+    );
+  }
+
   &--vertical-gradient.l-section {
     background-image: linear-gradient(0deg, var(--ks-color-primary-alpha-3) 0%, var(--ks-color-secondary-alpha-3) 100%);
   }
