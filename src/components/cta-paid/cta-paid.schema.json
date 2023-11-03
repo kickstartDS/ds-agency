@@ -10,7 +10,6 @@
       "type": "string",
       "examples": ["Headline"]
     },
-
     "largeHeadline": {
       "type": "boolean",
       "title": "Large Headline",
@@ -37,7 +36,6 @@
       "type": "boolean",
       "default": false
     },
-
     "buttons": {
       "$ref": "http://schema.mydesignsystem.com/buttons.schema.json"
     },
@@ -59,25 +57,18 @@
           "format": "image",
           "examples": ["img/agency.png"]
         },
-        "ratio": {
-          "title": "Image aspect ratio",
-          "description": "Select an aspect ratio to use for cropping and displaying the image",
-          "type": "string",
-          "enum": ["4:3", "3:2", "16:9", "1:1", "none"],
-          "default": "none"
-        },
         "vAlign": {
           "title": "Image vertical alignment",
           "description": "Select a vertical alignment for the image",
           "type": "string",
-          "enum": ["center", "top", "top-edge", "bottom", "bottom-edge"],
+          "enum": ["center", "top", "bottom"],
           "default": "center"
         },
         "hAlign": {
           "title": "Image horizontal alignment",
           "description": "Select a horizontal alignment for the image",
           "type": "string",
-          "enum": ["center", "left", "left-edge", "right", "right-edge"],
+          "enum": ["center", "left", "right"],
           "default": "center"
         },
         "padding": {

@@ -46,7 +46,16 @@ export const CtaPaid: FC<CtaPaidProps> = ({
       value={ButtonGroup}
     >
       <Storytelling
-        className={classnames("c-cta", fullWidth ? `c-cta--full-width` : "")}
+        className={classnames(
+          "c-cta",
+          fullWidth ? `c-cta--full-width` : "",
+          image?.hAlign && image?.hAlign !== "center"
+            ? `c-cta--image-h-${image?.hAlign}`
+            : "",
+          image?.vAlign && image?.vAlign !== "center"
+            ? `c-cta--image-v-${image?.vAlign}`
+            : ""
+        )}
         backgroundImage={backgroundImage}
         backgroundColor={backgroundColor}
         full={image?.padding === false}

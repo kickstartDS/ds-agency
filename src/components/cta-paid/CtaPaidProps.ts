@@ -40,17 +40,13 @@ export type BackgroundImage = string;
  */
 export type ImageSource = string;
 /**
- * Select an aspect ratio to use for cropping and displaying the image
- */
-export type ImageAspectRatio = "4:3" | "3:2" | "16:9" | "1:1" | "none";
-/**
  * Select a vertical alignment for the image
  */
-export type ImageVerticalAlignment = "center" | "top" | "top-edge" | "bottom" | "bottom-edge";
+export type ImageVerticalAlignment = "center" | "top" | "bottom";
 /**
  * Select a horizontal alignment for the image
  */
-export type ImageHorizontalAlignment = "center" | "left" | "left-edge" | "right" | "right-edge";
+export type ImageHorizontalAlignment = "center" | "left" | "right";
 /**
  * Toggle padding of the image
  */
@@ -92,7 +88,6 @@ export interface CtaPaidProps {
  */
 export interface Image {
   src?: ImageSource;
-  ratio?: ImageAspectRatio;
   vAlign?: ImageVerticalAlignment;
   hAlign?: ImageHorizontalAlignment;
   padding?: Padding;
