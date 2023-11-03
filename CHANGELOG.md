@@ -1,3 +1,15 @@
+# v2.1.12 (Fri Nov 03 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(ctaPaid): adjust image alignment props ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.11 (Fri Nov 03 2023)
 
 #### ⚠️ Pushed to `main`
