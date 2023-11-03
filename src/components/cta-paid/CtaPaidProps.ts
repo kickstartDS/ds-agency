@@ -52,6 +52,10 @@ export type ImageVerticalAlignment = "center" | "top" | "top-edge" | "bottom" | 
  */
 export type ImageHorizontalAlignment = "center" | "left" | "left-edge" | "right" | "right-edge";
 /**
+ * Toggle padding of the image
+ */
+export type Padding = boolean;
+/**
  * Switch to displaying the image after the text on mobile
  */
 export type MobileImageAfterText = boolean;
@@ -91,6 +95,7 @@ export interface Image {
   ratio?: ImageAspectRatio;
   vAlign?: ImageVerticalAlignment;
   hAlign?: ImageHorizontalAlignment;
+  padding?: Padding;
   order?: Order;
   alt?: AltText;
 }

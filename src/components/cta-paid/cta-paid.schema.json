@@ -10,6 +10,7 @@
       "type": "string",
       "examples": ["Headline"]
     },
+
     "largeHeadline": {
       "type": "boolean",
       "title": "Large Headline",
@@ -36,6 +37,7 @@
       "type": "boolean",
       "default": false
     },
+
     "buttons": {
       "$ref": "http://schema.mydesignsystem.com/buttons.schema.json"
     },
@@ -45,7 +47,6 @@
     "backgroundImage": {
       "$ref": "http://schema.kickstartds.com/content/storytelling.schema.json#/properties/backgroundImage"
     },
-
     "image": {
       "title": "Image",
       "description": "Image displayed alongside the text content",
@@ -78,6 +79,12 @@
           "type": "string",
           "enum": ["center", "left", "left-edge", "right", "right-edge"],
           "default": "center"
+        },
+        "padding": {
+          "title": "Padding",
+          "description": "Toggle padding of the image",
+          "type": "boolean",
+          "default": true
         },
         "order": {
           "title": "Order",

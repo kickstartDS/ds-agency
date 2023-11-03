@@ -11,12 +11,14 @@
 }
 
 .c-storytelling.c-cta {
+  --c-storytelling--vertical-padding: var(--l-section--space-default);
   --c-storytelling--horizontal-padding: var(--l-section--content-padding);
   justify-content: center;
-  padding: var(--c-storytelling--horizontal-padding) var(--l-section--content-padding);
   gap: var(--c-cta--gap);
+  padding: 0;
 
   .c-storytelling__box {
+    padding: var(--c-storytelling--vertical-padding) var(--l-section--content-padding);
     &__content {
       &--center {
         .c-cta__links {
@@ -30,14 +32,17 @@
     max-width: calc(var(--l-section--content-width-default) - calc(var(--l-section--content-padding) * 2));
   }
 
-  > .c-storytelling__image,
-  > .c-storytelling__box {
-    padding: 0;
+  > .c-storytelling__image {
+    padding: var(--c-storytelling--vertical-padding);
+  }
+  &.c-storytelling--full {
+    > .c-storytelling__image {
+      padding: 0;
+    }
   }
 
   > .c-storytelling__image,
   > .c-storytelling__box {
-    padding: 0;
     max-width: calc(
       calc(var(--l-section--content-width-wide) / 2) - var(--l-section--content-padding) - calc(var(--c-cta--gap) / 2)
     );

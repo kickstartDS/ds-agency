@@ -49,6 +49,7 @@ export const CtaPaid: FC<CtaPaidProps> = ({
         className={classnames("c-cta", fullWidth ? `c-cta--full-width` : "")}
         backgroundImage={backgroundImage}
         backgroundColor={backgroundColor}
+        full={image?.padding === false}
         image={{
           source: image?.src,
           order: image?.order,
