@@ -27,9 +27,10 @@ export const TextBelowImage: Story = {
     height: "fullImage",
     textPosition: "below",
     image: {
-      srcMobile: "img/hero.png",
-      srcTablet: "img/hero-below.png",
-      srcDesktop: "img/hero-below.png",
+      srcMobile: "img/colleagues-work-office-using-computers-looking-aside.png",
+      srcTablet: "img/colleagues-work-office-using-computers-looking-aside.png",
+      srcDesktop:
+        "img/colleagues-work-office-using-computers-looking-aside.png",
     },
   }),
 };

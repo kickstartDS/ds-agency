@@ -15,7 +15,18 @@
       --c-visual_box--border-radius: var(--ks-border-radius-surface);
     }
 
+    --c-visual_overlay--background: transparent;
+
     @container visual (min-width: 640px) {
+      --c-visual_overlay--background: radial-gradient(
+        50% 126.2% at 100% 0%,
+        rgba(255, 68, 158, 0.5) 0%,
+        rgba(7, 8, 32, 0.75) 100%
+      );
+      &.c-hero--content-below {
+        --c-visual_overlay--background: linear-gradient(0deg, var(--ks-background-color-default) 30%, transparent 70%);
+      }
+
       .c-visual__box {
         --c-visual_box--max-width: 50rem;
       }
