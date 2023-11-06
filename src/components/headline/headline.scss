@@ -7,12 +7,6 @@
   flex-direction: column;
   gap: var(--c-headline--gap);
 
-  &--align-center {
-    .c-headline__headline {
-      text-align: center;
-    }
-  }
-
   &__headline {
     font: var(--c-headline--font);
     font-weight: var(--c-headline--font-weight);
@@ -21,6 +15,16 @@
   &__subheadline {
     margin: 0;
     max-width: var(--l-section--content-width-default);
+  }
+
+  &--align-center {
+    .c-headline__headline {
+      text-align: center;
+    }
+
+    .c-headline__subheadline {
+      margin: auto;
+    }
   }
 }
 
