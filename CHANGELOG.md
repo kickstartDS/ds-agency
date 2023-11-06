@@ -1,3 +1,16 @@
+# v2.1.17 (Mon Nov 06 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(teaser): remove space reservation for label ([@fleven-kds](https://github.com/fleven-kds))
+- feat(teaser-card): increase selector specificity ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.16 (Mon Nov 06 2023)
 
 #### ⚠️ Pushed to `main`
