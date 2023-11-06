@@ -17,16 +17,21 @@
       "title": "Style",
       "description": "Style of background",
       "enum": [
-        "default",
-        "accent",
-        "bold",
         "stagelights",
         "horizontalGradient",
         "verticalGradient",
         "accentTransition",
         "boldTransition",
-        "glow"
+        "symmetricGlow",
+        "anchorGlow"
       ],
+      "default": "default"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "title": "Style",
+      "description": "Color of background",
+      "enum": ["default", "accent", "bold"],
       "default": "default"
     },
     "spaceBefore": {

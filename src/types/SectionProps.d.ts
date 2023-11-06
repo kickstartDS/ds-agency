@@ -36,15 +36,17 @@ export type Width = "full" | "max" | "wide" | "default" | "narrow";
  * Style of background
  */
 export type Style =
-  | "default"
-  | "accent"
-  | "bold"
   | "stagelights"
   | "horizontalGradient"
   | "verticalGradient"
   | "accentTransition"
   | "boldTransition"
-  | "glow";
+  | "symmetricGlow"
+  | "anchorGlow";
+/**
+ * Color of background
+ */
+export type Style1 = "default" | "accent" | "bold";
 /**
  * Amount of spacing before the section
  */
@@ -133,6 +135,7 @@ export type Content = (
 export interface SectionProps {
   width?: Width;
   style?: Style;
+  backgroundColor?: Style1;
   spaceBefore?: SpaceBefore;
   spaceAfter?: SpaceAfter;
   inverted?: Inverted;

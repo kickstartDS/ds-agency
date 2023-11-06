@@ -14,7 +14,7 @@ import { ImageStory } from "../components/image-story/ImageStoryComponent";
 const Page = () => (
   <>
     <Header {...headerProps} floating />
-    <Section spaceBefore="none" width="full">
+    <Section style="stagelights" spaceBefore="none" width="full">
       <CtaPaid
         align="left"
         headline="We simplify the process of building and scaling your **Design System**"

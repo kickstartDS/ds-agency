@@ -31,6 +31,7 @@ export const Section = forwardRef<
       },
       width = "default",
       style = "default",
+      backgroundColor = "default",
       spaceBefore = "default",
       spaceAfter = "default",
       className,
@@ -55,6 +56,10 @@ export const Section = forwardRef<
                   ? "accent-transition"
                   : style === "boldTransition"
                   ? "bold-transition"
+                  : style === "symmetricGlow"
+                  ? "symmetric-glow"
+                  : style === "anchorGlow"
+                  ? "anchor-glow"
                   : style
               }`
           )}
@@ -62,6 +67,7 @@ export const Section = forwardRef<
           headlineAlign={headline?.align}
           contentWidth={content?.width}
           contentAlign={content?.align}
+          background={backgroundColor}
           headline={
             headline
               ? {
