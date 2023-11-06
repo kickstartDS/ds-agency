@@ -1,3 +1,15 @@
+# v2.1.14 (Mon Nov 06 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(headline): limit subheadline max-width ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.13 (Fri Nov 03 2023)
 
 #### ⚠️ Pushed to `main`
