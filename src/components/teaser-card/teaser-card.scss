@@ -9,7 +9,6 @@
   }
 
   &--label {
-    margin-top: calc(calc(var(--ks-line-height-interface-m) * 0.5rem) + var(--ks-spacing-xs));
     .c-teaser__label {
       border-radius: var(--ks-border-radius-pill);
       pointer-events: initial;
