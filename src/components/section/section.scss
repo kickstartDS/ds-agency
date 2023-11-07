@@ -49,8 +49,12 @@
   }
 
   &--symmetric-glow.l-section {
-    background-image: radial-gradient(25% 25% at 100% 50%, var(--ks-color-secondary-alpha-5) 0%, transparent 100%),
-      radial-gradient(25% 25% at 0% 50%, var(--ks-color-secondary-alpha-5) 0%, transparent 100%);
+    background-image: radial-gradient(
+        20% 50% at 100% 50%,
+        var(--ks-color-primary-inverted-alpha-5) 0%,
+        transparent 100%
+      ),
+      radial-gradient(20% 50% at 0% 50%, var(--ks-color-primary-inverted-alpha-5) 0%, transparent 100%);
   }
 
   &--accent-transition.l-section {
