@@ -1,3 +1,15 @@
+# v2.1.18 (Tue Nov 07 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(section): add section padding fix ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.17 (Mon Nov 06 2023)
 
 #### ⚠️ Pushed to `main`
