@@ -17,6 +17,14 @@
         &--wide {
           padding: 0 var(--l-section--content-padding);
         }
+
+        &--left {
+          padding-left: 0;
+        }
+
+        &--right {
+          padding-right: 0;
+        }
       }
     }
   }
