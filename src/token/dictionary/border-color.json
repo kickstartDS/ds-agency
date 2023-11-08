@@ -3,7 +3,7 @@
     "border-color": {
       "accent": {
         "base": {
-          "value": "{ks.color.fg.alpha.2.base}",
+          "value": "{ks.color.fg.alpha.8.base}",
           "attributes": {
             "category": "color"
           },
@@ -15,7 +15,7 @@
       },
       "accent-inverted": {
         "base": {
-          "value": "{ks.color.fg-inverted.alpha.2.base}",
+          "value": "{ks.color.fg-inverted.alpha.8.base}",
           "attributes": {
             "category": "color"
           },
@@ -49,7 +49,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.primary.alpha.2.base}",
+              "value": "{ks.color.primary.alpha.8.base}",
               "attributes": {
                 "category": "color"
               },
@@ -61,7 +61,7 @@
           },
           "active": {
             "base": {
-              "value": "{ks.color.primary.alpha.3.base}",
+              "value": "{ks.color.primary.alpha.7.base}",
               "attributes": {
                 "category": "color"
               },
@@ -73,7 +73,7 @@
           },
           "selected": {
             "base": {
-              "value": "{ks.color.primary.alpha.4.base}",
+              "value": "{ks.color.primary.alpha.6.base}",
               "attributes": {
                 "category": "color"
               },
@@ -109,7 +109,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.primary-inverted.alpha.3.base}",
+              "value": "{ks.color.primary-inverted.alpha.7.base}",
               "attributes": {
                 "category": "color"
               },
@@ -121,7 +121,7 @@
           },
           "active": {
             "base": {
-              "value": "{ks.color.primary-inverted.alpha.4.base}",
+              "value": "{ks.color.primary-inverted.alpha.6.base}",
               "attributes": {
                 "category": "color"
               },
@@ -159,7 +159,7 @@
       },
       "default-inverted": {
         "base": {
-          "value": "{ks.color.fg.alpha.7.base}",
+          "value": "{ks.color.fg.alpha.3.base}",
           "attributes": {
             "category": "color"
           },
@@ -171,7 +171,7 @@
       },
       "interface": {
         "base": {
-          "value": "{ks.color.fg.alpha.1.base}",
+          "value": "{ks.color.fg.alpha.9.base}",
           "attributes": {
             "category": "color"
           },
@@ -182,7 +182,7 @@
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.fg.alpha.3.base}",
+            "value": "{ks.color.fg.alpha.7.base}",
             "attributes": {
               "category": "color"
             },
@@ -193,7 +193,7 @@
           },
           "disabled": {
             "base": {
-              "value": "{ks.color.fg.alpha.2.base}",
+              "value": "{ks.color.fg.alpha.8.base}",
               "attributes": {
                 "category": "color"
               },
@@ -217,7 +217,7 @@
           },
           "active": {
             "base": {
-              "value": "{ks.color.fg.alpha.7.base}",
+              "value": "{ks.color.fg.alpha.3.base}",
               "attributes": {
                 "category": "color"
               },
@@ -243,7 +243,7 @@
       },
       "interface-inverted": {
         "base": {
-          "value": "{ks.color.fg-inverted.alpha.1.base}",
+          "value": "{ks.color.fg-inverted.alpha.9.base}",
           "attributes": {
             "category": "color"
           },
@@ -265,7 +265,7 @@
           },
           "disabled": {
             "base": {
-              "value": "{ks.color.fg-inverted.alpha.8.base}",
+              "value": "{ks.color.fg-inverted.alpha.2.base}",
               "attributes": {
                 "category": "color"
               },
@@ -277,7 +277,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.fg-inverted.alpha.7.base}",
+              "value": "{ks.color.fg-inverted.alpha.3.base}",
               "attributes": {
                 "category": "color"
               },
@@ -289,7 +289,7 @@
           },
           "active": {
             "base": {
-              "value": "{ks.color.fg-inverted.alpha.9.base}",
+              "value": "{ks.color.fg-inverted.alpha.1.base}",
               "attributes": {
                 "category": "color"
               },
@@ -374,7 +374,7 @@
         },
         "translucent": {
           "base": {
-            "value": "{ks.color.primary.alpha.8.base}",
+            "value": "{ks.color.primary.alpha.2.base}",
             "attributes": {
               "category": "color"
             },
@@ -446,7 +446,7 @@
         },
         "translucent": {
           "base": {
-            "value": "{ks.color.primary-inverted.alpha.8.base}",
+            "value": "{ks.color.primary-inverted.alpha.2.base}",
             "attributes": {
               "category": "color"
             },

@@ -25,7 +25,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.fg.alpha.8.base}",
+              "value": "{ks.color.fg.alpha.2.base}",
               "attributes": {
                 "category": "color"
               },
@@ -123,7 +123,7 @@
       },
       "interface": {
         "base": {
-          "value": "{ks.color.fg.alpha.8.base}",
+          "value": "{ks.color.fg.alpha.2.base}",
           "attributes": {
             "category": "color"
           },
@@ -183,7 +183,7 @@
       },
       "interface-inverted": {
         "base": {
-          "value": "{ks.color.fg-inverted.alpha.8.base}",
+          "value": "{ks.color.fg-inverted.alpha.2.base}",
           "attributes": {
             "category": "color"
           },
@@ -254,7 +254,7 @@
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.primary-inverted.alpha.8.base}",
+            "value": "{ks.color.primary-inverted.alpha.2.base}",
             "attributes": {
               "category": "color"
             },
@@ -265,7 +265,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.primary-inverted.alpha.8.base}",
+              "value": "{ks.color.primary-inverted.alpha.2.base}",
               "attributes": {
                 "category": "color"
               },
@@ -277,7 +277,7 @@
           },
           "active": {
             "base": {
-              "value": "{ks.color.primary-inverted.alpha.8.base}",
+              "value": "{ks.color.primary-inverted.alpha.2.base}",
               "attributes": {
                 "category": "color"
               },
@@ -289,7 +289,7 @@
           },
           "visited": {
             "base": {
-              "value": "{ks.color.primary-inverted.alpha.8.base}",
+              "value": "{ks.color.primary-inverted.alpha.2.base}",
               "attributes": {
                 "category": "color"
               },
@@ -314,7 +314,7 @@
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.primary.alpha.8.base}",
+            "value": "{ks.color.primary.alpha.2.base}",
             "attributes": {
               "category": "color"
             },
@@ -325,7 +325,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.primary.alpha.8.base}",
+              "value": "{ks.color.primary.alpha.2.base}",
               "attributes": {
                 "category": "color"
               },
@@ -337,7 +337,7 @@
           },
           "active": {
             "base": {
-              "value": "{ks.color.primary.alpha.8.base}",
+              "value": "{ks.color.primary.alpha.2.base}",
               "attributes": {
                 "category": "color"
               },
@@ -349,7 +349,7 @@
           },
           "visited": {
             "base": {
-              "value": "{ks.color.primary.alpha.8.base}",
+              "value": "{ks.color.primary.alpha.2.base}",
               "attributes": {
                 "category": "color"
               },
