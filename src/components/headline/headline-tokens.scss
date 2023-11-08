@@ -3,12 +3,12 @@
 :root,
 [ks-theme],
 [ks-inverted="false"] {
-  --g-filter-drop-shadow--higlight: drop-shadow(0px 2px 30px var(--ks-color-primary-alpha-7))
+  --g-filter-drop-shadow--higlight: drop-shadow(0px 2px 30px var(--ks-color-primary-alpha-3))
     drop-shadow(0px 1px 4px var(--ks-color-fg-alpha-2));
 }
 
 [ks-inverted="true"] {
-  --g-filter-drop-shadow--higlight: drop-shadow(0px 2px 25px var(--ks-color-primary-inverted-alpha-9))
+  --g-filter-drop-shadow--higlight: drop-shadow(0px 2px 25px var(--ks-color-primary-inverted-alpha-1))
     drop-shadow(0px 1px 4px var(--ks-color-primary-inverted-alpha-4));
 }
 
