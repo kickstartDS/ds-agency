@@ -1,40 +1,6 @@
 @use "section-tokens.scss";
 
 .l-section {
-  .l-section__content {
-    padding: 0;
-
-    .l-section__container {
-      padding: 0 var(--l-section--content-padding);
-    }
-
-    &.l-section__content--full {
-      .l-section__container {
-        padding: 0;
-
-        &--default,
-        &--narrow,
-        &--wide {
-          padding: 0 var(--l-section--content-padding);
-        }
-
-        &--left {
-          padding-left: 0;
-        }
-
-        &--right {
-          padding-right: 0;
-        }
-      }
-    }
-  }
-
-  &.l-section--align-center {
-    .l-section__buttons {
-      justify-content: center;
-    }
-  }
-
   &--stagelights.l-section {
     background-image: radial-gradient(
         50% 150% at 100% -50%,
@@ -79,21 +45,5 @@
       var(--ks-color-primary-alpha-3) 0%,
       var(--ks-color-secondary-alpha-3) 100%
     );
-  }
-
-  &__buttons {
-    display: flex;
-    gap: var(--ks-spacing-stack-s) var(--ks-spacing-inline-s);
-    justify-content: center;
-
-    .l-section__container--left & {
-      justify-content: flex-start;
-    }
-  }
-
-  &__headline {
-    &--switch-order.c-headline {
-      flex-direction: column-reverse;
-    }
   }
 }
