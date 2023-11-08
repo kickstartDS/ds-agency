@@ -12,7 +12,7 @@ export const dark = create({
   // UI
   appBg: tokens.KsColorPrimaryToBg9Base,
   appContentBg: tokens.KsBackgroundColorDefaultBase,
-  appBorderColor: tokens.KsColorPrimaryAlpha2Base,
+  appBorderColor: tokens.KsColorPrimaryAlpha8Base,
   appBorderRadius: pxToNumber(tokens.KsBorderRadiusCard),
 
   // Typography
@@ -24,7 +24,7 @@ export const dark = create({
   textInverseColor: tokens.KsTextColorDefaultInvertedBase,
 
   // Toolbar default and active colors
-  barTextColor: tokens.KsColorFgAlpha7Base,
+  barTextColor: tokens.KsColorFgAlpha3Base,
   barSelectedColor: tokens.KsColorSecondaryBase,
   barBg: tokens.KsBackgroundColorDefaultBase,
 

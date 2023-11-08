@@ -21,16 +21,16 @@
     }
 
     &--clear {
-      --c-button--color: var(--ks-color-primary-inverted);
-      --c-button--color-hover: var(--ks-color-primary-inverted);
-      --c-button--color-active: var(--ks-color-primary-inverted);
+      --c-button--color: var(--ks-color-secondary);
+      --c-button--color-hover: var(--ks-color-secondary);
+      --c-button--color-active: var(--ks-color-secondary);
 
       --c-button--border-width: 0;
       padding: var(--c-button--padding);
 
-      --c-button--background-color: var(--ks-color-primary-inverted-alpha-2);
-      --c-button--background-color-hover: var(--ks-color-primary-inverted-alpha-3);
-      --c-button--background-color-active: var(--ks-color-primary-inverted-alpha-3);
+      --c-button--background-color: var(--ks-color-secondary-alpha-8);
+      --c-button--background-color-hover: var(--ks-color-secondary-alpha-7);
+      --c-button--background-color-active: var(--ks-color-secondary-alpha-7);
     }
 
     &--outline {
@@ -44,9 +44,9 @@
 
       --c-button--border-width: 2px;
 
-      --c-button--background-color: var(--ks-color-fg-alpha-2);
-      --c-button--background-color-hover: var(--ks-color-fg-alpha-3);
-      --c-button--background-color-active: var(--ks-color-fg-alpha-3);
+      --c-button--background-color: var(--ks-color-fg-alpha-8);
+      --c-button--background-color-hover: var(--ks-color-fg-alpha-7);
+      --c-button--background-color-active: var(--ks-color-fg-alpha-7);
     }
   }
 

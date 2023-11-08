@@ -3,9 +3,9 @@
 :root {
   .c-teaser.c-teaser-card {
     --g-topic--font: var(--ks-font-display-m);
-    --c-teaser--background: var(--ks-color-fg-inverted-alpha-3);
+    --c-teaser--background: var(--ks-color-fg-alpha-9);
     --c-teaser--color: var(--ks-color-fg-to-bg-3);
-    --c-teaser--border: 1px solid var(--ks-color-fg-alpha-2);
+    --c-teaser--border: 1px solid var(--ks-color-fg-alpha-8);
     --c-teaser--border-radius: var(--ks-border-radius-card);
     --c-teaser--shadow-hover: 0px 0px 10px 2px var(--ks-color-fg-alpha-5);
   }
