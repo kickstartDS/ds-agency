@@ -1,3 +1,15 @@
+# v2.1.22 (Thu Nov 09 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Add HTML props to Features Component ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.1.21 (Thu Nov 09 2023)
 
 #### ⚠️ Pushed to `main`
