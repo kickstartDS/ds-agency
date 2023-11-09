@@ -4,7 +4,7 @@ import { FeaturesProps } from "./FeaturesProps";
 import "./features.scss";
 import { Feature } from "./feature/FeatureComponent";
 
-export const Features: FC<FeaturesProps & HTMLAttributes<HTMLElement>> = ({
+export const Features: FC<FeaturesProps & HTMLAttributes<HTMLDivElement>> = ({
   layout = "largeTiles",
   ctas = {
     style: "link",
@@ -12,6 +12,7 @@ export const Features: FC<FeaturesProps & HTMLAttributes<HTMLElement>> = ({
   },
   style = "intext",
   features = [],
+  ...props
 }) => {
   return (
     <div
@@ -24,6 +25,7 @@ export const Features: FC<FeaturesProps & HTMLAttributes<HTMLElement>> = ({
             : `${layout}`
         }`
       )}
+      {...props}
     >
       {features.map((feature, index) => (
         <Feature
