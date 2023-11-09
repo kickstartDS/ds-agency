@@ -1,3 +1,16 @@
+# v2.1.21 (Thu Nov 09 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(footer): center links nav ([@fleven-kds](https://github.com/fleven-kds))
+- feat(footer): add flex-wrap to link nav ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.20 (Wed Nov 08 2023)
 
 #### 🐛 Bug Fix
