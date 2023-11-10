@@ -31,6 +31,7 @@ export const Headline = forwardRef<
       level = "h2",
       // @ts-expect-error: Some kDS Components set the `styleAs`Props (e.g. https://github.com/kickstartDS/content/blob/next/source/storytelling/StorytellingComponent.tsx#L146)
       styleAs,
+      content,
       style = styleAs || "h2",
       spaceAfter = "small",
       className,
