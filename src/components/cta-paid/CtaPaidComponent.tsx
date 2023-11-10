@@ -1,9 +1,10 @@
-import { FC, useContext } from "react";
+import { FC } from "react";
 import { CtaPaidProps } from "./CtaPaidProps";
 import "./cta-paid.scss";
 import { Storytelling } from "@kickstartds/content/lib/storytelling";
 import { ButtonContext } from "@kickstartds/base/lib/button";
 import classnames from "classnames";
+import { useButtonGroup } from "../button-group/ButtonGroupComponent";
 
 export const CtaPaid: FC<CtaPaidProps> = ({
   headline,
@@ -17,28 +18,7 @@ export const CtaPaid: FC<CtaPaidProps> = ({
   buttons = [],
   text,
 }) => {
-  const Button = useContext(ButtonContext);
-  const ButtonGroup = ({ buttons: buttons }) => {
-    return buttons.length ? (
-      <div className="c-cta__links">
-        {buttons.map((button, index) =>
-          button.label ? (
-            <Button
-              variant={
-                index === 0 ? "primary" : index === 1 ? "secondary" : "tertiary"
-              }
-              label={button.label}
-              target={button.target}
-              icon={button?.icon}
-              key={index}
-            />
-          ) : (
-            ""
-          )
-        )}
-      </div>
-    ) : null;
-  };
+  const ButtonGroup = useButtonGroup();
 
   return (
     <ButtonContext.Provider

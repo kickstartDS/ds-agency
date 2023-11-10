@@ -5,7 +5,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {ButtonsProps} from "../buttons/ButtonsProps";
+import type {ButtonProps} from "../button/ButtonProps";
 
 /**
  * Headline for the module element
@@ -24,6 +24,10 @@ export type ModuleSubheadline = string;
  */
 export type ModuleText = string;
 /**
+ * Buttons of the Button Group
+ */
+export type Buttons = ButtonProps[];
+/**
  * Choose the alginment of the text
  */
 export type TextAlignment = "left" | "center";
@@ -33,9 +37,6 @@ export interface CtaProps {
   largeHeadline?: LargeHeadline;
   sub?: ModuleSubheadline;
   text?: ModuleText;
-  /**
-   * Referenced component ButtonsProps
-   */
-  buttons?: ButtonsProps;
+  buttons?: Buttons;
   align?: TextAlignment;
 }

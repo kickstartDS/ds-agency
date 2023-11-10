@@ -5,7 +5,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {ButtonsProps} from "../buttons/ButtonsProps";
+import type {ButtonProps} from "../button/ButtonProps";
 
 /**
  * Headline for the module element
@@ -27,6 +27,10 @@ export type ModuleText = string;
  * Set the width of the content to the full width of the element
  */
 export type Width = boolean;
+/**
+ * Buttons of the Button Group
+ */
+export type Buttons = ButtonProps[];
 /**
  * Background color for the whole element
  */
@@ -74,10 +78,7 @@ export interface CtaPaidProps {
   sub?: ModuleSubheadline;
   text?: ModuleText;
   fullWidth?: Width;
-  /**
-   * Referenced component ButtonsProps
-   */
-  buttons?: ButtonsProps;
+  buttons?: Buttons;
   backgroundColor?: BackgroundColor;
   backgroundImage?: BackgroundImage;
   image?: Image;

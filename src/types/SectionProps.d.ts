@@ -26,7 +26,7 @@ import type {VideoCurtainProps} from "@kickstartds/video-curtain.schema.json/lib
 import type {ImageTextProps} from "@kickstartds/image-text.schema.json/lib/image-text/typing";
 import type {LogosProps} from "@kickstartds/logos.schema.json/lib/logos/typing";
 import type {LogosPaidProps} from "@kickstartds/logos-paid.schema.json/lib/logos-paid/typing";
-import type {ButtonsProps} from "@kickstartds/buttons.schema.json/lib/buttons/typing";
+import type {ButtonProps} from "@kickstartds/base/lib/button/typing";
 
 /**
  * Width of section to use
@@ -128,6 +128,10 @@ export type Content = (
   | LogosProps
   | LogosPaidProps
 )[];
+/**
+ * Buttons of the Button Group
+ */
+export type Buttons = ButtonProps[];
 
 /**
  * Component used to layout components into pages
@@ -155,10 +159,7 @@ export interface SectionProps {
     mode?: Mode;
   };
   components?: Content;
-  /**
-   * Referenced component ButtonsProps
-   */
-  buttons?: ButtonsProps;
+  buttons?: Buttons;
 }
 
 }

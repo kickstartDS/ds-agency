@@ -5,15 +5,18 @@ import { SectionProvider } from "./section/SectionComponent";
 import { TeaserBoxProvider } from "./teaser-card/TeaserCardComponent";
 import { HeadlineProvider } from "./headline/HeadlineComponent";
 import { BedrockProvider } from "../bedrock/BedrockProvider";
+import { ButtonGroupProvider } from "./button-group/ButtonGroupComponent";
 
 const Providers = (props: PropsWithChildren) => (
   <BedrockProvider>
     <ButtonProvider>
-      <HeadlineProvider>
-        <SectionProvider>
-          <TeaserBoxProvider {...props} />
-        </SectionProvider>
-      </HeadlineProvider>
+      <ButtonGroupProvider>
+        <HeadlineProvider>
+          <SectionProvider>
+            <TeaserBoxProvider {...props} />
+          </SectionProvider>
+        </HeadlineProvider>
+      </ButtonGroupProvider>
     </ButtonProvider>
   </BedrockProvider>
 );

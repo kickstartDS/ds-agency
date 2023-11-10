@@ -27,19 +27,4 @@
       }
     }
   }
-
-  .c-storytelling__box {
-    &__content {
-      .c-image-story__links {
-        display: flex;
-        gap: var(--ks-spacing-stack-m) var(--ks-spacing-inline-s);
-      }
-
-      &--center {
-        .c-image-story__links {
-          justify-content: center;
-        }
-      }
-    }
-  }
 }
