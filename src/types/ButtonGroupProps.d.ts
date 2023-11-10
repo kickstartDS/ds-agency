@@ -13,9 +13,9 @@ import type {ButtonProps} from "@kickstartds/base/lib/button/typing";
  */
 export type Buttons = ButtonProps[];
 /**
- * Vertical alignment of the buttons
+ * Vertical arrangement of the buttons
  */
-export type VerticalAlignment = "left" | "center" | "right" | "space-between" | "grow";
+export type ButtonArrangement = "left" | "center" | "right" | "space-between" | "grow";
 /**
  * Add additional css classes that should be applied to the button
  */
@@ -30,7 +30,7 @@ export type KsComponentAttribute = string;
  */
 export interface ButtonGroupProps {
   items?: Buttons;
-  align?: VerticalAlignment;
+  arrangement?: ButtonArrangement;
   className?: AdditionalClasses;
   component?: KsComponentAttribute;
 }
