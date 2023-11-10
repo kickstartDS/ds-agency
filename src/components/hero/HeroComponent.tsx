@@ -1,10 +1,11 @@
-import { FC, useContext } from "react";
+import { FC } from "react";
 import { VisualContextDefault } from "@kickstartds/content/lib/visual";
 import { HeroProps } from "./HeroProps";
 import classnames from "classnames";
 import "./hero.scss";
 import { Container } from "@kickstartds/core/lib/container";
 import { ButtonContext } from "@kickstartds/base/lib/button";
+import { useButtonGroup } from "../button-group/ButtonGroupComponent";
 
 export const Hero: FC<HeroProps> = ({
   headline,
@@ -18,28 +19,7 @@ export const Hero: FC<HeroProps> = ({
   textbox,
   buttons = [],
 }) => {
-  const Button = useContext(ButtonContext);
-  const ButtonGroup = ({ buttons: buttons }) => {
-    return buttons.length ? (
-      <>
-        {buttons.map((button, index) =>
-          button.label ? (
-            <Button
-              variant={
-                index === 0 ? "primary" : index === 1 ? "secondary" : "tertiary"
-              }
-              label={button.label}
-              target={button.target}
-              icon={button?.icon}
-              key={index}
-            />
-          ) : (
-            ""
-          )
-        )}
-      </>
-    ) : null;
-  };
+  const ButtonGroup = useButtonGroup();
 
   return (
     <ButtonContext.Provider
@@ -61,8 +41,15 @@ export const Hero: FC<HeroProps> = ({
                 : textPosition === "right"
                 ? "right"
                 : "center",
-            // @ts-expect-error
-            link: { buttons, enabled: buttons.length > 0 },
+            link: {
+              // @ts-expect-error
+              buttons,
+              enabled: buttons.length > 0,
+              arrangement:
+                textPosition === "below" || textPosition === "center"
+                  ? "center"
+                  : "left",
+            },
             headline: {
               align:
                 textPosition === "below" || textPosition === "center"

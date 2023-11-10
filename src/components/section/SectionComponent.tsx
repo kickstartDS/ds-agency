@@ -65,12 +65,9 @@ export const Section = forwardRef<
           style: headlineLarge ? "h1" : "h2",
         }}
         buttons={{
-          items: buttons.map((button, index) => ({
-            ...button,
-            variant:
-              index === 0 ? "primary" : index === 1 ? "secondary" : "tertiary",
-            size: "medium",
-          })),
+          buttons,
+          // @ts-expect-error
+          items: buttons,
         }}
         width={width}
         spaceBefore={spaceBefore}

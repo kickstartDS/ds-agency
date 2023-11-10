@@ -1,9 +1,10 @@
-import { FC, useContext } from "react";
+import { FC } from "react";
 import { ImageStoryProps } from "./ImageStoryProps";
 import "./image-story.scss";
 import { Storytelling } from "@kickstartds/content/lib/storytelling";
 import { ButtonContext } from "@kickstartds/base/lib/button";
 import classnames from "classnames";
+import { useButtonGroup } from "../button-group/ButtonGroupComponent";
 
 export const ImageStory: FC<ImageStoryProps> = ({
   headline,
@@ -16,28 +17,7 @@ export const ImageStory: FC<ImageStoryProps> = ({
   buttons = [],
   text,
 }) => {
-  const Button = useContext(ButtonContext);
-  const ButtonGroup = ({ buttons: buttons }) => {
-    return buttons.length ? (
-      <div className="c-image-story__links">
-        {buttons.map((button, index) =>
-          button.label ? (
-            <Button
-              variant={
-                index === 0 ? "primary" : index === 1 ? "secondary" : "tertiary"
-              }
-              label={button.label}
-              target={button.target}
-              icon={button?.icon}
-              key={index}
-            />
-          ) : (
-            ""
-          )
-        )}
-      </div>
-    ) : null;
-  };
+  const ButtonGroup = useButtonGroup();
 
   return (
     <ButtonContext.Provider

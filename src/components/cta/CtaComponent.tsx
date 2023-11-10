@@ -3,7 +3,7 @@ import { FC } from "react";
 import { CtaProps } from "./CtaProps";
 import { Headline } from "@kickstartds/base/lib/headline";
 import { RichText } from "@kickstartds/base/lib/rich-text";
-import { Button } from "@kickstartds/base/lib/button";
+import { ButtonGroup } from "@kickstartds/base/lib/button-group";
 import "./cta.scss";
 
 export const Cta: FC<CtaProps> = ({
@@ -25,21 +25,6 @@ export const Cta: FC<CtaProps> = ({
     />
     {text ? <RichText text={text} /> : ""}
 
-    <div className="c-cta__links">
-      {buttons
-        ? buttons.map((cta, index) => (
-            <Button
-              key={index}
-              label={cta.label}
-              target={cta.target}
-              icon={cta?.icon}
-              variant={
-                index === 0 ? "primary" : index === 1 ? "secondary" : "tertiary"
-              }
-              size="medium"
-            />
-          ))
-        : ""}
-    </div>
+    <ButtonGroup buttons={buttons} arrangement={align} />
   </div>
 );

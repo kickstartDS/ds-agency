@@ -5,7 +5,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {ButtonsProps} from "../buttons/ButtonsProps";
+import type {ButtonProps} from "../button/ButtonProps";
 
 /**
  * Headline for the module element
@@ -32,6 +32,10 @@ export type Layout = "textLeft" | "imageLeft";
  */
 export type Padding = boolean;
 /**
+ * Buttons of the Button Group
+ */
+export type Buttons = ButtonProps[];
+/**
  * Image source to use
  */
 export type ImageSource = string;
@@ -55,10 +59,7 @@ export interface ImageStoryProps {
   text?: ModuleText;
   layout?: Layout;
   padding?: Padding;
-  /**
-   * Referenced component ButtonsProps
-   */
-  buttons?: ButtonsProps;
+  buttons?: Buttons;
   image?: Image;
   textAlign?: TextAlignment;
 }

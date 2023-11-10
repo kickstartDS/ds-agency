@@ -44,7 +44,7 @@
       "description": "Give the component padding"
     },
     "buttons": {
-      "$ref": "http://schema.mydesignsystem.com/buttons.schema.json"
+      "$ref": "http://schema.mydesignsystem.com/button-group.schema.json#/properties/buttons"
     },
     "image": {
       "title": "Image",

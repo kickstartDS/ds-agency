@@ -25,7 +25,7 @@ import type {VideoCurtainProps} from "../video-curtain/VideoCurtainProps";
 import type {ImageTextProps} from "../image-text/ImageTextProps";
 import type {LogosProps} from "../logos/LogosProps";
 import type {LogosPaidProps} from "../logos-paid/LogosPaidProps";
-import type {ButtonsProps} from "../buttons/ButtonsProps";
+import type {ButtonProps} from "../button/ButtonProps";
 
 /**
  * Width of section to use
@@ -127,6 +127,10 @@ export type Content = (
   | LogosProps
   | LogosPaidProps
 )[];
+/**
+ * Buttons of the Button Group
+ */
+export type Buttons = ButtonProps[];
 
 /**
  * Component used to layout components into pages
@@ -154,8 +158,5 @@ export interface SectionProps {
     mode?: Mode;
   };
   components?: Content;
-  /**
-   * Referenced component ButtonsProps
-   */
-  buttons?: ButtonsProps;
+  buttons?: Buttons;
 }

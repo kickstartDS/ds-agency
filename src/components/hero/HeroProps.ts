@@ -5,7 +5,7 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {ButtonsProps} from "../buttons/ButtonsProps";
+import type {ButtonProps} from "../button/ButtonProps";
 
 /**
  * Headline for the visual
@@ -28,6 +28,10 @@ export type Height = "small" | "default" | "fullImage" | "fullScreen";
  * Toggle wether you want your text to be displayed within in box
  */
 export type Textbox = boolean;
+/**
+ * Buttons of the Button Group
+ */
+export type Buttons = ButtonProps[];
 /**
  * Enable grid layer
  */
@@ -68,10 +72,7 @@ export interface HeroProps {
   text?: ModuleText;
   height?: Height;
   textbox?: Textbox;
-  /**
-   * Referenced component ButtonsProps
-   */
-  buttons?: ButtonsProps;
+  buttons?: Buttons;
   overlay?: GridLayer;
   image?: BackgroundImage;
   textPosition?: ModuleAligment;

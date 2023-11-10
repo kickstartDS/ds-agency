@@ -31,7 +31,7 @@
       ]
     },
     "buttons": {
-      "$ref": "http://schema.mydesignsystem.com/buttons.schema.json"
+      "$ref": "http://schema.mydesignsystem.com/button-group.schema.json#/properties/buttons"
     },
     "overlay": {
       "$ref": "http://schema.kickstartds.com/content/visual.schema.json#/properties/overlay"
