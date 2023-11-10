@@ -1,3 +1,15 @@
+# v2.1.23 (Fri Nov 10 2023)
+
+#### 🐛 Bug Fix
+
+- Section refactoring [#32](https://github.com/kickstartDS/ds-agency/pull/32) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.1.22 (Thu Nov 09 2023)
 
 #### ⚠️ Pushed to `main`
