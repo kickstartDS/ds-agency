@@ -30,9 +30,8 @@ export const Section = forwardRef<
     ref
   ) => {
     const { large: headlineLarge = false, ...headlineRest } = {
-      ...headline,
       align: "left",
-      textAlign: "left",
+      ...headline,
     };
     return (
       <SectionContextDefault

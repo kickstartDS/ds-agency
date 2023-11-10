@@ -75,7 +75,7 @@ Elevate your digital presence with us. We create impactful digital experiences t
         text: "Design System Services - Crafting Consistency, Fostering Growth",
         sub: "Here at Systemics, we bring a range of design system services that can make a difference:",
         width: "default",
-        textAlign: "center",
+        align: "center",
       }}
       width="full"
       spaceAfter="none"
