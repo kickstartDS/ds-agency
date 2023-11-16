@@ -1,3 +1,20 @@
+# v2.1.24 (Thu Nov 16 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(token): add lughausen token set ([@fleven-kds](https://github.com/fleven-kds))
+
+#### 🏠 Internal
+
+- Add button-group component [#34](https://github.com/kickstartDS/ds-agency/pull/34) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.1.23 (Fri Nov 10 2023)
 
 #### 🐛 Bug Fix
