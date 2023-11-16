@@ -1,6 +1,6 @@
-import "../../../token/tokens.css";
+import "../../../token-dsa-new/tokens.css";
 import "../../../../static/index.css";
 
-import IconSprite from "../../../token/icons/IconSprite";
+import IconSprite from "../../../token-dsa-new/icons/IconSprite";
 
 export default () => <IconSprite />;

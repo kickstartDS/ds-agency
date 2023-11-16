@@ -3,7 +3,7 @@
     "background-color": {
       "accent": {
         "base": {
-          "value": "{ks.color.fg.to-bg.8.base}",
+          "value": "{ks.color.primary.to-bg.8.base}",
           "attributes": {
             "category": "color"
           },
@@ -15,12 +15,36 @@
       },
       "accent-inverted": {
         "base": {
-          "value": "{ks.color.fg-inverted.to-bg.8.base}",
+          "value": "{ks.color.primary.alpha.8.base}",
           "attributes": {
             "category": "color"
           },
           "token": {
             "category": "Colors: Background Accent",
+            "presenter": "Color"
+          }
+        }
+      },
+      "bold": {
+        "base": {
+          "value": "{ks.color.primary.to-bg.6.base}",
+          "attributes": {
+            "category": "color"
+          },
+          "token": {
+            "category": "Colors: Background bold",
+            "presenter": "Color"
+          }
+        }
+      },
+      "bold-inverted": {
+        "base": {
+          "value": "{ks.color.primary.alpha.6.base}",
+          "attributes": {
+            "category": "color"
+          },
+          "token": {
+            "category": "Colors: Background bold",
             "presenter": "Color"
           }
         }
