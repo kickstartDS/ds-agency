@@ -229,7 +229,7 @@
           },
           "selected": {
             "base": {
-              "value": "{ks.color.primary.base}",
+              "value": "{ks.color.fg.base}",
               "attributes": {
                 "category": "color"
               },
@@ -301,7 +301,7 @@
           },
           "selected": {
             "base": {
-              "value": "{ks.color.primary-inverted.base}",
+              "value": "{ks.color.fg-inverted.base}",
               "attributes": {
                 "category": "color"
               },

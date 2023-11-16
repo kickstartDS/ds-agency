@@ -1,5 +1,6 @@
 @use "@kickstartds/base/lib/global/base.css";
 @use "./components/rich-text/rich-text";
+@use "./components/form/form";
 @use "./token/tokens.css";
 @use "./fonts-dsa";
 @use "./fonts-lughausen";
@@ -37,4 +38,8 @@
   .c-post-meta {
     --c-post-meta--gap: var(--ks-spacing-stack-xs);
   }
+}
+
+#storybook-root {
+  background-color: white;
 }

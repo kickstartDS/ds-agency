@@ -6,15 +6,17 @@ import { Header } from "../components/header/HeaderComponent";
 import { headerProps } from "../components/header/Header.stories";
 import { Footer } from "../components/footer/FooterComponent";
 import { footerProps } from "../components/footer/Footer.stories";
-import { Testimonials } from "../components/testimonials/TestimonialsComponent";
-import { ImageText } from "../components/image-text/ImageTextComponent";
-import { Text } from "../components/text/TextComponent";
 import { TestimonialsPaid } from "../components/testimonials-paid/TestimonialsPaidComponent";
 
 const Page = () => (
   <>
     <Header {...headerProps} />
-    <Section width="default">
+    <Section
+      content={{
+        mode: "list",
+      }}
+      width="default"
+    >
       <Cta
         align="left"
         headline="We simplify the process of building and scaling your **Design System**"
@@ -31,6 +33,11 @@ Elevate your digital presence with us. We create [impactful digital](#) experien
             label: "Book a meeting",
             target: "#",
             icon: "date",
+          },
+          {
+            label: "Learn more",
+            target: "#",
+            icon: "chevron-right",
           },
         ]}
       />
@@ -53,6 +60,11 @@ Elevate your digital presence with us. We create [impactful digital](#) experien
             target: "#",
             icon: "date",
           },
+          {
+            label: "Learn more",
+            target: "#",
+            icon: "chevron-right",
+          },
         ]}
       />
     </Section>
@@ -73,6 +85,11 @@ Elevate your digital presence with us. We create [impactful digital](#) experien
             label: "Book a meeting",
             target: "#",
             icon: "date",
+          },
+          {
+            label: "Learn more",
+            target: "#",
+            icon: "chevron-right",
           },
         ]}
       />
@@ -95,6 +112,11 @@ Elevate your digital presence with us. We create [impactful digital](#) experien
             target: "#",
             icon: "date",
           },
+          {
+            label: "Learn more",
+            target: "#",
+            icon: "chevron-right",
+          },
         ]}
       />
     </Section>
@@ -116,6 +138,11 @@ Elevate your digital presence with us. We create [impactful digital](#) experien
             target: "#",
             icon: "date",
           },
+          {
+            label: "Learn more",
+            target: "#",
+            icon: "chevron-right",
+          },
         ]}
       />
     </Section>
@@ -136,6 +163,11 @@ Elevate your digital presence with us. We create [impactful digital](#) experien
             label: "Book a meeting",
             target: "#",
             icon: "date",
+          },
+          {
+            label: "Learn more",
+            target: "#",
+            icon: "chevron-right",
           },
         ]}
       />

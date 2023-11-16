@@ -29,19 +29,6 @@
   }
 
   &--clear {
-    --c-button--color: var(--ks-color-secondary);
-    --c-button--color-hover: var(--ks-color-secondary);
-    --c-button--color-active: var(--ks-color-secondary);
-
-    --c-button--border-width: 0;
-    padding: var(--c-button--padding);
-
-    --c-button--background-color: var(--ks-color-secondary-alpha-8);
-    --c-button--background-color-hover: var(--ks-color-secondary-alpha-7);
-    --c-button--background-color-active: var(--ks-color-secondary-alpha-7);
-  }
-
-  &--outline {
     --c-button--color: var(--ks-color-fg-alpha-2);
     --c-button--color-hover: var(--ks-color-fg);
     --c-button--color-active: var(--ks-color-fg);
@@ -55,6 +42,21 @@
     --c-button--background-color: var(--ks-color-fg-alpha-8);
     --c-button--background-color-hover: var(--ks-color-fg-alpha-7);
     --c-button--background-color-active: var(--ks-color-fg-alpha-7);
+
+    padding: var(--c-button--padding);
+  }
+
+  &--outline {
+    --c-button--color: var(--ks-color-fg-alpha-2);
+    --c-button--color-hover: var(--ks-color-fg);
+    --c-button--color-active: var(--ks-color-fg);
+
+    --c-button--border-color: var(--ks-color-fg-alpha-6);
+    --c-button--border-color-hover: var(--ks-color-fg);
+    --c-button--border-color-active: var(--ks-color-fg);
+
+    --c-button--background-color-hover: transparent;
+    --c-button--background-color-active: transparent;
   }
 }
 

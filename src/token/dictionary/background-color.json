@@ -15,7 +15,7 @@
       },
       "accent-inverted": {
         "base": {
-          "value": "{ks.color.bg-inverted.alpha.2.base}",
+          "value": "{ks.color.primary.alpha.8.base}",
           "attributes": {
             "category": "color"
           },
@@ -32,19 +32,19 @@
             "category": "color"
           },
           "token": {
-            "category": "Colors: Background Bold",
+            "category": "Colors: Background bold",
             "presenter": "Color"
           }
         }
       },
       "bold-inverted": {
         "base": {
-          "value": "{ks.color.primary.base}",
+          "value": "{ks.color.primary.alpha.6.base}",
           "attributes": {
             "category": "color"
           },
           "token": {
-            "category": "Colors: Background Bold",
+            "category": "Colors: Background bold",
             "presenter": "Color"
           }
         }
@@ -253,7 +253,7 @@
           },
           "selected": {
             "base": {
-              "value": "{ks.color.primary.base}",
+              "value": "transparent",
               "attributes": {
                 "category": "color"
               },
@@ -325,7 +325,7 @@
           },
           "selected": {
             "base": {
-              "value": "{ks.color.primary-inverted.base}",
+              "value": "transparent",
               "attributes": {
                 "category": "color"
               },
