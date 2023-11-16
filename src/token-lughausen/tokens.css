@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 16 Nov 2023 11:06:55 GMT
+ * Generated on Thu, 16 Nov 2023 13:41:31 GMT
  */
 
 :root, [ks-theme] {
@@ -25,13 +25,13 @@
   --ks-background-color-interface-interactive-disabled-base: var(--ks-color-fg-alpha-9-base);
   --ks-background-color-interface-interactive-hover-base: var(--ks-color-fg-alpha-9-base);
   --ks-background-color-interface-interactive-active-base: var(--ks-color-fg-alpha-9-base);
-  --ks-background-color-interface-interactive-selected-base: var(--ks-color-primary-base);
+  --ks-background-color-interface-interactive-selected-base: rgba(0,0,0,0);
   --ks-background-color-interface-inverted-base: var(--ks-color-fg-inverted-alpha-9-base);
   --ks-background-color-interface-inverted-interactive-base: var(--ks-color-transparent-base);
   --ks-background-color-interface-inverted-interactive-disabled-base: var(--ks-color-fg-inverted-alpha-9-base);
   --ks-background-color-interface-inverted-interactive-hover-base: var(--ks-color-fg-inverted-alpha-9-base);
   --ks-background-color-interface-inverted-interactive-active-base: var(--ks-color-fg-inverted-alpha-9-base);
-  --ks-background-color-interface-inverted-interactive-selected-base: var(--ks-color-primary-inverted-base);
+  --ks-background-color-interface-inverted-interactive-selected-base: rgba(0,0,0,0);
   --ks-background-color-primary-base: var(--ks-color-primary-base);
   --ks-background-color-primary-interactive-base: var(--ks-color-primary-base);
   --ks-background-color-primary-interactive-hover-base: var(--ks-color-primary-to-bg-2-base);
@@ -63,13 +63,13 @@
   --ks-border-color-interface-interactive-disabled-base: var(--ks-color-fg-alpha-8-base);
   --ks-border-color-interface-interactive-hover-base: var(--ks-color-fg-alpha-5-base);
   --ks-border-color-interface-interactive-active-base: var(--ks-color-fg-alpha-3-base);
-  --ks-border-color-interface-interactive-selected-base: var(--ks-color-primary-base);
+  --ks-border-color-interface-interactive-selected-base: var(--ks-color-fg-alpha-5-base);
   --ks-border-color-interface-inverted-base: var(--ks-color-fg-inverted-alpha-9-base);
   --ks-border-color-interface-inverted-interactive-base: var(--ks-color-fg-inverted-alpha-5-base);
   --ks-border-color-interface-inverted-interactive-disabled-base: var(--ks-color-fg-inverted-alpha-2-base);
   --ks-border-color-interface-inverted-interactive-hover-base: var(--ks-color-fg-inverted-alpha-3-base);
   --ks-border-color-interface-inverted-interactive-active-base: var(--ks-color-fg-inverted-alpha-1-base);
-  --ks-border-color-interface-inverted-interactive-selected-base: var(--ks-color-primary-inverted-base);
+  --ks-border-color-interface-inverted-interactive-selected-base: var(--ks-color-fg-inverted-alpha-5-base);
   --ks-border-color-primary-base: var(--ks-color-primary-base);
   --ks-border-color-primary-interactive-base: var(--ks-color-primary-base);
   --ks-border-color-primary-interactive-hover-base: var(--ks-color-primary-to-bg-2-base);
