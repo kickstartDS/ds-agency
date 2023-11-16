@@ -27,7 +27,9 @@
       "scale-ratio": 1.225,
       "bp-factor": {
         "phone": 1.125,
-        "tablet": 1.5
+        "tablet": 1.25,
+        "laptop": 1.5,
+        "desktop": 1.75
       }
     },
     "copy": {
@@ -41,7 +43,7 @@
     },
     "interface": {
       "family": "Mulish, system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
-      "font-size": 18,
+      "font-size": 16,
       "line-height": 1.5,
       "scale-ratio": 1.225,
       "bp-factor": {

@@ -243,7 +243,7 @@
       },
       "primary": {
         "base": {
-          "value": "{ks.color.primary.base}",
+          "value": "{ks.color.secondary.base}",
           "attributes": {
             "category": "color"
           },
@@ -303,7 +303,7 @@
       },
       "primary-inverted": {
         "base": {
-          "value": "{ks.color.primary-inverted.base}",
+          "value": "{ks.color.secondary-inverted.base}",
           "attributes": {
             "category": "color"
           },
