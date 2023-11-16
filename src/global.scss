@@ -1,7 +1,8 @@
 @use "@kickstartds/base/lib/global/base.css";
 @use "./components/rich-text/rich-text";
 @use "./token/tokens.css";
-@use "./fonts";
+@use "./fonts-dsa";
+@use "./fonts-lughausen";
 @use "./selectors" as *;
 
 #{$selectors} {
@@ -9,6 +10,9 @@
   --g-link--font-weight: var(--ks-font-weight-semi-bold);
   --g-topic--color: var(--ks-color-fg);
   --l-section--content-padding: var(--ks-spacing-inset-l) !important;
+
+  --g-filter-drop-shadow--higlight: drop-shadow(0px 2px 30px var(--ks-color-primary-alpha-2))
+    drop-shadow(0px 1px 4px var(--ks-color-fg-alpha-8));
 
   @media (min-width: 42rem) {
     --l-section--content-padding: var(--ks-spacing-inset-xl) !important;

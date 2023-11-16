@@ -6,9 +6,9 @@ import { Header } from "../components/header/HeaderComponent";
 import { headerProps } from "../components/header/Header.stories";
 import { Footer } from "../components/footer/FooterComponent";
 import { footerProps } from "../components/footer/Footer.stories";
-import { Stats } from "../components/stats/StatsComponent";
 import { Testimonials } from "../components/testimonials/TestimonialsComponent";
 import { ImageText } from "../components/image-text/ImageTextComponent";
+import { Text } from "../components/text/TextComponent";
 
 const Page = () => (
   <>
@@ -17,8 +17,30 @@ const Page = () => (
       <Cta
         align="left"
         headline="We simplify the process of building and scaling your **Design System**"
+        sub="Crafting Consistency, Fostering Growth"
         text={`
-Elevate your digital presence with us. We create impactful digital experiences that deliver tangible results. With over 15+ years of expertise in design systems, headless CMSs, and frontend development, let's shape your digital future together.`}
+Elevate your digital presence with us. We create [impactful digital](#) experiences that deliver tangible results. With over 15+ years of expertise in design systems, headless CMSs, and frontend development, let's shape your digital future together.`}
+        buttons={[
+          {
+            label: "Contact Us",
+            target: "#",
+            icon: "person",
+          },
+          {
+            label: "Book a meeting",
+            target: "#",
+            icon: "date",
+          },
+        ]}
+      />
+    </Section>
+    <Section inverted width="default">
+      <Cta
+        align="left"
+        headline="We simplify the process of building and scaling your **Design System**"
+        sub="Crafting Consistency, Fostering Growth"
+        text={`
+Elevate your digital presence with us. We create [impactful digital](#) experiences that deliver tangible results. With over 15+ years of expertise in design systems, headless CMSs, and frontend development, let's shape your digital future together.`}
         buttons={[
           {
             label: "Contact Us",
@@ -34,30 +56,6 @@ Elevate your digital presence with us. We create impactful digital experiences t
       />
     </Section>
 
-    <Section width="wide">
-      <Stats
-        stats={[
-          {
-            title: "Components",
-            number: 50,
-            description:
-              "We offer a rich library of over 50 meticulously crafted components to help you create cohesive and visually stunning user interfaces.",
-          },
-          {
-            number: 30.0,
-            title: "Lines of Documentation",
-            description:
-              "Our comprehensive documentation consists of over 30,000 lines, making it easy for your team to understand and implement our design system.",
-          },
-          {
-            title: "Percent Customizability",
-            number: 100,
-            description:
-              "Our design system is 100% customizable, allowing you to tailor it to your brand's unique identity and design requirements.",
-          },
-        ]}
-      />
-    </Section>
     <Section
       headline={{
         text: "Design System Services",
@@ -75,7 +73,7 @@ Elevate your digital presence with us. We create impactful digital experiences t
         },
       ]}
     >
-      <ImageText
+      <Text
         text={`
 Here at Systemics, we bring a range of design system services that can make a difference:
 
@@ -92,11 +90,6 @@ We leverage the power of headless CMSs to provide scalable, flexible, and versat
 We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.
 
 Ready to make your digital journey exceptional?`}
-        image={{
-          src: "img/team.png",
-          alt: "Alt text for the image",
-        }}
-        layout="above"
       />
     </Section>
     <Section
@@ -302,4 +295,4 @@ export default {
   },
 };
 
-export const LandingpageBase = {};
+export const LandingpageTesting = {};
