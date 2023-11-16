@@ -27,10 +27,10 @@ export const TextBelowImage: Story = {
     height: "fullImage",
     textPosition: "below",
     image: {
-      srcMobile: "img/colleagues-work-office-using-computers-looking-aside.png",
-      srcTablet: "img/colleagues-work-office-using-computers-looking-aside.png",
+      srcMobile: "img/colleagues-work-office-using-computers-looking-aside.jpg",
+      srcTablet: "img/colleagues-work-office-using-computers-looking-aside.jpg",
       srcDesktop:
-        "img/colleagues-work-office-using-computers-looking-aside.png",
+        "img/colleagues-work-office-using-computers-looking-aside.jpg",
     },
   }),
 };
@@ -59,9 +59,10 @@ export const TextBoxOverBackgroundImage: Story = {
     overlay: true,
     textPosition: "left",
     image: {
-      srcMobile: "img/hero-textbox.png",
-      srcTablet: "img/hero-textbox.png",
-      srcDesktop: "img/hero-textbox.png",
+      srcMobile: "img/colleagues-work-office-using-computers-looking-aside.jpg",
+      srcTablet: "img/colleagues-work-office-using-computers-looking-aside.jpg",
+      srcDesktop:
+        "img/colleagues-work-office-using-computers-looking-aside.jpg",
     },
   }),
 };
