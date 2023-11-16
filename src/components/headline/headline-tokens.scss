@@ -3,6 +3,7 @@
 #{$selectors} {
   --g-headline--color: var(--ks-color-fg);
   --g-headline--font-weight: var(--ks-font-weight-medium);
+  --c-headline--higlight-gradient: var(--g-gradient--higlight);
 
   .c-headline {
     --c-headline--color: var(--g-headline--color);

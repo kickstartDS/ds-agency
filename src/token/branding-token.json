@@ -7,7 +7,7 @@
     "background": "#06081F",
     "foreground": "#fff",
     "bg": "#06081F",
-    "bg-inverted": "#CDC0F4",
+    "bg-inverted": "#fff",
     "link": "#B7A5FF",
     "link-inverted": "#6642F6",
     "positive": "#6EDB64",
@@ -22,27 +22,27 @@
   "font": {
     "display": {
       "family": "Fredoka, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
-      "font-size": 16,
-      "line-height": 1.75,
+      "font-size": 20,
+      "line-height": 1.15,
       "scale-ratio": 1.225,
       "bp-factor": {
-        "phone": 1.167,
-        "tablet": 1.333
+        "phone": 1.125,
+        "tablet": 1.5
       }
     },
     "copy": {
-      "family": "'Helvetica Neue', Helvetica, Arial, sans-serif",
-      "font-size": 16,
-      "line-height": 1.75,
+      "family": "Mulish, 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "font-size": 18,
+      "line-height": 1.5,
       "scale-ratio": 1.225,
       "bp-factor": {
         "tablet": 1.125
       }
     },
     "interface": {
-      "family": "system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
-      "font-size": 16,
-      "line-height": 1.75,
+      "family": "Mulish, system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
+      "font-size": 18,
+      "line-height": 1.5,
       "scale-ratio": 1.225,
       "bp-factor": {
         "tablet": 1.125
@@ -50,8 +50,8 @@
     },
     "mono": {
       "family": "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace",
-      "font-size": 16,
-      "line-height": 1.75,
+      "font-size": 18,
+      "line-height": 1.5,
       "scale-ratio": 1.225,
       "bp-factor": {
         "tablet": 1.125

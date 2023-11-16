@@ -10,23 +10,23 @@
           }
         },
         "base": {
-          "value": "0.15",
+          "value": "0.118",
           "attributes": {
             "category": "size"
           }
         },
         "bp-factor": {
           "phone": {
-            "value": "1"
+            "value": "1.414"
           },
           "tablet": {
-            "value": "1.25"
+            "value": "1.9994"
           },
           "laptop": {
-            "value": "1.75"
+            "value": "2.8271"
           },
           "desktop": {
-            "value": "2"
+            "value": "3.9976"
           }
         }
       },
@@ -39,29 +39,58 @@
           }
         },
         "base": {
-          "value": "0.35",
+          "value": "0.191",
           "attributes": {
             "category": "size"
           }
         },
         "bp-factor": {
           "phone": {
-            "value": "1"
+            "value": "1.414"
           },
           "tablet": {
-            "value": "1.25"
+            "value": "1.9994"
           },
           "laptop": {
-            "value": "1.75"
+            "value": "2.8271"
           },
           "desktop": {
-            "value": "2"
+            "value": "3.9976"
           }
         }
       },
       "s": {
         "_": {
           "value": "{ks.spacing.s.base}",
+          "token": {
+            "category": "Spacing",
+            "presenter": "Spacing"
+          }
+        },
+        "base": {
+          "value": "0.309",
+          "attributes": {
+            "category": "size"
+          }
+        },
+        "bp-factor": {
+          "phone": {
+            "value": "1.414"
+          },
+          "tablet": {
+            "value": "1.9994"
+          },
+          "laptop": {
+            "value": "2.8271"
+          },
+          "desktop": {
+            "value": "3.9976"
+          }
+        }
+      },
+      "m": {
+        "_": {
+          "value": "{ks.spacing.m.base}",
           "token": {
             "category": "Spacing",
             "presenter": "Spacing"
@@ -75,45 +104,16 @@
         },
         "bp-factor": {
           "phone": {
-            "value": "1"
+            "value": "1.414"
           },
           "tablet": {
-            "value": "1.25"
+            "value": "1.9994"
           },
           "laptop": {
-            "value": "1.75"
+            "value": "2.8271"
           },
           "desktop": {
-            "value": "2"
-          }
-        }
-      },
-      "m": {
-        "_": {
-          "value": "{ks.spacing.m.base}",
-          "token": {
-            "category": "Spacing",
-            "presenter": "Spacing"
-          }
-        },
-        "base": {
-          "value": "1",
-          "attributes": {
-            "category": "size"
-          }
-        },
-        "bp-factor": {
-          "phone": {
-            "value": "1.125"
-          },
-          "tablet": {
-            "value": "1.25"
-          },
-          "laptop": {
-            "value": "1.75"
-          },
-          "desktop": {
-            "value": "2"
+            "value": "3.9976"
           }
         }
       },
@@ -126,23 +126,23 @@
           }
         },
         "base": {
-          "value": "1.5",
+          "value": "0.809",
           "attributes": {
             "category": "size"
           }
         },
         "bp-factor": {
           "phone": {
-            "value": "1.125"
+            "value": "1.414"
           },
           "tablet": {
-            "value": "1.25"
+            "value": "1.9994"
           },
           "laptop": {
-            "value": "1.75"
+            "value": "2.8271"
           },
           "desktop": {
-            "value": "2"
+            "value": "3.9976"
           }
         }
       },
@@ -155,7 +155,7 @@
           }
         },
         "base": {
-          "value": "2",
+          "value": "1.309",
           "attributes": {
             "category": "size"
           }
@@ -165,13 +165,13 @@
             "value": "1.414"
           },
           "tablet": {
-            "value": "1.25"
+            "value": "1.9994"
           },
           "laptop": {
-            "value": "1.75"
+            "value": "2.8271"
           },
           "desktop": {
-            "value": "2"
+            "value": "3.9976"
           }
         }
       },
@@ -184,30 +184,27 @@
           }
         },
         "base": {
-          "value": "2.5",
+          "value": "2.1179",
           "attributes": {
             "category": "size"
           }
         },
         "bp-factor": {
           "phone": {
-            "value": "1.125"
+            "value": "1.414"
           },
           "tablet": {
-            "value": "1.25"
+            "value": "1.9994"
           },
           "laptop": {
-            "value": "1.75"
+            "value": "2.8271"
           },
           "desktop": {
-            "value": "2"
+            "value": "3.9976"
           }
         }
       },
       "stack": {
-        "xxs": {
-          "value": "{ks.spacing.xxs._}"
-        },
         "xs": {
           "value": "{ks.spacing.xs._}"
         },
@@ -222,15 +219,9 @@
         },
         "xl": {
           "value": "{ks.spacing.xl._}"
-        },
-        "xxl": {
-          "value": "{ks.spacing.xxl._}"
         }
       },
       "inline": {
-        "xxs": {
-          "value": "{ks.spacing.xxs._}"
-        },
         "xs": {
           "value": "{ks.spacing.xs._}"
         },
@@ -245,15 +236,9 @@
         },
         "xl": {
           "value": "{ks.spacing.xl._}"
-        },
-        "xxl": {
-          "value": "{ks.spacing.xxl._}"
         }
       },
       "inset": {
-        "xxs": {
-          "value": "{ks.spacing.xxs._}"
-        },
         "xs": {
           "value": "{ks.spacing.xs._}"
         },
@@ -268,9 +253,6 @@
         },
         "xl": {
           "value": "{ks.spacing.xl._}"
-        },
-        "xxl": {
-          "value": "{ks.spacing.xxl._}"
         }
       },
       "inset-squish": {

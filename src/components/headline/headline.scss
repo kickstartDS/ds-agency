@@ -36,7 +36,7 @@ h4,
 h5 {
   strong {
     font-weight: inherit;
-    background: linear-gradient(135deg, var(--ks-color-primary) 0%, var(--ks-color-secondary) 100%);
+    background: var(--c-headline--higlight-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     filter: var(--g-filter-drop-shadow--higlight);

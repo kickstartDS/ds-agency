@@ -6,13 +6,15 @@
 @use "./selectors" as *;
 
 #{$selectors} {
-  --g-topic--font-weight: var(--ks-font-weight-medium);
+  --g-topic--font-weight: var(--ks-font-weight-semi-bold);
   --g-link--font-weight: var(--ks-font-weight-semi-bold);
   --g-topic--color: var(--ks-color-fg);
   --l-section--content-padding: var(--ks-spacing-inset-l) !important;
 
   --g-filter-drop-shadow--higlight: drop-shadow(0px 2px 30px var(--ks-color-primary-alpha-2))
     drop-shadow(0px 1px 4px var(--ks-color-fg-alpha-8));
+
+  --g-gradient--higlight: linear-gradient(135deg, var(--ks-color-primary) 0%, var(--ks-color-secondary) 100%);
 
   @media (min-width: 42rem) {
     --l-section--content-padding: var(--ks-spacing-inset-xl) !important;
@@ -27,7 +29,7 @@
   }
 
   .c-post-head {
-    --c-post-head_date--font-weight: var(--ks-font-weight-medium);
+    --c-post-head_date--font-weight: var(--ks-font-weight-semi-bold);
   }
   .c-post-aside {
     --c-post-aside--gap: var(--ks-spacing-stack-s);
