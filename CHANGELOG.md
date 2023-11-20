@@ -1,3 +1,15 @@
+# v2.1.25 (Mon Nov 20 2023)
+
+#### 🐛 Bug Fix
+
+- Feature/increase theming compatibility [#35](https://github.com/kickstartDS/ds-agency/pull/35) ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.24 (Thu Nov 16 2023)
 
 #### ⚠️ Pushed to `main`
