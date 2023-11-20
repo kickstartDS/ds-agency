@@ -67,9 +67,9 @@
     "bold": 700
   },
   "spacing": {
-    "base": 8,
-    "scale-ratio": 1.618,
-    "bp-ratio": 1.414
+    "base": 12,
+    "scale-ratio": 1.45,
+    "bp-ratio": 1.25
   },
   "border-radius": "2px",
   "box-shadow": {
