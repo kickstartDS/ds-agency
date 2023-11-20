@@ -24,9 +24,9 @@ export const AtmosphericVideoWithOverlay: Story = {
     overlay: true,
     textPosition: "center",
     video: {
-      srcMobile: "img/video-720.mp4",
-      srcTablet: "img/video-1080.mp4",
-      srcDesktop: "img/video-1080.mp4",
+      srcMobile: "img/videos/video-agency.mp4",
+      srcTablet: "img/videos/video-agency.mp4",
+      srcDesktop: "img/videos/video-agency.mp4",
     },
   }),
 };

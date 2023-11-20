@@ -24,15 +24,15 @@ export const ResponsiveImage: Story = {
     sources: [
       {
         srcSet:
-          "img/responsive-s.png 420w, img/responsive-m.png 980w, img/responsive-l.png",
+          "img/responsive_image-420.png 420w, img/responsive_image-980.png 980w, img/responsive_image-1680.png",
       },
       {
         srcSet:
-          "img/responsive-s.png 420w, img/responsive-m.png 980w, img/responsive-l.png",
+          "img/responsive_image-420.png 420w, img/responsive_image-980.png 980w, img/responsive_image-1680.png",
       },
       {
         srcSet:
-          "img/responsive-s.png 420w, img/responsive-m.png 980w, img/responsive-l.png",
+          "img/responsive_image-420.png 420w, img/responsive_image-980.png 980w, img/responsive_image-1680.png",
       },
     ],
   }),
@@ -40,7 +40,7 @@ export const ResponsiveImage: Story = {
 
 export const PresetSize: Story = {
   args: pack({
-    src: "img/agency.png",
+    src: "img/close-up-young-business-team-working.png",
     alt: "Agency",
     width: "400px",
     height: "300px",

@@ -1,20 +1,9 @@
 @import "../../selectors";
 
-:root,
-[ks-theme],
-[ks-inverted="false"] {
-  --g-filter-drop-shadow--higlight: drop-shadow(0px 2px 30px var(--ks-color-primary-alpha-2))
-    drop-shadow(0px 1px 4px var(--ks-color-fg-alpha-8));
-}
-
-[ks-inverted="true"] {
-  --g-filter-drop-shadow--higlight: drop-shadow(0px 2px 25px var(--ks-color-primary-inverted-alpha-1))
-    drop-shadow(0px 1px 4px var(--ks-color-primary-inverted-alpha-4));
-}
-
 #{$selectors} {
   --g-headline--color: var(--ks-color-fg);
   --g-headline--font-weight: var(--ks-font-weight-medium);
+  --c-headline--higlight-gradient: var(--g-gradient--higlight);
 
   .c-headline {
     --c-headline--color: var(--g-headline--color);

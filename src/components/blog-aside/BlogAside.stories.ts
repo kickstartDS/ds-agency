@@ -22,7 +22,7 @@ export const Default: Story = {};
 Default.args = pack({
   author: {
     name: "Jane Smith",
-    image: "img/customer-1.png",
+    image: "img/people/author-emily.png",
     twitter: "jane_smith",
     email: "jane.smith@example.com",
   },

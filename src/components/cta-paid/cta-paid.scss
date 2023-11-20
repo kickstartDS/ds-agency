@@ -4,9 +4,7 @@
 .c-header--floating + .l-section .l-container--storytelling:first-child {
   @media (min-width: 640px) {
     .c-storytelling.c-cta {
-      padding-top: calc(
-        var(--g-header-height) + var(--c-storytelling--horizontal-padding)
-      );
+      padding-top: calc(var(--g-header-height) + var(--c-storytelling--horizontal-padding));
       z-index: 1;
     }
   }
@@ -18,11 +16,10 @@
   padding: 0;
 
   .c-storytelling__box {
-    padding: var(--c-storytelling--vertical-padding)
-      var(--l-section--content-padding);
+    padding: var(--c-storytelling--vertical-padding) var(--l-section--content-padding);
     &__content {
       &--center {
-        .c-cta__links {
+        .c-button-group {
           justify-content: center;
         }
       }
@@ -30,15 +27,11 @@
   }
 
   .c-storytelling__box:only-child {
-    max-width: calc(
-      var(--l-section--content-width-default) -
-        calc(var(--l-section--content-padding) * 2)
-    );
+    max-width: calc(var(--l-section--content-width-default) - calc(var(--l-section--content-padding) * 2));
   }
 
   > .c-storytelling__image {
-    padding: var(--c-storytelling--vertical-padding)
-      var(--c-storytelling--horizontal-padding);
+    padding: var(--c-storytelling--vertical-padding) var(--c-storytelling--horizontal-padding);
   }
 
   &.c-storytelling--full {
@@ -72,8 +65,7 @@
   > .c-storytelling__image,
   > .c-storytelling__box {
     max-width: calc(
-      calc(var(--l-section--content-width-wide) / 2) -
-        var(--l-section--content-padding) - calc(var(--c-cta--gap) / 2)
+      calc(var(--l-section--content-width-wide) / 2) - var(--l-section--content-padding) - calc(var(--c-cta--gap) / 2)
     );
   }
 

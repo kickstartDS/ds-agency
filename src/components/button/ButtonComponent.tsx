@@ -32,9 +32,9 @@ export const Button = forwardRef<
         variant === "primary"
           ? "solid"
           : variant === "secondary"
-          ? "outline"
-          : variant === "tertiary"
           ? "clear"
+          : variant === "tertiary"
+          ? "outline"
           : "solid"
       }
       disabled={disabled}

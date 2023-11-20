@@ -38,7 +38,7 @@
       "description": "The preview image for the blog post",
       "type": "string",
       "format": "image",
-      "examples": ["img/agency.png"]
+      "examples": ["img/close-up-young-business-team-working.png"]
     },
     "link": {
       "type": "object",

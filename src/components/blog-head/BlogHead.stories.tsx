@@ -23,5 +23,5 @@ Default.args = pack({
   date: "12/30/2022",
   tags: ["Technology", "AI"],
   headline: "The Future of AI",
-  image: "img/agency.png",
+  image: "img/close-up-young-business-team-working.png",
 });

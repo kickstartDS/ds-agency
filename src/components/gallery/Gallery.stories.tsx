@@ -23,32 +23,32 @@ export const SmallTiles: Story = {};
 SmallTiles.args = pack({
   images: [
     {
-      url: "img/agency.png",
+      url: "img/close-up-young-business-team-working.png",
       caption: "Caption Image 1",
       alt: "Alt text Image 1",
     },
     {
-      url: "img/team.png",
+      url: "img/low-angle-tall-building-with-many-windows_23-2148230392.png",
       caption: "Caption Image 2",
       alt: "Alt text Image 2",
     },
     {
-      url: "img/agency.png",
+      url: "img/close-up-young-business-team-working.png",
       caption: "Caption Image 3",
       alt: "Alt text Image 3",
     },
     {
-      url: "img/agency.png",
+      url: "img/close-up-young-business-team-working.png",
       caption: "Caption Image 4",
       alt: "Alt text Image 4",
     },
     {
-      url: "img/team.png",
+      url: "img/low-angle-tall-building-with-many-windows_23-2148230392.png",
       caption: "Caption Image 5",
       alt: "Alt text Image 5",
     },
     {
-      url: "img/agency.png",
+      url: "img/close-up-young-business-team-working.png",
       caption: "Caption Image 6",
       alt: "Alt text Image 6",
     },
@@ -60,32 +60,32 @@ export const LargeTiles: Story = {};
 LargeTiles.args = pack({
   images: [
     {
-      url: "img/agency.png",
+      url: "img/close-up-young-business-team-working.png",
       caption: "Caption Image 1",
       alt: "Alt text Image 1",
     },
     {
-      url: "img/team.png",
+      url: "img/low-angle-tall-building-with-many-windows_23-2148230392.png",
       caption: "Caption Image 2",
       alt: "Alt text Image 2",
     },
     {
-      url: "img/agency.png",
+      url: "img/close-up-young-business-team-working.png",
       caption: "Caption Image 3",
       alt: "Alt text Image 3",
     },
     {
-      url: "img/agency.png",
+      url: "img/close-up-young-business-team-working.png",
       caption: "Caption Image 4",
       alt: "Alt text Image 4",
     },
     {
-      url: "img/team.png",
+      url: "img/low-angle-tall-building-with-many-windows_23-2148230392.png",
       caption: "Caption Image 5",
       alt: "Alt text Image 5",
     },
     {
-      url: "img/agency.png",
+      url: "img/close-up-young-business-team-working.png",
       caption: "Caption Image 6",
       alt: "Alt text Image 6",
     },
@@ -97,33 +97,33 @@ export const Stack: Story = {};
 Stack.args = pack({
   images: [
     {
-      url: "img/agency.png",
+      url: "img/close-up-young-business-team-working.png",
       caption: "Caption Image 1",
 
       alt: "Alt text Image 1",
     },
     {
-      url: "img/team.png",
+      url: "img/low-angle-tall-building-with-many-windows_23-2148230392.png",
       caption: "Caption Image 2",
 
       alt: "Alt text Image 2",
     },
     {
-      url: "img/agency.png",
+      url: "img/close-up-young-business-team-working.png",
       caption: "Caption Image 3",
     },
     {
-      url: "img/agency.png",
+      url: "img/close-up-young-business-team-working.png",
       caption: "Caption Image 4",
       alt: "Alt text Image 4",
     },
     {
-      url: "img/team.png",
+      url: "img/low-angle-tall-building-with-many-windows_23-2148230392.png",
       caption: "Caption Image 5",
       alt: "Alt text Image 5",
     },
     {
-      url: "img/agency.png",
+      url: "img/close-up-young-business-team-working.png",
       caption: "Caption Image 6",
       alt: "Alt text Image 6",
     },

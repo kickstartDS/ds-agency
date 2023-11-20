@@ -23,17 +23,18 @@ export const ColorfulAlternatingLayout: Story = {
       {
         backgroundColor: "#81005a",
         textColor: "#fdbce9",
-        image: "img/mosaic-1.png",
+        image: "img/full-shot-different-people-working-together.png",
       },
       {
         backgroundColor: "#003380",
         textColor: "#cddffa",
-        image: "img/mosaic-2.png",
+        image:
+          "img/low-angle-tall-building-with-many-windows_23-2148230392.png",
       },
       {
         backgroundColor: "#004241",
         textColor: "#a3d5d4",
-        image: "img/mosaic-1.png",
+        image: "img/full-shot-different-people-working-together.png",
       },
     ],
   }),
