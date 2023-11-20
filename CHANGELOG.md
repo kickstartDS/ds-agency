@@ -1,3 +1,16 @@
+# v2.1.27 (Mon Nov 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(spacing): adjust spacing token ([@fleven-kds](https://github.com/fleven-kds))
+- feat(blog-teaser): increse selctor specificity ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.26 (Mon Nov 20 2023)
 
 #### ⚠️ Pushed to `main`
