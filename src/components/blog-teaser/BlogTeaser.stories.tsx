@@ -6,7 +6,7 @@ import { BlogTeaser } from "./BlogTeaserComponent";
 import schema from "./blog-teaser.schema.json";
 
 const meta: Meta<typeof BlogTeaser> = {
-  title: "Blog/Teaser",
+  title: "Blog/ Blog Teaser",
   component: BlogTeaser,
   parameters: {
     jsonSchema: {
