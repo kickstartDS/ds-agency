@@ -46,7 +46,10 @@
             "title": "Tile Image",
             "description": "Image source for the tile",
             "type": "string",
-            "examples": ["img/team.png", "img/agency.png"]
+            "examples": [
+              "img/team.png",
+              "img/close-up-young-business-team-working.png"
+            ]
           },
           "button": {
             "type": "object",

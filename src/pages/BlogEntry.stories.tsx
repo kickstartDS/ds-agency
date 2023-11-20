@@ -16,7 +16,7 @@ const Page = () => (
             date="12/30/2022"
             tags={["Technology", "AI"]}
             headline="The Future of AI: A Glimpse into the Unseen"
-            image="img/agency.png"
+            image="img/close-up-young-business-team-working.png"
           />
           <RichText
             text={`

@@ -32,7 +32,7 @@
       "description": "The source of the cover image for the blog post",
       "type": "string",
       "format": "uri",
-      "examples": ["img/agency.png"]
+      "examples": ["img/close-up-young-business-team-working.png"]
     }
   },
   "additionalProperties": false,

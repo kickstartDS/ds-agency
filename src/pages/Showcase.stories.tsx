@@ -138,13 +138,13 @@ The implementation of the new **Design System** and migration to **Storyblok** t
       }}
     >
       <TeaserCard
-        target="/showcase-techfusion_paid"
+        target="#"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/static/img/showcases/comp_tfe01.jpg"
       />
       <TeaserCard
-        target="/showcase-launchpad_paid"
+        target="#"
         headline="Speed and Scale"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         image="/static/img/showcases/comp_audio01.jpg"

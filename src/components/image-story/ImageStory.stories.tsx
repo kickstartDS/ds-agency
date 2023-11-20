@@ -40,6 +40,7 @@ Ready to make your digital journey exceptional?
     `,
     largeHeadline: true,
     image: {
+      src: "img/full-shot-different-people-working-together.png",
       order: {
         desktopImageLast: false,
       },

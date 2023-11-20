@@ -27,10 +27,10 @@ export const TextBelowImage: Story = {
     height: "fullImage",
     textPosition: "below",
     image: {
-      srcMobile: "img/colleagues-work-office-using-computers-looking-aside.jpg",
-      srcTablet: "img/colleagues-work-office-using-computers-looking-aside.jpg",
+      srcMobile: "img/colleagues-work-office-using-computers-looking-aside.png",
+      srcTablet: "img/colleagues-work-office-using-computers-looking-aside.png",
       srcDesktop:
-        "img/colleagues-work-office-using-computers-looking-aside.jpg",
+        "img/colleagues-work-office-using-computers-looking-aside.png",
     },
   }),
 };
@@ -44,9 +44,10 @@ export const TextCenteredOverBackgroundImage: Story = {
     overlay: true,
     textPosition: "center",
     image: {
-      srcMobile: "img/hero.png",
-      srcTablet: "img/hero-centered.png",
-      srcDesktop: "img/hero-centered.png",
+      srcMobile: "img/colleagues-work-office-using-computers-looking-aside.png",
+      srcTablet: "img/colleagues-work-office-using-computers-looking-aside.png",
+      srcDesktop:
+        "img/colleagues-work-office-using-computers-looking-aside.png",
     },
   }),
 };
@@ -56,13 +57,12 @@ export const TextBoxOverBackgroundImage: Story = {
     headline: "The Sanity & Next.js Experts",
     text: "Experience the speed & scalability unlike anything seen before with our Sanity CMS powered websites, web apps & composable architecture.",
     textbox: true,
-    overlay: true,
     textPosition: "left",
     image: {
-      srcMobile: "img/colleagues-work-office-using-computers-looking-aside.jpg",
-      srcTablet: "img/colleagues-work-office-using-computers-looking-aside.jpg",
+      srcMobile: "img/colleagues-work-office-using-computers-looking-aside.png",
+      srcTablet: "img/colleagues-work-office-using-computers-looking-aside.png",
       srcDesktop:
-        "img/colleagues-work-office-using-computers-looking-aside.jpg",
+        "img/colleagues-work-office-using-computers-looking-aside.png",
     },
   }),
 };

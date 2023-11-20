@@ -37,9 +37,9 @@ const Page = () => (
         text="Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture."
         textPosition="center"
         video={{
-          srcDesktop: "/static/img/videos/video-1080.mp4",
-          srcMobile: "/static/img/videos/video-720.mp4",
-          srcTablet: "/static/img/videos/video-1080.mp4",
+          srcDesktop: "/static/img/videos/video-agency.mp4",
+          srcMobile: "/static/img/videos/video-agency.mp4",
+          srcTablet: "/static/img/videos/video-agency.mp4",
         }}
       />
     </Section>
@@ -82,7 +82,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
 **Ready to make your digital journey exceptional?**
 <br/><br/>`}
         image={{
-          src: "/static/img/deco/coding_01_framed.png",
+          src: "/static/img/full-shot-different-people-working-together.png",
           alt: "Just a decorative illustration",
         }}
         buttons={[
@@ -92,33 +92,6 @@ We empower your digital teams with the knowledge and skills to manage and evolve
             target: "https://app.lemcal.com/@daniel-ley",
           },
         ]}
-      />
-    </Section>
-
-    <Section width="full">
-      <Hero
-        buttons={[
-          {
-            icon: "person",
-            label: "Book a meeting",
-            target: undefined,
-          },
-        ]}
-        headline="Our Approach to Design Systems"
-        sub="Own a design system without investing years of development."
-        overlay
-        height="fullImage"
-        image={{
-          alt: "Info graphic displaying the pains and gains of adopting, adapting or creating an own design system vs. what you gain relying on kickstartDS for this as a meta framework for design system creation",
-          indent: "none",
-          src: "",
-          srcDesktop: "/static/img/infos/adapt_kickstartds.svg",
-          srcMobile: "/static/img/infos/adapt_kickstartds_mobile.svg",
-          srcTablet: "/static/img/infos/adapt_kickstartds.svg",
-        }}
-        largeHeadline
-        text="We value efficiency without compromising quality. Our secret weapon? **kickstartDS**, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever."
-        textPosition="below"
       />
     </Section>
 
@@ -291,7 +264,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
       }}
     >
       <Image
-        src="/static/img/deco/office-devider-dotted.png"
+        src="/static/img/office-divider-image.png"
         alt="Photorealistic image Super wide scale of a view into a hyper modern design & web development agency, glass walls, no people, wide angle, blade runner movie like aesthetics, neon-light, lens-flare, pink, blue, and cyan color tonality, wide angle, sharp, "
       />
     </Section>

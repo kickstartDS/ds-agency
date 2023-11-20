@@ -55,8 +55,7 @@
           "title": "Image source",
           "description": "Image source to use",
           "type": "string",
-          "format": "image",
-          "examples": ["img/agency.png"]
+          "format": "image"
         },
         "ratio": {
           "title": "Image aspect ratio",

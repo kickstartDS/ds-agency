@@ -25,6 +25,7 @@ export const ImageAndTextOnColoredBackground: Story = {
     largeHeadline: true,
     backgroundColor: "#1a4378",
     image: {
+      src: "img/close-up-young-business-team-working.png",
       order: {
         desktopImageLast: false,
       },
@@ -52,6 +53,7 @@ export const ImageAndTextOverBackground: Story = {
     backgroundColor: "#06081f",
     width: "wide",
     image: {
+      src: "img/close-up-young-business-team-working.png",
       order: {
         desktopImageLast: true,
       },
