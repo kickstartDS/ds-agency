@@ -4,9 +4,26 @@
 article.c-post-teaser {
   --c-teaser--background: transparent;
   --c-post-teaser--gap: var(--ks-spacing-stack-s) var(--ks-spacing-inline-s);
+  --c-teaser_text--spacing: var(--ks-spacing-stack-s);
+  --g-topic--font: var(--ks-font-display-s);
+
+  @include container.size("≥", 640px, "post-teaser") {
+    --g-topic--font: var(--ks-font-display-l);
+    --c-rich-text--font: var(--ks-font-copy-m);
+
+    .c-tag-label--s {
+      --c-tag-label--font: var(--ks-font-interface-s);
+    }
+  }
+
+  @include container.size("≥", 1000px, "post-teaser") {
+    --g-topic--font: var(--ks-font-display-xl);
+  }
 
   .c-teaser {
     overflow: visible;
+    cursor: pointer;
+
     &:hover {
       .c-teaser__topic {
         text-shadow: 0 0 15px var(--ks-color-fg-alpha-5);
@@ -38,19 +55,9 @@ article.c-post-teaser {
     gap: var(--c-post-teaser--gap);
   }
 
-  cursor: pointer;
-
   .c-teaser__topic {
     text-align: left;
     transition: var(--ks-transition-hover);
     transition-property: text-shadow;
-    font-size: var(--ks-font-size-copy-l);
-  }
-
-  @include container.size("≥", 640px, "post-teaser") {
-    --c-post-teaser--gap: var(--ks-spacing-m);
-    .c-teaser__topic {
-      font-size: var(--ks-font-size-display-xl);
-    }
   }
 }
