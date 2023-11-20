@@ -1,3 +1,16 @@
+# v2.1.28 (Mon Nov 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(typo): increase display font size ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.27 (Mon Nov 20 2023)
 
 #### ⚠️ Pushed to `main`
