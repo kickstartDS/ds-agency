@@ -42,8 +42,9 @@ article.c-post-teaser {
   }
 
   .c-post-meta {
-    --c-post-meta--gap: var(--c-post-teaser--gap);
     --c-post-meta_author--font-weight: var(--ks-font-weight-semi-bold);
+    --c-post-meta--gap: 0.5em 1em;
+
     margin: 0;
   }
 

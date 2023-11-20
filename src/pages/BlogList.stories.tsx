@@ -27,7 +27,6 @@ const Page = () => (
       />
     </Section>
     <Section
-      width="wide"
       headline={{
         text: "More articles",
       }}
