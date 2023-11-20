@@ -1,3 +1,15 @@
+# v2.1.29 (Mon Nov 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(blog-teaser): make blog teaser more responsive ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.28 (Mon Nov 20 2023)
 
 #### ⚠️ Pushed to `main`
