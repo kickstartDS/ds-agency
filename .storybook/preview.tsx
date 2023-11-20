@@ -28,6 +28,7 @@ const preview: Preview = {
           "Docs",
           ["Welcome", "Integration"],
           "Pages",
+          ["Pages", "Testing"],
           "Components",
           "Paid Components",
           "Blog",
