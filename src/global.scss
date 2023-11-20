@@ -1,4 +1,5 @@
 @use "@kickstartds/base/lib/global/base.css";
+@use "./components/blog-teaser/blog-teaser";
 @use "./components/rich-text/rich-text";
 @use "./components/form/form";
 @use "./token/tokens.css";
@@ -7,8 +8,9 @@
 @use "./selectors" as *;
 
 #{$selectors} {
-  --g-topic--font-weight: var(--ks-font-weight-semi-bold);
-  --g-link--font-weight: var(--ks-font-weight-semi-bold);
+  --g-topic--font-weight: var(--ks-font-weight-medium);
+  --g-link--font-weight: var(--ks-font-weight-medium);
+  --g-link--color-hover: var(--ks-color-fg);
   --g-topic--color: var(--ks-color-fg);
   --l-section--content-padding: var(--ks-spacing-inset-l) !important;
 

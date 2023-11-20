@@ -28,6 +28,6 @@ Default.args = pack({
   author: {
     name: "Jane Smith",
     title: "Senior AI Researcher",
-    image: "img/customer-1.png",
+    image: "img/people/author-emily.png",
   },
 });

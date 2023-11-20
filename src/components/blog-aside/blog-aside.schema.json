@@ -27,7 +27,7 @@
           "description": "The image URL of the author",
           "type": "string",
           "format": "uri",
-          "examples": ["img/customer-1.png"]
+          "examples": ["img/people/author-emily.png"]
         },
         "twitter": {
           "title": "Twitter",

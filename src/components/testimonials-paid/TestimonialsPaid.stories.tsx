@@ -59,7 +59,7 @@ TestimonialWithRating.args = pack({
     {
       quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
       image: {
-        src: "img/people/customer-1.png",
+        src: "img/people/people/author-emily.png",
         alt: "Alt Text Customer 1",
       },
       name: "Emily Johnson",
@@ -69,7 +69,7 @@ TestimonialWithRating.args = pack({
     {
       quote: `Systemics's design system transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends.`,
       image: {
-        src: "img/people/customer-2.png",
+        src: "img/people/people/author-alex.png",
         alt: "Alt Text Customer 2",
       },
       name: "John Smith",

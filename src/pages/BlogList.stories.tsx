@@ -19,7 +19,11 @@ const Page = () => (
         image="img/close-up-young-business-team-working.png"
         link={{ url: "https://example.com/article1", label: "Read more" }}
         readingTime="5 min read"
-        author={{ name: "John Doe", title: "CEO", image: "img/customer-1.png" }}
+        author={{
+          name: "John Doe",
+          title: "CEO",
+          image: "img/people/author-alex.png",
+        }}
       />
     </Section>
     <Section
@@ -37,7 +41,11 @@ const Page = () => (
         image="img/close-up-young-business-team-working.png"
         link={{ url: "https://example.com/article1", label: "Read more" }}
         readingTime="5 min read"
-        author={{ name: "John Doe", title: "CEO", image: "img/customer-1.png" }}
+        author={{
+          name: "John Doe",
+          title: "CEO",
+          image: "img/people/author-alex.png",
+        }}
       />
       <BlogTeaser
         date="12/30/2022"
@@ -47,7 +55,11 @@ const Page = () => (
         image="img/close-up-young-business-team-working.png"
         link={{ url: "https://example.com/article2", label: "Read more" }}
         readingTime="5 min read"
-        author={{ name: "Jane Doe", title: "CTO", image: "img/customer-2.png" }}
+        author={{
+          name: "Jane Doe",
+          title: "CTO",
+          image: "img/people/author-emily.png",
+        }}
       />
       <BlogTeaser
         date="12/30/2022"
@@ -57,7 +69,11 @@ const Page = () => (
         image="img/close-up-young-business-team-working.png"
         link={{ url: "https://example.com/article3", label: "Read more" }}
         readingTime="5 min read"
-        author={{ name: "John Doe", title: "CEO", image: "img/customer-1.png" }}
+        author={{
+          name: "John Doe",
+          title: "CEO",
+          image: "img/people/author-alex.png",
+        }}
       />
     </Section>
   </>

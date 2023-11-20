@@ -44,7 +44,7 @@ const Page = () => (
           author={{
             name: "Jane Doe",
             byline: "Senior Developer",
-            image: "img/author-1.png",
+            image: "img/people/author-emily.png",
             twitter: "Janedoe",
             email: "Jane.doe@example.com",
           }}
