@@ -1,3 +1,15 @@
+# v2.1.26 (Mon Nov 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(images): replace images ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.25 (Mon Nov 20 2023)
 
 #### 🐛 Bug Fix
