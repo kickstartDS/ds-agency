@@ -37,17 +37,22 @@ export const Feature: FC<FeatureProps & HTMLAttributes<HTMLElement>> = ({
         {icon && <Icon className="c-feature__icon" icon={icon} />}
         <span className="c-feature__title">{title}</span>
       </div>
-      <p className="c-feature__text">
-        {text}
-        {ctaStyle === "intext" && ctaToggle ? (
-          <>
-            &#32;{" "}
-            <Link href={ctaTarget}>{ctaLabel ? ctaLabel : "See more"}</Link>
-          </>
-        ) : (
-          ""
-        )}
-      </p>
+      {text || ctaStyle === "intext" ? (
+        <p className="c-feature__text">
+          {text}
+          {ctaStyle === "intext" && ctaToggle ? (
+            <>
+              &#32;{" "}
+              <Link href={ctaTarget}>{ctaLabel ? ctaLabel : "See more"}</Link>
+            </>
+          ) : (
+            ""
+          )}
+        </p>
+      ) : (
+        ""
+      )}
+
       {ctaToggle && (ctaStyle === "link" || ctaStyle === "button") && (
         <div className="c-feature__cta">
           {ctaStyle === "link" ? (
