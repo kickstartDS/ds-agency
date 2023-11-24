@@ -1,6 +1,7 @@
 @use "section-tokens.scss";
-
-.l-section {
-  background-image: var(--l-section--background-image);
-  background-color: var(--l-section--background-color);
+:root {
+  .l-section {
+    background-image: var(--l-section--background-image);
+    background-color: var(--l-section--background-color);
+  }
 }
