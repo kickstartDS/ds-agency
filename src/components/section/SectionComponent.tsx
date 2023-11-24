@@ -38,7 +38,7 @@ export const Section = forwardRef<
         {...props}
         className={classnames(
           style !== "default" &&
-            `l-section--${
+            `l-section-style--${
               style === "verticalGradient"
                 ? "vertical-gradient"
                 : style === "horizontalGradient"

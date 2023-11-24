@@ -1,9 +1,63 @@
 @import "../../selectors";
 
-:root {
-  --l-section--background-bold: var(--ks-background-color-primary) !important;
-}
+.l-section {
+  --l-section--background-color: var(--ks-background-color-default);
 
-[ks-inverted] {
-  --l-section--background-bold: var(--ks-background-color-primary) !important;
+  &--accent {
+    --l-section--background-color: var(--ks-background-color-accent);
+  }
+
+  &--bold {
+    --l-section--background-color: var(--ks-background-color-bold);
+  }
+
+  &--style-stagelights {
+    --l-section--background-image: radial-gradient(
+        50% 150% at 100% -50%,
+        var(--ks-color-primary-inverted-alpha-3) 0%,
+        transparent 100%
+      ),
+      radial-gradient(50% 150% at 0% -50%, var(--ks-color-primary-alpha-3) 0%, transparent 100%);
+  }
+
+  &--style-anchor-glow {
+    --l-section--background-image: radial-gradient(
+      50% 50% at 50% 100%,
+      var(--ks-color-secondary-alpha-5) 0%,
+      transparent 100%
+    );
+  }
+
+  &--style-symmetric-glow {
+    --l-section--background-image: radial-gradient(
+        20% 50% at 100% 50%,
+        var(--ks-color-primary-alpha-5) 0%,
+        transparent 100%
+      ),
+      radial-gradient(20% 50% at 0% 50%, var(--ks-color-primary-inverted-alpha-5) 0%, transparent 100%);
+  }
+
+  &--style-accent-transition {
+    --l-section--background-image: linear-gradient(180deg, transparent 0%, var(--ks-background-color-accent) 100%);
+  }
+
+  &--style-bold-transition {
+    --l-section--background-image: linear-gradient(180deg, transparent 0%, var(--ks-background-color-bold) 100%);
+  }
+
+  &--style-vertical-gradient {
+    --l-section--background-image: linear-gradient(
+      0deg,
+      var(--ks-color-primary-alpha-3) 0%,
+      var(--ks-color-secondary-alpha-3) 100%
+    );
+  }
+
+  &--style-horizontal-gradient {
+    --l-section--background-image: linear-gradient(
+      90deg,
+      var(--ks-color-primary-alpha-5) 0%,
+      var(--ks-color-secondary-alpha-5) 100%
+    );
+  }
 }
