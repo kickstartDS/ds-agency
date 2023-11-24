@@ -1,11 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { Split } from "../components/split/SplitComponent";
-
 import { BlogHead } from "../components/blog-head/BlogHeadComponent";
 import { Section } from "../components/section/SectionComponent";
 import { BlogAside } from "../components/blog-aside/BlogAsideComponent";
-import { RichText } from "@kickstartds/base/lib/rich-text";
+import { Text } from "../components/text/TextComponent";
 
 const Page = () => (
   <>
@@ -18,10 +17,10 @@ const Page = () => (
             headline="The Future of AI: A Glimpse into the Unseen"
             image="img/close-up-young-business-team-working.png"
           />
-          <RichText
+          <Text
             text={`
   ## Introduction
-  The future of **Artificial Intelligence (AI)** is a topic that has been the subject of much debate. It's a field that's constantly evolving, with new advancements and breakthroughs happening all the time. [Learn more about AI](https://en.wikipedia.org/wiki/Artificial_intelligence)
+  The future of **ArtiEficial Intelligence (AI)** is a topic that has been the subject of much debate. It's a field that's constantly evolving, with new advancements and breakthroughs happening all the time. [Learn more about AI](https://en.wikipedia.org/wiki/Artificial_intelligence)
 
   ## The Current State of AI
   Today, AI is already a part of our daily lives. From *smart home devices* to *recommendation algorithms* on our favorite streaming services, AI is everywhere.
