@@ -59,7 +59,7 @@
     "watch:dictionary": "yarn build-tokens && chokidar \"src/token/dictionary/*.json\" -c \"yarn build-tokens\""
   },
   "resolutions": {
-    "@kickstartds/style-dictionary": "^3.0.0-next.2"
+    "@kickstartds/style-dictionary": "^3.0.0-next.1"
   },
   "dependencies": {
     "@bedrock-layout/primitives": "^3.0.23",
