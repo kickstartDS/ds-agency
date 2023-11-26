@@ -1,3 +1,15 @@
+# v2.1.35 (Sun Nov 26 2023)
+
+#### 🐛 Bug Fix
+
+- Upgrade kickstartDS CLI [#36](https://github.com/kickstartDS/ds-agency/pull/36) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.1.34 (Sun Nov 26 2023)
 
 #### ⚠️ Pushed to `main`
