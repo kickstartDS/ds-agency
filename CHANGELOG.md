@@ -1,3 +1,15 @@
+# v2.1.34 (Sun Nov 26 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: re-add working header with nav ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.1.33 (Fri Nov 24 2023)
 
 #### ⚠️ Pushed to `main`

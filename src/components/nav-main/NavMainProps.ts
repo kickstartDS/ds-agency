@@ -13,9 +13,8 @@ export interface NavMainProps {
    */
   logo: PictureProps;
   logoHref?: string;
-  items?: NavItem[];
-}
-export interface NavItem {
-  href: string;
-  label: string;
+  items?: {
+    href: string;
+    label: string;
+  }[];
 }

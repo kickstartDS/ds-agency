@@ -15,6 +15,9 @@
       "title": "Floating",
       "description": "Make the header float over the first Section",
       "default": false
+    },
+    "navItems": {
+      "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/items"
     }
   },
   "additionalProperties": false,
