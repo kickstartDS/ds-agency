@@ -19,4 +19,8 @@ export interface HeaderProps {
   logo: PictureProps;
   logoHref?: string;
   floating?: Floating;
+  navItems?: {
+    href: string;
+    label: string;
+  }[];
 }
