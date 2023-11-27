@@ -48,6 +48,10 @@ export type Style =
  */
 export type Style1 = "default" | "accent" | "bold";
 /**
+ * Show spotlight behind cursor
+ */
+export type Spotlight = boolean;
+/**
  * Amount of spacing before the section
  */
 export type SpaceBefore = "default" | "small" | "none";
@@ -144,6 +148,7 @@ export interface SectionProps {
   width?: Width;
   style?: Style;
   backgroundColor?: Style1;
+  spotlight?: Spotlight;
   spaceBefore?: SpaceBefore;
   spaceAfter?: SpaceAfter;
   inverted?: Inverted;

@@ -8,6 +8,7 @@ import {
 
 import { SectionProps } from "./SectionProps";
 import "./section.scss";
+import "./js/spotlight.client";
 
 export const Section = forwardRef<
   HTMLDivElement,
@@ -20,6 +21,7 @@ export const Section = forwardRef<
       headerSpacing,
       width = "default",
       style = "default",
+      spotlight = false,
       backgroundColor = "default",
       spaceBefore = "default",
       spaceAfter = "default",
@@ -37,6 +39,7 @@ export const Section = forwardRef<
     return (
       <SectionContextDefault
         {...props}
+        ks-component="base.section"
         className={classnames(
           style !== "default" &&
             `l-section-style--${
@@ -54,7 +57,8 @@ export const Section = forwardRef<
                 ? "anchor-glow"
                 : style
             }`,
-          headerSpacing && "l-section--header-spacing"
+          headerSpacing && "l-section--header-spacing",
+          spotlight && "l-section--spotlight"
         )}
         background={backgroundColor}
         content={content}

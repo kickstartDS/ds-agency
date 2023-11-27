@@ -34,6 +34,12 @@
       "enum": ["default", "accent", "bold"],
       "default": "default"
     },
+    "spotlight": {
+      "type": "boolean",
+      "title": "Spotlight",
+      "description": "Show spotlight behind cursor",
+      "default": false
+    },
     "spaceBefore": {
       "type": "string",
       "title": "Space Before",
