@@ -1,3 +1,16 @@
+# v2.1.39 (Mon Nov 27 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feature: add spotlight style option to Section ([@julrich](https://github.com/julrich))
+- fix: add cssprops to button ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.1.38 (Mon Nov 27 2023)
 
 #### ⚠️ Pushed to `main`
