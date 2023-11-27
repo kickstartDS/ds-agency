@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 20 Nov 2023 08:26:09 GMT
+ * Generated on Mon, 27 Nov 2023 21:11:40 GMT
  */
 
 export const KsBackgroundColorAccentBase = "#deeef1";
