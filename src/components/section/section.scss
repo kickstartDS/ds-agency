@@ -3,5 +3,15 @@
   .l-section {
     background-image: var(--l-section--background-image);
     background-color: var(--l-section--background-color);
+
+    &--header-spacing {
+      padding-top: calc(var(--g-header-height) + var(--l-section--space-default));
+    }
+    &--header-spacing.l-section--space-before-none {
+      padding-top: var(--g-header-height);
+    }
+    &--header-spacing.l-section--space-before-small {
+      padding-top: calc(var(--g-header-height) + var(--l-section--space-small));
+    }
   }
 }

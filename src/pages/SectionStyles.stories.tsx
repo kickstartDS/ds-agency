@@ -10,11 +10,13 @@ import { TestimonialsPaid } from "../components/testimonials-paid/TestimonialsPa
 
 const Page = () => (
   <>
-    <Header {...headerProps} />
+    <Header {...headerProps} floating />
     <Section
+      headerSpacing
       content={{
         mode: "list",
       }}
+      style="stagelights"
       width="default"
     >
       <Cta

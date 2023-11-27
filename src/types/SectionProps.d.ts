@@ -60,6 +60,10 @@ export type SpaceAfter = "default" | "small" | "none";
  */
 export type Inverted = boolean;
 /**
+ * Reserve additional spacing for a floating header
+ */
+export type HeaderSpacing = boolean;
+/**
  * Headline Text for the section
  */
 export type Headline = string;
@@ -143,6 +147,7 @@ export interface SectionProps {
   spaceBefore?: SpaceBefore;
   spaceAfter?: SpaceAfter;
   inverted?: Inverted;
+  headerSpacing?: HeaderSpacing;
   headline?: {
     text?: Headline;
     large?: LargeHeadline;

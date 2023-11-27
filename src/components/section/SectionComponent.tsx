@@ -17,6 +17,7 @@ export const Section = forwardRef<
     {
       headline,
       content,
+      headerSpacing,
       width = "default",
       style = "default",
       backgroundColor = "default",
@@ -52,7 +53,8 @@ export const Section = forwardRef<
                 : style === "anchorGlow"
                 ? "anchor-glow"
                 : style
-            }`
+            }`,
+          headerSpacing && "l-section--header-spacing"
         )}
         background={backgroundColor}
         content={content}

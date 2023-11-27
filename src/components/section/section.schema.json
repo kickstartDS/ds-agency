@@ -54,6 +54,12 @@
       "description": "Whether to invert the section",
       "default": false
     },
+    "headerSpacing": {
+      "type": "boolean",
+      "title": "Header Spacing",
+      "description": "Reserve additional spacing for a floating header",
+      "default": false
+    },
     "headline": {
       "type": "object",
       "properties": {
