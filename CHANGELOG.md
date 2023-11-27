@@ -1,3 +1,15 @@
+# v2.1.40 (Mon Nov 27 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feature: add compilation of secondary token set ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.1.39 (Mon Nov 27 2023)
 
 #### ⚠️ Pushed to `main`
