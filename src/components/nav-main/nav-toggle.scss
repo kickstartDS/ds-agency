@@ -20,7 +20,7 @@ button.nav-toggle {
   padding: 0 var(--g-header-spacing-h);
   transform: translateX(var(--g-header-spacing-h));
 
-  @media (min-width: 60rem) {
+  @media (min-width: 62em) {
     display: none;
   }
 
@@ -36,7 +36,7 @@ button.nav-toggle {
     width: 31px;
     transform: scale(0.7) translate(7.5%, 7.5%);
     transition: inherit;
-    color: var(--ks-text-color-primary);
+    color: var(--g-nav-toggle--color);
 
     @media (min-width: 40rem) {
       transform: scale(0.9) translate(2.5%, 2.5%);
@@ -44,11 +44,11 @@ button.nav-toggle {
 
     .overlay-open &,
     .overlay-open .header-is-scrolling & {
-      color: var(--ks-text-color-primary);
+      color: var(--g-nav-toggle-open--color);
     }
 
     .header-is-scrolling-up & {
-      color: var(--ks-text-color-primary);
+      color: var(--g-nav-toggle-open--color);
     }
 
     &::before,
@@ -72,13 +72,15 @@ button.nav-toggle {
 
     &::before {
       top: 2px;
-      transition: top math.div($duration, 2) $ease math.div($duration, 2),
+      transition:
+        top math.div($duration, 2) $ease math.div($duration, 2),
         transform $ease math.div($duration, 2);
     }
 
     &::after {
       bottom: 2px;
-      transition: bottom math.div($duration, 2) $ease math.div($duration, 2),
+      transition:
+        bottom math.div($duration, 2) $ease math.div($duration, 2),
         transform $ease math.div($duration, 2);
     }
   }
@@ -91,14 +93,16 @@ button.nav-toggle {
 
       &::before {
         top: 14px;
-        transition: top $ease math.div($duration, 2),
+        transition:
+          top $ease math.div($duration, 2),
           transform math.div($duration, 2) $ease math.div($duration, 2);
         transform: rotate(-45deg);
       }
 
       &::after {
         bottom: 14px;
-        transition: bottom $ease math.div($duration, 2),
+        transition:
+          bottom $ease math.div($duration, 2),
           transform math.div($duration, 2) $ease math.div($duration, 2);
         transform: rotate(45deg);
       }

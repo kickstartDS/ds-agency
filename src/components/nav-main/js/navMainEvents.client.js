@@ -6,7 +6,7 @@ export const navMainEvents = {
 
 let mm;
 if (inBrowser) {
-  mm = window.matchMedia("(min-width: 60em)");
+  mm = window.matchMedia("(min-width: 62em)");
   mm.addEventListener("change", (event) =>
     window._ks.radio.emit(navMainEvents.change, event.matches)
   );

@@ -7,7 +7,7 @@
     --g-logo--height: 2.5rem;
   }
 
-  @media (min-width: 60rem) {
+  @media (min-width: 62em) {
     --g-logo--height: 3rem;
   }
 }
@@ -17,8 +17,12 @@
   --g-header-spacing-h: var(--l-section--content-padding);
 
   &--floating {
-    background-color: transparent;
+    background: linear-gradient(var(--ks-color-bg-alpha-5), transparent);
     position: absolute;
+
+    .c-nav-main__link {
+      text-shadow: 0 0 10px var(--ks-color-bg-alpha-5);
+    }
   }
 
   position: relative;

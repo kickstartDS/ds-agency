@@ -9,12 +9,11 @@ import { VideoCurtain } from "../components/video-curtain/VideoCurtainComponent"
 import { TestimonialsPaid } from "../components/testimonials-paid/TestimonialsPaidComponent";
 import { CtaPaid } from "../components/cta-paid/CtaPaidComponent";
 import { ImageStory } from "../components/image-story/ImageStoryComponent";
-import { Hero } from "../components/hero/HeroComponent";
 import { Image } from "../components/image/ImageComponent";
 
 const Page = () => (
   <>
-    <Header {...headerProps} />
+    <Header {...headerProps} floating />
     <Section
       spaceBefore="none"
       spaceAfter="none"
