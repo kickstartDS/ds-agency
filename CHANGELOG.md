@@ -1,3 +1,15 @@
+# v2.1.38 (Mon Nov 27 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(section): add headerSpacing property ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.37 (Mon Nov 27 2023)
 
 #### ⚠️ Pushed to `main`
