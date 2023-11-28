@@ -323,6 +323,10 @@ export type Caption = string;
  * The layout of the gallery images
  */
 export type Layout = "stack" | "smallTiles" | "largeTiles";
+/**
+ * Display images in a lightbox gallery
+ */
+export type Lightbox = boolean;
 
 /**
  * Component used to display a gallery of images
@@ -330,4 +334,5 @@ export type Layout = "stack" | "smallTiles" | "largeTiles";
 export interface GalleryProps {
   images: Images;
   layout?: Layout;
+  lightbox?: Lightbox;
 }

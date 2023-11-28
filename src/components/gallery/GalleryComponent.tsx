@@ -5,8 +5,9 @@ import "./gallery.scss";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 
 export const Gallery: FC<GalleryProps & HTMLAttributes<HTMLElement>> = ({
-  images = [],
+  lightbox = false,
   layout = "tiles",
+  images = [],
 }) => {
   return (
     <div className={`c-gallery`}>
@@ -27,10 +28,21 @@ export const Gallery: FC<GalleryProps & HTMLAttributes<HTMLElement>> = ({
             <TextMedia
               media={[
                 {
-                  image: {
-                    src: image.url,
-                    alt: image.alt,
-                  },
+                  ...(lightbox && {
+                    lightboxImage: {
+                      thumb: image.url,
+                      image: image.url,
+                      alt: image.alt,
+                      gallery: "Gallery",
+                    },
+                  }),
+                  ...(lightbox === false && {
+                    image: {
+                      src: image.url,
+                      alt: image.alt,
+                      gallery: `gallery-${index}`,
+                    },
+                  }),
                   caption: image.caption,
                 },
               ]}

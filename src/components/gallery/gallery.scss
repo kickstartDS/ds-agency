@@ -22,3 +22,26 @@
     flex: 1 1;
   }
 }
+
+.pswp {
+  .pswp__img {
+    object-fit: contain;
+  }
+
+  .pswp__caption {
+    background-color: var(--ks-color-bg-alpha-3);
+    color: var(--ks-color-fg);
+  }
+}
+
+:root,
+[ks-inverted],
+[ks-theme] {
+  --c-lightbox--bg: var(--ks-color-bg) !important;
+  --c-lightbox--placeholder-bg: var(--ks-color-fg-to-bg-1) !important;
+  --c-lightbox--root-z-index: var(--ks-depth-modal) !important;
+  --c-lightbox--icon-color: var(--ks-color-fg) !important;
+  --c-lightbox--icon-color-secondary: var(--ks-color-secondary) !important;
+  --c-lightbox--stroke-width: 0px !important;
+  --c-lightbox--error-text-color: var(--ks-color-fg-to-bg-9) !important;
+}

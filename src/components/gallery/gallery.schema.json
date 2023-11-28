@@ -43,6 +43,12 @@
       "description": "The layout of the gallery images",
       "enum": ["stack", "smallTiles", "largeTiles"],
       "examples": ["below"]
+    },
+    "lightbox": {
+      "type": "boolean",
+      "title": "Lightbox",
+      "description": "Display images in a lightbox gallery",
+      "default": false
     }
   },
   "additionalProperties": false,
