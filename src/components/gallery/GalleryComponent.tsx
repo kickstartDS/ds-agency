@@ -1,4 +1,4 @@
-import { HTMLAttributes, FC } from "react";
+import { HTMLAttributes, FC, useMemo } from "react";
 import classnames from "classnames";
 import { GalleryProps } from "./GalleryProps";
 import "./gallery.scss";
@@ -9,6 +9,8 @@ export const Gallery: FC<GalleryProps & HTMLAttributes<HTMLElement>> = ({
   layout = "tiles",
   images = [],
 }) => {
+  const galleryId = useMemo(() => `gallery-${Date.now()}`, []);
+
   return (
     <div className={`c-gallery`}>
       <div
@@ -30,17 +32,17 @@ export const Gallery: FC<GalleryProps & HTMLAttributes<HTMLElement>> = ({
                 {
                   ...(lightbox && {
                     lightboxImage: {
-                      thumb: image.url,
-                      image: image.url,
+                      thumb: image.src,
+                      image: image.src,
                       alt: image.alt,
-                      gallery: "Gallery",
+                      gallery: galleryId,
                     },
                   }),
                   ...(lightbox === false && {
                     image: {
-                      src: image.url,
+                      src: image.src,
                       alt: image.alt,
-                      gallery: `gallery-${index}`,
+                      gallery: galleryId,
                     },
                   }),
                   caption: image.caption,

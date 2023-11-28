@@ -14,303 +14,303 @@
 export type Images =
   | [
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       }
     ]
   | [
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       }
     ]
   | [
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       }
     ]
   | [
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       }
     ]
   | [
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       }
     ]
   | [
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       }
     ]
   | [
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       }
     ]
   | [
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       }
     ]
   | [
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       }
     ]
   | [
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       },
       {
-        url: URL;
+        src: Src;
         alt?: AltText;
         caption?: Caption;
       }
     ];
 /**
- * The URL of the image
+ * The source of the image
  */
-export type URL = string;
+export type Src = string;
 /**
  * Alt text of the image
  */

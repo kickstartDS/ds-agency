@@ -12,10 +12,10 @@
       "items": {
         "type": "object",
         "properties": {
-          "url": {
+          "src": {
             "type": "string",
-            "title": "URL",
-            "description": "The URL of the image",
+            "title": "src",
+            "description": "The source of the image",
             "examples": ["https://example.com/image1.jpg"]
           },
           "alt": {
@@ -32,7 +32,7 @@
           }
         },
         "additionalProperties": false,
-        "required": ["url"]
+        "required": ["src"]
       },
       "minItems": 1,
       "maxItems": 10
