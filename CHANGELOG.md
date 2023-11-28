@@ -1,3 +1,15 @@
+# v2.1.52 (Tue Nov 28 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix: bring back section spotlight on production ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.1.51 (Tue Nov 28 2023)
 
 #### ⚠️ Pushed to `main`
