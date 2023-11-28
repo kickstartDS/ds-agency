@@ -8,15 +8,19 @@
 
 #{$selectors} {
   --g-topic--font-weight: var(--ks-font-weight-medium);
+  --g-topic--color: var(--ks-color-fg);
+
   --g-link--font-weight: var(--ks-font-weight-medium);
   --g-link--color-hover: var(--ks-color-fg);
-  --g-topic--color: var(--ks-color-fg);
-  --l-section--content-padding: var(--ks-spacing-inset-l) !important;
+
+  --g-header-height: calc(var(--g-logo--height) + var(--ks-spacing-stack-m) + var(--ks-spacing-stack-m)) !important;
 
   --g-filter-drop-shadow--higlight: drop-shadow(0px 2px 30px var(--ks-color-primary-alpha-2))
     drop-shadow(0px 1px 4px var(--ks-color-fg-alpha-8));
 
   --g-gradient--higlight: linear-gradient(135deg, var(--ks-color-primary) 0%, var(--ks-color-secondary) 100%);
+
+  --l-section--content-padding: var(--ks-spacing-inset-l) !important;
 
   @media (min-width: 42rem) {
     --l-section--content-padding: var(--ks-spacing-inset-xl) !important;
@@ -24,7 +28,6 @@
 
   --l-section--content-width-full: 100vw !important;
   --l-section--content-width-wide: 1440px !important;
-  --g-header-height: calc(var(--g-logo--height) + var(--ks-spacing-stack-m) + var(--ks-spacing-stack-m));
 
   .c-divider {
     --c-divider--background: var(--ks-border-color-accent);
@@ -32,8 +35,5 @@
 
   .c-post-head {
     --c-post-head_date--font-weight: var(--ks-font-weight-semi-bold);
-  }
-  .c-post-aside {
-    --c-post-aside--gap: var(--ks-spacing-stack-s);
   }
 }
