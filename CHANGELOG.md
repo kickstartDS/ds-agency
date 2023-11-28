@@ -1,3 +1,16 @@
+# v2.1.51 (Tue Nov 28 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(slider): add arrows property ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.50 (Tue Nov 28 2023)
 
 #### ⚠️ Pushed to `main`
