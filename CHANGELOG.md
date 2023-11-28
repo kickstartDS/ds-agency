@@ -1,3 +1,15 @@
+# v2.1.43 (Tue Nov 28 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(headline + blog teaser): adjust headline types ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.42 (Tue Nov 28 2023)
 
 #### ⚠️ Pushed to `main`
