@@ -37,8 +37,10 @@ article.c-post-teaser {
     }
   }
 
-  &__image {
-    text-align: left;
+  .c-post-teaser__image {
+    img {
+      border-radius: var(--ks-border-radius-card);
+    }
   }
 
   .c-post-meta {
