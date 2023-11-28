@@ -1,3 +1,17 @@
+# v2.1.42 (Tue Nov 28 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(landingpage): remove testing component ([@fleven-kds](https://github.com/fleven-kds))
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(gallery): rename src prop + add unique identifier to gallery prop ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.41 (Tue Nov 28 2023)
 
 #### ⚠️ Pushed to `main`
