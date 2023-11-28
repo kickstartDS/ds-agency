@@ -1,6 +1,6 @@
 {
   "name": "@kickstartds/ds-agency",
-  "version": "2.1.42",
+  "version": "2.1.44",
   "description": "",
   "homepage": "https://github.com/kickstartDS/ds-agency#readme",
   "bugs": {
@@ -37,7 +37,7 @@
     "dist"
   ],
   "scripts": {
-    "build-storybook": "yarn build-tokens && yarn schema && storybook build",
+    "build-storybook": "yarn build-tokens && yarn schema && yarn token && storybook build",
     "build-tokens": "kickstartDS tokens compile && kickstartDS tokens compile --token-dictionary-path src/token-lughausen/dictionary --sd-config-path sd.config-lughausen.cjs",
     "chromatic": "chromatic --build-script-name \"build-storybook\" --skip \"@(renovate/**|dependabot/**)\" --exit-zero-on-changes --exit-once-uploaded",
     "init-tokens": "kickstartDS tokens init",
