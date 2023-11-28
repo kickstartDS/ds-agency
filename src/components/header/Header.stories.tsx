@@ -3,17 +3,12 @@ import { Header as HeaderComponent } from "./HeaderComponent";
 import { pack, unpack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
 import schema from "./header.schema.dereffed.json";
+import { themes } from "../../themes";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 export const headerProps = {
   ...unpack(args),
-  logo: {
-    src: "/logo.svg",
-    alt: "Systemics Logo",
-    width: 176,
-    height: 40,
-    lazy: false,
-  },
+  logo: themes.dsa.logo,
 };
 const meta: Meta = {
   title: "Layout/Header",
@@ -28,4 +23,8 @@ const meta: Meta = {
 type Story = StoryObj<typeof HeaderComponent>;
 
 export default meta;
-export const Header: Story = {};
+export const Header: Story = {
+  render: (args, { globals: { theme } }) => (
+    <HeaderComponent {...args} logo={themes[theme].logo} />
+  ),
+};
