@@ -1,15 +1,17 @@
 import { Component, define } from "@kickstartds/core/lib/component";
 
-export default class Section extends Component {
-  static identifier = "base.section";
+export const identifier = "dsa.spotlight";
+
+export default class Spotlight extends Component {
+  static identifier = identifier;
 
   constructor(element) {
     super(element);
 
-    this.element.addEventListener("mousemove", this.move.bind(this));
-    window.addEventListener("mouseout", this.out.bind(this));
+    this.element.addEventListener("mousemove", this, { passive: true });
+    window.addEventListener("mouseout", this);
 
-    this.onDisconnect(this.cleanup);
+    this.onDisconnect(this.cleanup.bind(this));
 
     // this.isOpen = this.element.getAttribute("aria-expanded") === "true";
     // this.nav = document.getElementById(
@@ -20,7 +22,7 @@ export default class Section extends Component {
     // this.element.addEventListener("click", this);
   }
 
-  move(event) {
+  onmousemove(event) {
     console.log(
       "MOVE",
       getComputedStyle(this.element).getPropertyValue(
@@ -43,7 +45,7 @@ export default class Section extends Component {
     // window.addEventListener("keydown", this);
   }
 
-  out() {
+  onmouseout() {
     console.log("OUT");
     // this.isOpen = false;
     // body.reset();
@@ -54,12 +56,15 @@ export default class Section extends Component {
   }
 
   cleanup() {
-    this.element.removeEventListener("mousemove");
-    this.element.removeEventListener("mouseout");
+    this.element.style.removeProperty("--l-section--spotlight-top");
+    this.element.style.removeProperty("--l-section--spotlight-left");
+
+    this.element.removeEventListener("mousemove", this, { passive: true });
+    window.removeEventListener("mouseout", this);
   }
 }
 
-define(Section.identifier, Section);
+define(identifier, Spotlight);
 
 // const hero = document.querySelector(".hero");
 // const spotlight = document.querySelector(".spotlight");

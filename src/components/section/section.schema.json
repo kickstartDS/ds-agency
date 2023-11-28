@@ -73,7 +73,8 @@
           "type": "string",
           "title": "Headline",
           "description": "Headline Text for the section",
-          "format": "markdown"
+          "format": "markdown",
+          "examples": ["Section headline"]
         },
         "large": {
           "type": "boolean",

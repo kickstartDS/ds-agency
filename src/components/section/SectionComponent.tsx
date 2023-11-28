@@ -8,7 +8,7 @@ import {
 
 import { SectionProps } from "./SectionProps";
 import "./section.scss";
-import "./js/spotlight.client";
+import { identifier as spotlightIdentifier } from "./js/spotlight.client";
 
 export const Section = forwardRef<
   HTMLDivElement,
@@ -39,7 +39,7 @@ export const Section = forwardRef<
     return (
       <SectionContextDefault
         {...props}
-        ks-component="base.section"
+        ks-component={spotlight ? spotlightIdentifier : undefined}
         className={classnames(
           style !== "default" &&
             `l-section-style--${
