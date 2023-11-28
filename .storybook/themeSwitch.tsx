@@ -1,22 +1,23 @@
 import { useEffect, useRef } from "react";
 import { Args, DecoratorFunction, GlobalTypes } from "@storybook/types";
 import { ReactRenderer } from "@storybook/react";
+import { themes } from "../src/themes";
 
 const styleElelementId = "theme-tokens";
-const themes = [
-  { value: "/tokens.css", title: "DS Agency" },
-  { value: "/tokens-lughausen.css", title: "Lughausen" },
-];
+const toolbarItems = Object.entries(themes).map(([key, { title }]) => ({
+  title,
+  value: key,
+}));
 
 export const globalThemeTypes: GlobalTypes = {
   theme: {
     name: "Theme",
     description: "Global token set",
-    defaultValue: themes[0].value,
+    defaultValue: toolbarItems[0].value,
     toolbar: {
       // https://storybook.js.org/docs/faq#what-icons-are-available-for-my-toolbar-or-my-addon
       icon: "eye",
-      items: themes,
+      items: toolbarItems,
       dynamicTitle: true,
     },
   },
@@ -43,7 +44,10 @@ export const themeSwitchDecorator: DecoratorFunction<ReactRenderer, Args> = (
   }, []);
 
   useEffect(() => {
-    styleElement.current.setAttribute("href", context.globals.theme);
+    styleElement.current.setAttribute(
+      "href",
+      themes[context.globals.theme].tokens
+    );
   }, [context.globals.theme]);
 
   return <Story key={context.globals.theme} />;
