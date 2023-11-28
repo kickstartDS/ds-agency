@@ -23,6 +23,10 @@ export type ModuleSubheadline = string;
  * Info text for the module element
  */
 export type ModuleText = string;
+/**
+ * Visually highlight the text
+ */
+export type HighlightText = boolean;
 export type Height = "small" | "default" | "fullImage" | "fullScreen";
 /**
  * Toggle wether you want your text to be displayed within in box
@@ -70,6 +74,7 @@ export interface HeroProps {
   largeHeadline?: LargeHeadline;
   sub?: ModuleSubheadline;
   text?: ModuleText;
+  highlightText?: HighlightText;
   height?: Height;
   textbox?: Textbox;
   buttons?: Buttons;

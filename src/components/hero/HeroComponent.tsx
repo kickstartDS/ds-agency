@@ -13,6 +13,7 @@ export const Hero: FC<HeroProps> = ({
   largeHeadline,
   height,
   text,
+  highlightText,
   textPosition = "center",
   image,
   overlay,
@@ -28,7 +29,10 @@ export const Hero: FC<HeroProps> = ({
     >
       <Container name="visual">
         <VisualContextDefault
-          className={classnames(`c-hero c-hero--content-${textPosition}`)}
+          className={classnames(
+            `c-hero c-hero--content-${textPosition}`,
+            highlightText ? `c-hero--highlight-text` : ""
+          )}
           height={height}
           overlay={overlay}
           box={{

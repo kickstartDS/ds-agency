@@ -30,7 +30,6 @@ export const ImageAndTextOnColoredBackground: Story = {
         desktopImageLast: false,
       },
     },
-    width: "wide",
     buttons: [
       {
         label: "Learn More",

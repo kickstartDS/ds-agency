@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { VisualContextDefault } from "@kickstartds/content/lib/visual";
+import classnames from "classnames";
 import { VideoCurtainProps } from "./VideoCurtainProps";
 import "./video-curtain.scss";
 import { Container } from "@kickstartds/core/lib/container";
@@ -11,6 +12,7 @@ export const VideoCurtain: FC<VideoCurtainProps> = ({
   sub,
   largeHeadline = true,
   text,
+  highlightText,
   textPosition,
   overlay,
   video,
@@ -26,7 +28,10 @@ export const VideoCurtain: FC<VideoCurtainProps> = ({
       <Container name="visual">
         <VisualContextDefault
           skipButton
-          className="c-video-curtain"
+          className={classnames(
+            `c-video-curtain`,
+            highlightText ? `c-video-curtain--highlight-text` : ""
+          )}
           height="fullScreen"
           inbox
           box={{

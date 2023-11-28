@@ -1,10 +1,16 @@
 :root {
-  .c-visual {
+  .c-visual.c-video-curtain {
     --c-visual_overlay--background: radial-gradient(
       50% 126.2% at 100% 0%,
       var(--ks-color-primary-alpha-5) 0%,
       var(--ks-color-bg-alpha-5) 100%
     );
+
+    &--highlight-text {
+      .c-visual__box {
+        --c-visual_text--font: var(--ks-font-copy-l);
+      }
+    }
 
     --c-visual_overlay--background-size: 100%;
 

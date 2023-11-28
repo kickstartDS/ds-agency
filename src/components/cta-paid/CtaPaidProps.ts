@@ -24,6 +24,10 @@ export type ModuleSubheadline = string;
  */
 export type ModuleText = string;
 /**
+ * Visually highlight the text
+ */
+export type HighlightText = boolean;
+/**
  * Set the width of the content to the full width of the element
  */
 export type Width = boolean;
@@ -77,6 +81,7 @@ export interface CtaPaidProps {
   largeHeadline?: LargeHeadline;
   sub?: ModuleSubheadline;
   text?: ModuleText;
+  highlightText?: HighlightText;
   fullWidth?: Width;
   buttons?: Buttons;
   backgroundColor?: BackgroundColor;

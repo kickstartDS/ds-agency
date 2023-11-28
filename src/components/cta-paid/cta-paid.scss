@@ -15,6 +15,13 @@
   gap: var(--c-cta--gap);
   padding: 0;
 
+  &--highlight-text {
+    .c-storytelling__text {
+      font: var(--ks-font-copy-l);
+      color: var(--ks-color-fg);
+    }
+  }
+
   .c-storytelling__box {
     padding: var(--c-storytelling--vertical-padding) var(--l-section--content-padding);
     &__content {

@@ -24,6 +24,10 @@ export type ModuleSubheadline = string;
  */
 export type ModuleText = string;
 /**
+ * Visually highlight the text
+ */
+export type HighlightText = boolean;
+/**
  * Buttons of the Button Group
  */
 export type Buttons = ButtonProps[];
@@ -37,6 +41,7 @@ export interface CtaProps {
   largeHeadline?: LargeHeadline;
   sub?: ModuleSubheadline;
   text?: ModuleText;
+  highlightText?: HighlightText;
   buttons?: Buttons;
   align?: TextAlignment;
 }

@@ -17,6 +17,7 @@ export const CtaPaid: FC<CtaPaidProps> = ({
   fullWidth = false,
   buttons = [],
   text,
+  highlightText,
 }) => {
   const ButtonGroup = useButtonGroup();
 
@@ -29,6 +30,7 @@ export const CtaPaid: FC<CtaPaidProps> = ({
         className={classnames(
           "c-cta",
           fullWidth ? `c-cta--full-width` : "",
+          highlightText ? `c-cta--highlight-text` : "",
           image?.hAlign && image?.hAlign !== "center"
             ? `c-cta--image-h-${image?.hAlign}`
             : "",

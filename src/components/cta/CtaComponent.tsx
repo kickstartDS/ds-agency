@@ -2,7 +2,7 @@ import classnames from "classnames";
 import { FC } from "react";
 import { CtaProps } from "./CtaProps";
 import { Headline } from "@kickstartds/base/lib/headline";
-import { RichText } from "@kickstartds/base/lib/rich-text";
+import { Text } from "../text/TextComponent";
 import { ButtonGroup } from "@kickstartds/base/lib/button-group";
 import "./cta.scss";
 
@@ -11,6 +11,7 @@ export const Cta: FC<CtaProps> = ({
   sub,
   text,
   largeHeadline = true,
+  highlightText = false,
   buttons,
   align = "left",
 }) => (
@@ -23,7 +24,11 @@ export const Cta: FC<CtaProps> = ({
       sub={sub}
       spaceAfter="minimum"
     />
-    {text ? <RichText text={text} /> : ""}
+    {text ? (
+      <Text style={highlightText ? "highlight" : "default"} text={text} />
+    ) : (
+      ""
+    )}
 
     <ButtonGroup buttons={buttons} arrangement={align} />
   </div>
