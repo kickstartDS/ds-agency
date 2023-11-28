@@ -45,7 +45,8 @@ export const BlogTeaser: FC<BlogTeaserProps & HTMLAttributes<HTMLElement>> = ({
         }}
         link={{
           label: link.label || "Read more",
-          href: link.url,
+          // @ts-expect-error
+          target: link.url,
         }}
         title={headline}
         body={teaserText}
