@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/slider.schema.json",
+  "title": "Slider",
+  "type": "object",
+  "properties": {
+    "autoplay": {
+      "$ref": "http://schema.kickstartds.com/content/slider.schema.json#/properties/autoplay"
+    },
+    "nav": {
+      "$ref": "http://schema.kickstartds.com/content/slider.schema.json#/properties/nav"
+    },
+    "perView": {
+      "$ref": "http://schema.kickstartds.com/content/slider.schema.json#/properties/perView"
+    },
+    "gap": {
+      "$ref": "http://schema.kickstartds.com/content/slider.schema.json#/properties/gap"
+    },
+    "type": {
+      "$ref": "http://schema.kickstartds.com/content/slider.schema.json#/properties/type"
+    }
+  },
+  "additionalProperties": false
+}

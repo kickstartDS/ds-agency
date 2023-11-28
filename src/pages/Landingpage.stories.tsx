@@ -10,10 +10,19 @@ import { TestimonialsPaid } from "../components/testimonials-paid/TestimonialsPa
 import { CtaPaid } from "../components/cta-paid/CtaPaidComponent";
 import { ImageStory } from "../components/image-story/ImageStoryComponent";
 import { Image } from "../components/image/ImageComponent";
+import { Slider } from "../components/slider/SliderComponent";
 
 const Page = () => (
   <>
     <Header {...headerProps} floating />
+    <Section>
+      <Slider>
+        <TeaserCard />
+        <TeaserCard />
+        <TeaserCard />
+        <TeaserCard />
+      </Slider>
+    </Section>
     <Section
       spaceBefore="none"
       spaceAfter="none"

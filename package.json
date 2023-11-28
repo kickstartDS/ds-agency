@@ -66,7 +66,7 @@
     "@bedrock-layout/spacing-constants": "^3.2.5",
     "@kickstartds/base": "^3.0.0-next.11",
     "@kickstartds/blog": "^3.0.0-next.10",
-    "@kickstartds/content": "^3.0.0-next.2",
+    "@kickstartds/content": "^3.0.0-next.5",
     "@kickstartds/core": "^3.0.0-next.7",
     "@kickstartds/form": "^3.0.0-next.10",
     "classnames": "^2.3.2",

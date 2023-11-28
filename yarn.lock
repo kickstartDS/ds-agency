@@ -2278,6 +2278,11 @@
   resolved "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.1.1.tgz"
   integrity sha512-m0G6wlnhm/AX0H12IOWtK8gASEMffnX08RtKkCgTdHb9JpHKGloI7icFfLg9ZmQeavcvR0PKmzxClyuFPSjKWw==
 
+"@glidejs/glide@^3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@glidejs/glide/-/glide-3.6.0.tgz#d13fd57de8473a2d86022ac601b5cbc98c9dcfe5"
+  integrity sha512-47Aa+JmYjY4xTFpTtYCwrqirmI1arnp1UZETwtWpbTPisXUAuxrdJxKJLH8KHFWMsSrLi9+AcfyfzDIuO75rEA==
+
 "@influxdata/influxdb-client-apis@^1.25.0":
   version "1.33.2"
   resolved "https://registry.npmjs.org/@influxdata/influxdb-client-apis/-/influxdb-client-apis-1.33.2.tgz"
@@ -2445,15 +2450,15 @@
     classnames "^2.3.2"
     date-fns "^2.30.0"
 
-"@kickstartds/content@^3.0.0-next.2":
-  version "3.0.0-next.2"
-  resolved "https://registry.npmjs.org/@kickstartds/content/-/content-3.0.0-next.2.tgz#393dcacbc3853f885721599bdf58fd8d830e7bb6"
-  integrity sha512-GG5FfqNzo+hLFeZkefmtrUYX3KpuNe4izSAhY5zVb/AqEX49K2z4afUSn6+hDdblkkb33BfdKZ8Lwrs/DG+j+A==
+"@kickstartds/content@^3.0.0-next.5":
+  version "3.0.0-next.5"
+  resolved "https://registry.yarnpkg.com/@kickstartds/content/-/content-3.0.0-next.5.tgz#57f1eded4f78069611b9d4a3b51f932787061278"
+  integrity sha512-Xmmzlb56Tffu0SVSg3uKVK0ZRmPzF1i2DeSaAGZpT18LyljYybFv/k0V88aE38q32ROIyBujnDZ9MEP/k0fe5Q==
   dependencies:
     "@babel/runtime" "^7.21.0"
+    "@glidejs/glide" "^3.6.0"
     classnames "^2.3.2"
     countup.js "^2.6.2"
-    lodash-es "^4.17.21"
 
 "@kickstartds/core@^3.0.0-next.7":
   version "3.0.0-next.7"

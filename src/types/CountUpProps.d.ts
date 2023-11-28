@@ -14,6 +14,14 @@ import type {ButtonProps} from "@kickstartds/base/lib/button/typing";
  */
 export type Number = number;
 /**
+ * Text prepended to the number
+ */
+export type Prefix = string;
+/**
+ * Text appended to the number
+ */
+export type Suffix = string;
+/**
  * Topic for the count-up box. Displayed before the text, in bold
  */
 export type Topic = string;
@@ -43,6 +51,8 @@ export type KsComponentAttribute = string;
  */
 export interface CountUpProps {
   to: Number;
+  prefix?: Prefix;
+  suffix?: Suffix;
   /**
    * Referenced component IconProps
    */
