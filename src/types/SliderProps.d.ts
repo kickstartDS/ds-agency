@@ -23,6 +23,10 @@ export type SlidesPerView = number;
  */
 export type Gap = number;
 /**
+ * Add arrows on the left and right to navigate to next or previous slide
+ */
+export type ShowArrows = boolean;
+/**
  * Type of the movement
  */
 export type Type = "slider" | "carousel";
@@ -32,6 +36,7 @@ export interface SliderProps {
   nav?: ShowNavigation;
   perView?: SlidesPerView;
   gap?: Gap;
+  arrows?: ShowArrows;
   type?: Type;
 }
 

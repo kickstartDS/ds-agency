@@ -7,6 +7,7 @@ export const Slider: FC<PropsWithChildren<SliderProps>> = ({
   gap,
   type,
   autoplay,
+  arrows,
   perView,
   children,
   ...props
@@ -14,6 +15,7 @@ export const Slider: FC<PropsWithChildren<SliderProps>> = ({
   <KickstartSlider
     gap={gap}
     type={type}
+    arrows={arrows}
     autoplay={autoplay}
     perView={perView}
     {...props}

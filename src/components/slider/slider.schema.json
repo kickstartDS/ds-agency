@@ -16,6 +16,9 @@
     "gap": {
       "$ref": "http://schema.kickstartds.com/content/slider.schema.json#/properties/gap"
     },
+    "arrows": {
+      "$ref": "http://schema.kickstartds.com/content/slider.schema.json#/properties/arrows"
+    },
     "type": {
       "$ref": "http://schema.kickstartds.com/content/slider.schema.json#/properties/type"
     }
