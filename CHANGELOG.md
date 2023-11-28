@@ -1,3 +1,22 @@
+# v2.1.46 (Tue Nov 28 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(landingpage): remove unwanted markup ([@fleven-kds](https://github.com/fleven-kds))
+
+#### 📝 Documentation
+
+- Change header logo according to theme [#38](https://github.com/kickstartDS/ds-agency/pull/38) ([@lmestel](https://github.com/lmestel))
+- Storybook Theme Switch [#37](https://github.com/kickstartDS/ds-agency/pull/37) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.1.45 (Tue Nov 28 2023)
 
 #### ⚠️ Pushed to `main`
