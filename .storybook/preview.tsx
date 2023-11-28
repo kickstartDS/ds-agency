@@ -5,7 +5,7 @@ import { defaultDecorateStory } from "@storybook/preview-api";
 import { Preview, ReactRenderer, StoryContext } from "@storybook/react";
 import { unpackDecorator } from "@kickstartds/core/lib/storybook";
 import { dark } from "./themes";
-import "../src/token/tokens.css";
+import { themeSwitchDecorator, globalThemeTypes } from "./themeSwitch";
 
 import { RawPageWrapper } from "../src/components/page-wrapper/RawPageWrapperComponent";
 import { providerDecorator } from "../src/components/Providers";
@@ -68,12 +68,16 @@ const preview: Preview = {
   },
   decorators: [
     unpackDecorator,
+    themeSwitchDecorator,
     (Story) => (
       <RawPageWrapper>
         <Story />
       </RawPageWrapper>
     ),
   ],
+  globalTypes: {
+    ...globalThemeTypes,
+  },
 };
 
 export default preview;
