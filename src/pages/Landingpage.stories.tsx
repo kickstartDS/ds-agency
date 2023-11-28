@@ -10,39 +10,10 @@ import { TestimonialsPaid } from "../components/testimonials-paid/TestimonialsPa
 import { CtaPaid } from "../components/cta-paid/CtaPaidComponent";
 import { ImageStory } from "../components/image-story/ImageStoryComponent";
 import { Image } from "../components/image/ImageComponent";
-import { Gallery } from "../components/gallery/GalleryComponent";
 
 const Page = () => (
   <>
     <Header {...headerProps} floating />
-    <Section>
-      <Gallery
-        lightbox
-        images={[
-          {
-            src: "/static/img/full-shot-different-people-working-together.png",
-            caption: "Gallerie 1",
-          },
-          {
-            src: "/static/img/full-shot-different-people-working-together.png",
-            caption: "Gallerie 1",
-          },
-        ]}
-      />
-      <Gallery
-        lightbox
-        images={[
-          {
-            src: "/static/img/full-shot-different-people-working-together.png",
-            caption: "Gallerie 2",
-          },
-          {
-            src: "/static/img/full-shot-different-people-working-together.png",
-            caption: "Gallerie 2",
-          },
-        ]}
-      />
-    </Section>
     <Section
       spaceBefore="none"
       spaceAfter="none"
