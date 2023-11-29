@@ -33,11 +33,12 @@
     },
     "copy": {
       "family": "'Google Sans 18pt', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-      "font-size": 18,
+      "font-size": 16,
       "line-height": 1.35,
       "scale-ratio": 1.225,
       "bp-factor": {
-        "tablet": 1.125
+        "tablet": 1.125,
+        "laptop": 1.25
       }
     },
     "interface": {
