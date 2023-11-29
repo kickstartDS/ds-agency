@@ -8,7 +8,11 @@
 /**
  * The testimonial quote
  */
-export type Quote = string;
+export type Quote = "slider" | "list";
+/**
+ * The testimonial quote
+ */
+export type Quote1 = string;
 /**
  * The name of the quote author
  */
@@ -33,7 +37,7 @@ export type Rating = number;
  * Add testimonials featuring an image, a quote, a source and a rating
  */
 export type Testimonials = {
-  quote: Quote;
+  quote: Quote1;
   name: Name;
   title?: Title;
   image: {
@@ -47,5 +51,6 @@ export type Testimonials = {
  * Display testimonials with an optional image and rating
  */
 export interface TestimonialsPaidProps {
+  layout?: Quote;
   testimonials?: Testimonials;
 }

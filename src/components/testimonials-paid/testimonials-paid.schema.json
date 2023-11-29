@@ -5,6 +5,12 @@
   "description": "Display testimonials with an optional image and rating",
   "type": "object",
   "properties": {
+    "layout": {
+      "title": "Quote",
+      "description": "The testimonial quote",
+      "type": "string",
+      "enum": ["slider", "list"]
+    },
     "testimonials": {
       "type": "array",
       "title": "Testimonials",
