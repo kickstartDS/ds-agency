@@ -1,31 +1,20 @@
 @font-face {
-  font-family: "Google Sans";
-  src: url("../static/fonts/google/google-sans-1.woff2") format("woff2");
-  font-weight: 300;
+  font-family: "Google Sans 18pt";
   font-style: normal;
-  font-display: swap;
+  font-weight: normal;
+  src: url("../static/fonts/google/download/google-sans-18pt.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Google Sans";
-  src: url("../static/fonts/google/google-sans-2.woff2") format("woff2");
-  font-weight: 400;
+  font-family: "Google Sans Display";
   font-style: normal;
-  font-display: swap;
+  font-weight: normal;
+  src: url("../static/fonts/google/download/google-sans-display.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Google Sans";
-  src: url("../static/fonts/google/google-sans-3.woff2") format("woff2");
-  font-weight: 500;
+  font-family: "Google Sans Text";
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Google Sans";
-  src: url("../static/fonts/google/google-sans-4.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+  font-weight: normal;
+  src: url("../static/fonts/google/download/google-sans-text.woff2") format("woff2");
 }

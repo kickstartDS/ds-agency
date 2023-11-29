@@ -21,17 +21,18 @@
   },
   "font": {
     "display": {
-      "family": "'Google Sans', 'Helvetica Neue', 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
-      "font-size": 18,
+      "family": "'Google Sans Display', 'Helvetica Neue', 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
+      "font-size": 20,
       "line-height": 1.25,
-      "scale-ratio": 1.225,
+      "scale-ratio": 1.25,
       "bp-factor": {
         "phone": 1.25,
-        "tablet": 1.35
+        "tablet": 1.35,
+        "laptop": 1.45
       }
     },
     "copy": {
-      "family": "'Google Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "family": "'Google Sans 18pt', 'Helvetica Neue', Helvetica, Arial, sans-serif",
       "font-size": 18,
       "line-height": 1.35,
       "scale-ratio": 1.225,
@@ -40,7 +41,7 @@
       }
     },
     "interface": {
-      "family": "'Google Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
+      "family": "'Google Sans Text', system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
       "font-size": 16,
       "line-height": 1.35,
       "scale-ratio": 1.225,
