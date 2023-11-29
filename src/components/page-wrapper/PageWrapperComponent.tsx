@@ -1,2 +1,2 @@
-import "../../token/tokens.css";
+import "../../token-dsa/tokens.css";
 export { RawPageWrapper as PageWrapper } from "./RawPageWrapperComponent";

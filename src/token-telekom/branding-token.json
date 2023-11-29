@@ -1,27 +1,27 @@
 {
   "color": {
-    "primary": "#4285f4",
+    "primary": "#e20074",
     "primary-inverted": "#fff",
     "secondary": "#007faf",
     "secondary-inverted": "#fff",
     "background": "#fff ",
-    "foreground": "#202124",
+    "foreground": "#2c2c2c",
     "bg": "#fff",
     "bg-inverted": "#262626",
     "link": "#007faf",
     "link-inverted": "#fff",
-    "positive": "#34a853",
-    "positive-inverted": "#34a853",
-    "informative": "#4285f4",
-    "informative-inverted": "#4285f4",
+    "positive": "#6EDB64",
+    "positive-inverted": "#23831B",
+    "informative": "#64C2DB",
+    "informative-inverted": "#00718F",
     "notice": "#F9DE55",
-    "notice-inverted": "#F9DE55",
-    "negative": "#4285f4",
-    "negative-inverted": "#4285f4"
+    "notice-inverted": "#FF5D53",
+    "negative": "#cd4901",
+    "negative-inverted": "#D21D48"
   },
   "font": {
     "display": {
-      "family": "'Google Sans', 'Helvetica Neue', 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
+      "family": "TeleNeo, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
       "font-size": 18,
       "line-height": 1.25,
       "scale-ratio": 1.225,
@@ -31,7 +31,7 @@
       }
     },
     "copy": {
-      "family": "'Google Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "family": "TeleNeo, 'Helvetica Neue', Helvetica, Arial, sans-serif",
       "font-size": 18,
       "line-height": 1.35,
       "scale-ratio": 1.225,
@@ -40,7 +40,7 @@
       }
     },
     "interface": {
-      "family": "'Google Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
+      "family": "TeleNeo, system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
       "font-size": 16,
       "line-height": 1.35,
       "scale-ratio": 1.225,
@@ -69,9 +69,9 @@
     "scale-ratio": 1.5,
     "bp-ratio": 1.25
   },
-  "border-radius": "8px",
+  "border-radius": "0px",
   "box-shadow": {
-    "blur": "0px"
+    "blur": "2.75px"
   },
   "breakpoints": {
     "phone": 576,
