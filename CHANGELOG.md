@@ -1,3 +1,15 @@
+# v2.1.53 (Wed Nov 29 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(section): style spotlight ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.52 (Tue Nov 28 2023)
 
 #### ⚠️ Pushed to `main`
