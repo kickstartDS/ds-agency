@@ -5,9 +5,7 @@
     background-color: var(--l-section--background-color);
 
     &--header-spacing {
-      padding-top: calc(
-        var(--g-header-height) + var(--l-section--space-default)
-      );
+      padding-top: calc(var(--g-header-height) + var(--l-section--space-default));
     }
     &--header-spacing.l-section--space-before-none {
       padding-top: var(--g-header-height);
@@ -17,12 +15,21 @@
     }
 
     &--spotlight {
-      background: radial-gradient(
-        650px circle at var(--l-section--spotlight-left)
-          var(--l-section--spotlight-top),
-        var(--l-section--spotlight-color),
-        transparent 80%
-      );
+      position: relative;
+
+      &::before {
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: radial-gradient(
+          650px circle at var(--l-section--spotlight-left) var(--l-section--spotlight-top),
+          var(--l-section--spotlight-color),
+          transparent 80%
+        );
+      }
     }
   }
 }

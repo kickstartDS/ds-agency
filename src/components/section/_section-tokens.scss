@@ -17,11 +17,7 @@
         var(--ks-color-primary-inverted-alpha-3) 0%,
         transparent 100%
       ),
-      radial-gradient(
-        50% 150% at 0% -50%,
-        var(--ks-color-primary-alpha-3) 0%,
-        transparent 100%
-      );
+      radial-gradient(50% 150% at 0% -50%, var(--ks-color-primary-alpha-3) 0%, transparent 100%);
   }
 
   &-style--anchor-glow {
@@ -38,27 +34,15 @@
         var(--ks-color-primary-alpha-5) 0%,
         transparent 100%
       ),
-      radial-gradient(
-        20% 50% at 0% 50%,
-        var(--ks-color-primary-inverted-alpha-5) 0%,
-        transparent 100%
-      );
+      radial-gradient(20% 50% at 0% 50%, var(--ks-color-primary-inverted-alpha-5) 0%, transparent 100%);
   }
 
   &-style--accent-transition {
-    --l-section--background-image: linear-gradient(
-      180deg,
-      transparent 0%,
-      var(--ks-background-color-accent) 100%
-    );
+    --l-section--background-image: linear-gradient(180deg, transparent 0%, var(--ks-background-color-accent) 100%);
   }
 
   &-style--bold-transition {
-    --l-section--background-image: linear-gradient(
-      180deg,
-      transparent 0%,
-      var(--ks-background-color-bold) 100%
-    );
+    --l-section--background-image: linear-gradient(180deg, transparent 0%, var(--ks-background-color-bold) 100%);
   }
 
   &-style--vertical-gradient {
@@ -80,6 +64,6 @@
   &--spotlight {
     --l-section--spotlight-left: 0;
     --l-section--spotlight-top: 0;
-    --l-section--spotlight-color: var(--ks-color-secondary-alpha-5);
+    --l-section--spotlight-color: var(--ks-color-primary-alpha-5);
   }
 }
