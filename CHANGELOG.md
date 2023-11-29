@@ -1,3 +1,16 @@
+# v2.1.54 (Wed Nov 29 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(testimonialsPaid): add list layout option ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.53 (Wed Nov 29 2023)
 
 #### ⚠️ Pushed to `main`
