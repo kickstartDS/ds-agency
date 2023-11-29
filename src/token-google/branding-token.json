@@ -1,0 +1,84 @@
+{
+  "color": {
+    "primary": "#4285f4",
+    "primary-inverted": "#fff",
+    "secondary": "#007faf",
+    "secondary-inverted": "#fff",
+    "background": "#fff ",
+    "foreground": "#202124",
+    "bg": "#fff",
+    "bg-inverted": "#262626",
+    "link": "#007faf",
+    "link-inverted": "#fff",
+    "positive": "#34a853",
+    "positive-inverted": "#34a853",
+    "informative": "#4285f4",
+    "informative-inverted": "#4285f4",
+    "notice": "#F9DE55",
+    "notice-inverted": "#F9DE55",
+    "negative": "#4285f4",
+    "negative-inverted": "#4285f4"
+  },
+  "font": {
+    "display": {
+      "family": "'Google Sans Display', 'Helvetica Neue', 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
+      "font-size": 20,
+      "line-height": 1.25,
+      "scale-ratio": 1.25,
+      "bp-factor": {
+        "phone": 1.25,
+        "tablet": 1.35,
+        "laptop": 1.45
+      }
+    },
+    "copy": {
+      "family": "'Google Sans 18pt', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+      "font-size": 16,
+      "line-height": 1.35,
+      "scale-ratio": 1.225,
+      "bp-factor": {
+        "tablet": 1.125,
+        "laptop": 1.25
+      }
+    },
+    "interface": {
+      "family": "'Google Sans Text', system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
+      "font-size": 16,
+      "line-height": 1.35,
+      "scale-ratio": 1.225,
+      "bp-factor": {
+        "tablet": 1.125
+      }
+    },
+    "mono": {
+      "family": "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace",
+      "font-size": 16,
+      "line-height": 1.35,
+      "scale-ratio": 1.225,
+      "bp-factor": {
+        "tablet": 1.125
+      }
+    }
+  },
+  "font-weight": {
+    "light": 300,
+    "regular": 400,
+    "semi-bold": 500,
+    "bold": 700
+  },
+  "spacing": {
+    "base": 8,
+    "scale-ratio": 1.5,
+    "bp-ratio": 1.25
+  },
+  "border-radius": "8px",
+  "box-shadow": {
+    "blur": "0px"
+  },
+  "breakpoints": {
+    "phone": 576,
+    "tablet": 768,
+    "laptop": 992,
+    "desktop": 1200
+  }
+}
