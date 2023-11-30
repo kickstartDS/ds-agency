@@ -73,7 +73,7 @@
   },
   "border-radius": "8px",
   "box-shadow": {
-    "blur": "0px"
+    "blur": "2px"
   },
   "breakpoints": {
     "phone": 576,
