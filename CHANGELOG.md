@@ -1,3 +1,16 @@
+# v2.1.56 (Thu Nov 30 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(package): add google + telekom theme ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.55 (Thu Nov 30 2023)
 
 #### ⚠️ Pushed to `main`
