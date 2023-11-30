@@ -40,7 +40,7 @@
     "build-storybook": "yarn build-tokens && yarn schema && yarn token && storybook build",
     "build-tokens": "kickstartDS tokens compile && kickstartDS tokens compile --token-dictionary-path src/token-lughausen/dictionary --sd-config-path sd.config-lughausen.cjs && yarn copyTokensCss",
     "chromatic": "chromatic --build-script-name \"build-storybook\" --skip \"@(renovate/**|dependabot/**)\" --exit-zero-on-changes --exit-once-uploaded",
-    "copyTokensCss": "cp src/token/tokens.css static/tokens.css && cp src/token-lughausen/tokens.css static/tokens-lughausen.css",
+    "copyTokensCss": "cp src/token/tokens.css static/tokens.css && cp src/token-lughausen/tokens.css static/tokens-lughausen.css && cp src/token-google/tokens.css static/tokens-google.css && cp src/token-telekom/tokens.css static/tokens-telekom.css",
     "init-tokens": "kickstartDS tokens init",
     "playroom": "run-p watch:* playroom:start",
     "playroom:start": "playroom start",
