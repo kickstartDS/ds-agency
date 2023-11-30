@@ -4,12 +4,12 @@
     "primary-inverted": "#fff",
     "secondary": "#007faf",
     "secondary-inverted": "#fff",
-    "background": "#fff ",
+    "background": "#f1f1f1",
     "foreground": "#202124",
     "bg": "#fff",
-    "bg-inverted": "#262626",
+    "bg-inverted": "#0f0f0f",
     "link": "#007faf",
-    "link-inverted": "#fff",
+    "link-inverted": "#3ea6ff",
     "positive": "#34a853",
     "positive-inverted": "#34a853",
     "informative": "#4285f4",
@@ -73,7 +73,7 @@
   },
   "border-radius": "8px",
   "box-shadow": {
-    "blur": "0px"
+    "blur": "2px"
   },
   "breakpoints": {
     "phone": 576,
