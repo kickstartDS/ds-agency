@@ -1,0 +1,477 @@
+{
+  "ks": {
+    "font-family": {
+      "display": {
+        "value": "'Google Sans Display', 'Helvetica Neue', 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
+        "token": {
+          "category": "Font Families",
+          "presenter": "FontFamily"
+        }
+      },
+      "copy": {
+        "value": "'Google Sans 18pt', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "token": {
+          "category": "Font Families",
+          "presenter": "FontFamily"
+        }
+      },
+      "interface": {
+        "value": "'Google Sans Text', system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
+        "token": {
+          "category": "Font Families",
+          "presenter": "FontFamily"
+        }
+      },
+      "mono": {
+        "value": "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace",
+        "token": {
+          "category": "Font Families",
+          "presenter": "FontFamily"
+        }
+      }
+    },
+    "font-weight": {
+      "light": {
+        "value": 300,
+        "token": {
+          "category": "Font Weights",
+          "presenter": "FontWeight"
+        }
+      },
+      "regular": {
+        "value": 400,
+        "token": {
+          "category": "Font Weights",
+          "presenter": "FontWeight"
+        }
+      },
+      "semi-bold": {
+        "value": 500,
+        "token": {
+          "category": "Font Weights",
+          "presenter": "FontWeight"
+        }
+      },
+      "bold": {
+        "value": 700,
+        "token": {
+          "category": "Font Weights",
+          "presenter": "FontWeight"
+        }
+      }
+    },
+    "font-size": {
+      "display": {
+        "bp-factor": {
+          "phone": {
+            "value": 1.25
+          },
+          "tablet": {
+            "value": 1.35
+          },
+          "laptop": {
+            "value": 1.45
+          }
+        },
+        "xxs-base": {
+          "value": "0.64rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: display",
+            "presenter": "FontSize"
+          }
+        },
+        "xs-base": {
+          "value": "0.8rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: display",
+            "presenter": "FontSize"
+          }
+        },
+        "s-base": {
+          "value": "1rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: display",
+            "presenter": "FontSize"
+          }
+        },
+        "m-base": {
+          "value": "1.25rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: display",
+            "presenter": "FontSize"
+          }
+        },
+        "l-base": {
+          "value": "1.5625rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: display",
+            "presenter": "FontSize"
+          }
+        },
+        "xl-base": {
+          "value": "1.9531rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: display",
+            "presenter": "FontSize"
+          }
+        },
+        "xxl-base": {
+          "value": "2.4414rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: display",
+            "presenter": "FontSize"
+          }
+        }
+      },
+      "copy": {
+        "bp-factor": {
+          "tablet": {
+            "value": 1.125
+          },
+          "laptop": {
+            "value": 1.25
+          }
+        },
+        "xxs-base": {
+          "value": "0.544rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: copy",
+            "presenter": "FontSize"
+          }
+        },
+        "xs-base": {
+          "value": "0.6664rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: copy",
+            "presenter": "FontSize"
+          }
+        },
+        "s-base": {
+          "value": "0.8163rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: copy",
+            "presenter": "FontSize"
+          }
+        },
+        "m-base": {
+          "value": "1rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: copy",
+            "presenter": "FontSize"
+          }
+        },
+        "l-base": {
+          "value": "1.225rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: copy",
+            "presenter": "FontSize"
+          }
+        },
+        "xl-base": {
+          "value": "1.5006rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: copy",
+            "presenter": "FontSize"
+          }
+        },
+        "xxl-base": {
+          "value": "1.8383rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: copy",
+            "presenter": "FontSize"
+          }
+        }
+      },
+      "interface": {
+        "bp-factor": {
+          "tablet": {
+            "value": 1.125
+          }
+        },
+        "xxs-base": {
+          "value": "0.544rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: interface",
+            "presenter": "FontSize"
+          }
+        },
+        "xs-base": {
+          "value": "0.6664rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: interface",
+            "presenter": "FontSize"
+          }
+        },
+        "s-base": {
+          "value": "0.8163rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: interface",
+            "presenter": "FontSize"
+          }
+        },
+        "m-base": {
+          "value": "1rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: interface",
+            "presenter": "FontSize"
+          }
+        },
+        "l-base": {
+          "value": "1.225rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: interface",
+            "presenter": "FontSize"
+          }
+        },
+        "xl-base": {
+          "value": "1.5006rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: interface",
+            "presenter": "FontSize"
+          }
+        },
+        "xxl-base": {
+          "value": "1.8383rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: interface",
+            "presenter": "FontSize"
+          }
+        }
+      },
+      "mono": {
+        "bp-factor": {
+          "tablet": {
+            "value": 1.125
+          }
+        },
+        "xxs-base": {
+          "value": "0.544rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: mono",
+            "presenter": "FontSize"
+          }
+        },
+        "xs-base": {
+          "value": "0.6664rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: mono",
+            "presenter": "FontSize"
+          }
+        },
+        "s-base": {
+          "value": "0.8163rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: mono",
+            "presenter": "FontSize"
+          }
+        },
+        "m-base": {
+          "value": "1rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: mono",
+            "presenter": "FontSize"
+          }
+        },
+        "l-base": {
+          "value": "1.225rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: mono",
+            "presenter": "FontSize"
+          }
+        },
+        "xl-base": {
+          "value": "1.5006rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: mono",
+            "presenter": "FontSize"
+          }
+        },
+        "xxl-base": {
+          "value": "1.8383rem",
+          "attributes": {
+            "category": "size"
+          },
+          "token": {
+            "category": "Font Sizes: mono",
+            "presenter": "FontSize"
+          }
+        }
+      }
+    },
+    "line-height": {
+      "display": {
+        "xxs": {
+          "value": 1.25
+        },
+        "xs": {
+          "value": 1.25
+        },
+        "s": {
+          "value": 1.25
+        },
+        "m": {
+          "value": 1.25
+        },
+        "l": {
+          "value": 1.25
+        },
+        "xl": {
+          "value": 1.25
+        },
+        "xxl": {
+          "value": 1.25
+        }
+      },
+      "copy": {
+        "xxs": {
+          "value": 1.35
+        },
+        "xs": {
+          "value": 1.35
+        },
+        "s": {
+          "value": 1.35
+        },
+        "m": {
+          "value": 1.35
+        },
+        "l": {
+          "value": 1.35
+        },
+        "xl": {
+          "value": 1.35
+        },
+        "xxl": {
+          "value": 1.35
+        }
+      },
+      "interface": {
+        "xxs": {
+          "value": 1.35
+        },
+        "xs": {
+          "value": 1.35
+        },
+        "s": {
+          "value": 1.35
+        },
+        "m": {
+          "value": 1.35
+        },
+        "l": {
+          "value": 1.35
+        },
+        "xl": {
+          "value": 1.35
+        },
+        "xxl": {
+          "value": 1.35
+        }
+      },
+      "mono": {
+        "xxs": {
+          "value": 1.35
+        },
+        "xs": {
+          "value": 1.35
+        },
+        "s": {
+          "value": 1.35
+        },
+        "m": {
+          "value": 1.35
+        },
+        "l": {
+          "value": 1.35
+        },
+        "xl": {
+          "value": 1.35
+        },
+        "xxl": {
+          "value": 1.35
+        }
+      }
+    }
+  }
+}
