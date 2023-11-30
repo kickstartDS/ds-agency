@@ -2,21 +2,21 @@
   "ks": {
     "font-family": {
       "display": {
-        "value": "'Google Sans Display', 'Helvetica Neue', 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
+        "value": "Fredoka, Baskerville, 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', serif",
         "token": {
           "category": "Font Families",
           "presenter": "FontFamily"
         }
       },
       "copy": {
-        "value": "'Google Sans 18pt', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        "value": "Mulish, 'Helvetica Neue', Helvetica, Arial, sans-serif",
         "token": {
           "category": "Font Families",
           "presenter": "FontFamily"
         }
       },
       "interface": {
-        "value": "'Google Sans Text', system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
+        "value": "Mulish, system-ui, -apple-system, BlinkMacSystemFont, 'Avenir Next', 'Avenir', 'Segoe UI', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Fira Sans', 'Roboto', 'Noto', 'Droid Sans', 'Cantarell', 'Oxygen', 'Ubuntu', 'Franklin Gothic Medium', 'Century Gothic', 'Liberation Sans', sans-serif",
         "token": {
           "category": "Font Families",
           "presenter": "FontFamily"
@@ -45,8 +45,15 @@
           "presenter": "FontWeight"
         }
       },
-      "semi-bold": {
+      "medium": {
         "value": 500,
+        "token": {
+          "category": "Font Weights",
+          "presenter": "FontWeight"
+        }
+      },
+      "semi-bold": {
+        "value": 600,
         "token": {
           "category": "Font Weights",
           "presenter": "FontWeight"
@@ -64,13 +71,16 @@
       "display": {
         "bp-factor": {
           "phone": {
-            "value": 1.25
+            "value": 1.125
           },
           "tablet": {
-            "value": 1.35
+            "value": 1.25
           },
           "laptop": {
-            "value": 1.45
+            "value": 1.5
+          },
+          "desktop": {
+            "value": 1.85
           }
         },
         "xxs-base": {
@@ -148,13 +158,10 @@
         "bp-factor": {
           "tablet": {
             "value": 1.125
-          },
-          "laptop": {
-            "value": 1.25
           }
         },
         "xxs-base": {
-          "value": "0.544rem",
+          "value": "0.612rem",
           "attributes": {
             "category": "size"
           },
@@ -164,7 +171,7 @@
           }
         },
         "xs-base": {
-          "value": "0.6664rem",
+          "value": "0.7497rem",
           "attributes": {
             "category": "size"
           },
@@ -174,7 +181,7 @@
           }
         },
         "s-base": {
-          "value": "0.8163rem",
+          "value": "0.9184rem",
           "attributes": {
             "category": "size"
           },
@@ -184,7 +191,7 @@
           }
         },
         "m-base": {
-          "value": "1rem",
+          "value": "1.125rem",
           "attributes": {
             "category": "size"
           },
@@ -194,7 +201,7 @@
           }
         },
         "l-base": {
-          "value": "1.225rem",
+          "value": "1.3781rem",
           "attributes": {
             "category": "size"
           },
@@ -204,7 +211,7 @@
           }
         },
         "xl-base": {
-          "value": "1.5006rem",
+          "value": "1.6882rem",
           "attributes": {
             "category": "size"
           },
@@ -214,7 +221,7 @@
           }
         },
         "xxl-base": {
-          "value": "1.8383rem",
+          "value": "2.068rem",
           "attributes": {
             "category": "size"
           },
@@ -308,7 +315,7 @@
           }
         },
         "xxs-base": {
-          "value": "0.544rem",
+          "value": "0.612rem",
           "attributes": {
             "category": "size"
           },
@@ -318,7 +325,7 @@
           }
         },
         "xs-base": {
-          "value": "0.6664rem",
+          "value": "0.7497rem",
           "attributes": {
             "category": "size"
           },
@@ -328,7 +335,7 @@
           }
         },
         "s-base": {
-          "value": "0.8163rem",
+          "value": "0.9184rem",
           "attributes": {
             "category": "size"
           },
@@ -338,7 +345,7 @@
           }
         },
         "m-base": {
-          "value": "1rem",
+          "value": "1.125rem",
           "attributes": {
             "category": "size"
           },
@@ -348,7 +355,7 @@
           }
         },
         "l-base": {
-          "value": "1.225rem",
+          "value": "1.3781rem",
           "attributes": {
             "category": "size"
           },
@@ -358,7 +365,7 @@
           }
         },
         "xl-base": {
-          "value": "1.5006rem",
+          "value": "1.6882rem",
           "attributes": {
             "category": "size"
           },
@@ -368,7 +375,7 @@
           }
         },
         "xxl-base": {
-          "value": "1.8383rem",
+          "value": "2.068rem",
           "attributes": {
             "category": "size"
           },
@@ -382,94 +389,94 @@
     "line-height": {
       "display": {
         "xxs": {
-          "value": 1.25
+          "value": 1.15
         },
         "xs": {
-          "value": 1.25
+          "value": 1.15
         },
         "s": {
-          "value": 1.25
+          "value": 1.15
         },
         "m": {
-          "value": 1.25
+          "value": 1.15
         },
         "l": {
-          "value": 1.25
+          "value": 1.15
         },
         "xl": {
-          "value": 1.25
+          "value": 1.15
         },
         "xxl": {
-          "value": 1.25
+          "value": 1.15
         }
       },
       "copy": {
         "xxs": {
-          "value": 1.35
+          "value": 1.5
         },
         "xs": {
-          "value": 1.35
+          "value": 1.5
         },
         "s": {
-          "value": 1.35
+          "value": 1.5
         },
         "m": {
-          "value": 1.35
+          "value": 1.5
         },
         "l": {
-          "value": 1.35
+          "value": 1.5
         },
         "xl": {
-          "value": 1.35
+          "value": 1.5
         },
         "xxl": {
-          "value": 1.35
+          "value": 1.5
         }
       },
       "interface": {
         "xxs": {
-          "value": 1.35
+          "value": 1.5
         },
         "xs": {
-          "value": 1.35
+          "value": 1.5
         },
         "s": {
-          "value": 1.35
+          "value": 1.5
         },
         "m": {
-          "value": 1.35
+          "value": 1.5
         },
         "l": {
-          "value": 1.35
+          "value": 1.5
         },
         "xl": {
-          "value": 1.35
+          "value": 1.5
         },
         "xxl": {
-          "value": 1.35
+          "value": 1.5
         }
       },
       "mono": {
         "xxs": {
-          "value": 1.35
+          "value": 1.5
         },
         "xs": {
-          "value": 1.35
+          "value": 1.5
         },
         "s": {
-          "value": 1.35
+          "value": 1.5
         },
         "m": {
-          "value": 1.35
+          "value": 1.5
         },
         "l": {
-          "value": 1.35
+          "value": 1.5
         },
         "xl": {
-          "value": 1.35
+          "value": 1.5
         },
         "xxl": {
-          "value": 1.35
+          "value": 1.5
         }
       }
     }
