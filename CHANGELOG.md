@@ -1,3 +1,23 @@
+# v2.1.55 (Thu Nov 30 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'feature/google-theme' ([@fleven-kds](https://github.com/fleven-kds))
+- feat(font-weights): adjust font-weights ([@fleven-kds](https://github.com/fleven-kds))
+- feat(various): adjust paths to token dictionary ([@fleven-kds](https://github.com/fleven-kds))
+- feat(themes): revert default theme back to dsa ([@fleven-kds](https://github.com/fleven-kds))
+- feat(telekom-theme): apply theming ([@fleven-kds](https://github.com/fleven-kds))
+- feat(theme): revert default theme to dsa ([@fleven-kds](https://github.com/fleven-kds))
+- feat(theme): adjust google theme ([@fleven-kds](https://github.com/fleven-kds))
+- feat(google-theme): add theme ([@fleven-kds](https://github.com/fleven-kds))
+- feat(theme): add google theme ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.54 (Wed Nov 29 2023)
 
 #### ⚠️ Pushed to `main`
