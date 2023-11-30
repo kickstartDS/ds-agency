@@ -1,10 +1,12 @@
 /**
  * Do not edit directly
- * Generated on Thu, 30 Nov 2023 07:39:42 GMT
+ * Generated on Thu, 30 Nov 2023 14:35:56 GMT
  */
 
-export const KsBackgroundColorAccentBase = "rgba(44, 44, 44, 0.13)";
-export const KsBackgroundColorAccentInvertedBase = "rgba(255, 255, 255, 0.13)";
+export const KsBackgroundColorAccentBase = "rgba(56, 56, 56, 0.05)";
+export const KsBackgroundColorAccentInvertedBase = "rgba(56, 56, 56, 0.87)";
+export const KsBackgroundColorBoldBase = "rgba(226, 0, 116, 0.24)";
+export const KsBackgroundColorBoldInvertedBase = "#e20074";
 export const KsBackgroundColorClearBase = "rgba(0, 0, 0, 0)";
 export const KsBackgroundColorClearInteractiveBase = "rgba(0, 0, 0, 0)";
 export const KsBackgroundColorClearInteractiveHoverBase = "rgba(226, 0, 116, 0.13)";
@@ -16,7 +18,7 @@ export const KsBackgroundColorClearInvertedInteractiveHoverBase = "rgba(255, 255
 export const KsBackgroundColorClearInvertedInteractiveActiveBase = "rgba(255, 255, 255, 0.37)";
 export const KsBackgroundColorClearInvertedInteractiveSelectedBase = "rgba(255, 255, 255, 0.5)";
 export const KsBackgroundColorDefaultBase = "#ffffff";
-export const KsBackgroundColorDefaultInvertedBase = "rgba(44, 44, 44, 0.76)";
+export const KsBackgroundColorDefaultInvertedBase = "#383838";
 export const KsBackgroundColorInterfaceBase = "rgba(44, 44, 44, 0.05)";
 export const KsBackgroundColorInterfaceInteractiveBase = "rgba(0, 0, 0, 0)";
 export const KsBackgroundColorInterfaceInteractiveDisabledBase = "rgba(44, 44, 44, 0.05)";
@@ -396,25 +398,25 @@ export const KsColorBgToBg6Base = "#ffffff";
 export const KsColorBgToBg7Base = "#ffffff";
 export const KsColorBgToBg8Base = "#ffffff";
 export const KsColorBgToBg9Base = "#ffffff";
-export const KsColorBgInvertedBase = "#262626";
-export const KsColorBgInvertedAlpha1Base = "rgba(38, 38, 38, 0.95)";
-export const KsColorBgInvertedAlpha2Base = "rgba(38, 38, 38, 0.87)";
-export const KsColorBgInvertedAlpha3Base = "rgba(38, 38, 38, 0.76)";
-export const KsColorBgInvertedAlpha4Base = "rgba(38, 38, 38, 0.63)";
-export const KsColorBgInvertedAlpha5Base = "rgba(38, 38, 38, 0.5)";
-export const KsColorBgInvertedAlpha6Base = "rgba(38, 38, 38, 0.37)";
-export const KsColorBgInvertedAlpha7Base = "rgba(38, 38, 38, 0.24)";
-export const KsColorBgInvertedAlpha8Base = "rgba(38, 38, 38, 0.13)";
-export const KsColorBgInvertedAlpha9Base = "rgba(38, 38, 38, 0.05)";
-export const KsColorBgInvertedToBg1Base = "#262626";
-export const KsColorBgInvertedToBg2Base = "#272727";
-export const KsColorBgInvertedToBg3Base = "#272727";
-export const KsColorBgInvertedToBg4Base = "#282828";
-export const KsColorBgInvertedToBg5Base = "#292929";
-export const KsColorBgInvertedToBg6Base = "#2a2a2a";
-export const KsColorBgInvertedToBg7Base = "#2b2b2b";
-export const KsColorBgInvertedToBg8Base = "#2b2b2b";
-export const KsColorBgInvertedToBg9Base = "#2c2c2c";
+export const KsColorBgInvertedBase = "#383838";
+export const KsColorBgInvertedAlpha1Base = "rgba(56, 56, 56, 0.95)";
+export const KsColorBgInvertedAlpha2Base = "rgba(56, 56, 56, 0.87)";
+export const KsColorBgInvertedAlpha3Base = "rgba(56, 56, 56, 0.76)";
+export const KsColorBgInvertedAlpha4Base = "rgba(56, 56, 56, 0.63)";
+export const KsColorBgInvertedAlpha5Base = "rgba(56, 56, 56, 0.5)";
+export const KsColorBgInvertedAlpha6Base = "rgba(56, 56, 56, 0.37)";
+export const KsColorBgInvertedAlpha7Base = "rgba(56, 56, 56, 0.24)";
+export const KsColorBgInvertedAlpha8Base = "rgba(56, 56, 56, 0.13)";
+export const KsColorBgInvertedAlpha9Base = "rgba(56, 56, 56, 0.05)";
+export const KsColorBgInvertedToBg1Base = "#373737";
+export const KsColorBgInvertedToBg2Base = "#363636";
+export const KsColorBgInvertedToBg3Base = "#353535";
+export const KsColorBgInvertedToBg4Base = "#343434";
+export const KsColorBgInvertedToBg5Base = "#323232";
+export const KsColorBgInvertedToBg6Base = "#303030";
+export const KsColorBgInvertedToBg7Base = "#2f2f2f";
+export const KsColorBgInvertedToBg8Base = "#2e2e2e";
+export const KsColorBgInvertedToBg9Base = "#2d2d2d";
 export const KsDepthModal = "1000";
 export const KsSpacingXxs = "0.1481rem";
 export const KsSpacingXxsBase = "0.1481rem";

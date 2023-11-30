@@ -30,26 +30,26 @@
       "color": {
         "control": {
           "_": {
-            "value": "rgba(44,44,44,{ks.box-shadow.opacity.control._})"
+            "value": "rgba(255,255,255,{ks.box-shadow.opacity.control._})"
           },
           "hover": {
-            "value": "rgba(44,44,44,{ks.box-shadow.opacity.control.hover})"
+            "value": "rgba(255,255,255,{ks.box-shadow.opacity.control.hover})"
           }
         },
         "card": {
           "_": {
-            "value": "rgba(44,44,44,{ks.box-shadow.opacity.card._})"
+            "value": "rgba(255,255,255,{ks.box-shadow.opacity.card._})"
           },
           "hover": {
-            "value": "rgba(44,44,44,{ks.box-shadow.opacity.card.hover})"
+            "value": "rgba(255,255,255,{ks.box-shadow.opacity.card.hover})"
           }
         },
         "surface": {
           "_": {
-            "value": "rgba(44,44,44,{ks.box-shadow.opacity.surface._})"
+            "value": "rgba(255,255,255,{ks.box-shadow.opacity.surface._})"
           },
           "hover": {
-            "value": "rgba(44,44,44,{ks.box-shadow.opacity.surface.hover})"
+            "value": "rgba(255,255,255,{ks.box-shadow.opacity.surface.hover})"
           }
         }
       },

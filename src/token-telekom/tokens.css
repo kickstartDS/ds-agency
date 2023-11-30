@@ -1,11 +1,13 @@
 /**
  * Do not edit directly
- * Generated on Thu, 30 Nov 2023 07:39:41 GMT
+ * Generated on Thu, 30 Nov 2023 14:35:56 GMT
  */
 
 :root, [ks-theme] {
-  --ks-background-color-accent-base: var(--ks-color-fg-alpha-8-base);
-  --ks-background-color-accent-inverted-base: var(--ks-color-fg-inverted-alpha-8-base);
+  --ks-background-color-accent-base: var(--ks-color-bg-inverted-alpha-9-base);
+  --ks-background-color-accent-inverted-base: var(--ks-color-bg-inverted-alpha-2-base);
+  --ks-background-color-bold-base: var(--ks-color-primary-alpha-7-base);
+  --ks-background-color-bold-inverted-base: var(--ks-color-primary-base);
   --ks-background-color-clear-base: var(--ks-color-transparent-base);
   --ks-background-color-clear-interactive-base: var(--ks-color-transparent-base);
   --ks-background-color-clear-interactive-hover-base: var(--ks-color-primary-alpha-8-base);
@@ -17,7 +19,7 @@
   --ks-background-color-clear-inverted-interactive-active-base: var(--ks-color-primary-inverted-alpha-6-base);
   --ks-background-color-clear-inverted-interactive-selected-base: var(--ks-color-primary-inverted-alpha-5-base);
   --ks-background-color-default-base: var(--ks-color-fg-inverted-base);
-  --ks-background-color-default-inverted-base: var(--ks-color-fg-alpha-3-base);
+  --ks-background-color-default-inverted-base: var(--ks-color-bg-inverted-base);
   --ks-background-color-interface-base: var(--ks-color-fg-alpha-9-base);
   --ks-background-color-interface-interactive-base: var(--ks-color-transparent-base);
   --ks-background-color-interface-interactive-disabled-base: var(--ks-color-fg-alpha-9-base);
@@ -393,25 +395,25 @@
   --ks-color-bg-to-bg-7-base: #fff;
   --ks-color-bg-to-bg-8-base: #fff;
   --ks-color-bg-to-bg-9-base: #fff;
-  --ks-color-bg-inverted-base: #262626;
-  --ks-color-bg-inverted-alpha-1-base: rgba(38,38,38,.95);
-  --ks-color-bg-inverted-alpha-2-base: rgba(38,38,38,.87);
-  --ks-color-bg-inverted-alpha-3-base: rgba(38,38,38,.76);
-  --ks-color-bg-inverted-alpha-4-base: rgba(38,38,38,.63);
-  --ks-color-bg-inverted-alpha-5-base: rgba(38,38,38,.5);
-  --ks-color-bg-inverted-alpha-6-base: rgba(38,38,38,.37);
-  --ks-color-bg-inverted-alpha-7-base: rgba(38,38,38,.24);
-  --ks-color-bg-inverted-alpha-8-base: rgba(38,38,38,.13);
-  --ks-color-bg-inverted-alpha-9-base: rgba(38,38,38,.05);
-  --ks-color-bg-inverted-to-bg-1-base: #262626;
-  --ks-color-bg-inverted-to-bg-2-base: #272727;
-  --ks-color-bg-inverted-to-bg-3-base: #272727;
-  --ks-color-bg-inverted-to-bg-4-base: #282828;
-  --ks-color-bg-inverted-to-bg-5-base: #292929;
-  --ks-color-bg-inverted-to-bg-6-base: #2a2a2a;
-  --ks-color-bg-inverted-to-bg-7-base: #2b2b2b;
-  --ks-color-bg-inverted-to-bg-8-base: #2b2b2b;
-  --ks-color-bg-inverted-to-bg-9-base: #2c2c2c;
+  --ks-color-bg-inverted-base: #383838;
+  --ks-color-bg-inverted-alpha-1-base: rgba(56,56,56,.95);
+  --ks-color-bg-inverted-alpha-2-base: rgba(56,56,56,.87);
+  --ks-color-bg-inverted-alpha-3-base: rgba(56,56,56,.76);
+  --ks-color-bg-inverted-alpha-4-base: rgba(56,56,56,.63);
+  --ks-color-bg-inverted-alpha-5-base: rgba(56,56,56,.5);
+  --ks-color-bg-inverted-alpha-6-base: rgba(56,56,56,.37);
+  --ks-color-bg-inverted-alpha-7-base: rgba(56,56,56,.24);
+  --ks-color-bg-inverted-alpha-8-base: rgba(56,56,56,.13);
+  --ks-color-bg-inverted-alpha-9-base: rgba(56,56,56,.05);
+  --ks-color-bg-inverted-to-bg-1-base: #373737;
+  --ks-color-bg-inverted-to-bg-2-base: #363636;
+  --ks-color-bg-inverted-to-bg-3-base: #353535;
+  --ks-color-bg-inverted-to-bg-4-base: #343434;
+  --ks-color-bg-inverted-to-bg-5-base: #323232;
+  --ks-color-bg-inverted-to-bg-6-base: #303030;
+  --ks-color-bg-inverted-to-bg-7-base: #2f2f2f;
+  --ks-color-bg-inverted-to-bg-8-base: #2e2e2e;
+  --ks-color-bg-inverted-to-bg-9-base: #2d2d2d;
   --ks-depth-modal: 1000;
   --ks-spacing-xxs: var(--ks-spacing-xxs-base);
   --ks-spacing-xxs-base: 0.1481rem;
@@ -666,6 +668,8 @@
 :root, [ks-theme], [ks-inverted=false] {
   --ks-background-color-accent: var(--ks-background-color-accent-base);
   --ks-background-color-accent-inverted: var(--ks-background-color-accent-inverted-base);
+  --ks-background-color-bold: var(--ks-background-color-bold-base);
+  --ks-background-color-bold-inverted: var(--ks-background-color-bold-inverted-base);
   --ks-background-color-clear: var(--ks-background-color-clear-base);
   --ks-background-color-clear-interactive: var(--ks-background-color-clear-interactive-base);
   --ks-background-color-clear-interactive-hover: var(--ks-background-color-clear-interactive-hover-base);
@@ -1081,6 +1085,8 @@
 [ks-inverted=true] {
   --ks-background-color-accent: var(--ks-background-color-accent-inverted-base);
   --ks-background-color-accent-inverted: var(--ks-background-color-accent-base);
+  --ks-background-color-bold: var(--ks-background-color-bold-inverted-base);
+  --ks-background-color-bold-inverted: var(--ks-background-color-bold-base);
   --ks-background-color-clear: var(--ks-background-color-clear-inverted-base);
   --ks-background-color-clear-inverted: var(--ks-background-color-clear-base);
   --ks-background-color-clear-interactive: var(--ks-background-color-clear-inverted-interactive-base);
