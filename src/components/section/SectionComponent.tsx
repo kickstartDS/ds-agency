@@ -1,5 +1,6 @@
 import { HTMLAttributes, FC, PropsWithChildren, forwardRef } from "react";
 import classnames from "classnames";
+import { useKsComponent } from "@kickstartds/core/lib/react";
 
 import {
   SectionContextDefault,
@@ -8,7 +9,7 @@ import {
 
 import { SectionProps } from "./SectionProps";
 import "./section.scss";
-import { identifier as spotlightIdentifier } from "./js/spotlight.client";
+import { identifier } from "./js/Section.client";
 
 export const Section = forwardRef<
   HTMLDivElement,
@@ -36,10 +37,14 @@ export const Section = forwardRef<
       align: "left",
       ...headline,
     };
+    const componentProps = useKsComponent(identifier, ref, [
+      spotlight,
+      content.mode === "slider",
+    ]);
     return (
       <SectionContextDefault
         {...props}
-        ks-component={spotlight ? spotlightIdentifier : undefined}
+        {...componentProps}
         className={classnames(
           style !== "default" &&
             `l-section-style--${
@@ -79,7 +84,6 @@ export const Section = forwardRef<
         spaceBefore={spaceBefore}
         spaceAfter={spaceAfter}
         inverted={inverted}
-        ref={ref}
       />
     );
   }

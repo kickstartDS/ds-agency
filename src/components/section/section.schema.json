@@ -143,7 +143,7 @@
           "type": "string",
           "title": "Mode",
           "description": "Layout mode used for section contents",
-          "enum": ["default", "tile", "list"],
+          "enum": ["default", "tile", "list", "slider"],
           "default": "default"
         }
       },

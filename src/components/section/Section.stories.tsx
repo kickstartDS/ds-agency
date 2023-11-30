@@ -20,15 +20,12 @@ const meta: Meta<typeof Section> = {
   },
   render: (args) => (
     <Section {...args}>
-      <TeaserCard
-        {...merge(TeaserCardStory.args, unpack(CardWithImage.args))}
-      />
-      <TeaserCard
-        {...merge(TeaserCardStory.args, unpack(CardWithImage.args))}
-      />
-      <TeaserCard
-        {...merge(TeaserCardStory.args, unpack(CardWithImage.args))}
-      />
+      {new Array(3).fill(null).map((_, i) => (
+        <TeaserCard
+          {...merge(TeaserCardStory.args, unpack(CardWithImage.args))}
+          key={i}
+        />
+      ))}
     </Section>
   ),
 };
@@ -42,6 +39,25 @@ export const TeaserCards: Story = {
     },
     buttons: [],
   }),
+};
+
+export const TeaserCardSlider: Story = {
+  args: pack({
+    content: {
+      mode: "slider",
+    },
+    buttons: [],
+  }),
+  render: (args) => (
+    <Section {...args}>
+      {new Array(6).fill(null).map((_, i) => (
+        <TeaserCard
+          {...merge(TeaserCardStory.args, unpack(CardWithImage.args))}
+          key={i}
+        />
+      ))}
+    </Section>
+  ),
 };
 
 export const WithSpotlight: Story = {
