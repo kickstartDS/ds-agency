@@ -1,3 +1,22 @@
+# v2.1.57 (Thu Nov 30 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(token): revert dsa to default theme ([@fleven-kds](https://github.com/fleven-kds))
+- feat(backgroud-color): update bg color ([@fleven-kds](https://github.com/fleven-kds))
+- feat(color): adjust bg color scale ([@fleven-kds](https://github.com/fleven-kds))
+- feat(telekom): adjust telekom token ([@fleven-kds](https://github.com/fleven-kds))
+- feat(theming): apply theming ([@fleven-kds](https://github.com/fleven-kds))
+- feat(box-shadow): adjust box-shadow token ([@fleven-kds](https://github.com/fleven-kds))
+- feat(google-theme): apply styling ([@fleven-kds](https://github.com/fleven-kds))
+- feat(themes): make google standard theme ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.56 (Thu Nov 30 2023)
 
 #### ⚠️ Pushed to `main`
