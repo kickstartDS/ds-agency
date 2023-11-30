@@ -4,14 +4,15 @@
 @use "./components/form/form";
 @use "./fonts-dsa";
 @use "./fonts-lughausen";
+@use "./fonts-telekom";
 @use "./fonts-google";
 @use "./selectors" as *;
 
 #{$selectors} {
-  --g-topic--font-weight: var(--ks-font-weight-medium);
+  --g-topic--font-weight: var(--ks-font-weight-semi-bold);
   --g-topic--color: var(--ks-color-fg);
 
-  --g-link--font-weight: var(--ks-font-weight-medium);
+  --g-link--font-weight: var(--ks-font-weight-semi-bold);
   --g-link--color-hover: var(--ks-color-fg);
 
   --g-header-height: calc(var(--g-logo--height) + var(--ks-spacing-stack-m) + var(--ks-spacing-stack-m)) !important;

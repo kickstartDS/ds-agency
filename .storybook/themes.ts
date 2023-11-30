@@ -1,5 +1,5 @@
 import { create } from "@storybook/theming";
-import * as tokens from "../src/token/tokens";
+import * as tokens from "../src/token-dsa/tokens";
 
 const pxToNumber = (px: string) => Number(px.replace("px", ""));
 
