@@ -29,6 +29,10 @@ export type ShowArrows = boolean;
  * Type of the movement
  */
 export type Type = "slider" | "carousel";
+/**
+ * Additional css classes attached to the wrapping element
+ */
+export type Class = string;
 
 export interface SliderProps {
   autoplay?: AutoPlay;
@@ -37,4 +41,5 @@ export interface SliderProps {
   gap?: Gap;
   arrows?: ShowArrows;
   type?: Type;
+  className?: Class;
 }

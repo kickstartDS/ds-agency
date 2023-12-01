@@ -21,6 +21,9 @@
     },
     "type": {
       "$ref": "http://schema.kickstartds.com/content/slider.schema.json#/properties/type"
+    },
+    "className": {
+      "$ref": "http://schema.kickstartds.com/content/slider.schema.json#/properties/className"
     }
   },
   "additionalProperties": false

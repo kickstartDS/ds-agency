@@ -1,6 +1,12 @@
 @use "testimonials-paid-tokens.scss";
 
 .c-testimonials {
+  &--list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ks-spacing-stack-m);
+  }
+
   .c-quote {
     &__source {
       color: var(--c-quote_source--color);
