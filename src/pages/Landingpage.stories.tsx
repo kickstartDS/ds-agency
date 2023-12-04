@@ -107,6 +107,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
       }}
     >
       <TestimonialsPaid
+        layout="slider"
         testimonials={[
           {
             image: {

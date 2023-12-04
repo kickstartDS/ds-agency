@@ -5,6 +5,15 @@
   gap: var(--c-cta--gap);
   width: 100%;
 
+  .l-container {
+    width: 100%;
+    object-fit: contain;
+
+    .c-rich-text {
+      width: 100%;
+    }
+  }
+
   &--align-center {
     margin: auto;
 

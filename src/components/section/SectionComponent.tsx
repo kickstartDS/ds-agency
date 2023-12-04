@@ -39,7 +39,7 @@ export const Section = forwardRef<
     };
     const componentProps = useKsComponent(identifier, ref, [
       spotlight,
-      content.mode === "slider",
+      content?.mode === "slider",
     ]);
     return (
       <SectionContextDefault

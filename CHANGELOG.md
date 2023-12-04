@@ -1,3 +1,63 @@
+# v2.1.62 (Mon Dec 04 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(cta): change padding behaviour ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.1.61 (Mon Dec 04 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(cta-paid): increase selector specificity ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.1.60 (Mon Dec 04 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(cta-paid): change padding behavior ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.1.59 (Mon Dec 04 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(slider): style slider ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.1.58 (Fri Dec 01 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(testimonials): add custom classes to layout options ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.57 (Thu Nov 30 2023)
 
 #### ⚠️ Pushed to `main`

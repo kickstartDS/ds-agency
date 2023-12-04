@@ -229,7 +229,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.fg.alpha.9.base}",
+              "value": "{ks.color.fg.alpha.8.base}",
               "attributes": {
                 "category": "color"
               },
@@ -301,7 +301,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.fg-inverted.alpha.9.base}",
+              "value": "{ks.color.fg-inverted.alpha.7.base}",
               "attributes": {
                 "category": "color"
               },

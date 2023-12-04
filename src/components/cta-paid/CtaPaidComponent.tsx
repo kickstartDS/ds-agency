@@ -28,7 +28,7 @@ export const CtaPaid: FC<CtaPaidProps> = ({
     >
       <Storytelling
         className={classnames(
-          "c-cta",
+          "c-cta-paid",
           fullWidth ? `c-cta--full-width` : "",
           highlightText ? `c-cta--highlight-text` : "",
           image?.hAlign && image?.hAlign !== "center"

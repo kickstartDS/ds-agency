@@ -3,14 +3,14 @@
 .c-header--floating + .l-container--storytelling,
 .c-header--floating + .l-section .l-container--storytelling:first-child {
   @media (min-width: 640px) {
-    .c-storytelling.c-cta {
+    .c-storytelling.c-cta-paid {
       padding-top: calc(var(--g-header-height) + var(--c-storytelling--horizontal-padding));
       z-index: 1;
     }
   }
 }
 
-.c-storytelling.c-cta {
+.c-storytelling.c-cta-paid {
   justify-content: center;
   align-items: center;
 
@@ -25,7 +25,8 @@
   }
 
   .c-storytelling__box {
-    padding: var(--c-storytelling--vertical-padding) var(--l-section--content-padding);
+    padding: var(--c-storytelling--vertical-padding) var(--c-storytelling--horizontal-padding);
+
     &__content {
       &--center {
         .c-button-group {
@@ -36,7 +37,6 @@
   }
 
   .c-storytelling__box:only-child {
-    --c-storytelling--vertical-padding: 0;
     width: 100%;
     max-width: calc(var(--l-section--content-width-default) - calc(var(--l-section--content-padding) * 2));
   }
