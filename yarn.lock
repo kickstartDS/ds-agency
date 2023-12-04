@@ -2429,10 +2429,10 @@
   resolved "https://registry.npmjs.org/@juggle/resize-observer/-/resize-observer-3.4.0.tgz"
   integrity sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==
 
-"@kickstartds/base@2.3.0-canary.1550.6546.0":
-  version "2.3.0-canary.1550.6546.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-2.3.0-canary.1550.6546.0.tgz#5223231a07c2f5fda8047d7d6c453a996be6b767"
-  integrity sha512-CYCYds/nBkbY/J+Iui7IFQamiINyKDDgoZp8OoMph1ylCrjzxfui+lHBsiq6+FD7kJAGELMMpiwS4fW12pRmyg==
+"@kickstartds/base@2.3.0-canary.1550.6550.0":
+  version "2.3.0-canary.1550.6550.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-2.3.0-canary.1550.6550.0.tgz#97f98472f662ee61054d07761f8a3f1887ea514f"
+  integrity sha512-3A9nGpsNR50YwAhlkDTlr9wTAkc5Yt3vl0BipOijmsFHsYRyrbhtNdDpepay/kBFa7yIRK0UrQs7m/AQqIuAgw==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
@@ -2441,10 +2441,10 @@
     photoswipe "^5.3.7"
     vhtml "^2.2.0"
 
-"@kickstartds/blog@2.3.0-canary.1550.6546.0":
-  version "2.3.0-canary.1550.6546.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-2.3.0-canary.1550.6546.0.tgz#d8ca36f641ae787567d446481de086034b8c3f69"
-  integrity sha512-QB0Qa88eXC6e4Xyo6e1AXwU0F6u/A1gHNzREy0VrYm5n1IABjlEBvEBzkm099253eO3cMUcj8IeHXiHIlHLIKA==
+"@kickstartds/blog@2.3.0-canary.1550.6550.0":
+  version "2.3.0-canary.1550.6550.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-2.3.0-canary.1550.6550.0.tgz#fc5de11d9b883d5fd8ed6c404bd77796278fbd64"
+  integrity sha512-S0fiLie/DqCDOd824DZ4LWUhdS0dfgpsknhBejECzL/Wh7jhzPq2fpilw70FvlaZoy2NGWtwUe3fIr0hcttXSg==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
@@ -2478,10 +2478,10 @@
     pubsub-js "^1.9.4"
     sass "^1.62.1"
 
-"@kickstartds/form@2.3.0-canary.1550.6546.0":
-  version "2.3.0-canary.1550.6546.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-2.3.0-canary.1550.6546.0.tgz#f6fa5badaf81c8fe840d9fa71a0fa9944165db3a"
-  integrity sha512-XZal1uEzkezDrR7uaUiZfbSD/JmJsXz2a2igbmeXCRb4RUd3ITu2uogqACR8rb8eDrsl16Do4H8um/splkJ+Jg==
+"@kickstartds/form@2.3.0-canary.1550.6550.0":
+  version "2.3.0-canary.1550.6550.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-2.3.0-canary.1550.6550.0.tgz#8023b6ac900198c4796794825ac115498b775e3b"
+  integrity sha512-o+5dJWTH+B5wAjnmrTW43v83HIk7gJ8WZE1CGuQcKAPDCwfnMOQ5jWGXvhc/jZxTo7haW21+PADiaxcCIGJGXA==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
