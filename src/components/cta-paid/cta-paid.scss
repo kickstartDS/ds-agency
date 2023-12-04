@@ -26,6 +26,7 @@
 
   .c-storytelling__box {
     padding: var(--c-storytelling--vertical-padding) var(--l-section--content-padding);
+
     &__content {
       &--center {
         .c-button-group {
@@ -36,7 +37,6 @@
   }
 
   .c-storytelling__box:only-child {
-    --c-storytelling--vertical-padding: 0;
     width: 100%;
     max-width: calc(var(--l-section--content-width-default) - calc(var(--l-section--content-padding) * 2));
   }
