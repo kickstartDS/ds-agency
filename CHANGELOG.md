@@ -1,3 +1,15 @@
+# v2.1.62 (Mon Dec 04 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(cta): change padding behaviour ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.61 (Mon Dec 04 2023)
 
 #### ⚠️ Pushed to `main`
