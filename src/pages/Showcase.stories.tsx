@@ -49,7 +49,7 @@ const Page = () => (
     >
       <Text
         align="center"
-        style="highlight"
+        highlight
         text="EcoTech Solutions, a forward-thinking company in the sustainable PV and wind power industry, sought a way to streamline their development process and enhance their brand consistency across platforms."
       />
     </Section>
@@ -84,7 +84,7 @@ const Page = () => (
 The implementation of the new **Design System** and migration to **Storyblok** transformed EcoTech's development process. It introduced a level of consistency across their platforms that not only saved them time but also boosted their brand's credibility.
           `}
         align="center"
-        style="highlight"
+        highlight
       />
     </Section>
     <Section spaceBefore="none" width="wide">
@@ -113,7 +113,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
       <CtaPaid
         fullWidth
         largeHeadline
-        align="center"
+        textAlign="center"
         headline="Ready to **power up your**  Digital Transformation with a tailored **Design System** and Headless **CMS**? "
         sub="Connect with us to start your journey."
         buttons={[
