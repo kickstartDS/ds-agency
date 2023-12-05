@@ -20,7 +20,7 @@ export default meta;
 
 export const AboveLayout: Story = {
   args: pack({
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+    text: "We value efficiency without compromising quality. Our secret weapon? kickstartDS, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever.",
     image: {
       src: "img/close-up-young-business-team-working.png",
       alt: "Agency",
@@ -31,7 +31,7 @@ export const AboveLayout: Story = {
 
 export const BesideRightLayout: Story = {
   args: pack({
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+    text: "We value efficiency without compromising quality. Our secret weapon? kickstartDS, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever.",
     image: {
       src: "img/close-up-young-business-team-working.png",
       alt: "Agency",

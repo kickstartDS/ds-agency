@@ -26,7 +26,7 @@ IconCentered.args = pack({
     {
       icon: "home",
       title: "Feature 1",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+      text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
       cta: {
         target: "/feature1",
         label: "Read more",
@@ -35,7 +35,7 @@ IconCentered.args = pack({
     {
       icon: "map",
       title: "Feature 2",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+      text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
       cta: {
         target: "/feature2",
         label: "Read more",
@@ -44,7 +44,7 @@ IconCentered.args = pack({
     {
       icon: "person",
       title: "Feature 3",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+      text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
       cta: {
         target: "/feature2",
         label: "Read more",
@@ -64,7 +64,7 @@ StackWithButton.args = pack({
     {
       icon: "home",
       title: "Feature 1",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+      text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
       cta: {
         target: "/feature1",
         label: "Read more",
@@ -73,7 +73,7 @@ StackWithButton.args = pack({
     {
       icon: "map",
       title: "Feature 2",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+      text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
       cta: {
         target: "/feature2",
         label: "Read more",
@@ -82,7 +82,7 @@ StackWithButton.args = pack({
     {
       icon: "person",
       title: "Feature 3",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+      text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
       cta: {
         target: "/feature2",
         label: "Read more",
@@ -91,7 +91,7 @@ StackWithButton.args = pack({
     {
       icon: "star",
       title: "Feature 4",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+      text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
       cta: {
         target: "/feature2",
         label: "Read more",
@@ -100,7 +100,7 @@ StackWithButton.args = pack({
     {
       icon: "time",
       title: "Feature 5",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+      text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
       cta: {
         target: "/feature2",
         label: "Read more",
@@ -120,7 +120,7 @@ IconBesideWithLinkInText.args = pack({
     {
       icon: "home",
       title: "Feature 1",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+      text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
       cta: {
         target: "/feature1",
         label: "Read more",
@@ -129,7 +129,7 @@ IconBesideWithLinkInText.args = pack({
     {
       icon: "map",
       title: "Feature 2",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+      text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
       cta: {
         target: "/feature2",
         label: "Read more",
@@ -138,7 +138,7 @@ IconBesideWithLinkInText.args = pack({
     {
       icon: "person",
       title: "Feature 3",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+      text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
       cta: {
         target: "/feature2",
         label: "Read more",
@@ -147,7 +147,7 @@ IconBesideWithLinkInText.args = pack({
     {
       icon: "star",
       title: "Feature 4",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+      text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
       cta: {
         target: "/feature2",
         label: "Read more",
@@ -156,7 +156,7 @@ IconBesideWithLinkInText.args = pack({
     {
       icon: "time",
       title: "Feature 5",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+      text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
       cta: {
         target: "/feature2",
         label: "Read more",
@@ -176,7 +176,7 @@ IconIntextWithLink.args = pack({
     {
       icon: "home",
       title: "Feature 1",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+      text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
       cta: {
         target: "/feature1",
         label: "Read more",
@@ -185,7 +185,7 @@ IconIntextWithLink.args = pack({
     {
       icon: "map",
       title: "Feature 2",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+      text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
       cta: {
         target: "/feature2",
         label: "Read more",
@@ -194,7 +194,7 @@ IconIntextWithLink.args = pack({
     {
       icon: "person",
       title: "Feature 3",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+      text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
       cta: {
         target: "/feature2",
         label: "Read more",
@@ -203,7 +203,7 @@ IconIntextWithLink.args = pack({
     {
       icon: "star",
       title: "Feature 4",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+      text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
       cta: {
         target: "/feature2",
         label: "Read more",
@@ -212,7 +212,7 @@ IconIntextWithLink.args = pack({
     {
       icon: "time",
       title: "Feature 5",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+      text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
       cta: {
         target: "/feature2",
         label: "Read more",

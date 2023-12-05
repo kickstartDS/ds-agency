@@ -5,9 +5,7 @@ import { Slider } from "./SliderComponent";
 import merge from "deepmerge";
 import schema from "./slider.schema.dereffed.json";
 import { TeaserCard } from "../teaser-card/TeaserCardComponent";
-import TeaserCardStory, {
-  CardWithImage,
-} from "../teaser-card/TeaserCard.stories";
+import TeaserCardStory, { Card } from "../teaser-card/TeaserCard.stories";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
@@ -21,24 +19,12 @@ const meta: Meta = {
   },
   render: (args) => (
     <Slider {...args}>
-      <TeaserCard
-        {...merge(TeaserCardStory.args, unpack(CardWithImage.args))}
-      />
-      <TeaserCard
-        {...merge(TeaserCardStory.args, unpack(CardWithImage.args))}
-      />
-      <TeaserCard
-        {...merge(TeaserCardStory.args, unpack(CardWithImage.args))}
-      />
-      <TeaserCard
-        {...merge(TeaserCardStory.args, unpack(CardWithImage.args))}
-      />
-      <TeaserCard
-        {...merge(TeaserCardStory.args, unpack(CardWithImage.args))}
-      />
-      <TeaserCard
-        {...merge(TeaserCardStory.args, unpack(CardWithImage.args))}
-      />
+      <TeaserCard {...merge(TeaserCardStory.args, unpack(Card.args))} />
+      <TeaserCard {...merge(TeaserCardStory.args, unpack(Card.args))} />
+      <TeaserCard {...merge(TeaserCardStory.args, unpack(Card.args))} />
+      <TeaserCard {...merge(TeaserCardStory.args, unpack(Card.args))} />
+      <TeaserCard {...merge(TeaserCardStory.args, unpack(Card.args))} />
+      <TeaserCard {...merge(TeaserCardStory.args, unpack(Card.args))} />
     </Slider>
   ),
 };

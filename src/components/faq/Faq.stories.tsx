@@ -25,7 +25,7 @@ SingleDropdown.args = pack({
     {
       question: "What is a Design System?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+        "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
     },
   ],
 });
@@ -36,12 +36,12 @@ DropdownsInAList.args = pack({
     {
       question: "What is a Design System?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+        "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
     },
     {
       question: "What are the benefits of investing in a Design System?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+        "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
     },
   ],
 });

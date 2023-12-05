@@ -24,11 +24,7 @@ export const Cta: FC<CtaProps> = ({
       sub={sub}
       spaceAfter="minimum"
     />
-    {text ? (
-      <Text style={highlightText ? "highlight" : "default"} text={text} />
-    ) : (
-      ""
-    )}
+    {text ? <Text highlight={highlightText ? true : false} text={text} /> : ""}
 
     <ButtonGroup buttons={buttons} arrangement={align} />
   </div>

@@ -15,11 +15,19 @@ const meta: Meta<typeof TeaserCard> = {
 export default meta;
 type Story = StoryObj<typeof TeaserCard>;
 
-export const CardWithImage: Story = {};
-CardWithImage.args = pack({
-  headline: "TeaserCard headline",
-  text: "TeaserCard text content that can be quite a bit longer, and use **Markdown**",
+export const Card: Story = {};
+Card.args = pack({
+  headline: "Design System Services",
+  text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
   target: "#",
-  label: "label",
+  image: "img/close-up-young-business-team-working.png",
+});
+
+export const CardWithLabel: Story = {};
+CardWithLabel.args = pack({
+  headline: "Design System Services",
+  text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
+  target: "#",
+  label: "CMS",
   image: "img/close-up-young-business-team-working.png",
 });

@@ -21,7 +21,7 @@ export default meta;
 export const ImageAndTextOnColoredBackground: Story = {
   args: pack({
     headline: "The Sanity & Next.js Experts",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+    text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
     largeHeadline: true,
     backgroundColor: "#1a4378",
     image: {
@@ -46,7 +46,7 @@ export const ImageAndTextOnColoredBackground: Story = {
 export const ImageAndTextOverBackground: Story = {
   args: pack({
     headline: "The Sanity & Next.js Experts",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+    text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
     backgroundImage: "img/cta-background.png",
     largeHeadline: true,
     backgroundColor: "#06081f",

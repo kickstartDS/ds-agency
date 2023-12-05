@@ -21,7 +21,8 @@ export default meta;
 export const LeftAlignedWithSingleButton: Story = {
   args: pack({
     headline: "The Sanity & Next.js Experts",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+    largeHeadline: false,
+    text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
     buttons: [
       {
         label: "Contact us",
@@ -32,10 +33,26 @@ export const LeftAlignedWithSingleButton: Story = {
   }),
 };
 
-export const CenteredWithmultipleButtons: Story = {
+export const LargeTextAndHeadline: Story = {
   args: pack({
     headline: "The Sanity & Next.js Experts",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+    largeHeadline: true,
+    highlightText: true,
+    text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
+    buttons: [
+      {
+        label: "Contact us",
+        target: "#",
+        icon: "person",
+      },
+    ],
+  }),
+};
+
+export const CenteredWithMultipleButtons: Story = {
+  args: pack({
+    headline: "The Sanity & Next.js Experts",
+    text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
     align: "center",
     buttons: [
       {
