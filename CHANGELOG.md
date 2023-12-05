@@ -1,3 +1,15 @@
+# v2.1.66 (Tue Dec 05 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(pages): update properties ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.65 (Tue Dec 05 2023)
 
 #### ⚠️ Pushed to `main`
