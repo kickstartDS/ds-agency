@@ -48,17 +48,13 @@ export type BackgroundImage = string;
  */
 export type ImageSource = string;
 /**
- * Select a vertical alignment for the image
- */
-export type ImageVerticalAlignment = "center" | "top" | "bottom";
-/**
- * Select a horizontal alignment for the image
- */
-export type ImageHorizontalAlignment = "center" | "left" | "right";
-/**
  * Toggle padding of the image
  */
 export type Padding = boolean;
+/**
+ * Image description
+ */
+export type AltText = string;
 /**
  * Switch to displaying the image after the text on mobile
  */
@@ -68,13 +64,13 @@ export type MobileImageAfterText = boolean;
  */
 export type DesktopImageAfterText = boolean;
 /**
- * Image description
- */
-export type AltText = string;
-/**
  * Choose the alginment of the text
  */
 export type TextAlignment = "left" | "center";
+/**
+ * Select a vertical alignment for the image
+ */
+export type VerticalAlignmentOfTheContent = "center" | "top" | "bottom";
 
 export interface CtaPaidProps {
   headline?: ModuleHeadline;
@@ -87,17 +83,16 @@ export interface CtaPaidProps {
   backgroundColor?: BackgroundColor;
   backgroundImage?: BackgroundImage;
   image?: Image;
-  align?: TextAlignment;
+  order?: Order;
+  textAlign?: TextAlignment;
+  contentAlign?: VerticalAlignmentOfTheContent;
 }
 /**
  * Image displayed alongside the text content
  */
 export interface Image {
   src?: ImageSource;
-  vAlign?: ImageVerticalAlignment;
-  hAlign?: ImageHorizontalAlignment;
   padding?: Padding;
-  order?: Order;
   alt?: AltText;
 }
 /**

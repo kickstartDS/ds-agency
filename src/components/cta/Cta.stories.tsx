@@ -53,7 +53,7 @@ export const CenteredWithMultipleButtons: Story = {
   args: pack({
     headline: "The Sanity & Next.js Experts",
     text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
-    align: "center",
+    textAlign: "center",
     buttons: [
       {
         label: "Contact us",

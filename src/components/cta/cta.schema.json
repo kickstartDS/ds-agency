@@ -14,7 +14,7 @@
       "type": "boolean",
       "title": "Large Headline",
       "description": "Make the headline larger",
-      "default": true
+      "default": false
     },
     "sub": {
       "title": "Module Subheadline",
@@ -39,7 +39,7 @@
     "buttons": {
       "$ref": "http://schema.mydesignsystem.com/button-group.schema.json#/properties/buttons"
     },
-    "align": {
+    "textAlign": {
       "title": "Text Alignment",
       "description": "Choose the alginment of the text",
       "enum": ["left", "center"],

@@ -43,5 +43,5 @@ export interface CtaProps {
   text?: ModuleText;
   highlightText?: HighlightText;
   buttons?: Buttons;
-  align?: TextAlignment;
+  textAlign?: TextAlignment;
 }

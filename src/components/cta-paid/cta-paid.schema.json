@@ -34,7 +34,7 @@
       "type": "boolean",
       "title": "Highlight Text",
       "description": "Visually highlight the text",
-      "default": true
+      "default": false
     },
     "fullWidth": {
       "title": "Width",
@@ -62,45 +62,11 @@
           "type": "string",
           "format": "image"
         },
-        "vAlign": {
-          "title": "Image vertical alignment",
-          "description": "Select a vertical alignment for the image",
-          "type": "string",
-          "enum": ["center", "top", "bottom"],
-          "default": "center"
-        },
-        "hAlign": {
-          "title": "Image horizontal alignment",
-          "description": "Select a horizontal alignment for the image",
-          "type": "string",
-          "enum": ["center", "left", "right"],
-          "default": "center"
-        },
         "padding": {
           "title": "Padding",
           "description": "Toggle padding of the image",
           "type": "boolean",
           "default": true
-        },
-        "order": {
-          "title": "Order",
-          "description": "Choose what comes first on mobile and desktop: image or text",
-          "type": "object",
-          "properties": {
-            "mobileImageLast": {
-              "title": "Mobile image after text",
-              "description": "Switch to displaying the image after the text on mobile",
-              "type": "boolean",
-              "default": false
-            },
-            "desktopImageLast": {
-              "title": "Desktop image after text",
-              "description": "Switch to displaying the image after the text on desktop",
-              "type": "boolean",
-              "default": true
-            }
-          },
-          "additionalProperties": false
         },
         "alt": {
           "title": "Alt text",
@@ -110,12 +76,39 @@
       },
       "additionalProperties": false
     },
-    "align": {
+    "order": {
+      "title": "Order",
+      "description": "Choose what comes first on mobile and desktop: image or text",
+      "type": "object",
+      "properties": {
+        "mobileImageLast": {
+          "title": "Mobile image after text",
+          "description": "Switch to displaying the image after the text on mobile",
+          "type": "boolean",
+          "default": false
+        },
+        "desktopImageLast": {
+          "title": "Desktop image after text",
+          "description": "Switch to displaying the image after the text on desktop",
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "textAlign": {
       "title": "Text Alignment",
       "description": "Choose the alginment of the text",
       "enum": ["left", "center"],
       "type": "string",
       "default": "left"
+    },
+    "contentAlign": {
+      "title": "Vertical alignment of the content",
+      "description": "Select a vertical alignment for the image",
+      "type": "string",
+      "enum": ["center", "top", "bottom"],
+      "default": "center"
     }
   },
   "additionalProperties": false

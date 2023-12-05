@@ -8,16 +8,18 @@ import { useButtonGroup } from "../button-group/ButtonGroupComponent";
 
 export const CtaPaid: FC<CtaPaidProps> = ({
   headline,
-  largeHeadline,
+  largeHeadline = false,
   sub,
   image,
+  text,
+  highlightText = false,
+  textAlign,
   backgroundImage,
   backgroundColor,
-  align,
+  contentAlign,
+  order,
   fullWidth = false,
   buttons = [],
-  text,
-  highlightText,
 }) => {
   const ButtonGroup = useButtonGroup();
 
@@ -29,13 +31,10 @@ export const CtaPaid: FC<CtaPaidProps> = ({
       <Storytelling
         className={classnames(
           "c-cta-paid",
-          fullWidth ? `c-cta--full-width` : "",
-          highlightText ? `c-cta--highlight-text` : "",
-          image?.hAlign && image?.hAlign !== "center"
-            ? `c-cta--image-h-${image?.hAlign}`
-            : "",
-          image?.vAlign && image?.vAlign !== "center"
-            ? `c-cta--image-v-${image?.vAlign}`
+          fullWidth ? `c-cta-paid--full-width` : "",
+          highlightText ? `c-cta-paid--highlight-text` : "",
+          contentAlign && contentAlign !== "center"
+            ? `c-cta-paid--align-${contentAlign}`
             : ""
         )}
         backgroundImage={backgroundImage}
@@ -43,11 +42,11 @@ export const CtaPaid: FC<CtaPaidProps> = ({
         full={image?.padding === false}
         image={{
           source: image?.src,
-          order: image?.order,
+          order: order,
         }}
         box={{
           text: text,
-          textAlign: align,
+          textAlign: textAlign,
           // @ts-expect-error
           link: { buttons },
           headline: {
@@ -56,7 +55,7 @@ export const CtaPaid: FC<CtaPaidProps> = ({
             style: largeHeadline === true ? "h1" : undefined,
             sub: sub,
             spaceAfter: largeHeadline === true ? "large" : undefined,
-            align: align,
+            align: textAlign,
           },
         }}
       />
