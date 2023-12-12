@@ -29,7 +29,7 @@
   @include container.size("≥", 640px, "visual") {
     &.c-hero--content-below {
       .c-visual__media {
-        position: static;
+        position: relative;
 
         .c-visual__image {
           height: var(--c-visual--min-height);
