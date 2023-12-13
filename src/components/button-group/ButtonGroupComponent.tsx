@@ -7,17 +7,24 @@ import {
 import { ButtonGroupProps } from "./ButtonGroupProps";
 
 export const ButtonGroup = forwardRef<HTMLDivElement, ButtonGroupProps>(
-  ({ buttons, ...props }, ref) => {
+  ({ buttons, colorNeutral, size, ...props }, ref) => {
     return buttons && buttons.length > 0 ? (
       <ButtonGroupContextDefault
         {...props}
         items={buttons
           .filter((button) => button.label)
           .map((button, index) => ({
-            size: "medium",
+            size: size,
             ...button,
-            variant:
-              index === 0 ? "primary" : index === 1 ? "secondary" : "tertiary",
+            variant: colorNeutral
+              ? index === 0
+                ? "secondary"
+                : "tertiary"
+              : index === 0
+              ? "primary"
+              : index === 1
+              ? "secondary"
+              : "tertiary",
           }))}
         ref={ref}
       />
