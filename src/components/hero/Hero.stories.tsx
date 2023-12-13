@@ -24,7 +24,6 @@ export const TextBelowImage: Story = {
     text: "Experience the speed & scalability unlike anything seen before with our Sanity CMS powered websites, web apps & composable architecture.",
     textbox: false,
     overlay: true,
-    height: "fullImage",
     textPosition: "below",
     image: {
       srcMobile: "img/colleagues-work-office-using-computers-looking-aside.png",
@@ -32,37 +31,70 @@ export const TextBelowImage: Story = {
       srcDesktop:
         "img/colleagues-work-office-using-computers-looking-aside.png",
     },
+    buttons: [
+      {
+        label: "Explore further",
+        icon: "arrow-down",
+        target: "#",
+      },
+    ],
   }),
 };
 
-export const TextCenteredOverBackgroundImage: Story = {
+export const TextOnImageWithOverlay: Story = {
   args: pack({
-    headline: "The Sanity & Next.js Experts",
-    text: "Experience the speed & scalability unlike anything seen before with our Sanity CMS powered websites, web apps & composable architecture.",
+    headline: "Master Scalable Solutions",
+    text: "Harness our expertise in crafting scalable and robust applications using cutting-edge technologies.",
     textbox: false,
     height: "fullImage",
     overlay: true,
     textPosition: "center",
     image: {
-      srcMobile: "img/colleagues-work-office-using-computers-looking-aside.png",
-      srcTablet: "img/colleagues-work-office-using-computers-looking-aside.png",
-      srcDesktop:
-        "img/colleagues-work-office-using-computers-looking-aside.png",
+      srcMobile: "img/top-view-desk-with-keyboard-drawing-pad.png",
+      srcTablet: "img/top-view-desk-with-keyboard-drawing-pad.png",
+      srcDesktop: "img/top-view-desk-with-keyboard-drawing-pad.png",
     },
+
+    buttons: [
+      {
+        label: "Meet Us",
+        icon: "person",
+        target: "#",
+      },
+      {
+        label: "Schedule a Meeting",
+        icon: "date",
+        target: "#",
+      },
+    ],
   }),
 };
 
-export const TextBoxOverBackgroundImage: Story = {
+export const TextBoxOnFullScreen: Story = {
   args: pack({
-    headline: "The Sanity & Next.js Experts",
-    text: "Experience the speed & scalability unlike anything seen before with our Sanity CMS powered websites, web apps & composable architecture.",
+    headline: "Discover Our Design System",
+    sub: "Scalable. Efficient. Seamless.",
+    text: "Our design system provides a seamless and efficient framework for building scalable applications. Experience unprecedented speed and scalability with our Headless CMS powered websites, web apps & composable architecture.",
     textbox: true,
+    height: "fullScreen",
+    highlightText: false,
     textPosition: "left",
     image: {
-      srcMobile: "img/colleagues-work-office-using-computers-looking-aside.png",
-      srcTablet: "img/colleagues-work-office-using-computers-looking-aside.png",
-      srcDesktop:
-        "img/colleagues-work-office-using-computers-looking-aside.png",
+      srcMobile: "img/people-brainstorming-work-meeting.png",
+      srcTablet: "img/people-brainstorming-work-meeting.png",
+      srcDesktop: "img/people-brainstorming-work-meeting.png",
     },
+    buttons: [
+      {
+        label: "Discover More",
+        icon: "arrow-right",
+        target: "#",
+      },
+      {
+        label: "Reach Out",
+        icon: "phone",
+        target: "#",
+      },
+    ],
   }),
 };

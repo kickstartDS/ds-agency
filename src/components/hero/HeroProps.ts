@@ -5,8 +5,6 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {ButtonProps} from "../button/ButtonProps";
-
 /**
  * Headline for the visual
  */
@@ -29,9 +27,17 @@ export type Height = "small" | "default" | "fullImage" | "fullScreen";
  */
 export type Textbox = boolean;
 /**
- * Buttons of the Button Group
+ * Text content to display inside the button
  */
-export type Buttons = ButtonProps[];
+export type Label = string;
+/**
+ * Choose an icon
+ */
+export type Icon = string;
+/**
+ * Target that should be linked, makes the button behave like a link semantically
+ */
+export type Target = string;
 /**
  * Enable grid layer
  */
@@ -72,10 +78,15 @@ export interface HeroProps {
   highlightText?: HighlightText;
   height?: Height;
   textbox?: Textbox;
-  buttons?: Buttons;
+  buttons?: Button[];
   overlay?: GridLayer;
   image?: BackgroundImage;
   textPosition?: ModuleAligment;
+}
+export interface Button {
+  label?: Label;
+  icon?: Icon;
+  target?: Target;
 }
 /**
  * Sources of background images for different screen sizes

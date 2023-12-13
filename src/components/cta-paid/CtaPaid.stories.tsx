@@ -79,10 +79,10 @@ export const ContactBanner: Story = {
   }),
 };
 
-export const FullImageSplit: Story = {
+export const SplitBanner: Story = {
   args: pack({
-    headline: "Modular Design Approach",
-    text: "Our modular design approach allows for flexibility and scalability in your application's architecture.",
+    headline: "Design System Services",
+    text: "Here at Systemics, we bring a range of design system services that can make a difference.",
     backgroundColor: "#001856",
     width: "wide",
     fullWidth: true,
@@ -95,7 +95,7 @@ export const FullImageSplit: Story = {
     },
     buttons: [
       {
-        label: "Contact us",
+        label: "What can we do for you?",
         icon: "person",
         target: "#",
       },
@@ -105,8 +105,10 @@ export const FullImageSplit: Story = {
 
 export const AngledImage: Story = {
   args: pack({
-    headline: "Responsive Design",
-    text: "Our designs are responsive and ensure your application looks great on all devices.",
+    headline: "Our **Approach** to Design Systems",
+    text: `We value efficiency without compromising quality. Our secret weapon? kickstartDS, a revolutionary code-first and open source framework for creating design systems.
+
+This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster.`,
     width: "wide",
     fullWidth: true,
     image: {
@@ -150,10 +152,12 @@ export const ColoredBanner: Story = {
   }),
 };
 
-export const TextAlignBottom: Story = {
+export const AlignBottom: Story = {
   args: pack({
     headline: "Custom Solutions",
-    text: "We provide custom solutions tailored to your specific business needs and requirements.",
+    text: `At Systemics, we believe in the power of technology to transform businesses. Our team of experienced professionals is dedicated to providing innovative solutions that meet the unique needs of your business.
+
+We understand that every business is different, and that's why we offer custom solutions tailored to your specific business needs and requirements.`,
     backgroundImage: "img/offset-bg.svg",
     width: "wide",
     fullWidth: true,
