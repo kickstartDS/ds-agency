@@ -1,3 +1,16 @@
+# v2.1.71 (Wed Dec 13 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branches 'main' and 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(imageText): add highlightText prop ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.70 (Wed Dec 13 2023)
 
 #### ⚠️ Pushed to `main`
