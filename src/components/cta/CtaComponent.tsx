@@ -23,7 +23,11 @@ export const Cta: FC<CtaProps> = ({
       sub={sub}
       spaceAfter="minimum"
     />
-    {text ? <Text highlight={highlightText ? true : false} text={text} /> : ""}
+    {text ? (
+      <Text highlightText={highlightText ? true : false} text={text} />
+    ) : (
+      ""
+    )}
 
     <ButtonGroup
       // @ts-expect-error

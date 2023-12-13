@@ -10,6 +10,10 @@
  */
 export type Text = string;
 /**
+ * Visually highlight the text
+ */
+export type HighlightText = boolean;
+/**
  * URL of the image to display
  */
 export type ImageSource = string;
@@ -27,6 +31,7 @@ export type Layout = "above" | "below" | "beside-right" | "beside-left";
  */
 export interface ImageTextProps {
   text: Text;
+  highlightText?: HighlightText;
   image: {
     src?: ImageSource;
     alt?: AltText;

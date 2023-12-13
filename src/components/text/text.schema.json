@@ -27,7 +27,7 @@
       "enum": ["left", "center"],
       "default": "left"
     },
-    "highlight": {
+    "highlightText": {
       "type": "boolean",
       "title": "Highlight Text",
       "description": "Visually highlight the text",

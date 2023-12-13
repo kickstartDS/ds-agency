@@ -29,5 +29,5 @@ export interface TextProps {
   text: Text;
   layout?: Layout;
   align?: Alignment;
-  highlight?: HighlightText;
+  highlightText?: HighlightText;
 }

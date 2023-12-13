@@ -23,7 +23,7 @@
       "type": "boolean",
       "title": "Highlight Text",
       "description": "Visually highlight the text",
-      "default": true
+      "default": false
     },
     "height": {
       "title": "Height",

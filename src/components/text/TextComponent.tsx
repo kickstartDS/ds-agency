@@ -8,13 +8,13 @@ export const Text: FC<TextProps & HTMLAttributes<HTMLElement>> = ({
   text,
   layout = "singleColumn",
   align = "left",
-  highlight = false,
+  highlightText = false,
   ...props
 }) => {
   const layoutClass = `${
     layout === "multiColumn" ? "c-rich-text--columns" : ""
   }`;
-  const highlightClass = `${highlight ? "c-rich-text--highlight" : ""}`;
+  const highlightClass = `${highlightText ? "c-rich-text--highlight" : ""}`;
   const alignClass = `${align === "center" ? "c-rich-text--center" : ""}`;
 
   return (
