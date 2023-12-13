@@ -8,6 +8,17 @@
   background: transparent;
 }
 
-.sbdocs {
+.sbdocs.sbdocs-content {
   background-color: var(--ks-background-color-default) !important;
+  max-width: 1200px;
+}
+
+.sbdocs-nopadding .docs-story .innerZoomElementWrapper > div {
+  border: 0 !important;
+}
+
+.sbdocs-nopadding .docs-story > * {
+  overflow: hidden !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }

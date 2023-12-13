@@ -12,7 +12,7 @@ export const dark = create({
   // UI
   appBg: tokens.KsColorPrimaryToBg9Base,
   appContentBg: tokens.KsBackgroundColorDefaultBase,
-  appBorderColor: tokens.KsColorPrimaryAlpha8Base,
+  appBorderColor: tokens.KsColorFgAlpha8Base,
   appBorderRadius: pxToNumber(tokens.KsBorderRadiusCard),
 
   // Typography
