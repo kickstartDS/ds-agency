@@ -13,6 +13,14 @@ import type {ButtonProps} from "@kickstartds/base/lib/button/typing";
  */
 export type Buttons = ButtonProps[];
 /**
+ * Set the buttons to a color neutral variant
+ */
+export type ColorNeutral = boolean;
+/**
+ * Choose a size between small, medium and large
+ */
+export type ButtonSize = "small" | "medium" | "large";
+/**
  * Vertical arrangement of the buttons
  */
 export type ButtonArrangement = "left" | "center" | "right" | "space-between" | "grow";
@@ -23,6 +31,8 @@ export type AdditionalClasses = string;
 
 export interface ButtonGroupProps {
   buttons?: Buttons;
+  colorNeutral?: ColorNeutral;
+  size?: ButtonSize;
   arrangement?: ButtonArrangement;
   className?: AdditionalClasses;
 }
