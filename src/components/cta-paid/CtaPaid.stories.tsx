@@ -158,14 +158,16 @@ export const AlignBottom: Story = {
     text: `At Systemics, we believe in the power of technology to transform businesses. Our team of experienced professionals is dedicated to providing innovative solutions that meet the unique needs of your business.
 
 We understand that every business is different, and that's why we offer custom solutions tailored to your specific business needs and requirements.`,
-    backgroundImage: "img/offset-bg.svg",
+    backgroundImage: "img/grid-bg.svg",
     width: "wide",
     fullWidth: true,
     contentAlign: "bottom",
     image: {
       src: "img/offset-image.png",
     },
-
+    order: {
+      desktopImageLast: false,
+    },
     buttons: [
       {
         label: "Contact us",
