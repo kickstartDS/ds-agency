@@ -1,16 +1,16 @@
 .c-rich-text {
   --ks-text-col-width: 16em;
 
-  &--highlight {
+  &--highlight.c-rich-text {
     color: var(--ks-color-fg);
     font: var(--ks-font-copy-l);
   }
 
-  &--center {
+  &--center.c-rich-text {
     text-align: center;
   }
 
-  &--columns {
+  &--columns.c-rich-text {
     column-gap: var(--ks-spacing-inline-m);
     column-count: auto;
     column-width: var(--ks-text-col-width);
