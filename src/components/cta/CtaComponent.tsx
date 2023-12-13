@@ -9,7 +9,6 @@ import "./cta.scss";
 export const Cta: FC<CtaProps> = ({
   headline,
   sub,
-  largeHeadline = false,
   text,
   highlightText = false,
   buttons,
@@ -18,7 +17,7 @@ export const Cta: FC<CtaProps> = ({
   <div className={classnames("c-cta", `c-cta--align-${textAlign}`)}>
     <Headline
       level="h2"
-      style={largeHeadline === true ? "h1" : "h2"}
+      style={highlightText === true ? "h1" : "h2"}
       align={textAlign}
       text={headline}
       sub={sub}
@@ -26,6 +25,10 @@ export const Cta: FC<CtaProps> = ({
     />
     {text ? <Text highlight={highlightText ? true : false} text={text} /> : ""}
 
-    <ButtonGroup buttons={buttons} arrangement={textAlign} />
+    <ButtonGroup
+      // @ts-expect-error
+      buttons={buttons}
+      arrangement={textAlign}
+    />
   </div>
 );

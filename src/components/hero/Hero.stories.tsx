@@ -20,7 +20,7 @@ export default meta;
 export const TextBelowImage: Story = {
   args: pack({
     headline: "The Sanity & Next.js Experts",
-    largeHeadline: true,
+    highlightText: true,
     text: "Experience the speed & scalability unlike anything seen before with our Sanity CMS powered websites, web apps & composable architecture.",
     textbox: false,
     overlay: true,

@@ -11,6 +11,12 @@
 }
 
 .c-storytelling.c-cta-paid {
+  --c-storytelling--padding-ratio: 2;
+
+  &.c-storytelling--full {
+    --c-storytelling--padding-ratio: 1;
+  }
+
   justify-content: center;
   align-items: center;
   padding: 0;
@@ -35,7 +41,7 @@
     padding: var(--c-storytelling--vertical-padding) var(--c-storytelling--horizontal-padding);
 
     @container storytelling (max-width: 640px) {
-      padding-top: calc(var(--c-storytelling--vertical-padding) / 2);
+      padding-top: calc(var(--c-storytelling--vertical-padding) / var(--c-storytelling--padding-ratio));
 
       &:only-child {
         padding-top: var(--c-storytelling--vertical-padding);
@@ -58,16 +64,16 @@
   @container storytelling (min-width: 640px) {
     &.c-storytelling--order-desktop-image-last {
       .c-storytelling__image {
-        padding-left: calc(var(--c-storytelling--horizontal-padding) / 2);
+        padding-left: calc(var(--c-storytelling--horizontal-padding) / var(--c-storytelling--padding-ratio));
       }
 
       .c-storytelling__box {
-        padding-right: calc(var(--c-storytelling--horizontal-padding) / 2);
+        padding-right: calc(var(--c-storytelling--horizontal-padding) / var(--c-storytelling--padding-ratio));
       }
     }
 
     .c-storytelling__box {
-      padding-left: calc(var(--c-storytelling--horizontal-padding) / 2);
+      padding-left: calc(var(--c-storytelling--horizontal-padding) / var(--c-storytelling--padding-ratio));
 
       &__content {
         &--center {
@@ -80,12 +86,15 @@
 
     .c-storytelling__box:only-child {
       width: 100%;
-      max-width: calc(var(--l-section--content-width-default) - calc(var(--l-section--content-padding) * 2));
+      max-width: calc(
+        var(--l-section--content-width-default) -
+          calc(var(--l-section--content-padding) * var(--c-storytelling--padding-ratio))
+      );
     }
 
     > .c-storytelling__image {
       padding: var(--c-storytelling--vertical-padding) var(--c-storytelling--horizontal-padding);
-      padding-right: calc(var(--c-storytelling--horizontal-padding) / 2);
+      padding-right: calc(var(--c-storytelling--horizontal-padding) / var(--c-storytelling--padding-ratio));
     }
 
     &.c-storytelling--full {
@@ -96,7 +105,10 @@
 
     > .c-storytelling__image,
     > .c-storytelling__box {
-      max-width: calc(calc(var(--l-section--content-width-wide) / 2) - var(--l-section--content-padding));
+      max-width: calc(
+        calc(var(--l-section--content-width-wide) / var(--c-storytelling--padding-ratio)) -
+          var(--l-section--content-padding)
+      );
     }
 
     &.c-cta-paid--full-width {

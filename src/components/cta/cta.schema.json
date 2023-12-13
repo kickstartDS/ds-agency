@@ -10,12 +10,6 @@
       "type": "string",
       "examples": ["Headline"]
     },
-    "largeHeadline": {
-      "type": "boolean",
-      "title": "Large Headline",
-      "description": "Make the headline larger",
-      "default": false
-    },
     "sub": {
       "title": "Module Subheadline",
       "description": "Subheadline below the module headline",
@@ -25,10 +19,7 @@
     "text": {
       "title": "Module Text",
       "description": "Info text for the module element",
-      "type": "string",
-      "examples": [
-        "Jedes Jahr werden zahlreiche Kinder bei Angriffen verletzt. Wir helfen, dass sie behandelt werden können und langfristige Unterstützung erhalten, etwa mit Prothesen. Durch den Krieg sind zudem viele Kinder verängstigt und traumatisiert. mydesignsystem sorgt für psychosoziale Hilfe."
-      ]
+      "type": "string"
     },
     "highlightText": {
       "type": "boolean",
@@ -37,7 +28,22 @@
       "default": false
     },
     "buttons": {
-      "$ref": "http://schema.mydesignsystem.com/button-group.schema.json#/properties/buttons"
+      "type": "array",
+      "items": {
+        "title": "Button",
+        "type": "object",
+        "properties": {
+          "label": {
+            "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
+          },
+          "icon": {
+            "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
+          },
+          "target": {
+            "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
+          }
+        }
+      }
     },
     "textAlign": {
       "title": "Text Alignment",

@@ -5,16 +5,10 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {ButtonProps} from "../button/ButtonProps";
-
 /**
  * Headline for the module element
  */
 export type ModuleHeadline = string;
-/**
- * Make the headline larger
- */
-export type LargeHeadline = boolean;
 /**
  * Subheadline below the module headline
  */
@@ -32,9 +26,17 @@ export type HighlightText = boolean;
  */
 export type Width = boolean;
 /**
- * Buttons of the Button Group
+ * Text content to display inside the button
  */
-export type Buttons = ButtonProps[];
+export type Label = string;
+/**
+ * Choose an icon
+ */
+export type Icon = string;
+/**
+ * Target that should be linked, makes the button behave like a link semantically
+ */
+export type Target = string;
 /**
  * Background color for the whole element
  */
@@ -74,18 +76,22 @@ export type VerticalAlignmentOfTheContent = "center" | "top" | "bottom";
 
 export interface CtaPaidProps {
   headline?: ModuleHeadline;
-  largeHeadline?: LargeHeadline;
   sub?: ModuleSubheadline;
   text?: ModuleText;
   highlightText?: HighlightText;
   fullWidth?: Width;
-  buttons?: Buttons;
+  buttons?: Button[];
   backgroundColor?: BackgroundColor;
   backgroundImage?: BackgroundImage;
   image?: Image;
   order?: Order;
   textAlign?: TextAlignment;
   contentAlign?: VerticalAlignmentOfTheContent;
+}
+export interface Button {
+  label?: Label;
+  icon?: Icon;
+  target?: Target;
 }
 /**
  * Image displayed alongside the text content

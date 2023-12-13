@@ -25,10 +25,7 @@
     "text": {
       "title": "Module Text",
       "description": "Info text for the module element",
-      "type": "string",
-      "examples": [
-        "Jedes Jahr werden zahlreiche Kinder bei Angriffen verletzt. Wir helfen, dass sie behandelt werden können und langfristige Unterstützung erhalten, etwa mit Prothesen. Durch den Krieg sind zudem viele Kinder verängstigt und traumatisiert. mydesignsystem sorgt für psychosoziale Hilfe."
-      ]
+      "type": "string"
     },
     "layout": {
       "type": "string",

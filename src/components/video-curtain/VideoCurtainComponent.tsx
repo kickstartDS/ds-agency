@@ -10,7 +10,6 @@ import { useButtonGroup } from "../button-group/ButtonGroupComponent";
 export const VideoCurtain: FC<VideoCurtainProps> = ({
   headline,
   sub,
-  largeHeadline = true,
   text,
   highlightText,
   textPosition,
@@ -49,7 +48,7 @@ export const VideoCurtain: FC<VideoCurtainProps> = ({
               text: headline,
               level: "h1",
               sub: sub,
-              style: largeHeadline ? "h1" : undefined,
+              style: highlightText ? "h1" : undefined,
             },
             text: text,
           }}

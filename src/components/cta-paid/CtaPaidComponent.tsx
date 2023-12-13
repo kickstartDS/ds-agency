@@ -8,11 +8,10 @@ import { useButtonGroup } from "../button-group/ButtonGroupComponent";
 
 export const CtaPaid: FC<CtaPaidProps> = ({
   headline,
-  largeHeadline = false,
+  highlightText = false,
   sub,
   image,
   text,
-  highlightText = false,
   textAlign,
   backgroundImage,
   backgroundColor,
@@ -52,9 +51,9 @@ export const CtaPaid: FC<CtaPaidProps> = ({
           headline: {
             text: headline,
             level: "h2",
-            style: largeHeadline === true ? "h1" : undefined,
+            style: highlightText === true ? "h1" : undefined,
             sub: sub,
-            spaceAfter: largeHeadline === true ? "large" : undefined,
+            spaceAfter: highlightText === true ? "large" : undefined,
             align: textAlign,
           },
         }}

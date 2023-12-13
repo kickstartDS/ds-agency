@@ -10,7 +10,6 @@ import { useButtonGroup } from "../button-group/ButtonGroupComponent";
 export const Hero: FC<HeroProps> = ({
   headline,
   sub,
-  largeHeadline,
   height,
   text,
   highlightText,
@@ -62,7 +61,7 @@ export const Hero: FC<HeroProps> = ({
               text: headline,
               sub: sub,
               level: "h3",
-              style: largeHeadline ? "h1" : undefined,
+              style: highlightText ? "h1" : undefined,
             },
             text: text,
           }}

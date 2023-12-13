@@ -10,12 +10,6 @@
       "type": "string",
       "examples": ["Headline"]
     },
-    "largeHeadline": {
-      "title": "Large Headline",
-      "description": "Boolean to set if the headline is supposed to resemble a h1 headline at the start of the page",
-      "type": "boolean",
-      "default": true
-    },
     "sub": {
       "title": "Module Subheadline",
       "description": "Subheadline below the module headline",
@@ -25,10 +19,7 @@
     "text": {
       "title": "Module Text",
       "description": "Info text for the module element",
-      "type": "string",
-      "examples": [
-        "Jedes Jahr werden zahlreiche Kinder bei Angriffen verletzt. Wir helfen, dass sie behandelt werden können und langfristige Unterstützung erhalten, etwa mit Prothesen. Durch den Krieg sind zudem viele Kinder verängstigt und traumatisiert. mydesignsystem sorgt für psychosoziale Hilfe."
-      ]
+      "type": "string"
     },
     "highlightText": {
       "type": "boolean",

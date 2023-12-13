@@ -20,12 +20,12 @@ export default meta;
 
 export const LeftAlignedWithSingleButton: Story = {
   args: pack({
-    headline: "The Sanity & Next.js Experts",
-    largeHeadline: false,
-    text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
+    headline: "Experience Our Design System",
+    sub: "Efficient, scalable, seamless.",
+    text: "Our design system offers a seamless and efficient way to build scalable applications. Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
     buttons: [
       {
-        label: "Contact us",
+        label: "Learn More",
         target: "#",
         icon: "person",
       },
@@ -33,15 +33,15 @@ export const LeftAlignedWithSingleButton: Story = {
   }),
 };
 
-export const LargeTextAndHeadline: Story = {
+export const HighlightCta: Story = {
   args: pack({
-    headline: "The Sanity & Next.js Experts",
-    largeHeadline: true,
+    headline: "Why Choose Our Design System?",
+    sub: "Built for consistency and speed.",
     highlightText: true,
-    text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
+    text: "Our design system is built with scalability and efficiency in mind. It allows for consistent UI across different platforms, making your development process smoother and faster.",
     buttons: [
       {
-        label: "Contact us",
+        label: "Get Started",
         target: "#",
         icon: "person",
       },
@@ -51,17 +51,18 @@ export const LargeTextAndHeadline: Story = {
 
 export const CenteredWithMultipleButtons: Story = {
   args: pack({
-    headline: "The Sanity & Next.js Experts",
-    text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
+    headline: "Ready to Transform Your Development Process?",
+    sub: "Start your journey today.",
+    text: "Get started with our design system today and experience a new level of efficiency and consistency in your projects.",
     textAlign: "center",
     buttons: [
       {
-        label: "Contact us",
+        label: "Contact Us",
         target: "#",
         icon: "person",
       },
       {
-        label: "Book a meeting",
+        label: "Learn More",
         target: "#",
         icon: "date",
       },

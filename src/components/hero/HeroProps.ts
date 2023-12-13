@@ -12,10 +12,6 @@ import type {ButtonProps} from "../button/ButtonProps";
  */
 export type Headline = string;
 /**
- * Make the headline larger
- */
-export type LargeHeadline = boolean;
-/**
  * Subheadline below the module headline
  */
 export type ModuleSubheadline = string;
@@ -71,7 +67,6 @@ export type ModuleAligment = "center" | "below" | "left" | "right";
 
 export interface HeroProps {
   headline?: Headline;
-  largeHeadline?: LargeHeadline;
   sub?: ModuleSubheadline;
   text?: ModuleText;
   highlightText?: HighlightText;
