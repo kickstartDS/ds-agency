@@ -1,3 +1,16 @@
+# v2.1.68 (Wed Dec 13 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(images): add new images ([@fleven-kds](https://github.com/fleven-kds))
+- feat(buttonGroup): add colorNeutral & size props ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.67 (Tue Dec 12 2023)
 
 #### ⚠️ Pushed to `main`
