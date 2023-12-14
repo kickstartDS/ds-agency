@@ -1,3 +1,16 @@
+# v2.1.72 (Wed Dec 13 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(stories): update stories ([@fleven-kds](https://github.com/fleven-kds))
+- feat(text): increase selector specificities ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.71 (Wed Dec 13 2023)
 
 #### ⚠️ Pushed to `main`
