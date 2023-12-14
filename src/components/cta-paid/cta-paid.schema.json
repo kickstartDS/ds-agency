@@ -26,6 +26,12 @@
       "description": "Visually highlight the text",
       "default": false
     },
+    "colorNeutral": {
+      "title": "Color Neutral",
+      "description": "Make the text and buttons color neutral",
+      "default": false,
+      "type": "boolean"
+    },
     "fullWidth": {
       "title": "Width",
       "description": "Set the width of the content to the full width of the element",

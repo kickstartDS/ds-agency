@@ -22,6 +22,10 @@ export type ModuleText = string;
  */
 export type HighlightText = boolean;
 /**
+ * Make the text and buttons color neutral
+ */
+export type ColorNeutral = boolean;
+/**
  * Set the width of the content to the full width of the element
  */
 export type Width = boolean;
@@ -79,6 +83,7 @@ export interface CtaPaidProps {
   sub?: ModuleSubheadline;
   text?: ModuleText;
   highlightText?: HighlightText;
+  colorNeutral?: ColorNeutral;
   fullWidth?: Width;
   buttons?: Button[];
   backgroundColor?: BackgroundColor;

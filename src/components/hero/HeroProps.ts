@@ -21,6 +21,10 @@ export type ModuleText = string;
  * Visually highlight the text
  */
 export type HighlightText = boolean;
+/**
+ * Make the text and buttons color neutral
+ */
+export type ColorNeutral = boolean;
 export type Height = "small" | "default" | "fullImage" | "fullScreen";
 /**
  * Toggle wether you want your text to be displayed within in box
@@ -76,6 +80,7 @@ export interface HeroProps {
   sub?: ModuleSubheadline;
   text?: ModuleText;
   highlightText?: HighlightText;
+  colorNeutral?: ColorNeutral;
   height?: Height;
   textbox?: Textbox;
   buttons?: Button[];

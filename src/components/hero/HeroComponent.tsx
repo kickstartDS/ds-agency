@@ -14,6 +14,7 @@ export const Hero: FC<HeroProps> = ({
   text,
   highlightText,
   textPosition = "center",
+  colorNeutral,
   image,
   overlay,
   textbox,
@@ -30,7 +31,8 @@ export const Hero: FC<HeroProps> = ({
         <VisualContextDefault
           className={classnames(
             `c-hero c-hero--content-${textPosition}`,
-            highlightText ? `c-hero--highlight-text` : ""
+            highlightText ? `c-hero--highlight-text` : "",
+            colorNeutral ? `c-hero--color-neutral` : ""
           )}
           height={height}
           overlay={overlay}
@@ -47,6 +49,7 @@ export const Hero: FC<HeroProps> = ({
             link: {
               // @ts-expect-error
               buttons,
+              colorNeutral,
               enabled: buttons.length > 0,
               arrangement:
                 textPosition === "below" || textPosition === "center"

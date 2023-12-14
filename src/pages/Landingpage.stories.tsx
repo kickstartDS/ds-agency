@@ -312,8 +312,8 @@ We empower your digital teams with the knowledge and skills to manage and evolve
     <Section style="anchorGlow" width="wide">
       <CtaPaid
         fullWidth
-        largeHeadline
-        align="center"
+        highlightText
+        textAlign="center"
         headline="Ready to embark on a transformative digital journey?"
         sub="Reach out to us for insights and solutions that seamlessly merge design systems and headless web architecture."
         buttons={[

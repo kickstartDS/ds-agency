@@ -22,7 +22,7 @@ const Page = () => (
           alt: "Fake Showcase Mockup Image",
         }}
         textPosition="below"
-        largeHeadline
+        highlightText
         headline="Powering EcoTech's Digital Transformation with a Design System and Headless CMS"
         sub="Reinventing Development Processes, Boosting Brand Credibility, and Embracing the Headless Web"
       />
@@ -49,7 +49,7 @@ const Page = () => (
     >
       <Text
         align="center"
-        highlight
+        highlightText
         text="EcoTech Solutions, a forward-thinking company in the sustainable PV and wind power industry, sought a way to streamline their development process and enhance their brand consistency across platforms."
       />
     </Section>
@@ -61,13 +61,17 @@ const Page = () => (
             headline: "Our Solution:",
             sub: "Design System end to end",
             text: "We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.",
-            image: "/static/img/showcases/comp_eco03.png",
+            image: {
+              src: "/static/img/showcases/comp_eco03.png",
+            },
           },
           {
             headline: "Headless is best:",
             sub: "Easy adoption thanks Design System",
             text: "We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.",
-            image: "/static/img/showcases/comp_eco04.png",
+            image: {
+              src: "/static/img/showcases/comp_eco04.png",
+            },
           },
         ]}
       />
@@ -84,7 +88,7 @@ const Page = () => (
 The implementation of the new **Design System** and migration to **Storyblok** transformed EcoTech's development process. It introduced a level of consistency across their platforms that not only saved them time but also boosted their brand's credibility.
           `}
         align="center"
-        highlight
+        highlightText
       />
     </Section>
     <Section spaceBefore="none" width="wide">
@@ -112,7 +116,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
     >
       <CtaPaid
         fullWidth
-        largeHeadline
+        highlightText
         textAlign="center"
         headline="Ready to **power up your**  Digital Transformation with a tailored **Design System** and Headless **CMS**? "
         sub="Connect with us to start your journey."

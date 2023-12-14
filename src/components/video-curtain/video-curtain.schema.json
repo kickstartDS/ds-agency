@@ -7,14 +7,12 @@
     "headline": {
       "title": "Headline",
       "description": "Headline for the visual",
-      "type": "string",
-      "examples": ["Headline"]
+      "type": "string"
     },
     "sub": {
       "title": "Module Subheadline",
       "description": "Subheadline below the module headline",
-      "type": "string",
-      "examples": ["Subheadline"]
+      "type": "string"
     },
     "text": {
       "title": "Module Text",
@@ -27,8 +25,29 @@
       "description": "Visually highlight the text",
       "default": false
     },
+    "colorNeutral": {
+      "title": "Color Neutral",
+      "description": "Make the text and buttons color neutral",
+      "default": false,
+      "type": "boolean"
+    },
     "buttons": {
-      "$ref": "http://schema.mydesignsystem.com/button-group.schema.json#/properties/buttons"
+      "type": "array",
+      "items": {
+        "title": "Button",
+        "type": "object",
+        "properties": {
+          "label": {
+            "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
+          },
+          "icon": {
+            "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
+          },
+          "target": {
+            "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
+          }
+        }
+      }
     },
     "overlay": {
       "$ref": "http://schema.kickstartds.com/content/visual.schema.json#/properties/overlay"

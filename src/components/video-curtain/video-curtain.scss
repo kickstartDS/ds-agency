@@ -3,9 +3,18 @@
 @include container.wrapper("visual");
 
 .c-visual.c-video-curtain {
+  --c-visual--text-color-neutral: var(--ks-color-fg);
+
   .c-button-group {
     --c-button-group--vertical-gutter: var(--ks-spacing-stack-m);
     --c-button-group--horizontal-gutter: var(--ks-spacing-inline-m);
+  }
+
+  &--color-neutral.c-visual {
+    .c-visual__box {
+      --c-visual_text--color: var(--c-visual--text-color-neutral);
+      --c-visual_subheadline--color: var(--c-visual--text-color-neutral);
+    }
   }
 
   .c-headline {

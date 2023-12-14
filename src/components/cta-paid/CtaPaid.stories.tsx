@@ -83,6 +83,7 @@ export const SplitBanner: Story = {
   args: pack({
     headline: "Design System Services",
     text: "Here at Systemics, we bring a range of design system services that can make a difference.",
+    colorNeutral: true,
     backgroundColor: "#001856",
     width: "wide",
     fullWidth: true,
@@ -138,6 +139,7 @@ export const ColoredBanner: Story = {
     headline: "Expertise in Scalable Solutions",
     text: "Leverage our expertise in creating scalable and robust applications using modern technologies.",
     highlightText: true,
+    colorNeutral: true,
     backgroundColor: "#a30051",
     buttons: [
       {

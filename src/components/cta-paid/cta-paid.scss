@@ -13,6 +13,15 @@
 .c-storytelling.c-cta-paid {
   --c-storytelling--padding-ratio: 2;
 
+  &--color-neutral.c-storytelling {
+    --c-rich-text--color: var(--c-storytelling--text-color-neutral);
+    .c-headline {
+      &__subheadline {
+        --c-headline_subheadline--color: var(--c-storytelling--text-color-neutral);
+      }
+    }
+  }
+
   &.c-storytelling--full {
     --c-storytelling--padding-ratio: 1;
   }

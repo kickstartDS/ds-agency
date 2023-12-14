@@ -15,6 +15,7 @@ export const CtaPaid: FC<CtaPaidProps> = ({
   textAlign,
   backgroundImage,
   backgroundColor,
+  colorNeutral,
   contentAlign,
   order,
   fullWidth = false,
@@ -32,6 +33,7 @@ export const CtaPaid: FC<CtaPaidProps> = ({
           "c-cta-paid",
           fullWidth ? `c-cta-paid--full-width` : "",
           highlightText ? `c-cta-paid--highlight-text` : "",
+          colorNeutral ? `c-cta-paid--color-neutral` : "",
           contentAlign && contentAlign !== "center"
             ? `c-cta-paid--align-${contentAlign}`
             : ""
@@ -46,8 +48,12 @@ export const CtaPaid: FC<CtaPaidProps> = ({
         box={{
           text: text,
           textAlign: textAlign,
-          // @ts-expect-error
-          link: { buttons },
+          link: {
+            // @ts-expect-error
+            buttons,
+            colorNeutral: colorNeutral,
+            enabled: buttons.length > 0,
+          },
           headline: {
             text: headline,
             level: "h2",

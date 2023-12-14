@@ -19,9 +19,10 @@ type Story = StoryObj<typeof Hero>;
 export default meta;
 export const TextBelowImage: Story = {
   args: pack({
-    headline: "The Sanity & Next.js Experts",
+    headline: "Welcome to Our Dynamic Workplace",
     highlightText: true,
-    text: "Experience the speed & scalability unlike anything seen before with our Sanity CMS powered websites, web apps & composable architecture.",
+    sub: "Where Creativity Meets Innovation",
+    text: "Experience the perfect blend of creativity, innovation, and productivity in our modern office environment.",
     textbox: false,
     overlay: true,
     textPosition: "below",
@@ -46,6 +47,7 @@ export const TextOnImageWithOverlay: Story = {
     headline: "Master Scalable Solutions",
     text: "Harness our expertise in crafting scalable and robust applications using cutting-edge technologies.",
     textbox: false,
+    colorNeutral: true,
     height: "fullImage",
     overlay: true,
     textPosition: "center",
