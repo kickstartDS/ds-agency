@@ -50,14 +50,14 @@ export const H4: Story = {
   }),
 };
 
-export const Subheadline: Story = {
+export const WithSubheadline: Story = {
   args: pack({
     text: "Design System Services",
     sub: "Crafting Consistency, Fostering Growth",
   }),
 };
 
-export const SubheadlineOrderSwapped: Story = {
+export const OrderSwapped: Story = {
   args: pack({
     text: "Design System Services",
     sub: "Crafting Consistency, Fostering Growth",
@@ -65,7 +65,7 @@ export const SubheadlineOrderSwapped: Story = {
   }),
 };
 
-export const HeadlineWithMarkdown: Story = {
+export const WithMarkdown: Story = {
   args: pack({
     text: "**Design System** Services",
     sub: "Crafting Consistency, Fostering Growth",

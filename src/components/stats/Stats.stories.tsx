@@ -18,17 +18,8 @@ const meta: Meta<typeof Stats> = {
 export default meta;
 type Story = StoryObj<typeof Stats>;
 
-export const NumbersWithLabel: Story = {};
-NumbersWithLabel.args = pack({
-  stats: [
-    { number: "1500", title: "Users" },
-    { number: "350", title: "Subscribers" },
-    { number: "125", title: "Components" },
-  ],
-});
-
-export const NumbersWithDescription: Story = {};
-NumbersWithDescription.args = pack({
+export const WithDescription: Story = {};
+WithDescription.args = pack({
   stats: [
     {
       number: "1500",
@@ -42,5 +33,14 @@ NumbersWithDescription.args = pack({
       description:
         "Stay ahead with our regular updates and newsletters. Our subscribers are always in the loop, receiving the latest news and features. Subscribe now and never miss an update from us.",
     },
+  ],
+});
+
+export const Simple: Story = {};
+Simple.args = pack({
+  stats: [
+    { number: "1500", title: "Users" },
+    { number: "350", title: "Subscribers" },
+    { number: "125", title: "Components" },
   ],
 });

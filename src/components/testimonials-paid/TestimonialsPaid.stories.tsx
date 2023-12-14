@@ -20,8 +20,8 @@ const meta: Meta<typeof TestimonialsPaid> = {
 export default meta;
 type Story = StoryObj<typeof TestimonialsPaid>;
 
-export const PortraitWithText: Story = {};
-PortraitWithText.args = pack({
+export const SliderLayout: Story = {};
+SliderLayout.args = pack({
   testimonials: [
     {
       quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
@@ -53,8 +53,8 @@ PortraitWithText.args = pack({
   ],
 });
 
-export const TestimonialWithRating: Story = {};
-TestimonialWithRating.args = pack({
+export const WithRating: Story = {};
+WithRating.args = pack({
   testimonials: [
     {
       quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
@@ -89,8 +89,8 @@ TestimonialWithRating.args = pack({
   ],
 });
 
-export const TestimonialsListLayout: Story = {};
-TestimonialsListLayout.args = pack({
+export const ListLayout: Story = {};
+ListLayout.args = pack({
   layout: "list",
   testimonials: [
     {

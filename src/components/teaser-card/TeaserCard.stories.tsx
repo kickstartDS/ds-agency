@@ -15,16 +15,16 @@ const meta: Meta<typeof TeaserCard> = {
 export default meta;
 type Story = StoryObj<typeof TeaserCard>;
 
-export const Card: Story = {};
-Card.args = pack({
+export const Simple: Story = {};
+Simple.args = pack({
   headline: "Design System Services",
   text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
   target: "#",
   image: "img/close-up-young-business-team-working.png",
 });
 
-export const CardWithLabel: Story = {};
-CardWithLabel.args = pack({
+export const WithLabel: Story = {};
+WithLabel.args = pack({
   headline: "Design System Services",
   text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
   target: "#",

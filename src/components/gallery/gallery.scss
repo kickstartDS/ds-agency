@@ -11,15 +11,37 @@
       gap: var(--ks-spacing-inline-m);
       grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     }
+
     &--large-tiles {
       display: grid;
       gap: var(--ks-spacing-inline-m);
-      grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
     }
   }
 
   &__image {
     flex: 1 1;
+
+    &--square {
+      img {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+      }
+    }
+
+    &--wide {
+      img {
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+      }
+    }
+
+    &--landscape {
+      img {
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+      }
+    }
   }
 }
 

@@ -324,6 +324,10 @@ export type Caption = string;
  */
 export type Layout = "stack" | "smallTiles" | "largeTiles";
 /**
+ * The aspect ratio of the gallery images
+ */
+export type AspectRatio = "unset" | "square" | "wide" | "landscape";
+/**
  * Display images in a lightbox gallery
  */
 export type Lightbox = boolean;
@@ -334,5 +338,6 @@ export type Lightbox = boolean;
 export interface GalleryProps {
   images: Images;
   layout?: Layout;
+  aspectRatio?: AspectRatio;
   lightbox?: Lightbox;
 }

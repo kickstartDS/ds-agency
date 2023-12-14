@@ -46,3 +46,11 @@ export const PresetSize: Story = {
     height: "300px",
   }),
 };
+
+export const CustomAspectRatio: Story = {
+  args: pack({
+    src: "img/close-up-young-business-team-working.png",
+    alt: "Agency",
+    aspecRatio: "square",
+  }),
+};

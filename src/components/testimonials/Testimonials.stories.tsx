@@ -20,8 +20,8 @@ const meta: Meta<typeof Testimonials> = {
 export default meta;
 type Story = StoryObj<typeof Testimonials>;
 
-export const QuoteAndImageOnly: Story = {};
-QuoteAndImageOnly.args = pack({
+export const Simple: Story = {};
+Simple.args = pack({
   testimonials: [
     {
       quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
@@ -35,8 +35,8 @@ QuoteAndImageOnly.args = pack({
   ],
 });
 
-export const QuoteWithSource: Story = {};
-QuoteWithSource.args = pack({
+export const WithSource: Story = {};
+WithSource.args = pack({
   testimonials: [
     {
       quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
@@ -50,8 +50,8 @@ QuoteWithSource.args = pack({
   ],
 });
 
-export const QuotesInAList: Story = {};
-QuotesInAList.args = pack({
+export const ListLayout: Story = {};
+ListLayout.args = pack({
   testimonials: [
     {
       quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,

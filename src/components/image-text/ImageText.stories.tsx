@@ -18,17 +18,6 @@ type Story = StoryObj<typeof ImageText>;
 
 export default meta;
 
-export const AboveLayout: Story = {
-  args: pack({
-    text: "We value efficiency without compromising quality. Our secret weapon? kickstartDS, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever.",
-    image: {
-      src: "img/close-up-young-business-team-working.png",
-      alt: "Agency",
-    },
-    layout: "above",
-  }),
-};
-
 export const BesideRightLayout: Story = {
   args: pack({
     text: "We value efficiency without compromising quality. Our secret weapon? kickstartDS, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever.",
@@ -37,5 +26,16 @@ export const BesideRightLayout: Story = {
       alt: "Agency",
     },
     layout: "beside-right",
+  }),
+};
+
+export const AboveLayout: Story = {
+  args: pack({
+    text: "We value efficiency without compromising quality. Our secret weapon? kickstartDS, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever.",
+    image: {
+      src: "img/close-up-young-business-team-working.png",
+      alt: "Agency",
+    },
+    layout: "above",
   }),
 };
