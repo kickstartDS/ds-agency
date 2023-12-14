@@ -1,11 +1,9 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { pack, unpack, getArgsShared } from "@kickstartds/core/lib/storybook";
+import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
 import { Slider } from "./SliderComponent";
-import merge from "deepmerge";
 import schema from "./slider.schema.dereffed.json";
 import { TeaserCard } from "../teaser-card/TeaserCardComponent";
-import TeaserCardStory, { Card } from "../teaser-card/TeaserCard.stories";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
@@ -45,7 +43,7 @@ const meta: Meta = {
         text="We believe in continuous improvement. We are always looking for ways to improve our services and deliver better results."
       />
       <TeaserCard
-        image="img/mosaic-3.png"
+        image="img/mosaic-1.png"
         headline="Strategic Approach"
         text="We take a strategic approach to solve complex problems. Our strategies are designed to deliver long-term success."
       />
