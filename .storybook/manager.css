@@ -33,3 +33,7 @@
 .sbdocs-paddingbottom .docs-story .innerZoomElementWrapper > div {
   border-bottom: 2rem solid var(--ks-background-color-default) !important;
 }
+
+.docblock-argstable-body tr > td {
+  color: var(--ks-text-color-interface);
+}

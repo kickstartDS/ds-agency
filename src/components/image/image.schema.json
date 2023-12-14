@@ -10,7 +10,7 @@
       "description": "Picture source",
       "type": "string",
       "format": "image",
-      "examples": ["https://picsum.photos/seed/kdspicture/300/300"]
+      "examples": ["img/close-up-young-business-team-working.png"]
     },
     "srcSet": {
       "title": "Picture sourceset",

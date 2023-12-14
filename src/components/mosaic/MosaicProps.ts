@@ -26,9 +26,13 @@ export type ModuleSubheadline = string;
  */
 export type ModuleText = string;
 /**
- * Image source for the tile
+ * Picture source
  */
-export type TileImage = string;
+export type Source = string;
+/**
+ * Alt text to display for picture
+ */
+export type AltText = string;
 /**
  * Toggle wether the Button is displayed or not
  */
@@ -61,7 +65,10 @@ export interface MosaicProps {
     headline?: Headline;
     sub?: ModuleSubheadline;
     text?: ModuleText;
-    image?: TileImage;
+    image?: {
+      src?: Source;
+      alt?: AltText;
+    };
     button?: {
       toggle?: ButtonToggle;
       label?: Label;
