@@ -1,3 +1,15 @@
+# v2.1.78 (Thu Dec 14 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(stories): make story rendering consistent ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.77 (Thu Dec 14 2023)
 
 #### ⚠️ Pushed to `main`
