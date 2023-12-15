@@ -4,7 +4,7 @@
   "title": "Seo",
   "description": "Abstracts SEO settings for a website into JSON schema",
   "type": "object",
-  "required": ["title", "description"],
+  "required": ["title"],
   "properties": {
     "title": {
       "type": "string",

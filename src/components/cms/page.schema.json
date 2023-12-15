@@ -4,7 +4,7 @@
   "title": "Page",
   "description": "Abstracts a page concept into JSON schema",
   "type": "object",
-  "required": ["id", "slug", "layout"],
+  "required": ["id", "slug", "layout", "seo"],
   "properties": {
     "id": {
       "type": "string",

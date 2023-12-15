@@ -13,7 +13,15 @@
       "$ref": "http://schema.mydesignsystem.com/footer.schema.json"
     },
     "seo": {
-      "$ref": "http://schema.mydesignsystem.com/cms/seo.schema.json"
+      "allOf": [
+        {
+          "type": "object",
+          "required": ["title", "description", "keywords", "image", "cardImage"]
+        },
+        {
+          "$ref": "http://schema.mydesignsystem.com/cms/seo.schema.json"
+        }
+      ]
     }
   }
 }

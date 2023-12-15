@@ -46,5 +46,5 @@ export interface PageProps {
   /**
    * Referenced component SeoProps
    */
-  seo?: SeoProps;
+  seo: SeoProps;
 }

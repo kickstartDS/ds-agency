@@ -31,7 +31,7 @@ export type CardPreviewImage = string;
  */
 export interface SeoProps {
   title: Title;
-  description: Description;
+  description?: Description;
   keywords?: Keywords;
   image?: PreviewImage;
   cardImage?: CardPreviewImage;
