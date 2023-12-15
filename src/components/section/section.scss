@@ -24,7 +24,7 @@
       }
 
       &::before {
-        transition: opacity var(--ks-transition-hover);
+        transition: opacity var(--ks-transition-fade);
         opacity: 0;
         top: 0;
         left: 0;
