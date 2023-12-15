@@ -4,35 +4,24 @@
   "title": "Page",
   "description": "Abstracts a page concept into JSON schema",
   "type": "object",
-  "required": ["id", "slug", "layout", "title"],
+  "required": ["id", "slug", "layout"],
   "properties": {
+    "id": {
+      "type": "string",
+      "title": "ID",
+      "description": "Identifying id for the page"
+    },
+    "slug": {
+      "type": "string",
+      "title": "Slug",
+      "description": "URL slug for the page"
+    },
     "layout": {
       "type": "string",
       "title": "Layout",
       "description": "Choose a layout for the page",
       "enum": ["default", "content", "blog-list", "blog-detail", "glossary"],
       "default": "default"
-    },
-    "description": {
-      "type": "string",
-      "title": "Description",
-      "description": "Description used for the page"
-    },
-    "keywords": {
-      "type": "string",
-      "title": "Keywords",
-      "description": "Keywords used for the page"
-    },
-    "image": {
-      "type": "string",
-      "title": "Preview Image",
-      "description": "Preview image used for the page",
-      "format": "image"
-    },
-    "cardImage": {
-      "type": "string",
-      "title": "Card Preview Image",
-      "description": "Card preview image (larger, e.g. Twitter) used for the page"
     },
     "sections": {
       "type": "array",
@@ -53,6 +42,9 @@
       "title": "Created",
       "description": "Creation date for the page",
       "format": "date-time"
+    },
+    "seo": {
+      "$ref": "http://schema.mydesignsystem.com/cms/seo.schema.json"
     }
   }
 }

@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/cms/settings.schema.json",
+  "title": "Settings",
+  "description": "Abstracts global settings made for a website into JSON Schema",
+  "type": "object",
+  "required": ["header", "footer", "seo"],
+  "properties": {
+    "header": {
+      "$ref": "http://schema.mydesignsystem.com/header.schema.json"
+    },
+    "footer": {
+      "$ref": "http://schema.mydesignsystem.com/footer.schema.json"
+    },
+    "seo": {
+      "$ref": "http://schema.mydesignsystem.com/cms/seo.schema.json"
+    }
+  }
+}

@@ -6,27 +6,20 @@
  */
 
 import type {SectionProps} from "../section/SectionProps";
+import type {SeoProps} from "../seo/SeoProps";
 
+/**
+ * Identifying id for the page
+ */
+export type ID = string;
+/**
+ * URL slug for the page
+ */
+export type Slug = string;
 /**
  * Choose a layout for the page
  */
 export type Layout = "default" | "content" | "blog-list" | "blog-detail" | "glossary";
-/**
- * Description used for the page
- */
-export type Description = string;
-/**
- * Keywords used for the page
- */
-export type Keywords = string;
-/**
- * Preview image used for the page
- */
-export type PreviewImage = string;
-/**
- * Card preview image (larger, e.g. Twitter) used for the page
- */
-export type CardPreviewImage = string;
 /**
  * Collection of sections (with their contents) to render on the page
  */
@@ -44,12 +37,14 @@ export type Created = string;
  * Abstracts a page concept into JSON schema
  */
 export interface PageProps {
+  id: ID;
+  slug: Slug;
   layout: Layout;
-  description?: Description;
-  keywords?: Keywords;
-  image?: PreviewImage;
-  cardImage?: CardPreviewImage;
   sections?: Sections;
   updated?: Updated;
   created?: Created;
+  /**
+   * Referenced component SeoProps
+   */
+  seo?: SeoProps;
 }
