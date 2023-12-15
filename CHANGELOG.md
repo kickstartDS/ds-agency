@@ -1,3 +1,15 @@
+# v2.1.80 (Fri Dec 15 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(section): add transition to spotlight hover ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.79 (Fri Dec 15 2023)
 
 #### ⚠️ Pushed to `main`
