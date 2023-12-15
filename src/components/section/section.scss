@@ -17,7 +17,15 @@
     &--spotlight {
       position: relative;
 
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
+
       &::before {
+        transition: opacity var(--ks-transition-hover);
+        opacity: 0;
         top: 0;
         left: 0;
         content: "";
