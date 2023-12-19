@@ -66,6 +66,10 @@
       "description": "Reserve additional spacing for a floating header",
       "default": false
     },
+    "invertToggle": {
+      "type": "boolean",
+      "default": false
+    },
     "headline": {
       "type": "object",
       "properties": {

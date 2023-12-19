@@ -1,0 +1,106 @@
+.invert-toggle {
+  &--container {
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    overflow: hidden;
+    transform: translateY(50%);
+    padding: 3px;
+    padding-right: 0px;
+  }
+
+  --switch-size: 20px;
+
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  transform: translateX(calc(calc(var(--switch-size) * 2) + 8px));
+  transition: var(--ks-transition-hover);
+  overflow: hidden;
+
+  box-shadow:
+    0 0 0 2px var(--ks-color-fg-alpha-7),
+    0 0px 2.75px var(--ks-color-fg-alpha-7);
+
+  background-color: var(--ks-background-color-default);
+  border-radius: var(--ks-border-radius-pill) 0 0 var(--ks-border-radius-pill);
+  padding: 0.5em;
+  gap: var(--ks-spacing-xxs);
+
+  &:hover {
+    transform: translateX(0);
+  }
+
+  &__switch {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    aspect-ratio: 1;
+    height: var(--switch-size);
+    width: calc(var(--switch-size) * 2);
+  }
+
+  &__checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    transition: all 300ms;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--ks-color-fg-alpha-8);
+    border-radius: var(--ks-border-radius-pill);
+    padding: 2px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: var(--ks-transition-fade);
+    -webkit-transition: var(--ks-transition-fade);
+  }
+
+  &__label {
+    color: var(--ks-text-color-interface);
+    font: var(--ks-font-interface-s);
+    font-weight: var(--ks-font-weight-bold);
+    transition: var(--ks-transition-hover);
+    transition-property: transform, left;
+    white-space: nowrap;
+    padding-left: var(--ks-spacing-xxs);
+    left: 100%;
+  }
+
+  &__slider:before {
+    position: relative;
+    top: 0;
+    display: block;
+    content: "";
+    height: 100%;
+    aspect-ratio: 1;
+    width: auto;
+    left: 0%;
+    background-color: var(--ks-color-primary);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+
+  &__checkbox:checked + &__slider:before {
+    left: 100%;
+    transform: translate(-100%);
+  }
+
+  &__checkbox:checked + &__slider {
+    .invert-toggle__label {
+      left: 0%;
+      transform: translate(0%);
+    }
+  }
+}
