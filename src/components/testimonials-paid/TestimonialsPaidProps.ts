@@ -8,7 +8,7 @@
 /**
  * The testimonial quote
  */
-export type Quote = "slider" | "list";
+export type Quote = "slider" | "list" | "alternating";
 /**
  * The testimonial quote
  */

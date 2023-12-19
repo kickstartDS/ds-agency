@@ -9,7 +9,7 @@
       "title": "Quote",
       "description": "The testimonial quote",
       "type": "string",
-      "enum": ["slider", "list"],
+      "enum": ["slider", "list", "alternating"],
       "default": "slider"
     },
     "testimonials": {

@@ -6,7 +6,7 @@ import { Slider } from "../slider/SliderComponent";
 import { SliderProps } from "../slider/SliderProps";
 
 interface ConditionalSliderProps extends SliderProps {
-  layout: "slider" | "list";
+  layout: "slider" | "list" | "alternating";
 }
 
 export const ConditionalSlider: FC<
@@ -33,30 +33,33 @@ export const TestimonialsPaid: FC<
   return (
     <ConditionalSlider layout={layout} arrows nav {...props}>
       {testimonials.map((testimonial, index) => (
-        <div className="c-gallery__image" key={index}>
-          <Quote
-            key={index}
-            text={testimonial.quote}
-            source={testimonial.name}
-            byline={testimonial.title}
-            image={testimonial.image.src}
-            renderSource={() => (
-              <>
-                {testimonial?.rating &&
-                  (testimonial?.rating ? (
-                    <div>
-                      {[...Array(testimonial?.rating)].map((_, index) => (
-                        <span key={index}>★</span>
-                      ))}
-                    </div>
-                  ) : (
-                    ""
-                  ))}
-                <div className="c-quote__source">{testimonial.name}</div>
-              </>
-            )}
-          />
-        </div>
+        <Quote
+          className={
+            layout === "alternating" && index % 2 === 1
+              ? "c-quote--reverse"
+              : ""
+          }
+          key={index}
+          text={testimonial.quote}
+          source={testimonial.name}
+          byline={testimonial.title}
+          image={testimonial.image.src}
+          renderSource={() => (
+            <>
+              {testimonial?.rating &&
+                (testimonial?.rating ? (
+                  <div>
+                    {[...Array(testimonial?.rating)].map((_, index) => (
+                      <span key={index}>★</span>
+                    ))}
+                  </div>
+                ) : (
+                  ""
+                ))}
+              <div className="c-quote__source">{testimonial.name}</div>
+            </>
+          )}
+        />
       ))}
     </ConditionalSlider>
   );
