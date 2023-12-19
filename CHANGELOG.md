@@ -1,3 +1,16 @@
+# v2.1.82 (Tue Dec 19 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(invertToggle): add invertToggle ([@fleven-kds](https://github.com/fleven-kds))
+- feat(testimonials): add alternating layout option ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.81 (Fri Dec 15 2023)
 
 #### ⚠️ Pushed to `main`
