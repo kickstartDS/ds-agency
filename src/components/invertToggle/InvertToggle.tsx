@@ -1,3 +1,4 @@
+import { Icon } from "@kickstartds/base/lib/icon";
 import "./invert-toggle.scss";
 
 export const InvertToggle = ({ setParentRef }) => {
@@ -15,7 +16,9 @@ export const InvertToggle = ({ setParentRef }) => {
     <div className="invert-toggle">
       <div className="invert-toggle__container">
         <label className="invert-toggle__button">
-          <span className="invert-toggle__label">Invert Section</span>
+          <span className="invert-toggle__label">
+            <Icon className="invert-toggle__icon" icon="invert" /> Invert
+          </span>
           <label className="invert-toggle__switch">
             <input
               className="invert-toggle__checkbox"
