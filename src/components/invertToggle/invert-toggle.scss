@@ -1,35 +1,46 @@
 .invert-toggle {
-  &--container {
-    position: absolute;
-    bottom: 50%;
-    right: 0;
+  --switch-size: 1.25em;
+
+  pointer-events: none;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: var(--ks-spacing-xl);
+
+  &__container {
     overflow: hidden;
-    transform: translateY(50%);
-    padding: 3px;
-    padding-right: 0px;
+    position: sticky;
+    top: 90%;
+    cursor: pointer;
+    transition: var(--ks-transition-hover);
+    padding: 12px;
+    padding-right: 0;
+    margin-bottom: var(--ks-spacing-xxl);
   }
 
-  --switch-size: 20px;
+  &__button {
+    display: flex;
+    align-items: center;
+    transition: var(--ks-transition-collapse);
+    pointer-events: all;
+    cursor: pointer;
+    box-shadow:
+      0 0 0 2px var(--ks-color-fg-alpha-8),
+      0 0px 6px var(--ks-color-fg-alpha-5);
 
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+    background-color: var(--ks-background-color-default);
+    border-radius: var(--ks-border-radius-pill) 0 0 var(--ks-border-radius-pill);
+    padding: 0.5em;
+    gap: var(--ks-spacing-xxs);
 
-  transform: translateX(calc(calc(var(--switch-size) * 2) + 8px));
-  transition: var(--ks-transition-hover);
-  overflow: hidden;
+    &:hover {
+      transform: translateX(0);
+    }
 
-  box-shadow:
-    0 0 0 2px var(--ks-color-fg-alpha-7),
-    0 0px 2.75px var(--ks-color-fg-alpha-7);
-
-  background-color: var(--ks-background-color-default);
-  border-radius: var(--ks-border-radius-pill) 0 0 var(--ks-border-radius-pill);
-  padding: 0.5em;
-  gap: var(--ks-spacing-xxs);
-
-  &:hover {
-    transform: translateX(0);
+    @media (min-width: 62rem) {
+      transform: translateX(calc(calc(var(--switch-size) * 2) + 8px));
+    }
   }
 
   &__switch {

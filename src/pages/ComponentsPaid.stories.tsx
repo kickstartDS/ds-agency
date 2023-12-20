@@ -87,6 +87,76 @@ const Page = () => {
           textAlign="left"
         />
       </Section>
+      <Section
+        width="full"
+        content={{
+          mode: "list",
+        }}
+      >
+        <CtaPaid
+          buttons={[
+            {
+              icon: "person",
+              label: "Contact us",
+              target: "#",
+            },
+            {
+              icon: "date",
+              label: "Book a meeting",
+              target: "#",
+            },
+          ]}
+          contentAlign="center"
+          fullWidth
+          headline="Get in touch"
+          image={{
+            padding: false,
+            src: "img/contact-person.png",
+          }}
+          order={{
+            desktopImageLast: false,
+            mobileImageLast: false,
+          }}
+          sub="Chat with us about getting your product or platform to market faster"
+          text="Our modular design approach allows for flexibility and scalability in your application's architecture."
+          textAlign="left"
+        />
+      </Section>
+      <Section
+        width="full"
+        content={{
+          mode: "list",
+        }}
+      >
+        <CtaPaid
+          buttons={[
+            {
+              icon: "person",
+              label: "Contact us",
+              target: "#",
+            },
+            {
+              icon: "date",
+              label: "Book a meeting",
+              target: "#",
+            },
+          ]}
+          contentAlign="center"
+          fullWidth
+          headline="Get in touch"
+          image={{
+            padding: false,
+            src: "img/contact-person.png",
+          }}
+          order={{
+            desktopImageLast: false,
+            mobileImageLast: false,
+          }}
+          sub="Chat with us about getting your product or platform to market faster"
+          text="Our modular design approach allows for flexibility and scalability in your application's architecture."
+          textAlign="left"
+        />
+      </Section>
 
       <Footer {...footerProps} />
     </>

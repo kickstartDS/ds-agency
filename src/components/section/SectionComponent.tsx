@@ -88,7 +88,7 @@ export const Section = forwardRef<
         ref={parentRef}
       >
         {props.children}
-        <InvertToggle setParentRef={parentRef} />
+        {InvertToggle ? <InvertToggle setParentRef={parentRef} /> : ""}
       </SectionContextDefault>
     );
   }
