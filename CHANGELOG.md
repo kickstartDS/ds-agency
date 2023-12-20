@@ -1,3 +1,15 @@
+# v2.1.86 (Wed Dec 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(sectionHeader): add component ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.85 (Wed Dec 20 2023)
 
 #### ⚠️ Pushed to `main`
