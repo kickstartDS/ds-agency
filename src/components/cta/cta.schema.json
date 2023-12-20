@@ -5,20 +5,20 @@
   "type": "object",
   "properties": {
     "headline": {
-      "title": "Module Headline",
-      "description": "Headline for the module element",
+      "title": "Component Headline",
+      "description": "Headline for the Component element",
       "type": "string",
       "examples": ["Headline"]
     },
     "sub": {
-      "title": "Module Subheadline",
-      "description": "Subheadline below the module headline",
+      "title": "Component Subheadline",
+      "description": "Subheadline below the component headline",
       "type": "string",
       "examples": ["Subheadline"]
     },
     "text": {
-      "title": "Module Text",
-      "description": "Info text for the module element",
+      "title": "Component Text",
+      "description": "Info text for the component element",
       "type": "string"
     },
     "highlightText": {

@@ -18,10 +18,6 @@ export type ComponentSubheadline = string;
  */
 export type ComponentText = string;
 /**
- * Visually highlight the text
- */
-export type HighlightText = boolean;
-/**
  * Text content to display inside the button
  */
 export type Label = string;
@@ -33,21 +29,15 @@ export type Icon = string;
  * Target that should be linked, makes the button behave like a link semantically
  */
 export type Target = string;
-/**
- * Choose the alginment of the text
- */
-export type TextAlignment = "left" | "center";
 
-export interface CtaProps {
+export interface SectionHeaderProps {
   headline?: ComponentHeadline;
   sub?: ComponentSubheadline;
   text?: ComponentText;
-  highlightText?: HighlightText;
-  buttons?: Button[];
-  textAlign?: TextAlignment;
-}
-export interface Button {
-  label?: Label;
-  icon?: Icon;
-  target?: Target;
+  component?: string;
+  storybookLink?: {
+    label?: Label;
+    icon?: Icon;
+    target?: Target;
+  };
 }

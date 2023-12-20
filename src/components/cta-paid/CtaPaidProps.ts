@@ -6,17 +6,17 @@
  */
 
 /**
- * Headline for the module element
+ * Headline for the Component element
  */
-export type ModuleHeadline = string;
+export type ComponentHeadline = string;
 /**
- * Subheadline below the module headline
+ * Subheadline below the component headline
  */
-export type ModuleSubheadline = string;
+export type ComponentSubheadline = string;
 /**
- * Info text for the module element
+ * Info text for the component element
  */
-export type ModuleText = string;
+export type ComponentText = string;
 /**
  * Visually highlight the text
  */
@@ -79,9 +79,9 @@ export type TextAlignment = "left" | "center";
 export type VerticalAlignmentOfTheContent = "center" | "top" | "bottom";
 
 export interface CtaPaidProps {
-  headline?: ModuleHeadline;
-  sub?: ModuleSubheadline;
-  text?: ModuleText;
+  headline?: ComponentHeadline;
+  sub?: ComponentSubheadline;
+  text?: ComponentText;
   highlightText?: HighlightText;
   colorNeutral?: ColorNeutral;
   fullWidth?: Width;

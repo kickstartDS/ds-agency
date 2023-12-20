@@ -1,0 +1,20 @@
+.c-section-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ks-spacing-stack-xs);
+
+  a.c-section-header__link {
+    font: var(--ks-font-interface-m);
+    font-weight: var(--ks-font-weight-semi-bold);
+
+    display: flex;
+    align-items: center;
+
+    gap: 0.25em;
+
+    .icon {
+      width: 1.25em;
+      height: 1.25em;
+    }
+  }
+}
