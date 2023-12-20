@@ -33,6 +33,7 @@ export const Section = forwardRef<
     spaceAfter = "default",
     className,
     inverted,
+    invertToggle = false,
     buttons = [],
     ...props
   }) => {
@@ -88,7 +89,7 @@ export const Section = forwardRef<
         ref={parentRef}
       >
         {props.children}
-        {InvertToggle ? <InvertToggle setParentRef={parentRef} /> : ""}
+        {invertToggle ? <InvertToggle setParentRef={parentRef} /> : ""}
       </SectionContextDefault>
     );
   }
