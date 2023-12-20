@@ -1,3 +1,16 @@
+# v2.1.85 (Wed Dec 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(section): make invertToggle conditional to property ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.84 (Wed Dec 20 2023)
 
 #### ⚠️ Pushed to `main`
