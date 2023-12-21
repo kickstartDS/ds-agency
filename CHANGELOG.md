@@ -1,3 +1,17 @@
+# v2.1.87 (Thu Dec 21 2023)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(sectionHeader): remove unused import ([@fleven-kds](https://github.com/fleven-kds))
+- feat(Preview Section + SectionHeader): add new components ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.86 (Wed Dec 20 2023)
 
 #### ⚠️ Pushed to `main`
