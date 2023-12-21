@@ -1,5 +1,5 @@
 import classnames from "classnames";
-import { FC, PropsWithChildren, useRef } from "react";
+import { FC, PropsWithChildren } from "react";
 import { SectionHeaderProps } from "./SectionHeaderProps";
 import { Headline } from "@kickstartds/base/lib/headline";
 import "./section-header.scss";
