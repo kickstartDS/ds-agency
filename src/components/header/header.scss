@@ -19,6 +19,7 @@
   &--floating {
     background: linear-gradient(var(--ks-color-bg-alpha-5), transparent);
     position: absolute;
+    z-index: 999;
 
     .c-nav-main__link {
       text-shadow: 0 0 10px var(--ks-color-bg-alpha-5);

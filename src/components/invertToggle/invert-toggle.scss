@@ -1,27 +1,44 @@
 .invert-toggle {
+  --container-padding: 1.5em;
+  --container-gap: 1em;
+
+  --arrow-size: 1.75em;
+  --icon-size: 2em;
+
   --switch-size: 1.35em;
+  --button-gap: 1em;
+  --button-padding: 0.5em;
+  --button-height: calc(var(--icon-size) + calc(var(--button-padding) * 2));
+
+  --container-height: calc(var(--button-height) + var(--container-gap) + calc(var(--container-padding) * 2));
 
   pointer-events: none;
   position: absolute;
+  z-index: 999;
   height: 100%;
   top: 0;
   right: 0;
   bottom: var(--ks-spacing-xl);
+  font: var(--ks-font-interface-s);
 
   &__container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--container-gap);
     overflow: hidden;
     position: sticky;
-    top: 90%;
+    top: calc(100% - var(--container-height));
+
     cursor: pointer;
     transition: var(--ks-transition-hover);
-    padding: 12px;
+    padding: var(--container-padding);
     padding-right: 0;
-    margin-bottom: var(--ks-spacing-xxl);
   }
 
-  &__button {
+  .invert-toggle__button {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     transition: var(--ks-transition-collapse);
     pointer-events: all;
     cursor: pointer;
@@ -29,11 +46,12 @@
       0 0 0 2px var(--ks-color-fg-alpha-8),
       0 0px 6px var(--ks-color-fg-alpha-5);
 
-    background-color: var(--ks-background-color-default);
+    background-color: var(--ks-color-bg-alpha-3);
+
+    backdrop-filter: blur(20px);
     border-radius: var(--ks-border-radius-pill) 0 0 var(--ks-border-radius-pill);
-    font: var(--ks-font-interface-s);
-    padding: 0.5em;
-    gap: 1em;
+    padding: var(--button-padding);
+    gap: var(--button-gap);
 
     @media (min-width: 62rem) {
       transform: translateX(calc(calc(var(--switch-size) * 2) + 8px));
@@ -46,6 +64,14 @@
 
   &__icon {
     color: var(--ks-color-secondary);
+    width: var(--icon-size);
+    height: var(--icon-size);
+  }
+
+  &__arrow {
+    color: var(--ks-color-secondary);
+    width: var(--arrow-size);
+    height: var(--arrow-size);
   }
 
   &__switch {

@@ -4,39 +4,14 @@
   "title": "Section Header",
   "type": "object",
   "properties": {
-    "headline": {
-      "title": "Component Headline",
-      "description": "Headline for the Component element",
-      "type": "string",
-      "examples": ["Headline"]
-    },
-    "sub": {
-      "title": "Component Subheadline",
-      "description": "Subheadline below the component headline",
-      "type": "string",
-      "examples": ["Subheadline"]
-    },
-    "text": {
-      "title": "Component Text",
-      "description": "Info text for the component element",
+    "componentName": {
       "type": "string"
     },
-    "component": {
+    "href": {
       "type": "string"
     },
-    "storybookLink": {
-      "type": "object",
-      "properties": {
-        "label": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
-        },
-        "icon": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
-        },
-        "target": {
-          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
-        }
-      }
+    "linkLabel": {
+      "type": "string"
     }
   },
   "additionalProperties": false

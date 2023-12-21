@@ -5,39 +5,8 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-/**
- * Headline for the Component element
- */
-export type ComponentHeadline = string;
-/**
- * Subheadline below the component headline
- */
-export type ComponentSubheadline = string;
-/**
- * Info text for the component element
- */
-export type ComponentText = string;
-/**
- * Text content to display inside the button
- */
-export type Label = string;
-/**
- * Choose an icon
- */
-export type Icon = string;
-/**
- * Target that should be linked, makes the button behave like a link semantically
- */
-export type Target = string;
-
 export interface SectionHeaderProps {
-  headline?: ComponentHeadline;
-  sub?: ComponentSubheadline;
-  text?: ComponentText;
-  component?: string;
-  storybookLink?: {
-    label?: Label;
-    icon?: Icon;
-    target?: Target;
-  };
+  componentName?: string;
+  href?: string;
+  linkLabel?: string;
 }

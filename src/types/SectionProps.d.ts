@@ -153,7 +153,6 @@ export interface SectionProps {
   spaceAfter?: SpaceAfter;
   inverted?: Inverted;
   headerSpacing?: HeaderSpacing;
-  invertToggle?: boolean;
   headline?: {
     text?: Headline;
     large?: LargeHeadline;

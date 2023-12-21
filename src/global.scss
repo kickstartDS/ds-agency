@@ -38,4 +38,19 @@
   .c-post-head {
     --c-post-head_date--font-weight: var(--ks-font-weight-semi-bold);
   }
+
+  .g-link {
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+    width: fit-content;
+    font-family: var(--ks-font-family-copy);
+    font-size: 1em;
+    font-weight: var(--ks-font-weight-semi-bold);
+
+    .icon {
+      width: 1.5em;
+      height: 1.5em;
+    }
+  }
 }

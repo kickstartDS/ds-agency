@@ -15,7 +15,6 @@ import {
 import { SectionProps } from "./SectionProps";
 import "./section.scss";
 import { identifier as spotlightIdentifier } from "./js/spotlight.client";
-import { InvertToggle } from "../invertToggle/InvertToggle";
 
 export const Section = forwardRef<
   HTMLDivElement,
@@ -33,7 +32,6 @@ export const Section = forwardRef<
     spaceAfter = "default",
     className,
     inverted,
-    invertToggle = false,
     buttons = [],
     ...props
   }) => {
@@ -65,7 +63,8 @@ export const Section = forwardRef<
                 : style
             }`,
           headerSpacing && "l-section--header-spacing",
-          spotlight && "l-section--spotlight"
+          spotlight && "l-section--spotlight",
+          className
         )}
         background={backgroundColor}
         content={content}
@@ -89,7 +88,6 @@ export const Section = forwardRef<
         ref={parentRef}
       >
         {props.children}
-        {invertToggle ? <InvertToggle setParentRef={parentRef} /> : ""}
       </SectionContextDefault>
     );
   }

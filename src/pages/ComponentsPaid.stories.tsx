@@ -4,35 +4,41 @@ import { Footer } from "../components/footer/FooterComponent";
 import { footerProps } from "../components/footer/Footer.stories";
 import { Section } from "../components/section/SectionComponent";
 import { CtaPaid } from "../components/cta-paid/CtaPaidComponent";
-import { Divider } from "@kickstartds/base/lib/divider";
-import { SectionHeader } from "../components/section-header/SectionHeader";
+import { PreviewSection } from "../components/preview-section/PreviewSectionComponent";
+import { Headline } from "../components/headline/HeadlineComponent";
+import { Link } from "@kickstartds/base/lib/link";
+import { Icon } from "@kickstartds/base/lib/icon";
 
 const Page = () => {
   return (
     <>
       <Header {...headerProps} />
       <Section
-        spaceAfter="none"
-        width="max"
         content={{
-          width: "narrow",
-          align: "left",
+          mode: "list",
+          gutter: "none",
         }}
       >
-        <SectionHeader
-          headline="Cta Component"
-          sub="7 Examples"
-          text="The CtaPaidComponent is a React component that is used to create a Call to Action (CTA) section on a webpage. It is designed to be highly customizable and flexible, allowing for a variety of configurations to suit different use cases."
+        <Link href="#" className="g-link">
+          <Icon icon="arrow-left" />
+          All Components
+        </Link>
+
+        <Headline
+          text="Discover the Cta Component"
+          sub="7 examples"
+          level="h1"
+          style="h1"
         />
       </Section>
 
-      <Section width="full">
-        <Divider />
-      </Section>
-
-      <Section
-        spaceBefore="none"
-        spaceAfter="none"
+      <PreviewSection
+        preview={{
+          componentName: "Product Advertisement",
+          linkLabel: "View in Storybook",
+          href: "Product Advertisement",
+        }}
+        spaceBefore="small"
         width="full"
         invertToggle
         content={{
@@ -68,13 +74,14 @@ const Page = () => {
           text="Our over-ear headphones provide an immersive audio experience. With noise-cancellation technology and high-quality sound."
           textAlign="left"
         />
-      </Section>
+      </PreviewSection>
 
-      <Section width="full">
-        <Divider />
-      </Section>
-
-      <Section
+      <PreviewSection
+        preview={{
+          componentName: "Product Advertisement",
+          linkLabel: "View in Storybook",
+          href: "Product Advertisement",
+        }}
         width="full"
         invertToggle
         content={{
@@ -109,13 +116,14 @@ const Page = () => {
           text="Our modular design approach allows for flexibility and scalability in your application's architecture."
           textAlign="left"
         />
-      </Section>
+      </PreviewSection>
 
-      <Section width="full">
-        <Divider />
-      </Section>
-
-      <Section
+      <PreviewSection
+        preview={{
+          componentName: "Product Advertisement",
+          linkLabel: "View in Storybook",
+          href: "Product Advertisement",
+        }}
         width="wide"
         invertToggle
         content={{
@@ -146,13 +154,14 @@ const Page = () => {
           text="Here at Systemics, we bring a range of design system services that can make a difference."
           textAlign="left"
         />
-      </Section>
+      </PreviewSection>
 
-      <Section width="full">
-        <Divider />
-      </Section>
-
-      <Section
+      <PreviewSection
+        preview={{
+          componentName: "Product Advertisement",
+          linkLabel: "View in Storybook",
+          href: "Product Advertisement",
+        }}
         width="full"
         backgroundColor="accent"
         spaceAfter="none"
@@ -191,16 +200,15 @@ const Page = () => {
 This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster."
           textAlign="left"
         />
-      </Section>
+      </PreviewSection>
 
-      <Section width="full">
-        <Divider />
-      </Section>
-
-      <Section
+      <PreviewSection
+        preview={{
+          componentName: "Product Advertisement",
+          linkLabel: "View in Storybook",
+          href: "Product Advertisement",
+        }}
         width="full"
-        spaceAfter="none"
-        spaceBefore="none"
         invertToggle
         content={{
           mode: "list",
@@ -232,16 +240,15 @@ This tool accelerates our development, saving you valuable time and helping us d
           text="Leverage our expertise in creating scalable and robust applications using modern technologies."
           textAlign="left"
         />
-      </Section>
+      </PreviewSection>
 
-      <Section width="full">
-        <Divider />
-      </Section>
-
-      <Section
+      <PreviewSection
+        preview={{
+          componentName: "Product Advertisement",
+          linkLabel: "View in Storybook",
+          href: "Product Advertisement",
+        }}
         width="full"
-        spaceAfter="none"
-        spaceBefore="none"
         invertToggle
         content={{
           mode: "list",
@@ -277,7 +284,7 @@ This tool accelerates our development, saving you valuable time and helping us d
 We understand that every business is different, and that's why we offer custom solutions tailored to your specific business needs and requirements."
           textAlign="left"
         />
-      </Section>
+      </PreviewSection>
 
       <Footer {...footerProps} />
     </>

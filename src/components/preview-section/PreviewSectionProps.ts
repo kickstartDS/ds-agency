@@ -63,10 +63,6 @@ export type SpaceAfter = "default" | "small" | "none";
  */
 export type Inverted = boolean;
 /**
- * Reserve additional spacing for a floating header
- */
-export type HeaderSpacing = boolean;
-/**
  * Headline Text for the section
  */
 export type Headline = string;
@@ -141,9 +137,14 @@ export type Content = (
 export type Buttons = ButtonProps[];
 
 /**
- * Component used to layout components into pages
+ * Custom component based on Section with additional properties
  */
-export interface SectionProps {
+export interface PreviewSectionProps {
+  preview?: {
+    componentName?: string;
+    linkLabel?: string;
+    href?: string;
+  };
   width?: Width;
   style?: Style;
   backgroundColor?: Style1;
@@ -151,7 +152,6 @@ export interface SectionProps {
   spaceBefore?: SpaceBefore;
   spaceAfter?: SpaceAfter;
   inverted?: Inverted;
-  headerSpacing?: HeaderSpacing;
   headline?: {
     text?: Headline;
     large?: LargeHeadline;
