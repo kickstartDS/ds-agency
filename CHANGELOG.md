@@ -1,3 +1,15 @@
+# v2.1.88 (Fri Dec 22 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat(sectionHeader): responsiveness optimisation ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.87 (Thu Dec 21 2023)
 
 #### ⚠️ Pushed to `main`
