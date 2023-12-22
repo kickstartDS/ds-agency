@@ -5,9 +5,8 @@ import { footerProps } from "../components/footer/Footer.stories";
 import { Section } from "../components/section/SectionComponent";
 import { CtaPaid } from "../components/cta-paid/CtaPaidComponent";
 import { PreviewSection } from "../components/preview-section/PreviewSectionComponent";
-import { Headline } from "../components/headline/HeadlineComponent";
-import { Link } from "@kickstartds/base/lib/link";
-import { Icon } from "@kickstartds/base/lib/icon";
+import { Cta } from "../components/cta/CtaComponent";
+import { PageIntro } from "../components/page-intro/PageIntroComponent";
 
 const Page = () => {
   return (
@@ -19,18 +18,102 @@ const Page = () => {
           gutter: "none",
         }}
       >
-        <Link href="#" className="g-link">
-          <Icon icon="arrow-left" />
-          All Components
-        </Link>
-
-        <Headline
-          text="Discover the Cta Component"
+        <PageIntro
+          link={{
+            href: "#",
+            label: "All Components",
+          }}
+          headline="Discover the Cta Component"
           sub="7 examples"
-          level="h1"
-          style="h1"
         />
       </Section>
+
+      <PreviewSection
+        preview={{
+          title: "Banner",
+          label: "Free",
+          link: {
+            label: "View in Storybook",
+            href: "#",
+          },
+        }}
+        width="default"
+        content={{
+          mode: "list",
+        }}
+      >
+        <Cta
+          buttons={[
+            {
+              icon: "person",
+              label: "Get Started",
+              target: "#",
+            },
+          ]}
+          headline="Why Choose Our Design System?"
+          sub="Built for consistency and speed."
+          text="Our design system is built with scalability and efficiency in mind. It allows for consistent UI across different platforms, making your development process smoother and faster."
+          textAlign="center"
+        />
+      </PreviewSection>
+
+      <PreviewSection
+        preview={{
+          title: "Highlighed",
+          label: "Free",
+          link: {
+            label: "View in Storybook",
+            href: "#",
+          },
+        }}
+        width="wide"
+        content={{
+          mode: "list",
+        }}
+      >
+        <Cta
+          buttons={[
+            {
+              icon: "person",
+              label: "Get Started",
+              target: "#",
+            },
+          ]}
+          headline="Why Choose Our Design System?"
+          highlightText
+          sub="Built for consistency and speed."
+          text="Our design system is built with scalability and efficiency in mind. It allows for consistent UI across different platforms, making your development process smoother and faster."
+          textAlign="center"
+        />
+      </PreviewSection>
+      <PreviewSection
+        preview={{
+          title: "Left Aligned",
+          label: "Free",
+          link: {
+            label: "View in Storybook",
+            href: "#",
+          },
+        }}
+        width="default"
+        content={{
+          mode: "list",
+        }}
+      >
+        <Cta
+          buttons={[
+            {
+              icon: "person",
+              label: "Learn More",
+              target: "#",
+            },
+          ]}
+          headline="Experience Our Design System"
+          sub="Efficient, scalable, seamless."
+          text="Our design system offers a seamless and efficient way to build scalable applications. Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture."
+          textAlign="left"
+        />
+      </PreviewSection>
 
       <PreviewSection
         preview={{

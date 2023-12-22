@@ -23,6 +23,7 @@ export const SectionHeader: FC<PropsWithChildren<SectionHeaderProps>> = ({
           </div>
           <div className="c-section-header__side">
             <Link href={link.href} className="c-section-header__link">
+              <Icon icon="storybook" />
               {link.label}
               <Icon icon="arrow-right" />
             </Link>
