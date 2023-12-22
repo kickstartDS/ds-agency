@@ -53,4 +53,12 @@
       height: 1.5em;
     }
   }
+
+  .c-tag-label--m {
+    --c-tag-label--vertical-padding: 0.4em;
+    --c-tag-label--horizontal-padding: 1em;
+    --c-tag-label_icon--size: 1.25em;
+    --c-tag-label_icon--margin-left: -0.6em;
+    --c-tag-label_icon--horizontal-padding: 0.5em;
+  }
 }

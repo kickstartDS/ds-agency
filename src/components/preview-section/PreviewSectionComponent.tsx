@@ -24,9 +24,9 @@ export const PreviewSection: FC<PropsWithChildren<PreviewSectionProps>> = ({
   return (
     <div ref={outerDivRef} className="l-preview-section--wrapper">
       <SectionHeader
-        componentName={preview.componentName}
-        href={preview.href}
-        linkLabel={preview.linkLabel}
+        title={preview.title}
+        label={preview.label}
+        link={preview.link}
       />
       <Section
         headline={headline}
@@ -44,8 +44,8 @@ export const PreviewSection: FC<PropsWithChildren<PreviewSectionProps>> = ({
         {...props}
       >
         {children}
+        <InvertToggle setParentRef={outerDivRef} />
       </Section>
-      <InvertToggle setParentRef={outerDivRef} />
     </div>
   );
 };

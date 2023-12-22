@@ -34,13 +34,14 @@ const Page = () => {
 
       <PreviewSection
         preview={{
-          componentName: "Product Advertisement",
-          linkLabel: "View in Storybook",
-          href: "Product Advertisement",
+          title: "Product Advertisement",
+          label: "Paid",
+          link: {
+            label: "View in Storybook",
+            href: "#",
+          },
         }}
-        spaceBefore="small"
         width="full"
-        invertToggle
         content={{
           mode: "list",
         }}
@@ -78,12 +79,14 @@ const Page = () => {
 
       <PreviewSection
         preview={{
-          componentName: "Product Advertisement",
-          linkLabel: "View in Storybook",
-          href: "Product Advertisement",
+          title: "Contact Banner",
+          label: "Paid",
+          link: {
+            label: "View in Storybook",
+            href: "#",
+          },
         }}
         width="full"
-        invertToggle
         content={{
           mode: "list",
         }}
@@ -120,12 +123,14 @@ const Page = () => {
 
       <PreviewSection
         preview={{
-          componentName: "Product Advertisement",
-          linkLabel: "View in Storybook",
-          href: "Product Advertisement",
+          title: "Split Banner",
+          label: "Paid",
+          link: {
+            label: "View in Storybook",
+            href: "#",
+          },
         }}
         width="wide"
-        invertToggle
         content={{
           mode: "list",
         }}
@@ -158,15 +163,17 @@ const Page = () => {
 
       <PreviewSection
         preview={{
-          componentName: "Product Advertisement",
-          linkLabel: "View in Storybook",
-          href: "Product Advertisement",
+          title: "Angled Image",
+          label: "Paid",
+          link: {
+            label: "View in Storybook",
+            href: "#",
+          },
         }}
         width="full"
         backgroundColor="accent"
         spaceAfter="none"
         spaceBefore="none"
-        invertToggle
         content={{
           mode: "list",
         }}
@@ -204,12 +211,14 @@ This tool accelerates our development, saving you valuable time and helping us d
 
       <PreviewSection
         preview={{
-          componentName: "Product Advertisement",
-          linkLabel: "View in Storybook",
-          href: "Product Advertisement",
+          title: "Colored Banner",
+          label: "Paid",
+          link: {
+            label: "View in Storybook",
+            href: "#",
+          },
         }}
         width="full"
-        invertToggle
         content={{
           mode: "list",
         }}
@@ -244,12 +253,14 @@ This tool accelerates our development, saving you valuable time and helping us d
 
       <PreviewSection
         preview={{
-          componentName: "Product Advertisement",
-          linkLabel: "View in Storybook",
-          href: "Product Advertisement",
+          title: "Align Bottom",
+          label: "Paid",
+          link: {
+            label: "View in Storybook",
+            href: "#",
+          },
         }}
         width="full"
-        invertToggle
         content={{
           mode: "list",
         }}

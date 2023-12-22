@@ -141,9 +141,12 @@ export type Buttons = ButtonProps[];
  */
 export interface PreviewSectionProps {
   preview?: {
-    componentName?: string;
-    linkLabel?: string;
-    href?: string;
+    title?: string;
+    label?: string;
+    link?: {
+      href?: string;
+      label?: string;
+    };
   };
   width?: Width;
   style?: Style;

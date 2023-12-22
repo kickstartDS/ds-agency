@@ -6,7 +6,10 @@
  */
 
 export interface SectionHeaderProps {
-  componentName?: string;
-  href?: string;
-  linkLabel?: string;
+  title?: string;
+  label?: string;
+  link?: {
+    href?: string;
+    label?: string;
+  };
 }

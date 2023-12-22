@@ -8,14 +8,14 @@
     "preview": {
       "type": "object",
       "properties": {
-        "componentName": {
-          "type": "string"
+        "title": {
+          "$ref": "http://schema.mydesignsystem.com/section-header.schema.json#/properties/title"
         },
-        "linkLabel": {
-          "type": "string"
+        "label": {
+          "$ref": "http://schema.mydesignsystem.com/section-header.schema.json#/properties/label"
         },
-        "href": {
-          "type": "string"
+        "link": {
+          "$ref": "http://schema.mydesignsystem.com/section-header.schema.json#/properties/link"
         }
       }
     },

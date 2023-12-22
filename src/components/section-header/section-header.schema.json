@@ -4,14 +4,22 @@
   "title": "Section Header",
   "type": "object",
   "properties": {
-    "componentName": {
+    "title": {
       "type": "string"
     },
-    "href": {
+    "label": {
       "type": "string"
     },
-    "linkLabel": {
-      "type": "string"
+    "link": {
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        }
+      }
     }
   },
   "additionalProperties": false
