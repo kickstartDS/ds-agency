@@ -33,8 +33,8 @@ export type Image = string;
 /**
  * Component used to tease content
  */
-export interface TeaserCardProps {
-  headline?: Headline;
+export interface ComponentTeaserProps {
+  title?: Headline;
   text?: Text;
   label?: Label;
   target?: Target;

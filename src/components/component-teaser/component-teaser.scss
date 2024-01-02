@@ -1,0 +1,27 @@
+@use "component-teaser-tokens.scss";
+
+.c-teaser.c-component-teaser {
+  position: relative;
+  overflow: visible;
+
+  img {
+    border-radius: var(--c-teaser--border-radius) var(--c-teaser--border-radius) 0 0;
+  }
+
+  &--label {
+    .c-teaser__label {
+      border-radius: var(--ks-border-radius-pill);
+      pointer-events: initial;
+      padding: 0.5em 1em;
+      transform: translate(0.5em, -50%);
+      font: var(--ks-font-interface-m);
+      text-align: center;
+      font-weight: var(--ks-font-weight-semi-bold);
+      color: var(--ks-color-fg-base);
+      position: absolute;
+      background: var(--ks-color-primary-inverted);
+      top: 0;
+      right: 0;
+    }
+  }
+}

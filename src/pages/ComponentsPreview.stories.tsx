@@ -393,4 +393,4 @@ export default {
   },
 };
 
-export const Paid = {};
+export const Preview = {};

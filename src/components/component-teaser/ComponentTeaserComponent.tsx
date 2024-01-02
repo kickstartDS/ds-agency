@@ -7,29 +7,32 @@ import {
   TeaserBoxContext,
 } from "@kickstartds/base/lib/teaser-box";
 
-import { TeaserCardProps } from "./TeaserCardProps";
-import "./teaser-card.scss";
+import { ComponentTeaserProps } from "./ComponentTeaserProps";
+import "./component-teaser.scss";
 
-export const TeaserCard = forwardRef<
+export const ComponentTeaser = forwardRef<
   HTMLDivElement,
-  TeaserCardProps & HTMLAttributes<HTMLDivElement>
+  ComponentTeaserProps & HTMLAttributes<HTMLDivElement>
 >(
   (
-    { headline, text, target, image, label, displayButton = true, ...props },
+    { title, text, target, image, label, displayButton = true, ...props },
     ref
   ) => {
     return (
       <TeaserBoxContextDefault
         {...props}
-        className={classnames(`c-teaser-card`, label && `c-teaser-card--label`)}
-        ratio={"4:3"}
-        topic={headline}
+        className={classnames(
+          `c-component-teaser`,
+          label && `c-component-teaser--label`
+        )}
+        ratio={"16:6"}
+        topic={title}
         text={text}
         // @ts-expect-error
         renderTopic={() => (
           <>
             {label ? <span className="c-teaser__label">{label}</span> : ""}
-            {headline}
+            {title}
           </>
         )}
         link={{
@@ -51,5 +54,5 @@ export const TeaserCard = forwardRef<
 );
 
 export const TeaserBoxProvider: FC<PropsWithChildren> = (props) => (
-  <TeaserBoxContext.Provider {...props} value={TeaserCard} />
+  <TeaserBoxContext.Provider {...props} value={ComponentTeaser} />
 );
