@@ -22,10 +22,6 @@ export type Label = string;
  */
 export type Target = string;
 /**
- * Toggle wether you want the card to have a visible button or not
- */
-export type DisplayButton = boolean;
-/**
  * Image to display as cover
  */
 export type Image = string;
@@ -38,6 +34,5 @@ export interface ComponentTeaserProps {
   text?: Text;
   label?: Label;
   target?: Target;
-  displayButton?: DisplayButton;
   image?: Image;
 }
