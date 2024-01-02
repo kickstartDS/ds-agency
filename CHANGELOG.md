@@ -1,3 +1,15 @@
+# v2.1.92 (Tue Jan 02 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(ComponentTeaser): remove displayButton Property ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.91 (Tue Jan 02 2024)
 
 #### ⚠️ Pushed to `main`
