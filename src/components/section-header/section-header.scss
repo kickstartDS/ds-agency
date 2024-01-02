@@ -13,12 +13,10 @@
 
   padding: var(--ks-spacing-inset-squish-m);
   border-radius: var(--ks-border-radius-card);
-  background-color: var(--ks-color-bg-alpha-3);
+  background-color: var(--g-interface--background);
+  box-shadow: var(--g-interface--shadow);
 
   backdrop-filter: blur(20px);
-  box-shadow:
-    0 0 0 2px var(--ks-color-fg-alpha-8),
-    0 0px 6px var(--ks-color-fg-alpha-5);
 
   max-width: var(--l-section--content-width-default);
   width: 100%;

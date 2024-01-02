@@ -42,11 +42,9 @@
     transition: var(--ks-transition-collapse);
     pointer-events: all;
     cursor: pointer;
-    box-shadow:
-      0 0 0 2px var(--ks-color-fg-alpha-8),
-      0 0px 6px var(--ks-color-fg-alpha-5);
+    box-shadow: var(--g-interface--shadow);
 
-    background-color: var(--ks-color-bg-alpha-3);
+    background-color: var(--g-interface--background);
 
     backdrop-filter: blur(20px);
     border-radius: var(--ks-border-radius-pill) 0 0 var(--ks-border-radius-pill);

@@ -12,6 +12,13 @@
   --g-topic--font-weight: var(--ks-font-weight-medium);
   --g-topic--color: var(--ks-color-fg);
 
+  --g-interface--background: #161933b8;
+  --g-interface--shadow: 0 0 0 2px var(--ks-color-fg-alpha-8), 0 0px 8px var(--ks-color-fg-alpha-5);
+
+  &[ks-inverted="true"] {
+    --g-interface--background: var(--ks-color-bg-alpha-3);
+  }
+
   --g-link--font-weight: var(--ks-font-weight-medium);
   --g-link--color-hover: var(--ks-color-fg);
 
