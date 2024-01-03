@@ -1,3 +1,15 @@
+# v2.1.97 (Wed Jan 03 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: rewrite invert toggle feature in client js ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.1.96 (Wed Jan 03 2024)
 
 #### ⚠️ Pushed to `main`
