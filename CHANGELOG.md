@@ -1,3 +1,15 @@
+# v2.1.94 (Wed Jan 03 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(stories): fix faulty proprties in stories ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.93 (Wed Jan 03 2024)
 
 #### ⚠️ Pushed to `main`
