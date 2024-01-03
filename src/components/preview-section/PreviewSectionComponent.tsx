@@ -38,7 +38,6 @@ export const PreviewSection: FC<PropsWithChildren<PreviewSectionProps>> = ({
         spaceAfter={spaceAfter}
         inverted={inverted}
         buttons={buttons}
-        invertToggle
         className="l-preview-section"
         {...props}
       >

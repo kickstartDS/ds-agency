@@ -52,7 +52,6 @@ export const CtaPaid: FC<CtaPaidProps> = ({
             // @ts-expect-error
             buttons,
             colorNeutral: colorNeutral,
-            enabled: buttons.length > 0,
           },
           headline: {
             text: headline,
