@@ -911,9 +911,7 @@ export type Alignment = "left" | "center";
 /**
  * Activate/disable the CTA
  */
-export type CTAToggle = CTAToggle1 & CTAToggle2;
-export type CTAToggle1 = boolean;
-export type CTAToggle2 = string;
+export type CTAToggle = boolean;
 /**
  * A short CTA text
  */

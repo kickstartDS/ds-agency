@@ -31,14 +31,14 @@ export const Simple: Story = {
           src: "img/people/author-emily.png",
           alt: "Alt Text Customer 1",
         },
-        name: undefined,
+        name: "Emily Johnson",
         title: undefined,
       },
     ],
   }),
 };
 
-export const WithSource: Story = {
+export const WithTitle: Story = {
   args: pack({
     testimonials: [
       {

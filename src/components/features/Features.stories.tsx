@@ -1,7 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
-
 import { Features } from "./FeaturesComponent";
 import schema from "./features.schema.json";
 

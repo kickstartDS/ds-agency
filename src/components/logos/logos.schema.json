@@ -58,7 +58,7 @@
       "properties": {
         "toggle": {
           "type": "boolean",
-          "default": "false",
+          "default": false,
           "title": "CTA Toggle",
           "description": "Activate/disable the CTA"
         },
