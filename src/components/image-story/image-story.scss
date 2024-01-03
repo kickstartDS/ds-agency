@@ -17,8 +17,6 @@
   .c-storytelling__image img {
     position: sticky;
     top: calc(var(--c-storytelling--vertical-padding) * 2);
-    margin-top: calc(var(--c-storytelling--vertical-padding) * -2);
-    transform: translateY(calc(var(--c-storytelling--vertical-padding) * -2));
   }
 
   &.c-storytelling--full {
