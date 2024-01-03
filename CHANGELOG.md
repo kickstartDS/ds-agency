@@ -1,3 +1,15 @@
+# v2.1.96 (Wed Jan 03 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(imaeg-story): remove unnecesary margin and transform values ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.95 (Wed Jan 03 2024)
 
 #### ⚠️ Pushed to `main`
