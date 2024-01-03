@@ -1,3 +1,16 @@
+# v2.1.98 (Wed Jan 03 2024)
+
+#### ⚠️ Pushed to `main`
+
+- build: trigger ds update action for dsa-website-about & dsa-website-paid ([@lmestel](https://github.com/lmestel))
+- fix: resolve react warnings ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.1.97 (Wed Jan 03 2024)
 
 #### ⚠️ Pushed to `main`
