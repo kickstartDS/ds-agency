@@ -17,31 +17,31 @@ const meta: Meta<typeof TeaserCard> = {
 export default meta;
 type Story = StoryObj<typeof TeaserCard>;
 
-export const Simple: Story = {
+export const ProductTiles: Story = {
   args: pack({
     displayButton: false,
-    headline: "Design System Services",
-    text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
+    headline: "Castaway",
+    text: "Transforming Ideas into Code",
+    image: "img/logos/castaway.svg",
     target: "#",
-    image: "img/close-up-young-business-team-working.png",
   }),
 };
 
-export const WithButton: Story = {
+export const PageNavigation: Story = {
   args: pack({
     headline: "Design System Services",
     text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
+    image: "img/02.jpg",
     target: "#",
-    image: "img/close-up-young-business-team-working.png",
   }),
 };
 
-export const WithLabel: Story = {
+export const ShowcasePreview: Story = {
   args: pack({
-    headline: "Design System Services",
-    text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
+    label: "Tech",
+    headline: "Transformation Love Story",
+    text: "See how we saved TechFusions a year's worth of development time",
+    image: "img/showcases/comp_tfe01.jpg",
     target: "#",
-    label: "CMS",
-    image: "img/close-up-young-business-team-working.png",
   }),
 };
