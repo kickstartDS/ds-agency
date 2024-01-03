@@ -37,3 +37,8 @@
 .docblock-argstable-body tr > td {
   color: var(--ks-text-color-interface);
 }
+
+.sb-show-main.sb-main-padded {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}

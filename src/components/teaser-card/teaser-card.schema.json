@@ -28,6 +28,12 @@
       "description": "Target that should be linked",
       "format": "uri"
     },
+    "displayButton": {
+      "type": "boolean",
+      "title": "Display Button",
+      "description": "Toggle wether you want the card to have a visible button or not",
+      "default": true
+    },
     "image": {
       "type": "string",
       "title": "Image",

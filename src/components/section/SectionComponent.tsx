@@ -1,4 +1,10 @@
-import { HTMLAttributes, FC, PropsWithChildren, forwardRef } from "react";
+import {
+  HTMLAttributes,
+  FC,
+  PropsWithChildren,
+  forwardRef,
+  useRef,
+} from "react";
 import classnames from "classnames";
 
 import {
@@ -14,24 +20,23 @@ export const Section = forwardRef<
   HTMLDivElement,
   SectionProps & Omit<HTMLAttributes<HTMLElement>, "style" | "content">
 >(
-  (
-    {
-      headline,
-      content,
-      headerSpacing,
-      width = "default",
-      style = "default",
-      spotlight = false,
-      backgroundColor = "default",
-      spaceBefore = "default",
-      spaceAfter = "default",
-      className,
-      inverted,
-      buttons = [],
-      ...props
-    },
-    ref
-  ) => {
+  ({
+    headline,
+    content,
+    headerSpacing,
+    width = "default",
+    style = "default",
+    spotlight = false,
+    backgroundColor = "default",
+    spaceBefore = "default",
+    spaceAfter = "default",
+    className,
+    inverted,
+    buttons = [],
+    ...props
+  }) => {
+    const parentRef = useRef();
+
     const { large: headlineLarge = false, ...headlineRest } = {
       align: "left",
       ...headline,
@@ -58,7 +63,8 @@ export const Section = forwardRef<
                 : style
             }`,
           headerSpacing && "l-section--header-spacing",
-          spotlight && "l-section--spotlight"
+          spotlight && "l-section--spotlight",
+          className
         )}
         background={backgroundColor}
         content={content}
@@ -79,8 +85,10 @@ export const Section = forwardRef<
         spaceBefore={spaceBefore}
         spaceAfter={spaceAfter}
         inverted={inverted}
-        ref={ref}
-      />
+        ref={parentRef}
+      >
+        {props.children}
+      </SectionContextDefault>
     );
   }
 );

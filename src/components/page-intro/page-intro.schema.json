@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/page-intro.schema.json",
+  "title": "Page Intro",
+  "type": "object",
+  "properties": {
+    "headline": {
+      "type": "string"
+    },
+    "sub": {
+      "type": "string"
+    },
+    "link": {
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

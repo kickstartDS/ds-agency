@@ -114,10 +114,7 @@
 
     > .c-storytelling__image,
     > .c-storytelling__box {
-      max-width: calc(
-        calc(var(--l-section--content-width-wide) / var(--c-storytelling--padding-ratio)) -
-          var(--l-section--content-padding)
-      );
+      max-width: calc(calc(var(--l-section--content-width-wide) / 2));
     }
 
     &.c-cta-paid--full-width {
