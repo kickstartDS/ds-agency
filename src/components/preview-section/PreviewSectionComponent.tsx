@@ -1,4 +1,4 @@
-import { FC, PropsWithChildren, useRef } from "react";
+import { FC, PropsWithChildren } from "react";
 import { PreviewSectionProps } from "./PreviewSectionProps";
 import "./preview-section.scss";
 import { Section } from "../section/SectionComponent";
@@ -20,9 +20,8 @@ export const PreviewSection: FC<PropsWithChildren<PreviewSectionProps>> = ({
   children,
   ...props
 }) => {
-  const outerDivRef = useRef(null);
   return (
-    <div ref={outerDivRef} className="l-preview-section--wrapper">
+    <div className="l-preview-section--wrapper">
       <SectionHeader
         title={preview.title}
         label={preview.label}
@@ -44,7 +43,7 @@ export const PreviewSection: FC<PropsWithChildren<PreviewSectionProps>> = ({
         {...props}
       >
         {children}
-        <InvertToggle setParentRef={outerDivRef} />
+        <InvertToggle target=".l-preview-section--wrapper" />
       </Section>
     </div>
   );
