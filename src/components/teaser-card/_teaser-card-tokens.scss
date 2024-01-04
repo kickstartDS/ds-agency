@@ -1,4 +1,6 @@
+@use "@kickstartds/core/source/core/container";
 @import "../../selectors";
+@include container.wrapper("teaser-card");
 
 :root {
   .c-teaser.c-teaser-card {
@@ -8,5 +10,10 @@
     --c-teaser--border: 1px solid var(--ks-color-fg-alpha-8);
     --c-teaser--border-radius: var(--ks-border-radius-card);
     --c-teaser--shadow-hover: 0 1px 11px var(--ks-color-fg-alpha-6);
+    --c-teaser--padding: var(--ks-spacing-inset-m);
+
+    @include container.size("≥", 820px, "teaser-card") {
+      --c-teaser--padding: var(--ks-spacing-inset-l);
+    }
   }
 }
