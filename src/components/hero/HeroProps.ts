@@ -5,16 +5,10 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {ButtonProps} from "../button/ButtonProps";
-
 /**
  * Headline for the visual
  */
 export type Headline = string;
-/**
- * Make the headline larger
- */
-export type LargeHeadline = boolean;
 /**
  * Subheadline below the module headline
  */
@@ -27,15 +21,27 @@ export type ModuleText = string;
  * Visually highlight the text
  */
 export type HighlightText = boolean;
+/**
+ * Make the text and buttons color neutral
+ */
+export type ColorNeutral = boolean;
 export type Height = "small" | "default" | "fullImage" | "fullScreen";
 /**
  * Toggle wether you want your text to be displayed within in box
  */
 export type Textbox = boolean;
 /**
- * Buttons of the Button Group
+ * Text content to display inside the button
  */
-export type Buttons = ButtonProps[];
+export type Label = string;
+/**
+ * Choose an icon
+ */
+export type Icon = string;
+/**
+ * Target that should be linked, makes the button behave like a link semantically
+ */
+export type Target = string;
 /**
  * Enable grid layer
  */
@@ -71,16 +77,21 @@ export type ModuleAligment = "center" | "below" | "left" | "right";
 
 export interface HeroProps {
   headline?: Headline;
-  largeHeadline?: LargeHeadline;
   sub?: ModuleSubheadline;
   text?: ModuleText;
   highlightText?: HighlightText;
+  colorNeutral?: ColorNeutral;
   height?: Height;
   textbox?: Textbox;
-  buttons?: Buttons;
+  buttons?: Button[];
   overlay?: GridLayer;
   image?: BackgroundImage;
   textPosition?: ModuleAligment;
+}
+export interface Button {
+  label?: Label;
+  icon?: Icon;
+  target?: Target;
 }
 /**
  * Sources of background images for different screen sizes

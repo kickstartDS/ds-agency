@@ -18,9 +18,9 @@ export type Layout = "singleColumn" | "multiColumn";
  */
 export type Alignment = "left" | "center";
 /**
- * Style of the text
+ * Visually highlight the text
  */
-export type Style = "highlight" | "default";
+export type HighlightText = boolean;
 
 /**
  * Component used for displaying text in chapters
@@ -29,5 +29,5 @@ export interface TextProps {
   text: Text;
   layout?: Layout;
   align?: Alignment;
-  style?: Style;
+  highlightText?: HighlightText;
 }

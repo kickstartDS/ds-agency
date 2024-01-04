@@ -28,7 +28,8 @@ export const Mosaic: FC<MosaicProps> = ({ layout, largeHeadlines, tiles }) => (
           }),
         }}
         image={{
-          source: tile?.image,
+          source: tile?.image.src,
+          alt: tile?.image.alt,
           order: {
             desktopImageLast:
               layout === "textLeft"

@@ -3,6 +3,7 @@
   .l-section {
     background-image: var(--l-section--background-image);
     background-color: var(--l-section--background-color);
+    position: relative;
 
     &--header-spacing {
       padding-top: calc(var(--g-header-height) + var(--l-section--space-default));
@@ -17,7 +18,15 @@
     &--spotlight {
       position: relative;
 
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
+
       &::before {
+        transition: opacity var(--ks-transition-fade);
+        opacity: 0;
         top: 0;
         left: 0;
         content: "";

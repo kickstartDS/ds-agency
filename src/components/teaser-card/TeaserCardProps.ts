@@ -22,6 +22,10 @@ export type Label = string;
  */
 export type Target = string;
 /**
+ * Toggle wether you want the card to have a visible button or not
+ */
+export type DisplayButton = boolean;
+/**
  * Image to display as cover
  */
 export type Image = string;
@@ -33,6 +37,15 @@ export interface TeaserCardProps {
   headline?: Headline;
   text?: Text;
   label?: Label;
+  /**
+   * Layout for the Teaser Card
+   */
+  layout?: "stack" | "row";
   target?: Target;
+  displayButton?: DisplayButton;
   image?: Image;
+  /**
+   * Aspect ratio of the image
+   */
+  imageRatio?: "wide" | "landscape" | "square" | "unset";
 }

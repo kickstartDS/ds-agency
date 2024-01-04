@@ -5,36 +5,42 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {ButtonProps} from "../button/ButtonProps";
-
 /**
- * Headline for the module element
+ * Headline for the Component element
  */
-export type ModuleHeadline = string;
+export type ComponentHeadline = string;
 /**
- * Make the headline larger
+ * Subheadline below the component headline
  */
-export type LargeHeadline = boolean;
+export type ComponentSubheadline = string;
 /**
- * Subheadline below the module headline
+ * Info text for the component element
  */
-export type ModuleSubheadline = string;
-/**
- * Info text for the module element
- */
-export type ModuleText = string;
+export type ComponentText = string;
 /**
  * Visually highlight the text
  */
 export type HighlightText = boolean;
 /**
+ * Make the text and buttons color neutral
+ */
+export type ColorNeutral = boolean;
+/**
  * Set the width of the content to the full width of the element
  */
 export type Width = boolean;
 /**
- * Buttons of the Button Group
+ * Text content to display inside the button
  */
-export type Buttons = ButtonProps[];
+export type Label = string;
+/**
+ * Choose an icon
+ */
+export type Icon = string;
+/**
+ * Target that should be linked, makes the button behave like a link semantically
+ */
+export type Target = string;
 /**
  * Background color for the whole element
  */
@@ -48,17 +54,13 @@ export type BackgroundImage = string;
  */
 export type ImageSource = string;
 /**
- * Select a vertical alignment for the image
- */
-export type ImageVerticalAlignment = "center" | "top" | "bottom";
-/**
- * Select a horizontal alignment for the image
- */
-export type ImageHorizontalAlignment = "center" | "left" | "right";
-/**
  * Toggle padding of the image
  */
 export type Padding = boolean;
+/**
+ * Image description
+ */
+export type AltText = string;
 /**
  * Switch to displaying the image after the text on mobile
  */
@@ -68,36 +70,40 @@ export type MobileImageAfterText = boolean;
  */
 export type DesktopImageAfterText = boolean;
 /**
- * Image description
- */
-export type AltText = string;
-/**
  * Choose the alginment of the text
  */
 export type TextAlignment = "left" | "center";
+/**
+ * Select a vertical alignment for the image
+ */
+export type VerticalAlignmentOfTheContent = "center" | "top" | "bottom";
 
 export interface CtaPaidProps {
-  headline?: ModuleHeadline;
-  largeHeadline?: LargeHeadline;
-  sub?: ModuleSubheadline;
-  text?: ModuleText;
+  headline?: ComponentHeadline;
+  sub?: ComponentSubheadline;
+  text?: ComponentText;
   highlightText?: HighlightText;
+  colorNeutral?: ColorNeutral;
   fullWidth?: Width;
-  buttons?: Buttons;
+  buttons?: Button[];
   backgroundColor?: BackgroundColor;
   backgroundImage?: BackgroundImage;
   image?: Image;
-  align?: TextAlignment;
+  order?: Order;
+  textAlign?: TextAlignment;
+  contentAlign?: VerticalAlignmentOfTheContent;
+}
+export interface Button {
+  label?: Label;
+  icon?: Icon;
+  target?: Target;
 }
 /**
  * Image displayed alongside the text content
  */
 export interface Image {
   src?: ImageSource;
-  vAlign?: ImageVerticalAlignment;
-  hAlign?: ImageHorizontalAlignment;
   padding?: Padding;
-  order?: Order;
   alt?: AltText;
 }
 /**

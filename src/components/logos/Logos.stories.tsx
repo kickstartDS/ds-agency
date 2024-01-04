@@ -22,27 +22,27 @@ export const CenteredWithButton: Story = {
   args: pack({
     logos: [
       {
-        src: "img/logoipsum-212.svg",
+        src: "img/logos/logoipsum-212.svg",
         alt: "Logo 1",
       },
       {
-        src: "img/logoipsum-217.svg",
+        src: "img/logos/logoipsum-217.svg",
         alt: "Logo 2",
       },
       {
-        src: "img/logoipsum-239.svg",
+        src: "img/logos/logoipsum-239.svg",
         alt: "Logo 3",
       },
       {
-        src: "img/logoipsum-244.svg",
+        src: "img/logos/logoipsum-244.svg",
         alt: "Logo 4",
       },
       {
-        src: "img/logoipsum-250.svg",
+        src: "img/logos/logoipsum-250.svg",
         alt: "Logo 5",
       },
       {
-        src: "img/logoipsum-286.svg",
+        src: "img/logos/logoipsum-286.svg",
         alt: "Logo 6",
       },
     ],
@@ -57,27 +57,27 @@ export const LeftAlignedWithTextLink: Story = {
   args: pack({
     logos: [
       {
-        src: "img/logoipsum-212.svg",
+        src: "img/logos/logoipsum-212.svg",
         alt: "Logo 1",
       },
       {
-        src: "img/logoipsum-217.svg",
+        src: "img/logos/logoipsum-217.svg",
         alt: "Logo 2",
       },
       {
-        src: "img/logoipsum-239.svg",
+        src: "img/logos/logoipsum-239.svg",
         alt: "Logo 3",
       },
       {
-        src: "img/logoipsum-244.svg",
+        src: "img/logos/logoipsum-244.svg",
         alt: "Logo 4",
       },
       {
-        src: "img/logoipsum-250.svg",
+        src: "img/logos/logoipsum-250.svg",
         alt: "Logo 5",
       },
       {
-        src: "img/logoipsum-286.svg",
+        src: "img/logos/logoipsum-286.svg",
         alt: "Logo 6",
       },
     ],

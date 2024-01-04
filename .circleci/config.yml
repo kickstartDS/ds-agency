@@ -61,6 +61,26 @@ jobs:
               --header "X-GitHub-Api-Version: 2022-11-28" \
               --data '{"event_type":"update_ds"}' \
               --location
+      - run:
+          name: Update ds-agency version in About Site
+          command: |
+            curl --request POST \
+              --url https://api.github.com/repos/kickstartDS/dsa-website-about/dispatches \
+              --header "Accept: application/vnd.github+json" \
+              --header "Authorization: Bearer ${GH_TOKEN}" \
+              --header "X-GitHub-Api-Version: 2022-11-28" \
+              --data '{"event_type":"update_ds"}' \
+              --location
+      - run:
+          name: Update ds-agency version in Paid Site
+          command: |
+            curl --request POST \
+              --url https://api.github.com/repos/kickstartDS/dsa-website-paid/dispatches \
+              --header "Accept: application/vnd.github+json" \
+              --header "Authorization: Bearer ${GH_TOKEN}" \
+              --header "X-GitHub-Api-Version: 2022-11-28" \
+              --data '{"event_type":"update_ds"}' \
+              --location
 
   chromatic:
     <<: *defaults

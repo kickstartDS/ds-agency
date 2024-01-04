@@ -16,11 +16,10 @@ const Page = () => (
       content={{
         mode: "list",
       }}
-      style="stagelights"
       width="default"
     >
       <Cta
-        align="left"
+        textAlign="left"
         headline="We simplify the process of building and scaling your **Design System**"
         sub="Crafting Consistency, Fostering Growth"
         text={`
@@ -46,7 +45,7 @@ Elevate your digital presence with us. We create [impactful digital](#) experien
     </Section>
     <Section backgroundColor="accent" width="default">
       <Cta
-        align="left"
+        textAlign="left"
         headline="We simplify the process of building and scaling your **Design System**"
         sub="Crafting Consistency, Fostering Growth"
         text={`
@@ -72,7 +71,7 @@ Elevate your digital presence with us. We create [impactful digital](#) experien
     </Section>
     <Section backgroundColor="bold" width="default">
       <Cta
-        align="left"
+        textAlign="left"
         headline="We simplify the process of building and scaling your **Design System**"
         sub="Crafting Consistency, Fostering Growth"
         text={`
@@ -98,7 +97,7 @@ Elevate your digital presence with us. We create [impactful digital](#) experien
     </Section>
     <Section inverted width="default">
       <Cta
-        align="left"
+        textAlign="left"
         headline="We simplify the process of building and scaling your **Design System**"
         sub="Crafting Consistency, Fostering Growth"
         text={`
@@ -124,7 +123,7 @@ Elevate your digital presence with us. We create [impactful digital](#) experien
     </Section>
     <Section backgroundColor="accent" inverted width="default">
       <Cta
-        align="left"
+        textAlign="left"
         headline="We simplify the process of building and scaling your **Design System**"
         sub="Crafting Consistency, Fostering Growth"
         text={`
@@ -150,7 +149,7 @@ Elevate your digital presence with us. We create [impactful digital](#) experien
     </Section>
     <Section backgroundColor="bold" inverted width="default">
       <Cta
-        align="left"
+        textAlign="left"
         headline="We simplify the process of building and scaling your **Design System**"
         sub="Crafting Consistency, Fostering Growth"
         text={`

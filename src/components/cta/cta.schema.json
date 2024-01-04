@@ -5,41 +5,47 @@
   "type": "object",
   "properties": {
     "headline": {
-      "title": "Module Headline",
-      "description": "Headline for the module element",
+      "title": "Component Headline",
+      "description": "Headline for the Component element",
       "type": "string",
       "examples": ["Headline"]
     },
-    "largeHeadline": {
-      "type": "boolean",
-      "title": "Large Headline",
-      "description": "Make the headline larger",
-      "default": true
-    },
     "sub": {
-      "title": "Module Subheadline",
-      "description": "Subheadline below the module headline",
+      "title": "Component Subheadline",
+      "description": "Subheadline below the component headline",
       "type": "string",
       "examples": ["Subheadline"]
     },
     "text": {
-      "title": "Module Text",
-      "description": "Info text for the module element",
-      "type": "string",
-      "examples": [
-        "Jedes Jahr werden zahlreiche Kinder bei Angriffen verletzt. Wir helfen, dass sie behandelt werden können und langfristige Unterstützung erhalten, etwa mit Prothesen. Durch den Krieg sind zudem viele Kinder verängstigt und traumatisiert. mydesignsystem sorgt für psychosoziale Hilfe."
-      ]
+      "title": "Component Text",
+      "description": "Info text for the component element",
+      "type": "string"
     },
     "highlightText": {
       "type": "boolean",
       "title": "Highlight Text",
       "description": "Visually highlight the text",
-      "default": true
+      "default": false
     },
     "buttons": {
-      "$ref": "http://schema.mydesignsystem.com/button-group.schema.json#/properties/buttons"
+      "type": "array",
+      "items": {
+        "title": "Button",
+        "type": "object",
+        "properties": {
+          "label": {
+            "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
+          },
+          "icon": {
+            "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
+          },
+          "target": {
+            "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
+          }
+        }
+      }
     },
-    "align": {
+    "textAlign": {
       "title": "Text Alignment",
       "description": "Choose the alginment of the text",
       "enum": ["left", "center"],

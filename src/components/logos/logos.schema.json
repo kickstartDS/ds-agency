@@ -23,12 +23,12 @@
             "title": "URL",
             "description": "The URL of the logo image",
             "examples": [
-              "img/logoipsum-212.svg",
-              "img/logoipsum-217.svg",
-              "img/logoipsum-239.svg",
-              "img/logoipsum-244.svg",
-              "img/logoipsum-250.svg",
-              "img/logoipsum-286.svg"
+              "img/logos/logoipsum-212.svg",
+              "img/logos/logoipsum-217.svg",
+              "img/logos/logoipsum-239.svg",
+              "img/logos/logoipsum-244.svg",
+              "img/logos/logoipsum-250.svg",
+              "img/logos/logoipsum-286.svg"
             ]
           },
           "alt": {
@@ -58,7 +58,7 @@
       "properties": {
         "toggle": {
           "type": "boolean",
-          "default": "false",
+          "default": false,
           "title": "CTA Toggle",
           "description": "Activate/disable the CTA"
         },

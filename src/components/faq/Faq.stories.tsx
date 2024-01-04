@@ -5,43 +5,50 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { Faq } from "./FaqComponent";
 import schema from "./faq.schema.json";
 
-const meta: Meta<typeof Faq> = {
+const { args, argTypes } = getArgsShared(schema as JSONSchema7);
+const meta: Meta = {
   title: "Components/Faq",
+  args,
+  argTypes,
   component: Faq,
   parameters: {
-    jsonSchema: {
-      schema,
-    },
+    jsonschema: schema,
   },
-  ...getArgsShared(schema as JSONSchema7),
 };
 
 export default meta;
 type Story = StoryObj<typeof Faq>;
 
-export const SingleDropdown: Story = {};
-SingleDropdown.args = pack({
-  questions: [
-    {
-      question: "What is a Design System?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
-    },
-  ],
-});
+export const DropdownList: Story = {
+  args: pack({
+    questions: [
+      {
+        question: "What are the benefits of investing in a Design System?",
+        answer:
+          "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
+      },
+      {
+        question: "What is a Design System?",
+        answer:
+          "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
+      },
+      {
+        question: "What is the role of a Headless CMS in a Design System?",
+        answer:
+          "A Headless CMS plays a crucial role in a Design System by providing a content-first approach. It separates the back-end content from the front-end presentation layer, allowing for seamless integration with any design system. This results in a flexible, scalable, and platform-agnostic system that ensures content consistency across all platforms and devices.",
+      },
+    ],
+  }),
+};
 
-export const DropdownsInAList: Story = {};
-DropdownsInAList.args = pack({
-  questions: [
-    {
-      question: "What is a Design System?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
-    },
-    {
-      question: "What are the benefits of investing in a Design System?",
-      answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
-    },
-  ],
-});
+export const SingleDropdown: Story = {
+  args: pack({
+    questions: [
+      {
+        question: "What is a Design System?",
+        answer:
+          "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
+      },
+    ],
+  }),
+};

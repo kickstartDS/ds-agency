@@ -22,7 +22,7 @@ export const H1: Story = {
   args: pack({
     level: "h1",
     style: "h1",
-    text: "Headline level h1",
+    text: "Design System Services",
   }),
 };
 
@@ -30,7 +30,7 @@ export const H2: Story = {
   args: pack({
     level: "h2",
     style: "h2",
-    text: "Headline level h2",
+    text: "Design System Services",
   }),
 };
 
@@ -38,7 +38,7 @@ export const H3: Story = {
   args: pack({
     level: "h3",
     style: "h3",
-    text: "Headline level h3",
+    text: "Design System Services",
   }),
 };
 
@@ -46,28 +46,28 @@ export const H4: Story = {
   args: pack({
     level: "h4",
     style: "h4",
-    text: "Headline level h4",
+    text: "Design System Services",
   }),
 };
 
-export const Subheadline: Story = {
+export const WithSubheadline: Story = {
   args: pack({
-    text: "With a subheadline",
-    sub: "This is a subheadline, displayed below the headline",
+    text: "Design System Services",
+    sub: "Crafting Consistency, Fostering Growth",
   }),
 };
 
-export const SubheadlineOrderSwapped: Story = {
+export const OrderSwapped: Story = {
   args: pack({
-    text: "With a swapped subheadline",
-    sub: "This is a subheadline, displayed above the headline",
+    text: "Design System Services",
+    sub: "Crafting Consistency, Fostering Growth",
     switchOrder: true,
   }),
 };
 
-export const HeadlineWithMarkdown: Story = {
+export const WithMarkdown: Story = {
   args: pack({
-    text: "With *Markdown* use",
-    sub: "This is a subheadline, displayed **below the headline**",
+    text: "**Design System** Services",
+    sub: "Crafting Consistency, Fostering Growth",
   }),
 };

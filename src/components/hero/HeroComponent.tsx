@@ -10,11 +10,11 @@ import { useButtonGroup } from "../button-group/ButtonGroupComponent";
 export const Hero: FC<HeroProps> = ({
   headline,
   sub,
-  largeHeadline,
   height,
   text,
   highlightText,
   textPosition = "center",
+  colorNeutral,
   image,
   overlay,
   textbox,
@@ -31,7 +31,8 @@ export const Hero: FC<HeroProps> = ({
         <VisualContextDefault
           className={classnames(
             `c-hero c-hero--content-${textPosition}`,
-            highlightText ? `c-hero--highlight-text` : ""
+            highlightText ? `c-hero--highlight-text` : "",
+            colorNeutral ? `c-hero--color-neutral` : ""
           )}
           height={height}
           overlay={overlay}
@@ -48,6 +49,7 @@ export const Hero: FC<HeroProps> = ({
             link: {
               // @ts-expect-error
               buttons,
+              colorNeutral,
               enabled: buttons.length > 0,
               arrangement:
                 textPosition === "below" || textPosition === "center"
@@ -62,7 +64,7 @@ export const Hero: FC<HeroProps> = ({
               text: headline,
               sub: sub,
               level: "h3",
-              style: largeHeadline ? "h1" : undefined,
+              style: highlightText ? "h1" : undefined,
             },
             text: text,
           }}

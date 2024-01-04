@@ -27,8 +27,7 @@
           "title": {
             "title": "Title",
             "description": "The title of the quote author",
-            "type": "string",
-            "examples": ["CEO"]
+            "type": "string"
           },
           "image": {
             "type": "object",

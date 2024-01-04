@@ -63,7 +63,8 @@ export const Section = forwardRef<
                 : style
             }`,
           headerSpacing && "l-section--header-spacing",
-          spotlight && "l-section--spotlight"
+          spotlight && "l-section--spotlight",
+          className
         )}
         background={backgroundColor}
         content={content}
@@ -84,7 +85,10 @@ export const Section = forwardRef<
         spaceBefore={spaceBefore}
         spaceAfter={spaceAfter}
         inverted={inverted}
-      />
+        ref={ref}
+      >
+        {props.children}
+      </SectionContextDefault>
     );
   }
 );

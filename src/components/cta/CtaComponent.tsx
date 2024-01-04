@@ -10,26 +10,29 @@ export const Cta: FC<CtaProps> = ({
   headline,
   sub,
   text,
-  largeHeadline = true,
   highlightText = false,
   buttons,
-  align = "left",
+  textAlign = "left",
 }) => (
-  <div className={classnames("c-cta", `c-cta--align-${align}`)}>
+  <div className={classnames("c-cta", `c-cta--align-${textAlign}`)}>
     <Headline
-      level="h1"
-      style={largeHeadline === true ? "h1" : "h2"}
-      align={align}
+      level="h2"
+      style={highlightText === true ? "h1" : "h2"}
+      align={textAlign}
       text={headline}
       sub={sub}
       spaceAfter="minimum"
     />
     {text ? (
-      <Text style={highlightText ? "highlight" : "default"} text={text} />
+      <Text highlightText={highlightText ? true : false} text={text} />
     ) : (
       ""
     )}
 
-    <ButtonGroup buttons={buttons} arrangement={align} />
+    <ButtonGroup
+      // @ts-expect-error
+      buttons={buttons}
+      arrangement={textAlign}
+    />
   </div>
 );

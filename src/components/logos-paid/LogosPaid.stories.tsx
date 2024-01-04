@@ -18,127 +18,31 @@ const meta: Meta<typeof LogosPaid> = {
 export default meta;
 type Story = StoryObj<typeof LogosPaid>;
 
-export const FourInARowWall: Story = {
-  args: pack({
-    logosPerRow: 4,
-    logos: [
-      {
-        src: "img/logoipsum-212.svg",
-        alt: "Logo 1",
-      },
-      {
-        src: "img/logoipsum-217.svg",
-        alt: "Logo 2",
-      },
-      {
-        src: "img/logoipsum-239.svg",
-        alt: "Logo 3",
-      },
-      {
-        src: "img/logoipsum-244.svg",
-        alt: "Logo 4",
-      },
-      {
-        src: "img/logoipsum-250.svg",
-        alt: "Logo 5",
-      },
-      {
-        src: "img/logoipsum-286.svg",
-        alt: "Logo 6",
-      },
-      {
-        src: "img/logoipsum-244.svg",
-        alt: "Logo 4",
-      },
-      {
-        src: "img/logoipsum-250.svg",
-        alt: "Logo 5",
-      },
-      {
-        src: "img/logoipsum-286.svg",
-        alt: "Logo 6",
-      },
-      {
-        src: "img/logoipsum-244.svg",
-        alt: "Logo 4",
-      },
-      {
-        src: "img/logoipsum-250.svg",
-        alt: "Logo 5",
-      },
-      {
-        src: "img/logoipsum-286.svg",
-        alt: "Logo 6",
-      },
-    ],
-
-    cta: {
-      toggle: false,
-    },
-  }),
-};
-
-export const SixInARowLine: Story = {
-  args: pack({
-    logosPerRow: 6,
-    logos: [
-      {
-        src: "img/logoipsum-212.svg",
-        alt: "Logo 1",
-      },
-      {
-        src: "img/logoipsum-217.svg",
-        alt: "Logo 2",
-      },
-      {
-        src: "img/logoipsum-239.svg",
-        alt: "Logo 3",
-      },
-      {
-        src: "img/logoipsum-244.svg",
-        alt: "Logo 4",
-      },
-      {
-        src: "img/logoipsum-250.svg",
-        alt: "Logo 5",
-      },
-      {
-        src: "img/logoipsum-286.svg",
-        alt: "Logo 6",
-      },
-    ],
-
-    cta: {
-      toggle: false,
-    },
-  }),
-};
-
-export const CenteredWithButton: Story = {
+export const WithTaglineAndButton: Story = {
   args: pack({
     logos: [
       {
-        src: "img/logoipsum-212.svg",
+        src: "img/logos/logoipsum-212.svg",
         alt: "Logo 1",
       },
       {
-        src: "img/logoipsum-217.svg",
+        src: "img/logos/logoipsum-217.svg",
         alt: "Logo 2",
       },
       {
-        src: "img/logoipsum-239.svg",
+        src: "img/logos/logoipsum-239.svg",
         alt: "Logo 3",
       },
       {
-        src: "img/logoipsum-244.svg",
+        src: "img/logos/logoipsum-244.svg",
         alt: "Logo 4",
       },
       {
-        src: "img/logoipsum-250.svg",
+        src: "img/logos/logoipsum-250.svg",
         alt: "Logo 5",
       },
       {
-        src: "img/logoipsum-286.svg",
+        src: "img/logos/logoipsum-286.svg",
         alt: "Logo 6",
       },
     ],
@@ -149,31 +53,91 @@ export const CenteredWithButton: Story = {
   }),
 };
 
-export const LeftAlignedWithTextLink: Story = {
+export const LogoWall: Story = {
   args: pack({
+    logosPerRow: 4,
     logos: [
       {
-        src: "img/logoipsum-212.svg",
+        src: "img/logos/logoipsum-212.svg",
         alt: "Logo 1",
       },
       {
-        src: "img/logoipsum-217.svg",
+        src: "img/logos/logoipsum-217.svg",
         alt: "Logo 2",
       },
       {
-        src: "img/logoipsum-239.svg",
+        src: "img/logos/logoipsum-239.svg",
         alt: "Logo 3",
       },
       {
-        src: "img/logoipsum-244.svg",
+        src: "img/logos/logoipsum-244.svg",
         alt: "Logo 4",
       },
       {
-        src: "img/logoipsum-250.svg",
+        src: "img/logos/logoipsum-250.svg",
         alt: "Logo 5",
       },
       {
-        src: "img/logoipsum-286.svg",
+        src: "img/logos/logoipsum-286.svg",
+        alt: "Logo 6",
+      },
+      {
+        src: "img/logos/logoipsum-244.svg",
+        alt: "Logo 4",
+      },
+      {
+        src: "img/logos/logoipsum-250.svg",
+        alt: "Logo 5",
+      },
+      {
+        src: "img/logos/logoipsum-286.svg",
+        alt: "Logo 6",
+      },
+      {
+        src: "img/logos/logoipsum-244.svg",
+        alt: "Logo 4",
+      },
+      {
+        src: "img/logos/logoipsum-250.svg",
+        alt: "Logo 5",
+      },
+      {
+        src: "img/logos/logoipsum-286.svg",
+        alt: "Logo 6",
+      },
+    ],
+
+    cta: {
+      toggle: false,
+    },
+  }),
+};
+
+export const WithTextLink: Story = {
+  args: pack({
+    logos: [
+      {
+        src: "img/logos/logoipsum-212.svg",
+        alt: "Logo 1",
+      },
+      {
+        src: "img/logos/logoipsum-217.svg",
+        alt: "Logo 2",
+      },
+      {
+        src: "img/logos/logoipsum-239.svg",
+        alt: "Logo 3",
+      },
+      {
+        src: "img/logos/logoipsum-244.svg",
+        alt: "Logo 4",
+      },
+      {
+        src: "img/logos/logoipsum-250.svg",
+        alt: "Logo 5",
+      },
+      {
+        src: "img/logos/logoipsum-286.svg",
         alt: "Logo 6",
       },
     ],
@@ -181,5 +145,41 @@ export const LeftAlignedWithTextLink: Story = {
       toggle: true,
     },
     align: "left",
+  }),
+};
+
+export const LogoRow: Story = {
+  args: pack({
+    logosPerRow: 6,
+    logos: [
+      {
+        src: "img/logos/logoipsum-212.svg",
+        alt: "Logo 1",
+      },
+      {
+        src: "img/logos/logoipsum-217.svg",
+        alt: "Logo 2",
+      },
+      {
+        src: "img/logos/logoipsum-239.svg",
+        alt: "Logo 3",
+      },
+      {
+        src: "img/logos/logoipsum-244.svg",
+        alt: "Logo 4",
+      },
+      {
+        src: "img/logos/logoipsum-250.svg",
+        alt: "Logo 5",
+      },
+      {
+        src: "img/logos/logoipsum-286.svg",
+        alt: "Logo 6",
+      },
+    ],
+
+    cta: {
+      toggle: false,
+    },
   }),
 };

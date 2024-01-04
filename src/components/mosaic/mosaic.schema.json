@@ -25,31 +25,28 @@
           "headline": {
             "title": "Headline",
             "description": "Headline for the tile",
-            "type": "string",
-            "examples": ["Headline"]
+            "type": "string"
           },
           "sub": {
             "title": "Module Subheadline",
             "description": "Subheadline below the tile headline",
-            "type": "string",
-            "examples": ["Subheadline"]
+            "type": "string"
           },
           "text": {
             "title": "Module Text",
             "description": "Text for tile",
-            "type": "string",
-            "examples": [
-              "Autem voluptas quis facere et qui voluptate earum. Dolorum totam animi perferendis. Est est et dolor maiores vero architecto aperiam. Quo et et aut neque neque reiciendis nihil aut. Culpa et consequuntur omnis."
-            ]
+            "type": "string"
           },
           "image": {
-            "title": "Tile Image",
-            "description": "Image source for the tile",
-            "type": "string",
-            "examples": [
-              "img/team.png",
-              "img/close-up-young-business-team-working.png"
-            ]
+            "type": "object",
+            "properties": {
+              "src": {
+                "$ref": "http://schema.mydesignsystem.com/image.schema.json#/properties/src"
+              },
+              "alt": {
+                "$ref": "http://schema.mydesignsystem.com/image.schema.json#/properties/alt"
+              }
+            }
           },
           "button": {
             "type": "object",

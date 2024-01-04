@@ -1,5 +1,16 @@
-.c-cta.c-storytelling {
-  --c-cta--gap: var(--ks-spacing-m);
+.c-cta-paid.c-storytelling {
+  --c-storytelling--text-color-neutral: var(--ks-color-fg);
   --c-storytelling--vertical-padding: var(--l-section--space-default);
   --c-storytelling--horizontal-padding: var(--l-section--content-padding);
+
+  .c-storytelling__box:only-child {
+    --c-storytelling--horizontal-padding: var(--l-section--content-padding);
+  }
+
+  &--color-neutral.c-storytelling {
+    .c-storytelling__box {
+      --c-storytelling_text--color: var(--c-storytelling--text-color-neutral);
+      --c-storytelling_subheadline--color: var(--c-storytelling--text-color-neutral);
+    }
+  }
 }

@@ -7,6 +7,7 @@ import { TextMedia } from "@kickstartds/base/lib/text-media";
 export const Gallery: FC<GalleryProps & HTMLAttributes<HTMLElement>> = ({
   lightbox = false,
   layout = "tiles",
+  aspectRatio = "square",
   images = [],
 }) => {
   const galleryId = useMemo(() => `gallery-${Date.now()}`, []);
@@ -26,7 +27,13 @@ export const Gallery: FC<GalleryProps & HTMLAttributes<HTMLElement>> = ({
         )}
       >
         {images.map((image, index) => (
-          <div className="c-gallery__image" key={index}>
+          <div
+            className={classnames(
+              "c-gallery__image",
+              aspectRatio !== "unset" && `c-gallery__image--${aspectRatio}`
+            )}
+            key={index}
+          >
             <TextMedia
               media={[
                 {

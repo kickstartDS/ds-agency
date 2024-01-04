@@ -26,6 +26,10 @@ export type Width = number;
  */
 export type Height = number;
 /**
+ * The aspect ratio of the image
+ */
+export type AspectRatio = "unset" | "square" | "wide" | "landscape";
+/**
  * Add additional css classes that should be applied to the button
  */
 export type AdditionalClasses = string;
@@ -71,6 +75,7 @@ export interface ImageProps {
   alt?: AltText;
   width?: Width;
   height?: Height;
+  aspectRatio?: AspectRatio;
   className?: AdditionalClasses;
   style?: StyleAttribute;
   lazy?: Lazy;

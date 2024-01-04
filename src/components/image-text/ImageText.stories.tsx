@@ -18,24 +18,32 @@ type Story = StoryObj<typeof ImageText>;
 
 export default meta;
 
-export const AboveLayout: Story = {
-  args: pack({
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
-    image: {
-      src: "img/close-up-young-business-team-working.png",
-      alt: "Agency",
-    },
-    layout: "above",
-  }),
-};
-
 export const BesideRightLayout: Story = {
   args: pack({
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+    text: `We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).
+
+This tool expedites our **development process**, saving you precious time and enabling us to deliver superior results more quickly. With this framework, your design system aspirations can be realized faster than ever before.
+
+_Experience the power of streamlined development and see the difference it can make in your projects._`,
     image: {
       src: "img/close-up-young-business-team-working.png",
       alt: "Agency",
     },
     layout: "beside-right",
+  }),
+};
+
+export const AboveLayout: Story = {
+  args: pack({
+    text: `We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).
+
+This tool expedites our **development process**, saving you precious time and enabling us to deliver superior results more quickly. With this framework, your design system aspirations can be realized faster than ever before.
+
+_Experience the power of streamlined development and see the difference it can make in your projects._`,
+    image: {
+      src: "img/close-up-young-business-team-working.png",
+      alt: "Agency",
+    },
+    layout: "above",
   }),
 };

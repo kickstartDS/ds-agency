@@ -1,6 +1,7 @@
 :root {
   .c-visual.c-hero {
     --c-visual_overlay--background-size: 100%;
+    --c-visual--text-color-neutral: var(--ks-color-fg);
 
     .c-visual__box {
       --c-visual_box--background: var(--ks-color-bg-alpha-2);
@@ -8,11 +9,19 @@
       --c-visual_subheadline--color: var(--ks-text-color-primary);
       --c-visual_headline--color: var(--ks-color-fg);
       --c-visual_box--border-radius: var(--ks-border-radius-surface);
+      --c-visual_box--padding: var(--ks-spacing-inset-squish-xl);
     }
 
-    &--highlight-text {
+    &--highlight-text.c-visual {
       .c-visual__box {
         --c-visual_text--font: var(--ks-font-copy-l);
+      }
+    }
+
+    &--color-neutral.c-visual {
+      .c-visual__box {
+        --c-visual_text--color: var(--c-visual--text-color-neutral);
+        --c-visual_subheadline--color: var(--c-visual--text-color-neutral);
       }
     }
 
@@ -26,7 +35,7 @@
       );
 
       &.c-hero--content-below {
-        --c-visual_overlay--background: linear-gradient(0deg, var(--ks-background-color-default) 25%, transparent 60%);
+        --c-visual_overlay--background: linear-gradient(0deg, var(--ks-background-color-default) 15%, transparent 50%);
       }
 
       .c-visual__box {

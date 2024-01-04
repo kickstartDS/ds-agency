@@ -11,6 +11,8 @@ import { RawPageWrapper } from "../src/components/page-wrapper/RawPageWrapperCom
 import { providerDecorator } from "../src/components/Providers";
 import { LinkProvider } from "../src/docs/LinkProvider";
 
+import "./manager.css";
+
 const myActions = actions("radio");
 window._ks.radio.on("*", myActions.radio);
 

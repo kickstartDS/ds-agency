@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/section-header.schema.json",
+  "title": "Section Header",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "link": {
+      "type": "object",
+      "properties": {
+        "href": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

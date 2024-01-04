@@ -10,9 +10,9 @@ import { useButtonGroup } from "../button-group/ButtonGroupComponent";
 export const VideoCurtain: FC<VideoCurtainProps> = ({
   headline,
   sub,
-  largeHeadline = true,
   text,
   highlightText,
+  colorNeutral,
   textPosition,
   overlay,
   video,
@@ -30,7 +30,8 @@ export const VideoCurtain: FC<VideoCurtainProps> = ({
           skipButton
           className={classnames(
             `c-video-curtain`,
-            highlightText ? `c-video-curtain--highlight-text` : ""
+            highlightText ? `c-video-curtain--highlight-text` : "",
+            colorNeutral ? `c-video-curtain--color-neutral` : ""
           )}
           height="fullScreen"
           inbox
@@ -42,14 +43,16 @@ export const VideoCurtain: FC<VideoCurtainProps> = ({
             link: {
               // @ts-expect-error
               buttons,
+              colorNeutral,
               enabled: buttons.length > 0,
-              arrangement: textPosition,
+              arrangement: textPosition === "center" ? "center" : "left",
             },
             headline: {
               text: headline,
               level: "h1",
               sub: sub,
-              style: largeHeadline ? "h1" : undefined,
+              style: highlightText ? "h1" : undefined,
+              align: textPosition === "center" ? "center" : "left",
             },
             text: text,
           }}

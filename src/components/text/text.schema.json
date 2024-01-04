@@ -25,14 +25,13 @@
       "title": "Alignment",
       "description": "Alignment of text",
       "enum": ["left", "center"],
-      "default": "center"
+      "default": "left"
     },
-    "style": {
-      "type": "string",
-      "title": "Style",
-      "description": "Style of the text",
-      "enum": ["highlight", "default"],
-      "default": "normal"
+    "highlightText": {
+      "type": "boolean",
+      "title": "Highlight Text",
+      "description": "Visually highlight the text",
+      "default": false
     }
   },
   "additionalProperties": false,

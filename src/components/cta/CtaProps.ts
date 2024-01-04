@@ -5,43 +5,49 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {ButtonProps} from "../button/ButtonProps";
-
 /**
- * Headline for the module element
+ * Headline for the Component element
  */
-export type ModuleHeadline = string;
+export type ComponentHeadline = string;
 /**
- * Make the headline larger
+ * Subheadline below the component headline
  */
-export type LargeHeadline = boolean;
+export type ComponentSubheadline = string;
 /**
- * Subheadline below the module headline
+ * Info text for the component element
  */
-export type ModuleSubheadline = string;
-/**
- * Info text for the module element
- */
-export type ModuleText = string;
+export type ComponentText = string;
 /**
  * Visually highlight the text
  */
 export type HighlightText = boolean;
 /**
- * Buttons of the Button Group
+ * Text content to display inside the button
  */
-export type Buttons = ButtonProps[];
+export type Label = string;
+/**
+ * Choose an icon
+ */
+export type Icon = string;
+/**
+ * Target that should be linked, makes the button behave like a link semantically
+ */
+export type Target = string;
 /**
  * Choose the alginment of the text
  */
 export type TextAlignment = "left" | "center";
 
 export interface CtaProps {
-  headline?: ModuleHeadline;
-  largeHeadline?: LargeHeadline;
-  sub?: ModuleSubheadline;
-  text?: ModuleText;
+  headline?: ComponentHeadline;
+  sub?: ComponentSubheadline;
+  text?: ComponentText;
   highlightText?: HighlightText;
-  buttons?: Buttons;
-  align?: TextAlignment;
+  buttons?: Button[];
+  textAlign?: TextAlignment;
+}
+export interface Button {
+  label?: Label;
+  icon?: Icon;
+  target?: Target;
 }

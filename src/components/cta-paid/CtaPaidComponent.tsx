@@ -8,16 +8,18 @@ import { useButtonGroup } from "../button-group/ButtonGroupComponent";
 
 export const CtaPaid: FC<CtaPaidProps> = ({
   headline,
-  largeHeadline,
+  highlightText = false,
   sub,
   image,
+  text,
+  textAlign,
   backgroundImage,
   backgroundColor,
-  align,
+  colorNeutral,
+  contentAlign,
+  order,
   fullWidth = false,
   buttons = [],
-  text,
-  highlightText,
 }) => {
   const ButtonGroup = useButtonGroup();
 
@@ -29,13 +31,11 @@ export const CtaPaid: FC<CtaPaidProps> = ({
       <Storytelling
         className={classnames(
           "c-cta-paid",
-          fullWidth ? `c-cta--full-width` : "",
-          highlightText ? `c-cta--highlight-text` : "",
-          image?.hAlign && image?.hAlign !== "center"
-            ? `c-cta--image-h-${image?.hAlign}`
-            : "",
-          image?.vAlign && image?.vAlign !== "center"
-            ? `c-cta--image-v-${image?.vAlign}`
+          fullWidth ? `c-cta-paid--full-width` : "",
+          highlightText ? `c-cta-paid--highlight-text` : "",
+          colorNeutral ? `c-cta-paid--color-neutral` : "",
+          contentAlign && contentAlign !== "center"
+            ? `c-cta-paid--align-${contentAlign}`
             : ""
         )}
         backgroundImage={backgroundImage}
@@ -43,20 +43,23 @@ export const CtaPaid: FC<CtaPaidProps> = ({
         full={image?.padding === false}
         image={{
           source: image?.src,
-          order: image?.order,
+          order: order,
         }}
         box={{
           text: text,
-          textAlign: align,
-          // @ts-expect-error
-          link: { buttons },
+          textAlign: textAlign,
+          link: {
+            // @ts-expect-error
+            buttons,
+            colorNeutral: colorNeutral,
+          },
           headline: {
             text: headline,
             level: "h2",
-            style: largeHeadline === true ? "h1" : undefined,
+            style: highlightText === true ? "h1" : undefined,
             sub: sub,
-            spaceAfter: largeHeadline === true ? "large" : undefined,
-            align: align,
+            spaceAfter: highlightText === true ? "large" : undefined,
+            align: textAlign,
           },
         }}
       />

@@ -6,79 +6,84 @@ import { Testimonials } from "./TestimonialsComponent";
 
 import schema from "./testimonials.schema.json";
 
+const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta<typeof Testimonials> = {
   title: "Components/Testimonials",
+  args,
+  argTypes,
   component: Testimonials,
   parameters: {
     jsonSchema: {
       schema,
     },
   },
-  ...getArgsShared(schema as JSONSchema7),
 };
 
 export default meta;
 type Story = StoryObj<typeof Testimonials>;
 
-export const QuoteAndImageOnly: Story = {};
-QuoteAndImageOnly.args = pack({
-  testimonials: [
-    {
-      quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
-      image: {
-        src: "img/people/author-emily.png",
-        alt: "Alt Text Customer 1",
+export const Simple: Story = {
+  args: pack({
+    testimonials: [
+      {
+        quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
+        image: {
+          src: "img/people/author-emily.png",
+          alt: "Alt Text Customer 1",
+        },
+        name: "Emily Johnson",
+        title: undefined,
       },
-      name: undefined,
-      title: undefined,
-    },
-  ],
-});
+    ],
+  }),
+};
 
-export const QuoteWithSource: Story = {};
-QuoteWithSource.args = pack({
-  testimonials: [
-    {
-      quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
-      image: {
-        src: "img/people/author-emily.png",
-        alt: "Alt Text Customer 1",
+export const WithTitle: Story = {
+  args: pack({
+    testimonials: [
+      {
+        quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
+        image: {
+          src: "img/people/author-emily.png",
+          alt: "Alt Text Customer 1",
+        },
+        name: "Emily Johnson",
+        title: "Chief Marketing Officer at TechFusion Enterprises",
       },
-      name: "Emily Johnson",
-      title: "Chief Marketing Officer at TechFusion Enterprises",
-    },
-  ],
-});
+    ],
+  }),
+};
 
-export const QuotesInAList: Story = {};
-QuotesInAList.args = pack({
-  testimonials: [
-    {
-      quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
-      image: {
-        src: "img/people/author-emily.png",
-        alt: "Alt Text Customer 1",
+export const ListLayout: Story = {
+  args: pack({
+    testimonials: [
+      {
+        quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
+        image: {
+          src: "img/people/author-emily.png",
+          alt: "Alt Text Customer 1",
+        },
+        name: "Emily Johnson",
+        title: "Chief Marketing Officer at TechFusion Enterprises",
       },
-      name: "Emily Johnson",
-      title: "Chief Marketing Officer at TechFusion Enterprises",
-    },
-    {
-      quote: `Systemics's design system transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends.`,
-      image: {
-        src: "img/people/author-john.png",
-        alt: "Alt Text Customer 2",
+      {
+        quote: `Systemics's design system transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends.`,
+        image: {
+          src: "img/people/author-john.png",
+          alt: "Alt Text Customer 2",
+        },
+        name: "John Smith",
+        title: "Director of Digital Strategy at EcoTech Solutions",
       },
-      name: "John Smith",
-      title: "Director of Digital Strategy at EcoTech Solutions",
-    },
-    {
-      quote: `As a startup, we needed to hit the ground running. Systemics's approach streamlined our dev and design process, allowing us to scale faster and focus on what truly matters - building a product that stands out in the market.`,
-      image: {
-        src: "img/people/author-alex.png",
-        alt: "Alt Text Customer 3",
+      {
+        quote: `As a startup, we needed to hit the ground running. Systemics's approach streamlined our dev and design process, allowing us to scale faster and focus on what truly matters - building a product that stands out in the market.`,
+        image: {
+          src: "img/people/author-alex.png",
+          alt: "Alt Text Customer 3",
+        },
+        name: "Alex Chen",
+        title: "CEO of LaunchPad Innovations",
       },
-      name: "Alex Chen",
-      title: "CEO of LaunchPad Innovations",
-    },
-  ],
-});
+    ],
+  }),
+};

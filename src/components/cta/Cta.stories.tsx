@@ -18,13 +18,37 @@ type Story = StoryObj<typeof Cta>;
 
 export default meta;
 
-export const LeftAlignedWithSingleButton: Story = {
+export const Banner: Story = {
   args: pack({
-    headline: "The Sanity & Next.js Experts",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
+    headline: "Ready to Transform Your Development Process?",
+    sub: "Start your journey today.",
+    text: "Get started with our design system today and experience a new level of efficiency and consistency in your projects.",
+    textAlign: "center",
     buttons: [
       {
-        label: "Contact us",
+        label: "Contact Us",
+        target: "#",
+        icon: "person",
+      },
+      {
+        label: "Learn More",
+        target: "#",
+        icon: "date",
+      },
+    ],
+  }),
+};
+
+export const Highlighted: Story = {
+  args: pack({
+    headline: "Why Choose Our Design System?",
+    sub: "Built for consistency and speed.",
+    highlightText: true,
+    textAlign: "center",
+    text: "Our design system is built with scalability and efficiency in mind. It allows for consistent UI across different platforms, making your development process smoother and faster.",
+    buttons: [
+      {
+        label: "Get Started",
         target: "#",
         icon: "person",
       },
@@ -32,21 +56,16 @@ export const LeftAlignedWithSingleButton: Story = {
   }),
 };
 
-export const CenteredWithmultipleButtons: Story = {
+export const LeftAligned: Story = {
   args: pack({
-    headline: "The Sanity & Next.js Experts",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue.",
-    align: "center",
+    headline: "Experience Our Design System",
+    sub: "Efficient, scalable, seamless.",
+    text: "Our design system offers a seamless and efficient way to build scalable applications. Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
     buttons: [
       {
-        label: "Contact us",
+        label: "Learn More",
         target: "#",
         icon: "person",
-      },
-      {
-        label: "Book a meeting",
-        target: "#",
-        icon: "date",
       },
     ],
   }),

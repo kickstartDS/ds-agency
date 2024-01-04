@@ -5,16 +5,10 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {ButtonProps} from "../button/ButtonProps";
-
 /**
  * Headline for the visual
  */
 export type Headline = string;
-/**
- * Boolean to set if the headline is supposed to resemble a h1 headline at the start of the page
- */
-export type LargeHeadline = boolean;
 /**
  * Subheadline below the module headline
  */
@@ -28,9 +22,21 @@ export type ModuleText = string;
  */
 export type HighlightText = boolean;
 /**
- * Buttons of the Button Group
+ * Make the text and buttons color neutral
  */
-export type Buttons = ButtonProps[];
+export type ColorNeutral = boolean;
+/**
+ * Text content to display inside the button
+ */
+export type Label = string;
+/**
+ * Choose an icon
+ */
+export type Icon = string;
+/**
+ * Target that should be linked, makes the button behave like a link semantically
+ */
+export type Target = string;
 /**
  * Enable grid layer
  */
@@ -54,14 +60,19 @@ export type ModuleAligment = "center" | "left" | "right";
 
 export interface VideoCurtainProps {
   headline?: Headline;
-  largeHeadline?: LargeHeadline;
   sub?: ModuleSubheadline;
   text?: ModuleText;
   highlightText?: HighlightText;
-  buttons?: Buttons;
+  colorNeutral?: ColorNeutral;
+  buttons?: Button[];
   overlay?: GridLayer;
   video?: BackgroundVideo;
   textPosition?: ModuleAligment;
+}
+export interface Button {
+  label?: Label;
+  icon?: Icon;
+  target?: Target;
 }
 /**
  * Sources of background videos for different screen sizes

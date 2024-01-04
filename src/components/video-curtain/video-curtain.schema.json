@@ -7,37 +7,47 @@
     "headline": {
       "title": "Headline",
       "description": "Headline for the visual",
-      "type": "string",
-      "examples": ["Headline"]
-    },
-    "largeHeadline": {
-      "title": "Large Headline",
-      "description": "Boolean to set if the headline is supposed to resemble a h1 headline at the start of the page",
-      "type": "boolean",
-      "default": true
+      "type": "string"
     },
     "sub": {
       "title": "Module Subheadline",
       "description": "Subheadline below the module headline",
-      "type": "string",
-      "examples": ["Subheadline"]
+      "type": "string"
     },
     "text": {
       "title": "Module Text",
       "description": "Info text for the module element",
-      "type": "string",
-      "examples": [
-        "Jedes Jahr werden zahlreiche Kinder bei Angriffen verletzt. Wir helfen, dass sie behandelt werden können und langfristige Unterstützung erhalten, etwa mit Prothesen. Durch den Krieg sind zudem viele Kinder verängstigt und traumatisiert. mydesignsystem sorgt für psychosoziale Hilfe."
-      ]
+      "type": "string"
     },
     "highlightText": {
       "type": "boolean",
       "title": "Highlight Text",
       "description": "Visually highlight the text",
-      "default": true
+      "default": false
+    },
+    "colorNeutral": {
+      "title": "Color Neutral",
+      "description": "Make the text and buttons color neutral",
+      "default": false,
+      "type": "boolean"
     },
     "buttons": {
-      "$ref": "http://schema.mydesignsystem.com/button-group.schema.json#/properties/buttons"
+      "type": "array",
+      "items": {
+        "title": "Button",
+        "type": "object",
+        "properties": {
+          "label": {
+            "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
+          },
+          "icon": {
+            "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
+          },
+          "target": {
+            "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
+          }
+        }
+      }
     },
     "overlay": {
       "$ref": "http://schema.kickstartds.com/content/visual.schema.json#/properties/overlay"

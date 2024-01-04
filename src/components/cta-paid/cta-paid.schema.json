@@ -5,36 +5,33 @@
   "type": "object",
   "properties": {
     "headline": {
-      "title": "Module Headline",
-      "description": "Headline for the module element",
+      "title": "Component Headline",
+      "description": "Headline for the Component element",
       "type": "string",
       "examples": ["Headline"]
     },
-    "largeHeadline": {
-      "type": "boolean",
-      "title": "Large Headline",
-      "description": "Make the headline larger",
-      "default": false
-    },
     "sub": {
-      "title": "Module Subheadline",
-      "description": "Subheadline below the module headline",
+      "title": "Component Subheadline",
+      "description": "Subheadline below the component headline",
       "type": "string",
       "examples": ["Subheadline"]
     },
     "text": {
-      "title": "Module Text",
-      "description": "Info text for the module element",
-      "type": "string",
-      "examples": [
-        "Jedes Jahr werden zahlreiche Kinder bei Angriffen verletzt. Wir helfen, dass sie behandelt werden können und langfristige Unterstützung erhalten, etwa mit Prothesen. Durch den Krieg sind zudem viele Kinder verängstigt und traumatisiert. mydesignsystem sorgt für psychosoziale Hilfe."
-      ]
+      "title": "Component Text",
+      "description": "Info text for the component element",
+      "type": "string"
     },
     "highlightText": {
       "type": "boolean",
       "title": "Highlight Text",
       "description": "Visually highlight the text",
-      "default": true
+      "default": false
+    },
+    "colorNeutral": {
+      "title": "Color Neutral",
+      "description": "Make the text and buttons color neutral",
+      "default": false,
+      "type": "boolean"
     },
     "fullWidth": {
       "title": "Width",
@@ -43,7 +40,22 @@
       "default": false
     },
     "buttons": {
-      "$ref": "http://schema.mydesignsystem.com/button-group.schema.json#/properties/buttons"
+      "type": "array",
+      "items": {
+        "title": "Button",
+        "type": "object",
+        "properties": {
+          "label": {
+            "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
+          },
+          "icon": {
+            "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/icon"
+          },
+          "target": {
+            "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
+          }
+        }
+      }
     },
     "backgroundColor": {
       "$ref": "http://schema.kickstartds.com/content/storytelling.schema.json#/properties/backgroundColor"
@@ -62,45 +74,11 @@
           "type": "string",
           "format": "image"
         },
-        "vAlign": {
-          "title": "Image vertical alignment",
-          "description": "Select a vertical alignment for the image",
-          "type": "string",
-          "enum": ["center", "top", "bottom"],
-          "default": "center"
-        },
-        "hAlign": {
-          "title": "Image horizontal alignment",
-          "description": "Select a horizontal alignment for the image",
-          "type": "string",
-          "enum": ["center", "left", "right"],
-          "default": "center"
-        },
         "padding": {
           "title": "Padding",
           "description": "Toggle padding of the image",
           "type": "boolean",
           "default": true
-        },
-        "order": {
-          "title": "Order",
-          "description": "Choose what comes first on mobile and desktop: image or text",
-          "type": "object",
-          "properties": {
-            "mobileImageLast": {
-              "title": "Mobile image after text",
-              "description": "Switch to displaying the image after the text on mobile",
-              "type": "boolean",
-              "default": false
-            },
-            "desktopImageLast": {
-              "title": "Desktop image after text",
-              "description": "Switch to displaying the image after the text on desktop",
-              "type": "boolean",
-              "default": true
-            }
-          },
-          "additionalProperties": false
         },
         "alt": {
           "title": "Alt text",
@@ -110,12 +88,39 @@
       },
       "additionalProperties": false
     },
-    "align": {
+    "order": {
+      "title": "Order",
+      "description": "Choose what comes first on mobile and desktop: image or text",
+      "type": "object",
+      "properties": {
+        "mobileImageLast": {
+          "title": "Mobile image after text",
+          "description": "Switch to displaying the image after the text on mobile",
+          "type": "boolean",
+          "default": false
+        },
+        "desktopImageLast": {
+          "title": "Desktop image after text",
+          "description": "Switch to displaying the image after the text on desktop",
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "textAlign": {
       "title": "Text Alignment",
       "description": "Choose the alginment of the text",
       "enum": ["left", "center"],
       "type": "string",
       "default": "left"
+    },
+    "contentAlign": {
+      "title": "Vertical alignment of the content",
+      "description": "Select a vertical alignment for the image",
+      "type": "string",
+      "enum": ["center", "top", "bottom"],
+      "default": "center"
     }
   },
   "additionalProperties": false
