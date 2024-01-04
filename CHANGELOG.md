@@ -1,3 +1,15 @@
+# v2.1.101 (Thu Jan 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(teaserCard): tweak teaserCard layout behaviour ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.100 (Thu Jan 04 2024)
 
 #### ⚠️ Pushed to `main`
