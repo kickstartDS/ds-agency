@@ -46,8 +46,8 @@ const Page = () => (
       content={{
         mode: "list",
       }}
-      width="wide"
-      spaceBefore="small"
+      width="default"
+      spaceBefore="none"
     >
       <TeaserCard
         imageRatio="unset"
