@@ -1,3 +1,16 @@
+# v2.1.100 (Thu Jan 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(teaserCard): add imageRatio + layout functionality ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.99 (Thu Jan 04 2024)
 
 #### ⚠️ Pushed to `main`
