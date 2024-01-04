@@ -2478,10 +2478,10 @@
     pubsub-js "^1.9.4"
     sass "^1.62.1"
 
-"@kickstartds/form@^3.0.0-next.10":
-  version "3.0.0-next.10"
-  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-3.0.0-next.10.tgz#8f810e305ed6fc16abb425209a5878f892a3b649"
-  integrity sha512-+cqLp7Y0ns8Nh8Fa6ibwX7eQbxMFyNaDR3uHjVs8z0f9gqRbIiGI+NeY1y6g+7TjEbc+5b7bHxTJcKxq2YrLeA==
+"@kickstartds/form@^2.2.3-beta.0":
+  version "2.2.3-beta.0"
+  resolved "https://registry.npmjs.org/@kickstartds/form/-/form-2.2.3-beta.0.tgz#2bddb17e7ed96bdf896f73bdc0dfb658c1e5ee08"
+  integrity sha512-RZXw3zLED2onVHYy25IjKIRuixsUbklE0jpeHElz/F+nFv0DImsjlsViK/dFYd7RgG1FDOx4k/xMeXdceaHgSg==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
@@ -9172,10 +9172,10 @@ kebab-case@^1.0.0:
   resolved "https://registry.npmjs.org/kebab-case/-/kebab-case-1.0.2.tgz#5eac97d5d220acf606d40e3c0ecfea21f1f9e1eb"
   integrity sha512-7n6wXq4gNgBELfDCpzKc+mRrZFs7D+wgfF5WRFLNAr4DA/qtr9Js8uOAVAfHhuLMfAcQ0pRKqbpjx+TcJVdE1Q==
 
-kickstartds@^3.0.0-next.5:
-  version "3.0.0-next.5"
-  resolved "https://registry.npmjs.org/kickstartds/-/kickstartds-3.0.0-next.5.tgz#19f51789a4d5d792165ccf31aa90675fc697cb6f"
-  integrity sha512-NYSA6fnODPEVPqkYw9bPEuslXe9rAJUBcSm3WT0U5cOHsAnUA3GJmd95lMdt/LY2WZb7g56kk8snOaGV6ujMPw==
+kickstartds@^3.0.0-next.7:
+  version "3.0.0-next.7"
+  resolved "https://registry.npmjs.org/kickstartds/-/kickstartds-3.0.0-next.7.tgz#11bcfe1e7e7ae6d96d5f53dac36609b5e0483d7c"
+  integrity sha512-Nxe/TarGAezZbC3IdGuus8g6GhGKzQZVtnBM0rMaoWZs7LQ55xaIVngnDmZGQEx12oZYf3ono+s0ltj9ukJUWQ==
   dependencies:
     "@apidevtools/json-schema-ref-parser" "^9.0.9"
     "@babel/preset-react" "^7.17.12"
