@@ -1,3 +1,16 @@
+# v2.1.103 (Thu Jan 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(showcasesOverview): adjust template ([@fleven-kds](https://github.com/fleven-kds))
+- feat(showcasesOverview): add page concept for showcases overview ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.102 (Thu Jan 04 2024)
 
 #### 🐛 Bug Fix
