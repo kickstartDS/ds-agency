@@ -47,5 +47,5 @@ export interface TeaserCardProps {
   /**
    * Aspect ratio of the image
    */
-  imageRatio?: "unset" | "square" | "wide" | "landscape";
+  imageRatio?: "wide" | "landscape" | "square" | "unset";
 }

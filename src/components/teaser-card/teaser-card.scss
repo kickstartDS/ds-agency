@@ -2,6 +2,10 @@
 @use "@kickstartds/core/source/core/container";
 @include container.wrapper("teaser-card");
 
+.l-container--teaser-card {
+  display: flex;
+}
+
 .c-teaser.c-teaser-card {
   position: relative;
   overflow: visible;
@@ -11,26 +15,32 @@
     border-radius: var(--c-teaser--border-radius) var(--c-teaser--border-radius) 0 0;
   }
 
-  @include container.size("≥", 640px, "teaser-card") {
+  img {
+    object-fit: cover;
+  }
+
+  &--wide {
     img {
-      object-fit: cover;
+      aspect-ratio: 4/3;
     }
+  }
 
-    &--wide {
-      img {
-        aspect-ratio: 4/3;
-      }
+  &--landscape {
+    img {
+      aspect-ratio: 16/9;
     }
+  }
 
-    &--landscape {
-      img {
-        aspect-ratio: 16/9;
-      }
+  &--square {
+    img {
+      aspect-ratio: 1/1;
     }
+  }
 
-    &--square {
+  @include container.size("≥", 640px, "teaser-card") {
+    &--unset {
       img {
-        aspect-ratio: 1/1;
+        height: 100%;
       }
     }
 
@@ -39,6 +49,7 @@
 
       .c-teaser__body {
         justify-content: center;
+        flex-basis: 60%;
 
         .c-teaser__text {
           flex: 0;
@@ -46,7 +57,7 @@
       }
 
       > :first-child:not(.c-teaser__body) {
-        flex: 25%;
+        flex: 40%;
         border-radius: var(--c-teaser--border-radius) 0 0 var(--c-teaser--border-radius);
       }
     }

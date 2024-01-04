@@ -26,9 +26,8 @@
       "type": "string",
       "enum": ["stack", "row"],
       "description": "Layout for the Teaser Card",
-      "default": "card"
+      "default": "stack"
     },
-
     "target": {
       "type": "string",
       "title": "Target",
@@ -49,9 +48,9 @@
     },
     "imageRatio": {
       "type": "string",
-      "enum": ["unset", "square", "wide", "landscape"],
+      "enum": ["wide", "landscape", "square", "unset"],
       "description": "Aspect ratio of the image",
-      "default": "card"
+      "default": "wide"
     }
   },
   "additionalProperties": false,

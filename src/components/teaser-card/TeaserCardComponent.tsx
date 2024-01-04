@@ -18,9 +18,9 @@ export const TeaserCard = forwardRef<
       text,
       target,
       image,
-      imageRatio,
+      imageRatio = "wide",
       label,
-      layout,
+      layout = "stack",
       displayButton = true,
       ...props
     },
