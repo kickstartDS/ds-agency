@@ -66,7 +66,7 @@ export interface SelectFieldProps {
   invalid?: Invalid;
   invalidMessage?: InvalidMessage;
   hint?: HintMessage;
-  icon?: IconIdentifier & string;
+  icon?: IconIdentifier;
   className?: Class;
   component?: KsComponentAttribute;
 }

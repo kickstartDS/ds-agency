@@ -10,6 +10,7 @@ export const Mosaic: FC<MosaicProps> = ({ layout, largeHeadlines, tiles }) => (
         key={index}
         full
         backgroundColor={tile.backgroundColor}
+        backgroundImage={tile.backgroundImage}
         box={{
           headline: {
             text: tile?.headline,
