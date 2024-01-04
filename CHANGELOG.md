@@ -1,3 +1,15 @@
+# v2.1.102 (Thu Jan 04 2024)
+
+#### 🐛 Bug Fix
+
+- chore: update dependencies for form and cli ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v2.1.101 (Thu Jan 04 2024)
 
 #### ⚠️ Pushed to `main`
