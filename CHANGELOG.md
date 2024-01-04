@@ -1,3 +1,15 @@
+# v2.1.99 (Thu Jan 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(color): adjust bg-inverted token scale ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.98 (Wed Jan 03 2024)
 
 #### ⚠️ Pushed to `main`
