@@ -105,7 +105,7 @@ export type Gutter = "large" | "default" | "small" | "none";
 /**
  * Layout mode used for section contents
  */
-export type Mode = "default" | "tile" | "list";
+export type Mode = "default" | "tile" | "list" | "slider";
 /**
  * Allowed components for content
  */
