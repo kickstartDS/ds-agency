@@ -29,6 +29,7 @@ export const PreviewSection: FC<PropsWithChildren<PreviewSectionProps>> = ({
       />
       <Section
         headline={headline}
+        content={content}
         width={width}
         //@ts-ignore
         style={style}
