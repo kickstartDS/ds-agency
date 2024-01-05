@@ -1,3 +1,17 @@
+# v2.1.105 (Fri Jan 05 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(section): pass content prop to component ([@fleven-kds](https://github.com/fleven-kds))
+- feat(button): increase selector specificity ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.1.104 (Fri Jan 05 2024)
 
 #### ⚠️ Pushed to `main`
