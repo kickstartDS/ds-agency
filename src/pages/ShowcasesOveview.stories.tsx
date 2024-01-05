@@ -43,39 +43,6 @@ const Page = () => (
     </Section>
 
     <Section
-      content={{
-        mode: "list",
-      }}
-      width="default"
-      spaceBefore="none"
-    >
-      <TeaserCard
-        imageRatio="unset"
-        layout="row"
-        headline="Speed and Scale"
-        text="Explore how we empowered LaunchPad, an AI-powered digital audio controller startup, with rapid landing page creation for market testing and a robust foundation for future growth."
-        target="https://github.com/"
-        image="img/showcases/preview_audio-01.png"
-      />
-      <TeaserCard
-        imageRatio="unset"
-        layout="row"
-        headline="Navigating the Headless Frontier for Brand Consistency"
-        text="See how we collaborated with EcoTech Solutions to set up a tailored Design System and migrate their main website to a headless CMS, enhancing brand credibility and saving valuable time."
-        target="https://github.com/"
-        image="img/showcases/preview_eco-01.png"
-      />
-      <TeaserCard
-        imageRatio="unset"
-        layout="row"
-        headline="TechFusion Enterprises"
-        text="Discover how we revolutionized TechFusion Enterprises' digital landscape by developing a tailored Design System. Our innovative approach saved them a year's worth of development time and harmonized their user experiences across all platforms."
-        target="https://github.com/"
-        image="img/showcases/preview_tfe-01.png"
-      />
-    </Section>
-
-    <Section
       style="accentTransition"
       spaceBefore="small"
       spaceAfter="none"

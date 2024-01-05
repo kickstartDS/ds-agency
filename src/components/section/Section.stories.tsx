@@ -20,20 +20,20 @@ const meta: Meta<typeof Section> = {
   render: (args) => (
     <Section {...args}>
       <TeaserCard
-        target="/showcase-techfusion_paid"
+        target="#"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/static/img/showcases/comp_tfe01.jpg"
       />
       <TeaserCard
-        target="/showcase-launchpad_paid"
+        target="#"
         headline="Speed and Scale"
         label="Freshest Fruit"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         image="/static/img/showcases/comp_audio01.jpg"
       />
       <TeaserCard
-        target="/showcase-eco_paid"
+        target="#"
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
         image="/static/img/showcases/comp_eco01.jpg"
@@ -203,13 +203,13 @@ export const TileLayout: Story = {
   render: (args) => (
     <Section {...args}>
       <TeaserCard
-        target="/showcase-techfusion_paid"
+        target="#"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/static/img/showcases/comp_tfe01.jpg"
       />
       <TeaserCard
-        target="/showcase-launchpad_paid"
+        target="#"
         headline="Speed and Scale"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         image="/static/img/showcases/comp_audio01.jpg"
@@ -234,13 +234,13 @@ export const FlexLayout: Story = {
   render: (args) => (
     <Section {...args}>
       <TeaserCard
-        target="/showcase-techfusion_paid"
+        target="#"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/static/img/showcases/comp_tfe01.jpg"
       />
       <TeaserCard
-        target="/showcase-launchpad_paid"
+        target="#"
         headline="Speed and Scale"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         image="/static/img/showcases/comp_audio01.jpg"
