@@ -1,65 +1,63 @@
 @import "../../selectors";
 
-:root {
-  .c-button {
-    --c-button--border-radius: var(--ks-border-radius-pill);
-    --c-button--padding: 0.75em 2em;
-    --c-button--font-weight: var(--ks-font-weight-semi-bold);
+a.c-button,
+button.c-button {
+  --c-button--border-radius: var(--ks-border-radius-pill);
+  --c-button--padding: 0.75em 2em;
+  --c-button--font-weight: var(--ks-font-weight-semi-bold);
 
-    &--solid {
-      //high contrast to Primary & Background Colors
-      --c-button--color: var(--ks-color-fg-alpha-2);
-      --c-button--color-hover: var(--ks-color-fg);
-      --c-button--color-active: var(--ks-color-fg);
+  &--solid {
+    //high contrast to Primary & Background Colors
+    --c-button--color: var(--ks-color-fg-alpha-2);
+    --c-button--color-hover: var(--ks-color-fg);
+    --c-button--color-active: var(--ks-color-fg);
 
-      //high contrast to the Primary & Backgrund Colors
-      --c-button--background-color: var(--ks-color-primary);
-      --c-button--background-color-hover: var(--ks-color-primary);
+    //high contrast to the Primary & Backgrund Colors
+    --c-button--background-color: var(--ks-color-primary);
+    --c-button--background-color-hover: var(--ks-color-primary);
 
-      --c-button--shadow: 0px 0px 2px 1px var(--ks-color-fg-alpha-4-base),
-        0px 0px 19px 2px var(--ks-color-primary-alpha-2);
+    --c-button--shadow: 0px 0px 2px 1px var(--ks-color-fg-alpha-4-base),
+      0px 0px 19px 2px var(--ks-color-primary-alpha-2);
 
-      --c-button--shadow-hover: 0px 0px 2px 1px var(--ks-color-fg-alpha-1-base),
-        0px 0px 19px 4px var(--ks-color-primary);
+    --c-button--shadow-hover: 0px 0px 2px 1px var(--ks-color-fg-alpha-1-base), 0px 0px 19px 4px var(--ks-color-primary);
 
-      [ks-inverted="true"] & {
-        //primary buttons work better with a light color
-        --c-button--color: var(--ks-color-fg-inverted-alpha-2);
-        --c-button--color-hover: var(--ks-color-fg-inverted);
-        --c-button--color-active: var(--ks-color-fg-inverted);
-      }
+    [ks-inverted="true"] & {
+      //primary buttons work better with a light color
+      --c-button--color: var(--ks-color-fg-inverted-alpha-2);
+      --c-button--color-hover: var(--ks-color-fg-inverted);
+      --c-button--color-active: var(--ks-color-fg-inverted);
     }
+  }
 
-    &--clear {
-      --c-button--color: var(--ks-color-fg-alpha-2);
-      --c-button--color-hover: var(--ks-color-fg);
-      --c-button--color-active: var(--ks-color-fg);
+  &--clear {
+    --c-button--color: var(--ks-color-fg-alpha-2);
+    --c-button--color-hover: var(--ks-color-fg);
+    --c-button--color-active: var(--ks-color-fg);
 
-      --c-button--border-color: transparent;
-      --c-button--border-color-hover: transparent;
-      --c-button--border-color-active: transparent;
+    --c-button--border-color: transparent;
+    --c-button--border-color-hover: transparent;
+    --c-button--border-color-active: transparent;
 
-      --c-button--border-width: 2px;
+    --c-button--border-width: 2px;
 
-      --c-button--background-color: var(--ks-color-fg-alpha-8);
-      --c-button--background-color-hover: var(--ks-color-fg-alpha-7);
-      --c-button--background-color-active: var(--ks-color-fg-alpha-7);
+    --c-button--background-color: var(--ks-color-fg-alpha-8);
+    --c-button--background-color-hover: var(--ks-color-fg-alpha-7);
+    --c-button--background-color-active: var(--ks-color-fg-alpha-7);
 
-      padding: var(--c-button--padding);
-    }
+    padding: var(--c-button--padding);
+  }
 
-    &--outline {
-      --c-button--color: var(--ks-color-fg-alpha-2);
-      --c-button--color-hover: var(--ks-color-fg);
-      --c-button--color-active: var(--ks-color-fg);
+  &--outline {
+    --c-button--color: var(--ks-color-fg-alpha-2);
+    --c-button--color-hover: var(--ks-color-fg);
+    --c-button--color-active: var(--ks-color-fg);
 
-      --c-button--border-color: var(--ks-color-fg-alpha-6);
-      --c-button--border-color-hover: var(--ks-color-fg);
-      --c-button--border-color-active: var(--ks-color-fg);
+    --c-button--border-color: var(--ks-color-fg-alpha-6);
+    --c-button--border-color-hover: var(--ks-color-fg);
+    --c-button--border-color-active: var(--ks-color-fg);
 
-      --c-button--background-color-hover: transparent;
-      --c-button--background-color-active: transparent;
-    }
+    --c-button--background-color-hover: transparent;
+    --c-button--background-color-active: transparent;
   }
 }
 
