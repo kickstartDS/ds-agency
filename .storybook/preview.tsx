@@ -62,10 +62,7 @@ const preview: Preview = {
           : "http://localhost:9000",
     },
     html: {
-      decorator: (Story: LegacyStoryFn<ReactRenderer>, context: StoryContext) =>
-        defaultDecorateStory(Story, [unpackDecorator, providerDecorator])(
-          context
-        ),
+      decorators: [unpackDecorator, providerDecorator],
     },
   },
   decorators: [
