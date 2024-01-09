@@ -2643,10 +2643,10 @@
   resolved "https://registry.npmjs.org/@juggle/resize-observer/-/resize-observer-3.4.0.tgz"
   integrity sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==
 
-"@kickstartds/base@^3.0.0-next.11":
-  version "3.0.0-next.11"
-  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-3.0.0-next.11.tgz#694d93a8300fee05b37e14d12c3ce70473a23c1a"
-  integrity sha512-bKH9tco3GZcfXO0tXrP953K7QufynIOZdSdAslGFfvH1ySrnlQRFtGOqmD6cZEc0SjAaYTs6NDDNVYtCBWzQqw==
+"@kickstartds/base@2.3.0-beta.0":
+  version "2.3.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-2.3.0-beta.0.tgz#ab043bc7beb9f832f87fa37e1509f28e747f660e"
+  integrity sha512-oeR21Z7jNkL3dHh+T/1LtgKozSLwfFaIBbLhjw202iqv8WOmJj4nuFxvCmSdqJ5Qb5WockUySl4UI3F2iPXIPA==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
@@ -2655,10 +2655,10 @@
     photoswipe "^5.3.7"
     vhtml "^2.2.0"
 
-"@kickstartds/blog@^3.0.0-next.10":
-  version "3.0.0-next.10"
-  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-3.0.0-next.10.tgz#bf6f8b80527d9fd1a9537fe7fb8929afa455f98f"
-  integrity sha512-fy61b/Y8ypyWn9Fih0A3FiPWybU0wujXh0Cx48re/aFk2vNNqWU9GmEQkLc2SkMRE0kwVH2VXnwqOia+UC7vMA==
+"@kickstartds/blog@2.3.0-beta.0":
+  version "2.3.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-2.3.0-beta.0.tgz#36c2fda90170ca511989484c6b01d721b520aaf3"
+  integrity sha512-Zz8IAobDwrIynwLzzb7SmcINbdoVbdPq4oNtdNGzXnenDpoM5hnewuef9kqfvpxSyWSAdEnlZCQDcRnINsy4DQ==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
@@ -2674,10 +2674,10 @@
     classnames "^2.3.2"
     countup.js "^2.6.2"
 
-"@kickstartds/core@^3.0.0-next.7":
-  version "3.0.0-next.7"
-  resolved "https://registry.yarnpkg.com/@kickstartds/core/-/core-3.0.0-next.7.tgz#86ce61798ff55f774bd4a77ef581a1aae7207f54"
-  integrity sha512-0kUlaFnLqh2CX2eZj/z6r1twzBsXGFmeIqVkB2dVKy1ByF5Bt8ou5GVbsiuSFnX8cSddj0TomKUjFMr7KJp+8A==
+"@kickstartds/core@3.0.0-beta.0":
+  version "3.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/core/-/core-3.0.0-beta.0.tgz#cf8e5e21574d7d170f339e9d08c7278ae2f9f25f"
+  integrity sha512-QcQ8XNtygosOaebNLWQ6UZuFnpB4O1HBhPsLHHH0DlVrYKNisd99nyr1P5zy4GE4Qw9VBpWJao12Ap+e13QuVw==
   dependencies:
     "@babel/runtime" "^7.21.5"
     bourbon "^7.3.0"
@@ -2692,10 +2692,10 @@
     pubsub-js "^1.9.4"
     sass "^1.62.1"
 
-"@kickstartds/form@^2.2.3-beta.0":
-  version "2.2.3-beta.0"
-  resolved "https://registry.npmjs.org/@kickstartds/form/-/form-2.2.3-beta.0.tgz#2bddb17e7ed96bdf896f73bdc0dfb658c1e5ee08"
-  integrity sha512-RZXw3zLED2onVHYy25IjKIRuixsUbklE0jpeHElz/F+nFv0DImsjlsViK/dFYd7RgG1FDOx4k/xMeXdceaHgSg==
+"@kickstartds/form@2.3.0-beta.0":
+  version "2.3.0-beta.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-2.3.0-beta.0.tgz#4d45813ad4e19fae3cc33da55c8093f2d9870c55"
+  integrity sha512-/uEgmx2+1NSLU2ekLdlYohYu7nIRmlKev0bxaaPVBMQgynW7tI6kY7LWyO0jcbFyP7ZKnESH015GeYEHyXmH2w==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"

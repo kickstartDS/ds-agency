@@ -3,6 +3,12 @@
 .l-section {
   --l-section--background-color: var(--ks-background-color-default);
 
+  --l-section--tile-width-control: 14rem;
+  --l-section--tile-width-card: 20rem;
+  --l-section--tile-width-narrow: var(--l-section--content-width-narrow);
+  --l-section--tile-width-medium: var(--l-section--content-width-default);
+  --l-section--tile-width-wide: var(--l-section--content-width-wide);
+
   &--accent {
     --l-section--background-color: var(--ks-background-color-accent);
   }
