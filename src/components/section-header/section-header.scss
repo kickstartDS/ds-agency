@@ -2,13 +2,54 @@
 @include container.wrapper("section-header");
 
 .c-section-header {
+  &--container-mobile {
+    --section-header--padding: 0.5em;
+
+    position: absolute !important;
+    display: block;
+    padding-top: var(--ks-spacing-l);
+    height: 100%;
+    top: 0;
+    z-index: 100;
+    pointer-events: none;
+    right: 0;
+    padding-bottom: 5rem;
+
+    .c-section-header__controls {
+      position: sticky;
+      top: calc(100% - 6rem);
+
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: var(--ks-spacing-stack-s);
+
+      background-color: var(--dsa-interface--background);
+      padding: var(--section-header--padding);
+      border-radius: var(--ks-border-radius-card) 0 0 var(--ks-border-radius-card);
+      background-color: var(--dsa-interface--background);
+      box-shadow: var(--dsa-interface--shadow);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      pointer-events: all;
+    }
+
+    // @media (min-width: 48rem) {
+    //   display: none;
+    // }
+  }
+
   &--container {
     position: sticky;
     top: var(--ks-spacing-s);
     width: 100%;
-    z-index: 2;
+    z-index: 500;
     padding: 0 var(--l-section--content-padding);
     padding-bottom: var(--ks-spacing-m);
+  }
+
+  > * {
+    flex: 1 1;
   }
 
   padding: var(--ks-spacing-inset-squish-m);
@@ -17,6 +58,7 @@
   box-shadow: var(--dsa-interface--shadow);
 
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 
   max-width: var(--l-section--content-width-default);
   width: 100%;
@@ -28,10 +70,13 @@
   align-items: center;
   flex-wrap: wrap;
 
+  .c-tag-label--primary {
+    background-color: var(--ks-background-color-primary);
+  }
+
   &__main {
-    flex: 1 1;
-    flex-basis: 65%;
     display: flex;
+    align-items: center;
     gap: var(--ks-spacing-stack-xs) var(--ks-spacing-inline-s);
 
     .l-container {
@@ -43,6 +88,17 @@
     }
   }
 
+  &__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--ks-spacing-inline-s);
+    display: none;
+    @media (min-width: 48rem) {
+      display: flex;
+    }
+  }
+
   &__side {
     display: flex;
     flex-direction: column;
@@ -51,11 +107,13 @@
   }
 
   a.c-section-header__link {
+    white-space: nowrap;
     font: var(--ks-font-interface-m);
     font-weight: var(--ks-font-weight-semi-bold);
 
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 
     gap: 0.25em;
 

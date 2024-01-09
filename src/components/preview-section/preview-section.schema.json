@@ -11,11 +11,17 @@
         "title": {
           "$ref": "http://schema.mydesignsystem.com/section-header.schema.json#/properties/title"
         },
-        "label": {
-          "$ref": "http://schema.mydesignsystem.com/section-header.schema.json#/properties/label"
+        "type": {
+          "$ref": "http://schema.mydesignsystem.com/section-header.schema.json#/properties/type"
         },
         "link": {
           "$ref": "http://schema.mydesignsystem.com/section-header.schema.json#/properties/link"
+        },
+        "contentToggle": {
+          "type": "boolean",
+          "title": "Content Layout",
+          "description": "Toggle Content Wireframe",
+          "default": false
         }
       }
     },

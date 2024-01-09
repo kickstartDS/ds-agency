@@ -31,6 +31,12 @@
   --l-section--content-width-full: 100vw !important;
   --l-section--content-width-wide: 1440px !important;
 
+  --dsa-interface--gradient: linear-gradient(
+    90deg,
+    var(--ks-color-primary-to-bg-9),
+    var(--ks-color-primary-to-bg-7),
+    var(--ks-color-primary-to-bg-9)
+  );
   --dsa-interface--background: #161933b8;
   --dsa-interface--shadow: 0 0 0 2px var(--ks-color-fg-alpha-8), 0 0px 8px var(--ks-color-fg-alpha-5);
 

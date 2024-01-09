@@ -7,8 +7,9 @@
     "title": {
       "type": "string"
     },
-    "label": {
-      "type": "string"
+    "type": {
+      "type": "string",
+      "enum": ["paid", "free"]
     },
     "link": {
       "type": "object",

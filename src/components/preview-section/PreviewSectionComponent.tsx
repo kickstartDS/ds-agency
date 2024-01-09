@@ -1,9 +1,10 @@
+import classnames from "classnames";
 import { FC, PropsWithChildren } from "react";
 import { PreviewSectionProps } from "./PreviewSectionProps";
 import "./preview-section.scss";
 import { Section } from "../section/SectionComponent";
 import { SectionHeader } from "../section-header/SectionHeaderComponent";
-import { InvertToggle } from "../invertToggle/InvertToggle";
+import { SectionControls } from "../section-controls/SectionControlsComponent";
 
 export const PreviewSection: FC<PropsWithChildren<PreviewSectionProps>> = ({
   preview,
@@ -24,7 +25,7 @@ export const PreviewSection: FC<PropsWithChildren<PreviewSectionProps>> = ({
     <div className="l-preview-section--wrapper">
       <SectionHeader
         title={preview.title}
-        label={preview.label}
+        type={preview.type}
         link={preview.link}
       />
       <Section
@@ -39,12 +40,15 @@ export const PreviewSection: FC<PropsWithChildren<PreviewSectionProps>> = ({
         spaceAfter={spaceAfter}
         inverted={inverted}
         buttons={buttons}
-        className="l-preview-section"
+        className={classnames(
+          "l-preview-section",
+          preview?.contentToggle ? "l-preview-section--layout" : ""
+        )}
         {...props}
       >
         {children}
-        <InvertToggle target=".l-preview-section--wrapper" />
       </Section>
+      <SectionControls themeSwitch layoutToggle invertToggle />
     </div>
   );
 };

@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/switch.schema.json",
+  "title": "Switch",
+  "type": "object",
+  "properties": {
+    "icon": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string"
+    },
+    "className": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -5,11 +5,9 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export interface SectionHeaderProps {
-  title?: string;
-  type?: "paid" | "free";
-  link?: {
-    href?: string;
-    label?: string;
-  };
+export interface SwitchProps {
+  icon?: string;
+  label?: string;
+  target?: string;
+  className?: string;
 }

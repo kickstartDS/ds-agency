@@ -11,25 +11,35 @@ import { Container } from "@kickstartds/core/lib/container";
 export const SectionHeader: FC<PropsWithChildren<SectionHeaderProps>> = ({
   title,
   link,
-  label,
+  type,
 }) => {
   return (
-    <div className="c-section-header--container">
-      <Container name="section-header">
-        <div className={classnames("c-section-header")}>
-          <div className="c-section-header__main">
-            <Headline level="h4" style="p" text={title} spaceAfter="minimum" />
-            <TagLabel label={label} />
-          </div>
-          <div className="c-section-header__side">
+    <>
+      <div className="c-section-header--container">
+        <Container name="section-header">
+          <div className={classnames("c-section-header")}>
+            <div className="c-section-header__main">
+              <Headline
+                level="h4"
+                style="p"
+                text={title}
+                spaceAfter="minimum"
+              />
+              <TagLabel
+                className={type === "paid" ? "c-tag-label--primary" : ""}
+                label={
+                  type === "free" ? "Free" : type === "paid" ? "Paid" : "Paid"
+                }
+              />
+            </div>
             <Link href={link.href} className="c-section-header__link">
               <Icon icon="storybook" />
               {link.label}
               <Icon icon="arrow-right" />
             </Link>
           </div>
-        </div>
-      </Container>
-    </div>
+        </Container>
+      </div>
+    </>
   );
 };
