@@ -22,6 +22,12 @@
       "title": "Label",
       "description": "Label for the Teaser Card"
     },
+    "layout": {
+      "type": "string",
+      "enum": ["stack", "row"],
+      "description": "Layout for the Teaser Card",
+      "default": "stack"
+    },
     "target": {
       "type": "string",
       "title": "Target",
@@ -39,6 +45,12 @@
       "title": "Image",
       "description": "Image to display as cover",
       "format": "uri"
+    },
+    "imageRatio": {
+      "type": "string",
+      "enum": ["wide", "landscape", "square", "unset"],
+      "description": "Aspect ratio of the image",
+      "default": "wide"
     }
   },
   "additionalProperties": false,

@@ -72,6 +72,9 @@
           "backgroundColor": {
             "$ref": "http://schema.kickstartds.com/content/storytelling.schema.json#/properties/backgroundColor"
           },
+          "backgroundImage": {
+            "$ref": "http://schema.kickstartds.com/content/storytelling.schema.json#/properties/backgroundImage"
+          },
           "textColor": {
             "$ref": "http://schema.kickstartds.com/content/storytelling.schema.json#/properties/box/properties/textColor"
           }

@@ -1,6 +1,7 @@
 @import "../../selectors";
 
-.c-button {
+a.c-button,
+button.c-button {
   --c-button--border-radius: var(--ks-border-radius-pill);
   --c-button--padding: 0.75em 2em;
   --c-button--font-weight: var(--ks-font-weight-semi-bold);

@@ -54,6 +54,10 @@ export type Icon = string;
  */
 export type BackgroundColor = string;
 /**
+ * Background image for the whole element
+ */
+export type BackgroundImage = string;
+/**
  * Overwrite the color to use for the text content
  */
 export type TextColor = string;
@@ -76,6 +80,7 @@ export interface MosaicProps {
       icon?: Icon;
     };
     backgroundColor?: BackgroundColor;
+    backgroundImage?: BackgroundImage;
     textColor?: TextColor;
   }[];
 }

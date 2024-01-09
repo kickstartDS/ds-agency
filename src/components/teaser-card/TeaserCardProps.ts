@@ -37,7 +37,15 @@ export interface TeaserCardProps {
   headline?: Headline;
   text?: Text;
   label?: Label;
+  /**
+   * Layout for the Teaser Card
+   */
+  layout?: "stack" | "row";
   target?: Target;
   displayButton?: DisplayButton;
   image?: Image;
+  /**
+   * Aspect ratio of the image
+   */
+  imageRatio?: "wide" | "landscape" | "square" | "unset";
 }

@@ -39,6 +39,8 @@ export const PageNavigation: Story = {
 export const ShowcasePreview: Story = {
   args: pack({
     label: "Tech",
+    layout: "row",
+    imageRatio: "wide",
     headline: "Transformation Love Story",
     text: "See how we saved TechFusions a year's worth of development time",
     image: "img/showcases/comp_tfe01.jpg",

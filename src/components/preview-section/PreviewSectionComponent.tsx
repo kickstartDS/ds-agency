@@ -33,12 +33,12 @@ export const PreviewSection: FC<PropsWithChildren<PreviewSectionProps>> = ({
         //@ts-ignore
         style={style}
         spotlight={spotlight}
+        content={content}
         backgroundColor={backgroundColor}
         spaceBefore={spaceBefore}
         spaceAfter={spaceAfter}
         inverted={inverted}
         buttons={buttons}
-        invertToggle
         className="l-preview-section"
         {...props}
       >

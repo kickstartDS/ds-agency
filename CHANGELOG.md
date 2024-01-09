@@ -1,3 +1,104 @@
+# v2.1.105 (Fri Jan 05 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(section): pass content prop to component ([@fleven-kds](https://github.com/fleven-kds))
+- feat(button): increase selector specificity ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.1.104 (Fri Jan 05 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(button-tokens): increase selector specificity ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.1.103 (Thu Jan 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(showcasesOverview): adjust template ([@fleven-kds](https://github.com/fleven-kds))
+- feat(showcasesOverview): add page concept for showcases overview ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.1.102 (Thu Jan 04 2024)
+
+#### 🐛 Bug Fix
+
+- chore: update dependencies for form and cli ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v2.1.101 (Thu Jan 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(teaserCard): tweak teaserCard layout behaviour ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.1.100 (Thu Jan 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(teaserCard): add imageRatio + layout functionality ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.1.99 (Thu Jan 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(color): adjust bg-inverted token scale ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.1.98 (Wed Jan 03 2024)
+
+#### ⚠️ Pushed to `main`
+
+- build: trigger ds update action for dsa-website-about & dsa-website-paid ([@lmestel](https://github.com/lmestel))
+- fix: resolve react warnings ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.1.97 (Wed Jan 03 2024)
 
 #### ⚠️ Pushed to `main`

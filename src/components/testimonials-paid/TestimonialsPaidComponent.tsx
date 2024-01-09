@@ -11,10 +11,15 @@ interface ConditionalSliderProps extends SliderProps {
 
 export const ConditionalSlider: FC<
   PropsWithChildren<ConditionalSliderProps>
-> = ({ layout, children, ...props }) => {
+> = ({ layout, children, arrows, nav, ...props }) => {
   if (layout === "slider") {
     return (
-      <Slider className="c-testimonials c-testimonials--slider" {...props}>
+      <Slider
+        className="c-testimonials c-testimonials--slider"
+        arrows={arrows}
+        nav={nav}
+        {...props}
+      >
         {children}
       </Slider>
     );

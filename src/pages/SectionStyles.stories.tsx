@@ -16,7 +16,6 @@ const Page = () => (
       content={{
         mode: "list",
       }}
-      style="stagelights"
       width="default"
     >
       <Cta
