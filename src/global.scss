@@ -8,6 +8,10 @@
 @use "./fonts-google";
 @use "./selectors" as *;
 
+body {
+  background: var(--ks-background-color-default);
+}
+
 #{$selectors} {
   --g-topic--font-weight: var(--ks-font-weight-medium);
   --g-topic--color: var(--ks-color-fg);

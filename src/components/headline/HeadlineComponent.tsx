@@ -68,6 +68,7 @@ export const Headline = forwardRef<
     ) : null;
   }
 );
+Headline.displayName = "Headline";
 
 export const HeadlineProvider: FC<PropsWithChildren> = (props) => (
   <HeadlineContext.Provider {...props} value={Headline} />

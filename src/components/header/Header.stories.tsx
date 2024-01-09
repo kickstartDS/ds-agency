@@ -25,6 +25,6 @@ type Story = StoryObj<typeof HeaderComponent>;
 export default meta;
 export const Header: Story = {
   render: (args, { globals: { theme } }) => (
-    <HeaderComponent {...args} logo={themes[theme].logo} />
+    <HeaderComponent {...args} logo={themes[theme || "dsa"].logo} />
   ),
 };
