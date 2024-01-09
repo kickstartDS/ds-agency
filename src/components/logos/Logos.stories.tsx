@@ -9,9 +9,7 @@ const meta: Meta<typeof Logos> = {
   title: "Components/Logos",
   component: Logos,
   parameters: {
-    jsonSchema: {
-      schema,
-    },
+    jsonschema: schema,
   },
   ...getArgsShared(schema as JSONSchema7),
 };
