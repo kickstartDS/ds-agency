@@ -16,9 +16,9 @@ const config: StorybookConfig = {
     },
     "@kickstartds/storybook-addon-html",
     "storybook-addon-playroom",
-    "@kickstartds/storybook-addon-component-tokens",
+    // "@kickstartds/storybook-addon-component-tokens",
     "@storybook/addon-a11y",
-    // "@kickstartds/storybook-addon-jsonschema",
+    "@kickstartds/storybook-addon-jsonschema",
   ],
   framework: {
     name: "@storybook/react-vite",

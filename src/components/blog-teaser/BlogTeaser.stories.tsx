@@ -9,9 +9,7 @@ const meta: Meta<typeof BlogTeaser> = {
   title: "Blog/ Blog Teaser",
   component: BlogTeaser,
   parameters: {
-    jsonSchema: {
-      schema,
-    },
+    jsonschema: schema,
   },
   ...getArgsShared(schema as JSONSchema7),
 };
