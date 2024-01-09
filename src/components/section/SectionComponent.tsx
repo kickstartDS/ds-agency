@@ -87,6 +87,7 @@ export const Section = forwardRef<
     );
   }
 );
+Section.displayName = "Section";
 
 export const SectionProvider: FC<PropsWithChildren<any>> = (props) => (
   <SectionContext.Provider {...props} value={Section} />

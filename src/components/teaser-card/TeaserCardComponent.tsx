@@ -63,6 +63,7 @@ export const TeaserCard = forwardRef<
     );
   }
 );
+TeaserCard.displayName = "TeaserCard";
 
 export const TeaserBoxProvider: FC<PropsWithChildren> = (props) => (
   <TeaserBoxContext.Provider {...props} value={TeaserCard} />

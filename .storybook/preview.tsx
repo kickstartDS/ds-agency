@@ -1,8 +1,7 @@
 import { actions } from "@storybook/addon-actions";
-import { LegacyStoryFn } from "@storybook/types";
 import { DocsContainer, DocsContainerProps } from "@storybook/addon-docs";
-import { defaultDecorateStory } from "@storybook/preview-api";
-import { Preview, ReactRenderer, StoryContext } from "@storybook/react";
+import "lazysizes/plugins/attrchange/ls.attrchange";
+import { Preview } from "@storybook/react";
 import { unpackDecorator } from "@kickstartds/core/lib/storybook";
 import { dark } from "./themes";
 import { themeSwitchDecorator, globalThemeTypes } from "./themeSwitch";
@@ -56,16 +55,14 @@ const preview: Preview = {
       ),
     },
     playroom: {
-      url:
-        process.env.NODE_ENV === "production"
-          ? "http://localhost:9000/playroom/"
-          : "http://localhost:9000",
+      url: process.env.NODE_ENV === "production" ? "/playroom/" : undefined,
+      code(story) {
+        //@ts-expect-error
+        return unpackDecorator(story.storyFn, { args: story.initialArgs });
+      },
     },
     html: {
-      decorator: (Story: LegacyStoryFn<ReactRenderer>, context: StoryContext) =>
-        defaultDecorateStory(Story, [unpackDecorator, providerDecorator])(
-          context
-        ),
+      decorators: [unpackDecorator, providerDecorator],
     },
   },
   decorators: [

@@ -14,7 +14,7 @@ const config: StorybookConfig = {
       name: "storybook-design-token",
       options: { designTokenGlob: "src/token/storybook/*" },
     },
-    "@whitespace/storybook-addon-html",
+    "@kickstartds/storybook-addon-html",
     "storybook-addon-playroom",
     "@kickstartds/storybook-addon-component-tokens",
     "@storybook/addon-a11y",
