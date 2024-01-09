@@ -10,9 +10,7 @@ const meta: Meta<typeof Stats> = {
   title: "Components/Stats",
   component: Stats,
   parameters: {
-    jsonSchema: {
-      schema,
-    },
+    jsonschema: schema,
   },
   args,
   argTypes,

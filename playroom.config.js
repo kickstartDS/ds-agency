@@ -1,30 +1,24 @@
 const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+const include = [
+  path.resolve(__dirname, "src"),
+  path.resolve(__dirname, "node_modules", "@kickstartds"),
+  path.resolve(__dirname, "node_modules", "@glidejs"),
+];
 
 module.exports = {
-  components: "./src/playroom/components.ts",
-  outputPath: "./dist/playroom",
-
-  title: "Demo Playroom",
-  themes: "./src/playroom/themes/index.ts",
-  snippets: "./src/playroom/snippets.ts",
-  frameComponent: "./src/playroom/FrameComponent.tsx",
-  // scope: './playroom/useScope.js',
+  title: "Design System Agency",
+  components: "./components.ts",
+  outputPath: "./storybook-static/playroom",
+  snippets: "./snippets.json",
+  frameComponent: "./src/components/page-wrapper/PageWrapperComponent.tsx",
   widths: [425, 768, 1440],
   port: 9000,
-  openBrowser: true,
-  paramType: "search", // default is 'hash'
-  exampleCode: `
-    <Button
-      href="#"
-      icon="chevron-right"
-      label="More info"
-    />
-  `,
+  openBrowser: false,
+  paramType: "hash",
   baseUrl: "/playroom/",
   iframeSandbox: "allow-scripts",
-  typeScriptFiles: ["src/components/**/*.{ts,tsx}", "!**/node_modules"],
   webpackConfig: () => ({
     plugins: [
       new CopyPlugin({
@@ -35,26 +29,32 @@ module.exports = {
       rules: [
         {
           test: /\.(js|jsx|ts|tsx)$/,
-          exclude: /node_modules\/(?!(@kickstartds)\/).*/,
-          use: {
-            loader: "babel-loader",
-            options: {
-              presets: [
-                "@babel/preset-env",
-                ["@babel/preset-react", { runtime: "automatic" }],
-                "@babel/preset-typescript",
-              ],
-            },
+          include,
+          use: ["babel-loader"],
+          resolve: {
+            fullySpecified: false,
           },
         },
         {
           test: /\.css$/,
-          use: [MiniCssExtractPlugin.loader, "css-loader"],
-          include: [__dirname],
+          include,
+          use: ["style-loader", "css-loader"],
         },
         {
           test: /\.scss$/,
-          use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+          include,
+          use: [
+            "style-loader",
+            "css-loader",
+            {
+              loader: "sass-loader",
+              options: {
+                sassOptions: {
+                  includePaths: ["node_modules"],
+                },
+              },
+            },
+          ],
         },
       ],
     },

@@ -52,6 +52,7 @@ export const Image = forwardRef<
     />
   )
 );
+Image.displayName = "Image";
 
 export const ImageProvider: FC<PropsWithChildren> = (props) => (
   <PictureContext.Provider {...props} value={Image} />

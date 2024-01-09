@@ -49,7 +49,7 @@
 
       .c-teaser__body {
         justify-content: center;
-        flex-basis: 60%;
+        flex-basis: 50%;
 
         .c-teaser__text {
           flex: 0;
@@ -57,7 +57,7 @@
       }
 
       > :first-child:not(.c-teaser__body) {
-        flex: 40%;
+        flex: 50%;
         border-radius: var(--c-teaser--border-radius) 0 0 var(--c-teaser--border-radius);
       }
     }
