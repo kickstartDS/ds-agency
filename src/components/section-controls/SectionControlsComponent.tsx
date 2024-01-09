@@ -1,4 +1,3 @@
-import classnames from "classnames";
 import { FC, PropsWithChildren } from "react";
 import { SectionControlsProps } from "./SectionControlsProps";
 import "./section-controls.scss";
