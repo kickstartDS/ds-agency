@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { Header as HeaderComponent } from "./HeaderComponent";
 import { pack, unpack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
+import * as themes from "../../themes";
+import { Header as HeaderComponent } from "./HeaderComponent";
 import schema from "./header.schema.dereffed.json";
-import { themes } from "../../themes";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 export const headerProps = {
