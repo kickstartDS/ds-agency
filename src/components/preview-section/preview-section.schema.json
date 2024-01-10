@@ -17,7 +17,7 @@
         "link": {
           "$ref": "http://schema.mydesignsystem.com/section-header.schema.json#/properties/link"
         },
-        "contentToggle": {
+        "layoutToggle": {
           "type": "boolean",
           "title": "Content Layout",
           "description": "Toggle Content Wireframe",

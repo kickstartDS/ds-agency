@@ -155,7 +155,7 @@ export interface PreviewSectionProps {
       href?: string;
       label?: string;
     };
-    contentToggle?: ContentLayout;
+    layoutToggle?: ContentLayout;
   };
   width?: Width;
   style?: Style;

@@ -42,13 +42,17 @@ export const PreviewSection: FC<PropsWithChildren<PreviewSectionProps>> = ({
         buttons={buttons}
         className={classnames(
           "l-preview-section",
-          preview?.contentToggle ? "l-preview-section--layout" : ""
+          preview?.layoutToggle ? "l-preview-section--layout" : ""
         )}
         {...props}
       >
         {children}
       </Section>
-      <SectionControls themeSwitch layoutToggle invertToggle />
+      <SectionControls
+        layoutToggle={preview.layoutToggle}
+        themeSwitch
+        invertToggle
+      />
     </div>
   );
 };
