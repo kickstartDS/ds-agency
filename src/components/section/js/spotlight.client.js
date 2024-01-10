@@ -1,70 +1,24 @@
-import { Component, define } from "@kickstartds/core/lib/component";
-
-export const identifier = "dsa.spotlight";
-
-export default class Spotlight extends Component {
-  static identifier = identifier;
-
-  constructor(element) {
-    super(element);
-
-    this.element.addEventListener("mousemove", this, { passive: true });
-    window.addEventListener("mouseout", this);
-
-    this.onDisconnect(this.cleanup.bind(this));
-
-    // this.isOpen = this.element.getAttribute("aria-expanded") === "true";
-    // this.nav = document.getElementById(
-    //   this.element.getAttribute("aria-controls")
-    // );
-    // this.navMainDropdowns = [...document.querySelectorAll("#nav-main details")];
-
-    // this.element.addEventListener("click", this);
-  }
-
-  onmousemove(event) {
-    console.log(
-      "MOVE",
-      getComputedStyle(this.element).getPropertyValue(
-        "--l-section--spotlight-top"
-      )
-    );
-    this.element.style.setProperty(
-      "--l-section--spotlight-top",
-      `${event.clientY - this.element.getBoundingClientRect().top}px`
-    );
-    this.element.style.setProperty(
-      "--l-section--spotlight-left",
-      `${event.clientX - this.element.getBoundingClientRect().left}px`
-    );
-    // this.isOpen = true;
-    // body.lock();
-    // this.element.setAttribute("aria-expanded", this.isOpen);
-    // this.nav.focus();
-
-    // window.addEventListener("keydown", this);
-  }
-
-  onmouseout() {
-    console.log("OUT");
-    // this.isOpen = false;
-    // body.reset();
-    // this.element.setAttribute("aria-expanded", this.isOpen);
-    // this.element.focus();
-
-    // window.removeEventListener("keydown", this);
-  }
-
-  cleanup() {
-    this.element.style.removeProperty("--l-section--spotlight-top");
-    this.element.style.removeProperty("--l-section--spotlight-left");
-
-    this.element.removeEventListener("mousemove", this, { passive: true });
-    window.removeEventListener("mouseout", this);
-  }
+function onMousemove(event) {
+  this.style.setProperty(
+    "--l-section--spotlight-top",
+    `${event.clientY - this.getBoundingClientRect().top}px`
+  );
+  this.style.setProperty(
+    "--l-section--spotlight-left",
+    `${event.clientX - this.getBoundingClientRect().left}px`
+  );
 }
 
-define(identifier, Spotlight);
+export const initSpotlight = (element) => {
+  element.addEventListener("mousemove", onMousemove, { passive: true });
+
+  return () => {
+    element.style.removeProperty("--l-section--spotlight-top");
+    element.style.removeProperty("--l-section--spotlight-left");
+
+    element.removeEventListener("mousemove", onMousemove, { passive: true });
+  };
+};
 
 // const hero = document.querySelector(".hero");
 // const spotlight = document.querySelector(".spotlight");

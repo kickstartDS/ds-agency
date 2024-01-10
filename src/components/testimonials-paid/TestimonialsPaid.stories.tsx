@@ -12,9 +12,7 @@ const meta: Meta<typeof TestimonialsPaid> = {
   title: "Paid Components/Testimonials",
   component: TestimonialsPaid,
   parameters: {
-    jsonSchema: {
-      schema,
-    },
+    jsonschema: schema,
   },
   args,
   argTypes,

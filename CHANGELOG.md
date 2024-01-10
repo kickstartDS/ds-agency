@@ -1,3 +1,24 @@
+# v2.2.0 (Tue Jan 09 2024)
+
+#### 🚀 Enhancement
+
+- Add section mode slider [#40](https://github.com/kickstartDS/ds-agency/pull/40) ([@lmestel](https://github.com/lmestel) [@fleven-kds](https://github.com/fleven-kds))
+
+#### 🏠 Internal
+
+- Reactivate storybook-addon-jsonschema [#58](https://github.com/kickstartDS/ds-agency/pull/58) ([@lmestel](https://github.com/lmestel))
+
+#### 📝 Documentation
+
+- Add & configure playroom [#57](https://github.com/kickstartDS/ds-agency/pull/57) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.1.105 (Fri Jan 05 2024)
 
 #### ⚠️ Pushed to `main`

@@ -1,2 +1,5 @@
 import "../../token/tokens.css";
-export { RawPageWrapper as PageWrapper } from "./RawPageWrapperComponent";
+import { RawPageWrapper as PageWrapper } from "./RawPageWrapperComponent";
+
+export { PageWrapper };
+export default PageWrapper;

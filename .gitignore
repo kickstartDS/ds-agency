@@ -8,6 +8,11 @@ storybook
 storybook-static
 public/design-tokens.source.json
 
+# Playroom
+tmp
+snippets.json
+components.ts
+
 # kickstartDS
 *.dereffed.json
 *-tokens.json

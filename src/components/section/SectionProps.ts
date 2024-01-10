@@ -109,7 +109,11 @@ export type Gutter = "large" | "default" | "small" | "none";
 /**
  * Layout mode used for section contents
  */
-export type Mode = "default" | "tile" | "list";
+export type Mode = "default" | "tile" | "list" | "slider";
+/**
+ * Set min-width for the tiles in the grid
+ */
+export type TileWidth = "control" | "card" | "narrow" | "medium" | "wide";
 /**
  * Allowed components for content
  */
@@ -166,6 +170,7 @@ export interface SectionProps {
     align?: ContentAlignment;
     gutter?: Gutter;
     mode?: Mode;
+    tileWidth?: TileWidth;
   };
   components?: Content;
   buttons?: Buttons;

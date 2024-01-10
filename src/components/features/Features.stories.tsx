@@ -8,9 +8,7 @@ const meta: Meta<typeof Features> = {
   title: "Components/Features",
   component: Features,
   parameters: {
-    jsonSchema: {
-      schema,
-    },
+    jsonschema: schema,
   },
   ...getArgsShared(schema as JSONSchema7),
 };

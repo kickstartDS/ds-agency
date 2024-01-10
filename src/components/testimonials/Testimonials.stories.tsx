@@ -13,9 +13,7 @@ const meta: Meta<typeof Testimonials> = {
   argTypes,
   component: Testimonials,
   parameters: {
-    jsonSchema: {
-      schema,
-    },
+    jsonschema: schema,
   },
 };
 

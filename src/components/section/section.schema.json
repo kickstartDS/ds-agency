@@ -143,8 +143,15 @@
           "type": "string",
           "title": "Mode",
           "description": "Layout mode used for section contents",
-          "enum": ["default", "tile", "list"],
+          "enum": ["default", "tile", "list", "slider"],
           "default": "default"
+        },
+        "tileWidth": {
+          "type": "string",
+          "title": "Tile Width",
+          "description": "Set min-width for the tiles in the grid",
+          "enum": ["control", "card", "narrow", "medium", "wide"],
+          "default": "cards"
         }
       },
       "additionalProperties": false
