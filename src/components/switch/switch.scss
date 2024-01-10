@@ -89,5 +89,9 @@
     font-weight: var(--ks-font-weight-bold);
     white-space: nowrap;
     left: 100%;
+
+    p {
+      margin: 0;
+    }
   }
 }

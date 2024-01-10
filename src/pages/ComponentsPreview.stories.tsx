@@ -27,7 +27,8 @@ const Page = () => {
           type: "paid",
           contentToggle: true,
           link: {
-            label: "View in Storybook",
+            labelDesktop: "View in Storybook",
+
             href: "#",
           },
         }}
@@ -62,7 +63,8 @@ const Page = () => {
           type: "free",
           contentToggle: true,
           link: {
-            label: "View in Storybook",
+            labelDesktop: "View in Storybook",
+
             href: "#",
           },
         }}
@@ -98,7 +100,8 @@ const Page = () => {
           type: "free",
           contentToggle: true,
           link: {
-            label: "View in Storybook",
+            labelDesktop: "View in Storybook",
+
             href: "#",
           },
         }}
@@ -134,7 +137,8 @@ const Page = () => {
           type: "free",
           contentToggle: true,
           link: {
-            label: "View in Storybook",
+            labelDesktop: "View in Storybook",
+
             href: "#",
           },
         }}
@@ -170,7 +174,8 @@ const Page = () => {
           type: "free",
           contentToggle: true,
           link: {
-            label: "View in Storybook",
+            labelDesktop: "View in Storybook",
+
             href: "#",
           },
         }}
@@ -206,7 +211,8 @@ const Page = () => {
           type: "free",
           contentToggle: true,
           link: {
-            label: "View in Storybook",
+            labelDesktop: "View in Storybook",
+
             href: "#",
           },
         }}
@@ -242,7 +248,8 @@ const Page = () => {
           type: "free",
           contentToggle: true,
           link: {
-            label: "View in Storybook",
+            labelDesktop: "View in Storybook",
+
             href: "#",
           },
         }}
@@ -278,7 +285,8 @@ const Page = () => {
           type: "free",
           contentToggle: true,
           link: {
-            label: "View in Storybook",
+            labelDesktop: "View in Storybook",
+
             href: "#",
           },
         }}
@@ -326,7 +334,8 @@ const Page = () => {
           type: "free",
           contentToggle: true,
           link: {
-            label: "View in Storybook",
+            labelDesktop: "View in Storybook",
+
             href: "#",
           },
         }}
@@ -360,7 +369,8 @@ const Page = () => {
           type: "free",
           contentToggle: true,
           link: {
-            label: "View in Storybook",
+            labelDesktop: "View in Storybook",
+
             href: "#",
           },
         }}
@@ -390,7 +400,8 @@ const Page = () => {
           type: "free",
           contentToggle: true,
           link: {
-            label: "View in Storybook",
+            labelDesktop: "View in Storybook",
+
             href: "#",
           },
         }}

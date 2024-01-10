@@ -149,7 +149,8 @@ export interface PreviewSectionProps {
     type?: "paid" | "free";
     link?: {
       href?: string;
-      label?: string;
+      labelDesktop?: string;
+      labelMobile?: string;
     };
     contentToggle?: ContentLayout;
   };

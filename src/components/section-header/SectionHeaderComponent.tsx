@@ -32,10 +32,28 @@ export const SectionHeader: FC<PropsWithChildren<SectionHeaderProps>> = ({
                 }
               />
             </div>
-            <Link href={link.href} className="c-section-header__link">
-              <Icon icon="storybook" />
-              {link.label}
-              <Icon icon="arrow-right" />
+            <Link
+              href={link.href}
+              className="c-section-header__link c-section-header__link-desktop"
+            >
+              <span className="c-section-header__link-label">
+                {link.labelDesktop}
+              </span>
+              <Icon icon="link" />
+            </Link>
+
+            <Link
+              href={link.href}
+              className="c-section-header__link c-section-header__link-mobile"
+            >
+              {link?.labelMobile ? (
+                <span className="c-section-header__link-label-mobile">
+                  {link.labelMobile}
+                </span>
+              ) : (
+                ""
+              )}
+              <Icon icon="link" />
             </Link>
           </div>
         </Container>

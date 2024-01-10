@@ -11,18 +11,20 @@ export const SectionControls: FC<PropsWithChildren<SectionControlsProps>> = ({
 }) => {
   return (
     <div className="c-section-controls">
-      <div className="c-section-controls__controls">
-        {themeSwitch ? (
-          <Switch label="Switch Theme" icon="paint" target={""} />
-        ) : (
-          ""
-        )}
-        {invertToggle ? <InvertToggle target={".l-section"} /> : ""}
-        {layoutToggle ? (
-          <Switch label="Show content" icon="wireframe" target={""} />
-        ) : (
-          ""
-        )}
+      <div className="c-section-controls__wrapper">
+        <div className="c-section-controls__controls">
+          {themeSwitch ? (
+            <Switch label="Switch Theme" icon="paint" target={""} />
+          ) : (
+            ""
+          )}
+          {invertToggle ? <InvertToggle target={".l-section"} /> : ""}
+          {layoutToggle ? (
+            <Switch label="Show content" icon="wireframe" target={""} />
+          ) : (
+            ""
+          )}
+        </div>
       </div>
     </div>
   );

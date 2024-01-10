@@ -10,6 +10,7 @@ export interface SectionHeaderProps {
   type?: "paid" | "free";
   link?: {
     href?: string;
-    label?: string;
+    labelDesktop?: string;
+    labelMobile?: string;
   };
 }

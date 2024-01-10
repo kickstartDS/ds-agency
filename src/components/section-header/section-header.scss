@@ -14,29 +14,6 @@
     pointer-events: none;
     right: 0;
     padding-bottom: 5rem;
-
-    .c-section-header__controls {
-      position: sticky;
-      top: calc(100% - 6rem);
-
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      gap: var(--ks-spacing-stack-s);
-
-      background-color: var(--dsa-interface--background);
-      padding: var(--section-header--padding);
-      border-radius: var(--ks-border-radius-card) 0 0 var(--ks-border-radius-card);
-      background-color: var(--dsa-interface--background);
-      box-shadow: var(--dsa-interface--shadow);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      pointer-events: all;
-    }
-
-    // @media (min-width: 48rem) {
-    //   display: none;
-    // }
   }
 
   &--container {
@@ -46,10 +23,6 @@
     z-index: 500;
     padding: 0 var(--l-section--content-padding);
     padding-bottom: var(--ks-spacing-m);
-  }
-
-  > * {
-    flex: 1 1;
   }
 
   padding: var(--ks-spacing-inset-squish-m);
@@ -75,6 +48,7 @@
   }
 
   &__main {
+    flex: 70;
     display: flex;
     align-items: center;
     gap: var(--ks-spacing-stack-xs) var(--ks-spacing-inline-s);
@@ -88,28 +62,9 @@
     }
   }
 
-  &__controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: var(--ks-spacing-inline-s);
-    display: none;
-    @media (min-width: 48rem) {
-      display: flex;
-    }
-  }
-
-  &__side {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: var(--ks-spacing-stack-xs);
-  }
-
   a.c-section-header__link {
+    flex: 30;
     white-space: nowrap;
-    font: var(--ks-font-interface-m);
-    font-weight: var(--ks-font-weight-semi-bold);
 
     display: flex;
     align-items: center;
@@ -120,6 +75,29 @@
     .icon {
       width: 1.25em;
       height: 1.25em;
+    }
+
+    &-desktop {
+      font: var(--ks-font-interface-m);
+      font-weight: var(--ks-font-weight-semi-bold);
+
+      display: none;
+      @media (min-width: 48rem) {
+        display: flex;
+      }
+    }
+
+    &-mobile {
+      padding: 0.35em;
+      border-radius: 4px;
+      flex-grow: 0;
+      font: var(--ks-font-interface-m);
+      font-weight: var(--ks-font-weight-semi-bold);
+
+      display: flex;
+      @media (min-width: 48rem) {
+        display: none;
+      }
     }
   }
 }

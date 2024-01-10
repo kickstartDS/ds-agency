@@ -17,7 +17,10 @@
         "href": {
           "type": "string"
         },
-        "label": {
+        "labelDesktop": {
+          "type": "string"
+        },
+        "labelMobile": {
           "type": "string"
         }
       }
