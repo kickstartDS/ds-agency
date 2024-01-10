@@ -5,9 +5,24 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+/**
+ * Whether the input is disabled
+ */
+export type Disabled = boolean;
+export type Options = {
+  value?: string;
+  label: string;
+  disabled?: Disabled;
+}[];
+/**
+ * The label for the element
+ */
+export type Label = string;
+
 export interface SelectProps {
   icon?: string;
-  label?: string;
+  options?: Options;
+  label?: Label;
   target?: string;
   className?: string;
 }

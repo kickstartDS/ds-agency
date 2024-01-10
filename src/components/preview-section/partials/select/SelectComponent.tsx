@@ -20,7 +20,6 @@ export const Select: FC<PropsWithChildren<SelectProps>> = ({
     >
       <div className="select__label">
         {icon && <Icon className="select__icon" icon={icon} />}
-        {/* <span>{label}</span> */}
       </div>
       <SelectField
         label={label}

@@ -7,8 +7,11 @@
     "icon": {
       "type": "string"
     },
+    "options": {
+      "$ref": "http://schema.kickstartds.com/form/select-field.schema.json#/properties/options"
+    },
     "label": {
-      "type": "string"
+      "$ref": "http://schema.kickstartds.com/form/select-field.schema.json#/properties/label"
     },
     "target": {
       "type": "string"

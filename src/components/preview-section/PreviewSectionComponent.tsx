@@ -3,8 +3,8 @@ import { FC, PropsWithChildren } from "react";
 import { PreviewSectionProps } from "./PreviewSectionProps";
 import "./preview-section.scss";
 import { Section } from "../section/SectionComponent";
-import { SectionHeader } from "../section-header/SectionHeaderComponent";
-import { SectionControls } from "../section-controls/SectionControlsComponent";
+import { SectionHeader } from "./partials/section-header/SectionHeaderComponent";
+import { SectionControls } from "./partials/section-controls/SectionControlsComponent";
 
 export const PreviewSection: FC<PropsWithChildren<PreviewSectionProps>> = ({
   preview,
