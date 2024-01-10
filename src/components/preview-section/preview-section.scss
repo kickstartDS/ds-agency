@@ -48,7 +48,11 @@
     }
 
     &:hover {
-      .l-section__container:not(.l-section__container--headline, .l-section__container--buttons) {
+      .l-section__container:not(
+          .l-section__container--headline,
+          .l-section__container--buttons,
+          .l-section__slider-nav
+        ) {
         .l-section__content {
           > *:not(.c-section-header--container-mobile) {
             > * {
