@@ -2,7 +2,7 @@
 @include container.wrapper("section-controls");
 
 .c-section-controls {
-  --section-controls--padding: 0.5em;
+  --section-controls--padding: 0.75em;
   position: absolute;
   right: 0;
   top: 0;
@@ -24,15 +24,21 @@
     flex-direction: column;
     align-items: stretch;
     gap: 0.75em;
-
     background-color: var(--dsa-interface--background);
     padding: var(--section-controls--padding);
-
     border-radius: var(--ks-border-radius-card) 0 0 var(--ks-border-radius-card);
     background-color: var(--dsa-interface--background);
     box-shadow: var(--dsa-interface--shadow);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     pointer-events: all;
+  }
+
+  .select__icon,
+  .switch__icon {
+    display: none;
+    @media (min-width: 48rem) {
+      display: block;
+    }
   }
 }

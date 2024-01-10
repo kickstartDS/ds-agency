@@ -1,5 +1,5 @@
 .select {
-  --arrow-size: 1.75em;
+  --arrow-size: 2em;
   --icon-size: 2em;
 
   --select-size: 1.35em;
@@ -10,35 +10,62 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: var(--button-gap);
+  font: var(--ks-font-interface-s);
+
   transition: var(--ks-transition-collapse);
   pointer-events: all;
   cursor: pointer;
-  gap: var(--button-gap);
 
-  &__icon {
+  &__label {
+    position: relative;
+    gap: var(--button-gap);
+    display: flex;
+    align-items: center;
+    font-weight: var(--ks-font-weight-semi-bold);
+    color: var(--ks-color-fg);
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+  }
+
+  &__icon,
+  &__arrow {
     color: var(--ks-color-secondary);
     width: var(--icon-size);
     height: var(--icon-size);
   }
 
-  .c-form-field {
-    --c-form-field_icon--size: 2em;
-    --c-form-field_focus--shadow: 0;
+  &__arrow {
+    position: absolute;
+    right: 0;
+    pointer-events: none;
+    transform: translateX(-50%);
+  }
 
-    &__input {
-      font: var(--ks-font-interface-s);
-      font-weight: var(--ks-font-weight-bold);
-      padding: 0;
-      border: 0;
-      cursor: pointer;
-    }
+  select {
+    position: relative;
+    text-align: right;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    padding-right: var(--arrow-size);
 
-    &__field {
-      .icon {
-        pointer-events: none;
-        margin: 0;
-        color: var(--ks-color-secondary);
-      }
+    font: var(--ks-font-interface-s);
+    font-weight: var(--ks-font-weight-bold);
+    color: var(--ks-text-color-primary);
+
+    -webkit-appearance: none;
+    appearance: none;
+    border: 0;
+    outline: 0;
+    resize: vertical;
+
+    .icon {
+      pointer-events: none;
+      margin: 0;
+      color: var(--ks-color-secondary);
     }
   }
 }

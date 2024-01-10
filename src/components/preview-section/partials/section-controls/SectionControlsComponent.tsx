@@ -15,13 +15,31 @@ export const SectionControls: FC<PropsWithChildren<SectionControlsProps>> = ({
       <div className="c-section-controls__wrapper">
         <div className="c-section-controls__controls">
           {themeSwitch ? (
-            <Select label="Switch Theme" icon="paint" target={""} />
+            <Select
+              label="Theme: "
+              icon="paint"
+              target={""}
+              options={[
+                {
+                  label: "DSA",
+                },
+                {
+                  label: "Google",
+                },
+                {
+                  label: "Telekom",
+                },
+                {
+                  label: "Lughausen",
+                },
+              ]}
+            />
           ) : (
             ""
           )}
           {invertToggle ? <InvertToggle target={".l-section"} /> : ""}
           {layoutToggle ? (
-            <Switch label="Show content" icon="wireframe" target={""} />
+            <Switch label="Show layout" icon="wireframe" target={""} />
           ) : (
             ""
           )}

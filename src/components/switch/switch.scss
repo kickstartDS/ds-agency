@@ -1,5 +1,4 @@
 .switch {
-  --arrow-size: 1.75em;
   --icon-size: 2em;
 
   --switch-size: 1.35em;
@@ -86,7 +85,7 @@
     gap: var(--button-gap);
     align-items: center;
     color: var(--ks-text-color-interface);
-    font-weight: var(--ks-font-weight-bold);
+    font-weight: var(--ks-font-weight-semi-bold);
     white-space: nowrap;
     left: 100%;
 
