@@ -1,25 +1,14 @@
-import { Icon } from "@kickstartds/base/lib/icon";
 import { identifier } from "./InvertToggle.client";
-import "./invert-toggle.scss";
+import { Switch } from "../switch/SwitchComponent";
 
 export const InvertToggle = ({ target }: { target: string }) => {
   return (
-    <div
+    <Switch
       className="invert-toggle"
+      icon="invert"
+      label="Invert"
       ks-component={identifier}
       data-target={target}
-    >
-      <div className="invert-toggle__container">
-        <label className="invert-toggle__button">
-          <span className="invert-toggle__label">
-            <Icon className="invert-toggle__icon" icon="invert" /> Invert
-          </span>
-          <label className="invert-toggle__switch">
-            <input className="invert-toggle__checkbox" type="checkbox" />
-            <div className="invert-toggle__slider"></div>
-          </label>
-        </label>
-      </div>
-    </div>
+    />
   );
 };

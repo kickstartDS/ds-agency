@@ -7,8 +7,9 @@
     "title": {
       "type": "string"
     },
-    "label": {
-      "type": "string"
+    "type": {
+      "type": "string",
+      "enum": ["paid", "free"]
     },
     "link": {
       "type": "object",
@@ -16,7 +17,10 @@
         "href": {
           "type": "string"
         },
-        "label": {
+        "labelDesktop": {
+          "type": "string"
+        },
+        "labelMobile": {
           "type": "string"
         }
       }

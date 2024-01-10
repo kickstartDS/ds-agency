@@ -28,6 +28,10 @@ import type {LogosPaidProps} from "../logos-paid/LogosPaidProps";
 import type {ButtonProps} from "../button/ButtonProps";
 
 /**
+ * Toggle Content Wireframe
+ */
+export type ContentLayout = boolean;
+/**
  * Width of section to use
  */
 export type Width = "full" | "max" | "wide" | "default" | "narrow";
@@ -146,11 +150,13 @@ export type Buttons = ButtonProps[];
 export interface PreviewSectionProps {
   preview?: {
     title?: string;
-    label?: string;
+    type?: "paid" | "free";
     link?: {
       href?: string;
-      label?: string;
+      labelDesktop?: string;
+      labelMobile?: string;
     };
+    contentToggle?: ContentLayout;
   };
   width?: Width;
   style?: Style;
