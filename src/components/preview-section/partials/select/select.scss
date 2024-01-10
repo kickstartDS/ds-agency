@@ -1,5 +1,5 @@
 .select {
-  --arrow-size: 2em;
+  --arrow-size: 1.75em;
   --icon-size: 2em;
 
   --select-size: 1.35em;
@@ -29,18 +29,18 @@
     cursor: pointer;
   }
 
-  &__icon,
-  &__arrow {
+  &__icon {
     color: var(--ks-color-secondary);
-    width: var(--icon-size);
-    height: var(--icon-size);
   }
 
   &__arrow {
     position: absolute;
+    color: var(--ks-color-secondary);
     right: 0;
     pointer-events: none;
     transform: translateX(-50%);
+    width: var(--arrow-size);
+    height: var(--arrow-size);
   }
 
   select {

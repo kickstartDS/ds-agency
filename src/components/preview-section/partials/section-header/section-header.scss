@@ -77,26 +77,13 @@
       height: 1.25em;
     }
 
-    &-desktop {
-      font: var(--ks-font-interface-m);
-      font-weight: var(--ks-font-weight-semi-bold);
+    font: var(--ks-font-interface-m);
+    font-weight: var(--ks-font-weight-semi-bold);
 
+    .c-section-header__link__label {
       display: none;
       @media (min-width: 48rem) {
-        display: flex;
-      }
-    }
-
-    &-mobile {
-      padding: 0.35em;
-      border-radius: 4px;
-      flex-grow: 0;
-      font: var(--ks-font-interface-m);
-      font-weight: var(--ks-font-weight-semi-bold);
-
-      display: flex;
-      @media (min-width: 48rem) {
-        display: none;
+        display: block;
       }
     }
   }
