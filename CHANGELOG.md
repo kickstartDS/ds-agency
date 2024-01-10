@@ -1,3 +1,26 @@
+# v2.2.1 (Wed Jan 10 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'feature/preview-section' ([@fleven-kds](https://github.com/fleven-kds))
+- feat(sectionControls): adjust ui ([@fleven-kds](https://github.com/fleven-kds))
+- feat(previewSection): move partials into dedicated fodler ([@fleven-kds](https://github.com/fleven-kds))
+- feat(select): add select component ([@fleven-kds](https://github.com/fleven-kds))
+- feat(SectionHeader + SectionControls): develop layout ([@fleven-kds](https://github.com/fleven-kds))
+- feat(SectionControls): remove unused import ([@fleven-kds](https://github.com/fleven-kds))
+- feat(previewSection): develop layout for PreviewSection ([@fleven-kds](https://github.com/fleven-kds))
+
+#### 📝 Documentation
+
+- Add themes to playroom [#59](https://github.com/kickstartDS/ds-agency/pull/59) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.2.0 (Tue Jan 09 2024)
 
 #### 🚀 Enhancement
