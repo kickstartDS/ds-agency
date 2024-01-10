@@ -25,7 +25,7 @@ const Page = () => {
         preview={{
           title: "Cards",
           type: "paid",
-          contentToggle: true,
+          layoutToggle: true,
           link: {
             label: "View in Storybook",
 
@@ -61,7 +61,7 @@ const Page = () => {
         preview={{
           title: "Inverted",
           type: "free",
-          contentToggle: true,
+          layoutToggle: true,
           link: {
             label: "View in Storybook",
 
@@ -98,7 +98,7 @@ const Page = () => {
         preview={{
           title: "Spotlight",
           type: "free",
-          contentToggle: true,
+          layoutToggle: true,
           link: {
             label: "View in Storybook",
 
@@ -135,7 +135,7 @@ const Page = () => {
         preview={{
           title: "Stagelights",
           type: "free",
-          contentToggle: true,
+          layoutToggle: true,
           link: {
             label: "View in Storybook",
 
@@ -172,7 +172,7 @@ const Page = () => {
         preview={{
           title: "Background Color Accent",
           type: "free",
-          contentToggle: true,
+          layoutToggle: true,
           link: {
             label: "View in Storybook",
 
@@ -209,7 +209,7 @@ const Page = () => {
         preview={{
           title: "Background Color Bold",
           type: "free",
-          contentToggle: true,
+          layoutToggle: true,
           link: {
             label: "View in Storybook",
 
@@ -246,7 +246,7 @@ const Page = () => {
         preview={{
           title: "Colorful Gradient",
           type: "free",
-          contentToggle: true,
+          layoutToggle: true,
           link: {
             label: "View in Storybook",
 
@@ -283,7 +283,7 @@ const Page = () => {
         preview={{
           title: "With Buttons",
           type: "free",
-          contentToggle: true,
+          layoutToggle: true,
           link: {
             label: "View in Storybook",
 
@@ -332,7 +332,7 @@ const Page = () => {
         preview={{
           title: "Tile Layout",
           type: "free",
-          contentToggle: true,
+          layoutToggle: true,
           link: {
             label: "View in Storybook",
 
@@ -367,7 +367,7 @@ const Page = () => {
         preview={{
           title: "Flex Layout",
           type: "free",
-          contentToggle: true,
+          layoutToggle: true,
           link: {
             label: "View in Storybook",
 
@@ -398,7 +398,7 @@ const Page = () => {
         preview={{
           title: "List Layout",
           type: "free",
-          contentToggle: true,
+          layoutToggle: true,
           link: {
             label: "View in Storybook",
 
