@@ -3,6 +3,7 @@ import { SectionControlsProps } from "./SectionControlsProps";
 import "./section-controls.scss";
 import { InvertToggle } from "../invertToggle/InvertToggle";
 import { Switch } from "../switch/SwitchComponent";
+import { Select } from "../select/SelectComponent";
 
 export const SectionControls: FC<PropsWithChildren<SectionControlsProps>> = ({
   layoutToggle,
@@ -14,7 +15,7 @@ export const SectionControls: FC<PropsWithChildren<SectionControlsProps>> = ({
       <div className="c-section-controls__wrapper">
         <div className="c-section-controls__controls">
           {themeSwitch ? (
-            <Switch label="Switch Theme" icon="paint" target={""} />
+            <Select label="Switch Theme" icon="paint" target={""} />
           ) : (
             ""
           )}

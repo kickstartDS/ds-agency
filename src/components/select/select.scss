@@ -1,0 +1,44 @@
+.select {
+  --arrow-size: 1.75em;
+  --icon-size: 2em;
+
+  --select-size: 1.35em;
+  --button-gap: 0.5em;
+
+  font: var(--ks-font-interface-s);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: var(--ks-transition-collapse);
+  pointer-events: all;
+  cursor: pointer;
+  gap: var(--button-gap);
+
+  &__icon {
+    color: var(--ks-color-secondary);
+    width: var(--icon-size);
+    height: var(--icon-size);
+  }
+
+  .c-form-field {
+    --c-form-field_icon--size: 2em;
+    --c-form-field_focus--shadow: 0;
+
+    &__input {
+      font: var(--ks-font-interface-s);
+      font-weight: var(--ks-font-weight-bold);
+      padding: 0;
+      border: 0;
+      cursor: pointer;
+    }
+
+    &__field {
+      .icon {
+        pointer-events: none;
+        margin: 0;
+        color: var(--ks-color-secondary);
+      }
+    }
+  }
+}
