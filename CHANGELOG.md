@@ -1,3 +1,15 @@
+# v2.2.8 (Thu Jan 11 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(teaser-card): optimise padding + font sizes for additional breakpoints + container sizes ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.2.7 (Thu Jan 11 2024)
 
 #### ⚠️ Pushed to `main`
