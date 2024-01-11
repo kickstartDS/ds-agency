@@ -60,7 +60,7 @@ export const Cards: Story = {
   }),
 };
 
-export const CardsSlider: Story = {
+export const Slider: Story = {
   args: pack({
     content: {
       mode: "slider",
@@ -167,20 +167,6 @@ export const Inverted: Story = {
   }),
 };
 
-export const WithSpotlight: Story = {
-  args: pack({
-    content: {
-      mode: "tile",
-    },
-    headline: {
-      text: "Happy Customers Showcases",
-      sub: "We can create something shining for you too!",
-    },
-    inverted: true,
-    buttons: [],
-  }),
-};
-
 export const Spotlight: Story = {
   args: pack({
     content: {
@@ -201,8 +187,8 @@ export const Stagelights: Story = {
       mode: "tile",
     },
     headline: {
-      text: "No Agency site without some shiny happy Customer",
-      sub: "AI-generated smiles, as you see them everywhere nowadays",
+      text: "Happy Customers Showcases",
+      sub: "We can create something shining for you too!",
       align: "center",
     },
     style: "stagelights",
@@ -217,8 +203,8 @@ export const AccentBackground: Story = {
     },
     backgroundColor: "accent",
     headline: {
-      text: "No Agency site without some shiny happy Customer",
-      sub: "AI-generated smiles, as you see them everywhere nowadays",
+      text: "Happy Customers Showcases",
+      sub: "We can create something shining for you too!",
       align: "center",
     },
     buttons: [],
@@ -232,8 +218,8 @@ export const BoldBackground: Story = {
     },
     backgroundColor: "bold",
     headline: {
-      text: "No Agency site without some shiny happy Customer",
-      sub: "AI-generated smiles, as you see them everywhere nowadays",
+      text: "Happy Customers Showcases",
+      sub: "We can create something shining for you too!",
       align: "center",
     },
     buttons: [],
@@ -246,8 +232,8 @@ export const ColorfulGradient: Story = {
       mode: "tile",
     },
     headline: {
-      text: "No Agency site without some shiny happy Customer",
-      sub: "AI-generated smiles, as you see them everywhere nowadays",
+      text: "Happy Customers Showcases",
+      sub: "We can create something shining for you too!",
       align: "center",
     },
     style: "horizontalGradient",
@@ -255,46 +241,33 @@ export const ColorfulGradient: Story = {
   }),
 };
 
-export const WithCtas: Story = {
+export const WithButtons: Story = {
   args: pack({
     content: {
       mode: "default",
     },
     headline: {
-      text: "No Agency site without some shiny happy Customer",
-      sub: "AI-generated smiles, as you see them everywhere nowadays",
+      text: "Happy Customers Showcases",
+      sub: "We can create something shining for you too!",
       align: "center",
     },
     buttons: [
       {
-        label: "Convince yourself",
-        icon: "phone",
+        disabled: false,
+        icon: "arrow-right",
+        label: "All Showcases",
+        size: "medium",
+        variant: "secondary",
       },
       {
-        label: "Book a meeting",
+        disabled: false,
         icon: "date",
+        label: "Book a meeting",
+        size: "medium",
+        variant: "secondary",
       },
     ],
   }),
-  render: (args) => (
-    <Section {...args}>
-      <TestimonialsPaid
-        layout="slider"
-        testimonials={[
-          {
-            image: {
-              src: "/img/people/author-emily.png",
-              alt: "Fake Testimonial Portrait",
-            },
-            name: "- Emily Johnson",
-            quote:
-              "Systemics's Design System transformed our development process. The consistency it introduced across our platforms not only saved us time but also boosted our brand's credibility. It's a partnership that continues to pay dividends.",
-            title: "Director of Digital Strategy at EcoTech Solutions",
-          },
-        ]}
-      />
-    </Section>
-  ),
 };
 
 export const TileLayout: Story = {
@@ -304,8 +277,8 @@ export const TileLayout: Story = {
       mode: "tile",
     },
     headline: {
-      text: "No Agency site without some shiny happy Customer",
-      sub: "AI-generated smiles, as you see them everywhere nowadays",
+      text: "Happy Customers Showcases",
+      sub: "We can create something shining for you too!",
       align: "center",
     },
     buttons: [],
@@ -337,8 +310,8 @@ export const FlexLayout: Story = {
       align: "center",
     },
     headline: {
-      text: "No Agency site without some shiny happy Customer",
-      sub: "AI-generated smiles, as you see them everywhere nowadays",
+      text: "Happy Customers Showcases",
+      sub: "We can create something shining for you too!",
       align: "center",
     },
     buttons: [],
@@ -369,40 +342,10 @@ export const ListLayout: Story = {
       mode: "list",
     },
     headline: {
-      text: "Our Services",
-      sub: "Tailored Solutions for Seamless Digital Excellence",
+      text: "Happy Customers Showcases",
+      sub: "We can create something shining for you too!",
       align: "center",
     },
     buttons: [],
   }),
-  render: (args) => (
-    <Section {...args}>
-      <Headline text="Bringing Clarity to Your Vision" level={"h2"} />
-      <ImageText
-        layout="beside-right"
-        text={`
-Design System Consulting at Systemics is your compass in the world of design coherence. Our seasoned consultants work hand-in-hand with your team, understanding your brand's unique DNA and goals.
-
-We align your vision with actionable strategies, ensuring your design system becomes a guiding light for your entire digital ecosystem. Our goal is to empower you with the knowledge and direction you need to create seamless, consistent, and captivating user experiences.
-        `}
-        image={{
-          src: "img/ds-services-01.png",
-          alt: "A group of designers having a creative meeting in a stylish modern room in a skyscraper, wide angle, blade runner movie like aesthetics, neon-light, lens-flare, pink, blue, and cyan color tonality, wide angle, sharp, ",
-        }}
-      />
-      <Headline text="From Vision to Reality" level={"h2"} />
-      <ImageText
-        layout="beside-right"
-        text={`
-Our Design System Creation service is where ideas materialize into tangible results. We take your vision, weave it with industry best practices, and craft a comprehensive design system.
-
-It's not just about visual consistency – it's about empowering your brand to communicate effectively and fostering user engagement. Our approach ensures your design system is not only user-centered but also accelerates your development cycles, giving you the competitive edge you deserve.
-        `}
-        image={{
-          src: "img/ds-services-04.png",
-          alt: "A view inside a web developer agency, like a film still from blade runner, lens-flare effect, Cinematic, Bokeh effect, Neon Lights",
-        }}
-      />
-    </Section>
-  ),
 };
