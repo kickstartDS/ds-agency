@@ -14,16 +14,16 @@
   --c-teaser--border-radius: var(--ks-border-radius-card);
   --c-teaser--shadow-hover: 0 1px 11px var(--ks-color-fg-alpha-6);
 
-  @media (min-width: 36rem) {
+  @media (min-width: 48rem) {
     //Scaling for Desktop Breakpoint SmallTiles
     --g-topic--font: var(--ks-font-display-s);
     --c-rich-text--font: var(--ks-font-copy-s);
-    --c-teaser--padding: var(--ks-spacing-inset-m);
+    --c-teaser--padding: var(--ks-spacing-inset-s);
 
     //Scaling for Desktop Breakpoint MediumTiles
-    @include container.size("≥", 320px, "teaser-card") {
-      --g-topic--font: var(--ks-font-display-m);
+    @include container.size("≥", 300px, "teaser-card") {
       --c-rich-text--font: var(--ks-font-copy-m);
+      --g-topic--font: var(--ks-font-display-m);
     }
 
     //Scaling for Desktop Breakpoint LargeTiles

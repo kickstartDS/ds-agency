@@ -80,11 +80,11 @@
             "value": 1.5
           },
           "desktop": {
-            "value": 1.85
+            "value": 1.65
           }
         },
         "xxs-base": {
-          "value": "0.64rem",
+          "value": "0.65rem",
           "attributes": {
             "category": "size"
           },
@@ -124,7 +124,7 @@
           }
         },
         "l-base": {
-          "value": "1.5625rem",
+          "value": "1.5rem",
           "attributes": {
             "category": "size"
           },
@@ -134,7 +134,7 @@
           }
         },
         "xl-base": {
-          "value": "1.9531rem",
+          "value": "2rem",
           "attributes": {
             "category": "size"
           },
@@ -144,7 +144,7 @@
           }
         },
         "xxl-base": {
-          "value": "2.4414rem",
+          "value": "2.5rem",
           "attributes": {
             "category": "size"
           },
