@@ -1,3 +1,15 @@
+# v2.2.6 (Thu Jan 11 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(previewSection): remove PreviewSection components ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.2.5 (Wed Jan 10 2024)
 
 #### ⚠️ Pushed to `main`
