@@ -36,9 +36,9 @@ const Page = () => (
         text="Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture."
         textPosition="center"
         video={{
-          srcDesktop: "/static/img/videos/video-agency.mp4",
-          srcMobile: "/static/img/videos/video-agency.mp4",
-          srcTablet: "/static/img/videos/video-agency.mp4",
+          srcDesktop: "/img/videos/video-agency.mp4",
+          srcMobile: "/img/videos/video-agency.mp4",
+          srcTablet: "/img/videos/video-agency.mp4",
         }}
       />
     </Section>
@@ -81,7 +81,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
 **Ready to make your digital journey exceptional?**
 <br/><br/>`}
         image={{
-          src: "/static/img/full-shot-different-people-working-together.png",
+          src: "/img/full-shot-different-people-working-together.png",
           alt: "Just a decorative illustration",
         }}
         buttons={[
@@ -111,7 +111,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
         testimonials={[
           {
             image: {
-              src: "/static/img/people/author-emily.png",
+              src: "/img/people/author-emily.png",
               alt: "Fake Testimonial Portrait",
             },
             name: "- Emily Johnson",
@@ -121,7 +121,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
           },
           {
             image: {
-              src: "/static/img/people/author-john.png",
+              src: "/img/people/author-john.png",
               alt: "Fake Testimonial Portrait",
             },
             name: "- John Smith",
@@ -131,7 +131,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
           },
           {
             image: {
-              src: "/static/img/people/author-alex.png",
+              src: "/img/people/author-alex.png",
               alt: "Fake Testimonial Portrait",
             },
             name: "- Alex Chen",
@@ -156,20 +156,20 @@ We empower your digital teams with the knowledge and skills to manage and evolve
         target="/showcase-techfusion_paid"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
-        image="/static/img/showcases/comp_tfe01.jpg"
+        image="/img/showcases/comp_tfe01.jpg"
       />
       <TeaserCard
         target="/showcase-launchpad_paid"
         headline="Speed and Scale"
         label="Freshest Fruit"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
-        image="/static/img/showcases/comp_audio01.jpg"
+        image="/img/showcases/comp_audio01.jpg"
       />
       <TeaserCard
         target="/showcase-eco_paid"
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
-        image="/static/img/showcases/comp_eco01.jpg"
+        image="/img/showcases/comp_eco01.jpg"
       />
     </Section>
 
@@ -177,9 +177,9 @@ We empower your digital teams with the knowledge and skills to manage and evolve
       <CtaPaid
         headline="Get in touch and chat with us about getting your product or platform to market faster"
         fullWidth
-        backgroundImage="/static/img/bg/bg_dot-carpet-blue.svg"
+        backgroundImage="/img/bg/bg_dot-carpet-blue.svg"
         image={{
-          src: "/static/img/contact-person.png",
+          src: "/img/contact-person.png",
           padding: false,
         }}
         buttons={[
@@ -264,7 +264,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
       }}
     >
       <Image
-        src="/static/img/office-divider-image.png"
+        src="/img/office-divider-image.png"
         alt="Photorealistic image Super wide scale of a view into a hyper modern design & web development agency, glass walls, no people, wide angle, blade runner movie like aesthetics, neon-light, lens-flare, pink, blue, and cyan color tonality, wide angle, sharp, "
       />
     </Section>
