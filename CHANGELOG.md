@@ -1,3 +1,16 @@
+# v2.2.9 (Thu Jan 11 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: fix image paths in stories ([@lmestel](https://github.com/lmestel))
+- build: update storybook-addon-playroom ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.2.8 (Thu Jan 11 2024)
 
 #### ⚠️ Pushed to `main`
