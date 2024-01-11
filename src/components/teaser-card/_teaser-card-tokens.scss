@@ -2,17 +2,34 @@
 @import "../../selectors";
 @include container.wrapper("teaser-card");
 
-:root {
-  .c-teaser.c-teaser-card {
-    --g-topic--font: var(--ks-font-display-m);
-    --c-teaser--background: var(--ks-color-fg-alpha-9);
-    --c-teaser--color: var(--ks-color-fg-to-bg-3);
-    --c-teaser--border: 1px solid var(--ks-color-fg-alpha-8);
-    --c-teaser--border-radius: var(--ks-border-radius-card);
-    --c-teaser--shadow-hover: 0 1px 11px var(--ks-color-fg-alpha-6);
+.c-teaser.c-teaser-card {
+  //Scaling for Mobile Breakpoint
+  --g-topic--font: var(--ks-font-display-l);
+  --c-rich-text--font: var(--ks-font-copy-m);
+  --c-teaser--padding: var(--ks-spacing-inset-l);
+
+  --c-teaser--background: var(--ks-color-fg-alpha-9);
+  --c-teaser--color: var(--ks-color-fg-to-bg-3);
+  --c-teaser--border: 1px solid var(--ks-color-fg-alpha-8);
+  --c-teaser--border-radius: var(--ks-border-radius-card);
+  --c-teaser--shadow-hover: 0 1px 11px var(--ks-color-fg-alpha-6);
+
+  @media (min-width: 36rem) {
+    //Scaling for Desktop Breakpoint SmallTiles
+    --g-topic--font: var(--ks-font-display-s);
+    --c-rich-text--font: var(--ks-font-copy-s);
     --c-teaser--padding: var(--ks-spacing-inset-m);
 
+    //Scaling for Desktop Breakpoint MediumTiles
+    @include container.size("≥", 320px, "teaser-card") {
+      --g-topic--font: var(--ks-font-display-m);
+      --c-rich-text--font: var(--ks-font-copy-m);
+    }
+
+    //Scaling for Desktop Breakpoint LargeTiles
     @include container.size("≥", 820px, "teaser-card") {
+      --g-topic--font: var(--ks-font-display-l);
+      --c-rich-text--font: var(--ks-font-copy-l);
       --c-teaser--padding: var(--ks-spacing-inset-l);
     }
   }
