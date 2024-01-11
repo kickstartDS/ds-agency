@@ -3,7 +3,6 @@ import { Header } from "../components/header/HeaderComponent";
 import { headerProps } from "../components/header/Header.stories";
 import { Footer } from "../components/footer/FooterComponent";
 import { footerProps } from "../components/footer/Footer.stories";
-import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
 import { Hero } from "../components/hero/HeroComponent";
 import { Mosaic } from "../components/mosaic/MosaicComponent";
 import { Text } from "../components/text/TextComponent";
