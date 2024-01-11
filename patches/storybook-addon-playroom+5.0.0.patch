@@ -1,0 +1,24 @@
+diff --git a/node_modules/storybook-addon-playroom/dist/manager.js b/node_modules/storybook-addon-playroom/dist/manager.js
+index 21ac58f..6589bb7 100644
+--- a/node_modules/storybook-addon-playroom/dist/manager.js
++++ b/node_modules/storybook-addon-playroom/dist/manager.js
+@@ -8,6 +8,6 @@ function _interopDefault (e) { return e && e.__esModule ? e : { default: e }; }
+ 
+ var m__default = /*#__PURE__*/_interopDefault(m);
+ 
+-var r="storybook/playroom",e=`${r}/tab`,a="playroom",s={UPDATE:`${r}/update`};var f=theming.styled.p({textAlign:"center"}),A=theming.styled.iframe({border:"0 none",height:"100%",width:"100%"}),p=({active:o})=>{let[t,i]=m.useState("");return managerApi.useChannel({[s.UPDATE]:i}),o?t?m__default.default.createElement(A,{key:t,allowFullScreen:!0,src:t,title:"Playroom"}):m__default.default.createElement(f,null,"Playroom has been disabled for this story."):null};managerApi.addons.register(r,()=>{managerApi.addons.add(e,{type:managerApi.types.TAB,title:"Playroom",route:({storyId:o})=>`/playroom/${o}`,match:({viewMode:o})=>o==="playroom",render:p,paramKey:a});});
++var r="storybook/playroom",e=`${r}/tab`,a="playroom",s={UPDATE:`${r}/update`};var f=theming.styled.p({textAlign:"center"}),A=theming.styled.iframe({border:"0 none",height:"100%",width:"100%"}),p=({active:o})=>{let[t,i]=m.useState("");return managerApi.useChannel({[s.UPDATE]:i}),o?t?m__default.default.createElement(A,{key:t,allowFullScreen:!0,src:t,title:"Playroom"}):m__default.default.createElement(f,null,"Playroom has been disabled for this story."):null};managerApi.addons.register(r,()=>{managerApi.addons.add(e,{type:managerApi.types.PANEL,title:"Playroom",route:({storyId:o})=>`/playroom/${o}`,match:({viewMode:o})=>o==="playroom",render:p,paramKey:a});});
+ //# sourceMappingURL=out.js.map
+ //# sourceMappingURL=manager.js.map
+diff --git a/node_modules/storybook-addon-playroom/dist/manager.mjs b/node_modules/storybook-addon-playroom/dist/manager.mjs
+index aff2d19..1dd6909 100644
+--- a/node_modules/storybook-addon-playroom/dist/manager.mjs
++++ b/node_modules/storybook-addon-playroom/dist/manager.mjs
+@@ -2,6 +2,6 @@ import { addons, types, useChannel } from '@storybook/manager-api';
+ import { styled } from '@storybook/theming';
+ import m, { useState } from 'react';
+ 
+-var r="storybook/playroom",e=`${r}/tab`,a="playroom",s={UPDATE:`${r}/update`};var f=styled.p({textAlign:"center"}),A=styled.iframe({border:"0 none",height:"100%",width:"100%"}),p=({active:o})=>{let[t,i]=useState("");return useChannel({[s.UPDATE]:i}),o?t?m.createElement(A,{key:t,allowFullScreen:!0,src:t,title:"Playroom"}):m.createElement(f,null,"Playroom has been disabled for this story."):null};addons.register(r,()=>{addons.add(e,{type:types.TAB,title:"Playroom",route:({storyId:o})=>`/playroom/${o}`,match:({viewMode:o})=>o==="playroom",render:p,paramKey:a});});
++var r="storybook/playroom",e=`${r}/tab`,a="playroom",s={UPDATE:`${r}/update`};var f=styled.p({textAlign:"center"}),A=styled.iframe({border:"0 none",height:"100%",width:"100%"}),p=({active:o})=>{let[t,i]=useState("");return useChannel({[s.UPDATE]:i}),o?t?m.createElement(A,{key:t,allowFullScreen:!0,src:t,title:"Playroom"}):m.createElement(f,null,"Playroom has been disabled for this story."):null};addons.register(r,()=>{addons.add(e,{type:types.PANEL,title:"Playroom",route:({storyId:o})=>`/playroom/${o}`,match:({viewMode:o})=>o==="playroom",render:p,paramKey:a});});
+ //# sourceMappingURL=out.js.map
+ //# sourceMappingURL=manager.mjs.map

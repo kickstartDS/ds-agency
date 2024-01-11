@@ -18,7 +18,7 @@ const Page = () => (
         height="fullImage"
         overlay
         image={{
-          srcMobile: "/static/img/showcases/comp_eco01.png",
+          srcMobile: "/img/showcases/comp_eco01.png",
           alt: "Fake Showcase Mockup Image",
         }}
         textPosition="below"
@@ -31,7 +31,7 @@ const Page = () => (
       <Hero
         height="fullImage"
         image={{
-          srcMobile: "/static/img/showcases/comp_eco02.png",
+          srcMobile: "/img/showcases/comp_eco02.png",
         }}
       />
     </Section>
@@ -62,7 +62,7 @@ const Page = () => (
             sub: "Design System end to end",
             text: "We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.",
             image: {
-              src: "/static/img/showcases/comp_eco03.png",
+              src: "/img/showcases/comp_eco03.png",
             },
           },
           {
@@ -70,7 +70,7 @@ const Page = () => (
             sub: "Easy adoption thanks Design System",
             text: "We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.",
             image: {
-              src: "/static/img/showcases/comp_eco04.png",
+              src: "/img/showcases/comp_eco04.png",
             },
           },
         ]}
@@ -96,7 +96,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
         testimonials={[
           {
             image: {
-              src: "/static/img/people/author-emily.png",
+              src: "/img/people/author-emily.png",
               alt: "Fake Testimonial Portrait",
             },
             name: "- Emily Johnson",
@@ -145,13 +145,13 @@ The implementation of the new **Design System** and migration to **Storyblok** t
         target="#"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
-        image="/static/img/showcases/comp_tfe01.jpg"
+        image="/img/showcases/comp_tfe01.jpg"
       />
       <TeaserCard
         target="#"
         headline="Speed and Scale"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
-        image="/static/img/showcases/comp_audio01.jpg"
+        image="/img/showcases/comp_audio01.jpg"
       />
     </Section>
     <Section>

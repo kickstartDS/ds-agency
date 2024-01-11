@@ -24,7 +24,7 @@ const meta: Meta<typeof Section> = {
         target="#"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
-        image="/static/img/showcases/comp_tfe01.jpg"
+        image="/img/showcases/comp_tfe01.jpg"
       />
       <TeaserCard
         layout="row"
@@ -32,14 +32,14 @@ const meta: Meta<typeof Section> = {
         headline="Speed and Scale"
         label="Freshest Fruit"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
-        image="/static/img/showcases/comp_audio01.jpg"
+        image="/img/showcases/comp_audio01.jpg"
       />
       <TeaserCard
         layout="row"
         target="#"
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
-        image="/static/img/showcases/comp_eco01.jpg"
+        image="/img/showcases/comp_eco01.jpg"
       />
     </Section>
   ),
@@ -74,7 +74,7 @@ export const CardsSlider: Story = {
         target="/showcase-techfusion_paid"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
-        image="/static/img/showcases/comp_tfe01.jpg"
+        image="/img/showcases/comp_tfe01.jpg"
       />
       <TeaserCard
         layout="row"
@@ -82,21 +82,21 @@ export const CardsSlider: Story = {
         headline="Speed and Scale"
         label="Freshest Fruit"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
-        image="/static/img/showcases/comp_audio01.jpg"
+        image="/img/showcases/comp_audio01.jpg"
       />
       <TeaserCard
         layout="row"
         target="/showcase-eco_paid"
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
-        image="/static/img/showcases/comp_eco01.jpg"
+        image="/img/showcases/comp_eco01.jpg"
       />
       <TeaserCard
         layout="row"
         target="/showcase-techfusion_paid"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
-        image="/static/img/showcases/comp_tfe01.jpg"
+        image="/img/showcases/comp_tfe01.jpg"
       />
       <TeaserCard
         layout="row"
@@ -104,21 +104,21 @@ export const CardsSlider: Story = {
         headline="Speed and Scale"
         label="Freshest Fruit"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
-        image="/static/img/showcases/comp_audio01.jpg"
+        image="/img/showcases/comp_audio01.jpg"
       />
       <TeaserCard
         layout="row"
         target="/showcase-eco_paid"
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
-        image="/static/img/showcases/comp_eco01.jpg"
+        image="/img/showcases/comp_eco01.jpg"
       />
       <TeaserCard
         layout="row"
         target="/showcase-techfusion_paid"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
-        image="/static/img/showcases/comp_tfe01.jpg"
+        image="/img/showcases/comp_tfe01.jpg"
       />
       <TeaserCard
         layout="row"
@@ -126,21 +126,21 @@ export const CardsSlider: Story = {
         headline="Speed and Scale"
         label="Freshest Fruit"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
-        image="/static/img/showcases/comp_audio01.jpg"
+        image="/img/showcases/comp_audio01.jpg"
       />
       <TeaserCard
         layout="row"
         target="/showcase-eco_paid"
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
-        image="/static/img/showcases/comp_eco01.jpg"
+        image="/img/showcases/comp_eco01.jpg"
       />
       <TeaserCard
         layout="row"
         target="/showcase-techfusion_paid"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
-        image="/static/img/showcases/comp_tfe01.jpg"
+        image="/img/showcases/comp_tfe01.jpg"
       />
       <TeaserCard
         layout="row"
@@ -148,14 +148,14 @@ export const CardsSlider: Story = {
         headline="Speed and Scale"
         label="Freshest Fruit"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
-        image="/static/img/showcases/comp_audio01.jpg"
+        image="/img/showcases/comp_audio01.jpg"
       />
       <TeaserCard
         layout="row"
         target="/showcase-eco_paid"
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
-        image="/static/img/showcases/comp_eco01.jpg"
+        image="/img/showcases/comp_eco01.jpg"
       />
     </Section>
   ),
@@ -283,7 +283,7 @@ export const WithCtas: Story = {
         testimonials={[
           {
             image: {
-              src: "/static/img/people/author-emily.png",
+              src: "/img/people/author-emily.png",
               alt: "Fake Testimonial Portrait",
             },
             name: "- Emily Johnson",
@@ -317,14 +317,14 @@ export const TileLayout: Story = {
         target="#"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
-        image="/static/img/showcases/comp_tfe01.jpg"
+        image="/img/showcases/comp_tfe01.jpg"
       />
       <TeaserCard
         layout="row"
         target="#"
         headline="Speed and Scale"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
-        image="/static/img/showcases/comp_audio01.jpg"
+        image="/img/showcases/comp_audio01.jpg"
       />
     </Section>
   ),
@@ -350,14 +350,14 @@ export const FlexLayout: Story = {
         target="#"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
-        image="/static/img/showcases/comp_tfe01.jpg"
+        image="/img/showcases/comp_tfe01.jpg"
       />
       <TeaserCard
         layout="row"
         target="#"
         headline="Speed and Scale"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
-        image="/static/img/showcases/comp_audio01.jpg"
+        image="/img/showcases/comp_audio01.jpg"
       />
     </Section>
   ),

@@ -1,6 +1,6 @@
 {
   "name": "@kickstartds/ds-agency",
-  "version": "2.2.7",
+  "version": "2.2.9",
   "description": "",
   "homepage": "https://github.com/kickstartDS/ds-agency#readme",
   "bugs": {
@@ -120,7 +120,7 @@
     "sass": "^1.66.1",
     "sass-loader": "^13.3.3",
     "storybook": "^7.6.7",
-    "storybook-addon-playroom": "^4.0.0",
+    "storybook-addon-playroom": "^5.0.0",
     "storybook-design-token": "3.0.0-beta.3",
     "style-loader": "^3.3.3",
     "typescript": "^5.2.2"
