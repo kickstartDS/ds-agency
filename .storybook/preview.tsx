@@ -56,10 +56,6 @@ const preview: Preview = {
     },
     playroom: {
       url: process.env.NODE_ENV === "production" ? "/playroom/" : undefined,
-      code(story) {
-        //@ts-expect-error
-        return unpackDecorator(story.storyFn, { args: story.initialArgs });
-      },
     },
     html: {
       decorators: [unpackDecorator, providerDecorator],
