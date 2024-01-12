@@ -6,26 +6,18 @@ declare module "@kickstartds/base/lib/section/typing" {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {HeroProps} from "@kickstartds/hero.schema.json/lib/hero/typing";
 import type {CtaProps} from "@kickstartds/cta.schema.json/lib/cta/typing";
-import type {MosaicProps} from "@kickstartds/mosaic.schema.json/lib/mosaic/typing";
-import type {CtaPaidProps} from "@kickstartds/cta-paid.schema.json/lib/cta-paid/typing";
 import type {FaqProps} from "@kickstartds/faq.schema.json/lib/faq/typing";
 import type {FeaturesProps} from "@kickstartds/features.schema.json/lib/features/typing";
 import type {GalleryProps} from "@kickstartds/gallery.schema.json/lib/gallery/typing";
 import type {HeadlineProps} from "@kickstartds/base/lib/headline/typing";
-import type {ImageStoryProps} from "@kickstartds/image-story.schema.json/lib/image-story/typing";
 import type {SplitProps} from "@kickstartds/split.schema.json/lib/split/typing";
 import type {StatsProps} from "@kickstartds/stats.schema.json/lib/stats/typing";
-import type {StatsPaidProps} from "@kickstartds/stats-paid.schema.json/lib/stats-paid/typing";
 import type {TeaserCardProps} from "@kickstartds/teaser-card.schema.json/lib/teaser-card/typing";
 import type {TestimonialsProps} from "@kickstartds/testimonials.schema.json/lib/testimonials/typing";
-import type {TestimonialsPaidProps} from "@kickstartds/testimonials-paid.schema.json/lib/testimonials-paid/typing";
 import type {TextProps} from "@kickstartds/text.schema.json/lib/text/typing";
-import type {VideoCurtainProps} from "@kickstartds/video-curtain.schema.json/lib/video-curtain/typing";
 import type {ImageTextProps} from "@kickstartds/image-text.schema.json/lib/image-text/typing";
 import type {LogosProps} from "@kickstartds/logos.schema.json/lib/logos/typing";
-import type {LogosPaidProps} from "@kickstartds/logos-paid.schema.json/lib/logos-paid/typing";
 import type {ButtonProps} from "@kickstartds/base/lib/button/typing";
 
 /**
@@ -119,26 +111,18 @@ export type TileWidth = "control" | "card" | "narrow" | "medium" | "wide";
  * Allowed components for content
  */
 export type Content = (
-  | HeroProps
   | CtaProps
-  | MosaicProps
-  | CtaPaidProps
   | FaqProps
   | FeaturesProps
   | GalleryProps
   | HeadlineProps
-  | ImageStoryProps
   | SplitProps
   | StatsProps
-  | StatsPaidProps
   | TeaserCardProps
   | TestimonialsProps
-  | TestimonialsPaidProps
   | TextProps
-  | VideoCurtainProps
   | ImageTextProps
   | LogosProps
-  | LogosPaidProps
 )[];
 /**
  * Buttons of the Button Group

@@ -4,37 +4,13 @@ import { Footer } from "../components/footer/FooterComponent";
 import { footerProps } from "../components/footer/Footer.stories";
 import { Section } from "../components/section/SectionComponent";
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
-import { TestimonialsPaid } from "../components/testimonials-paid/TestimonialsPaidComponent";
-import { CtaPaid } from "../components/cta-paid/CtaPaidComponent";
-import { Hero } from "../components/hero/HeroComponent";
-import { Mosaic } from "../components/mosaic/MosaicComponent";
+import { Testimonials } from "../components/testimonials/TestimonialsComponent";
+import { Cta } from "../components/cta/CtaComponent";
 import { Text } from "../components/text/TextComponent";
 
 const Page = () => (
   <>
     <Header {...headerProps} floating />
-    <Section width="full" spaceAfter="small" spaceBefore="none">
-      <Hero
-        height="fullImage"
-        overlay
-        image={{
-          srcMobile: "/img/showcases/comp_eco01.png",
-          alt: "Fake Showcase Mockup Image",
-        }}
-        textPosition="below"
-        highlightText
-        headline="Powering EcoTech's Digital Transformation with a Design System and Headless CMS"
-        sub="Reinventing Development Processes, Boosting Brand Credibility, and Embracing the Headless Web"
-      />
-    </Section>
-    <Section spaceBefore="small" width="full">
-      <Hero
-        height="fullImage"
-        image={{
-          srcMobile: "/img/showcases/comp_eco02.png",
-        }}
-      />
-    </Section>
     <Section
       headline={{
         text: "Briefing:",
@@ -53,29 +29,6 @@ const Page = () => (
         text="EcoTech Solutions, a forward-thinking company in the sustainable PV and wind power industry, sought a way to streamline their development process and enhance their brand consistency across platforms."
       />
     </Section>
-    <Section style="boldTransition" width="full">
-      <Mosaic
-        layout="alternate"
-        tiles={[
-          {
-            headline: "Our Solution:",
-            sub: "Design System end to end",
-            text: "We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.",
-            image: {
-              src: "/img/showcases/comp_eco03.png",
-            },
-          },
-          {
-            headline: "Headless is best:",
-            sub: "Easy adoption thanks Design System",
-            text: "We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.",
-            image: {
-              src: "/img/showcases/comp_eco04.png",
-            },
-          },
-        ]}
-      />
-    </Section>
 
     <Section
       headline={{
@@ -92,7 +45,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
       />
     </Section>
     <Section spaceBefore="none" width="wide">
-      <TestimonialsPaid
+      <Testimonials
         testimonials={[
           {
             image: {
@@ -114,8 +67,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
       spaceBefore="small"
       spaceAfter="small"
     >
-      <CtaPaid
-        fullWidth
+      <Cta
         highlightText
         textAlign="center"
         headline="Ready to **power up your**  Digital Transformation with a tailored **Design System** and Headless **CMS**? "

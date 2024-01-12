@@ -5,94 +5,13 @@ import { footerProps } from "../components/footer/Footer.stories";
 import { Section } from "../components/section/SectionComponent";
 import { Faq } from "../components/faq/FaqComponent";
 import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
-import { VideoCurtain } from "../components/video-curtain/VideoCurtainComponent";
-import { TestimonialsPaid } from "../components/testimonials-paid/TestimonialsPaidComponent";
-import { CtaPaid } from "../components/cta-paid/CtaPaidComponent";
-import { ImageStory } from "../components/image-story/ImageStoryComponent";
+import { Testimonials } from "../components/testimonials/TestimonialsComponent";
+import { Cta } from "../components/cta/CtaComponent";
 import { Image } from "../components/image/ImageComponent";
 
 const Page = () => (
   <>
     <Header {...headerProps} floating />
-    <Section
-      spaceBefore="none"
-      spaceAfter="none"
-      width="full"
-      content={{
-        mode: "list",
-      }}
-    >
-      <VideoCurtain
-        buttons={[
-          {
-            icon: "chevron-down",
-            label: "What can we do for you?",
-            target: "#startit",
-          },
-        ]}
-        headline="Simplify the process of building your Design System"
-        overlay
-        sub="With your headless experts"
-        text="Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture."
-        textPosition="center"
-        video={{
-          srcDesktop: "/img/videos/video-agency.mp4",
-          srcMobile: "/img/videos/video-agency.mp4",
-          srcTablet: "/img/videos/video-agency.mp4",
-        }}
-      />
-    </Section>
-
-    <Section
-      id="startit"
-      headline={{
-        text: "Design System Services",
-        sub: "Crafting Consistency, Fostering Growth",
-        switchOrder: true,
-        width: "default",
-        align: "center",
-        textAlign: "center",
-        large: true,
-      }}
-      width="full"
-    >
-      <ImageStory
-        padding
-        layout="imageLeft"
-        text={`
-**Here at Systemics, we bring a range of design system services that can make a difference:**
-
-### 1. Design System **Consulting**
-Let's work side by side to shape a design system strategy that aligns perfectly with your goals. It's not just about tools; it's about guiding principles, stakeholder management und making the right decisions at the right time.
-<br/><br/>
-
-### 2. Design System **Creation & Development**
-We'll bring your design system from concept to production, giving you consistent and engaging user experiences across different platforms. We will work together with your digital teams to transfer all complex Figma ideas into code using kickstartDS.
-<br/><br/>
-
-### 3. Headless **CMS & Websites**
-We leverage the power of headless CMSs to provide scalable, flexible, and versatile websites that drive your online presence.
-<br/><br/>
-
-### 4. Design System **Training**
-We empower your digital teams with the knowledge and skills to manage and evolve your design system effectively.
-<br/><br/>
-
-**Ready to make your digital journey exceptional?**
-<br/><br/>`}
-        image={{
-          src: "/img/full-shot-different-people-working-together.png",
-          alt: "Just a decorative illustration",
-        }}
-        buttons={[
-          {
-            label: "Reach out today!",
-            icon: "chevron-right",
-            target: "https://app.lemcal.com/@daniel-ley",
-          },
-        ]}
-      />
-    </Section>
 
     <Section
       width="wide"
@@ -106,8 +25,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
         textAlign: "left",
       }}
     >
-      <TestimonialsPaid
-        layout="slider"
+      <Testimonials
         testimonials={[
           {
             image: {
@@ -174,14 +92,8 @@ We empower your digital teams with the knowledge and skills to manage and evolve
     </Section>
 
     <Section backgroundColor="bold" width="full">
-      <CtaPaid
+      <Cta
         headline="Get in touch and chat with us about getting your product or platform to market faster"
-        fullWidth
-        backgroundImage="/img/bg/bg_dot-carpet-blue.svg"
-        image={{
-          src: "/img/contact-person.png",
-          padding: false,
-        }}
         buttons={[
           {
             label: "Contact us",
@@ -310,8 +222,7 @@ We empower your digital teams with the knowledge and skills to manage and evolve
     </Section>
 
     <Section style="anchorGlow" width="wide">
-      <CtaPaid
-        fullWidth
+      <Cta
         highlightText
         textAlign="center"
         headline="Ready to embark on a transformative digital journey?"

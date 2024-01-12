@@ -32,7 +32,6 @@ const preview: Preview = {
           "Pages",
           ["Pages", "Testing"],
           "Components",
-          "Paid Components",
           "Blog",
           "Layout",
           "Recipes",
