@@ -1,3 +1,16 @@
+# v2.2.12 (Fri Jan 12 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(design): minor theme adjustments ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.2.11 (Fri Jan 12 2024)
 
 #### ⚠️ Pushed to `main`
