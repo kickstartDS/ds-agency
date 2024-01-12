@@ -1,3 +1,15 @@
+# v2.2.11 (Fri Jan 12 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(stories): update stories ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.2.10 (Thu Jan 11 2024)
 
 #### ⚠️ Pushed to `main`
