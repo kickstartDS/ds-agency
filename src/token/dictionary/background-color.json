@@ -253,7 +253,7 @@
           },
           "selected": {
             "base": {
-              "value": "transparent",
+              "value": "{ks.color.primary-inverted.base}",
               "attributes": {
                 "category": "color"
               },
@@ -278,7 +278,7 @@
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.transparent.base}",
+            "value": "transparent",
             "attributes": {
               "category": "color"
             },
@@ -325,7 +325,7 @@
           },
           "selected": {
             "base": {
-              "value": "transparent",
+              "value": "{ks.color.primary.base}",
               "attributes": {
                 "category": "color"
               },
