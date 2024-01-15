@@ -1,3 +1,164 @@
+# v2.2.12 (Fri Jan 12 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(design): minor theme adjustments ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.2.11 (Fri Jan 12 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(stories): update stories ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.2.10 (Thu Jan 11 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(teaserCards + Typo): micromanage font scaling ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.2.9 (Thu Jan 11 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: fix image paths in stories ([@lmestel](https://github.com/lmestel))
+- build: update storybook-addon-playroom ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v2.2.8 (Thu Jan 11 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(teaser-card): optimise padding + font sizes for additional breakpoints + container sizes ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.2.7 (Thu Jan 11 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(Components Pages): remove components pages ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.2.6 (Thu Jan 11 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(previewSection): remove PreviewSection components ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.2.5 (Wed Jan 10 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(componentsPreview): remove outdated props ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.2.4 (Wed Jan 10 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(previewSection): make layoutToggle conditional ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.2.3 (Wed Jan 10 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(previewSection): add slider-nav to selector expetion ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.2.2 (Wed Jan 10 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(sectionHeader): develop UI ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v2.2.1 (Wed Jan 10 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'feature/preview-section' ([@fleven-kds](https://github.com/fleven-kds))
+- feat(sectionControls): adjust ui ([@fleven-kds](https://github.com/fleven-kds))
+- feat(previewSection): move partials into dedicated fodler ([@fleven-kds](https://github.com/fleven-kds))
+- feat(select): add select component ([@fleven-kds](https://github.com/fleven-kds))
+- feat(SectionHeader + SectionControls): develop layout ([@fleven-kds](https://github.com/fleven-kds))
+- feat(SectionControls): remove unused import ([@fleven-kds](https://github.com/fleven-kds))
+- feat(previewSection): develop layout for PreviewSection ([@fleven-kds](https://github.com/fleven-kds))
+
+#### 📝 Documentation
+
+- Add themes to playroom [#59](https://github.com/kickstartDS/ds-agency/pull/59) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.2.0 (Tue Jan 09 2024)
 
 #### 🚀 Enhancement

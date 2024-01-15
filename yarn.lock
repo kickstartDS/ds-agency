@@ -11959,10 +11959,10 @@ store2@^2.14.2:
   resolved "https://registry.npmjs.org/store2/-/store2-2.14.2.tgz"
   integrity sha512-siT1RiqlfQnGqgT/YzXVUNsom9S0H1OX+dpdGN1xkyYATo4I6sep5NmsRD/40s3IIOvlCq6akxkqG82urIZW1w==
 
-storybook-addon-playroom@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npmjs.org/storybook-addon-playroom/-/storybook-addon-playroom-4.0.0.tgz"
-  integrity sha512-/FHkFZOscz7a1SL5Qjbg226f5mE6ikdkIOSlHZnrieZ7WxulTMR+2+tHjXPmI6zGCm5JX84V1p5ziohyyX2lmQ==
+storybook-addon-playroom@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/storybook-addon-playroom/-/storybook-addon-playroom-5.0.0.tgz#9be70f05235a576f3c9fe93cb337b91c171c18d4"
+  integrity sha512-hW6UquEE4RLxTxzdBIelmH6cyJkl4UrNdq8tUjB6XeX2CSjDpdrxaEPPY0C9lVS3LDy+C9Rco+qd+NKAYVnUWg==
   dependencies:
     ansi-colors "^4.1.0"
     global-jsdom "^8.8.0"

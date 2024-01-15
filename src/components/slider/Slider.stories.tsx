@@ -7,7 +7,7 @@ import { TeaserCard } from "../teaser-card/TeaserCardComponent";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
-  title: "Paid Components/Slider",
+  title: "Layout/Slider",
   ...getArgsShared(schema as JSONSchema7),
   args,
   argTypes,
@@ -18,34 +18,25 @@ const meta: Meta = {
   render: (args) => (
     <Slider {...args}>
       <TeaserCard
-        image="img/mosaic-1.png"
-        headline="Innovative Solutions"
-        text="We provide innovative solutions to complex business problems. Our team is dedicated to helping your business grow."
+        layout="row"
+        headline="Transformation Love Story"
+        image="/static/img/showcases/comp_tfe01.jpg"
+        target="#"
+        text="See how we saved TechFusions a year's worth of development time"
       />
       <TeaserCard
-        image="img/mosaic-2.png"
-        headline="Expert Teams"
-        text="Our team of experts is always ready to provide top-notch services. We have the skills and experience to deliver exceptional results."
+        layout="row"
+        headline="Speed and Scale"
+        image="/static/img/showcases/comp_audio01.jpg"
+        target="#"
+        text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
       />
       <TeaserCard
-        image="img/mosaic-3.png"
-        headline="Quality Services"
-        text="We are committed to providing quality services. We strive for excellence in everything we do."
-      />
-      <TeaserCard
-        image="img/mosaic-1.png"
-        headline="Customer Satisfaction"
-        text="Customer satisfaction is our top priority. We work hard to meet and exceed our clients' expectations."
-      />
-      <TeaserCard
-        image="img/mosaic-2.png"
-        headline="Continuous Improvement"
-        text="We believe in continuous improvement. We are always looking for ways to improve our services and deliver better results."
-      />
-      <TeaserCard
-        image="img/mosaic-1.png"
-        headline="Strategic Approach"
-        text="We take a strategic approach to solve complex problems. Our strategies are designed to deliver long-term success."
+        layout="row"
+        headline="Saving Time and Money"
+        image="/static/img/showcases/comp_eco01.jpg"
+        target="#"
+        text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
       />
     </Slider>
   ),
@@ -53,22 +44,35 @@ const meta: Meta = {
 export default meta;
 type Story = StoryObj<typeof Slider>;
 
-export const MultiView: Story = {
+export const WithArrows: Story = {
   args: pack({
-    perView: 3,
-    gap: 20,
+    gap: 15,
+    arrows: true,
   }),
 };
 
-export const WithNavAndArrows: Story = {
+export const WithTeasedNeighbours: Story = {
   args: pack({
+    gap: 15,
+    perView: 1.5,
     arrows: true,
     nav: true,
   }),
 };
 
-export const SlideShowWithAutoplay: Story = {
+export const WithNav: Story = {
   args: pack({
+    gap: 15,
+    arrows: true,
+    nav: true,
+  }),
+};
+
+export const WithAutoplay: Story = {
+  args: pack({
+    gap: 15,
+    nav: true,
+    arrows: true,
     autoplay: true,
   }),
 };
