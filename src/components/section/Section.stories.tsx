@@ -3,7 +3,7 @@ import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import sectionStories from "@kickstartds/base/lib/section/section.stories";
 import { TeaserCard } from "../teaser-card/TeaserCardComponent";
-import { TestimonialsPaid } from "../testimonials-paid/TestimonialsPaidComponent"; // Added this line
+import { Testimonials } from "../testimonials/TestimonialsComponent"; // Added this line
 import schema from "./section.schema.dereffed.json";
 import { Section } from "./SectionComponent";
 import { ImageText } from "../image-text/ImageTextComponent";

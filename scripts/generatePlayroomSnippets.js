@@ -35,7 +35,11 @@ const bundle = async () => {
     cwd: "./storybook",
     absolute: true,
   });
-  entryPoints.push("./.storybook/preview.tsx", "./.storybook/main.ts");
+  entryPoints.push(
+    "./.storybook/preview.tsx",
+    "./.storybook/main.ts",
+    "./node_modules/@kickstartds/core/lib/storybook/index.js"
+  );
 
   await esbuild.build({
     entryPoints,
@@ -51,9 +55,21 @@ const bundle = async () => {
     bundle: true,
     splitting: true,
   });
+
+  // babelRegister ignores `node_modules` folder
+  fs.mkdirSync("./tmp/_node_modules/@kickstartds/core/lib/storybook", {
+    recursive: true,
+  });
+  fs.renameSync(
+    "./tmp/node_modules/@kickstartds/core/lib/storybook/index.js",
+    "./tmp/_node_modules/@kickstartds/core/lib/storybook/index.js"
+  );
 };
 
 const configureStorybook = () => {
+  const {
+    unpack,
+  } = require("../tmp/_node_modules/@kickstartds/core/lib/storybook/index.js");
   const preview = require("../tmp/.storybook/preview.js").default;
   storybook.setProjectAnnotations(preview);
 
@@ -66,7 +82,8 @@ const configureStorybook = () => {
     return global.__requireContext(workingDir, basePath, recursive, match);
   });
   storybook.configure(storyLoaders, false, false);
-  return preview.parameters?.playroom?.code || ((story) => story.storyFn());
+  return (story) =>
+    story.storyFn({ ...story, args: unpack(story.initialArgs) });
 };
 
 const findComponent = (components, story) => {
