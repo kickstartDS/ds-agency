@@ -21,5 +21,8 @@ export interface SettingsProps {
    * Referenced component FooterProps
    */
   footer: FooterProps;
-  seo: {} & SeoProps;
+  /**
+   * Referenced component SeoProps
+   */
+  seo: SeoProps;
 }
