@@ -1,3 +1,15 @@
+# v2.2.13 (Tue Jan 16 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(background-color): update token ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.2.12 (Fri Jan 12 2024)
 
 #### ⚠️ Pushed to `main`
