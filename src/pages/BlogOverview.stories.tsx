@@ -80,7 +80,7 @@ const Page = () => (
 
 const meta: Meta<typeof Page> = {
   component: Page,
-  title: "Pages/Blog List",
+  title: "Pages/Archetypes",
   parameters: {
     layout: "fullscreen",
   },
@@ -88,4 +88,4 @@ const meta: Meta<typeof Page> = {
 export default meta;
 type Story = StoryObj<typeof Page>;
 
-export const Default: Story = {};
+export const BlogOverview: Story = {};

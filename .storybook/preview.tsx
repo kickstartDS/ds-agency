@@ -30,7 +30,7 @@ const preview: Preview = {
           "Docs",
           ["Welcome", "Integration"],
           "Pages",
-          ["Pages", "Testing"],
+          ["Archetypes", "Testing"],
           "Components",
           "Blog",
           "Layout",

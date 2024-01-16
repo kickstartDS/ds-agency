@@ -395,11 +395,11 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
 );
 
 export default {
-  title: "Pages/Pages",
+  title: "Pages/Archetypes",
   render: Page,
   parameters: {
     layout: "fullscreen",
   },
 };
 
-export const Landingpage = {};
+export const Start = {};

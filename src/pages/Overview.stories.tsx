@@ -197,11 +197,11 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
 );
 
 export default {
-  title: "Pages/Pages",
+  title: "Pages/Archetypes",
   render: Page,
   parameters: {
     layout: "fullscreen",
   },
 };
 
-export const ShowcasesOverview = {};
+export const Overview = {};
