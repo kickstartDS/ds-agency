@@ -1,3 +1,16 @@
+# v3.0.0 (Tue Jan 16 2024)
+
+#### 💥 Breaking Change
+
+- Remove paid components [#60](https://github.com/kickstartDS/ds-agency/pull/60) ([@lmestel](https://github.com/lmestel) [@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v2.2.13 (Tue Jan 16 2024)
 
 #### ⚠️ Pushed to `main`
