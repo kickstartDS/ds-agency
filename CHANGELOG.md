@@ -1,3 +1,15 @@
+# v3.1.0 (Thu Jan 18 2024)
+
+#### 🚀 Enhancement
+
+- Add explicit schemas for Settings and SEO [#44](https://github.com/kickstartDS/ds-agency/pull/44) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.0.3 (Thu Jan 18 2024)
 
 #### ⚠️ Pushed to `main`
