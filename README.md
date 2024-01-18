@@ -1,4 +1,4 @@
-# kickstartDS Agency Starter
+# kickstartDS Free Agency Starter
 
 kickstartDS Agency Starter is a specialized version of the kickstartDS Starter, tailored for digital agencies. It provides a set of content components that can be used to style marketing pages, while maintaining the flexibility and customizability of the original starter.
 
