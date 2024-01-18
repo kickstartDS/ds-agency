@@ -1,3 +1,15 @@
+# v3.0.1 (Thu Jan 18 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(teaser): add buttonlabel prop to teaser ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.0.0 (Tue Jan 16 2024)
 
 #### 💥 Breaking Change
