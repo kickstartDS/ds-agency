@@ -1,3 +1,52 @@
+# v3.0.2 (Thu Jan 18 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(teaserCard.stories): update properties ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v3.0.1 (Thu Jan 18 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(teaser): add buttonlabel prop to teaser ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v3.0.0 (Tue Jan 16 2024)
+
+#### 💥 Breaking Change
+
+- Remove paid components [#60](https://github.com/kickstartDS/ds-agency/pull/60) ([@lmestel](https://github.com/lmestel) [@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 2
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v2.2.13 (Tue Jan 16 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(background-color): update token ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v2.2.12 (Fri Jan 12 2024)
 
 #### ⚠️ Pushed to `main`

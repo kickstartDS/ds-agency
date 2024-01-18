@@ -21,6 +21,7 @@ export type Label = string;
  * Target that should be linked
  */
 export type Target = string;
+export type Label1 = string;
 /**
  * Toggle wether you want the card to have a visible button or not
  */
@@ -42,7 +43,10 @@ export interface TeaserCardProps {
    */
   layout?: "stack" | "row";
   target?: Target;
-  displayButton?: DisplayButton;
+  button?: {
+    label?: Label1;
+    displayButton?: DisplayButton;
+  };
   image?: Image;
   /**
    * Aspect ratio of the image

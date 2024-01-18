@@ -6,7 +6,7 @@ import { Header } from "../components/header/HeaderComponent";
 import { headerProps } from "../components/header/Header.stories";
 import { Footer } from "../components/footer/FooterComponent";
 import { footerProps } from "../components/footer/Footer.stories";
-import { TestimonialsPaid } from "../components/testimonials-paid/TestimonialsPaidComponent";
+import { Testimonials } from "../components/testimonials/TestimonialsComponent";
 
 const Page = () => (
   <>
@@ -209,7 +209,7 @@ Elevate your digital presence with us. We create [impactful digital](#) experien
       />
     </Section>
     <Section>
-      <TestimonialsPaid
+      <Testimonials
         testimonials={[
           {
             quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
@@ -233,7 +233,7 @@ Elevate your digital presence with us. We create [impactful digital](#) experien
       />
     </Section>
     <Section inverted>
-      <TestimonialsPaid
+      <Testimonials
         testimonials={[
           {
             quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,

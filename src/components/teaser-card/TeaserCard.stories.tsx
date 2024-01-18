@@ -19,7 +19,6 @@ type Story = StoryObj<typeof TeaserCard>;
 
 export const ProductTiles: Story = {
   args: pack({
-    displayButton: false,
     headline: "Castaway",
     text: "Transforming Ideas into Code",
     image: "img/logos/castaway.svg",
@@ -32,7 +31,11 @@ export const PageNavigation: Story = {
     headline: "Design System Services",
     text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
     image: "img/02.jpg",
+    imageRatio: "landscape",
     target: "#",
+    button: {
+      label: "Read more",
+    },
   }),
 };
 
@@ -45,5 +48,8 @@ export const ShowcasePreview: Story = {
     text: "See how we saved TechFusions a year's worth of development time",
     image: "img/showcases/comp_tfe01.jpg",
     target: "#",
+    button: {
+      label: "Go to showcase",
+    },
   }),
 };

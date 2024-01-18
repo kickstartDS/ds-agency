@@ -16,12 +16,12 @@ export const TeaserCard = forwardRef<
     {
       headline,
       text,
+      button,
       target,
       image,
       imageRatio = "wide",
       label,
       layout = "stack",
-      displayButton = true,
       ...props
     },
     ref
@@ -47,12 +47,12 @@ export const TeaserCard = forwardRef<
           )}
           link={{
             hidden:
-              displayButton === true
+              button?.displayButton === true
                 ? false
-                : displayButton === false
+                : button?.displayButton === false
                 ? true
                 : true,
-            label: "Read more",
+            label: button?.label,
             variant: "secondary",
             target: target,
           }}
