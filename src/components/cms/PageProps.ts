@@ -9,40 +9,15 @@ import type {SectionProps} from "../section/SectionProps";
 import type {SeoProps} from "../seo/SeoProps";
 
 /**
- * Identifying id for the page
- */
-export type ID = string;
-/**
- * URL slug for the page
- */
-export type Slug = string;
-/**
- * Choose a layout for the page
- */
-export type Layout = "default" | "content" | "blog-list" | "blog-detail" | "glossary";
-/**
  * Collection of sections (with their contents) to render on the page
  */
 export type Sections = SectionProps[];
-/**
- * Last update date for the page
- */
-export type Updated = string;
-/**
- * Creation date for the page
- */
-export type Created = string;
 
 /**
  * Abstracts a page concept into JSON schema
  */
 export interface PageProps {
-  id: ID;
-  slug: Slug;
-  layout: Layout;
   sections?: Sections;
-  updated?: Updated;
-  created?: Created;
   /**
    * Referenced component SeoProps
    */

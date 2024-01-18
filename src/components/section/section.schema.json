@@ -175,7 +175,13 @@
             "$ref": "http://schema.mydesignsystem.com/gallery.schema.json"
           },
           {
-            "$ref": "http://schema.mydesignsystem.com/headline.schema.json"
+            "$ref": "http://schema.mydesignsystem.com/image-text.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/logos.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/page-intro.schema.json"
           },
           {
             "$ref": "http://schema.mydesignsystem.com/split.schema.json"
@@ -191,12 +197,6 @@
           },
           {
             "$ref": "http://schema.mydesignsystem.com/text.schema.json"
-          },
-          {
-            "$ref": "http://schema.mydesignsystem.com/image-text.schema.json"
-          },
-          {
-            "$ref": "http://schema.mydesignsystem.com/logos.schema.json"
           }
         ]
       }
