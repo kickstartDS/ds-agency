@@ -19,7 +19,6 @@ type Story = StoryObj<typeof TeaserCard>;
 
 export const ProductTiles: Story = {
   args: pack({
-    displayButton: false,
     headline: "Castaway",
     text: "Transforming Ideas into Code",
     image: "img/logos/castaway.svg",
