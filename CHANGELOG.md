@@ -1,3 +1,15 @@
+# v3.0.2 (Thu Jan 18 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(teaserCard.stories): update properties ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.0.1 (Thu Jan 18 2024)
 
 #### ⚠️ Pushed to `main`
