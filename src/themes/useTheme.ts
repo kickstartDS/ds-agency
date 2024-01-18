@@ -1,27 +1,12 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
+import "./themes.scss";
 
-const styleElelementId = "theme-tokens";
-
-export const useTheme = (theme: any) => {
-  const styleElement = useRef<HTMLLinkElement>(null);
-
+export const useTheme = (themeName: string) => {
   useEffect(() => {
-    const prevStyleElement = document.getElementById(
-      styleElelementId
-    ) as HTMLLinkElement | null;
-    if (prevStyleElement) {
-      styleElement.current = prevStyleElement;
+    if (themeName && themeName !== "dsa") {
+      document.body.setAttribute("ks-theme", themeName);
     } else {
-      styleElement.current = document.createElement("link");
-      styleElement.current.setAttribute("rel", "stylesheet");
-      styleElement.current.id = styleElelementId;
-      document.head.appendChild(styleElement.current);
+      document.body.removeAttribute("ks-theme");
     }
-  }, []);
-
-  useEffect(() => {
-    if (theme?.tokens) {
-      styleElement.current.setAttribute("href", theme.tokens);
-    }
-  }, [theme]);
+  }, [themeName]);
 };

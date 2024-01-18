@@ -1,5 +1,12 @@
+import { FC, PropsWithChildren } from "react";
+import IconSprite from "../../token/IconSprite";
+import Providers from "../Providers";
 import "../../token/tokens.css";
-import { RawPageWrapper as PageWrapper } from "./RawPageWrapperComponent";
+import "../../global.client";
 
-export { PageWrapper };
-export default PageWrapper;
+export const PageWrapper: FC<PropsWithChildren> = ({ children }) => (
+  <Providers>
+    <IconSprite />
+    {children}
+  </Providers>
+);

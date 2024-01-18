@@ -1,11 +1,12 @@
 import { PropsWithChildren } from "react";
-import { RawPageWrapper } from "../components/page-wrapper/RawPageWrapperComponent";
+import "lazysizes/plugins/attrchange/ls.attrchange";
+import { PageWrapper } from "../components/page-wrapper/PageWrapperComponent";
 import { useTheme } from "../themes/useTheme";
 
 export default function Frame({
   children,
-  theme,
+  themeName,
 }: PropsWithChildren<{ themeName: string | null; theme: any | null }>) {
-  useTheme(theme);
-  return <RawPageWrapper>{children}</RawPageWrapper>;
+  useTheme(themeName);
+  return <PageWrapper>{children}</PageWrapper>;
 }
