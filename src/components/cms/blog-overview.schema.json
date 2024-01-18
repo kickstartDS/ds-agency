@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/cms/blog-overview.schema.json",
+  "title": "Blog Overview",
+  "description": "Abstracts a blog overview concept into JSON schema",
+  "type": "object",
+  "required": ["seo"],
+  "properties": {
+    "latest": {
+      "$ref": "http://schema.mydesignsystem.com/blog-teaser.schema.json"
+    },
+    "list": {
+      "type": "array",
+      "title": "Posts",
+      "description": "Collection of posts to list on the page",
+      "items": {
+        "$ref": "http://schema.mydesignsystem.com/blog-teaser.schema.json"
+      }
+    },
+    "more": {
+      "type": "array",
+      "title": "Posts",
+      "description": "Collection of posts to list on the page",
+      "items": {
+        "$ref": "http://schema.mydesignsystem.com/blog-teaser.schema.json"
+      }
+    },
+    "cta": {
+      "$ref": "http://schema.mydesignsystem.com/cta.schema.json"
+    },
+    "seo": {
+      "$ref": "http://schema.mydesignsystem.com/cms/seo.schema.json"
+    }
+  }
+}
