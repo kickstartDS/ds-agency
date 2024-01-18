@@ -10,14 +10,14 @@ import type {CtaProps} from "@kickstartds/cta.schema.json/lib/cta/typing";
 import type {FaqProps} from "@kickstartds/faq.schema.json/lib/faq/typing";
 import type {FeaturesProps} from "@kickstartds/features.schema.json/lib/features/typing";
 import type {GalleryProps} from "@kickstartds/gallery.schema.json/lib/gallery/typing";
-import type {HeadlineProps} from "@kickstartds/base/lib/headline/typing";
+import type {ImageTextProps} from "@kickstartds/image-text.schema.json/lib/image-text/typing";
+import type {LogosProps} from "@kickstartds/logos.schema.json/lib/logos/typing";
+import type {PageIntroProps} from "@kickstartds/page-intro.schema.json/lib/page-intro/typing";
 import type {SplitProps} from "@kickstartds/split.schema.json/lib/split/typing";
 import type {StatsProps} from "@kickstartds/stats.schema.json/lib/stats/typing";
 import type {TeaserCardProps} from "@kickstartds/teaser-card.schema.json/lib/teaser-card/typing";
 import type {TestimonialsProps} from "@kickstartds/testimonials.schema.json/lib/testimonials/typing";
 import type {TextProps} from "@kickstartds/text.schema.json/lib/text/typing";
-import type {ImageTextProps} from "@kickstartds/image-text.schema.json/lib/image-text/typing";
-import type {LogosProps} from "@kickstartds/logos.schema.json/lib/logos/typing";
 import type {ButtonProps} from "@kickstartds/base/lib/button/typing";
 
 /**
@@ -115,14 +115,14 @@ export type Content = (
   | FaqProps
   | FeaturesProps
   | GalleryProps
-  | HeadlineProps
+  | ImageTextProps
+  | LogosProps
+  | PageIntroProps
   | SplitProps
   | StatsProps
   | TeaserCardProps
   | TestimonialsProps
   | TextProps
-  | ImageTextProps
-  | LogosProps
 )[];
 /**
  * Buttons of the Button Group

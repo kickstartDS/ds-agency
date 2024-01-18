@@ -4,36 +4,8 @@
   "title": "Page",
   "description": "Abstracts a page concept into JSON schema",
   "type": "object",
-  "required": ["id", "slug", "layout", "title"],
+  "required": ["seo"],
   "properties": {
-    "layout": {
-      "type": "string",
-      "title": "Layout",
-      "description": "Choose a layout for the page",
-      "enum": ["default", "content", "blog-list", "blog-detail", "glossary"],
-      "default": "default"
-    },
-    "description": {
-      "type": "string",
-      "title": "Description",
-      "description": "Description used for the page"
-    },
-    "keywords": {
-      "type": "string",
-      "title": "Keywords",
-      "description": "Keywords used for the page"
-    },
-    "image": {
-      "type": "string",
-      "title": "Preview Image",
-      "description": "Preview image used for the page",
-      "format": "image"
-    },
-    "cardImage": {
-      "type": "string",
-      "title": "Card Preview Image",
-      "description": "Card preview image (larger, e.g. Twitter) used for the page"
-    },
     "sections": {
       "type": "array",
       "title": "Sections",
@@ -42,17 +14,8 @@
         "$ref": "http://schema.mydesignsystem.com/section.schema.json"
       }
     },
-    "updated": {
-      "type": "string",
-      "title": "Updated",
-      "description": "Last update date for the page",
-      "format": "date-time"
-    },
-    "created": {
-      "type": "string",
-      "title": "Created",
-      "description": "Creation date for the page",
-      "format": "date-time"
+    "seo": {
+      "$ref": "http://schema.mydesignsystem.com/cms/seo.schema.json"
     }
   }
 }

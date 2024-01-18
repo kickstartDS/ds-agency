@@ -9,14 +9,14 @@ import type {CtaProps} from "../cta/CtaProps";
 import type {FaqProps} from "../faq/FaqProps";
 import type {FeaturesProps} from "../features/FeaturesProps";
 import type {GalleryProps} from "../gallery/GalleryProps";
-import type {HeadlineProps} from "../headline/HeadlineProps";
+import type {ImageTextProps} from "../image-text/ImageTextProps";
+import type {LogosProps} from "../logos/LogosProps";
+import type {PageIntroProps} from "../page-intro/PageIntroProps";
 import type {SplitProps} from "../split/SplitProps";
 import type {StatsProps} from "../stats/StatsProps";
 import type {TeaserCardProps} from "../teaser-card/TeaserCardProps";
 import type {TestimonialsProps} from "../testimonials/TestimonialsProps";
 import type {TextProps} from "../text/TextProps";
-import type {ImageTextProps} from "../image-text/ImageTextProps";
-import type {LogosProps} from "../logos/LogosProps";
 import type {ButtonProps} from "../button/ButtonProps";
 
 /**
@@ -114,14 +114,14 @@ export type Content = (
   | FaqProps
   | FeaturesProps
   | GalleryProps
-  | HeadlineProps
+  | ImageTextProps
+  | LogosProps
+  | PageIntroProps
   | SplitProps
   | StatsProps
   | TeaserCardProps
   | TestimonialsProps
   | TextProps
-  | ImageTextProps
-  | LogosProps
 )[];
 /**
  * Buttons of the Button Group

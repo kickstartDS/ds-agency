@@ -5,19 +5,22 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {SectionProps} from "../section/SectionProps";
+import type {HeaderProps} from "../header/HeaderProps";
+import type {FooterProps} from "../footer/FooterProps";
 import type {SeoProps} from "../seo/SeoProps";
 
 /**
- * Collection of sections (with their contents) to render on the page
+ * Abstracts global settings made for a website into JSON Schema
  */
-export type Sections = SectionProps[];
-
-/**
- * Abstracts a page concept into JSON schema
- */
-export interface PageProps {
-  sections?: Sections;
+export interface SettingsProps {
+  /**
+   * Referenced component HeaderProps
+   */
+  header: HeaderProps;
+  /**
+   * Referenced component FooterProps
+   */
+  footer: FooterProps;
   /**
    * Referenced component SeoProps
    */

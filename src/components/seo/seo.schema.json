@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/cms/seo.schema.json",
+  "title": "Seo",
+  "description": "Abstracts SEO settings for a website into JSON schema",
+  "type": "object",
+  "required": ["title"],
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Title",
+      "description": "Title used for the page"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description",
+      "description": "Description used for the page"
+    },
+    "keywords": {
+      "type": "string",
+      "title": "Keywords",
+      "description": "Keywords used for the page"
+    },
+    "image": {
+      "type": "string",
+      "title": "Preview Image",
+      "description": "Preview image used for the page",
+      "format": "image"
+    },
+    "cardImage": {
+      "type": "string",
+      "title": "Card Preview Image",
+      "description": "Card preview image (larger, e.g. Twitter) used for the page"
+    }
+  }
+}

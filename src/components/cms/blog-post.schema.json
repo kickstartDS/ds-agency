@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/cms/blog-post.schema.json",
+  "title": "Blog Post",
+  "description": "Abstracts a blog post concept into JSON schema",
+  "type": "object",
+  "required": ["seo"],
+  "properties": {
+    "head": {
+      "$ref": "http://schema.mydesignsystem.com/blog-head.schema.json"
+    },
+    "aside": {
+      "$ref": "http://schema.mydesignsystem.com/blog-aside.schema.json"
+    },
+    "content": {
+      "type": "string",
+      "title": "Text",
+      "description": "Body text for the blog post",
+      "format": "markdown"
+    },
+    "cta": {
+      "$ref": "http://schema.mydesignsystem.com/cta.schema.json"
+    },
+    "seo": {
+      "$ref": "http://schema.mydesignsystem.com/cms/seo.schema.json"
+    }
+  }
+}
