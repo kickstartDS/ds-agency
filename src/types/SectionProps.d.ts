@@ -12,7 +12,6 @@ import type {FeaturesProps} from "@kickstartds/features.schema.json/lib/features
 import type {GalleryProps} from "@kickstartds/gallery.schema.json/lib/gallery/typing";
 import type {ImageTextProps} from "@kickstartds/image-text.schema.json/lib/image-text/typing";
 import type {LogosProps} from "@kickstartds/logos.schema.json/lib/logos/typing";
-import type {PageIntroProps} from "@kickstartds/page-intro.schema.json/lib/page-intro/typing";
 import type {SplitProps} from "@kickstartds/split.schema.json/lib/split/typing";
 import type {StatsProps} from "@kickstartds/stats.schema.json/lib/stats/typing";
 import type {TeaserCardProps} from "@kickstartds/teaser-card.schema.json/lib/teaser-card/typing";
@@ -117,7 +116,6 @@ export type Content = (
   | GalleryProps
   | ImageTextProps
   | LogosProps
-  | PageIntroProps
   | SplitProps
   | StatsProps
   | TeaserCardProps

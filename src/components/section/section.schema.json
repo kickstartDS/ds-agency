@@ -181,9 +181,6 @@
             "$ref": "http://schema.mydesignsystem.com/logos.schema.json"
           },
           {
-            "$ref": "http://schema.mydesignsystem.com/page-intro.schema.json"
-          },
-          {
             "$ref": "http://schema.mydesignsystem.com/split.schema.json"
           },
           {

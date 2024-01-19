@@ -11,7 +11,6 @@ import type {FeaturesProps} from "../features/FeaturesProps";
 import type {GalleryProps} from "../gallery/GalleryProps";
 import type {ImageTextProps} from "../image-text/ImageTextProps";
 import type {LogosProps} from "../logos/LogosProps";
-import type {PageIntroProps} from "../page-intro/PageIntroProps";
 import type {SplitProps} from "../split/SplitProps";
 import type {StatsProps} from "../stats/StatsProps";
 import type {TeaserCardProps} from "../teaser-card/TeaserCardProps";
@@ -116,7 +115,6 @@ export type Content = (
   | GalleryProps
   | ImageTextProps
   | LogosProps
-  | PageIntroProps
   | SplitProps
   | StatsProps
   | TeaserCardProps
