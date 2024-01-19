@@ -64,7 +64,6 @@ export const Section = forwardRef<
             }`,
           headerSpacing && "l-section--header-spacing",
           spotlight && "l-section--spotlight",
-          content?.tileWidth && `l-section--tiles-${content?.tileWidth}`,
           className
         )}
         background={backgroundColor}

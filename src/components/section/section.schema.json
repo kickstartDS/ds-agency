@@ -150,8 +150,8 @@
           "type": "string",
           "title": "Tile Width",
           "description": "Set min-width for the tiles in the grid",
-          "enum": ["control", "card", "narrow", "medium", "wide"],
-          "default": "cards"
+          "enum": ["smallest", "default", "medium", "large", "largest"],
+          "default": "default"
         }
       },
       "additionalProperties": false
