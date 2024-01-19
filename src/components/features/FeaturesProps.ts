@@ -24,7 +24,7 @@ export type Features =
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       }
     ]
@@ -32,13 +32,13 @@ export type Features =
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       }
     ]
@@ -46,19 +46,19 @@ export type Features =
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       }
     ]
@@ -66,25 +66,25 @@ export type Features =
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       }
     ]
@@ -92,31 +92,31 @@ export type Features =
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       }
     ]
@@ -124,37 +124,37 @@ export type Features =
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       }
     ]
@@ -162,43 +162,43 @@ export type Features =
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       }
     ]
@@ -206,49 +206,49 @@ export type Features =
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       },
       {
         icon?: Icon;
         title: Title;
-        text: Text;
+        text?: Text;
         cta?: CallToAction;
       }
     ];

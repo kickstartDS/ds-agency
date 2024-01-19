@@ -83,7 +83,7 @@
           }
         },
         "additionalProperties": false,
-        "required": ["title", "text"]
+        "required": ["title"]
       },
       "minItems": 1,
       "maxItems": 8

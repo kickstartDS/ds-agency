@@ -36,7 +36,7 @@ export type CallToActionToggle = boolean;
 export interface FeatureProps {
   icon?: Icon;
   title: Title;
-  text: Text;
+  text?: Text;
   style?: "intext" | "stack" | "centered" | "besideLarge" | "besideSmall";
   ctaTarget?: CallToActionTarget;
   ctaLabel?: LinkLabel;
