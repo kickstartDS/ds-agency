@@ -74,4 +74,8 @@
     --l-section--spotlight-top: 0;
     --l-section--spotlight-color: var(--ks-color-primary-alpha-5);
   }
+
+  &__content {
+    --l-section_tile-width--default: 20rem;
+  }
 }
