@@ -1,20 +1,25 @@
-.c-collapsible-box {
-  --c-collapsible-box-summary--color: var(--g-headline--color);
-  --c-collapsible-box-summary--font-weight: var(--g-headline--font-weight);
-  --c-collapsible-box-summary--font: var(--ks-font-copy-l);
-  --c-collapsible-box-icon--color: var(--ks-text-color-default);
-  --c-collapsible-box_header--padding: 1em 0;
-  --c-collapsible-box_content--padding: 0em 0em 1em 0em;
+@import "./faq-tokens.scss";
 
-  &__header {
-    &__text {
-      color: var(--c-collapsible-box-summary--color);
-      font: var(--c-collapsible-box-summary--font);
-      font-weight: var(--c-collapsible-box-summary--font-weight);
-      font-family: var(--ks-font-family-display);
-    }
-    &__icon {
-      color: var(--c-collapsible-box-icon--color);
+.c-faq {
+  .c-collapsible-box {
+    --c-collapsible-box-summary--color: var(--c-faq-summary--color);
+    --c-collapsible-box-summary--font-weight: var(--c-faq-summary--font-weight);
+    --c-collapsible-box-summary--font: var(--c-faq-summary--font);
+    --c-collapsible-box-icon--color: var(--c-faq-icon--color);
+    --c-collapsible-box_header--padding: var(--c-faq_header--padding);
+    --c-collapsible-box_content--padding: var(--c-faq_content--padding);
+    --c-collapsible-box--border-color: var(--c-faq--border-color);
+
+    &__header {
+      &__text {
+        color: var(--c-collapsible-box-summary--color);
+        font: var(--c-collapsible-box-summary--font);
+        font-weight: var(--c-collapsible-box-summary--font-weight);
+        font-family: var(--ks-font-family-display);
+      }
+      &__icon {
+        color: var(--c-collapsible-box-icon--color);
+      }
     }
   }
 }

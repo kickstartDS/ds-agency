@@ -1,4 +1,12 @@
+@import "./image-text-tokens.scss";
+
 .c-image-text {
+  --c-rich-text--font: var(--c-image-text-font);
+
+  .c-rich-text {
+    font: var(--c-image-text--font);
+  }
+
   &--highlight {
     --c-rich-text--font: var(--ks-font-copy-l);
     --c-rich-text--color: var(--ks-color-fg);

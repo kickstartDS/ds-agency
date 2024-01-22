@@ -1,10 +1,13 @@
 @import "../../selectors";
 
 #{$selectors} {
+  //TBD: Globale Token
   --g-headline--color: var(--ks-color-fg);
+  --g-subheadline--color: var(--ks-text-color-primary);
   --g-headline--font-weight: var(--ks-font-weight-medium);
-  --c-headline--higlight-gradient: var(--g-gradient--higlight);
+  --g-headline--higlight-gradient: var(--g-gradient--higlight);
 
+  //TBD: Token Selectors
   .c-headline {
     --c-headline--color: var(--g-headline--color);
     --c-headline--font-weight: var(--g-headline--font-weight);

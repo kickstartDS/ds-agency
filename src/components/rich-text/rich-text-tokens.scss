@@ -1,9 +1,16 @@
 @import "../../selectors";
 
 #{$selectors} {
+  //TBD: Globale Token
+  --g-rich-text--color: var(--ks-text-color-default);
+  --g-rich-text--font: var(--ks-font-copy-m);
+
   --g-link--text-decoration: none;
 
   .c-rich-text {
+    --c-rich-text--font: var(--g-rich-text--font);
+    --c-rich-text--color: var(--g-rich-text--color);
+
     --c-rich-text_headline--font-weight: var(--g-headline--font-weight);
     --c-rich-text_headline--color: var(--g-headline--color);
   }

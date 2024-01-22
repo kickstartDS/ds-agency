@@ -1,0 +1,10 @@
+.c-cta {
+  --c-cta-headline--color: var(--g-headline--color);
+  --c-cta-subheadline--color: var(--g-subheadline--color);
+
+  //TBD: Text naming
+  --c-cta-copy--font: var(--ks-font-copy-m);
+  --c-cta-copy--color: var(--ks-text-color-default);
+
+  --c-cta--gap: var(--ks-spacing-m);
+}

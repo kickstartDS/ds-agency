@@ -1,5 +1,6 @@
+@import "./cta-tokens.scss";
+
 .c-cta {
-  --c-cta--gap: var(--ks-spacing-m);
   display: flex;
   flex-direction: column;
   gap: var(--c-cta--gap);
@@ -11,6 +12,8 @@
 
     .c-rich-text {
       width: 100%;
+      --c-rich-text--font: var(--c-cta-copy--font);
+      --c-rich-text--color: var(--c-cta-copy--color);
     }
   }
 
@@ -24,6 +27,10 @@
 
   .c-headline {
     max-width: 100%;
+    --c-headline--color: var(--c-cta-headline--color);
+    &__subheadline {
+      --c-headline_subheadline--color: var(--c-cta-subheadline--color);
+    }
   }
 
   .c-button {

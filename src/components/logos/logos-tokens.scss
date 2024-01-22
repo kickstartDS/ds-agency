@@ -1,15 +1,15 @@
 @use "@kickstartds/core/source/core/container";
-@include container.wrapper("logo-tiles");
+@include container.wrapper("logos");
 
 .c-logos {
-  --c-logo-tiles--cols: 2;
-  --c-logo-tiles--gutter: 2em;
+  --c-logos-gap: var(--ks-spacing-stack-m);
+  --c-logos-tagline--font: var(--ks-font-display-m);
+  --c-logos-tagline--color: var(--ks-color-fg);
 
-  @container logo-tiles (min-width: 420px) {
-    --c-logo-tiles--cols: 3;
-  }
+  --c-logos-grid--gap-horizontal: var(--ks-spacing-inline-l);
+  --c-logos-grid--gap-vertical: var(--ks-spacing-stack-s);
 
-  @container logo-tiles (min-width: 640px) {
-    --c-logo-tiles--cols: 4;
-  }
+  --c-logos-grid--cols-mobile: 2;
+  --c-logos-grid--cols-tablet: 3;
+  --c-logos-grid--cols-desktop: 4;
 }

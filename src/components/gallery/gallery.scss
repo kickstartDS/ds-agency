@@ -1,21 +1,23 @@
+@import "./gallery-tokens.scss";
+
 .c-gallery {
   &__grid {
     &--stack {
       display: flex;
-      gap: var(--ks-spacing-stack-m);
+      gap: var(--c-gallery--gap-vertical);
       flex-direction: column;
     }
 
     &--small-tiles {
       display: grid;
-      gap: var(--ks-spacing-inline-m);
-      grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+      gap: var(--c-gallery--gap-horizontal) var(--c-gallery--gap-vertical);
+      grid-template-columns: repeat(auto-fit, minmax(min(var(--c-gallery--tile-min-width-small), 100%), 1fr));
     }
 
     &--large-tiles {
       display: grid;
-      gap: var(--ks-spacing-inline-m);
-      grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+      gap: var(--c-gallery--gap-horizontal) var(--c-gallery--gap-vertical);
+      grid-template-columns: repeat(auto-fit, minmax(min(var(--c-gallery--tile-min-width-large), 100%), 1fr));
     }
   }
 
@@ -24,21 +26,21 @@
 
     &--square {
       img {
-        aspect-ratio: 1 / 1;
+        aspect-ratio: var(--c-gallery--image-ratio-square);
         object-fit: cover;
       }
     }
 
     &--wide {
       img {
-        aspect-ratio: 4 / 3;
+        aspect-ratio: var(--c-gallery--image-ratio-wide);
         object-fit: cover;
       }
     }
 
     &--landscape {
       img {
-        aspect-ratio: 16 / 9;
+        aspect-ratio: var(--c-gallery--image-ratio-landscape);
         object-fit: cover;
       }
     }
@@ -54,16 +56,4 @@
     background-color: var(--ks-color-bg-alpha-3);
     color: var(--ks-color-fg);
   }
-}
-
-:root,
-[ks-inverted],
-[ks-theme] {
-  --c-lightbox--bg: var(--ks-color-bg) !important;
-  --c-lightbox--placeholder-bg: var(--ks-color-fg-to-bg-1) !important;
-  --c-lightbox--root-z-index: var(--ks-depth-modal) !important;
-  --c-lightbox--icon-color: var(--ks-color-fg) !important;
-  --c-lightbox--icon-color-secondary: var(--ks-color-secondary) !important;
-  --c-lightbox--stroke-width: 0px !important;
-  --c-lightbox--error-text-color: var(--ks-color-fg-to-bg-9) !important;
 }

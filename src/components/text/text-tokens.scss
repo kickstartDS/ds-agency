@@ -1,0 +1,10 @@
+.c-text {
+  --c-text--font: var(--g-rich-text--font);
+  --c-text--color: var(--g-rich-text--color);
+
+  --c-text-highlight--color: var(--ks-color-fg);
+  --c-text-highlight--font: var(--ks-font-copy-l);
+
+  --c-text-col-width: 16em;
+  --c-text-col-gap: var(--ks-spacing-inline-m);
+}
