@@ -1,3 +1,16 @@
+# v3.2.1 (Mon Jan 22 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(pages): update properties ([@fleven-kds](https://github.com/fleven-kds))
+- feat(properties): change redundant array names to items ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.2.0 (Fri Jan 19 2024)
 
 #### 🚀 Enhancement
