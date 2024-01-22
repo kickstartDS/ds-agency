@@ -122,7 +122,7 @@ const Page = () => (
       <Logos
         tagline="Orgs we've helped saving time & money"
         align="center"
-        logos={[
+        items={[
           {
             alt: "Logo 1",
             src: "/img/logos/logoipsum-212.svg",
@@ -211,7 +211,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       }}
     >
       <Testimonials
-        testimonials={[
+        items={[
           {
             image: {
               src: "/img/people/author-emily.png",

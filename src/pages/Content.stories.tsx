@@ -67,7 +67,7 @@ We collaborated closely with EcoTech's brand team to set up a Design System that
           `}
       />
       <Testimonials
-        testimonials={[
+        items={[
           {
             image: {
               src: "/static/img/people/author-emily.png",
