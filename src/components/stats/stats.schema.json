@@ -5,9 +5,9 @@
   "description": "Display a set of stats in a grid",
   "type": "object",
   "properties": {
-    "stats": {
+    "items": {
       "type": "array",
-      "title": "Stats",
+      "title": "Items",
       "description": "The stats to display in a grid",
       "items": {
         "type": "object",

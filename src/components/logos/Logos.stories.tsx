@@ -18,7 +18,7 @@ type Story = StoryObj<typeof Logos>;
 
 export const CenteredWithButton: Story = {
   args: pack({
-    logos: [
+    items: [
       {
         src: "img/logos/logoipsum-212.svg",
         alt: "Logo 1",
@@ -53,7 +53,7 @@ export const CenteredWithButton: Story = {
 
 export const LeftAlignedWithTextLink: Story = {
   args: pack({
-    logos: [
+    items: [
       {
         src: "img/logos/logoipsum-212.svg",
         alt: "Logo 1",

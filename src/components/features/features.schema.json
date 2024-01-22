@@ -34,9 +34,9 @@
       },
       "additionalProperties": false
     },
-    "features": {
+    "items": {
       "type": "array",
-      "title": "Features",
+      "title": "Items",
       "description": "The features to display",
       "items": {
         "type": "object",

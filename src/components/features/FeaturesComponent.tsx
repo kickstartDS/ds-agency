@@ -11,7 +11,7 @@ export const Features: FC<FeaturesProps & HTMLAttributes<HTMLDivElement>> = ({
     toggle: true,
   },
   style = "intext",
-  features = [],
+  items = [],
   ...props
 }) => {
   return (
@@ -27,11 +27,11 @@ export const Features: FC<FeaturesProps & HTMLAttributes<HTMLDivElement>> = ({
       )}
       {...props}
     >
-      {features.map((feature, index) => (
+      {items.map((item, index) => (
         <Feature
           key={index}
-          title={feature.title}
-          text={feature.text}
+          title={item.title}
+          text={item.text}
           style={
             style === "intext"
               ? "intext"
@@ -45,9 +45,9 @@ export const Features: FC<FeaturesProps & HTMLAttributes<HTMLDivElement>> = ({
               ? "besideSmall"
               : undefined
           }
-          icon={feature?.icon}
-          ctaLabel={feature?.cta?.label}
-          ctaTarget={feature?.cta?.target}
+          icon={item?.icon}
+          ctaLabel={item?.cta?.label}
+          ctaTarget={item?.cta?.target}
           ctaToggle={ctas?.toggle}
           ctaStyle={ctas?.style}
         />

@@ -19,7 +19,7 @@ export type CTAToggle = boolean;
  * @minItems 1
  * @maxItems 8
  */
-export type Features =
+export type Items =
   | [
       {
         icon?: Icon;
@@ -283,7 +283,7 @@ export interface FeaturesProps {
     toggle?: CTAToggle;
     style?: "button" | "link" | "intext";
   };
-  features?: Features;
+  items?: Items;
 }
 /**
  * The call to action

@@ -5,30 +5,30 @@ import { TextMedia } from "@kickstartds/base/lib/text-media";
 
 export const Testimonials: FC<
   TestimonialsProps & HTMLAttributes<HTMLElement>
-> = ({ testimonials }) => {
+> = ({ items }) => {
   return (
     <div className="c-testimonials">
-      {testimonials.map((testimonial, index) => (
+      {items.map((item, index) => (
         <TextMedia
           key={index}
           mediaAlignment="beside-left"
           media={[
             {
               image: {
-                src: testimonial.image.src,
-                alt: testimonial.image.alt,
+                src: item.image.src,
+                alt: item.image.alt,
               },
             },
           ]}
-          text={testimonial.quote}
+          text={item.quote}
           renderText={() => (
             <>
-              "{testimonial.quote}"
+              "{item.quote}"
               <br />
               <br />
-              <b>{testimonial.name}</b>
+              <b>{item.name}</b>
               <br />
-              {testimonial.title}
+              {item.title}
             </>
           )}
         />

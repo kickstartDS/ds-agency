@@ -22,7 +22,7 @@ type Story = StoryObj<typeof Testimonials>;
 
 export const Simple: Story = {
   args: pack({
-    testimonials: [
+    items: [
       {
         quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
         image: {
@@ -38,7 +38,7 @@ export const Simple: Story = {
 
 export const WithTitle: Story = {
   args: pack({
-    testimonials: [
+    items: [
       {
         quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
         image: {
@@ -54,7 +54,7 @@ export const WithTitle: Story = {
 
 export const ListLayout: Story = {
   args: pack({
-    testimonials: [
+    items: [
       {
         quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
         image: {

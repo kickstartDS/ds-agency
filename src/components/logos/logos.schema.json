@@ -11,9 +11,9 @@
       "description": "A short tagline atop the logos",
       "examples": ["Your Success, Our Commitment"]
     },
-    "logos": {
+    "items": {
       "type": "array",
-      "title": "Logos",
+      "title": "Items",
       "description": "The logos to display",
       "items": {
         "type": "object",

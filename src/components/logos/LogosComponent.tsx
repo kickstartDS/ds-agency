@@ -9,7 +9,7 @@ import { Picture } from "@kickstartds/base/lib/picture";
 import { Container } from "@kickstartds/core/lib/container";
 
 export const Logos: FC<LogosProps & HTMLAttributes<HTMLElement>> = ({
-  logos = [],
+  items = [],
   tagline,
   align,
   cta,
@@ -20,9 +20,9 @@ export const Logos: FC<LogosProps & HTMLAttributes<HTMLElement>> = ({
         <div className={classnames(`c-logos c-logos--align-${align}`)}>
           <div className="c-logos__tagline">{tagline}</div>
           <div className="c-logos__grid">
-            {logos.map((logo, index) => (
+            {items.map((item, index) => (
               <div className="c-logos__logo" key={index}>
-                <Picture src={logo.src} />
+                <Picture src={item.src} />
               </div>
             ))}
           </div>
