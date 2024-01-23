@@ -3,8 +3,10 @@ import { TeaserCard } from "../../components/teaser-card/TeaserCardComponent";
 
 const Recipe = () => (
   <Section
-    headline="Read articles about kickstartDS"
-    background="accent"
+    headline={{
+      text: "Read articles about kickstartDS",
+    }}
+    backgroundColor="accent"
     width="max"
     buttons={[
       {

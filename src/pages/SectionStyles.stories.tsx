@@ -179,16 +179,25 @@ Elevate your digital presence with us. We create [impactful digital](#) experien
         target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
+        button={{
+          label: "Go to page",
+        }}
       />
       <TeaserCard
         target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
+        button={{
+          label: "Go to page",
+        }}
       />
       <TeaserCard
         target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
+        button={{
+          label: "Go to page",
+        }}
       />
     </Section>
     <Section inverted width="wide">
@@ -196,16 +205,25 @@ Elevate your digital presence with us. We create [impactful digital](#) experien
         target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
+        button={{
+          label: "Go to page",
+        }}
       />
       <TeaserCard
         target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
+        button={{
+          label: "Go to page",
+        }}
       />
       <TeaserCard
         target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
+        button={{
+          label: "Go to page",
+        }}
       />
     </Section>
     <Section>
