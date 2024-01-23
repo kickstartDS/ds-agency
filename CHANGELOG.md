@@ -1,3 +1,15 @@
+# v3.2.6 (Tue Jan 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: remove split from section schema ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.2.5 (Tue Jan 23 2024)
 
 #### ⚠️ Pushed to `main`
