@@ -23,6 +23,10 @@ export const ProductTiles: Story = {
     text: "Transforming Ideas into Code",
     image: "img/logos/castaway.svg",
     target: "#",
+    button: {
+      label: "Go to page",
+      hidden: true,
+    },
   }),
 };
 
@@ -49,7 +53,7 @@ export const ShowcasePreview: Story = {
     image: "img/showcases/comp_tfe01.jpg",
     target: "#",
     button: {
-      label: "Go to showcase",
+      label: "View showcase",
     },
   }),
 };

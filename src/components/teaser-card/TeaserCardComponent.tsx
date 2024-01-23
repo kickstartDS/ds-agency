@@ -46,15 +46,11 @@ export const TeaserCard = forwardRef<
             </>
           )}
           link={{
-            hidden:
-              button?.displayButton === true
-                ? false
-                : button?.displayButton === false
-                ? true
-                : true,
-            label: button?.label,
+            hidden: button?.hidden,
+            label: button.label,
             variant: "secondary",
             target: target,
+            icon: button?.chevron ? "chevron-right" : undefined,
           }}
           image={image}
           ref={ref}
