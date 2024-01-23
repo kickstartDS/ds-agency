@@ -2,9 +2,10 @@
   --c-cta-headline--color: var(--g-headline--color);
   --c-cta-subheadline--color: var(--g-subheadline--color);
 
-  //TBD: Text naming
-  --c-cta-copy--font: var(--ks-font-copy-m);
-  --c-cta-copy--color: var(--ks-text-color-default);
+  //TBD: Text naming: should there be a consistent name for text token(text/copy/rich-text/...)
+  //TBD: Rich Text Token: should every component featuring rich text have the same token?
+  --c-cta-copy--font: var(--g-rich-text--font);
+  --c-cta-copy--color: var(--g-rich-text--color);
 
   --c-cta--gap: var(--ks-spacing-m);
 }

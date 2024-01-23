@@ -2,23 +2,23 @@
   --c-feature-icon--color: var(--ks-text-color-primary);
 
   //TBD: Text naming
-  --c-feature-text--color: var(--ks-text-color-default);
+  --c-feature-text--color: var(--g-rich-text--color);
 
-  //TBD: Token Selektor
+  //TBD: Token Selektor: should there be additional selectors in the token files?
   &--small {
     --c-feature-icon--size: calc(var(--ks-line-height-interface-m) * var(--ks-font-size-interface-m));
-    --c-feature--stack: var(--ks-spacing-stack-xs);
+    --c-feature--gap-vertical: var(--ks-spacing-stack-xs);
     --c-feature-icon--gap: var(--ks-spacing-xs);
   }
 
   &--large {
     --c-feature-icon--size: calc(var(--ks-font-size-copy-m) * 2.5);
-    --c-feature--stack: var(--ks-spacing-stack-s);
+    --c-feature--gap-vertical: var(--ks-spacing-stack-s);
     --c-feature-icon--gap: var(--ks-spacing-s);
   }
 
   &--large.c-feature--beside {
-    --c-feature--stack: var(--ks-spacing-stack-xs);
+    --c-feature--gap-vertical: var(--ks-spacing-stack-xs);
   }
 
   &--stack.c-feature--large {

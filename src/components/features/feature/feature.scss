@@ -4,7 +4,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  gap: var(--c-feature--stack);
+  gap: var(--c-feature--gap-vertical);
 
   &--beside {
     padding-left: calc(var(--c-feature-icon--size) + var(--c-feature-icon--gap));
@@ -85,6 +85,6 @@
     }
   }
   &__button {
-    margin-top: calc(var(--c-feature--stack) * 0.5);
+    margin-top: calc(var(--c-feature--gap-vertical) * 0.5);
   }
 }

@@ -22,5 +22,6 @@ export interface HeaderProps {
   navItems?: {
     href: string;
     label: string;
+    active?: boolean;
   }[];
 }

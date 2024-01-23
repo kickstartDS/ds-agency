@@ -1,8 +1,6 @@
 @import "./image-text-tokens.scss";
 
 .c-image-text {
-  --c-rich-text--font: var(--c-image-text-font);
-
   .c-rich-text {
     font: var(--c-image-text--font);
   }

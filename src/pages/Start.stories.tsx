@@ -181,6 +181,9 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       }}
     >
       <TeaserCard
+        button={{
+          label: "TEST1",
+        }}
         target="/showcase-techfusion"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"

@@ -1,7 +1,11 @@
-.c-collapsible-box {
+.c-faq {
   --c-faq-summary--color: var(--g-headline--color);
   --c-faq-summary--font-weight: var(--g-headline--font-weight);
   --c-faq-summary--font: var(--ks-font-copy-l);
+
+  //TBD: Rich Text Token
+  --c-faq-answer--color: var(--g-headline--color);
+  --c-faq-answer--font: var(--ks-font-copy-l);
 
   --c-faq-icon--color: var(--ks-text-color-default);
   --c-faq--border-color: var(--ks-border-color-interface);
