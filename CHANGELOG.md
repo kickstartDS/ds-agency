@@ -1,3 +1,15 @@
+# v3.2.5 (Tue Jan 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(slider): add spacing after last slider child ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.2.4 (Tue Jan 23 2024)
 
 #### ⚠️ Pushed to `main`
