@@ -50,7 +50,7 @@
     "playroom:build": "playroom build",
     "husky:precommit": "yarn schema && rollup -c",
     "prepare": "patch-package && husky install",
-    "prepublishOnly": "rm -rf dist && yarn build-tokens && yarn schema && rollup -c",
+    "prepublishOnly": "rm -rf dist && yarn build-tokens && yarn schema && rollup -c && yarn build-storybook",
     "schema": "run-p schema:*",
     "schema:dereference-schemas": "kickstartDS schema dereference --schema-domain schema.mydesignsystem.com",
     "schema:generate-props": "kickstartDS schema types",
