@@ -39,7 +39,7 @@
   ],
   "scripts": {
     "build-storybook": "yarn build-tokens && yarn schema && yarn token && storybook build",
-    "postbuild-storybook": "yarn test && rm -rf dist/static/img/screenshots && mkdir -p dist/static/img/screenshots && cp __snapshots__/*.png dist/static/img/screenshots && yarn playroom:snippets && yarn playroom:build && cp snippets.json dist",
+    "postbuild-storybook": "yarn playroom:snippets && yarn playroom:build && cp snippets.json dist",
     "build-tokens": "kickstartDS tokens compile && kickstartDS tokens compile --token-dictionary-path src/token-lughausen/dictionary --sd-config-path sd.config-lughausen.cjs && yarn copyTokensCss",
     "chromatic": "chromatic --build-script-name \"build-storybook\" --output-dir \"storybook-static\" --skip \"@(renovate/**|dependabot/**)\" --exit-zero-on-changes --exit-once-uploaded",
     "copyTokensCss": "cp src/token/tokens.css static/tokens.css && cp src/token-lughausen/tokens.css static/tokens-lughausen.css && cp src/token-google/tokens.css static/tokens-google.css && cp src/token-telekom/tokens.css static/tokens-telekom.css",
@@ -57,6 +57,7 @@
     "schema:layer-types": "kickstartDS schema layer",
     "start": "run-p watch:* storybook",
     "storybook": "storybook dev -p 6006",
+    "create-component-previews": "yarn test && rm -rf static/img/screenshots && mkdir -p static/img/screenshots && cp __snapshots__/*.png static/img/screenshots",
     "test": "rm -rf __snapshots__ && run-p -r test:*",
     "test:server": "npx http-server storybook-static --port 6006 --silent",
     "test:suite": "npx wait-on http://127.0.0.1:6006 && test-storybook",
