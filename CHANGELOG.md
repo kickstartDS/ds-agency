@@ -1,3 +1,21 @@
+# v3.2.9 (Fri Jan 26 2024)
+
+#### ⚠️ Pushed to `main`
+
+- chore: fix script ([@julrich](https://github.com/julrich))
+- chore: trigger another release ([@julrich](https://github.com/julrich))
+- fix: don't run playwright in ci ([@julrich](https://github.com/julrich))
+- fix(ci): try playwright like this ([@julrich](https://github.com/julrich))
+- fix: add missing playwright in ci ([@julrich](https://github.com/julrich))
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- feature: add images and snippets to release ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.2.8 (Fri Jan 26 2024)
 
 #### ⚠️ Pushed to `main`
