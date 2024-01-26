@@ -11,7 +11,7 @@
  * @minItems 1
  * @maxItems 4
  */
-export type Items = [Stat] | [Stat, Stat] | [Stat, Stat, Stat] | [Stat, Stat, Stat, Stat];
+export type Stats = [Stat] | [Stat, Stat] | [Stat, Stat, Stat] | [Stat, Stat, Stat, Stat];
 /**
  * The number of the stat
  */
@@ -29,7 +29,7 @@ export type Title = string;
  * Display a set of stats in a grid
  */
 export interface StatsProps {
-  items?: Items;
+  stat?: Stats;
 }
 export interface Stat {
   number: Number;

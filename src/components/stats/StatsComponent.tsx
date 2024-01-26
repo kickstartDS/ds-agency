@@ -3,16 +3,16 @@ import { StatsProps } from "./StatsProps";
 import "./stats.scss";
 
 export const Stats: FC<StatsProps & HTMLAttributes<HTMLElement>> = ({
-  items = [],
+  stat: stats = [],
 }) => {
   return (
     <div className="c-stats">
-      {items.map((item, index) => (
-        <div className="c-stats__item" key={index}>
-          <span className="c-stats__value">{item.number}</span>
-          <span className="c-stats__label">{item.title}</span>
-          {item?.description ? (
-            <span className="c-stats__description">{item?.description}</span>
+      {stats.map((stat, index) => (
+        <div className="c-stats__stat" key={index}>
+          <span className="c-stats__value">{stat.number}</span>
+          <span className="c-stats__label">{stat.title}</span>
+          {stat?.description ? (
+            <span className="c-stats__description">{stat?.description}</span>
           ) : (
             ""
           )}

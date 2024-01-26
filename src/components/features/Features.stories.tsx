@@ -19,7 +19,7 @@ export const IconCentered: Story = {};
 IconCentered.args = pack({
   style: "centered",
   layout: "largeTiles",
-  features: [
+  feature: [
     {
       icon: "home",
       title: "Scalable Architecture",
@@ -84,7 +84,7 @@ StackWithButton.args = pack({
   ctas: {
     style: "button",
   },
-  features: [
+  feature: [
     {
       icon: "person",
       title: "Consistent UI",
@@ -132,7 +132,7 @@ ListView.args = pack({
     style: "intext",
     toggle: false,
   },
-  features: [
+  feature: [
     {
       icon: "star",
       title: "Customizable Design",
@@ -198,7 +198,7 @@ IconBesideWithLinkInText.args = pack({
   ctas: {
     style: "intext",
   },
-  features: [
+  feature: [
     {
       icon: "home",
       title: "Scalable Architecture",
@@ -262,7 +262,7 @@ IconIntextWithLink.args = pack({
   ctas: {
     style: "link",
   },
-  features: [
+  feature: [
     {
       icon: "star",
       title: "Customizable Design",

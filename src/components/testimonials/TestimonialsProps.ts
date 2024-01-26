@@ -28,7 +28,15 @@ export type AltText = string;
 /**
  * Add testimonials featuring an image, a quote, a source and a rating
  */
-export type Items = {
+export type Testimonials = Testimonial[];
+
+/**
+ * Display testimonials with an optional image and rating
+ */
+export interface TestimonialsProps {
+  testimonial?: Testimonials;
+}
+export interface Testimonial {
   quote: Quote;
   name: Name;
   title?: Title;
@@ -36,11 +44,4 @@ export type Items = {
     src?: Source;
     alt?: AltText;
   };
-}[];
-
-/**
- * Display testimonials with an optional image and rating
- */
-export interface TestimonialsProps {
-  items?: Items;
 }

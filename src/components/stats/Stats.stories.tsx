@@ -20,7 +20,7 @@ type Story = StoryObj<typeof Stats>;
 
 export const WithDescription: Story = {
   args: pack({
-    stats: [
+    stat: [
       {
         number: 1500,
         title: "Users",
@@ -39,7 +39,7 @@ export const WithDescription: Story = {
 
 export const Simple: Story = {
   args: pack({
-    stats: [
+    stat: [
       { number: 1500, title: "Users" },
       { number: 350, title: "Subscribers" },
       { number: 125, title: "Components" },
