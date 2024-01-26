@@ -44,6 +44,9 @@ jobs:
       - checkout
       - restore_cache: *restore-cache-node
       - run:
+          name: Install Playwright
+          command: yarn playwright install
+      - run:
           name: Create Release
           command: yarn auto shipit
 
