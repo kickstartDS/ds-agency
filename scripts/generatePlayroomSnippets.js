@@ -129,8 +129,14 @@ const findComponent = (components, story) => {
     const snippet = renderSnippet(story);
     const renderFunction = snippet.type.render || snippet.type;
     if (renderFunction && (renderFunction.name || renderFunction.displayName)) {
+      const {
+        unpack,
+      } = require("../tmp/_node_modules/@kickstartds/core/lib/storybook/index.js");
+
       const code = reactElementToJSXString.default(snippet);
-      snippets.push({ group, name, code });
+      const args = unpack(story.initialArgs);
+      const screenshot = `img/screenshots/${story.id}.png`;
+      snippets.push({ group, name, code, args, screenshot });
     } else {
       console.warn(" ⚠️  Component has no `displayName`");
     }
