@@ -1,3 +1,15 @@
+# v3.2.7 (Fri Jan 26 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: roll back change to items arrays ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.2.6 (Tue Jan 23 2024)
 
 #### ⚠️ Pushed to `main`
