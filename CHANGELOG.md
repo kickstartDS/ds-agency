@@ -1,3 +1,16 @@
+# v3.2.10 (Fri Jan 26 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- fix: re-add storybook build to release ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.2.9 (Fri Jan 26 2024)
 
 #### ⚠️ Pushed to `main`
