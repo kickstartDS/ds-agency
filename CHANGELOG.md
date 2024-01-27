@@ -1,3 +1,17 @@
+# v3.2.11 (Sat Jan 27 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: ci because of misnamed script file ([@julrich](https://github.com/julrich))
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- fix: update script commands slightly ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.2.10 (Fri Jan 26 2024)
 
 #### ⚠️ Pushed to `main`
