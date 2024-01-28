@@ -136,7 +136,8 @@ const findComponent = (components, story) => {
       const code = reactElementToJSXString.default(snippet);
       const args = unpack(story.initialArgs);
       const screenshot = `img/screenshots/${story.id}.png`;
-      snippets.push({ group, name, code, args, screenshot });
+      const id = story.id;
+      snippets.push({ id, group, name, code, args, screenshot });
     } else {
       console.warn(" ⚠️  Component has no `displayName`");
     }
