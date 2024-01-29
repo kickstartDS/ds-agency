@@ -34,12 +34,13 @@
       },
       "additionalProperties": false
     },
-    "items": {
+    "feature": {
       "type": "array",
-      "title": "Items",
+      "title": "Features",
       "description": "The features to display",
       "items": {
         "type": "object",
+        "title": "Feature",
         "properties": {
           "icon": {
             "type": "string",

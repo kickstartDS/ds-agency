@@ -11,12 +11,13 @@
       "description": "A short tagline atop the logos",
       "examples": ["Your Success, Our Commitment"]
     },
-    "items": {
+    "logo": {
       "type": "array",
-      "title": "Items",
+      "title": "Logos",
       "description": "The logos to display",
       "items": {
         "type": "object",
+        "title": "Logo",
         "properties": {
           "src": {
             "type": "string",

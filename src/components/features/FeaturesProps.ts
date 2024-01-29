@@ -19,239 +19,15 @@ export type CTAToggle = boolean;
  * @minItems 1
  * @maxItems 8
  */
-export type Items =
-  | [
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      }
-    ]
-  | [
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      }
-    ]
-  | [
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      }
-    ]
-  | [
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      }
-    ]
-  | [
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      }
-    ]
-  | [
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      }
-    ]
-  | [
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      }
-    ]
-  | [
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      }
-    ];
+export type Features =
+  | [Feature]
+  | [Feature, Feature]
+  | [Feature, Feature, Feature]
+  | [Feature, Feature, Feature, Feature]
+  | [Feature, Feature, Feature, Feature, Feature]
+  | [Feature, Feature, Feature, Feature, Feature, Feature]
+  | [Feature, Feature, Feature, Feature, Feature, Feature, Feature]
+  | [Feature, Feature, Feature, Feature, Feature, Feature, Feature, Feature];
 /**
  * The icon for the feature
  */
@@ -283,7 +59,13 @@ export interface FeaturesProps {
     toggle?: CTAToggle;
     style?: "button" | "link" | "intext";
   };
-  items?: Items;
+  feature?: Features;
+}
+export interface Feature {
+  icon?: Icon;
+  title: Title;
+  text?: Text;
+  cta?: CallToAction;
 }
 /**
  * The call to action

@@ -32,3 +32,4 @@ src/token-lughausen/storybook/icons.svg
 static/*.css
 static/*.css.map
 dist
+__snapshots__

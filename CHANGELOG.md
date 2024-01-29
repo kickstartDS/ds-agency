@@ -1,3 +1,96 @@
+# v3.2.13 (Sun Jan 28 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add preset id ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v3.2.12 (Sun Jan 28 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: move presets file to correct folder ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v3.2.11 (Sat Jan 27 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: ci because of misnamed script file ([@julrich](https://github.com/julrich))
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- fix: update script commands slightly ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v3.2.10 (Fri Jan 26 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- fix: re-add storybook build to release ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v3.2.9 (Fri Jan 26 2024)
+
+#### ⚠️ Pushed to `main`
+
+- chore: fix script ([@julrich](https://github.com/julrich))
+- chore: trigger another release ([@julrich](https://github.com/julrich))
+- fix: don't run playwright in ci ([@julrich](https://github.com/julrich))
+- fix(ci): try playwright like this ([@julrich](https://github.com/julrich))
+- fix: add missing playwright in ci ([@julrich](https://github.com/julrich))
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- feature: add images and snippets to release ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v3.2.8 (Fri Jan 26 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(stats): update scss selector ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v3.2.7 (Fri Jan 26 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: roll back change to items arrays ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.2.6 (Tue Jan 23 2024)
 
 #### ⚠️ Pushed to `main`
