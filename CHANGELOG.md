@@ -1,3 +1,15 @@
+# v3.2.16 (Mon Jan 29 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: section key in page ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.2.14 (Mon Jan 29 2024)
 
 #### ⚠️ Pushed to `main`
