@@ -21,6 +21,7 @@
         "properties": {
           "src": {
             "type": "string",
+            "format": "image",
             "title": "URL",
             "description": "The URL of the logo image",
             "examples": [
@@ -65,6 +66,7 @@
         },
         "text": {
           "type": "string",
+          "format": "markdown",
           "title": "Call to Action Text",
           "description": "A short CTA text",
           "examples": [

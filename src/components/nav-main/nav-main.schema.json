@@ -9,6 +9,7 @@
     },
     "logoHref": {
       "type": "string",
+      "format": "uri",
       "default": "/"
     },
     "items": {
@@ -16,7 +17,7 @@
       "items": {
         "type": "object",
         "properties": {
-          "href": { "type": "string" },
+          "href": { "type": "string", "format": "uri" },
           "label": { "type": "string" }
         },
         "additionalProperties": false,
