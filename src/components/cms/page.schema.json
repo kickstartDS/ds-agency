@@ -6,7 +6,7 @@
   "type": "object",
   "required": ["seo"],
   "properties": {
-    "sections": {
+    "section": {
       "type": "array",
       "title": "Sections",
       "description": "Collection of sections (with their contents) to render on the page",
