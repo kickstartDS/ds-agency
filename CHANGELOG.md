@@ -1,3 +1,15 @@
+# v3.2.14 (Mon Jan 29 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add more specific type formats to schemas ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.2.13 (Sun Jan 28 2024)
 
 #### ⚠️ Pushed to `main`
