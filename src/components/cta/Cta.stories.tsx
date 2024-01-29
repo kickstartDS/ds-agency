@@ -19,6 +19,12 @@ type Story = StoryObj<typeof Cta>;
 export default meta;
 
 export const Banner: Story = {
+  parameters: {
+    viewport: {
+      width: 100,
+      height: 120,
+    },
+  },
   args: pack({
     headline: "Ready to Transform Your Development Process?",
     sub: "Start your journey today.",

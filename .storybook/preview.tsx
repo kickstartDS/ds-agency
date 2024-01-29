@@ -65,7 +65,9 @@ const preview: Preview = {
     themeSwitchDecorator,
     (Story) => (
       <RawPageWrapper>
-        <Story />
+        <div className="test">
+          <Story />
+        </div>
       </RawPageWrapper>
     ),
   ],
