@@ -17,6 +17,7 @@
             "title": "Quote",
             "description": "The testimonial quote",
             "type": "string",
+            "format": "markdown",
             "examples": ["This product is amazing!"]
           },
           "name": {
@@ -37,6 +38,7 @@
                 "title": "Source",
                 "description": "The image to display with the testimonial",
                 "type": "string",
+                "format": "image",
                 "examples": ["https://example.com/image.jpg"]
               },
               "alt": {

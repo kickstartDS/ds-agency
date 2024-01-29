@@ -22,12 +22,14 @@
           "description": {
             "title": "Description",
             "description": "Optional description of the stat",
-            "type": "string"
+            "type": "string",
+            "format": "markdown"
           },
           "title": {
             "title": "Title",
             "description": "Title of the stat",
             "type": "string",
+            "format": "markdown",
             "examples": ["Stat 1", "Stat 2", "Stat 3", "Stat 4"]
           }
         },

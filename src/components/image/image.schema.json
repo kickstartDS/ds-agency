@@ -72,13 +72,13 @@
             "format": "image"
           },
           "media": {
-            "title": "TODO MEDIA TITLE",
-            "description": "TODO MEDIA DESCRIPTION",
+            "title": "Media for picture",
+            "description": "Media attribute for source",
             "type": "string"
           },
           "type": {
-            "title": "TODO TYPE TITLE",
-            "description": "TODO TYPE DESCRIPTION",
+            "title": "Type for picture",
+            "description": "Type attribute for source",
             "type": "string"
           }
         },

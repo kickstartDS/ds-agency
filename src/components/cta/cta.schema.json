@@ -8,18 +8,21 @@
       "title": "Component Headline",
       "description": "Headline for the Component element",
       "type": "string",
+      "format": "markdown",
       "examples": ["Headline"]
     },
     "sub": {
       "title": "Component Subheadline",
       "description": "Subheadline below the component headline",
       "type": "string",
+      "format": "markdown",
       "examples": ["Subheadline"]
     },
     "text": {
       "title": "Component Text",
       "description": "Info text for the component element",
-      "type": "string"
+      "type": "string",
+      "format": "markdown"
     },
     "highlightText": {
       "type": "boolean",

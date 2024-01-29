@@ -46,20 +46,20 @@ export type Lazy = boolean;
  */
 export type PictureSourceset1 = string;
 /**
- * TODO MEDIA DESCRIPTION
+ * Media attribute for source
  */
-export type TODOMEDIATITLE = string;
+export type MediaForPicture = string;
 /**
- * TODO TYPE DESCRIPTION
+ * Type attribute for source
  */
-export type TODOTYPETITLE = string;
+export type TypeForPicture = string;
 /**
  * Additional sources. This will result in a `picture`-Element
  */
 export type Sources = {
   srcSet?: PictureSourceset1;
-  media?: TODOMEDIATITLE;
-  type?: TODOTYPETITLE;
+  media?: MediaForPicture;
+  type?: TypeForPicture;
 }[];
 /**
  * Set additional class(es) to the picture
