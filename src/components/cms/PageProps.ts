@@ -17,7 +17,7 @@ export type Sections = SectionProps[];
  * Abstracts a page concept into JSON schema
  */
 export interface PageProps {
-  sections?: Sections;
+  section?: Sections;
   /**
    * Referenced component SeoProps
    */
