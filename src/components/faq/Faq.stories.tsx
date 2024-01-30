@@ -20,6 +20,12 @@ export default meta;
 type Story = StoryObj<typeof Faq>;
 
 export const DropdownList: Story = {
+  parameters: {
+    viewport: {
+      width: 820,
+      height: 390,
+    },
+  },
   args: pack({
     questions: [
       {
@@ -42,6 +48,12 @@ export const DropdownList: Story = {
 };
 
 export const SingleDropdown: Story = {
+  parameters: {
+    viewport: {
+      width: 820,
+      height: 390,
+    },
+  },
   args: pack({
     questions: [
       {

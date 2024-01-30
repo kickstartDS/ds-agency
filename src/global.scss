@@ -8,6 +8,22 @@
 @use "./fonts-google";
 @use "./selectors" as *;
 
+body.sb-show-main.sb-main-padded {
+  padding: 0 !important;
+}
+
+.preview {
+  &--wrapper {
+    background-color: var(--ks-color-primary-to-bg-7);
+    padding: 2rem;
+  }
+
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
+  padding: 42px 29px;
+  background-color: var(--ks-background-color-default);
+  border-radius: var(--ks-border-radius-card);
+}
+
 body {
   background: var(--ks-background-color-default);
 }

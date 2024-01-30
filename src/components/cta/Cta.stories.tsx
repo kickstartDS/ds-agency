@@ -21,8 +21,8 @@ export default meta;
 export const Banner: Story = {
   parameters: {
     viewport: {
-      width: 100,
-      height: 120,
+      width: 1000,
+      height: 455,
     },
   },
   args: pack({
@@ -46,6 +46,12 @@ export const Banner: Story = {
 };
 
 export const Highlighted: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 534,
+    },
+  },
   args: pack({
     headline: "Why Choose Our Design System?",
     sub: "Built for consistency and speed.",
@@ -63,6 +69,12 @@ export const Highlighted: Story = {
 };
 
 export const LeftAligned: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 455,
+    },
+  },
   args: pack({
     headline: "Experience Our Design System",
     sub: "Efficient, scalable, seamless.",

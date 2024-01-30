@@ -16,7 +16,14 @@ const meta: Meta<typeof BlogTeaser> = {
 export default meta;
 type Story = StoryObj<typeof BlogTeaser>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 504,
+    },
+  },
+};
 Default.args = pack({
   date: "12/30/2022",
   tags: ["Technology", "AI"],
