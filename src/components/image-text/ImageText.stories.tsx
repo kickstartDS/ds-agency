@@ -19,6 +19,12 @@ type Story = StoryObj<typeof ImageText>;
 export default meta;
 
 export const BesideRightLayout: Story = {
+  parameters: {
+    viewport: {
+      width: 1350,
+      height: 511,
+    },
+  },
   args: pack({
     text: `We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).
 
@@ -34,6 +40,12 @@ _Experience the power of streamlined development and see the difference it can m
 };
 
 export const AboveLayout: Story = {
+  parameters: {
+    viewport: {
+      width: 760,
+      height: 897,
+    },
+  },
   args: pack({
     text: `We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).
 

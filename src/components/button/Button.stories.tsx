@@ -21,6 +21,12 @@ type Story = StoryObj<typeof Button>;
 export default meta;
 
 export const PrimaryButton: Story = {
+  parameters: {
+    viewport: {
+      width: 770,
+      height: 172,
+    },
+  },
   args: pack({
     label: "Primary Button",
     variant: "primary",
@@ -28,6 +34,12 @@ export const PrimaryButton: Story = {
 };
 
 export const SecondaryButton: Story = {
+  parameters: {
+    viewport: {
+      width: 770,
+      height: 172,
+    },
+  },
   args: pack({
     label: "Secondary Button",
     variant: "secondary",
@@ -35,6 +47,12 @@ export const SecondaryButton: Story = {
 };
 
 export const TertiaryButton: Story = {
+  parameters: {
+    viewport: {
+      width: 770,
+      height: 172,
+    },
+  },
   args: pack({
     label: "Tertiary Button",
     variant: "tertiary",
@@ -42,6 +60,12 @@ export const TertiaryButton: Story = {
 };
 
 export const PrimaryDisabledButton: Story = {
+  parameters: {
+    viewport: {
+      width: 770,
+      height: 172,
+    },
+  },
   args: pack({
     label: "Disabled Button",
     variant: "primary",

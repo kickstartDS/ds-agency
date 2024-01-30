@@ -19,6 +19,12 @@ export default meta;
 type Story = StoryObj<typeof Stats>;
 
 export const WithDescription: Story = {
+  parameters: {
+    viewport: {
+      width: 790,
+      height: 400,
+    },
+  },
   args: pack({
     stat: [
       {
@@ -38,6 +44,12 @@ export const WithDescription: Story = {
 };
 
 export const Simple: Story = {
+  parameters: {
+    viewport: {
+      width: 700,
+      height: 340,
+    },
+  },
   args: pack({
     stat: [
       { number: 1500, title: "Users" },
