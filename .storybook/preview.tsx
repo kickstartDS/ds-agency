@@ -59,6 +59,10 @@ const preview: Preview = {
     html: {
       decorators: [unpackDecorator, providerDecorator],
     },
+    viewport: {
+      width: 1280,
+      height: 720,
+    },
   },
   decorators: [
     unpackDecorator,
