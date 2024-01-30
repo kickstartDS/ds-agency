@@ -5,17 +5,35 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {PictureProps} from "@kickstartds/base/lib/picture/typing";
+/**
+ * Picture source
+ */
+export type Source = string;
+/**
+ * Alt text to display for picture
+ */
+export type AltText = string;
+/**
+ * Width of the picture
+ */
+export type Width = number;
+/**
+ * Height of the picture
+ */
+export type Height = number;
 
 export interface FooterProps {
-  /**
-   * Referenced component PictureProps
-   */
-  logo: PictureProps;
+  logo: Logo;
   logoHref?: string;
   navItems?: {
     href: string;
     label: string;
     target?: string;
   }[];
+}
+export interface Logo {
+  src?: Source;
+  alt?: AltText;
+  width?: Width;
+  height?: Height;
 }
