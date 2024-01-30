@@ -14,12 +14,14 @@
         "properties": {
           "question": {
             "type": "string",
+            "format": "markdown",
             "title": "Question",
             "description": "The question",
             "examples": ["What is the product made of?"]
           },
           "answer": {
             "type": "string",
+            "format": "markdown",
             "title": "Answer",
             "description": "The answer to the question",
             "examples": ["The product is made of high-quality materials"]

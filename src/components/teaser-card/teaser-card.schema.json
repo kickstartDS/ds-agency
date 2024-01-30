@@ -61,7 +61,7 @@
       "type": "string",
       "title": "Image",
       "description": "Image to display as cover",
-      "format": "uri"
+      "format": "image"
     },
     "imageRatio": {
       "type": "string",

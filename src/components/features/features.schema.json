@@ -50,12 +50,14 @@
           },
           "title": {
             "type": "string",
+            "format": "markdown",
             "title": "Title",
             "description": "The title of the feature",
             "examples": ["Feature 1"]
           },
           "text": {
             "type": "string",
+            "format": "markdown",
             "title": "Text",
             "description": "The description of the feature",
             "examples": ["This is a feature"]
@@ -74,6 +76,7 @@
               },
               "label": {
                 "type": "string",
+                "format": "markdown",
                 "title": "Link Label",
                 "description": "The text label displayed on the link",
                 "default": "See more",

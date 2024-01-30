@@ -15,6 +15,7 @@
           "src": {
             "type": "string",
             "title": "src",
+            "format": "image",
             "description": "The source of the image",
             "examples": ["https://example.com/image1.jpg"]
           },
@@ -26,6 +27,7 @@
           },
           "caption": {
             "type": "string",
+            "format": "markdown",
             "title": "Caption",
             "description": "The caption of the image",
             "examples": ["Caption Image"]

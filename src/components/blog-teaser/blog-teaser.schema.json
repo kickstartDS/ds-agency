@@ -25,12 +25,14 @@
       "title": "Headline",
       "description": "The headline of the blog post",
       "type": "string",
+      "format": "markdown",
       "examples": ["This is a blog post headline"]
     },
     "teaserText": {
       "title": "Teaser Text",
       "description": "The teaser text of the blog post",
       "type": "string",
+      "format": "markdown",
       "examples": ["This is a teaser text for the blog post"]
     },
     "image": {
@@ -90,6 +92,7 @@
           "title": "Image",
           "description": "The image URL of the author",
           "type": "string",
+          "format": "image",
           "examples": ["img/people/author-emily.png"]
         }
       },
