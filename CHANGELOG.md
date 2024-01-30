@@ -1,3 +1,15 @@
+# v3.2.18 (Tue Jan 30 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(section-tokens): adjust tileWidth ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.2.16 (Mon Jan 29 2024)
 
 #### ⚠️ Pushed to `main`
