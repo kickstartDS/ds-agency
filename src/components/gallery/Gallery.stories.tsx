@@ -22,8 +22,8 @@ type Story = StoryObj<typeof Gallery>;
 export const SmallSquaresWithLightbox: Story = {
   parameters: {
     viewport: {
-      width: 960,
-      height: 607,
+      width: 1100,
+      height: 702,
     },
   },
   args: pack({
@@ -118,8 +118,8 @@ export const LargeLandscapeTiles: Story = {
 export const FreeAspectRatio: Story = {
   parameters: {
     viewport: {
-      width: 975,
-      height: 718,
+      width: 1040,
+      height: 779,
     },
   },
   args: pack({

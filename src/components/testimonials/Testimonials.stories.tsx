@@ -68,7 +68,7 @@ export const ListLayout: Story = {
   parameters: {
     viewport: {
       width: 1000,
-      height: 780,
+      height: 979,
     },
   },
   args: pack({

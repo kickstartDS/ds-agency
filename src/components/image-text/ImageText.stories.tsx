@@ -21,8 +21,8 @@ export default meta;
 export const BesideRightLayout: Story = {
   parameters: {
     viewport: {
-      width: 1350,
-      height: 511,
+      width: 1240,
+      height: 515,
     },
   },
   args: pack({
@@ -43,7 +43,7 @@ export const AboveLayout: Story = {
   parameters: {
     viewport: {
       width: 760,
-      height: 897,
+      height: 829,
     },
   },
   args: pack({

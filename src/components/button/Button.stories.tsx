@@ -24,7 +24,7 @@ export const PrimaryButton: Story = {
   parameters: {
     viewport: {
       width: 770,
-      height: 172,
+      height: 200,
     },
   },
   args: pack({
@@ -37,7 +37,7 @@ export const SecondaryButton: Story = {
   parameters: {
     viewport: {
       width: 770,
-      height: 172,
+      height: 200,
     },
   },
   args: pack({
@@ -50,7 +50,7 @@ export const TertiaryButton: Story = {
   parameters: {
     viewport: {
       width: 770,
-      height: 172,
+      height: 200,
     },
   },
   args: pack({
@@ -63,7 +63,7 @@ export const PrimaryDisabledButton: Story = {
   parameters: {
     viewport: {
       width: 770,
-      height: 172,
+      height: 200,
     },
   },
   args: pack({

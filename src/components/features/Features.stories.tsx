@@ -142,7 +142,7 @@ export const ListView: Story = {
   parameters: {
     viewport: {
       width: 768,
-      height: 725,
+      height: 755,
     },
   },
 };
@@ -216,7 +216,7 @@ export const IconBesideWithLinkInText: Story = {
   parameters: {
     viewport: {
       width: 1000,
-      height: 490,
+      height: 506,
     },
   },
 };

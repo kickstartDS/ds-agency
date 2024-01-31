@@ -22,7 +22,7 @@ export const Banner: Story = {
   parameters: {
     viewport: {
       width: 1000,
-      height: 455,
+      height: 472,
     },
   },
   args: pack({
@@ -49,7 +49,7 @@ export const Highlighted: Story = {
   parameters: {
     viewport: {
       width: 1000,
-      height: 534,
+      height: 551,
     },
   },
   args: pack({
@@ -72,7 +72,7 @@ export const LeftAligned: Story = {
   parameters: {
     viewport: {
       width: 1000,
-      height: 455,
+      height: 443,
     },
   },
   args: pack({
