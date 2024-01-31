@@ -1,3 +1,15 @@
+# v3.4.0 (Wed Jan 31 2024)
+
+#### 🚀 Enhancement
+
+- use vitest for playroom snippet generation [#65](https://github.com/kickstartDS/ds-agency/pull/65) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v3.3.0 (Wed Jan 31 2024)
 
 #### 🚀 Enhancement
