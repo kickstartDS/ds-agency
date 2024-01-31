@@ -15,7 +15,7 @@ export const Footer: FC<FooterProps> = ({
   <div className={classnames("c-footer")}>
     <div className="c-footer__content">
       <Link className="c-footer__logo" href={logoHref}>
-        <Picture {...logo} />
+        <Picture {...logo} lazy />
       </Link>
 
       <span className="c-footer__trademark">

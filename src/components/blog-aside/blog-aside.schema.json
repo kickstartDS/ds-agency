@@ -33,14 +33,13 @@
           "title": "Twitter",
           "description": "The Twitter name of the author",
           "type": "string",
-          "format": "uri",
           "examples": ["johndoe"]
         },
         "email": {
           "title": "Email",
           "description": "The Email of the author",
           "type": "string",
-          "format": "email",
+          "pattern": "^[A-Za-z0-9_!#$%&'*+/=?`{|}~^.-]+@[A-Za-z0-9.-]+$",
           "examples": ["johndoe@example.com"]
         }
       },
