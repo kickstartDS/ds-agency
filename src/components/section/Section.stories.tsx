@@ -57,6 +57,12 @@ export default meta;
 type Story = StoryObj<typeof Section>;
 
 export const Cards: Story = {
+  parameters: {
+    viewport: {
+      width: 1440,
+      height: 928,
+    },
+  },
   args: pack({
     content: {
       mode: "tile",
@@ -70,6 +76,12 @@ export const Cards: Story = {
 };
 
 export const Slider: Story = {
+  parameters: {
+    viewport: {
+      width: 1440,
+      height: 938,
+    },
+  },
   args: pack({
     content: {
       mode: "slider",
@@ -219,12 +231,32 @@ export const Slider: Story = {
 };
 
 export const Inverted: Story = {
+  parameters: {
+    viewport: {
+      width: 1440,
+      height: 928,
+    },
+  },
   args: pack({
     inverted: true,
+    content: {
+      mode: "tile",
+    },
+    headline: {
+      text: "Happy Customers Showcases",
+      sub: "We can create something shining for you too!",
+    },
+    buttons: [],
   }),
 };
 
 export const Spotlight: Story = {
+  parameters: {
+    viewport: {
+      width: 1440,
+      height: 928,
+    },
+  },
   args: pack({
     content: {
       mode: "tile",
@@ -239,6 +271,12 @@ export const Spotlight: Story = {
 };
 
 export const Stagelights: Story = {
+  parameters: {
+    viewport: {
+      width: 1440,
+      height: 928,
+    },
+  },
   args: pack({
     content: {
       mode: "tile",
@@ -254,6 +292,12 @@ export const Stagelights: Story = {
 };
 
 export const AccentBackground: Story = {
+  parameters: {
+    viewport: {
+      width: 1440,
+      height: 928,
+    },
+  },
   args: pack({
     content: {
       mode: "tile",
@@ -269,6 +313,12 @@ export const AccentBackground: Story = {
 };
 
 export const BoldBackground: Story = {
+  parameters: {
+    viewport: {
+      width: 1440,
+      height: 928,
+    },
+  },
   args: pack({
     content: {
       mode: "tile",
@@ -284,6 +334,12 @@ export const BoldBackground: Story = {
 };
 
 export const ColorfulGradient: Story = {
+  parameters: {
+    viewport: {
+      width: 1440,
+      height: 928,
+    },
+  },
   args: pack({
     content: {
       mode: "tile",
@@ -299,6 +355,12 @@ export const ColorfulGradient: Story = {
 };
 
 export const WithButtons: Story = {
+  parameters: {
+    viewport: {
+      width: 1440,
+      height: 1016,
+    },
+  },
   args: pack({
     content: {
       mode: "default",
@@ -328,6 +390,12 @@ export const WithButtons: Story = {
 };
 
 export const TileLayout: Story = {
+  parameters: {
+    viewport: {
+      width: 1440,
+      height: 445,
+    },
+  },
   args: pack({
     width: "max",
     content: {
@@ -369,6 +437,12 @@ export const TileLayout: Story = {
 };
 
 export const FlexLayout: Story = {
+  parameters: {
+    viewport: {
+      width: 1440,
+      height: 928,
+    },
+  },
   args: pack({
     width: "max",
     content: {
@@ -410,6 +484,12 @@ export const FlexLayout: Story = {
 };
 
 export const ListLayout: Story = {
+  parameters: {
+    viewport: {
+      width: 1440,
+      height: 1658,
+    },
+  },
   args: pack({
     content: {
       mode: "list",

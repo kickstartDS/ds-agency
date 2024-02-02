@@ -59,13 +59,21 @@ const preview: Preview = {
     html: {
       decorators: [unpackDecorator, providerDecorator],
     },
+    viewport: {
+      width: 1280,
+      height: 720,
+    },
   },
   decorators: [
     unpackDecorator,
     themeSwitchDecorator,
     (Story) => (
       <RawPageWrapper>
-        <Story />
+        <div className="preview--wrapper">
+          <div className="preview">
+            <Story />
+          </div>
+        </div>
       </RawPageWrapper>
     ),
   ],

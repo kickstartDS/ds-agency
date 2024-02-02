@@ -19,6 +19,12 @@ type Story = StoryObj<typeof Text>;
 export default meta;
 
 export const SingleColumn: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 407,
+    },
+  },
   args: pack({
     layout: "singleColumn",
     text: `We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).
@@ -30,6 +36,12 @@ _Experience the power of streamlined development and see the difference it can m
 };
 
 export const Centered: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 407,
+    },
+  },
   args: pack({
     align: "center",
     text: `We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).
@@ -41,6 +53,12 @@ _Experience the power of streamlined development and see the difference it can m
 };
 
 export const MultiColumn: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 330,
+    },
+  },
   args: pack({
     layout: "multiColumn",
     text: `We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).
@@ -50,6 +68,12 @@ _Experience the power of streamlined development and see the difference it can m
 };
 
 export const Highlight: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 482,
+    },
+  },
   args: pack({
     highlightText: true,
     text: `We prioritize efficiency without sacrificing quality. Our secret? A groundbreaking, code-first, open-source framework for [building design systems](#).

@@ -19,5 +19,11 @@ type Story = StoryObj<typeof SelectField>;
 export default meta;
 
 export const Default: Story = {
+  parameters: {
+    viewport: {
+      width: 770,
+      height: 219,
+    },
+  },
   args: pack({}),
 };

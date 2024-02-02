@@ -16,7 +16,14 @@ const meta: Meta<typeof BlogAside> = {
 export default meta;
 type Story = StoryObj<typeof BlogAside>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  parameters: {
+    viewport: {
+      width: 390,
+      height: 646,
+    },
+  },
+};
 Default.args = pack({
   author: {
     name: "Jane Smith",

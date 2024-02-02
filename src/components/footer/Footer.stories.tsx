@@ -23,9 +23,16 @@ const meta: Meta = {
   parameters: {
     jsonschema: schema,
   },
-  excludeStories: ["footerProps"]
+  excludeStories: ["footerProps"],
 };
 type Story = StoryObj<typeof FooterComponent>;
 
 export default meta;
-export const Footer: Story = {};
+export const Footer: Story = {
+  parameters: {
+    viewport: {
+      width: 1280,
+      height: 371,
+    },
+  },
+};

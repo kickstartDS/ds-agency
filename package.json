@@ -56,7 +56,7 @@
     "schema:generate-props": "kickstartDS schema types",
     "schema:layer-types": "kickstartDS schema layer",
     "start": "run-p watch:* storybook",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6007",
     "create-component-previews": "yarn test && rimraf static/img/screenshots && mkdir -p static/img/screenshots && cp __snapshots__/*.png static/img/screenshots",
     "test": "rimraf __snapshots__ && run-p -r test:*",
     "test:server": "npx http-server storybook-static --port 6006 --silent",

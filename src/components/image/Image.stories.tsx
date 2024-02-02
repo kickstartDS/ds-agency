@@ -19,6 +19,12 @@ type Story = StoryObj<typeof Image>;
 export default meta;
 
 export const ResponsiveImage: Story = {
+  parameters: {
+    viewport: {
+      width: 800,
+      height: 600,
+    },
+  },
   args: pack({
     alt: "Agency",
     sources: [
@@ -39,6 +45,12 @@ export const ResponsiveImage: Story = {
 };
 
 export const PresetSize: Story = {
+  parameters: {
+    viewport: {
+      width: 800,
+      height: 414,
+    },
+  },
   args: pack({
     src: "img/close-up-young-business-team-working.png",
     alt: "Agency",
@@ -48,6 +60,12 @@ export const PresetSize: Story = {
 };
 
 export const CustomAspectRatio: Story = {
+  parameters: {
+    viewport: {
+      width: 800,
+      height: 600,
+    },
+  },
   args: pack({
     src: "img/close-up-young-business-team-working.png",
     alt: "Agency",
