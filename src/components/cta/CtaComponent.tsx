@@ -36,9 +36,7 @@ export const CtaContextDefault = forwardRef<HTMLDivElement, CtaProps>(
 );
 
 export const CtaContext = createContext(CtaContextDefault);
-export const Cta = forwardRef<HTMLDivElement, CtaProps>(
-  (props, ref) => {
-    const Component = useContext(CtaContext);
-    return <Component {...props} ref={ref} />;
-  }
-);
+export const Cta = forwardRef<HTMLDivElement, CtaProps>((props, ref) => {
+  const Component = useContext(CtaContext);
+  return <Component {...props} ref={ref} />;
+});

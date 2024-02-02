@@ -6,7 +6,7 @@ import { Feature } from "../feature/FeatureComponent";
 
 export const FeaturesContextDefault = forwardRef<
   HTMLDivElement,
-  FeaturesProps & HTMLAttributes<HTMLDivElement>
+  FeaturesProps & Omit<HTMLAttributes<HTMLDivElement>, "style">
 >(
   (
     {
@@ -68,7 +68,7 @@ export const FeaturesContextDefault = forwardRef<
 export const FeaturesContext = createContext(FeaturesContextDefault);
 export const Features = forwardRef<
   HTMLDivElement,
-  FeaturesProps & HTMLAttributes<HTMLDivElement>
+  FeaturesProps & Omit<HTMLAttributes<HTMLDivElement>, "style">
 >((props, ref) => {
   const Component = useContext(FeaturesContext);
   return <Component {...props} ref={ref} />;

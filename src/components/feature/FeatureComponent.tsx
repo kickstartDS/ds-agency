@@ -7,7 +7,7 @@ import { Link } from "@kickstartds/base/lib/link";
 
 export const FeatureContextDefault = forwardRef<
   HTMLDivElement,
-  FeatureProps & HTMLAttributes<HTMLDivElement>
+  FeatureProps & Omit<HTMLAttributes<HTMLDivElement>, "style">
 >(
   (
     {
@@ -89,7 +89,7 @@ export const FeatureContextDefault = forwardRef<
 export const FeatureContext = createContext(FeatureContextDefault);
 export const Feature = forwardRef<
   HTMLDivElement,
-  FeatureProps & HTMLAttributes<HTMLDivElement>
+  FeatureProps & Omit<HTMLAttributes<HTMLDivElement>, "style">
 >((props, ref) => {
   const Component = useContext(FeatureContext);
   return <Component {...props} ref={ref} />;
