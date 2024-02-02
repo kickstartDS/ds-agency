@@ -13,7 +13,7 @@ export const LogosContextDefault = forwardRef<
   LogosProps & HTMLAttributes<HTMLDivElement>
 >(({ logo: logos = [], tagline, align, cta, ...rest }, ref) => (
   <div {...rest} ref={ref}>
-    <Container name="logo-tiles">
+    <Container name="logos">
       <div className={classnames(`c-logos c-logos--align-${align}`)}>
         <div className="c-logos__tagline">{tagline}</div>
         <div className="c-logos__grid">

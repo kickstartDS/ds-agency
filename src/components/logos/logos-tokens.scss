@@ -1,15 +1,15 @@
 @use "@kickstartds/core/source/core/container";
-@include container.wrapper("logo-tiles");
+@include container.wrapper("logos");
 
 .c-logos {
   --c-logo-tiles--cols: 2;
   --c-logo-tiles--gutter: 2em;
 
-  @container logo-tiles (min-width: 420px) {
+  @container logos (min-width: 420px) {
     --c-logo-tiles--cols: 3;
   }
 
-  @container logo-tiles (min-width: 640px) {
+  @container logos (min-width: 640px) {
     --c-logo-tiles--cols: 4;
   }
 }

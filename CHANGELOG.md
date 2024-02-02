@@ -1,3 +1,15 @@
+# v3.4.1 (Fri Feb 02 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(logos): rename container ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.4.0 (Wed Jan 31 2024)
 
 #### 🚀 Enhancement
