@@ -38,11 +38,17 @@ export interface FeatureProps {
   title: Title;
   text?: Text;
   style?: "intext" | "stack" | "centered" | "besideLarge" | "besideSmall";
-  ctaTarget?: CallToActionTarget;
-  ctaLabel?: LinkLabel;
-  ctaToggle?: CallToActionToggle;
+  cta?: CallToAction;
+}
+/**
+ * The call to action
+ */
+export interface CallToAction {
+  target?: CallToActionTarget;
+  label?: LinkLabel;
+  toggle?: CallToActionToggle;
   /**
    * Choose the style of the CTA
    */
-  ctaStyle?: "button" | "link" | "intext";
+  style?: "button" | "link" | "intext";
 }

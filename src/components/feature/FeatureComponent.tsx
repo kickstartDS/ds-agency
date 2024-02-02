@@ -1,7 +1,7 @@
 import { HTMLAttributes, FC } from "react";
 import classnames from "classnames";
 import { Icon } from "@kickstartds/base/lib/icon";
-import { Button } from "../../button/ButtonComponent";
+import { Button } from "../button/ButtonComponent";
 import { FeatureProps } from "./FeatureProps";
 import { Link } from "@kickstartds/base/lib/link";
 
@@ -10,10 +10,7 @@ export const Feature: FC<FeatureProps & HTMLAttributes<HTMLElement>> = ({
   title,
   text,
   icon,
-  ctaToggle = true,
-  ctaStyle = "link",
-  ctaTarget,
-  ctaLabel = "Read more",
+  cta: { toggle = true, style: ctaStyle = "link", target, label = "Read more" },
 }) => {
   return (
     <div
@@ -40,10 +37,9 @@ export const Feature: FC<FeatureProps & HTMLAttributes<HTMLElement>> = ({
       {text || ctaStyle === "intext" ? (
         <p className="c-feature__text">
           {text}
-          {ctaStyle === "intext" && ctaToggle ? (
+          {ctaStyle === "intext" && toggle ? (
             <>
-              &#32;{" "}
-              <Link href={ctaTarget}>{ctaLabel ? ctaLabel : "See more"}</Link>
+              &#32; <Link href={target}>{label ? label : "See more"}</Link>
             </>
           ) : (
             ""
@@ -53,19 +49,19 @@ export const Feature: FC<FeatureProps & HTMLAttributes<HTMLElement>> = ({
         ""
       )}
 
-      {ctaToggle && (ctaStyle === "link" || ctaStyle === "button") && (
+      {toggle && (ctaStyle === "link" || ctaStyle === "button") && (
         <div className="c-feature__cta">
           {ctaStyle === "link" ? (
-            <Link className="c-feature__link" href={ctaTarget}>
-              {ctaLabel ? ctaLabel : "See more"}
+            <Link className="c-feature__link" href={target}>
+              {label ? label : "See more"}
               <Icon icon="arrow-right" />
             </Link>
           ) : ctaStyle === "button" ? (
             <Button
               className="c-feature__button"
               size="small"
-              target={ctaTarget}
-              label={ctaLabel ? ctaLabel : "See more"}
+              target={target}
+              label={label ? label : "See more"}
             />
           ) : (
             ""

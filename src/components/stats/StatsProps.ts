@@ -5,34 +5,23 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {StatProps} from "../stat/StatProps";
+
 /**
  * The stats to display in a grid
  *
  * @minItems 1
  * @maxItems 4
  */
-export type Stats = [Stat] | [Stat, Stat] | [Stat, Stat, Stat] | [Stat, Stat, Stat, Stat];
-/**
- * The number of the stat
- */
-export type Number = number;
-/**
- * Optional description of the stat
- */
-export type Description = string;
-/**
- * Title of the stat
- */
-export type Title = string;
+export type Stats =
+  | [StatProps]
+  | [StatProps, StatProps]
+  | [StatProps, StatProps, StatProps]
+  | [StatProps, StatProps, StatProps, StatProps];
 
 /**
  * Display a set of stats in a grid
  */
 export interface StatsProps {
   stat?: Stats;
-}
-export interface Stat {
-  number: Number;
-  description?: Description;
-  title?: Title;
 }

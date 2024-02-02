@@ -2,7 +2,7 @@ import { HTMLAttributes, FC } from "react";
 import classnames from "classnames";
 import { FeaturesProps } from "./FeaturesProps";
 import "./features.scss";
-import { Feature } from "./feature/FeatureComponent";
+import { Feature } from "../feature/FeatureComponent";
 
 export const Features: FC<FeaturesProps & HTMLAttributes<HTMLDivElement>> = ({
   layout = "largeTiles",
@@ -46,10 +46,12 @@ export const Features: FC<FeaturesProps & HTMLAttributes<HTMLDivElement>> = ({
               : undefined
           }
           icon={feature?.icon}
-          ctaLabel={feature?.cta?.label}
-          ctaTarget={feature?.cta?.target}
-          ctaToggle={ctas?.toggle}
-          ctaStyle={ctas?.style}
+          cta={{
+            label: feature?.cta?.label,
+            target: feature?.cta?.target,
+            toggle: ctas?.toggle,
+            style: ctas?.style,
+          }}
         />
       ))}
     </div>
