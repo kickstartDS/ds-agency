@@ -1,19 +1,33 @@
-import { HTMLAttributes, FC } from "react";
+import { forwardRef, createContext, useContext, HTMLAttributes } from "react";
 import classnames from "classnames";
 import { Icon } from "@kickstartds/base/lib/icon";
 import { Button } from "../button/ButtonComponent";
 import { FeatureProps } from "./FeatureProps";
 import { Link } from "@kickstartds/base/lib/link";
 
-export const Feature: FC<FeatureProps & HTMLAttributes<HTMLElement>> = ({
-  style = "stack",
-  title,
-  text,
-  icon,
-  cta: { toggle = true, style: ctaStyle = "link", target, label = "Read more" },
-}) => {
-  return (
+export const FeatureContextDefault = forwardRef<
+  HTMLDivElement,
+  FeatureProps & HTMLAttributes<HTMLDivElement>
+>(
+  (
+    {
+      style = "stack",
+      title,
+      text,
+      icon,
+      cta: {
+        toggle = true,
+        style: ctaStyle = "link",
+        target,
+        label = "Read more",
+      },
+      ...rest
+    },
+    ref
+  ) => (
     <div
+      {...rest}
+      ref={ref}
       className={classnames(
         `c-feature c-feature--${
           style === `stack`
@@ -69,5 +83,14 @@ export const Feature: FC<FeatureProps & HTMLAttributes<HTMLElement>> = ({
         </div>
       )}
     </div>
-  );
-};
+  )
+);
+
+export const FeatureContext = createContext(FeatureContextDefault);
+export const Feature = forwardRef<
+  HTMLDivElement,
+  FeatureProps & HTMLAttributes<HTMLDivElement>
+>((props, ref) => {
+  const Component = useContext(FeatureContext);
+  return <Component {...props} ref={ref} />;
+});

@@ -1,21 +1,29 @@
-import { HTMLAttributes, FC } from "react";
+import { forwardRef, createContext, useContext, HTMLAttributes } from "react";
 import classnames from "classnames";
 import { FeaturesProps } from "./FeaturesProps";
 import "./features.scss";
 import { Feature } from "../feature/FeatureComponent";
 
-export const Features: FC<FeaturesProps & HTMLAttributes<HTMLDivElement>> = ({
-  layout = "largeTiles",
-  ctas = {
-    style: "link",
-    toggle: true,
-  },
-  style = "intext",
-  feature: features = [],
-  ...props
-}) => {
-  return (
+export const FeaturesContextDefault = forwardRef<
+  HTMLDivElement,
+  FeaturesProps & HTMLAttributes<HTMLDivElement>
+>(
+  (
+    {
+      layout = "largeTiles",
+      ctas = {
+        style: "link",
+        toggle: true,
+      },
+      style = "intext",
+      feature: features = [],
+      ...rest
+    },
+    ref
+  ) => (
     <div
+      {...rest}
+      ref={ref}
       className={classnames(
         `c-features c-features--${
           layout === "largeTiles"
@@ -25,7 +33,6 @@ export const Features: FC<FeaturesProps & HTMLAttributes<HTMLDivElement>> = ({
             : `${layout}`
         }`
       )}
-      {...props}
     >
       {features.map((feature, index) => (
         <Feature
@@ -55,5 +62,14 @@ export const Features: FC<FeaturesProps & HTMLAttributes<HTMLDivElement>> = ({
         />
       ))}
     </div>
-  );
-};
+  )
+);
+
+export const FeaturesContext = createContext(FeaturesContextDefault);
+export const Features = forwardRef<
+  HTMLDivElement,
+  FeaturesProps & HTMLAttributes<HTMLDivElement>
+>((props, ref) => {
+  const Component = useContext(FeaturesContext);
+  return <Component {...props} ref={ref} />;
+});

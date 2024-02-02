@@ -1,32 +1,41 @@
-import { HTMLAttributes, FC } from "react";
+import { forwardRef, createContext, useContext, HTMLAttributes } from "react";
 import { TestimonialProps } from "./TestimonialProps";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 
-export const Testimonial: FC<TestimonialProps & HTMLAttributes<HTMLElement>> = (
-  testimonial
-) => {
-  return (
-    <TextMedia
-      mediaAlignment="beside-left"
-      media={[
-        {
-          image: {
-            src: testimonial.image.src,
-            alt: testimonial.image.alt,
-          },
+export const TestimonialContextDefault = forwardRef<
+  HTMLDivElement,
+  TestimonialProps & HTMLAttributes<HTMLDivElement>
+>(({ image, quote, name, title, ...rest }, ref) => (
+  <TextMedia
+    {...rest}
+    ref={ref}
+    mediaAlignment="beside-left"
+    media={[
+      {
+        image: {
+          src: image?.src,
+          alt: image?.alt,
         },
-      ]}
-      text={testimonial.quote}
-      renderText={() => (
-        <>
-          "{testimonial.quote}"
-          <br />
-          <br />
-          <b>{testimonial.name}</b>
-          <br />
-          {testimonial.title}
-        </>
-      )}
-    />
-  );
-};
+      },
+    ]}
+    text={quote}
+    renderText={() => (
+      <>
+        "{quote}"
+        <br />
+        <br />
+        <b>{name}</b>
+        <br />
+        {title}
+      </>
+    )}
+  />
+));
+
+export const TestimonialContext = createContext(TestimonialContextDefault);
+export const Testimonial = forwardRef<HTMLDivElement, TestimonialProps>(
+  (props, ref) => {
+    const Component = useContext(TestimonialContext);
+    return <Component {...props} ref={ref} />;
+  }
+);
