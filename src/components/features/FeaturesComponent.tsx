@@ -35,31 +35,7 @@ export const FeaturesContextDefault = forwardRef<
       )}
     >
       {features.map((feature, index) => (
-        <Feature
-          key={index}
-          title={feature.title}
-          text={feature.text}
-          style={
-            style === "intext"
-              ? "intext"
-              : style === "stack"
-              ? "stack"
-              : style === "centered"
-              ? "centered"
-              : style === "besideLarge"
-              ? "besideLarge"
-              : style === "besideSmall"
-              ? "besideSmall"
-              : undefined
-          }
-          icon={feature?.icon}
-          cta={{
-            label: feature?.cta?.label,
-            target: feature?.cta?.target,
-            toggle: ctas?.toggle,
-            style: ctas?.style,
-          }}
-        />
+        <Feature key={index} {...feature} style={style} />
       ))}
     </div>
   )
