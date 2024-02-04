@@ -17,6 +17,12 @@ export default meta;
 type Story = StoryObj<typeof Logos>;
 
 export const CenteredWithButton: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 598,
+    },
+  },
   args: pack({
     logo: [
       {
@@ -52,6 +58,12 @@ export const CenteredWithButton: Story = {
 };
 
 export const LeftAlignedWithTextLink: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 517,
+    },
+  },
   args: pack({
     logo: [
       {

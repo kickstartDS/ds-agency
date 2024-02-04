@@ -21,6 +21,12 @@ export default meta;
 type Story = StoryObj<typeof Testimonials>;
 
 export const Simple: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 409,
+    },
+  },
   args: pack({
     testimonial: [
       {
@@ -37,6 +43,12 @@ export const Simple: Story = {
 };
 
 export const WithTitle: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 409,
+    },
+  },
   args: pack({
     testimonial: [
       {
@@ -53,6 +65,12 @@ export const WithTitle: Story = {
 };
 
 export const ListLayout: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 979,
+    },
+  },
   args: pack({
     testimonial: [
       {

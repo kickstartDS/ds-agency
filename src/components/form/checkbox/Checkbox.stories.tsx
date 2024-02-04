@@ -19,5 +19,11 @@ type Story = StoryObj<typeof Checkbox>;
 export default meta;
 
 export const Default: Story = {
+  parameters: {
+    viewport: {
+      width: 770,
+      height: 172,
+    },
+  },
   args: pack({}),
 };

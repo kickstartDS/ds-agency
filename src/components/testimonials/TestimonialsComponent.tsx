@@ -1,37 +1,15 @@
 import { HTMLAttributes, FC } from "react";
 import { TestimonialsProps } from "./TestimonialsProps";
 import "./testimonials.scss";
-import { TextMedia } from "@kickstartds/base/lib/text-media";
+import { Testimonial } from "../testimonial/TestimonialComponent";
 
 export const Testimonials: FC<
   TestimonialsProps & HTMLAttributes<HTMLElement>
 > = ({ testimonial: testimonials = [] }) => {
   return (
     <div className="c-testimonials">
-      {testimonials.map((testimonial, index) => (
-        <TextMedia
-          key={index}
-          mediaAlignment="beside-left"
-          media={[
-            {
-              image: {
-                src: testimonial.image.src,
-                alt: testimonial.image.alt,
-              },
-            },
-          ]}
-          text={testimonial.quote}
-          renderText={() => (
-            <>
-              "{testimonial.quote}"
-              <br />
-              <br />
-              <b>{testimonial.name}</b>
-              <br />
-              {testimonial.title}
-            </>
-          )}
-        />
+      {testimonials?.map((testimonial, index) => (
+        <Testimonial {...testimonial} key={index} />
       ))}
     </div>
   );

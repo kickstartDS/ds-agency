@@ -1,5 +1,9 @@
 // .storybook/test-runner.ts
-import { TestRunnerConfig, waitForPageReady } from "@storybook/test-runner";
+import {
+  TestRunnerConfig,
+  getStoryContext,
+  waitForPageReady,
+} from "@storybook/test-runner";
 import { toMatchImageSnapshot } from "jest-image-snapshot";
 
 const customSnapshotsDir = `${process.cwd()}/__snapshots__`;
@@ -8,17 +12,16 @@ const config: TestRunnerConfig = {
   setup() {
     expect.extend({ toMatchImageSnapshot });
   },
-  async postVisit(page, context) {
-    // use the test-runner utility to wait for fonts to load, etc.
+  async postVisit(page, story) {
+    const context = await getStoryContext(page, story);
     await waitForPageReady(page);
+    await page.setViewportSize(context.parameters.viewport);
     await page.waitForTimeout(1000);
 
-    // If you want to take screenshot of multiple browsers, use
-    // page.context().browser().browserType().name() to get the browser name to prefix the file name
     const image = await page.screenshot();
     expect(image).toMatchImageSnapshot({
       customSnapshotsDir,
-      customSnapshotIdentifier: context.id,
+      customSnapshotIdentifier: story.id,
       failureThresholdType: "percent",
       failureThreshold: 0.2,
       updatePassedSnapshot: true,

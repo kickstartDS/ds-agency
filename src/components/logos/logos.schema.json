@@ -16,32 +16,7 @@
       "title": "Logos",
       "description": "The logos to display",
       "items": {
-        "type": "object",
-        "title": "Logo",
-        "properties": {
-          "src": {
-            "type": "string",
-            "format": "image",
-            "title": "URL",
-            "description": "The URL of the logo image",
-            "examples": [
-              "img/logos/logoipsum-212.svg",
-              "img/logos/logoipsum-217.svg",
-              "img/logos/logoipsum-239.svg",
-              "img/logos/logoipsum-244.svg",
-              "img/logos/logoipsum-250.svg",
-              "img/logos/logoipsum-286.svg"
-            ]
-          },
-          "alt": {
-            "type": "string",
-            "title": "Caption",
-            "description": "The alt text of the logo",
-            "examples": ["Logo 1"]
-          }
-        },
-        "additionalProperties": false,
-        "required": ["src"]
+        "$ref": "http://schema.mydesignsystem.com/logo.schema.json"
       },
       "minItems": 1,
       "maxItems": 20

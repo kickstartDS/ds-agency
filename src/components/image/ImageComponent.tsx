@@ -9,7 +9,7 @@ import "./image.scss";
 
 export const Image = forwardRef<
   HTMLImageElement,
-  ImageProps & HTMLAttributes<HTMLElement>
+  ImageProps & Omit<HTMLAttributes<HTMLDivElement>, "style">
 >(
   (
     {

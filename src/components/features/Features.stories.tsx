@@ -15,7 +15,14 @@ const meta: Meta<typeof Features> = {
 export default meta;
 type Story = StoryObj<typeof Features>;
 
-export const IconCentered: Story = {};
+export const IconCentered: Story = {
+  parameters: {
+    viewport: {
+      width: 1440,
+      height: 666,
+    },
+  },
+};
 IconCentered.args = pack({
   style: "centered",
   layout: "largeTiles",
@@ -77,7 +84,14 @@ IconCentered.args = pack({
   ],
 });
 
-export const StackWithButton: Story = {};
+export const StackWithButton: Story = {
+  parameters: {
+    viewport: {
+      width: 1230,
+      height: 463,
+    },
+  },
+};
 StackWithButton.args = pack({
   style: "stack",
   layout: "smallTiles",
@@ -124,7 +138,14 @@ StackWithButton.args = pack({
   ],
 });
 
-export const ListView: Story = {};
+export const ListView: Story = {
+  parameters: {
+    viewport: {
+      width: 768,
+      height: 755,
+    },
+  },
+};
 ListView.args = pack({
   style: "besideLarge",
   layout: "list",
@@ -191,7 +212,14 @@ ListView.args = pack({
   ],
 });
 
-export const IconBesideWithLinkInText: Story = {};
+export const IconBesideWithLinkInText: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 506,
+    },
+  },
+};
 IconBesideWithLinkInText.args = pack({
   style: "intext",
   layout: "smallTiles",
@@ -256,7 +284,14 @@ IconBesideWithLinkInText.args = pack({
   ],
 });
 
-export const IconIntextWithLink: Story = {};
+export const IconIntextWithLink: Story = {
+  parameters: {
+    viewport: {
+      width: 1232,
+      height: 524,
+    },
+  },
+};
 IconIntextWithLink.args = pack({
   style: "intext",
   ctas: {

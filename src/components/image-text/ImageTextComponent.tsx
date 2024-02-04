@@ -1,48 +1,60 @@
-import { HTMLAttributes, FC, PropsWithChildren } from "react";
+import {
+  forwardRef,
+  createContext,
+  useContext,
+  HTMLAttributes,
+  FC,
+} from "react";
 import classnames from "classnames";
 import {
-  TextMediaContextDefault,
+  TextMediaContextDefault as OriginalTextMediaContextDefault,
   TextMediaContext,
 } from "@kickstartds/base/lib/text-media";
 import { ImageTextProps } from "./ImageTextProps";
 import { Container } from "@kickstartds/core/lib/container";
 import "./image-text.scss";
 
-export const ImageText: FC<ImageTextProps & HTMLAttributes<HTMLElement>> = ({
-  text,
-  image,
-  layout,
-  highlightText,
-  ...props
-}) => (
-  <>
-    <Container name="text-media">
-      <TextMediaContextDefault
-        className={classnames(
-          highlightText ? "c-image-text--highlight" : "",
-          "c-image-text"
-        )}
-        {...props}
-        text={text}
-        media={[
-          {
-            image: {
-              src: image.src,
-            },
+export const ImageTextContextDefault = forwardRef<
+  HTMLDivElement,
+  ImageTextProps & HTMLAttributes<HTMLDivElement>
+>(({ text, image, layout, highlightText, ...rest }, ref) => (
+  <Container name="text-media" ref={ref}>
+    <OriginalTextMediaContextDefault
+      {...rest}
+      className={classnames(
+        highlightText ? "c-image-text--highlight" : "",
+        "c-image-text"
+      )}
+      text={text}
+      media={[
+        {
+          image: {
+            src: image.src,
           },
-        ]}
-        mediaAlignment={
-          layout === "above"
-            ? "above-center"
-            : layout === "below"
-            ? "below-center"
-            : layout
-        }
-      />
-    </Container>
-  </>
-);
+        },
+      ]}
+      mediaAlignment={
+        layout === "above"
+          ? "above-center"
+          : layout === "below"
+          ? "below-center"
+          : layout
+      }
+    />
+  </Container>
+));
 
-export const ImageTextProvider: FC<PropsWithChildren<any>> = (props) => (
-  <TextMediaContext.Provider {...props} value={ImageText} />
+export const ImageTextContext = createContext(ImageTextContextDefault);
+export const ImageText = forwardRef<
+  HTMLDivElement,
+  ImageTextProps & HTMLAttributes<HTMLDivElement>
+>((props, ref) => {
+  const Component = useContext(ImageTextContext);
+  return <Component {...props} ref={ref} />;
+});
+
+export const ImageTextProvider: FC<
+  ImageTextProps & HTMLAttributes<HTMLDivElement>
+> = (props) => (
+  <TextMediaContext.Provider {...props} value={ImageTextContextDefault} />
 );

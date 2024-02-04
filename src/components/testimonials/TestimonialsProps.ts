@@ -5,43 +5,16 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-/**
- * The testimonial quote
- */
-export type Quote = string;
-/**
- * The name of the quote author
- */
-export type Name = string;
-/**
- * The title of the quote author
- */
-export type Title = string;
-/**
- * The image to display with the testimonial
- */
-export type Source = string;
-/**
- * The alt text of the image file
- */
-export type AltText = string;
+import type {TestimonialProps} from "../testimonial/TestimonialProps";
+
 /**
  * Add testimonials featuring an image, a quote, a source and a rating
  */
-export type Testimonials = Testimonial[];
+export type Testimonials = TestimonialProps[];
 
 /**
  * Display testimonials with an optional image and rating
  */
 export interface TestimonialsProps {
   testimonial?: Testimonials;
-}
-export interface Testimonial {
-  quote: Quote;
-  name: Name;
-  title?: Title;
-  image: {
-    src?: Source;
-    alt?: AltText;
-  };
 }
