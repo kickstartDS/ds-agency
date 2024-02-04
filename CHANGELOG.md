@@ -1,3 +1,18 @@
+# v3.4.2 (Sun Feb 04 2024)
+
+#### 🐛 Bug Fix
+
+- Split nested components into distinct ones for cms use [#69](https://github.com/kickstartDS/ds-agency/pull/69) ([@julrich](https://github.com/julrich) [@fleven-kds](https://github.com/fleven-kds) [@lmestel](https://github.com/lmestel))
+- Merge branch 'feature/better-screenshots' into feature/split-nested-components [#67](https://github.com/kickstartDS/ds-agency/pull/67) ([@julrich](https://github.com/julrich))
+
+#### Authors: 3
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v3.4.1 (Fri Feb 02 2024)
 
 #### ⚠️ Pushed to `main`
