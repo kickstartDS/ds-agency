@@ -3,7 +3,7 @@ import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Gallery } from "./GalleryComponent";
-import schema from "./gallery.schema.json";
+import schema from "./gallery.schema.dereffed.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta<typeof Gallery> = {

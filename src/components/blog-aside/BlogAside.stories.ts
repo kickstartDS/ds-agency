@@ -3,7 +3,7 @@ import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { BlogAside } from "./BlogAsideComponent";
-import schema from "./blog-aside.schema.json";
+import schema from "./blog-aside.schema.dereffed.json";
 
 const meta: Meta<typeof BlogAside> = {
   title: "Blog/ Blog Aside",

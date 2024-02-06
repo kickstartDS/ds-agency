@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
 import { Text } from "./TextComponent";
-import schema from "./text.schema.json";
+import schema from "./text.schema.dereffed.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta<typeof Text> = {

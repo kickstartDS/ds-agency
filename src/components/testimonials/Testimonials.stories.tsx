@@ -4,7 +4,7 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Testimonials } from "./TestimonialsComponent";
 
-import schema from "./testimonials.schema.json";
+import schema from "./testimonials.schema.dereffed.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta<typeof Testimonials> = {
