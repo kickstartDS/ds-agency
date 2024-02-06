@@ -75,7 +75,7 @@ const Page = () => (
           style: "intext",
           toggle: true,
         }}
-        items={[
+        feature={[
           {
             cta: {
               label: "Read more",
@@ -122,7 +122,7 @@ const Page = () => (
       <Logos
         tagline="Orgs we've helped saving time & money"
         align="center"
-        items={[
+        logo={[
           {
             alt: "Logo 1",
             src: "/img/logos/logoipsum-212.svg",
@@ -223,7 +223,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       }}
     >
       <Testimonials
-        items={[
+        testimonial={[
           {
             image: {
               src: "/img/people/author-emily.png",

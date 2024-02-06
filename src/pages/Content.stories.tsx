@@ -66,8 +66,9 @@ EcoTech Solutions, a forward-thinking company in the sustainable PV and wind pow
 We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.
           `}
       />
+
       <Testimonials
-        items={[
+        testimonial={[
           {
             image: {
               src: "/static/img/people/author-emily.png",

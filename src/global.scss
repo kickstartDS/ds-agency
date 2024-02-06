@@ -37,9 +37,6 @@ body {
 
   --g-header-height: calc(var(--g-logo--height) + var(--ks-spacing-stack-m) + var(--ks-spacing-stack-m)) !important;
 
-  --g-filter-drop-shadow--higlight: drop-shadow(0px 2px 30px var(--ks-color-primary-alpha-2))
-    drop-shadow(0px 1px 4px var(--ks-color-fg-alpha-8));
-
   --g-gradient--higlight: linear-gradient(135deg, var(--ks-color-primary) 0%, var(--ks-color-secondary) 100%);
 
   --l-section--content-padding: var(--ks-spacing-inset-l) !important;
