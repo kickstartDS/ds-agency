@@ -1,3 +1,15 @@
+# v3.4.5 (Tue Feb 06 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: naming of Cta story ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.4.4 (Tue Feb 06 2024)
 
 #### ⚠️ Pushed to `main`
