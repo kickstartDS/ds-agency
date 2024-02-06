@@ -6,7 +6,7 @@ import schema from "./cta.schema.dereffed.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
-  title: "Components/CTA",
+  title: "Components/Cta",
   args,
   argTypes,
   component: Cta,
