@@ -18,6 +18,20 @@ const config: TestRunnerConfig = {
     await page.setViewportSize(context.parameters.viewport);
     await page.waitForTimeout(1000);
 
+    await page.evaluate(() => {
+      if (!document.querySelectorAll(".preview--wrapper").length) {
+        const previewWrapper = document.createElement("div");
+        previewWrapper.className = "preview--wrapper";
+        const preview = document.createElement("div");
+        preview.className = "preview";
+        previewWrapper.appendChild(preview);
+        while (document.body.firstChild) {
+          preview.appendChild(document.body.firstChild);
+        }
+        document.body.appendChild(previewWrapper);
+      }
+    });
+
     const image = await page.screenshot();
     expect(image).toMatchImageSnapshot({
       customSnapshotsDir,
