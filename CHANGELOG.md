@@ -1,3 +1,17 @@
+# v3.4.4 (Tue Feb 06 2024)
+
+#### ⚠️ Pushed to `main`
+
+- chore: update component screenshots ([@julrich](https://github.com/julrich))
+- fix: remove screenshot frame from preview ([@julrich](https://github.com/julrich))
+- fix: misuse of json schema with refs in stories ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.4.3 (Tue Feb 06 2024)
 
 #### ⚠️ Pushed to `main`
