@@ -1,3 +1,15 @@
+# v3.4.7 (Wed Feb 07 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(lughausen): rename lughausen them to business ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.4.6 (Wed Feb 07 2024)
 
 #### ⚠️ Pushed to `main`
