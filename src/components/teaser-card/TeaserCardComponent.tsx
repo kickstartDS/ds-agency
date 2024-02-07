@@ -66,7 +66,7 @@ export const TeaserCardContextDefault = forwardRef<
 );
 TeaserCardContextDefault.displayName = "TeaserCard";
 
-export const TeaserCardContext = createContext(TeaserBoxContextDefault);
+export const TeaserCardContext = createContext(TeaserCardContextDefault);
 export const TeaserCard = forwardRef<
   HTMLDivElement,
   TeaserCardProps & HTMLAttributes<HTMLDivElement>
