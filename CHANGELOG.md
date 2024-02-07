@@ -1621,7 +1621,7 @@
 
 #### ⚠️ Pushed to `main`
 
-- feat(token): add lughausen token set ([@fleven-kds](https://github.com/fleven-kds))
+- feat(token): add business token set ([@fleven-kds](https://github.com/fleven-kds))
 
 #### 🏠 Internal
 

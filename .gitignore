@@ -22,12 +22,12 @@ src/token/tokens.js
 src/token/icon-sprite.html
 src/token/storybook/tokens.css
 src/token/storybook/icons.svg
-src/token-lughausen/tokens.css
-src/token-lughausen/IconSprite.js
-src/token-lughausen/tokens.js
-src/token-lughausen/icon-sprite.html
-src/token-lughausen/storybook/tokens.css
-src/token-lughausen/storybook/icons.svg
+src/token-business/tokens.css
+src/token-business/IconSprite.js
+src/token-business/tokens.js
+src/token-business/icon-sprite.html
+src/token-business/storybook/tokens.css
+src/token-business/storybook/icons.svg
 
 static/*.css
 static/*.css.map

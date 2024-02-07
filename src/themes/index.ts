@@ -10,12 +10,12 @@ export const dsa = {
   },
 };
 
-export const lughausen = {
-  title: "Lughausen",
-  tokens: "/tokens-lughausen.css",
+export const business = {
+  title: "Business",
+  tokens: "/tokens-business.css",
   logo: {
-    src: "/logo-lughausen.svg",
-    alt: "Lughausen Logo",
+    src: "/logo-business.svg",
+    alt: "Business Logo",
     width: 342,
     height: 80,
     lazy: false,
