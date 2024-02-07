@@ -1,3 +1,15 @@
+# v3.4.6 (Wed Feb 07 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: fix teaser card provider ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v3.4.5 (Tue Feb 06 2024)
 
 #### ⚠️ Pushed to `main`
