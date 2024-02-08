@@ -14,6 +14,7 @@ const meta: Meta<typeof Testimonials> = {
   component: Testimonials,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
 };
 

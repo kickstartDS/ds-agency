@@ -3,6 +3,7 @@ import { JSONSchema7 } from "json-schema";
 import { TeaserCard } from "./TeaserCardComponent";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import schema from "./teaser-card.schema.dereffed.json";
+import cssprops from "./teaser-card-tokens.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta<typeof TeaserCard> = {
@@ -12,6 +13,7 @@ const meta: Meta<typeof TeaserCard> = {
   component: TeaserCard,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
 };
 export default meta;

@@ -2,6 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
 import { Cta } from "./CtaComponent";
+import cssprops from "./cta-tokens.json";
 import schema from "./cta.schema.dereffed.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
@@ -12,6 +13,7 @@ const meta: Meta = {
   component: Cta,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
 };
 type Story = StoryObj<typeof Cta>;
