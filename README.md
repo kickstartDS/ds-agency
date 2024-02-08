@@ -1,4 +1,4 @@
-# kickstartDS Free Agency Starter
+# kickstartDS Agency Starter
 
 kickstartDS Agency Starter is a specialized version of the kickstartDS Starter, tailored for digital agencies. It provides a set of content components that can be used to style marketing pages, while maintaining the flexibility and customizability of the original starter.
 
@@ -6,7 +6,7 @@ kickstartDS Agency Starter is a specialized version of the kickstartDS Starter, 
 
 - **Design System:** A ready-to-use Design System, with pre-configured semantic token structure and example components.
 - **Storybook Integration:** Storybook is configured with best practices, kickstartDS integration, addons, and composition. Hot reload is enabled for all code changes.
-- **Playroom Integration:** Playroom is integrated for prototyping.
+- **Playroom Integration:** Playroom is integrated for prototyping, including snippets.
 - **Bundling:** The Design System is bundled for use with and without React.
 - **Release Handling:** Semantic release handling is configured using auto.
 - **Content:** Includes components, recipes, pages, and docs.

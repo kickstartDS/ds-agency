@@ -18,7 +18,7 @@ export const Header: FC<HeaderProps> = ({
     >
       <div className="c-header__content">
         <Link className="c-header__logo" href={logoHref}>
-          <Picture {...logo} />
+          <Picture {...logo} lazy={false} />
         </Link>
 
         <NavMain logo={logo} logoHref={logoHref} items={navItems} />

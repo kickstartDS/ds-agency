@@ -3,7 +3,7 @@ import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { BlogHead } from "./BlogHeadComponent";
-import schema from "./blog-head.schema.json";
+import schema from "./blog-head.schema.dereffed.json";
 
 const meta: Meta<typeof BlogHead> = {
   title: "Blog/ Blog Head",
@@ -16,7 +16,14 @@ const meta: Meta<typeof BlogHead> = {
 export default meta;
 type Story = StoryObj<typeof BlogHead>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 863,
+    },
+  },
+};
 Default.args = pack({
   date: "12/30/2022",
   tags: ["Technology", "AI"],

@@ -75,7 +75,7 @@ const Page = () => (
           style: "intext",
           toggle: true,
         }}
-        features={[
+        feature={[
           {
             cta: {
               label: "Read more",
@@ -122,7 +122,7 @@ const Page = () => (
       <Logos
         tagline="Orgs we've helped saving time & money"
         align="center"
-        logos={[
+        logo={[
           {
             alt: "Logo 1",
             src: "/img/logos/logoipsum-212.svg",
@@ -181,25 +181,34 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       }}
     >
       <TeaserCard
-        button={{
-          label: "TEST1",
-        }}
-        target="/showcase-techfusion"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/img/showcases/comp_tfe01.jpg"
+        target="#"
+        button={{
+          label: "View showcase",
+          chevron: true,
+        }}
       />
       <TeaserCard
-        target="/showcase-launchpad"
         headline="Speed and Scale"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         image="/img/showcases/comp_audio01.jpg"
+        target="#"
+        button={{
+          label: "View showcase",
+          chevron: true,
+        }}
       />
       <TeaserCard
-        target="/showcase-eco"
         headline="Saving Time and Money"
         text="Navigating the Headless Frontier for EcoTech's 'Brand Consistency"
         image="/img/showcases/comp_eco01.jpg"
+        target="#"
+        button={{
+          label: "View showcase",
+          chevron: true,
+        }}
       />
     </Section>
 
@@ -214,7 +223,7 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
       }}
     >
       <Testimonials
-        testimonials={[
+        testimonial={[
           {
             image: {
               src: "/img/people/author-emily.png",

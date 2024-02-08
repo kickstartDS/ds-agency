@@ -25,13 +25,14 @@
       "title": "Headline",
       "description": "The headline of the blog post",
       "type": "string",
+      "format": "markdown",
       "examples": ["This is a blog post headline"]
     },
     "image": {
       "title": "Cover Image",
       "description": "The source of the cover image for the blog post",
       "type": "string",
-      "format": "uri",
+      "format": "image",
       "examples": ["img/close-up-young-business-team-working.png"]
     }
   },

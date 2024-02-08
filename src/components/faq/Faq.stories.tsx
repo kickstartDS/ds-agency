@@ -3,7 +3,7 @@ import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Faq } from "./FaqComponent";
-import schema from "./faq.schema.json";
+import schema from "./faq.schema.dereffed.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
@@ -20,6 +20,12 @@ export default meta;
 type Story = StoryObj<typeof Faq>;
 
 export const DropdownList: Story = {
+  parameters: {
+    viewport: {
+      width: 820,
+      height: 455,
+    },
+  },
   args: pack({
     questions: [
       {
@@ -42,6 +48,12 @@ export const DropdownList: Story = {
 };
 
 export const SingleDropdown: Story = {
+  parameters: {
+    viewport: {
+      width: 820,
+      height: 228,
+    },
+  },
   args: pack({
     questions: [
       {

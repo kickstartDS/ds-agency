@@ -3,7 +3,7 @@ import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Logos } from "./LogosComponent";
-import schema from "./logos.schema.json";
+import schema from "./logos.schema.dereffed.json";
 
 const meta: Meta<typeof Logos> = {
   title: "Components/Logos",
@@ -17,8 +17,14 @@ export default meta;
 type Story = StoryObj<typeof Logos>;
 
 export const CenteredWithButton: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 598,
+    },
+  },
   args: pack({
-    logos: [
+    logo: [
       {
         src: "img/logos/logoipsum-212.svg",
         alt: "Logo 1",
@@ -52,8 +58,14 @@ export const CenteredWithButton: Story = {
 };
 
 export const LeftAlignedWithTextLink: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 517,
+    },
+  },
   args: pack({
-    logos: [
+    logo: [
       {
         src: "img/logos/logoipsum-212.svg",
         alt: "Logo 1",

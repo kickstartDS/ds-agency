@@ -18,15 +18,31 @@ export default meta;
 type Story = StoryObj<typeof TeaserCard>;
 
 export const ProductTiles: Story = {
+  parameters: {
+    viewport: {
+      width: 650,
+      height: 653,
+    },
+  },
   args: pack({
     headline: "Castaway",
     text: "Transforming Ideas into Code",
     image: "img/logos/castaway.svg",
     target: "#",
+    button: {
+      label: "Go to page",
+      hidden: true,
+    },
   }),
 };
 
 export const PageNavigation: Story = {
+  parameters: {
+    viewport: {
+      width: 650,
+      height: 678,
+    },
+  },
   args: pack({
     headline: "Design System Services",
     text: "Experience the speed & scalability unlike anything seen before with our Headless CMS powered websites, web apps & composable architecture.",
@@ -40,6 +56,12 @@ export const PageNavigation: Story = {
 };
 
 export const ShowcasePreview: Story = {
+  parameters: {
+    viewport: {
+      width: 650,
+      height: 750,
+    },
+  },
   args: pack({
     label: "Tech",
     layout: "row",
@@ -49,7 +71,7 @@ export const ShowcasePreview: Story = {
     image: "img/showcases/comp_tfe01.jpg",
     target: "#",
     button: {
-      label: "Go to showcase",
+      label: "View showcase",
     },
   }),
 };

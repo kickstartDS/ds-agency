@@ -5,49 +5,12 @@
   "description": "Display testimonials with an optional image and rating",
   "type": "object",
   "properties": {
-    "testimonials": {
+    "testimonial": {
       "type": "array",
       "title": "Testimonials",
       "description": "Add testimonials featuring an image, a quote, a source and a rating",
       "items": {
-        "type": "object",
-        "properties": {
-          "quote": {
-            "title": "Quote",
-            "description": "The testimonial quote",
-            "type": "string",
-            "examples": ["This product is amazing!"]
-          },
-          "name": {
-            "title": "Name",
-            "description": "The name of the quote author",
-            "type": "string",
-            "examples": ["John Doe"]
-          },
-          "title": {
-            "title": "Title",
-            "description": "The title of the quote author",
-            "type": "string"
-          },
-          "image": {
-            "type": "object",
-            "properties": {
-              "src": {
-                "title": "Source",
-                "description": "The image to display with the testimonial",
-                "type": "string",
-                "examples": ["https://example.com/image.jpg"]
-              },
-              "alt": {
-                "title": "Alt Text",
-                "description": "The alt text of the image file",
-                "type": "string"
-              }
-            }
-          }
-        },
-        "additionalProperties": false,
-        "required": ["quote", "name", "image"]
+        "$ref": "http://schema.mydesignsystem.com/testimonial.schema.json"
       }
     }
   },

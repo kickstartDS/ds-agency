@@ -66,8 +66,9 @@ EcoTech Solutions, a forward-thinking company in the sustainable PV and wind pow
 We collaborated closely with EcoTech's brand team to set up a Design System that catered to their unique needs. To bring this Design System to life and enhance productivity, we migrated their main website to Storyblok, a robust Headless CMS. This strategic move marked their initial step towards embracing the headless web.
           `}
       />
+
       <Testimonials
-        testimonials={[
+        testimonial={[
           {
             image: {
               src: "/static/img/people/author-emily.png",
@@ -156,16 +157,24 @@ The implementation of the new **Design System** and migration to **Storyblok** t
       }}
     >
       <TeaserCard
-        target="/showcase-techfusion"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
         image="/static/img/showcases/comp_tfe01.jpg"
+        target="#"
+        button={{
+          label: "View showcase",
+          chevron: true,
+        }}
       />
       <TeaserCard
-        target="/showcase-launchpad"
         headline="Speed and Scale"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
         image="/static/img/showcases/comp_audio01.jpg"
+        target="#"
+        button={{
+          label: "View showcase",
+          chevron: true,
+        }}
       />
     </Section>
 

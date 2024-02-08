@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/testimonial.schema.json",
+  "title": "Testimonial",
+  "description": "Testimonial entry of Testimonials component",
+  "type": "object",
+  "properties": {
+    "quote": {
+      "title": "Quote",
+      "description": "The testimonial quote",
+      "type": "string",
+      "format": "markdown",
+      "examples": ["This product is amazing!"]
+    },
+    "name": {
+      "title": "Name",
+      "description": "The name of the quote author",
+      "type": "string",
+      "examples": ["John Doe"]
+    },
+    "title": {
+      "title": "Title",
+      "description": "The title of the quote author",
+      "type": "string"
+    },
+    "image": {
+      "type": "object",
+      "properties": {
+        "src": {
+          "title": "Source",
+          "description": "The image to display with the testimonial",
+          "type": "string",
+          "format": "image",
+          "examples": ["https://example.com/image.jpg"]
+        },
+        "alt": {
+          "title": "Alt Text",
+          "description": "The alt text of the image file",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": ["quote", "name", "image"]
+}

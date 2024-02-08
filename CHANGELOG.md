@@ -1,3 +1,320 @@
+# v3.4.7 (Wed Feb 07 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(lughausen): rename lughausen them to business ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v3.4.6 (Wed Feb 07 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: fix teaser card provider ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v3.4.5 (Tue Feb 06 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: naming of Cta story ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v3.4.4 (Tue Feb 06 2024)
+
+#### ⚠️ Pushed to `main`
+
+- chore: update component screenshots ([@julrich](https://github.com/julrich))
+- fix: remove screenshot frame from preview ([@julrich](https://github.com/julrich))
+- fix: misuse of json schema with refs in stories ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v3.4.3 (Tue Feb 06 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(headline + button): remove glow ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v3.4.2 (Sun Feb 04 2024)
+
+#### 🐛 Bug Fix
+
+- Split nested components into distinct ones for cms use [#69](https://github.com/kickstartDS/ds-agency/pull/69) ([@julrich](https://github.com/julrich) [@fleven-kds](https://github.com/fleven-kds) [@lmestel](https://github.com/lmestel))
+- Merge branch 'feature/better-screenshots' into feature/split-nested-components [#67](https://github.com/kickstartDS/ds-agency/pull/67) ([@julrich](https://github.com/julrich))
+
+#### Authors: 3
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v3.4.1 (Fri Feb 02 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(logos): rename container ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v3.4.0 (Wed Jan 31 2024)
+
+#### 🚀 Enhancement
+
+- use vitest for playroom snippet generation [#65](https://github.com/kickstartDS/ds-agency/pull/65) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v3.3.0 (Wed Jan 31 2024)
+
+#### 🚀 Enhancement
+
+- Add blog cms templates [#66](https://github.com/kickstartDS/ds-agency/pull/66) ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
+# v3.2.18 (Tue Jan 30 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(section-tokens): adjust tileWidth ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v3.2.16 (Mon Jan 29 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add new props, too ([@julrich](https://github.com/julrich))
+- fix: section key in page ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v3.2.14 (Mon Jan 29 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: failing build ([@julrich](https://github.com/julrich))
+- fix: add more specific type formats to schemas ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v3.2.13 (Sun Jan 28 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add preset id ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v3.2.12 (Sun Jan 28 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: move presets file to correct folder ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v3.2.11 (Sat Jan 27 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: ci because of misnamed script file ([@julrich](https://github.com/julrich))
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- fix: update script commands slightly ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v3.2.10 (Fri Jan 26 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- fix: re-add storybook build to release ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v3.2.9 (Fri Jan 26 2024)
+
+#### ⚠️ Pushed to `main`
+
+- chore: fix script ([@julrich](https://github.com/julrich))
+- chore: trigger another release ([@julrich](https://github.com/julrich))
+- fix: don't run playwright in ci ([@julrich](https://github.com/julrich))
+- fix(ci): try playwright like this ([@julrich](https://github.com/julrich))
+- fix: add missing playwright in ci ([@julrich](https://github.com/julrich))
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- feature: add images and snippets to release ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v3.2.8 (Fri Jan 26 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(stats): update scss selector ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v3.2.7 (Fri Jan 26 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: roll back change to items arrays ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v3.2.6 (Tue Jan 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: remove split from section schema ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v3.2.5 (Tue Jan 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(slider): add spacing after last slider child ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v3.2.4 (Tue Jan 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(ArticelTeaser): fix type error ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v3.2.3 (Tue Jan 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(pages): update faulty properties ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v3.2.2 (Tue Jan 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(TeaserCard): update properties in renderings ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v3.2.1 (Mon Jan 22 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(pages): update properties ([@fleven-kds](https://github.com/fleven-kds))
+- feat(properties): change redundant array names to items ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.2.0 (Fri Jan 19 2024)
 
 #### 🚀 Enhancement
@@ -1316,7 +1633,7 @@
 
 #### ⚠️ Pushed to `main`
 
-- feat(token): add lughausen token set ([@fleven-kds](https://github.com/fleven-kds))
+- feat(token): add business token set ([@fleven-kds](https://github.com/fleven-kds))
 
 #### 🏠 Internal
 

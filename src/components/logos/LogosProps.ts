@@ -5,6 +5,8 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {LogoProps} from "../logo/LogoProps";
+
 /**
  * A short tagline atop the logos
  */
@@ -16,894 +18,191 @@ export type LogoTagline = string;
  * @maxItems 20
  */
 export type Logos =
+  | [LogoProps]
+  | [LogoProps, LogoProps]
+  | [LogoProps, LogoProps, LogoProps]
+  | [LogoProps, LogoProps, LogoProps, LogoProps]
+  | [LogoProps, LogoProps, LogoProps, LogoProps, LogoProps]
+  | [LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps]
+  | [LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps]
+  | [LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps]
+  | [LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps]
+  | [LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps]
   | [
-      {
-        src: URL;
-        alt?: Caption;
-      }
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps
     ]
   | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps
     ]
   | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps
     ]
   | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps
     ]
   | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps
     ]
   | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps
     ]
   | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps
     ]
   | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps
     ]
   | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps
     ]
   | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
-    ]
-  | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
-    ]
-  | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
-    ]
-  | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
-    ]
-  | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
-    ]
-  | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
-    ]
-  | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
-    ]
-  | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
-    ]
-  | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
-    ]
-  | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
-    ]
-  | [
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      },
-      {
-        src: URL;
-        alt?: Caption;
-      }
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps,
+      LogoProps
     ];
-/**
- * The URL of the logo image
- */
-export type URL = string;
-/**
- * The alt text of the logo
- */
-export type Caption = string;
 /**
  * The alignment of the logo layout
  */
@@ -930,7 +229,7 @@ export type LinkLabel = string;
  */
 export interface LogosProps {
   tagline?: LogoTagline;
-  logos: Logos;
+  logo?: Logos;
   align?: Alignment;
   cta?: CallToAction;
 }

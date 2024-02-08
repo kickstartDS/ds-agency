@@ -179,16 +179,25 @@ Elevate your digital presence with us. We create [impactful digital](#) experien
         target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
+        button={{
+          label: "Go to page",
+        }}
       />
       <TeaserCard
         target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
+        button={{
+          label: "Go to page",
+        }}
       />
       <TeaserCard
         target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
+        button={{
+          label: "Go to page",
+        }}
       />
     </Section>
     <Section inverted width="wide">
@@ -196,21 +205,30 @@ Elevate your digital presence with us. We create [impactful digital](#) experien
         target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
+        button={{
+          label: "Go to page",
+        }}
       />
       <TeaserCard
         target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
+        button={{
+          label: "Go to page",
+        }}
       />
       <TeaserCard
         target="#"
         headline="Lorem Ipsum dolor"
         text="During more than a decade in the industry, we’ve been able to touch almost any aspect of digital products from"
+        button={{
+          label: "Go to page",
+        }}
       />
     </Section>
     <Section>
       <Testimonials
-        testimonials={[
+        testimonial={[
           {
             quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
             image: {
@@ -234,7 +252,7 @@ Elevate your digital presence with us. We create [impactful digital](#) experien
     </Section>
     <Section inverted>
       <Testimonials
-        testimonials={[
+        testimonial={[
           {
             quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
             image: {

@@ -42,5 +42,13 @@
         );
       }
     }
+
+    .l-section__content--slider {
+      padding: var(--ks-spacing-s) 0;
+
+      &:after {
+        min-width: calc(50vw - calc(var(--l-section_col--min-width) / 2) - calc(var(--l-section--gutter) * 1.25));
+      }
+    }
   }
 }

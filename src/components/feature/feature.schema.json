@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/feature.schema.json",
+  "title": "Feature",
+  "description": "Partial Component used to display a feature",
+  "type": "object",
+  "properties": {
+    "icon": {
+      "type": "string",
+      "title": "Icon",
+      "description": "The icon for the feature",
+      "examples": ["person"]
+    },
+    "title": {
+      "type": "string",
+      "title": "Title",
+      "description": "The title of the feature",
+      "examples": ["Feature 1"]
+    },
+    "text": {
+      "type": "string",
+      "title": "Text",
+      "description": "The description of the feature",
+      "examples": ["This is a feature"]
+    },
+    "style": {
+      "type": "string",
+      "enum": ["intext", "stack", "centered", "besideLarge", "besideSmall"],
+      "default": "stack"
+    },
+    "cta": {
+      "type": "object",
+      "title": "Call to Action",
+      "description": "The call to action",
+      "properties": {
+        "target": {
+          "type": "string",
+          "title": "Call to Action target",
+          "description": "The CTA target",
+          "default": "#",
+          "format": "uri"
+        },
+        "label": {
+          "type": "string",
+          "title": "Link Label",
+          "description": "The text label displayed on the link",
+          "default": "See more",
+          "examples": ["See all our partners"]
+        },
+        "toggle": {
+          "type": "boolean",
+          "title": "Call to Action Toggle",
+          "description": "Activate/disable the CTAs",
+          "default": true
+        },
+        "style": {
+          "type": "string",
+          "description": "Choose the style of the CTA",
+          "enum": ["button", "link", "intext"],
+          "default": "link"
+        }
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": ["title"]
+}

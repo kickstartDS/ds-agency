@@ -21,7 +21,14 @@ export type Label = string;
  * Target that should be linked
  */
 export type Target = string;
+/**
+ * Label of the button. Still A11Y relevant when the button is hidden.
+ */
 export type Label1 = string;
+/**
+ * Toggle arrow icon
+ */
+export type Icon = boolean;
 /**
  * Toggle wether you want the card to have a visible button or not
  */
@@ -42,10 +49,11 @@ export interface TeaserCardProps {
    * Layout for the Teaser Card
    */
   layout?: "stack" | "row";
-  target?: Target;
+  target: Target;
   button?: {
-    label?: Label1;
-    displayButton?: DisplayButton;
+    label: Label1;
+    chevron?: Icon;
+    hidden?: DisplayButton;
   };
   image?: Image;
   /**

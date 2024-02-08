@@ -34,56 +34,12 @@
       },
       "additionalProperties": false
     },
-    "features": {
+    "feature": {
       "type": "array",
       "title": "Features",
       "description": "The features to display",
       "items": {
-        "type": "object",
-        "properties": {
-          "icon": {
-            "type": "string",
-            "title": "Icon",
-            "description": "The icon for the feature",
-            "examples": ["person"]
-          },
-          "title": {
-            "type": "string",
-            "title": "Title",
-            "description": "The title of the feature",
-            "examples": ["Feature 1"]
-          },
-          "text": {
-            "type": "string",
-            "title": "Text",
-            "description": "The description of the feature",
-            "examples": ["This is a feature"]
-          },
-          "cta": {
-            "type": "object",
-            "title": "Call to Action",
-            "description": "The call to action",
-            "properties": {
-              "target": {
-                "type": "string",
-                "title": "Call to Action target",
-                "description": "The CTA target",
-                "default": "#",
-                "format": "uri"
-              },
-              "label": {
-                "type": "string",
-                "title": "Link Label",
-                "description": "The text label displayed on the link",
-                "default": "See more",
-                "examples": ["See all our partners"]
-              }
-            },
-            "additionalProperties": false
-          }
-        },
-        "additionalProperties": false,
-        "required": ["title"]
+        "$ref": "http://schema.mydesignsystem.com/feature.schema.json"
       },
       "minItems": 1,
       "maxItems": 8

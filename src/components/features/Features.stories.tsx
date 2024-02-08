@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { Features } from "./FeaturesComponent";
-import schema from "./features.schema.json";
+import schema from "./features.schema.dereffed.json";
 
 const meta: Meta<typeof Features> = {
   title: "Components/Features",
@@ -15,11 +15,18 @@ const meta: Meta<typeof Features> = {
 export default meta;
 type Story = StoryObj<typeof Features>;
 
-export const IconCentered: Story = {};
+export const IconCentered: Story = {
+  parameters: {
+    viewport: {
+      width: 1440,
+      height: 666,
+    },
+  },
+};
 IconCentered.args = pack({
   style: "centered",
   layout: "largeTiles",
-  features: [
+  feature: [
     {
       icon: "home",
       title: "Scalable Architecture",
@@ -77,14 +84,21 @@ IconCentered.args = pack({
   ],
 });
 
-export const StackWithButton: Story = {};
+export const StackWithButton: Story = {
+  parameters: {
+    viewport: {
+      width: 1230,
+      height: 463,
+    },
+  },
+};
 StackWithButton.args = pack({
   style: "stack",
   layout: "smallTiles",
   ctas: {
     style: "button",
   },
-  features: [
+  feature: [
     {
       icon: "person",
       title: "Consistent UI",
@@ -124,7 +138,14 @@ StackWithButton.args = pack({
   ],
 });
 
-export const ListView: Story = {};
+export const ListView: Story = {
+  parameters: {
+    viewport: {
+      width: 768,
+      height: 755,
+    },
+  },
+};
 ListView.args = pack({
   style: "besideLarge",
   layout: "list",
@@ -132,7 +153,7 @@ ListView.args = pack({
     style: "intext",
     toggle: false,
   },
-  features: [
+  feature: [
     {
       icon: "star",
       title: "Customizable Design",
@@ -191,14 +212,21 @@ ListView.args = pack({
   ],
 });
 
-export const IconBesideWithLinkInText: Story = {};
+export const IconBesideWithLinkInText: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 506,
+    },
+  },
+};
 IconBesideWithLinkInText.args = pack({
   style: "intext",
   layout: "smallTiles",
   ctas: {
     style: "intext",
   },
-  features: [
+  feature: [
     {
       icon: "home",
       title: "Scalable Architecture",
@@ -256,13 +284,20 @@ IconBesideWithLinkInText.args = pack({
   ],
 });
 
-export const IconIntextWithLink: Story = {};
+export const IconIntextWithLink: Story = {
+  parameters: {
+    viewport: {
+      width: 1232,
+      height: 524,
+    },
+  },
+};
 IconIntextWithLink.args = pack({
   style: "intext",
   ctas: {
     style: "link",
   },
-  features: [
+  feature: [
     {
       icon: "star",
       title: "Customizable Design",

@@ -4,7 +4,7 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Testimonials } from "./TestimonialsComponent";
 
-import schema from "./testimonials.schema.json";
+import schema from "./testimonials.schema.dereffed.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta<typeof Testimonials> = {
@@ -21,8 +21,14 @@ export default meta;
 type Story = StoryObj<typeof Testimonials>;
 
 export const Simple: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 409,
+    },
+  },
   args: pack({
-    testimonials: [
+    testimonial: [
       {
         quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
         image: {
@@ -37,8 +43,14 @@ export const Simple: Story = {
 };
 
 export const WithTitle: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 409,
+    },
+  },
   args: pack({
-    testimonials: [
+    testimonial: [
       {
         quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
         image: {
@@ -53,8 +65,14 @@ export const WithTitle: Story = {
 };
 
 export const ListLayout: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 979,
+    },
+  },
   args: pack({
-    testimonials: [
+    testimonial: [
       {
         quote: `Working with Systemics technology has been a game-changer for our brand. Their design system expertise brought harmony to our user experiences, making our digital platforms not just functional, but truly captivating.`,
         image: {

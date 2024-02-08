@@ -5,6 +5,8 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {FeatureProps} from "../feature/FeatureProps";
+
 /**
  * The layout variant to use for the features
  */
@@ -20,258 +22,14 @@ export type CTAToggle = boolean;
  * @maxItems 8
  */
 export type Features =
-  | [
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      }
-    ]
-  | [
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      }
-    ]
-  | [
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      }
-    ]
-  | [
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      }
-    ]
-  | [
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      }
-    ]
-  | [
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      }
-    ]
-  | [
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      }
-    ]
-  | [
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      },
-      {
-        icon?: Icon;
-        title: Title;
-        text?: Text;
-        cta?: CallToAction;
-      }
-    ];
-/**
- * The icon for the feature
- */
-export type Icon = string;
-/**
- * The title of the feature
- */
-export type Title = string;
-/**
- * The description of the feature
- */
-export type Text = string;
-/**
- * The CTA target
- */
-export type CallToActionTarget = string;
-/**
- * The text label displayed on the link
- */
-export type LinkLabel = string;
+  | [FeatureProps]
+  | [FeatureProps, FeatureProps]
+  | [FeatureProps, FeatureProps, FeatureProps]
+  | [FeatureProps, FeatureProps, FeatureProps, FeatureProps]
+  | [FeatureProps, FeatureProps, FeatureProps, FeatureProps, FeatureProps]
+  | [FeatureProps, FeatureProps, FeatureProps, FeatureProps, FeatureProps, FeatureProps]
+  | [FeatureProps, FeatureProps, FeatureProps, FeatureProps, FeatureProps, FeatureProps, FeatureProps]
+  | [FeatureProps, FeatureProps, FeatureProps, FeatureProps, FeatureProps, FeatureProps, FeatureProps, FeatureProps];
 
 /**
  * Component used to display a set of features
@@ -283,12 +41,5 @@ export interface FeaturesProps {
     toggle?: CTAToggle;
     style?: "button" | "link" | "intext";
   };
-  features?: Features;
-}
-/**
- * The call to action
- */
-export interface CallToAction {
-  target?: CallToActionTarget;
-  label?: LinkLabel;
+  feature?: Features;
 }

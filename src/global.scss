@@ -3,10 +3,26 @@
 @use "./components/rich-text/rich-text";
 @use "./components/form/form";
 @use "./fonts-dsa";
-@use "./fonts-lughausen";
+@use "./fonts-business";
 @use "./fonts-telekom";
 @use "./fonts-google";
 @use "./selectors" as *;
+
+body.sb-show-main.sb-main-padded {
+  padding: 0 !important;
+}
+
+.preview {
+  &--wrapper {
+    background-color: #1f213d;
+    padding: 2rem;
+  }
+
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
+  padding: 42px 29px;
+  background-color: var(--ks-background-color-default);
+  border-radius: var(--ks-border-radius-card);
+}
 
 body {
   background: var(--ks-background-color-default);
@@ -31,9 +47,6 @@ body {
 
   //TBD: why is the Original --g-header-height token in the repo?
   --g-header--height: calc(var(--g-logo--height) + var(--ks-spacing-stack-m) + var(--ks-spacing-stack-m));
-
-  --g-filter-drop-shadow--higlight: drop-shadow(0px 2px 30px var(--ks-color-primary-alpha-2))
-    drop-shadow(0px 1px 4px var(--ks-color-fg-alpha-8));
 
   --g-gradient--higlight: linear-gradient(135deg, var(--ks-color-primary) 0%, var(--ks-color-secondary) 100%);
 

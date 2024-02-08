@@ -139,7 +139,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
     >
       <Logos
         align="center"
-        logos={[
+        logo={[
           {
             alt: "Logo 1",
             src: "/static/img/logos/logoipsum-212.svg",

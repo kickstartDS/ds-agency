@@ -6,7 +6,7 @@ import schema from "./cta.schema.dereffed.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
-  title: "Components/CTA",
+  title: "Components/Cta",
   args,
   argTypes,
   component: Cta,
@@ -19,6 +19,12 @@ type Story = StoryObj<typeof Cta>;
 export default meta;
 
 export const Banner: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 472,
+    },
+  },
   args: pack({
     headline: "Ready to Transform Your Development Process?",
     sub: "Start your journey today.",
@@ -40,6 +46,12 @@ export const Banner: Story = {
 };
 
 export const Highlighted: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 551,
+    },
+  },
   args: pack({
     headline: "Why Choose Our Design System?",
     sub: "Built for consistency and speed.",
@@ -57,6 +69,12 @@ export const Highlighted: Story = {
 };
 
 export const LeftAligned: Story = {
+  parameters: {
+    viewport: {
+      width: 1000,
+      height: 443,
+    },
+  },
   args: pack({
     headline: "Experience Our Design System",
     sub: "Efficient, scalable, seamless.",

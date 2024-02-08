@@ -20,7 +20,7 @@ interface RenderFunctions {
 
 export const Headline = forwardRef<
   HTMLElement,
-  HeadlineProps & RenderFunctions & HTMLAttributes<HTMLElement>
+  HeadlineProps & RenderFunctions & Omit<HTMLAttributes<HTMLElement>, "style">
 >(
   (
     {

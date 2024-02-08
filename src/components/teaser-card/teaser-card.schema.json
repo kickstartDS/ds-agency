@@ -39,21 +39,29 @@
       "properties": {
         "label": {
           "title": "Label",
-          "type": "string"
+          "type": "string",
+          "description": "Label of the button. Still A11Y relevant when the button is hidden."
         },
-        "displayButton": {
+        "chevron": {
+          "title": "Icon",
+          "description": "Toggle arrow icon",
+          "type": "boolean",
+          "default": false
+        },
+        "hidden": {
           "type": "boolean",
           "title": "Display Button",
           "description": "Toggle wether you want the card to have a visible button or not",
-          "default": true
+          "default": false
         }
-      }
+      },
+      "required": ["label"]
     },
     "image": {
       "type": "string",
       "title": "Image",
       "description": "Image to display as cover",
-      "format": "uri"
+      "format": "image"
     },
     "imageRatio": {
       "type": "string",
@@ -63,5 +71,5 @@
     }
   },
   "additionalProperties": false,
-  "required": []
+  "required": ["topic", "target"]
 }
