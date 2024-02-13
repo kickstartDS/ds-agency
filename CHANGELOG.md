@@ -1,3 +1,15 @@
+# v3.5.1 (Tue Feb 13 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add settings props to cms types, too ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.5.0 (Tue Feb 13 2024)
 
 #### 🚀 Enhancement
