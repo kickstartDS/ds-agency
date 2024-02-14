@@ -1,0 +1,47 @@
+.background-color-primary {
+  color: transparent;
+  background-color: var(--ks-background-color-primary);
+
+  &-interactive.c-button {
+    border: none !important;
+    color: transparent !important;
+
+    --c-button--background-color: var(--ks-background-color-primary-interactive);
+    --c-button--background-color-hover: var(--ks-background-color-primary-interactive-hover);
+    --c-button--background-color-active: var(--ks-background-color-primary-interactive-active);
+    --c-button--background-color-selected: var(--ks-background-color-primary-interactive-selected);
+  }
+}
+
+.border-color-primary {
+  color: transparent;
+  border: var(--ks-border-color-default) solid;
+  border-color: var(--ks-border-color-primary);
+  background: transparent !important;
+
+  &-interactive.c-button {
+    color: transparent !important;
+    background: transparent !important;
+
+    --c-button--border-color: var(--ks-border-color-primary-interactive);
+    --c-button--border-color-hover: var(--ks-border-color-primary-interactive-hover);
+    --c-button--border-color-active: var(--ks-border-color-primary-interactive-active);
+    --c-button--border-color-selected: var(--ks-border-color-primary-interactive-selected);
+  }
+}
+
+.text-color-primary {
+  font: var(--ks-font-display-m);
+  color: var(--ks-text-color-primary);
+
+  &-interactive.c-button {
+    font: var(--ks-font-display-m);
+    background: transparent !important;
+    padding: 0 !important;
+
+    --c-button--color: var(--ks-text-color-primary-interactive);
+    --c-button--color-hover: var(--ks-text-color-primary-interactive-hover);
+    --c-button--color-active: var(--ks-text-color-primary-interactive-active);
+    --c-button--color-selected: var(--ks-text-color-primary-interactive-selected);
+  }
+}
