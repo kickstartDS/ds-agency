@@ -32,34 +32,6 @@
       --dsa-button_primary--background-color-selected,
       var(--ks-background-color-primary-interactive-selected)
     );
-
-    [ks-inverted="true"] & {
-      --c-button--color: var(--dsa-button_primary_inverted--color, var(--ks-color-fg));
-      --c-button--color-hover: var(--dsa-button_primary_inverted--color-hover, var(--ks-color-fg));
-      --c-button--color-active: var(--dsa-button_primary_inverted--color-active, var(--ks-color-fg));
-
-      --c-button--border-color: var(--dsa-button_primary_inverted--border-color, none);
-      --c-button--border-color-hover: var(--dsa-button_primary_inverted--border-color-hover, none);
-      --c-button--border-color-active: var(--dsa-button_primary_inverted--border-color-active, none);
-      --c-button--border-color-selected: var(--dsa-button_primary_inverted--border-color-selected, none);
-
-      --c-button--background-color: var(
-        --dsa-button_primary_inverted--background-color,
-        var(--ks-background-color-primary-interactive)
-      );
-      --c-button--background-color-hover: var(
-        --dsa-button_primary_inverted--background-color-hover,
-        var(--ks-background-color-primary-interactive-hover)
-      );
-      --c-button--background-color-active: var(
-        --dsa-button_primary_inverted--background-color-active,
-        var(--ks-background-color-primary-interactive-active)
-      );
-      --c-button--background-color-selected: var(
-        --dsa-button_primary_inverted--background-color-selected,
-        var(--ks-background-color-primary-interactive-selected)
-      );
-    }
   }
 
   &.c-button--clear {
@@ -90,34 +62,6 @@
       --dsa-button_secondary--background-color-selected,
       var(--ks-background-color-clear-interactive-selected) ;
     );
-
-    [ks-inverted="true"] & {
-      --c-button--color: var(--dsa-button_secondary_inverted--color, var(--ks-color-fg-alpha-2));
-      --c-button--color-hover: var(--dsa-button_secondary_inverted--color-hover, var(--ks-color-fg));
-      --c-button--color-active: var(--dsa-button_secondary_inverted--color-active, var(--ks-color-fg));
-
-      --c-button--border-color: var(--dsa-button_secondary_inverted--border-color, none);
-      --c-button--border-color-hover: var(--dsa-button_secondary_inverted--border-color-hover, none);
-      --c-button--border-color-active: var(--dsa-button_secondary_inverted--border-color-active, none);
-      --c-button--border-color-selected: var(--dsa-button_secondary_inverted--border-color-selected, none);
-
-      --c-button--background-color: var(
-        --dsa-button_secondary_inverted--background-color,
-        var(--ks-background-color-clear-interactive)
-      );
-      --c-button--background-color-hover: var(
-        --dsa-button_secondary_inverted--background-color-hover,
-        var(--ks-background-color-clear-interactive-hover)
-      );
-      --c-button--background-color-active: var(
-        --dsa-button_secondary_inverted--background-color-active,
-        var(--ks-background-color-clear-interactive-active)
-      );
-      --c-button--background-color-selected: var(
-        --dsa-button_secondary_inverted--background-color-selected,
-        var(--ks-background-color-clear-interactive-selected)
-      );
-    }
   }
 
   &.c-button--outline {
@@ -145,34 +89,6 @@
     --c-button--background-color-hover: var(--dsa-button_terciary--background-color-hover, none);
     --c-button--background-color-active: var(--dsa-button_terciary--background-color-active, none);
     --c-button--background-color-selected: var(--dsa-button_terciary--background-color-selected, none);
-
-    [ks-inverted="true"] & {
-      --c-button--color: var(--dsa-button_terciary_inverted--color, var(--ks-color-fg-alpha-2));
-      --c-button--color-hover: var(--dsa-button_terciary_inverted--color-hover, var(--ks-color-fg));
-      --c-button--color-active: var(--dsa-button_terciary_inverted--color-active, var(--ks-color-fg));
-
-      --c-button--border-color: var(
-        --dsa-button_terciary_inverted--border-color,
-        var(--ks-border-color-interface-interactive)
-      );
-      --c-button--border-color-hover: var(
-        --dsa-button_terciary_inverted--border-color-hover,
-        var(--ks-border-color-interface-interactive-hover)
-      );
-      --c-button--border-color-active: var(
-        --dsa-button_terciary_inverted--border-color-active,
-        var(--ks-border-color-interface-interactive-active)
-      );
-      --c-button--border-color-selected: var(
-        --dsa-button_terciary_inverted--border-color-selected,
-        var(--ks-border-color-interface-interactive-selected)
-      );
-
-      --c-button--background-color: var(--dsa-button_terciary_inverted--background-color, none);
-      --c-button--background-color-hover: var(--dsa-button_terciary_inverted--background-color-hover, none);
-      --c-button--background-color-active: var(--dsa-button_terciary_inverted--background-color-active, none);
-      --c-button--background-color-selected: var(--dsa-button_terciary_inverted--background-color-selected, none);
-    }
   }
 
   transition-property: box-shadow, transform, background-color, color, border;

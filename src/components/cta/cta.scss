@@ -3,7 +3,7 @@
 .c-cta {
   display: flex;
   flex-direction: column;
-  gap: var(--c-cta--gap);
+  gap: var(--dsa-cta--gap);
   width: 100%;
 
   .l-container {
@@ -12,8 +12,8 @@
 
     .c-rich-text {
       width: 100%;
-      --c-rich-text--font: var(--c-cta-copy--font);
-      --c-rich-text--color: var(--c-cta-copy--color);
+      --dsa-rich-text--font: var(--dsa-cta__copy--font, var(--dsa-text--font));
+      --dsa-rich-text--color: var(--dsa-cta__copy--color, var(--dsa-text--color));
     }
   }
 
@@ -27,9 +27,9 @@
 
   .c-headline {
     max-width: 100%;
-    --c-headline--color: var(--c-cta-headline--color);
+    --dsa-headline--color: var(--dsa-cta__headline--color);
     &__subheadline {
-      --c-headline_subheadline--color: var(--c-cta-subheadline--color);
+      --dsa-headline_subheadline--color: var(--dsa-cta__subheadline--color);
     }
   }
 

@@ -32,20 +32,20 @@
   background-color: var(--ks-background-color-primary);
   border-color: var(--ks-border-color-primary);
 
-  &.color-interactive.c-button {
-    --c-button--background-color: var(--ks-background-color-primary-interactive);
-    --c-button--background-color-hover: var(--ks-background-color-primary-interactive-hover);
-    --c-button--background-color-active: var(--ks-background-color-primary-interactive-active);
-    --c-button--background-color-selected: var(--ks-background-color-primary-interactive-selected);
+  &.color-interactive.dsa-button {
+    --dsa-button_secondary--background-color: var(--ks-background-color-primary-interactive);
+    --dsa-button_secondary--background-color-hover: var(--ks-background-color-primary-interactive-hover);
+    --dsa-button_secondary--background-color-active: var(--ks-background-color-primary-interactive-active);
+    --dsa-button_secondary--background-color-selected: var(--ks-background-color-primary-interactive-selected);
 
-    --c-button--color: var(--ks-text-color-primary-interactive);
-    --c-button--color-hover: var(--ks-text-color-primary-interactive-hover);
-    --c-button--color-active: var(--ks-text-color-primary-interactive-active);
+    --dsa-button_secondary--color: var(--ks-text-color-primary-interactive);
+    --dsa-button_secondary--color-hover: var(--ks-text-color-primary-interactive-hover);
+    --dsa-button_secondary--color-active: var(--ks-text-color-primary-interactive-active);
 
-    --c-button--border-color: var(--ks-border-color-primary-interactive);
-    --c-button--border-color-hover: var(--ks-border-color-primary-interactive-hover);
-    --c-button--border-color-active: var(--ks-border-color-primary-interactive-active);
-    --c-button--border-color-selected: var(--ks-border-color-primary-interactive-selected);
+    --dsa-button_secondary--border-color: var(--ks-border-color-primary-interactive);
+    --dsa-button_secondary--border-color-hover: var(--ks-border-color-primary-interactive-hover);
+    --dsa-button_secondary--border-color-active: var(--ks-border-color-primary-interactive-active);
+    --dsa-button_secondary--border-color-selected: var(--ks-border-color-primary-interactive-selected);
   }
 }
 
@@ -56,20 +56,20 @@
   background-color: var(--ks-background-color-interface);
   border-color: var(--ks-border-color-interface);
 
-  &.color-interactive.c-button {
-    --c-button--background-color: var(--ks-background-color-interface-interactive);
-    --c-button--background-color-hover: var(--ks-background-color-interface-interactive-hover);
-    --c-button--background-color-active: var(--ks-background-color-interface-interactive-active);
-    --c-button--background-color-selected: var(--ks-background-color-interface-interactive-selected);
+  &.color-interactive.dsa-button {
+    --dsa-button_secondary--background-color: var(--ks-background-color-interface-interactive);
+    --dsa-button_secondary--background-color-hover: var(--ks-background-color-interface-interactive-hover);
+    --dsa-button_secondary--background-color-active: var(--ks-background-color-interface-interactive-active);
+    --dsa-button_secondary--background-color-selected: var(--ks-background-color-interface-interactive-selected);
 
-    --c-button--color: var(--ks-text-color-interface-interactive);
-    --c-button--color-hover: var(--ks-text-color-interface-interactive-hover);
-    --c-button--color-active: var(--ks-text-color-interface-interactive-active);
+    --dsa-button_secondary--color: var(--ks-text-color-interface-interactive);
+    --dsa-button_secondary--color-hover: var(--ks-text-color-interface-interactive-hover);
+    --dsa-button_secondary--color-active: var(--ks-text-color-interface-interactive-active);
 
-    --c-button--border-color: var(--ks-border-color-interface-interactive);
-    --c-button--border-color-hover: var(--ks-border-color-interface-interactive-hover);
-    --c-button--border-color-active: var(--ks-border-color-interface-interactive-active);
-    --c-button--border-color-selected: var(--ks-border-color-interface-interactive-selected);
+    --dsa-button_secondary--border-color: var(--ks-border-color-interface-interactive);
+    --dsa-button_secondary--border-color-hover: var(--ks-border-color-interface-interactive-hover);
+    --dsa-button_secondary--border-color-active: var(--ks-border-color-interface-interactive-active);
+    --dsa-button_secondary--border-color-selected: var(--ks-border-color-interface-interactive-selected);
   }
 }
 
@@ -80,19 +80,19 @@
   background-color: var(--ks-background-color-default);
   border-color: var(--ks-border-color-default);
 
-  &.color-interactive.c-button {
-    --c-button--background-color: var(--ks-background-color-default-interactive);
-    --c-button--background-color-hover: var(--ks-background-color-default-interactive-hover);
-    --c-button--background-color-active: var(--ks-background-color-default-interactive-active);
-    --c-button--background-color-selected: var(--ks-background-color-default-interactive-selected);
+  &.color-interactive.dsa-button {
+    --dsa-button_secondary--background-color: var(--ks-background-color-default-interactive);
+    --dsa-button_secondary--background-color-hover: var(--ks-background-color-default-interactive-hover);
+    --dsa-button_secondary--background-color-active: var(--ks-background-color-default-interactive-active);
+    --dsa-button_secondary--background-color-selected: var(--ks-background-color-default-interactive-selected);
 
-    --c-button--color: var(--ks-text-color-default-interactive);
-    --c-button--color-hover: var(--ks-text-color-default-interactive-hover);
-    --c-button--color-active: var(--ks-text-color-default-interactive-active);
+    --dsa-button_secondary--color: var(--ks-text-color-default-interactive);
+    --dsa-button_secondary--color-hover: var(--ks-text-color-default-interactive-hover);
+    --dsa-button_secondary--color-active: var(--ks-text-color-default-interactive-active);
 
-    --c-button--border-color: var(--ks-border-color-default-interactive);
-    --c-button--border-color-hover: var(--ks-border-color-default-interactive-hover);
-    --c-button--border-color-active: var(--ks-border-color-default-interactive-active);
-    --c-button--border-color-selected: var(--ks-border-color-default-interactive-selected);
+    --dsa-button_secondary--border-color: var(--ks-border-color-default-interactive);
+    --dsa-button_secondary--border-color-hover: var(--ks-border-color-default-interactive-hover);
+    --dsa-button_secondary--border-color-active: var(--ks-border-color-default-interactive-active);
+    --dsa-button_secondary--border-color-selected: var(--ks-border-color-default-interactive-selected);
   }
 }

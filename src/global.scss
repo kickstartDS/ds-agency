@@ -1,12 +1,12 @@
 @use "@kickstartds/base/lib/global/base.css";
 @use "./global-token";
 @use "./components/blog-teaser/blog-teaser";
-@use "./components/rich-text/rich-text";
 @use "./components/form/form";
 @use "./fonts-dsa";
 @use "./fonts-business";
 @use "./fonts-telekom";
 @use "./fonts-google";
+@use "./components/rich-text/rich-text";
 @use "./selectors" as *;
 
 body.sb-show-main.sb-main-padded {

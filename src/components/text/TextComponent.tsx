@@ -29,7 +29,7 @@ export const TextContextDefault = forwardRef<
         {...rest}
         ref={ref}
         className={classnames(
-          "c-text",
+          "dsa-text",
           `${layoutClass}`,
           `${alignClass}`,
           `${highlightClass}`

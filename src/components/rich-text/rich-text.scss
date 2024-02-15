@@ -1,6 +1,9 @@
 @import "./rich-text-tokens.scss";
 
 .c-rich-text {
-  --c-rich-text_headline--font-weight: var(--dsa-headline--font-weight);
-  --c-rich-text_headline--color: var(--dsa-headline--color);
+  --c-rich-text--font: var(--dsa-rich-text--font, var(--ks-font-copy-m));
+  --c-rich-text--color: var(--dsa-rich-text--color, var(--ks-text-color-default));
+
+  --c-rich-text_headline--font-weight: var(--dsa-headline--font-weight, var(--ks-font-weight-bold));
+  --c-rich-text_headline--color: var(--dsa-headline--color, var(--ks-text-color-primary));
 }

@@ -1,11 +1,7 @@
 @import "../../selectors";
 
-#{$selectors} {
+:root {
   .c-rich-text {
-    --c-rich-text--font: var(--dsa-rich-text--font);
-    --c-rich-text--color: var(--dsa-rich-text--color);
-
-    --c-rich-text_headline--font-weight: var(--dsa-headline--font-weight);
-    --c-rich-text_headline--color: var(--dsa-headline--color);
+    --dsa-rich-text--color: var(--ks-text-color-default);
   }
 }

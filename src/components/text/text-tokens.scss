@@ -1,10 +1,10 @@
-.c-text {
-  --c-text--font: var(--dsa-rich-text--font);
-  --c-text--color: var(--dsa-rich-text--color);
+.dsa-text {
+  --dsa-text--font: var(--ks-font-copy-m);
+  --dsa-text--color: var(--ks-text-color-default);
 
-  --c-text__highlight--color: var(--ks-color-fg);
-  --c-text__highlight--font: var(--ks-font-copy-l);
+  --dsa-text__highlight--color: var(--ks-color-fg);
+  --dsa-text__highlight--font: var(--ks-font-copy-l);
 
-  --c-text__col--width: 16em;
-  --c-text__col--gap: var(--ks-spacing-inline-m);
+  --dsa-text__col--width: 16em;
+  --dsa-text__col--gap: var(--ks-spacing-inline-m);
 }
