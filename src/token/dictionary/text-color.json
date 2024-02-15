@@ -145,7 +145,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.fg.base",
+              "value": "{ks.color.fg.base}",
               "attributes": {
                 "category": "color"
               },
@@ -157,7 +157,7 @@
           },
           "active": {
             "base": {
-              "value": "{ks.color.fg.base",
+              "value": "{ks.color.fg.base}",
               "attributes": {
                 "category": "color"
               },
@@ -169,7 +169,7 @@
           },
           "visited": {
             "base": {
-              "value": "{ks.color.fg.base",
+              "value": "{ks.color.fg.base}",
               "attributes": {
                 "category": "color"
               },
