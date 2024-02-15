@@ -1,19 +1,19 @@
 .c-footer {
-  --c-footer--background-color: var(--ks-background-color-default);
-  --c-footer--border-top: 1px solid var(--ks-border-color-accent);
-  --c-footer--max-width: var(--l-section--content-width-wide);
-  --c-footer--gap-vertical: var(--ks-spacing-stack-m);
+  --dsa-footer--background-color: var(--ks-background-color-default);
+  --dsa-footer--border-top: 1px solid var(--ks-border-color-accent);
+  --dsa-footer--max-width: var(--l-section--content-width-wide);
+  --dsa-footer--gap-vertical: var(--ks-spacing-stack-m);
 
-  --c-footer-trademark--font: var(--ks-font-copy-xs);
-  --c-footer-trademark--color: var(--ks-text-color-default);
+  --dsa-footer__trademark--font: var(--ks-font-copy-xs);
+  --dsa-footer__trademark--color: var(--ks-text-color-default);
 
-  --c-footer-links--gap: var(--ks-spacing-stack-s) var(--ks-spacing-inline-m);
-  --c-footer-links--font: var(--ks-font-interface-s);
-  --c-footer-links--color: var(--dsa-link--color);
+  --dsa-footer__links--gap: var(--ks-spacing-stack-s) var(--ks-spacing-inline-m);
+  --dsa-footer__links--font: var(--ks-font-interface-s);
+  --dsa-footer__links--color: var(--dsa-link--color);
 
-  --c-footer-logo--height: 1.5rem;
+  --dsa-footer__logo--height: 1.5rem;
 
   @media (min-width: 62em) {
-    --c-footer-logo--height: 2rem;
+    --dsa-footer__logo--height: 2rem;
   }
 }
