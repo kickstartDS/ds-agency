@@ -7,13 +7,15 @@
 }
 
 .c-teaser.dsa-teaser-card {
-  //TBD: How should we pass on token to new components
-  --c-teaser--padding: var(--dsa-teaser-card--padding);
-  --c-teaser--background: var(--dsa-teaser-card--background);
-  --c-teaser--color: var(--dsa-teaser-card--color);
-  --c-teaser--border: var(--dsa-teaser-card--border);
-  --c-teaser--border-radius: var(--dsa-teaser-card--border-radius);
-  --c-teaser--shadow-hover: var(--dsa-teaser-card--shadow-hover);
+  --c-teaser--padding: var(--dsa-teaser-card--padding, var(--ks-spacing-inset-l));
+  --c-teaser--background: var(--dsa-teaser-card--background, var(--ks-color-fg-alpha-9));
+  --c-teaser--color: var(--dsa-teaser-card--color, var(--ks-text-color-default));
+  --c-teaser--border: var(
+    --dsa-teaser-card--border,
+    var(--ks-border-width-default) solid var(--ks-border-color-interface-interactive)
+  );
+  --c-teaser--border-radius: var(--dsa-teaser-card--border-radius, var(--ks-border-radius-card));
+  --c-teaser--shadow-hover: var(--dsa-teaser-card--shadow-hover, var(--ks-box-shadow-card-hover));
 
   position: relative;
   overflow: visible;
@@ -50,8 +52,8 @@
   }
 
   .c-teaser__topic {
-    font: var(--dsa-teaser-card-topic--font);
-    font-weight: var(--dsa-teaser-card-topic--font-weight);
+    font: var(--dsa-teaser-card__topic--font, var(--dsa-topic-font));
+    font-weight: var(--dsa-teaser-card__topic--font-weight, var(--dsa-topic-font-weight));
   }
 
   @include container.size("≥", 640px, "teaser-card") {
@@ -82,16 +84,16 @@
 
   &--label {
     .dsa-teaser-card__label {
-      border-radius: var(--dsa-teaser-card-label--border-radius);
+      border-radius: var(--dsa-teaser-card__label--border-radius);
       pointer-events: initial;
-      padding: var(--dsa-teaser-card-label--padding);
+      padding: var(--dsa-teaser-card__label--padding);
       transform: translate(0.5em, -50%);
-      font: var(--dsa-teaser-card-label--font);
+      font: var(--dsa-teaser-card__label--font);
       text-align: center;
-      font-weight: var(--dsa-teaser-card-label--font-weight);
-      color: var(--dsa-teaser-card-label--color);
+      font-weight: var(--dsa-teaser-card__label--font-weight);
+      color: var(--dsa-teaser-card__label--color);
       position: absolute;
-      background-color: var(--dsa-teaser-card-label--background-color);
+      background-color: var(--dsa-teaser-card__label--background-color);
       top: 0;
       right: 0;
     }

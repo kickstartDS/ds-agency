@@ -68,9 +68,9 @@
   }
 
   &__logo {
-    padding: var(--g-header--spacing-v) 0;
+    padding: var(--dsa-header--spacing-v) 0;
     img {
-      height: var(--g-logo--height);
+      height: var(--dsa-logo--height);
       width: auto;
     }
   }
@@ -115,16 +115,16 @@
     }
 
     > .nav-main__logo {
-      margin-top: var(--g-header--spacing-vertical);
-      margin-bottom: var(--g-header--spacing-vertical);
+      margin-top: var(--dsa-header--spacing-vertical);
+      margin-bottom: var(--dsa-header--spacing-vertical);
     }
 
     ul.nav-main__list {
-      padding-top: calc(var(--g-header--spacing-vertical) - var(--ks-spacing-s));
+      padding-top: calc(var(--dsa-header--spacing-vertical) - var(--ks-spacing-s));
 
       .nav-main--button {
-        margin-left: var(--g-header--spacing-horizontal);
-        margin-top: var(--g-header--spacing-vertical);
+        margin-left: var(--dsa-header--spacing-horizontal);
+        margin-top: var(--dsa-header--spacing-vertical);
 
         .button {
           --button--font: var(--ks-font-interface-s);

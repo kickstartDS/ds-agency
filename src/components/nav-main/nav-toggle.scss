@@ -16,8 +16,8 @@ button.nav-toggle {
   box-sizing: content-box;
   transition: top 0.15s;
   z-index: 1;
-  padding: 0 var(--g-header--spacing-horizontal);
-  transform: translateX(var(--g-header--spacing-horizontal));
+  padding: 0 var(--dsa-header--spacing-horizontal);
+  transform: translateX(var(--dsa-header--spacing-horizontal));
 
   @media (min-width: 62em) {
     display: none;
@@ -31,7 +31,7 @@ button.nav-toggle {
     position: relative;
     display: block;
     cursor: pointer;
-    height: var(--g-logo--height);
+    height: var(--dsa-logo--height);
     width: 31px;
     transform: scale(0.7) translate(7.5%, 7.5%);
     transition: inherit;

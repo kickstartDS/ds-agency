@@ -1,12 +1,12 @@
 @import "./text-tokens.scss";
 
 .c-rich-text.c-text {
-  font: var(--c-text--font);
-  color: var(--c-text--color);
+  font: var(--c-text--font, var(--ks-font-copy-m));
+  color: var(--c-text--color, var(--ks-text-color-default));
 
   &--highlight.c-rich-text {
-    color: var(--c-text-highlight--color);
-    font: var(--c-text-highlight--font);
+    color: var(--c-text-highlight--color, var(--ks-text-color-primary));
+    font: var(--c-text-highlight--font, var(--ks-font-copy-l));
   }
 
   &--center.c-rich-text {
@@ -14,8 +14,8 @@
   }
 
   &--columns.c-rich-text {
-    column-gap: var(--c-text-col-gap);
-    column-width: var(--c-text-col-width);
+    column-gap: var(--c-text__col--gap, var(--ks-spacing-inline-m));
+    column-width: var(--c-text__col--width, 16em);
     column-count: auto;
   }
 }

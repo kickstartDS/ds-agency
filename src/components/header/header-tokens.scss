@@ -1,11 +1,11 @@
 :root {
   //Global token for calculation of header height
-  --g-header--spacing-vertical: var(--ks-spacing-stack-m);
-  --g-header--spacing-horizontal: var(--l-section--content-padding);
+  --dsa-header--spacing-vertical: var(--ks-spacing-stack-m);
+  --dsa-header--spacing-horizontal: var(--l-section--content-padding);
 }
 
 .c-header {
   --c-header--background-color: var(--ks-background-color-default);
 
-  --c-header-logo--height: var(--g-logo--height);
+  --c-header-logo--height: var(--dsa-logo--height);
 }

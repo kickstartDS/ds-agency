@@ -2,13 +2,13 @@
 @include container.wrapper("post-teaser");
 
 article.c-post-teaser {
+  --dsa-topic--font: var(--ks-font-display-s);
   --c-teaser--background: transparent;
   --c-post-teaser--gap: var(--ks-spacing-stack-s) var(--ks-spacing-inline-s);
   --c-teaser_text--spacing: var(--ks-spacing-stack-s);
-  --g-topic--font: var(--ks-font-display-s);
 
   @include container.size("≥", 640px, "post-teaser") {
-    --g-topic--font: var(--ks-font-display-l);
+    --dsa-topic--font: var(--ks-font-display-l);
     --c-rich-text--font: var(--ks-font-copy-m);
 
     .c-tag-label--s {
@@ -17,7 +17,7 @@ article.c-post-teaser {
   }
 
   @include container.size("≥", 1000px, "post-teaser") {
-    --g-topic--font: var(--ks-font-display-xl);
+    --dsa-topic--font: var(--ks-font-display-xl);
   }
 
   .c-teaser {

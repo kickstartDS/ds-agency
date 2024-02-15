@@ -3,8 +3,8 @@
 #{$selectors} {
   //TBD: Token Selectors
   .c-headline {
-    --c-headline--color: var(--g-headline--color);
-    --c-headline--font-weight: var(--g-headline--font-weight);
+    --c-headline--color: var(--dsa-headline--color);
+    --c-headline--font-weight: var(--dsa-headline--font-weight);
     --c-headline--gap: 0.25em;
 
     &--h1 {

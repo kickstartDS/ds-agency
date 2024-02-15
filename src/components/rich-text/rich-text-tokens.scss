@@ -2,10 +2,10 @@
 
 #{$selectors} {
   .c-rich-text {
-    --c-rich-text--font: var(--g-rich-text--font);
-    --c-rich-text--color: var(--g-rich-text--color);
+    --c-rich-text--font: var(--dsa-rich-text--font);
+    --c-rich-text--color: var(--dsa-rich-text--color);
 
-    --c-rich-text_headline--font-weight: var(--g-headline--font-weight);
-    --c-rich-text_headline--color: var(--g-headline--color);
+    --c-rich-text_headline--font-weight: var(--dsa-headline--font-weight);
+    --c-rich-text_headline--color: var(--dsa-headline--color);
   }
 }

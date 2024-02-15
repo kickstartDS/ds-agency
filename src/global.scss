@@ -1,4 +1,5 @@
 @use "@kickstartds/base/lib/global/base.css";
+@use "./global-token";
 @use "./components/blog-teaser/blog-teaser";
 @use "./components/rich-text/rich-text";
 @use "./components/form/form";
@@ -29,51 +30,70 @@ body {
 }
 
 #{$selectors} {
-  //TBD: Globale Token: where should they be defined
-  --g-rich-text--color: var(--ks-text-color-default);
-  --g-rich-text--font: var(--ks-font-copy-m);
+  --g-link--font-weight: var(--dsa-link--font-weight, var(--ks-font-weight-regular));
+  --g-link--text-decoration: var(--dsa-link--text-decoration, underline);
+  --g-link--text-decoration-hover: var(--dsa-link--text-decoration-hover, none);
 
-  --g-headline--color: var(--ks-color-fg);
-  --g-subheadline--color: var(--ks-text-color-primary);
-  --g-headline--font-weight: var(--ks-font-weight-medium);
-  --g-headline--higlight-gradient: var(--g-gradient--higlight);
+  --g-link--color: var(--dsa-link--color, var(--ks-text-color-default-interactive));
+  --g-link--color-hover: var(--dsa-link--color-hover, var(--ks-text-color-default-interactive-hover));
+  --g-link--background: var(--dsa-link--background, transparent);
+  --g-link--border-radius: var(--dsa-link--border-radius, 0);
 
-  --g-topic--font-weight: var(--ks-font-weight-medium);
-  --g-topic--color: var(--ks-color-fg);
+  --g-topic--color: var(--dsa-topic--color, var(--ks-text-color-default));
+  --g-topic--font: var(--dsa-topic--font, var(--ks-font-display-l));
+  --g-topic--font-weight: var(--dsa-topic--font-weight, var(--ks-font-weight-bold));
 
-  --g-link--font-weight: var(--ks-font-weight-medium);
-  --g-link--color-hover: var(--ks-color-fg);
-  --g-link--text-decoration: none;
+  --c-rich-text--font: var(--dsa-rich-text--font, var(--ks-font-copy-m));
+  --c-rich-text--vertical-spacing: var(--dsa-rich-text--vertical-spacing, var(--ks-spacing-m));
+  --c-rich-text--horizontal-spacing: var(--dsa-rich-text--horizontal-spacing, 1em);
+  --c-rich-text--color: var(--dsa-rich-text--color, var(--ks-text-color-default));
+  --c-rich-text--font-weight: var(--dsa-rich-text--font-weight, var(--ks-font-weight-regular));
 
-  //TBD: why is the Original --g-header-height token in the repo?
-  --g-header--height: calc(var(--g-logo--height) + var(--ks-spacing-stack-m) + var(--ks-spacing-stack-m));
+  --c-rich-text_headline--color: var(--dsa-rich-text__headline--color, var(--ks-text-color-default));
+  --c-rich-text_headline--font: var(--dsa-rich-text__headline--font, var(--ks-font-display-m));
+  --c-rich-text_headline--font-weight: var(--dsa-rich-text_headline--font-weight, var(--ks-font-weight-bold));
+  --c-rich-text_headline--margin: var(--dsa-rich-text_headline--margin, 0.75em 0 0.5em);
 
-  --g-gradient--higlight: linear-gradient(135deg, var(--ks-color-primary) 0%, var(--ks-color-secondary) 100%);
+  // --g-subheadline--color: var(--ks-text-color-primary);
+  // --g-headline--font-weight: var(--ks-font-weight-medium);
+  // --g-headline--higlight-gradient: var(--g-gradient--higlight);
 
-  --l-section--content-padding: var(--ks-spacing-inset-l) !important;
+  // --g-topic--font-weight: var(--ks-font-weight-medium);
+  // --g-topic--color: var(--ks-color-fg);
 
-  @media (min-width: 42rem) {
-    --l-section--content-padding: var(--ks-spacing-inset-xl) !important;
-  }
+  // --g-link--font-weight: var(--ks-font-weight-medium);
+  // --g-link--color-hover: var(--ks-color-fg);
+  // --g-link--text-decoration: none;
 
-  --l-section--content-width-wide: 1440px !important;
+  // //TBD: why is the Original --g-header-height token in the repo?
+  // --g-header--height: calc(var(--g-logo--height) + var(--ks-spacing-stack-m) + var(--ks-spacing-stack-m));
 
-  --g-logo--height: 2rem;
+  // --g-gradient--higlight: linear-gradient(135deg, var(--ks-color-primary) 0%, var(--ks-color-secondary) 100%);
 
-  @media (min-width: 42rem) {
-    --g-logo--height: 2.5rem;
-  }
+  // --l-section--content-padding: var(--ks-spacing-inset-l) !important;
 
-  @media (min-width: 62em) {
-    --g-logo--height: 3rem;
-  }
+  // @media (min-width: 42rem) {
+  //   --l-section--content-padding: var(--ks-spacing-inset-xl) !important;
+  // }
 
-  &[ks-inverted="true"] {
-    --dsa-interface--background: var(--ks-color-bg-alpha-3);
-    --dsa-interface--shadow: 0 0 0 2px var(--ks-color-fg-alpha-9), 0 0px 8px var(--ks-color-fg-alpha-7);
-  }
+  // --l-section--content-width-wide: 1440px !important;
 
-  .c-divider {
-    --c-divider--background: var(--ks-border-color-accent);
-  }
+  // --g-logo--height: 2rem;
+
+  // @media (min-width: 42rem) {
+  //   --g-logo--height: 2.5rem;
+  // }
+
+  // @media (min-width: 62em) {
+  //   --g-logo--height: 3rem;
+  // }
+
+  // &[ks-inverted="true"] {
+  //   --dsa-interface--background: var(--ks-color-bg-alpha-3);
+  //   --dsa-interface--shadow: 0 0 0 2px var(--ks-color-fg-alpha-9), 0 0px 8px var(--ks-color-fg-alpha-7);
+  // }
+
+  // .c-divider {
+  //   --c-divider--background: var(--ks-border-color-accent);
+  // }
 }

@@ -16,10 +16,10 @@
   z-index: 1;
   width: 100%;
   display: flex;
-  padding: var(--g-header--spacing-vertical) 0;
+  padding: var(--dsa-header--spacing-vertical) 0;
 
   &__content {
-    padding: 0 var(--g-header--spacing-horizontal);
+    padding: 0 var(--dsa-header--spacing-horizontal);
     max-width: var(--l-section--content-width-max);
     width: 100%;
     margin: auto;

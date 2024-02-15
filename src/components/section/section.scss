@@ -6,15 +6,15 @@
     position: relative;
 
     &--header-spacing {
-      padding-top: calc(var(--g-header--height) + var(--l-section--space-default));
+      padding-top: calc(var(--dsa-header--height) + var(--l-section--space-default));
     }
 
     &--header-spacing.l-section--space-before-none {
-      padding-top: var(--g-header--height);
+      padding-top: var(--dsa-header--height);
     }
 
     &--header-spacing.l-section--space-before-small {
-      padding-top: calc(var(--g-header--height) + var(--l-section--space-small));
+      padding-top: calc(var(--dsa-header--height) + var(--l-section--space-small));
     }
 
     &--spotlight {
