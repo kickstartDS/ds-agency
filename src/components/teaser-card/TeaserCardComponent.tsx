@@ -37,17 +37,21 @@ export const TeaserCardContextDefault = forwardRef<
       <TeaserBoxContextDefault
         {...rest}
         className={classnames(
-          `c-teaser-card`,
-          label && `c-teaser-card--label`,
-          `c-teaser-card--${layout}`,
-          `c-teaser-card--${imageRatio}`
+          `dsa-teaser-card`,
+          label && `dsa-teaser-card--label`,
+          `dsa-teaser-card--${layout}`,
+          `dsa-teaser-card--${imageRatio}`
         )}
         topic={headline}
         text={text}
         // @ts-expect-error
         renderTopic={() => (
           <>
-            {label ? <span className="c-teaser__label">{label}</span> : ""}
+            {label ? (
+              <span className="dsa-teaser-card__label">{label}</span>
+            ) : (
+              ""
+            )}
             {headline}
           </>
         )}

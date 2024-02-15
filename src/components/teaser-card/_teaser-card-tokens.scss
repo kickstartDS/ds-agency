@@ -3,45 +3,45 @@
 @include container.wrapper("teaser-card");
 
 //TBD: breakpoint + container scaling token
-.c-teaser.c-teaser-card {
-  --c-teaser-card--border: 1px solid var(--ks-color-fg-alpha-8);
-  --c-teaser-card--border-radius: var(--ks-border-radius-card);
-  --c-teaser-card--shadow-hover: 0 1px 11px var(--ks-color-fg-alpha-6);
+.c-teaser.dsa-teaser-card {
+  --dsa-teaser-card--border: 1px solid var(--ks-color-fg-alpha-8);
+  --dsa-teaser-card--border-radius: var(--ks-border-radius-card);
+  --dsa-teaser-card--shadow-hover: 0 1px 11px var(--ks-color-fg-alpha-6);
 
-  --c-teaser-card-label--font: var(--ks-font-interface-m);
-  --c-teaser-card-label--font-weight: var(--ks-font-weight-semi-bold);
-  --c-teaser-card-label--color: var(--ks-color-fg-base);
-  --c-teaser-card-label--background-color: var(--ks-background-color-primary-inverted);
-  --c-teaser-card-label--padding: 0.5em 1em;
-  --c-teaser-card-label--border-radius: var(--ks-border-radius-pill);
+  --dsa-teaser-card-label--font: var(--ks-font-interface-m);
+  --dsa-teaser-card-label--font-weight: var(--ks-font-weight-semi-bold);
+  --dsa-teaser-card-label--color: var(--ks-color-fg-base);
+  --dsa-teaser-card-label--background-color: var(--ks-background-color-primary-inverted);
+  --dsa-teaser-card-label--padding: 0.5em 1em;
+  --dsa-teaser-card-label--border-radius: var(--ks-border-radius-pill);
 
   //Scaling for Mobile Breakpoint
-  --c-teaser-card-topic--font: var(--ks-font-display-l);
-  --c-teaser-card-topic--font-weight: var(--g-topic--font-weight);
+  --dsa-teaser-card-topic--font: var(--ks-font-display-l);
+  --dsa-teaser-card-topic--font-weight: var(--g-topic--font-weight);
 
-  --c-teaser-card--font: var(--g-rich-text--font);
-  --c-teaser-card--color: var(--ks-text-color-default);
+  --dsa-teaser-card--font: var(--g-rich-text--font);
+  --dsa-teaser-card--color: var(--ks-text-color-default);
 
-  --c-teaser-card--padding: var(--ks-spacing-inset-l);
-  --c-teaser-card--background: var(--ks-color-fg-alpha-9);
+  --dsa-teaser-card--padding: var(--ks-spacing-inset-l);
+  --dsa-teaser-card--background: var(--ks-color-fg-alpha-9);
 
   @media (min-width: 48rem) {
     //Scaling for Desktop Breakpoint SmallTiles
-    --c-teaser-card-topic--font: var(--ks-font-display-s);
-    --c-teaser-card--font: var(--ks-font-copy-s);
-    --c-teaser-card--padding: var(--ks-spacing-inset-s);
+    --dsa-teaser-card-topic--font: var(--ks-font-display-s);
+    --dsa-teaser-card--font: var(--ks-font-copy-s);
+    --dsa-teaser-card--padding: var(--ks-spacing-inset-s);
 
     //Scaling for Desktop Breakpoint MediumTiles
     @include container.size("≥", 300px, "teaser-card") {
-      --c-teaser-card--font: var(--ks-font-copy-m);
-      --c-teaser-card-topic--font: var(--ks-font-display-m);
+      --dsa-teaser-card--font: var(--ks-font-copy-m);
+      --dsa-teaser-card-topic--font: var(--ks-font-display-m);
     }
 
     //Scaling for Desktop Breakpoint LargeTiles
     @include container.size("≥", 820px, "teaser-card") {
-      --c-teaser-card-topic--font: var(--ks-font-display-l);
-      --c-teaser-card--font: var(--ks-font-copy-l);
-      --c-teaser--padding: var(--ks-spacing-inset-l);
+      --dsa-teaser-card-topic--font: var(--ks-font-display-l);
+      --dsa-teaser-card--font: var(--ks-font-copy-l);
+      --dsa-teaser--padding: var(--ks-spacing-inset-l);
     }
   }
 }
