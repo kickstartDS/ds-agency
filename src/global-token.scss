@@ -7,7 +7,9 @@
   --dsa-topic--font-family: var(--ks-font-family-display);
 
   --dsa-link--font-weight: var(--ks-font-weight-medium);
-  --dsa-link_hover--color: var(--ks-color-fg);
+  --dsa-link--color: var(--ks-text-color-default-interactive);
+  --dsa-link--color_hover: var(--ks-text-color-default-interactive-hover);
+
   --dsa-link--text-decoration: none;
   --dsa-link--text-decoration_hover: none;
 

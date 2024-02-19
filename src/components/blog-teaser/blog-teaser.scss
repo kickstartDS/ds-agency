@@ -2,7 +2,6 @@
 @include container.wrapper("post-teaser");
 
 article.c-post-teaser {
-  --dsa-topic--font: var(--ks-font-display-s);
   --c-teaser--background: transparent;
   --c-post-teaser--gap: var(--ks-spacing-stack-s) var(--ks-spacing-inline-s);
   --c-teaser_text--spacing: var(--ks-spacing-stack-s);
@@ -25,9 +24,6 @@ article.c-post-teaser {
     cursor: pointer;
 
     &:hover {
-      .c-teaser__topic {
-        text-shadow: 0 0 15px var(--ks-color-fg-alpha-5);
-      }
       .c-rich-text {
         color: var(--ks-color-fg);
         > :not(.c-post-meta) {
