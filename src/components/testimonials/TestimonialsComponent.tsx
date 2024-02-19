@@ -7,7 +7,7 @@ export const Testimonials: FC<
   TestimonialsProps & HTMLAttributes<HTMLElement>
 > = ({ testimonial: testimonials = [] }) => {
   return (
-    <div className="c-testimonials">
+    <div className="dsa-testimonials">
       {testimonials?.map((testimonial, index) => (
         <Testimonial {...testimonial} key={index} />
       ))}

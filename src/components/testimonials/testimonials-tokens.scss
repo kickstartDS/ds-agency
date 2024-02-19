@@ -1,10 +1,12 @@
 @use "@kickstartds/core/source/core/container";
 @include container.wrapper("testimonials");
 
-.c-testimonials {
-  --c-testimonials--gap: var(--ks-spacing-stack-m);
-  --c-testimonials--color: var(--dsa-rich-text--color);
-  --c-testimonials--font: var(--dsa-rich-text--font);
-  --c-testimonials-image--gap-horizontal: var(--ks-spacing-inline-m);
-  --c-testimonials-image--gap-vertical: var(--ks-spacing-stack-s);
+.dsa-testimonials {
+  --dsa-testimonials--gap: var(--ks-spacing-stack-m);
+
+  --dsa-testimonials__copy--color: var(--dsa-rich-text--color);
+  --dsa-testimonials__copy--font: var(--dsa-rich-text--font);
+
+  --dsa-testimonials__image--gap-horizontal: var(--ks-spacing-inline-m);
+  --dsa-testimonials__image--gap-vertical: var(--ks-spacing-stack-s);
 }

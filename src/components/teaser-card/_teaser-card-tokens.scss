@@ -1,46 +1,46 @@
-// @use "@kickstartds/core/source/core/container";
-// @import "../../selectors";
-// @include container.wrapper("teaser-card");
+@use "@kickstartds/core/source/core/container";
+@import "../../selectors";
+@include container.wrapper("teaser-card");
 
-// .c-teaser.dsa-teaser-card {
-//   --dsa-teaser-card--border: 1px solid var(--ks-color-fg-alpha-8);
-//   --dsa-teaser-card--border-radius: var(--ks-border-radius-card);
-//   --dsa-teaser-card--shadow-hover: 0 1px 11px var(--ks-color-fg-alpha-6);
+.c-teaser.dsa-teaser-card {
+  --dsa-teaser-card--border: 1px solid var(--ks-color-fg-alpha-8);
+  --dsa-teaser-card--border-radius: var(--ks-border-radius-card);
+  --dsa-teaser-card--shadow_hover: 0 1px 11px var(--ks-color-fg-alpha-6);
 
-//   --dsa-teaser-card__label--font: var(--ks-font-interface-m);
-//   --dsa-teaser-card__label--font-weight: var(--ks-font-weight-semi-bold);
-//   --dsa-teaser-card__label--color: var(--ks-color-fg-base);
-//   --dsa-teaser-card__label--background-color: var(--ks-background-color-primary-inverted);
-//   --dsa-teaser-card__label--padding: 0.5em 1em;
-//   --dsa-teaser-card__label--border-radius: var(--ks-border-radius-pill);
+  --dsa-teaser-card__label--font: var(--ks-font-interface-m);
+  --dsa-teaser-card__label--font-weight: var(--ks-font-weight-semi-bold);
+  --dsa-teaser-card__label--color: var(--ks-color-fg-base);
+  --dsa-teaser-card__label--background-color: var(--ks-background-color-primary-inverted);
+  --dsa-teaser-card__label--padding: 0.5em 1em;
+  --dsa-teaser-card__label--border-radius: var(--ks-border-radius-pill);
 
-//   //Scaling for Mobile Breakpoint
-//   --dsa-teaser-card__topic--font: var(--ks-font-display-l);
-//   --dsa-teaser-card__topic--font-weight: var(--dsa-topic--font-weight);
+  //Scaling for Mobile Breakpoint
+  --dsa-teaser-card__topic--font: var(--ks-font-display-l);
+  --dsa-teaser-card__topic--font-weight: var(--dsa-topic--font-weight);
 
-//   --dsa-teaser-card--font: var(--dsa-rich-text--font);
-//   --dsa-teaser-card--color: var(--ks-text-color-default);
+  --dsa-teaser-card__copy--font: var(--dsa-rich-text--font);
+  --dsa-teaser-card__copy--color: var(--ks-text-color-default);
 
-//   // --dsa-teaser-card--padding: var(--ks-spacing-inset-l);
-//   --dsa-teaser-card--background: var(--ks-color-fg-alpha-9);
+  --dsa-teaser-card--padding: var(--ks-spacing-inset-l);
+  --dsa-teaser-card--background: var(--ks-color-fg-alpha-9);
 
-//   @media (min-width: 48rem) {
-//     //Scaling for Desktop Breakpoint SmallTiles
-//     --dsa-teaser-card__topic--font: var(--ks-font-display-s);
-//     --dsa-teaser-card--font: var(--ks-font-copy-s);
-//     // --dsa-teaser-card--padding: var(--ks-spacing-inset-s);
+  @media (min-width: 48rem) {
+    //Scaling for Desktop Breakpoint SmallTiles
+    --dsa-teaser-card__topic--font: var(--ks-font-display-s);
+    --dsa-teaser-card__copy--font: var(--ks-font-copy-s);
+    --dsa-teaser-card--padding: var(--ks-spacing-inset-s);
 
-//     //Scaling for Desktop Breakpoint MediumTiles
-//     @include container.size("≥", 300px, "teaser-card") {
-//       --dsa-teaser-card--font: var(--ks-font-copy-m);
-//       --dsa-teaser-card__topic--font: var(--ks-font-display-m);
-//     }
+    //Scaling for Desktop Breakpoint MediumTiles
+    @include container.size("≥", 300px, "teaser-card") {
+      --dsa-teaser-card__copy--font: var(--ks-font-copy-m);
+      --dsa-teaser-card__topic--font: var(--ks-font-display-m);
+    }
 
-//     //Scaling for Desktop Breakpoint LargeTiles
-//     @include container.size("≥", 820px, "teaser-card") {
-//       --dsa-teaser-card__topic--font: var(--ks-font-display-l);
-//       --dsa-teaser-card--font: var(--ks-font-copy-l);
-//       // --dsa-teaser-card--padding: var(--ks-spacing-inset-l);
-//     }
-//   }
-// }
+    // Scaling for Desktop Breakpoint LargeTiles
+    @include container.size("≥", 820px, "teaser-card") {
+      --dsa-teaser-card__topic--font: var(--ks-font-display-l);
+      --dsa-teaser-card__copy--font: var(--ks-font-copy-l);
+      --dsa-teaser-card--padding: var(--ks-spacing-inset-l);
+    }
+  }
+}

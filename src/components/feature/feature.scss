@@ -72,7 +72,7 @@
 
   &__text {
     color: var(--dsa-feature__copy--color, var(--dsa-rich-text-color), var(--ks-text-color-default));
-    font: var(--dsa-feature__copy-font, var(--ks-font-copy-s));
+    font: var(--dsa-feature__copy--font, var(--ks-font-copy-s));
     margin: 0;
   }
 

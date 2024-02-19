@@ -2,18 +2,18 @@
 @use "testimonials-tokens.scss";
 @include container.wrapper("testimonials");
 
-.c-testimonials {
+.dsa-testimonials {
   display: flex;
   flex-direction: column;
-  gap: var(--c-testimonials--gap);
+  gap: var(--dsa-testimonials--gap, var(--ks-spacing-stack-m));
 
   .c-rich-text {
-    font: var(--c-testimonials--font);
-    color: var(--c-testimonials--color);
+    font: var(--dsa-testimonials__copy--font, var(--dsa-rich-text--font), var(--ks-font-copy-m));
+    color: var(--dsa-testimonials__copy--color, var(--dsa-rich-text--color), var(--ks-text-color-default));
   }
 
   .text-media--intext .text-media__gallery {
-    padding-bottom: var(--c-testimonials-image--gap-vertical);
-    padding-right: var(--c-testimonials-image--gap-horizontal);
+    padding-bottom: var(--dsa-testimonials__image--gap-vertical, var(--ks-spacing-inline-m));
+    padding-right: var(--dsa-testimonials__image--gap-horizontal, var(--ks-spacing-stack-s));
   }
 }

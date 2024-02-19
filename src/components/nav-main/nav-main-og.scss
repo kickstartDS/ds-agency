@@ -19,12 +19,12 @@
     align-items: center;
 
     .nav-main__link {
-      color: var(--nav-main--color);
-      font: var(--nav-main--font);
+      color: var(--dsa-nav-main--color);
+      font: var(--dsa-nav-main--font);
       font-weight: var(--ks-font-weight-semi-bold);
 
       &:hover {
-        color: var(--nav-main--color-hover);
+        color: var(--dsa-nav-main--color_hover);
       }
     }
   }

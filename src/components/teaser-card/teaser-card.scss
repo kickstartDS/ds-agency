@@ -9,13 +9,13 @@
 .c-teaser.dsa-teaser-card {
   --c-teaser--padding: var(--dsa-teaser-card--padding, var(--ks-spacing-inset-l));
   --c-teaser--background: var(--dsa-teaser-card--background, var(--ks-color-fg-alpha-9));
-  --c-teaser--color: var(--dsa-teaser-card--color, var(--ks-text-color-default));
+  --c-teaser--color: var(--dsa-teaser-card__copy--color, var(--ks-text-color-default));
   --c-teaser--border: var(
     --dsa-teaser-card--border,
     var(--ks-border-width-default) solid var(--ks-border-color-interface-interactive)
   );
   --c-teaser--border-radius: var(--dsa-teaser-card--border-radius, var(--ks-border-radius-card));
-  --c-teaser--shadow-hover: var(--dsa-teaser-card--shadow-hover, var(--ks-box-shadow-card-hover));
+  --c-teaser--shadow-hover: var(--dsa-teaser-card--shadow_hover, var(--ks-box-shadow-card-hover));
 
   position: relative;
   overflow: visible;
@@ -48,7 +48,7 @@
   }
 
   .c-rich-text {
-    font: var(--dsa-teaser-card-card--font);
+    font: var(--dsa-teaser-card-card--font, var(--dsa-rich-text--font), var(--ks-font-copy-m));
   }
 
   .c-teaser__topic {

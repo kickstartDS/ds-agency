@@ -27,11 +27,11 @@ export const GalleryContextDefault = forwardRef<
     const galleryId = useMemo(() => `gallery-${Date.now()}`, []);
 
     return (
-      <div {...rest} ref={ref} className={`c-gallery`}>
+      <div {...rest} ref={ref} className={`dsa-gallery`}>
         <div
           className={classnames(
-            `c-gallery__grid`,
-            `c-gallery__grid--${
+            `dsa-gallery__grid`,
+            `dsa-gallery__grid--${
               layout === "smallTiles"
                 ? "small-tiles"
                 : layout === "largeTiles"
@@ -43,8 +43,8 @@ export const GalleryContextDefault = forwardRef<
           {images.map((image, index) => (
             <div
               className={classnames(
-                "c-gallery__image",
-                aspectRatio !== "unset" && `c-gallery__image--${aspectRatio}`
+                "dsa-gallery__image",
+                aspectRatio !== "unset" && `dsa-gallery__image--${aspectRatio}`
               )}
               key={index}
             >

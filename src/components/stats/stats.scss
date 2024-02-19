@@ -1,43 +1,46 @@
 @import "stats-tokens.scss";
 
-.c-stats {
+.dsa-stats {
   display: flex;
   justify-content: center;
-  gap: var(--c-stats--gap-vertical) var(--c-stats--gap-horizontal);
+  gap: var(--dsa-stats--gap-vertical, var(--ks-spacing-stack-l))
+    var(--dsa-stats--gap-horizontal, var(--ks-spacing-inline-m));
   flex-wrap: wrap;
   align-items: center;
 
   &__stat {
     flex: 1 1;
-    flex-basis: var(--c-stats-item--min-width);
+    flex-basis: var(--dsa-stats__item--min-width, 200px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--c-stats-item--gap);
-    max-width: var(--c-stats-item--max-width);
+    gap: var(--dsa-stats__item--gap);
+    max-width: var(--dsa-stats__item--max-width, 200px);
   }
 
   &__value {
-    background: var(--c-stats-value--gradient);
+    background: var(
+      --dsa-stats__value--gradient,
+      linear-gradient(135deg, var(--ks-color-primary) 0%, var(--ks-color-secondary) 100%)
+    );
 
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    filter: var(--c-stats-value--shadow);
-    font: var(--c-stats-value--font);
-    font-weight: var(--c-stats-value--font-weight);
+    font: var(--dsa-stats__value--font, var(--ks-font-display-xl));
+    font-weight: var(--dsa-stats__value--font-weight, var(--ks-font-weight-semi-bold));
   }
 
   &__label {
-    color: var(--c-stats-label--color);
-    font: var(--c-stats-label--font);
+    color: var(--dsa-stats__label--color, var(--ks-color-fg));
+    font: var(--dsa-stats__label--font, var(--ks-font-interface-xl));
     text-align: center;
   }
 
   &__description {
-    color: var(--c-stats-description--color);
-    font: var(--c-stats-description--font);
+    color: var(--dsa-stats__description--color, var(--ks-font-copy-s));
+    font: var(--dsa-stats__description--font, var(--ks-text-color-default));
     text-align: center;
   }
 }

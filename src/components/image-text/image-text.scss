@@ -1,12 +1,15 @@
 @import "./image-text-tokens.scss";
 
-.c-image-text {
+.dsa-image-text {
   .c-rich-text {
-    font: var(--c-image-text--font);
+    --c-rich-text--font: var(--dsa-image-text--font, var(--dsa-rich-text--font), var(--ks-font-copy-m));
+    --c-rich-text--color: var(--dsa-image-text--color, var(--dsa-rich-text--color), var(--ks-text-color-default));
   }
 
-  &--highlight {
-    --c-rich-text--font: var(--ks-font-copy-l);
-    --c-rich-text--color: var(--ks-color-fg);
+  &--highlight.dsa-image-text {
+    .c-rich-text {
+      --c-rich-text--font: var(--dsa-image-text_highlight--font, var(--ks-font-copy-l));
+      --c-rich-text--color: var(--dsa-image-text_highlight--color, var(--ks-color-fg));
+    }
   }
 }

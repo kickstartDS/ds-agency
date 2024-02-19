@@ -5,10 +5,12 @@ export const StatContextDefault = forwardRef<
   HTMLDivElement,
   StatProps & HTMLAttributes<HTMLDivElement>
 >(({ number, title, description, ...rest }, ref) => (
-  <div {...rest} ref={ref} className="c-stats__stat">
-    <span className="c-stats__value">{number}</span>
-    <span className="c-stats__label">{title}</span>
-    {description && <span className="c-stats__description">{description}</span>}
+  <div {...rest} ref={ref} className="dsa-stats__stat">
+    <span className="dsa-stats__value">{number}</span>
+    <span className="dsa-stats__label">{title}</span>
+    {description && (
+      <span className="dsa-stats__description">{description}</span>
+    )}
   </div>
 ));
 

@@ -1,6 +1,6 @@
-:root,
-[ks-inverted],
-[ks-theme] {
+@import "../../selectors";
+
+#{$selectors} {
   .c-form-check,
   .c-form-field {
     --c-form-check_checkmark--color: var(--ks-color-fg-base);

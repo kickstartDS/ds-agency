@@ -10,13 +10,13 @@
   &--active {
     .nav-main__item {
       .nav-main__link {
-        color: var(--nav-main--color-passive);
+        color: var(--dsa-nav-main--color-passive);
       }
 
       &--active {
         .nav-main__link {
-          color: var(--nav-main--color-active);
-          font-weight: var(--nav-main--font-weight-active);
+          color: var(--dsa-nav-main--color_active);
+          font-weight: var(--dsa-nav-main--font-weight_active);
         }
       }
     }
@@ -43,26 +43,26 @@
   &__list {
     &:hover {
       .nav-main__link {
-        color: var(--nav-main--color-hover);
+        color: var(--dsa-nav-main--color_hover);
       }
     }
   }
 
   a.nav-main__link {
     /* critical:start */
-    font: var(--nav-main--font);
-    font-weight: var(--nav-main--font-weight);
-    color: var(--nav-main--color);
+    font: var(--dsa-nav-main--font);
+    font-weight: var(--dsa-nav-main--font-weight);
+    color: var(--dsa-nav-main--color);
     position: relative;
     display: block;
-    padding: var(--nav-main-link--padding);
+    padding: var(--dsa-nav-main-link--padding);
 
     &:hover {
-      color: var(--nav-main--color);
+      color: var(--dsa-nav-main--color);
     }
 
     &:active {
-      color: var(--nav-main--color-active);
+      color: var(--dsa-nav-main--color-active);
     }
     /* critical:end */
   }
@@ -98,7 +98,7 @@
     bottom: 0;
     top: 0;
     overflow-y: auto;
-    background: var(--nav-main--background);
+    background: var(--dsa-nav-main--background);
     backface-visibility: hidden;
     -webkit-overflow-scrolling: touch;
     box-shadow: 20px 0px 30px #00000000;
@@ -111,7 +111,7 @@
 
     .overlay-open & {
       left: 0;
-      box-shadow: var(--nav-main--shadow);
+      box-shadow: var(--dsa-nav-main--shadow);
     }
 
     > .nav-main__logo {

@@ -1,24 +1,23 @@
-.c-stats {
-  --c-stats--gap-vertical: var(--ks-spacing-stack-l);
-  --c-stats--gap-horizontal: var(--ks-spacing-inline-m);
+.dsa-stats {
+  --dsa-stats--gap-vertical: var(--ks-spacing-stack-l);
+  --dsa-stats--gap-horizontal: var(--ks-spacing-inline-m);
 
-  --c-stats-item--min-width: 200px;
-  --c-stats-item--max-width: 200px;
-  --c-stats-item--gap: var(--ks-spacing-stack-xs);
+  --dsa-stats__item--min-width: 200px;
+  --dsa-stats__item--max-width: 200px;
+  --dsa-stats__item--gap: var(--ks-spacing-stack-xs);
 
-  --c-stats-value--gradient: linear-gradient(
+  --dsa-stats__value--gradient: linear-gradient(
     135deg,
     var(--ks-color-primary-base) 0%,
     var(--ks-color-secondary-base) 100%
   );
 
-  --c-stats-value--shadow: var(--dsa-filter-drop-shadow--higlight);
-  --c-stats-value--font: var(--ks-font-display-xl);
-  --c-stats-value--font-weight: var(--ks-font-weight-semi-bold);
+  --dsa-stats__value--font: var(--ks-font-display-xl);
+  --dsa-stats__value--font-weight: var(--ks-font-weight-semi-bold);
 
-  --c-stats-label--font: var(--ks-font-interface-xl);
-  --c-stats-label--color: var(--ks-color-fg);
+  --dsa-stats__label--font: var(--ks-font-interface-xl);
+  --dsa-stats__label--color: var(--ks-color-fg);
 
-  --c-stats-description--font: var(--ks-font-copy-s);
-  --c-stats-description--color: var(--ks-text-color-default);
+  --dsa-stats__description--font: var(--ks-font-copy-s);
+  --dsa-stats__description--color: var(--ks-text-color-default);
 }

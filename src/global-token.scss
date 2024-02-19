@@ -1,23 +1,15 @@
 @use "./selectors" as *;
 
 #{$selectors} {
-  --dsa-rich-text--color: var(--ks-text-color-default);
-  --dsa-rich-text--font: var(--ks-font-copy-m);
-
-  --dsa-headline--color: var(--ks-color-fg);
-  --dsa-headline--font-weight: var(--ks-font-weight-medium);
-  --dsa-headline--higlight-gradient: var(--dsa-gradient--higlight);
-
-  --dsa-subheadline--color: var(--ks-text-color-primary);
-
   --dsa-topic--font: var(--ks-font-display-m);
   --dsa-topic--font-weight: var(--ks-font-weight-medium);
   --dsa-topic--color: var(--ks-color-fg);
   --dsa-topic--font-family: var(--ks-font-family-display);
 
   --dsa-link--font-weight: var(--ks-font-weight-medium);
-  --dsa-link--color-hover: var(--ks-color-fg);
+  --dsa-link_hover--color: var(--ks-color-fg);
   --dsa-link--text-decoration: none;
+  --dsa-link--text-decoration_hover: none;
 
   --dsa-header--height: calc(var(--dsa-logo--height) + var(--ks-spacing-stack-m) + var(--ks-spacing-stack-m));
 

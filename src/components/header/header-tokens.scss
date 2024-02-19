@@ -1,11 +1,12 @@
-:root {
+@import "../../selectors";
+
+#{$selectors} {
   //Global token for calculation of header height
   --dsa-header--spacing-vertical: var(--ks-spacing-stack-m);
   --dsa-header--spacing-horizontal: var(--l-section--content-padding);
 }
 
-.c-header {
-  --c-header--background-color: var(--ks-background-color-default);
-
-  --c-header-logo--height: var(--dsa-logo--height);
+.dsa-header {
+  --dsa-header--background-color: var(--ks-background-color-default);
+  --dsa-header__logo--height: var(--dsa-logo--height);
 }

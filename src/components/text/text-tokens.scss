@@ -1,6 +1,8 @@
-.dsa-text {
-  --dsa-text--font: var(--ks-font-copy-m);
-  --dsa-text--color: var(--ks-text-color-default);
+@import "../../selectors";
+
+#{$selectors} {
+  --dsa-text--font: var(--dsa-rich-text--font);
+  --dsa-text--color: var(--dsa-rich-text--color);
 
   --dsa-text__highlight--color: var(--ks-color-fg);
   --dsa-text__highlight--font: var(--ks-font-copy-l);

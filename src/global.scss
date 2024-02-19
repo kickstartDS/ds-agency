@@ -32,12 +32,23 @@ body {
 #{$selectors} {
   --g-link--font-weight: var(--dsa-link--font-weight, var(--ks-font-weight-regular));
   --g-link--text-decoration: var(--dsa-link--text-decoration, underline);
-  --g-link--text-decoration-hover: var(--dsa-link--text-decoration-hover, none);
+  --g-link--text-decoration-hover: var(--dsa-link--text-decoration_hover, none);
 
   --g-link--color: var(--dsa-link--color, var(--ks-text-color-default-interactive));
-  --g-link--color-hover: var(--dsa-link--color-hover, var(--ks-text-color-default-interactive-hover));
+  --g-link--color-hover: var(--dsa-link_hover--color, var(--ks-text-color-default-interactive-hover));
   --g-link--background: var(--dsa-link--background, transparent);
   --g-link--border-radius: var(--dsa-link--border-radius, 0);
+
+  --l-section_col--min-width: var(--dsa-section__col--min-width, var(--l-section_tile-width--default));
+  --l-section_col--max-width: var(--dsa-section__col--max-width, 1fr);
+  --l-section_col--repeat: var(--dsa-section__col--repeat, auto-fit);
+  --l-section_tile-width--smallest: var(--dsa-section__tile-width--smallest, 14rem);
+  --l-section_tile-width--default: var(--dsa-section__tile-width--default, 18rem);
+  --l-section_tile-width--medium: var(--dsa-section__tile-width--medium, var(--l-section--content-width-narrow));
+  --l-section_tile-width--large: var(--dsa-section__tile-width--large, var(--l-section--content-width-default));
+  --l-section_tile-width--largest: var(--dsa-section__tile-width--largest, var(--l-section--content-width-wide));
+  --l-section_buttons--space-before: var(--dsa-section__buttons--space-before, var(--l-section--gutter));
+  --l-section--content-width: var(--dsa-section__content--width, var(--l-section--container-width));
 
   --g-topic--color: var(--dsa-topic--color, var(--ks-text-color-default));
   --g-topic--font: var(--dsa-topic--font, var(--ks-font-display-l));
@@ -49,51 +60,8 @@ body {
   --c-rich-text--color: var(--dsa-rich-text--color, var(--ks-text-color-default));
   --c-rich-text--font-weight: var(--dsa-rich-text--font-weight, var(--ks-font-weight-regular));
 
-  --c-rich-text_headline--color: var(--dsa-rich-text__headline--color, var(--ks-text-color-default));
+  --c-rich-text_headline--color: var(--dsa-rich-text__headline--color, var(--ks-color-fg));
   --c-rich-text_headline--font: var(--dsa-rich-text__headline--font, var(--ks-font-display-m));
-  --c-rich-text_headline--font-weight: var(--dsa-rich-text_headline--font-weight, var(--ks-font-weight-bold));
-  --c-rich-text_headline--margin: var(--dsa-rich-text_headline--margin, 0.75em 0 0.5em);
-
-  // --g-subheadline--color: var(--ks-text-color-primary);
-  // --g-headline--font-weight: var(--ks-font-weight-medium);
-  // --g-headline--higlight-gradient: var(--g-gradient--higlight);
-
-  // --g-topic--font-weight: var(--ks-font-weight-medium);
-  // --g-topic--color: var(--ks-color-fg);
-
-  // --g-link--font-weight: var(--ks-font-weight-medium);
-  // --g-link--color-hover: var(--ks-color-fg);
-  // --g-link--text-decoration: none;
-
-  // //TBD: why is the Original --g-header-height token in the repo?
-  // --g-header--height: calc(var(--g-logo--height) + var(--ks-spacing-stack-m) + var(--ks-spacing-stack-m));
-
-  // --g-gradient--higlight: linear-gradient(135deg, var(--ks-color-primary) 0%, var(--ks-color-secondary) 100%);
-
-  // --l-section--content-padding: var(--ks-spacing-inset-l) !important;
-
-  // @media (min-width: 42rem) {
-  //   --l-section--content-padding: var(--ks-spacing-inset-xl) !important;
-  // }
-
-  // --l-section--content-width-wide: 1440px !important;
-
-  // --g-logo--height: 2rem;
-
-  // @media (min-width: 42rem) {
-  //   --g-logo--height: 2.5rem;
-  // }
-
-  // @media (min-width: 62em) {
-  //   --g-logo--height: 3rem;
-  // }
-
-  // &[ks-inverted="true"] {
-  //   --dsa-interface--background: var(--ks-color-bg-alpha-3);
-  //   --dsa-interface--shadow: 0 0 0 2px var(--ks-color-fg-alpha-9), 0 0px 8px var(--ks-color-fg-alpha-7);
-  // }
-
-  // .c-divider {
-  //   --c-divider--background: var(--ks-border-color-accent);
-  // }
+  --c-rich-text_headline--font-weight: var(--dsa-rich-text__headline--font-weight, var(--ks-font-weight-medium));
+  --c-rich-text_headline--margin: var(--dsa-rich-text__headline--margin, 0.75em 0 0.5em);
 }

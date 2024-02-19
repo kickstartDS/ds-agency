@@ -28,7 +28,7 @@ export const WithDescription: Story = {
     },
   },
   args: pack({
-    items: [
+    stat: [
       {
         number: 1500,
         title: "Users",
@@ -53,7 +53,7 @@ export const Simple: Story = {
     },
   },
   args: pack({
-    items: [
+    stat: [
       { number: 1500, title: "Users" },
       { number: 350, title: "Subscribers" },
       { number: 125, title: "Components" },
