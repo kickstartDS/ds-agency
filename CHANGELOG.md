@@ -1,3 +1,27 @@
+# v3.5.1 (Tue Feb 13 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add settings props to cms types, too ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v3.5.0 (Tue Feb 13 2024)
+
+#### 🚀 Enhancement
+
+- Add cms props to bundle [#70](https://github.com/kickstartDS/ds-agency/pull/70) ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.4.7 (Wed Feb 07 2024)
 
 #### ⚠️ Pushed to `main`
