@@ -1,14 +1,26 @@
 @use "@kickstartds/core/source/core/container";
 @include container.wrapper("post-teaser");
 
-.dsa-post-teaser {
+.dsa-blog-teaser {
+  --dsa-blog-teaser--background: transparent;
+
   --dsa-blog-teaser__topic--font: var(--ks-font-display-l);
+
+  --dsa-blog-teaser__tag-label--font: var(--ks-font-interface-xs);
+
   --dsa-blog-teaser__copy--font: var(--dsa-rich-text--font, var(--ks-font-copy-m));
-  --dsa-blog-teaser__tag-label--font: var(--ks-font-interface-s);
+  --dsa-blog-teaser__copy--color: var(--dsa-rich-text--color);
+  --dsa-blog-teaser__copy--color_hover: var(--ks-color-fg);
+  --dsa-blog-teaser__copy--margin-top: var(--ks-spacing-stack-s);
+
+  --dsa-blog-teaser__meta--font: var(--ks-spacing-stack-s);
+  --dsa-blog-teaser__meta--color: var(--c-post-meta_item--color);
+  --dsa-blog-teaser__meta__author--font-weight: var(--ks-font-weight-semi-bold);
+
+  --dsa-post-teaser__image--border-radius: var(--ks-border-radius-card);
 
   @include container.size("≥", 640px, "post-teaser") {
     --dsa-blog-teaser__topic--font: var(--ks-font-display-l);
-    --dsa-blog-teaser__copy--font: var(--dsa-rich-text--font, var(--ks-font-copy-m));
     --dsa-blog-teaser__tag-label--font: var(--ks-font-interface-s);
   }
 
