@@ -1,27 +1,53 @@
 @import "../../selectors";
 
-.l-section {
+.dsa-section {
+  //Columns
   --dsa-section__col--min-width: var(--dsa-section_tile-width--default);
   --dsa-section__col--max-width: 1fr;
   --dsa-section__col--repeat: auto-fit;
 
-  --dsa-section__tile--width_default: 18rem;
+  //Space After & Before
+  --dsa-section--space_default: var(--ks-spacing-xxl);
+  --dsa-section--space_small: calc(var(--ks-spacing-xxl) / 2);
+
+  //Tile Width
   --dsa-section__tile--width_smallest: 14rem;
+  --dsa-section__tile--width_default: 18rem;
+  --dsa-section__tile--width_medium: var(--l-section--content-width-narrow);
+  --dsa-section__tile--width_large: var(--l-section--content-width-default);
+  --dsa-section__tile--width_largest: var(--l-section--content-width-wide);
 
-  --dsa-section__tile--width-medium: var(--dsa-section--content-width-narrow);
-  --dsa-section__tile--width-large: var(--dsa-section--content-width-default);
-  --dsa-section__tile--width-largest: var(--dsa-section--content-width-wide);
+  //Gutter
+  --dsa-section--gutter_small: var(--ks-spacing-xs);
+  --dsa-section--gutter_default: var(--ks-spacing-m);
+  --dsa-section--gutter_large: var(--ks-spacing-xl);
 
-  --dsa-section__buttons--space-before: var(--dsa-section--gutter);
-  --dsa-section__content--width: var(--dsa-section--container-width);
+  //Buttons
+  --dsa-section__buttons--space-before: var(--ks-spacing-stack-m);
 
+  //Content Width
+  --dsa-section__content--width_narrow: 46.5rem;
+  --dsa-section__content--width_default: 62rem;
+  --dsa-section__content--width_wide: 75rem;
+  --dsa-section__content--width_max: 120rem;
+  --dsa-section__content--width_full: 120rem;
+
+  //Background Color
   --dsa-section--background-color_default: var(--ks-background-color-default);
   --dsa-section--background-color_bold: var(--ks-background-color-bold);
   --dsa-section--background-color_accent: var(--ks-background-color-accent);
 
+  //Slider Arrows
   --dsa-section__slider-arrow--color: var(--ks-text-color-interface-interactive);
   --dsa-section__slider-arrow--background-color: transparent;
+  --dsa-section__slider-arrow--size: 2rem;
+  --dsa-section__slider-arrow--padding: 0.5em;
+  --dsa-section__slider-arrow--opacity: 0.6;
+  --dsa-section__slider-arrow--opacity_hover: 1;
+  --dsa-section__slider-arrow--opacity_disabled: 0.3;
+  --dsa-section__slider-arrow--background: transparent;
 
+  //Background Styles
   --dsa-section_stagelights--background-image: radial-gradient(
       50% 150% at 100% -50%,
       var(--ks-color-primary-inverted-alpha-3) 0%,
@@ -66,6 +92,7 @@
     var(--ks-color-secondary-alpha-5) 100%
   );
 
+  //Spotlight
   --dsa-section__spotlight--left: 0;
   --dsa-section__spotlight--top: 0;
   --dsa-section__spotlight--color: var(--ks-color-primary-alpha-5);

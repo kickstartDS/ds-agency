@@ -1,3 +1,4 @@
+import classnames from "classnames";
 import { forwardRef, createContext, useContext } from "react";
 import { PostAside } from "@kickstartds/blog/lib/post-aside";
 import { BlogAsideProps } from "./BlogAsideProps";
@@ -6,7 +7,7 @@ import "./blog-aside.scss";
 export const BlogAsideContextDefault = forwardRef<
   HTMLDivElement,
   BlogAsideProps
->(({ author, socialSharing, readingTime, date }, ref) => {
+>(({ author, socialSharing, readingTime, date, className }, ref) => {
   const socialLinks = socialSharing?.map((link) => {
     return {
       icon: link.icon,
@@ -48,6 +49,7 @@ export const BlogAsideContextDefault = forwardRef<
 
   return (
     <PostAside
+      className={classnames(className, "dsa-blog-aside")}
       author={{
         title: author?.name,
         image: author?.image && { src: author.image },

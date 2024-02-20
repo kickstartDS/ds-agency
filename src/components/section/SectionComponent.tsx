@@ -46,8 +46,9 @@ export const Section = forwardRef<
         {...props}
         {...componentProps}
         className={classnames(
+          "dsa-section",
           style !== "default" &&
-            `l-section-style--${
+            `dsa-section-style--${
               style === "verticalGradient"
                 ? "vertical-gradient"
                 : style === "horizontalGradient"
@@ -62,8 +63,8 @@ export const Section = forwardRef<
                 ? "anchor-glow"
                 : style
             }`,
-          headerSpacing && "l-section--header-spacing",
-          spotlight && "l-section--spotlight",
+          headerSpacing && "dsa-section--header-spacing",
+          spotlight && "dsa-section--spotlight",
           className
         )}
         background={backgroundColor}

@@ -91,6 +91,9 @@
       "type": "string",
       "format": "date",
       "examples": ["12/30/2022"]
+    },
+    "className": {
+      "type": "string"
     }
   },
   "additionalProperties": false,

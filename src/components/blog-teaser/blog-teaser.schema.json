@@ -98,6 +98,9 @@
       },
       "additionalProperties": false,
       "required": ["name"]
+    },
+    "className": {
+      "type": "string"
     }
   },
   "additionalProperties": false,
