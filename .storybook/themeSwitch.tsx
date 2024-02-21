@@ -12,7 +12,7 @@ export const globalThemeTypes: GlobalTypes = {
   theme: {
     name: "Theme",
     description: "Global token set",
-    defaultValue: toolbarItems[0].value,
+    defaultValue: "dsa",
     toolbar: {
       // https://storybook.js.org/docs/faq#what-icons-are-available-for-my-toolbar-or-my-addon
       icon: "eye",
