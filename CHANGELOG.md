@@ -1,3 +1,15 @@
+# v3.5.2 (Wed Feb 21 2024)
+
+#### ⚠️ Pushed to `main`
+
+- docs: set "dsa" as default theme ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v3.5.1 (Tue Feb 13 2024)
 
 #### ⚠️ Pushed to `main`
