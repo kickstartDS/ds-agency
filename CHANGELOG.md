@@ -1,3 +1,15 @@
+# v3.6.1 (Fri Feb 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(themes): add ngo theme ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.0 (Fri Feb 23 2024)
 
 #### 🚀 Enhancement
