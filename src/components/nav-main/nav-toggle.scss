@@ -1,6 +1,6 @@
 @use "sass:math";
 @use "bourbon/core/bourbon";
-// @use '../var';
+@import "./nav-toggle-tokens.scss";
 
 html.overlay-open {
   overflow: hidden;
@@ -15,10 +15,9 @@ button.nav-toggle {
   right: 0;
   box-sizing: content-box;
   transition: top 0.15s;
-  // height: fit-content;
   z-index: 1;
-  padding: 0 var(--g-header-spacing-h);
-  transform: translateX(var(--g-header-spacing-h));
+  padding: 0 var(--dsa-header--spacing-horizontal);
+  transform: translateX(var(--dsa-header--spacing-horizontal));
 
   @media (min-width: 62em) {
     display: none;
@@ -30,13 +29,13 @@ button.nav-toggle {
 
   .nav-toggle__icon {
     position: relative;
-    display: inline-block;
+    display: block;
     cursor: pointer;
-    height: 31px;
+    height: var(--dsa-logo--height);
     width: 31px;
     transform: scale(0.7) translate(7.5%, 7.5%);
     transition: inherit;
-    color: var(--g-nav-toggle--color);
+    color: var(--nav-toggle--color);
 
     @media (min-width: 40rem) {
       transform: scale(0.9) translate(2.5%, 2.5%);
@@ -44,11 +43,11 @@ button.nav-toggle {
 
     .overlay-open &,
     .overlay-open .header-is-scrolling & {
-      color: var(--g-nav-toggle-open--color);
+      color: var(--nav-toggle--color_open);
     }
 
     .header-is-scrolling-up & {
-      color: var(--g-nav-toggle-open--color);
+      color: var(--nav-toggle--color_open);
     }
 
     &::before,

@@ -2,35 +2,45 @@
 @import "../../selectors";
 @include container.wrapper("teaser-card");
 
-.c-teaser.c-teaser-card {
-  //Scaling for Mobile Breakpoint
-  --g-topic--font: var(--ks-font-display-l);
-  --c-rich-text--font: var(--ks-font-copy-m);
-  --c-teaser--padding: var(--ks-spacing-inset-l);
+.c-teaser.dsa-teaser-card {
+  --dsa-teaser-card--border: 1px solid var(--ks-color-fg-alpha-8);
+  --dsa-teaser-card--border-radius: var(--ks-border-radius-card);
+  --dsa-teaser-card--shadow_hover: 0 1px 11px var(--ks-color-fg-alpha-6);
 
-  --c-teaser--background: var(--ks-color-fg-alpha-9);
-  --c-teaser--color: var(--ks-color-fg-to-bg-3);
-  --c-teaser--border: 1px solid var(--ks-color-fg-alpha-8);
-  --c-teaser--border-radius: var(--ks-border-radius-card);
-  --c-teaser--shadow-hover: 0 1px 11px var(--ks-color-fg-alpha-6);
+  --dsa-teaser-card__label--font: var(--ks-font-interface-m);
+  --dsa-teaser-card__label--font-weight: var(--ks-font-weight-semi-bold);
+  --dsa-teaser-card__label--color: var(--ks-color-fg-base);
+  --dsa-teaser-card__label--background-color: var(--ks-background-color-primary-inverted);
+  --dsa-teaser-card__label--padding: 0.5em 1em;
+  --dsa-teaser-card__label--border-radius: var(--ks-border-radius-pill);
+
+  //Scaling for Mobile Breakpoint
+  --dsa-teaser-card__topic--font: var(--ks-font-display-l);
+  --dsa-teaser-card__topic--font-weight: var(--dsa-topic--font-weight);
+
+  --dsa-teaser-card__copy--font: var(--dsa-rich-text--font);
+  --dsa-teaser-card__copy--color: var(--ks-text-color-default);
+
+  --dsa-teaser-card--padding: var(--ks-spacing-inset-l);
+  --dsa-teaser-card--background: var(--ks-color-fg-alpha-9);
 
   @media (min-width: 48rem) {
     //Scaling for Desktop Breakpoint SmallTiles
-    --g-topic--font: var(--ks-font-display-s);
-    --c-rich-text--font: var(--ks-font-copy-s);
-    --c-teaser--padding: var(--ks-spacing-inset-s);
+    --dsa-teaser-card__topic--font: var(--ks-font-display-s);
+    --dsa-teaser-card__copy--font: var(--ks-font-copy-s);
+    --dsa-teaser-card--padding: var(--ks-spacing-inset-s);
 
     //Scaling for Desktop Breakpoint MediumTiles
     @include container.size("≥", 300px, "teaser-card") {
-      --c-rich-text--font: var(--ks-font-copy-m);
-      --g-topic--font: var(--ks-font-display-m);
+      --dsa-teaser-card__copy--font: var(--ks-font-copy-m);
+      --dsa-teaser-card__topic--font: var(--ks-font-display-m);
     }
 
-    //Scaling for Desktop Breakpoint LargeTiles
+    // Scaling for Desktop Breakpoint LargeTiles
     @include container.size("≥", 820px, "teaser-card") {
-      --g-topic--font: var(--ks-font-display-l);
-      --c-rich-text--font: var(--ks-font-copy-l);
-      --c-teaser--padding: var(--ks-spacing-inset-l);
+      --dsa-teaser-card__topic--font: var(--ks-font-display-l);
+      --dsa-teaser-card__copy--font: var(--ks-font-copy-l);
+      --dsa-teaser-card--padding: var(--ks-spacing-inset-l);
     }
   }
 }

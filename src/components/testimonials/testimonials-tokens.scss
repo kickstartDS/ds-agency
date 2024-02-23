@@ -1,27 +1,12 @@
-:root {
-  .c-quote {
-    --c-quote_text--font: var(--ks-font-copy-l);
+@use "@kickstartds/core/source/core/container";
+@include container.wrapper("testimonials");
 
-    --c-quote_source--color: var(--ks-color-fg);
-    --c-quote_source--font: var(--ks-font-copy-m);
+.dsa-testimonials {
+  --dsa-testimonials--gap: var(--ks-spacing-stack-m);
 
-    --c-quote_icon--font-family: var(--ks-font-family-copy);
-    --c-quote_icon--font-size: 3em;
-    --c-quote_icon--color: var(--ks-text-color-primary);
+  --dsa-testimonials__copy--color: var(--dsa-rich-text--color);
+  --dsa-testimonials__copy--font: var(--dsa-rich-text--font);
 
-    --c-quote_byline--font: var(--ks-font-copy-m);
-    --c-quote_byline--font-weight: var(--ks-font-weight-regular);
-
-    --c-quote_byline--color: var(--ks-text-color-default);
-
-    --c-quote_content--padding-left: var(--ks-spacing-xl);
-
-    @container quote (min-width: 640px) {
-      --c-quote_image--max-width: 40%;
-    }
-
-    @container quote (min-width: 960px) {
-      --c-quote_content--padding-left: var(--ks-spacing-l);
-    }
-  }
+  --dsa-testimonials__image--gap-horizontal: var(--ks-spacing-inline-m);
+  --dsa-testimonials__image--gap-vertical: var(--ks-spacing-stack-s);
 }

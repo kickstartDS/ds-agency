@@ -1,29 +1,19 @@
+@use "@kickstartds/core/source/core/container";
 @use "testimonials-tokens.scss";
+@include container.wrapper("testimonials");
 
-.c-testimonials {
+.dsa-testimonials {
   display: flex;
   flex-direction: column;
-  gap: var(--ks-spacing-stack-m);
+  gap: var(--dsa-testimonials--gap, var(--ks-spacing-stack-m));
 
-  .c-quote {
-    &__source {
-      color: var(--c-quote_source--color);
-    }
+  .c-rich-text {
+    font: var(--dsa-testimonials__copy--font, var(--dsa-rich-text--font), var(--ks-font-copy-m));
+    color: var(--dsa-testimonials__copy--color, var(--dsa-rich-text--color), var(--ks-text-color-default));
+  }
 
-    &__byline {
-      color: var(--c-quote_byline--color);
-    }
-
-    &__text {
-      margin-bottom: var(--ks-spacing-stack-s);
-    }
-
-    .c-quote__content {
-      font: var(--c-quote_text--font);
-
-      &::before {
-        line-height: 0.7;
-      }
-    }
+  .text-media--intext .text-media__gallery {
+    padding-bottom: var(--dsa-testimonials__image--gap-vertical, var(--ks-spacing-inline-m));
+    padding-right: var(--dsa-testimonials__image--gap-horizontal, var(--ks-spacing-stack-s));
   }
 }

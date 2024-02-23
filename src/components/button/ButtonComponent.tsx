@@ -1,4 +1,5 @@
 import { HTMLAttributes, forwardRef, FC, PropsWithChildren } from "react";
+import classnames from "classnames";
 import {
   ButtonContextDefault,
   ButtonContext,
@@ -19,12 +20,14 @@ export const Button = forwardRef<
       variant = "secondary",
       icon,
       disabled = false,
+      className,
       ...props
     },
     ref
   ) => (
     <ButtonContextDefault
       {...props}
+      className={classnames("dsa-button", className)}
       href={target}
       label={label}
       size={size}

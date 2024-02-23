@@ -1,23 +1,15 @@
 @use "@kickstartds/core/source/core/container";
+@import "./blog-teaser-tokens.scss";
 @include container.wrapper("post-teaser");
 
-article.c-post-teaser {
-  --c-teaser--background: transparent;
-  --c-post-teaser--gap: var(--ks-spacing-stack-s) var(--ks-spacing-inline-s);
-  --c-teaser_text--spacing: var(--ks-spacing-stack-s);
-  --g-topic--font: var(--ks-font-display-s);
+.dsa-blog-teaser.c-post-teaser {
+  --c-teaser--background: var(--dsa-blog-teaser--background, transparent);
+  --c-post-teaser--gap: var(--dsa-blog-teaser--gap, var(--ks-spacing-stack-s) var(--ks-spacing-inline-s));
+  --c-teaser_text--spacing: var(--dsa-blog-teaser__copy--margin-top, var(--ks-spacing-stack-s));
+  --c-post-teaser--color: var(--dsa-blog-teaser__copy--color, var(--dsa-rich-text--color));
 
-  @include container.size("≥", 640px, "post-teaser") {
-    --g-topic--font: var(--ks-font-display-l);
-    --c-rich-text--font: var(--ks-font-copy-m);
-
-    .c-tag-label--s {
-      --c-tag-label--font: var(--ks-font-interface-s);
-    }
-  }
-
-  @include container.size("≥", 1000px, "post-teaser") {
-    --g-topic--font: var(--ks-font-display-xl);
+  .c-tag-label {
+    --c-tag-label--font: var(--dsa-blog-teaser__tag-label--font, var(--ks-font-interface-s));
   }
 
   .c-teaser {
@@ -25,11 +17,8 @@ article.c-post-teaser {
     cursor: pointer;
 
     &:hover {
-      .c-teaser__topic {
-        text-shadow: 0 0 15px var(--ks-color-fg-alpha-5);
-      }
       .c-rich-text {
-        color: var(--ks-color-fg);
+        color: var(--dsa-blog-teaser__copy--color_hover, var(--ks-color-fg));
         > :not(.c-post-meta) {
           text-decoration: none;
         }
@@ -39,14 +28,19 @@ article.c-post-teaser {
 
   .c-post-teaser__image {
     img {
-      border-radius: var(--ks-border-radius-card);
+      border-radius: var(--dsa-post-teaser__image--border-radius, var(--ks-border-radius-card));
     }
   }
 
   .c-post-meta {
     --c-post-meta_author--font-weight: var(--ks-font-weight-semi-bold);
     --c-post-meta--gap: 0.5em 1em;
-
+    --c-post-meta_item--font: var(--dsa-blog-teaser__meta--font, var(--ks-font-interface-s));
+    --c-post-meta_author--color: var(--dsa-blog-teaser__meta--color, var(--c-post-meta_item--color));
+    --c-post-meta_author--font-weight: var(
+      --dsa-blog-teaser__meta__author--font-weight,
+      var(--ks-font-weight-semi-bold)
+    );
     margin: 0;
   }
 
@@ -59,6 +53,8 @@ article.c-post-teaser {
   }
 
   .c-teaser__topic {
+    font: var(--dsa-blog-teaser__topic--font, var(--dsa-topic--font, var(--ks-font-display-m)));
+    font-weight: var(--dsa-topic--font-weight);
     text-align: left;
     transition: var(--ks-transition-hover);
     transition-property: text-shadow;

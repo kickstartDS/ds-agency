@@ -3,12 +3,15 @@ import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { Features } from "./FeaturesComponent";
 import schema from "./features.schema.dereffed.json";
+import cssprops from "./features-tokens.json";
+import cssprops2 from "../feature/feature-tokens.json";
 
 const meta: Meta<typeof Features> = {
   title: "Components/Features",
   component: Features,
   parameters: {
     jsonschema: schema,
+    cssprops: { ...cssprops, ...cssprops2 },
   },
   ...getArgsShared(schema as JSONSchema7),
 };

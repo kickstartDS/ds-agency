@@ -4,6 +4,7 @@ import { JSONSchema7 } from "json-schema";
 import * as themes from "../../themes";
 import { Header as HeaderComponent } from "./HeaderComponent";
 import schema from "./header.schema.dereffed.json";
+import cssprops from "./header-tokens.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 export const headerProps = {
@@ -17,6 +18,7 @@ const meta: Meta = {
   component: HeaderComponent,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
   excludeStories: ["headerProps"],
 };

@@ -1,9 +1,12 @@
-.c-rich-text {
-  --ks-text-col-width: 16em;
+@import "./text-tokens.scss";
+
+.c-rich-text.dsa-text {
+  font: var(--dsa-text--font, var(--dsa-rich-text--font), var(--ks-font-copy-m));
+  color: var(--dsa-text--color, var(--dsa-rich-text--color), var(--ks-text-color-default));
 
   &--highlight.c-rich-text {
-    color: var(--ks-color-fg);
-    font: var(--ks-font-copy-l);
+    color: var(--dsa-text-highlight--color, var(--ks-text-color-primary));
+    font: var(--dsa-text-highlight--font, var(--ks-font-copy-l));
   }
 
   &--center.c-rich-text {
@@ -11,8 +14,8 @@
   }
 
   &--columns.c-rich-text {
-    column-gap: var(--ks-spacing-inline-m);
+    column-gap: var(--dsa-text__col--gap, var(--ks-spacing-inline-m));
+    column-width: var(--dsa-text__col--width, 16em);
     column-count: auto;
-    column-width: var(--ks-text-col-width);
   }
 }

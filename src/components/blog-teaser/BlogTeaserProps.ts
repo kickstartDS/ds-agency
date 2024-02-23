@@ -62,6 +62,7 @@ export interface BlogTeaserProps {
   link?: Link;
   readingTime?: ReadingTime;
   author?: Author;
+  className?: string;
 }
 /**
  * URL and label for the blog post linked

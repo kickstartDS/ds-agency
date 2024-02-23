@@ -3,6 +3,7 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
 import { Image } from "./ImageComponent";
 import schema from "./image.schema.dereffed.json";
+import cssprops from "./image-tokens.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
@@ -12,6 +13,7 @@ const meta: Meta = {
   component: Image,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
 };
 type Story = StoryObj<typeof Image>;
@@ -69,6 +71,6 @@ export const CustomAspectRatio: Story = {
   args: pack({
     src: "img/close-up-young-business-team-working.png",
     alt: "Agency",
-    aspecRatio: "square",
+    aspectRatio: "square",
   }),
 };

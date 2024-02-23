@@ -1,10 +1,10 @@
 function onMousemove(event) {
   this.style.setProperty(
-    "--l-section--spotlight-top",
+    "--dsa-section__spotlight--top",
     `${event.clientY - this.getBoundingClientRect().top}px`
   );
   this.style.setProperty(
-    "--l-section--spotlight-left",
+    "--dsa-section__spotlight--left",
     `${event.clientX - this.getBoundingClientRect().left}px`
   );
 }
@@ -13,8 +13,8 @@ export const initSpotlight = (element) => {
   element.addEventListener("mousemove", onMousemove, { passive: true });
 
   return () => {
-    element.style.removeProperty("--l-section--spotlight-top");
-    element.style.removeProperty("--l-section--spotlight-left");
+    element.style.removeProperty("--dsa-section__spotlight--top");
+    element.style.removeProperty("--dsa-section__spotlight--left");
 
     element.removeEventListener("mousemove", onMousemove, { passive: true });
   };

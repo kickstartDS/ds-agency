@@ -3,6 +3,7 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
 import { ImageText } from "./ImageTextComponent";
 import schema from "./image-text.schema.dereffed.json";
+import cssprops from "./image-text-tokens.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
@@ -12,6 +13,7 @@ const meta: Meta = {
   component: ImageText,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
 };
 type Story = StoryObj<typeof ImageText>;

@@ -4,6 +4,7 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Gallery } from "./GalleryComponent";
 import schema from "./gallery.schema.dereffed.json";
+import cssprops from "./gallery-tokens.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta<typeof Gallery> = {
@@ -13,6 +14,7 @@ const meta: Meta<typeof Gallery> = {
   component: Gallery,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
 };
 

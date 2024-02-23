@@ -1,0 +1,23 @@
+.dsa-stats {
+  --dsa-stats--gap-vertical: var(--ks-spacing-stack-l);
+  --dsa-stats--gap-horizontal: var(--ks-spacing-inline-m);
+
+  --dsa-stats__item--min-width: 200px;
+  --dsa-stats__item--max-width: 200px;
+  --dsa-stats__item--gap: var(--ks-spacing-stack-xs);
+
+  --dsa-stats__value--gradient: linear-gradient(
+    135deg,
+    var(--ks-color-primary-base) 0%,
+    var(--ks-color-secondary-base) 100%
+  );
+
+  --dsa-stats__value--font: var(--ks-font-display-xl);
+  --dsa-stats__value--font-weight: var(--ks-font-weight-semi-bold);
+
+  --dsa-stats__label--font: var(--ks-font-interface-xl);
+  --dsa-stats__label--color: var(--ks-color-fg);
+
+  --dsa-stats__description--font: var(--ks-font-copy-s);
+  --dsa-stats__description--color: var(--ks-text-color-default);
+}

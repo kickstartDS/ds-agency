@@ -3,6 +3,7 @@ import { pack, unpack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
 import { Footer as FooterComponent } from "./FooterComponent";
 import schema from "./footer.schema.dereffed.json";
+import cssprops from "./footer-tokens.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 export const footerProps = {
@@ -22,6 +23,7 @@ const meta: Meta = {
   component: FooterComponent,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
   excludeStories: ["footerProps"],
 };

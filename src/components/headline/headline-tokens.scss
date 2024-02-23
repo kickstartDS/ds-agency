@@ -1,48 +1,33 @@
 @import "../../selectors";
 
 #{$selectors} {
-  --g-headline--color: var(--ks-color-fg);
-  --g-headline--font-weight: var(--ks-font-weight-medium);
-  --c-headline--higlight-gradient: var(--g-gradient--higlight);
+  --dsa-headline--higlight-gradient: linear-gradient(90deg, var(--ks-color-secondary), var(--ks-color-primary));
 
-  .c-headline {
-    --c-headline--color: var(--g-headline--color);
-    --c-headline--font-weight: var(--g-headline--font-weight);
-    --c-headline--gap: 0.25em;
+  --dsa-headline--color: var(--ks-color-fg);
+  --dsa-headline--font-weight: var(--ks-font-weight-medium);
 
-    &--h1 {
-      --c-headline--font: var(--ks-font-display-xxl);
+  --dsa-headline__subheadline--color: var(--ks-text-color-primary);
+  --dsa-headline__subheadline--font-weight: var(--ks-font-weight-semi-bold);
 
-      .c-headline__subheadline {
-        --c-headline_subheadline--font: var(--ks-font-copy-l);
-        @media (min-width: 42rem) {
-          --c-headline_subheadline--font: var(--ks-font-copy-xl);
-        }
-      }
-    }
+  --dsa-headline--gap: 0.25em;
 
-    &--h2 {
-      --c-headline--font: var(--ks-font-display-xl);
-      .c-headline__subheadline {
-        @media (min-width: 42rem) {
-          --c-headline_subheadline--font: var(--ks-font-copy-l);
-        }
-      }
-    }
-    &--h3 {
-      --c-headline--font: var(--ks-font-display-l);
-    }
-    &--h4 {
-      --c-headline--font: var(--ks-font-display-m);
-    }
-    &--p {
-      --c-headline--font: var(--ks-font-copy-m);
-    }
+  --dsa-headline_h1--font: var(--ks-font-display-xxl);
+  --dsa-headline_h1__subheadline--font: var(--ks-font-copy-l);
+
+  @media (min-width: 42rem) {
+    --dsa-headline_h1__subheadline--font: var(--ks-font-copy-xl);
   }
 
-  .c-headline__subheadline {
-    --c-headline_subheadline--font: var(--ks-font-copy-m);
-    --c-headline_subheadline--color: var(--ks-text-color-primary);
-    --c-headline_subheadline--font-weight: var(--ks-font-weight-semi-bold);
+  --dsa-headline_h2--font: var(--ks-font-display-xl);
+  --dsa-headline_h2__subheadline--font: var(--ks-font-copy-m);
+
+  @media (min-width: 42rem) {
+    --dsa-headline_h2__subheadline--font: var(--ks-font-copy-l);
   }
+
+  --dsa-headline_h3--font: var(--ks-font-display-l);
+  --dsa-headline_h3__subheadline--font: var(--ks-font-copy-m);
+
+  --dsa-headline_h4--font: var(--ks-font-display-m);
+  --dsa-headline__p--font: var(--ks-font-copy-m);
 }

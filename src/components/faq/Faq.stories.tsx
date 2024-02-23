@@ -2,6 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
+import cssprops from "./faq-tokens.json";
 import { Faq } from "./FaqComponent";
 import schema from "./faq.schema.dereffed.json";
 
@@ -13,6 +14,7 @@ const meta: Meta = {
   component: Faq,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
 };
 

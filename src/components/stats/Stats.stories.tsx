@@ -4,6 +4,7 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Stats } from "./StatsComponent";
 import schema from "./stats.schema.dereffed.json";
+import cssprops from "./stats-tokens.json";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta<typeof Stats> = {
@@ -11,6 +12,7 @@ const meta: Meta<typeof Stats> = {
   component: Stats,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
   args,
   argTypes,
@@ -26,7 +28,7 @@ export const WithDescription: Story = {
     },
   },
   args: pack({
-    items: [
+    stat: [
       {
         number: 1500,
         title: "Users",
@@ -51,7 +53,7 @@ export const Simple: Story = {
     },
   },
   args: pack({
-    items: [
+    stat: [
       { number: 1500, title: "Users" },
       { number: 350, title: "Subscribers" },
       { number: 125, title: "Components" },

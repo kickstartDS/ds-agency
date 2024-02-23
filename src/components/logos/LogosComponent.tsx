@@ -14,21 +14,21 @@ export const LogosContextDefault = forwardRef<
 >(({ logo: logos = [], tagline, align, cta, ...rest }, ref) => (
   <div {...rest} ref={ref}>
     <Container name="logos">
-      <div className={classnames(`c-logos c-logos--align-${align}`)}>
-        <div className="c-logos__tagline">{tagline}</div>
-        <div className="c-logos__grid">
+      <div className={classnames(`dsa-logos dsa-logos--align-${align}`)}>
+        <div className="dsa-logos__tagline">{tagline}</div>
+        <div className="dsa-logos__grid">
           {logos.map((logo, index) => (
             <Logo {...logo} key={index} />
           ))}
         </div>
         {cta?.toggle ? (
-          <div className="c-logos__cta">
-            <div className="c-logos__cta__text">
+          <div className="dsa-logos__cta">
+            <div className="dsa-logos__cta__text">
               {cta?.text}
               {cta?.style === "text" ? (
                 <>
                   &#32;
-                  <Link className="c-logos__cta__link" href={cta.link}>
+                  <Link className="dsa-logos__cta__link" href={cta.link}>
                     {cta.label}
                   </Link>
                 </>

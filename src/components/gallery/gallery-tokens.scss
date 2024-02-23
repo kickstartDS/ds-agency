@@ -1,0 +1,11 @@
+.dsa-gallery {
+  --dsa-gallery--gap-vertical: var(--ks-spacing-stack-m);
+  --dsa-gallery--gap-horizontal: var(--ks-spacing-inline-m);
+
+  --dsa-gallery--tile-min-width-small: 200px;
+  --dsa-gallery--tile-min-width-large: 400px;
+
+  --dsa-gallery--image-ratio-square: 1/1;
+  --dsa-gallery--image-ratio-wide: 4/3;
+  --dsa-gallery--image-ratio-landscape: 16/9;
+}

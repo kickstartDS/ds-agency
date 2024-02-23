@@ -1,3 +1,4 @@
+import classnames from "classnames";
 import { FC } from "react";
 import { Link } from "@kickstartds/base/lib/link";
 import { Picture } from "@kickstartds/base/lib/picture";
@@ -23,12 +24,18 @@ export const NavToggleComponent: FC = () => (
   </button>
 );
 
-export const NavMainItem: FC<{ label: string; href: string }> = ({
-  label,
-  href,
-}) => (
-  <li className="c-nav-main__item">
-    <Link className="c-nav-main__link" href={href}>
+export const NavMainItem: FC<{
+  label: string;
+  href: string;
+  active: boolean;
+}> = ({ label, href, active }) => (
+  <li
+    className={classnames(
+      "nav-main__item",
+      active === true ? "nav-main__item--active" : ""
+    )}
+  >
+    <Link className="nav-main__link" href={href}>
       {label}
     </Link>
   </li>
@@ -36,15 +43,26 @@ export const NavMainItem: FC<{ label: string; href: string }> = ({
 
 export const NavMain: FC<NavMainProps> = ({ logo, logoHref = "/", items }) =>
   items && items.length > 0 ? (
-    <div className="c-nav-main__wrap">
+    <div className="nav-main__wrap">
       <NavToggleComponent />
-      <nav className="c-nav-main" id="nav-main" aria-label="Hauptnavigation">
-        <Link className="c-nav-main__logo" href={logoHref}>
+      <nav
+        className={classnames(
+          "nav-main",
+          items.some((item) => item.active) ? "nav-main--active" : ""
+        )}
+        id="nav-main"
+        aria-label="Hauptnavigation"
+      >
+        <Link className="nav-main__logo" href={logoHref}>
           <Picture {...logo} />
         </Link>
-        <ul className="c-nav-main__list">
+        <ul className="nav-main__list">
           {items.map((item) => (
-            <NavMainItem {...item} key={item.href + item.label} />
+            <NavMainItem
+              {...item}
+              active={item.active ?? false}
+              key={item.href + item.label}
+            />
           ))}
         </ul>
       </nav>

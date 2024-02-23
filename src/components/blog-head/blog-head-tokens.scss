@@ -1,0 +1,11 @@
+.dsa-blog-head {
+  --dsa-blog-head__date--font: var(--ks-font-interface-xs);
+  --dsa-blog-head__date--font-weight: var(--ks-font-weight-bold);
+  --dsa-blog-head__date--color: var(--ks-color-fg-alpha-5);
+
+  --dsa-blog-head__headline--font: var(--dsa-headline_h2--font);
+  --dsa-blog-head__headline--font-weight: var(--dsa-headline--font-weight);
+  --dsa-blog-head__headline--color: var(--dsa-headline--color);
+
+  --dsa-blog-head--margin-bottom: var(--ks-spacing-stack-m);
+}

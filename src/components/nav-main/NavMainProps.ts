@@ -16,5 +16,6 @@ export interface NavMainProps {
   items?: {
     href: string;
     label: string;
+    active?: boolean;
   }[];
 }

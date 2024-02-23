@@ -1,16 +1,12 @@
-:root {
-  --g-logo--height: 2rem;
+@import "../../selectors";
 
-  @media (min-width: 42rem) {
-    --g-logo--height: 2.5rem;
-  }
+#{$selectors} {
+  //Global token for calculation of header height
+  --dsa-header--spacing-vertical: var(--ks-spacing-stack-m);
+  --dsa-header--spacing-horizontal: var(--l-section--content-padding);
+}
 
-  @media (min-width: 62em) {
-    --g-logo--height: 3rem;
-  }
-  --g-header--spacing-v: var(--ks-spacing-stack-m);
-  --g-header-spacing-h: var(--l-section--content-padding);
-
-  --g-nav-toggle--color: var(--ks-color-fg);
-  --g-nav-toggle-open--color: var(--ks-color-fg);
+.dsa-header {
+  --dsa-header--background-color: var(--ks-background-color-default);
+  --dsa-header__logo--height: var(--dsa-logo--height);
 }

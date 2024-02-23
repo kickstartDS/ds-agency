@@ -45,24 +45,24 @@ export const Headline = forwardRef<
     return text || sub ? (
       <header
         className={classnames(
-          "c-headline",
-          `c-headline--${style}`,
-          style !== "none" && style !== level && `c-headline--${style}`,
-          `c-headline--align-${align}`,
-          spaceAfter && `c-headline--space-after-${spaceAfter}`,
+          "dsa-headline",
+          `dsa-headline--${style}`,
+          style !== "none" && style !== level && `dsa-headline--${style}`,
+          `dsa-headline--align-${align}`,
+          spaceAfter && `dsa-headline--space-after-${spaceAfter}`,
           className
         )}
         ref={ref}
         {...props}
       >
         {sub && switchOrder && (
-          <p className="c-headline__subheadline">{renderSubheadline(sub)}</p>
+          <p className="dsa-headline__subheadline">{renderSubheadline(sub)}</p>
         )}
-        <TagName className={classnames("c-headline__headline")}>
+        <TagName className={classnames("dsa-headline__headline")}>
           {renderContent(text)}
         </TagName>
         {sub && !switchOrder && (
-          <p className="c-headline__subheadline">{renderSubheadline(sub)}</p>
+          <p className="dsa-headline__subheadline">{renderSubheadline(sub)}</p>
         )}
       </header>
     ) : null;

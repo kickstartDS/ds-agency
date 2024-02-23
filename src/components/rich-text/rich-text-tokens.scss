@@ -1,10 +1,9 @@
 @import "../../selectors";
 
 #{$selectors} {
-  --g-link--text-decoration: none;
+  --dsa-rich-text__headline--font-weight: var(--dsa-headline--font-weight, var(--ks-font-weight-medium));
+  --dsa-rich-text__headline--color: var(--dsa-headline--color, var(--ks-color-fg));
 
-  .c-rich-text {
-    --c-rich-text_headline--font-weight: var(--g-headline--font-weight);
-    --c-rich-text_headline--color: var(--g-headline--color);
-  }
+  --dsa-rich-text--color: var(--ks-text-color-default);
+  --dsa-rich-text--font: var(--ks-font-copy-m);
 }

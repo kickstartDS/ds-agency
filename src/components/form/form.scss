@@ -1,1 +1,31 @@
 @import "./form-tokens.scss";
+@import "../../selectors";
+
+#{$selectors} {
+  --c-form-check_box--size: var(--dsa-checkbox--size, 1rem);
+  --c-form-check_box--border: var(--dsa-checkbox--border, var(--ks-border-width-default) solid);
+  --c-form-check_box--border-color: var(--dsa-checkbox--border-color, var(--ks-border-color-interface-interactive));
+
+  --c-form-check_box--background: var(--dsa-checkbox--background, var(--ks-background-color-interface-interactive));
+
+  --c-form-check_box-hover--border-color: var(
+    --dsa-checkbox--border-color_hover,
+    var(--ks-border-color-interface-interactive-hover)
+  );
+
+  --c-form-check_box-focus--border-color: var(
+    --dsa-checkbox--border-color_focus,
+    var(--ks-border-color-interface-interactive-active)
+  );
+  --c-form-check_box-focus--shadow: var(--dsa-checkbox--shadow_focus, 0 0 4px 0);
+  --c-form-check_checkmark--color: var(--dsa-form-checkbox__checkmark--color, var(--ks-color-primary-inverted));
+
+  --c-form-check_box-checked--border-color: var(
+    --dsa-checkbox--border-color_checked,
+    var(--ks-border-color-interface-interactive-selected)
+  );
+  --c-form-check_box-checked--background: var(
+    --dsa-checkbox--background_checked,
+    var(--ks-background-color-interface-interactive-selected)
+  );
+}

@@ -2,10 +2,25 @@
 @use "bourbon/core/bourbon";
 @use "./nav-main-tokens";
 
-.c-nav-main {
+.nav-main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
+  &--active {
+    .nav-main__item {
+      .nav-main__link {
+        color: var(--dsa-nav-main--color);
+      }
+
+      &--active {
+        .nav-main__link {
+          color: var(--dsa-nav-main--color_active);
+          font-weight: var(--dsa-nav-main--font-weight_active);
+        }
+      }
+    }
+  }
 
   ul {
     /* critical:start */
@@ -23,46 +38,39 @@
 
   &__item {
     position: relative;
-
-    &--active {
-      .nav-main__link {
-        color: var(--c-nav-main--color-active);
-        font-weight: var(--c-nav-main--font-weight-active);
-      }
-    }
   }
 
   &__list {
     &:hover {
-      .c-nav-main__link {
-        color: var(--c-nav-main--color-hover);
+      .nav-main__link {
+        color: var(--dsa-nav-main--color_hover);
       }
     }
   }
 
-  a.c-nav-main__link {
+  a.nav-main__link {
     /* critical:start */
-    font: var(--c-nav-main--font);
-    font-weight: var(--c-nav-main--font-weight);
-    color: var(--c-nav-main--color);
+    font: var(--dsa-nav-main--font);
+    font-weight: var(--dsa-nav-main--font-weight);
+    color: var(--dsa-nav-main--color);
     position: relative;
     display: block;
-    padding: var(--c-nav-main-link--padding);
+    padding: var(--dsa-nav-main-link--padding);
 
     &:hover {
-      color: var(--c-nav-main--color);
+      color: var(--dsa-nav-main--color);
     }
 
     &:active {
-      color: var(--c-nav-main--color-active);
+      color: var(--dsa-nav-main--color-active);
     }
     /* critical:end */
   }
 
   &__logo {
-    padding: var(--g-header--spacing-v) 0;
+    padding: var(--dsa-header--spacing-v) 0;
     img {
-      height: var(--g-logo--height);
+      height: var(--dsa-logo--height);
       width: auto;
     }
   }
@@ -90,7 +98,7 @@
     bottom: 0;
     top: 0;
     overflow-y: auto;
-    background: var(--c-nav-main--background);
+    background: var(--dsa-nav-main--background);
     backface-visibility: hidden;
     -webkit-overflow-scrolling: touch;
     box-shadow: 20px 0px 30px #00000000;
@@ -103,24 +111,25 @@
 
     .overlay-open & {
       left: 0;
-      box-shadow: var(--c-nav-main--shadow);
+      box-shadow: var(--dsa-nav-main--shadow);
     }
 
-    > .c-nav-main__logo {
-      margin: var(--g-header-spacing);
+    > .nav-main__logo {
+      margin-top: var(--dsa-header--spacing-vertical);
+      margin-bottom: var(--dsa-header--spacing-vertical);
     }
 
     ul.nav-main__list {
-      padding-top: calc(var(--g-header-spacing-v) - var(--ks-spacing-s));
+      padding-top: calc(var(--dsa-header--spacing-vertical) - var(--ks-spacing-s));
 
       .nav-main--button {
-        margin-left: var(--g-header-spacing-h);
-        margin-top: var(--g-header-spacing-v);
+        margin-left: var(--dsa-header--spacing-horizontal);
+        margin-top: var(--dsa-header--spacing-vertical);
 
-        .c-button {
-          --c-button--font: var(--ks-font-interface-s);
-          .c-button__content {
-            --c-button--padding: 0.4rem 1rem;
+        .button {
+          --button--font: var(--ks-font-interface-s);
+          .button__content {
+            --button--padding: 0.4rem 1rem;
           }
         }
       }
@@ -130,12 +139,12 @@
   // Desktop Nav
   @media (min-width: "62rem") {
     /* critical:start */
-    > .c-nav-main__logo {
+    > .nav-main__logo {
       display: none;
     }
     /* critical:end */
 
-    .c-button--wrapper {
+    .button--wrapper {
       margin-left: var(--ks-spacing-inline-xs);
     }
 
@@ -151,8 +160,8 @@
       align-items: center;
 
       .nav-main--button {
-        .c-button {
-          --c-button--font: var(--ks-font-interface-s);
+        .button {
+          --button--font: var(--ks-font-interface-s);
           span {
             font-size: 98%;
           }

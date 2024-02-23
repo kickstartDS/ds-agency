@@ -1,8 +1,9 @@
+@import "./cta-tokens.scss";
+
 .c-cta {
-  --c-cta--gap: var(--ks-spacing-m);
   display: flex;
   flex-direction: column;
-  gap: var(--c-cta--gap);
+  gap: var(--dsa-cta--gap);
   width: 100%;
 
   .l-container {
@@ -11,6 +12,8 @@
 
     .c-rich-text {
       width: 100%;
+      --dsa-rich-text--font: var(--dsa-cta__copy--font, var(--dsa-text--font));
+      --dsa-rich-text--color: var(--dsa-cta__copy--color, var(--dsa-text--color));
     }
   }
 
@@ -24,6 +27,10 @@
 
   .c-headline {
     max-width: 100%;
+    --dsa-headline--color: var(--dsa-cta__headline--color);
+    &__subheadline {
+      --dsa-headline_subheadline--color: var(--dsa-cta__subheadline--color);
+    }
   }
 
   .c-button {

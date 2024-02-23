@@ -62,6 +62,7 @@ export interface BlogAsideProps {
   socialSharing?: SocialSharing;
   readingTime?: ReadingTime;
   date: PublishedDate;
+  className?: string;
 }
 /**
  * The author of the blog post

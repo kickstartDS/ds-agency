@@ -62,7 +62,7 @@
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.transparent.base}",
+            "value": "{ks.color.fg.alpha.8.base}",
             "attributes": {
               "category": "color"
             },
@@ -73,7 +73,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.primary.alpha.8.base}",
+              "value": "{ks.color.fg.alpha.7.base}",
               "attributes": {
                 "category": "color"
               },
@@ -85,7 +85,7 @@
           },
           "active": {
             "base": {
-              "value": "{ks.color.primary.alpha.7.base}",
+              "value": "{ks.color.fg.alpha.6.base}",
               "attributes": {
                 "category": "color"
               },
@@ -97,7 +97,7 @@
           },
           "selected": {
             "base": {
-              "value": "{ks.color.primary.alpha.6.base}",
+              "value": "{ks.color.fg.alpha.6.base}",
               "attributes": {
                 "category": "color"
               },
@@ -122,7 +122,7 @@
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.transparent.base}",
+            "value": "{ks.color.fg-inverted.alpha.8.base}",
             "attributes": {
               "category": "color"
             },
@@ -133,7 +133,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.primary-inverted.alpha.7.base}",
+              "value": "{ks.color.fg-inverted.alpha.7.base}",
               "attributes": {
                 "category": "color"
               },
@@ -145,7 +145,7 @@
           },
           "active": {
             "base": {
-              "value": "{ks.color.primary-inverted.alpha.6.base}",
+              "value": "{ks.color.fg-inverted.alpha.6.base}",
               "attributes": {
                 "category": "color"
               },
@@ -157,7 +157,7 @@
           },
           "selected": {
             "base": {
-              "value": "{ks.color.primary-inverted.alpha.5.base}",
+              "value": "{ks.color.fg-inverted.alpha.6.base}",
               "attributes": {
                 "category": "color"
               },

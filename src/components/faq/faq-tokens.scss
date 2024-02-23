@@ -1,0 +1,16 @@
+.c-faq {
+  --c-faq--border-color: var(--ks-border-color-accent);
+
+  --c-faq__summary--color: var(--dsa-topic--color);
+  --c-faq__summary--font-weight: var(--dsa-topic--font-weight);
+  --c-faq__summary--font: var(--dsa-topic--font);
+  --c-faq__summary--font-family: var(--dsa-topic--font-family);
+
+  --c-faq__answer--color: var(--dsa-headline--color);
+  --c-faq__answer--font: var(--dsa-topic-font);
+
+  --c-faq__icon--color: var(--ks-text-color-primary-interactive);
+
+  --c-faq_header--padding: 1em 0;
+  --c-faq_content--padding: 0em 0em 1em 0em;
+}

@@ -1,14 +1,15 @@
 @use "./logos-tokens.scss";
 
-.c-logos {
+.dsa-logos {
   display: flex;
   flex-direction: column;
-  gap: var(--ks-spacing-stack-m);
+  gap: var(--dsa-logos-gap);
 
   &__tagline {
-    font: var(--ks-font-display-m);
+    font: var(--dsa-logos-tagline--font, var(--dsa-headline_h3--font), var(--ks-font-display-m));
+    font-weight: var(--dsa-logos-tagline--font-weight, var(--dsa-headline--font-weight), var(--ks-font-weight-medium));
     max-width: var(--l-section--content-width-narrow);
-    color: var(--ks-color-fg);
+    color: var(--dsa-logos-tagline--color, var(--dsa-headline--color), var(--ks-color-fg));
     width: 100%;
   }
 
@@ -17,7 +18,7 @@
     flex-direction: column;
     gap: var(--ks-spacing-stack-m);
 
-    .c-button {
+    .dsa-button {
       width: fit-content;
     }
 
@@ -33,14 +34,23 @@
   }
 
   &__grid {
-    gap: calc(var(--c-logo-tiles--gutter) / 2) var(--c-logo-tiles--gutter);
+    gap: var(--dsa-logos__grid--gap-vertical) var(--dsa-logos__grid--gap-horizontal);
     margin: 0;
     display: flex;
     flex-wrap: wrap;
   }
 
   &__logo {
-    max-width: calc(100% / var(--c-logo-tiles--cols) - var(--c-logo-tiles--gutter));
+    max-width: calc(100% / var(--dsa-logos__grid_mobile--cols) - var(--dsa-logos__grid--gap-horizontal));
+
+    @container logos (min-width: 420px) {
+      max-width: calc(100% / var(--dsa-logos__grid_tablet--cols) - var(--dsa-logos__grid--gap-horizontal));
+      --dsa-logos__grid--cols: 3;
+    }
+    @container logos (min-width: 640px) {
+      max-width: calc(100% / var(--dsa-logos__grid_desktop--cols) - var(--dsa-logos__grid--gap-horizontal));
+    }
+
     width: 100%;
     aspect-ratio: 16/9;
     display: flex;
@@ -55,22 +65,22 @@
   }
 
   &--align-left {
-    .c-logo-tiles {
+    .dsa-logo-tiles {
       justify-content: start;
     }
   }
 
   &--align-center {
-    .c-logos__cta {
+    .dsa-logos__cta {
       align-items: center;
     }
 
-    .c-logos__grid {
+    .dsa-logos__grid {
       justify-content: center;
     }
 
-    .c-logos__cta__text,
-    .c-logos__tagline {
+    .dsa-logos__cta__text,
+    .dsa-logos__tagline {
       text-align: center;
       margin: auto;
     }

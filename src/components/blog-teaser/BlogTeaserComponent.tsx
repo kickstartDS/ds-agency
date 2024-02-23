@@ -1,3 +1,4 @@
+import classnames from "classnames";
 import { forwardRef, createContext, useContext } from "react";
 import { PostTeaserContextDefault } from "@kickstartds/blog/lib/post-teaser";
 
@@ -10,7 +11,17 @@ export const BlogTeaserContextDefault = forwardRef<
   BlogTeaserProps
 >(
   (
-    { date, tags = [], headline, teaserText, image, link, readingTime, author },
+    {
+      date,
+      tags = [],
+      headline,
+      teaserText,
+      image,
+      link,
+      readingTime,
+      author,
+      className,
+    },
     ref
   ) => {
     const teaserMetaItems = [];
@@ -31,6 +42,7 @@ export const BlogTeaserContextDefault = forwardRef<
     return (
       <Container name="post-teaser">
         <PostTeaserContextDefault
+          className={classnames(className, "dsa-blog-teaser")}
           // @ts-expect-error
           image={{ src: image }}
           meta={{

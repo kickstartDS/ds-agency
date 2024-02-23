@@ -5,6 +5,7 @@ import sectionStories from "@kickstartds/base/lib/section/section.stories";
 import { TeaserCard } from "../teaser-card/TeaserCardComponent";
 import schema from "./section.schema.dereffed.json";
 import { Section } from "./SectionComponent";
+import cssprops from "./section-tokens.json";
 
 const meta: Meta<typeof Section> = {
   ...sectionStories,
@@ -13,6 +14,7 @@ const meta: Meta<typeof Section> = {
   component: Section,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
   render: (args) => (
     <Section {...args}>

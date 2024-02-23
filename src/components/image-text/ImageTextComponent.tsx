@@ -22,8 +22,8 @@ export const ImageTextContextDefault = forwardRef<
     <OriginalTextMediaContextDefault
       {...rest}
       className={classnames(
-        highlightText ? "c-image-text--highlight" : "",
-        "c-image-text"
+        highlightText ? "dsa-image-text--highlight" : "",
+        "dsa-image-text"
       )}
       text={text}
       media={[

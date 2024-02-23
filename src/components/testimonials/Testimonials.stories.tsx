@@ -3,6 +3,7 @@ import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Testimonials } from "./TestimonialsComponent";
+import cssprops from "./testimonials-tokens.json";
 
 import schema from "./testimonials.schema.dereffed.json";
 
@@ -14,6 +15,7 @@ const meta: Meta<typeof Testimonials> = {
   component: Testimonials,
   parameters: {
     jsonschema: schema,
+    cssprops,
   },
 };
 
