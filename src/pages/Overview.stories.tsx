@@ -10,7 +10,7 @@ import { Cta } from "../components/cta/CtaComponent";
 
 const Page = () => (
   <>
-    <Header {...headerProps} floating />
+    <Header {...headerProps} />
     <Section
       style="accentTransition"
       spaceAfter="none"
