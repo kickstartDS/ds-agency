@@ -1,11 +1,11 @@
 /**
  * Do not edit directly
- * Generated on Fri, 23 Feb 2024 10:06:07 GMT
+ * Generated on Fri, 23 Feb 2024 12:03:15 GMT
  */
 
 :root, [ks-theme] {
   --ks-background-color-accent-base: var(--ks-color-fg-alpha-8-base);
-  --ks-background-color-accent-inverted-base: var(--ks-color-fg-inverted-alpha-8-base);
+  --ks-background-color-accent-inverted-base: var(--ks-color-fg-inverted-to-bg-8-base);
   --ks-background-color-clear-base: var(--ks-color-transparent-base);
   --ks-background-color-clear-interactive-base: var(--ks-color-transparent-base);
   --ks-background-color-clear-interactive-hover-base: var(--ks-color-primary-alpha-8-base);

@@ -1,5 +1,5 @@
 import { FC, PropsWithChildren } from "react";
-import IconSprite from "../../token-ngo/IconSprite";
+import IconSprite from "../../token/IconSprite";
 import Providers from "../Providers";
 import "../../global.client";
 

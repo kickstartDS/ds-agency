@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 30 Nov 2023 10:37:12 GMT
+ * Generated on Fri, 23 Feb 2024 12:03:19 GMT
  */
 
 export const KsBackgroundColorAccentBase = "rgba(15, 15, 15, 0.05)";
@@ -8,15 +8,15 @@ export const KsBackgroundColorAccentInvertedBase = "rgba(15, 15, 15, 0.87)";
 export const KsBackgroundColorBoldBase = "rgba(66, 133, 244, 0.37)";
 export const KsBackgroundColorBoldInvertedBase = "#4285f4";
 export const KsBackgroundColorClearBase = "rgba(0, 0, 0, 0)";
-export const KsBackgroundColorClearInteractiveBase = "rgba(0, 0, 0, 0)";
-export const KsBackgroundColorClearInteractiveHoverBase = "rgba(66, 133, 244, 0.13)";
-export const KsBackgroundColorClearInteractiveActiveBase = "rgba(66, 133, 244, 0.24)";
-export const KsBackgroundColorClearInteractiveSelectedBase = "rgba(66, 133, 244, 0.37)";
+export const KsBackgroundColorClearInteractiveBase = "rgba(32, 33, 36, 0.13)";
+export const KsBackgroundColorClearInteractiveHoverBase = "rgba(32, 33, 36, 0.24)";
+export const KsBackgroundColorClearInteractiveActiveBase = "rgba(32, 33, 36, 0.37)";
+export const KsBackgroundColorClearInteractiveSelectedBase = "rgba(32, 33, 36, 0.37)";
 export const KsBackgroundColorClearInvertedBase = "rgba(0, 0, 0, 0)";
-export const KsBackgroundColorClearInvertedInteractiveBase = "rgba(0, 0, 0, 0)";
-export const KsBackgroundColorClearInvertedInteractiveHoverBase = "rgba(255, 255, 255, 0.24)";
-export const KsBackgroundColorClearInvertedInteractiveActiveBase = "rgba(255, 255, 255, 0.37)";
-export const KsBackgroundColorClearInvertedInteractiveSelectedBase = "rgba(255, 255, 255, 0.5)";
+export const KsBackgroundColorClearInvertedInteractiveBase = "rgba(241, 241, 241, 0.13)";
+export const KsBackgroundColorClearInvertedInteractiveHoverBase = "rgba(241, 241, 241, 0.24)";
+export const KsBackgroundColorClearInvertedInteractiveActiveBase = "rgba(241, 241, 241, 0.37)";
+export const KsBackgroundColorClearInvertedInteractiveSelectedBase = "rgba(241, 241, 241, 0.37)";
 export const KsBackgroundColorDefaultBase = "#ffffff";
 export const KsBackgroundColorDefaultInvertedBase = "#0f0f0f";
 export const KsBackgroundColorInterfaceBase = "rgba(32, 33, 36, 0.05)";
@@ -60,15 +60,15 @@ export const KsBorderColorDefaultInvertedBase = "rgba(32, 33, 36, 0.76)";
 export const KsBorderColorInterfaceBase = "rgba(32, 33, 36, 0.05)";
 export const KsBorderColorInterfaceInteractiveBase = "rgba(32, 33, 36, 0.24)";
 export const KsBorderColorInterfaceInteractiveDisabledBase = "rgba(32, 33, 36, 0.13)";
-export const KsBorderColorInterfaceInteractiveHoverBase = "rgba(32, 33, 36, 0.5)";
-export const KsBorderColorInterfaceInteractiveActiveBase = "rgba(32, 33, 36, 0.76)";
-export const KsBorderColorInterfaceInteractiveSelectedBase = "#4285f4";
+export const KsBorderColorInterfaceInteractiveHoverBase = "rgba(32, 33, 36, 0.76)";
+export const KsBorderColorInterfaceInteractiveActiveBase = "#007faf";
+export const KsBorderColorInterfaceInteractiveSelectedBase = "rgba(32, 33, 36, 0.5)";
 export const KsBorderColorInterfaceInvertedBase = "rgba(241, 241, 241, 0.05)";
-export const KsBorderColorInterfaceInvertedInteractiveBase = "rgba(241, 241, 241, 0.5)";
+export const KsBorderColorInterfaceInvertedInteractiveBase = "rgba(241, 241, 241, 0.24)";
 export const KsBorderColorInterfaceInvertedInteractiveDisabledBase = "rgba(241, 241, 241, 0.87)";
 export const KsBorderColorInterfaceInvertedInteractiveHoverBase = "rgba(241, 241, 241, 0.76)";
-export const KsBorderColorInterfaceInvertedInteractiveActiveBase = "rgba(241, 241, 241, 0.95)";
-export const KsBorderColorInterfaceInvertedInteractiveSelectedBase = "#ffffff";
+export const KsBorderColorInterfaceInvertedInteractiveActiveBase = "#ffffff";
+export const KsBorderColorInterfaceInvertedInteractiveSelectedBase = "rgba(241, 241, 241, 0.5)";
 export const KsBorderColorPrimaryBase = "#4285f4";
 export const KsBorderColorPrimaryInteractiveBase = "#4285f4";
 export const KsBorderColorPrimaryInteractiveHoverBase = "#5993f4";
@@ -497,9 +497,9 @@ export const KsTextColorDefaultInvertedInteractiveActiveBase = "#3ea6ff";
 export const KsTextColorDefaultInvertedInteractiveVisitedBase = "#3ea6ff";
 export const KsTextColorInterfaceBase = "rgba(32, 33, 36, 0.87)";
 export const KsTextColorInterfaceInteractiveBase = "#202124";
-export const KsTextColorInterfaceInteractiveHoverBase = "#000000";
-export const KsTextColorInterfaceInteractiveActiveBase = "#000000";
-export const KsTextColorInterfaceInteractiveVisitedBase = "#000000";
+export const KsTextColorInterfaceInteractiveHoverBase = "#202124";
+export const KsTextColorInterfaceInteractiveActiveBase = "#202124";
+export const KsTextColorInterfaceInteractiveVisitedBase = "#202124";
 export const KsTextColorInterfaceInvertedBase = "rgba(241, 241, 241, 0.87)";
 export const KsTextColorInterfaceInvertedInteractiveBase = "#f1f1f1";
 export const KsTextColorInterfaceInvertedInteractiveHoverBase = "#f1f1f1";
