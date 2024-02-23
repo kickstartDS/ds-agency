@@ -1,3 +1,15 @@
+# v3.6.0 (Fri Feb 23 2024)
+
+#### 🚀 Enhancement
+
+- Merge branch 'feature/add-component-token' [#68](https://github.com/kickstartDS/ds-agency/pull/68) ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.5.2 (Wed Feb 21 2024)
 
 #### ⚠️ Pushed to `main`
