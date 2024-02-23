@@ -1,3 +1,16 @@
+# v3.6.2 (Fri Feb 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(overview): toggle header-spacing ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.1 (Fri Feb 23 2024)
 
 #### ⚠️ Pushed to `main`
