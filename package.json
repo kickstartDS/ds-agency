@@ -42,7 +42,7 @@
     "postbuild-storybook": "yarn presets && yarn playroom:build && mkdir -p dist/components && cp snippets.json dist/components/presets.json",
     "build-tokens": "kickstartDS tokens compile && kickstartDS tokens compile --token-dictionary-path src/token-business/dictionary --sd-config-path sd.config-business.cjs && yarn copyTokensCss",
     "chromatic": "chromatic --build-script-name \"build-storybook\" --output-dir \"storybook-static\" --skip \"@(renovate/**|dependabot/**)\" --exit-zero-on-changes --exit-once-uploaded",
-    "copyTokensCss": "cp src/token/tokens.css static/tokens.css && cp src/token-business/tokens.css static/tokens-business.css && cp src/token-google/tokens.css static/tokens-google.css && cp src/token-telekom/tokens.css static/tokens-telekom.css",
+    "copyTokensCss": "cp src/token/tokens.css static/tokens.css && cp src/token-business/tokens.css static/tokens-business.css && cp src/token-google/tokens.css static/tokens-google.css && cp src/token-telekom/tokens.css static/tokens-telekom.css && cp src/token-ngo/tokens.css static/tokens-ngo.css",
     "init-tokens": "kickstartDS tokens init",
     "playroom": "run-p watch:* playroom:start",
     "playroom:start": "playroom start",

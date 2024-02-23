@@ -1,9 +1,9 @@
 @use "button-tokens.scss";
 
 .dsa-button.c-button {
-  --c-button--border-radius: var(--dsa-button--border-radius);
-  --c-button--padding: var(--dsa-button--padding);
-  --c-button--font-weight: var(--dsa-button--font-weight);
+  --c-button--border-radius: var(--dsa-button--border-radius, var(--ks-border-radius-control));
+  --c-button--padding: var(--dsa-button--padding, 0.75em 2em);
+  --c-button--font-weight: var(--dsa-button--font-weight, var(--ks-font-weight-semi-bold));
   --c-button--border-width: var(--dsa-button--border-width, var(--ks-border-width-default));
 
   &.c-button--solid {

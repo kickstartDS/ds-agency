@@ -45,3 +45,15 @@ export const telekom = {
     lazy: false,
   },
 };
+
+export const ngo = {
+  title: "NGO",
+  tokens: "/tokens-ngo.css",
+  logo: {
+    src: "/logo-ngo.svg",
+    alt: "NGO Logo",
+    width: 342,
+    height: 80,
+    lazy: false,
+  },
+};

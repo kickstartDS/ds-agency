@@ -33,7 +33,7 @@
   --dsa-section__content--width_full: 120rem;
 
   //Background Color
-  --dsa-section--background-color_default: var(--ks-background-color-default);
+  --dsa-section--background-color_default: var(--ks-color-bg);
   --dsa-section--background-color_bold: var(--ks-background-color-bold);
   --dsa-section--background-color_accent: var(--ks-background-color-accent);
 
@@ -93,7 +93,7 @@
   );
 
   //Spotlight
-  --dsa-section__spotlight--left: 0;
-  --dsa-section__spotlight--top: 0;
+  --dsa-section__spotlight--left: 50%;
+  --dsa-section__spotlight--top: 50%;
   --dsa-section__spotlight--color: var(--ks-color-primary-alpha-5);
 }

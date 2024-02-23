@@ -1,4 +1,4 @@
-import "../../token/tokens.css";
+import "../../token-ngo/tokens.css";
 import { RawPageWrapper as PageWrapper } from "./RawPageWrapperComponent";
 
 export { PageWrapper };

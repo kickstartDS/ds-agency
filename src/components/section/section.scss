@@ -56,7 +56,7 @@
   }
 
   &.l-section--default {
-    background-color: var(--dsa-section--background-color_default, var(--ks-background-color-default));
+    background-color: var(--dsa-section--background-color_default, var(--ks-color-bg));
   }
 
   &.l-section--accent {
@@ -68,7 +68,7 @@
   }
 
   &--header-spacing {
-    padding-top: calc(var(--dsa-header--height) + var(--dsa-section--space-default));
+    padding-top: calc(var(--dsa-header--height) + var(--dsa-section--space_default));
   }
 
   &--header-spacing.l-section--space-before-none {
