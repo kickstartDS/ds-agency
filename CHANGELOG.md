@@ -1,3 +1,15 @@
+# v3.6.4 (Tue Feb 27 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(components): replace base token in token with semantic token ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.3 (Fri Feb 23 2024)
 
 #### ⚠️ Pushed to `main`
