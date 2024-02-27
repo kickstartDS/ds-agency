@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Fri, 23 Feb 2024 12:03:19 GMT
+ * Generated on Tue, 27 Feb 2024 11:35:41 GMT
  */
 
 export const KsBackgroundColorAccentBase = "rgba(15, 15, 15, 0.05)";

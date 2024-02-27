@@ -5,10 +5,10 @@
     var(--ks-color-primary-to-bg-6)
   );
 
-  --dsa-nav-main--color: var(--ks-color-fg);
-  --dsa-nav-main--color_passive: var(--ks-color-fg-alpha-4);
-  --dsa-nav-main--color_hover: var(--ks-color-fg-alpha-4);
-  --dsa-nav-main--color_active: var(--ks-color-fg);
+  --dsa-nav-main--color: var(--ks-color-fg); //TBD: semantic fg text color
+  --dsa-nav-main--color_passive: var(--ks-text-color-default);
+  --dsa-nav-main--color_hover: var(--ks-text-color-default);
+  --dsa-nav-main--color_active: var(--ks-color-fg); //TBD: semantic fg text color
 
   --dsa-nav-main--font: var(--ks-font-interface-l);
 

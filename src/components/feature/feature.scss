@@ -87,11 +87,10 @@
   }
 
   &__link {
-    font: var(--ks-font-copy-s);
+    font: var(--dsa-feature__link-font, var(--ks-font-copy-s));
     display: flex;
     align-items: center;
     gap: var(--ks-spacing-xxs);
-    font-weight: var(--ks-font-weight-semi-bold) !important;
 
     width: fit-content;
 

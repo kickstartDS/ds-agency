@@ -1,5 +1,7 @@
 @import "../../selectors";
 
+//TBD: semantic fg text color
+
 .dsa-button {
   --dsa-button--border-radius: var(--ks-border-radius-pill);
   --dsa-button--padding: 0.75em 2em;
@@ -11,11 +13,8 @@
   --dsa-button_primary--color_hover: var(--ks-color-fg);
   --dsa-button_primary--color_active: var(--ks-color-fg);
 
-  --dsa-button_primary--background-color: var(--ks-color-primary);
+  --dsa-button_primary--background-color: var(--ks-background-color-primary-interactive);
   --dsa-button_primary--background-color_hover: var(--ks-background-color-primary-interactive-hover);
-
-  --dsa-button_primary--shadow: 0;
-  --dsa-button_primary--shadow_hover: 0;
 
   --dsa-button_primary_inverted--color: var(--ks-color-fg-inverted-alpha-2);
   --dsa-button_primary_inverted--color_hover: var(--ks-color-fg-inverted);
@@ -33,18 +32,18 @@
 
   --dsa-button_secondary--border-width: 2px;
 
-  --dsa-button_secondary--background-color: var(--ks-background-color-clear-interactive);
-  --dsa-button_secondary--background-color_hover: var(--ks-background-color-clear-interactive-hover);
-  --dsa-button_secondary--background-color_active: var(--ks-background-color-clear-interactive-active);
+  --dsa-button_secondary--background-color: var(--ks-background-color-interface-interactive);
+  --dsa-button_secondary--background-color_hover: var(--ks-background-color-interface-interactive-hover);
+  --dsa-button_secondary--background-color_active: var(--ks-background-color-interface-interactive-active);
 
   //TERCIARY
   --dsa-button_terciary--color: var(--ks-color-fg-alpha-2);
   --dsa-button_terciary--color_hover: var(--ks-color-fg);
   --dsa-button_terciary--color_active: var(--ks-color-fg);
 
-  --dsa-button_terciary--border-color: var(--ks-color-fg-alpha-6);
-  --dsa-button_terciary--border-color_hover: var(--ks-color-fg);
-  --dsa-button_terciary--border-color_active: var(--ks-color-fg);
+  --dsa-button_terciary--border-color: var(--ks-border-color-interface-interactive);
+  --dsa-button_terciary--border-color_hover: var(--ks-border-color-interface-interactive-hover);
+  --dsa-button_terciary--border-color_active: var(--ks-border-color-interface-interactive-active);
 
   --dsa-button_terciary--background-color_hover: transparent;
   --dsa-button_terciary--background-color_active: transparent;

@@ -1,10 +1,10 @@
 /**
  * Do not edit directly
- * Generated on Fri, 23 Feb 2024 12:03:16 GMT
+ * Generated on Tue, 27 Feb 2024 11:35:38 GMT
  */
 
 export const KsBackgroundColorAccentBase = "rgba(0, 0, 0, 0.13)";
-export const KsBackgroundColorAccentInvertedBase = "#212121";
+export const KsBackgroundColorAccentInvertedBase = "rgba(255, 255, 255, 0.13)";
 export const KsBackgroundColorClearBase = "rgba(0, 0, 0, 0)";
 export const KsBackgroundColorClearInteractiveBase = "rgba(0, 0, 0, 0)";
 export const KsBackgroundColorClearInteractiveHoverBase = "rgba(0, 153, 255, 0.13)";

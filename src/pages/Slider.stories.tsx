@@ -19,6 +19,7 @@ const Page = () => (
     >
       <TeaserCard
         layout="row"
+        label="test"
         target="/showcase-techfusion_paid"
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"

@@ -1,5 +1,7 @@
 @use "button-tokens.scss";
 
+//TBD: semantic fg text color
+
 .dsa-button.c-button {
   --c-button--border-radius: var(--dsa-button--border-radius, var(--ks-border-radius-control));
   --c-button--padding: var(--dsa-button--padding, 0.75em 2em);

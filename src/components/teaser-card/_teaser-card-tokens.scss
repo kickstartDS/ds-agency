@@ -3,14 +3,17 @@
 @include container.wrapper("teaser-card");
 
 .c-teaser.dsa-teaser-card {
-  --dsa-teaser-card--border: 1px solid var(--ks-color-fg-alpha-8);
+  --dsa-teaser-card--background: var(--ks-background-color-interface-interactive);
+  --dsa-teaser-card--border-width: var(--ks-border-width-default);
+  --dsa-teaser-card--border-color: var(--ks-border-color-interface-interactive);
+  --dsa-teaser-card--border-color_hover: var(--ks-border-color-interface-interactive-hover);
   --dsa-teaser-card--border-radius: var(--ks-border-radius-card);
-  --dsa-teaser-card--shadow_hover: 0 1px 11px var(--ks-color-fg-alpha-6);
+  --dsa-teaser-card--shadow_hover: var(--ks-box-shadow-card-hover);
 
   --dsa-teaser-card__label--font: var(--ks-font-interface-m);
   --dsa-teaser-card__label--font-weight: var(--ks-font-weight-semi-bold);
   --dsa-teaser-card__label--color: var(--ks-color-fg-base);
-  --dsa-teaser-card__label--background-color: var(--ks-background-color-primary-inverted);
+  --dsa-teaser-card__label--background-color: var(--ks-background-color-primary);
   --dsa-teaser-card__label--padding: 0.5em 1em;
   --dsa-teaser-card__label--border-radius: var(--ks-border-radius-pill);
 
@@ -22,7 +25,7 @@
   --dsa-teaser-card__copy--color: var(--ks-text-color-default);
 
   --dsa-teaser-card--padding: var(--ks-spacing-inset-l);
-  --dsa-teaser-card--background: var(--ks-color-fg-alpha-9);
+  --dsa-teaser-card--background: var(--ks-background-color-interface-interactive);
 
   @media (min-width: 48rem) {
     //Scaling for Desktop Breakpoint SmallTiles

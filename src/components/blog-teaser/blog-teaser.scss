@@ -18,7 +18,8 @@
 
     &:hover {
       .c-rich-text {
-        color: var(--dsa-blog-teaser__copy--color_hover, var(--ks-color-fg));
+        color: var(--dsa-blog-teaser__copy--color_hover, var(--ks-color-fg)); //TBD: semantic fg text color
+
         > :not(.c-post-meta) {
           text-decoration: none;
         }

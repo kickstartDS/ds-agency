@@ -2,7 +2,7 @@
 
 #{$selectors} {
   --dsa-rich-text__headline--font-weight: var(--dsa-headline--font-weight, var(--ks-font-weight-medium));
-  --dsa-rich-text__headline--color: var(--dsa-headline--color, var(--ks-color-fg));
+  --dsa-rich-text__headline--color: var(--dsa-headline--color, var(--ks-color-fg)); //TBD: semantic fg text color
 
   --dsa-rich-text--color: var(--ks-text-color-default);
   --dsa-rich-text--font: var(--ks-font-copy-m);

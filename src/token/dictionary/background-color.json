@@ -206,7 +206,7 @@
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.transparent.base}",
+            "value": "{ks.color.fg.alpha.8.base}",
             "attributes": {
               "category": "color"
             },
@@ -216,18 +216,6 @@
             }
           },
           "disabled": {
-            "base": {
-              "value": "{ks.color.fg.alpha.9.base}",
-              "attributes": {
-                "category": "color"
-              },
-              "token": {
-                "category": "Colors: Background Interface",
-                "presenter": "Color"
-              }
-            }
-          },
-          "hover": {
             "base": {
               "value": "{ks.color.fg.alpha.8.base}",
               "attributes": {
@@ -239,9 +227,21 @@
               }
             }
           },
+          "hover": {
+            "base": {
+              "value": "{ks.color.fg.alpha.7.base}",
+              "attributes": {
+                "category": "color"
+              },
+              "token": {
+                "category": "Colors: Background Interface",
+                "presenter": "Color"
+              }
+            }
+          },
           "active": {
             "base": {
-              "value": "{ks.color.fg.alpha.9.base}",
+              "value": "{ks.color.fg.alpha.6.base}",
               "attributes": {
                 "category": "color"
               },
@@ -253,7 +253,7 @@
           },
           "selected": {
             "base": {
-              "value": "{ks.color.primary-inverted.base}",
+              "value": "{ks.color.fg.alpha.6.base}",
               "attributes": {
                 "category": "color"
               },
@@ -267,7 +267,7 @@
       },
       "interface-inverted": {
         "base": {
-          "value": "{ks.color.fg-inverted.alpha.9.base}",
+          "value": "{ks.color.fg-inverted.alpha.8.base}",
           "attributes": {
             "category": "color"
           },
@@ -278,7 +278,7 @@
         },
         "interactive": {
           "base": {
-            "value": "transparent",
+            "value": "{ks.color.fg-inverted.alpha.8.base}",
             "attributes": {
               "category": "color"
             },
@@ -313,7 +313,7 @@
           },
           "active": {
             "base": {
-              "value": "{ks.color.fg-inverted.alpha.9.base}",
+              "value": "{ks.color.fg-inverted.alpha.6.base}",
               "attributes": {
                 "category": "color"
               },
@@ -325,7 +325,7 @@
           },
           "selected": {
             "base": {
-              "value": "{ks.color.primary.base}",
+              "value": "{ks.color.fg-inverted.alpha.6.base}",
               "attributes": {
                 "category": "color"
               },
