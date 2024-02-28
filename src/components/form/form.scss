@@ -28,7 +28,7 @@
 
     --c-form-check_box-focus--shadow: var(--dsa-form-check--shadow_focus, 0 0 4px 0);
 
-    --c-form-check_checkmark--color: var(--dsa-form-check__checkmark--color, var(--ks-color-fg));
+    --c-form-check_checkmark--color: var(--dsa-form-check__checkmark--color, var(--dsa-text-color-on-primary));
   }
 
   .c-form-field {

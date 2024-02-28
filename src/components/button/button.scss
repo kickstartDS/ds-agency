@@ -39,9 +39,9 @@
   &.c-button--clear {
     padding: var(--dsa-button--padding);
 
-    --c-button--color: var(--dsa-button_secondary--color, var(--ks-color-fg-alpha-2));
-    --c-button--color-hover: var(--dsa-button_secondary--color_hover, var(--dsa-text-color-on-primary));
-    --c-button--color-active: var(--dsa-button_secondary--color_active, var(--dsa-text-color-on-primary));
+    --c-button--color: var(--dsa-button_secondary--color, var(--ks-text-color-default));
+    --c-button--color-hover: var(--dsa-button_secondary--color_hover, var(--ks-text-color-default));
+    --c-button--color-active: var(--dsa-button_secondary--color_active, var(--ks-text-color-default));
 
     --c-button--border-color: var(--dsa-button_secondary--border-color, none);
     --c-button--border-color-hover: var(--dsa-button_secondary--border-color_hover, none);
@@ -69,9 +69,9 @@
   &.c-button--outline {
     padding: var(--dsa-button--padding);
 
-    --c-button--color: var(--dsa-button_terciary--color, var(--ks-color-fg-alpha-2));
-    --c-button--color-hover: var(--dsa-button_terciary--color_hover, var(--dsa-text-color-on-primary));
-    --c-button--color-active: var(--dsa-button_terciary--color_active, var(--dsa-text-color-on-primary));
+    --c-button--color: var(--dsa-button_terciary--color, var(--ks-text-color-default));
+    --c-button--color-hover: var(--dsa-button_terciary--color_hover, var(--ks-text-color-default));
+    --c-button--color-active: var(--dsa-button_terciary--color_active, var(--ks-text-color-default));
 
     --c-button--border-color: var(--dsa-button_terciary--border-color, var(--ks-border-color-interface-interactive));
     --c-button--border-color-hover: var(
