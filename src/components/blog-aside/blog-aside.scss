@@ -20,10 +20,7 @@
     .dsa-headline__headline {
       font: var(--dsa-post-aside__title--font, var(--dsa-headline_h3--font, var(--ks-font-display-l)));
       font-weight: var(--dsa-headline--font-weight);
-      color: var(
-        --dsa-post-aside__title--color,
-        var(--dsa-headline--color, var(--ks-color-fg))
-      ); //TBD: semantic fg text color
+      color: var(--dsa-post-aside__title--color, var(--dsa-headline--color, var(--ks-text-color-display)));
     }
   }
 

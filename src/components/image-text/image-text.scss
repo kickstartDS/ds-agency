@@ -9,7 +9,7 @@
   &--highlight.dsa-image-text {
     .c-rich-text {
       --c-rich-text--font: var(--dsa-image-text_highlight--font, var(--ks-font-copy-l));
-      --c-rich-text--color: var(--dsa-image-text_highlight--color, var(--ks-color-fg)); //TBD: semantic fg text color
+      --c-rich-text--color: var(--dsa-image-text_highlight--color, var(--ks-text-color-default));
     }
   }
 }

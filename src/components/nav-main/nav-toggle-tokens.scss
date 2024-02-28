@@ -1,4 +1,4 @@
 .nav-toggle {
-  --nav-toggle--color: var(--ks-color-fg); //TBD: semantic fg text color
-  --nav-toggle--color_open: var(--ks-color-fg); //TBD: semantic fg text color
+  --nav-toggle--color: var(--ks-text-color-default);
+  --nav-toggle--color_open: var(--ks-text-color-default);
 }

@@ -8,10 +8,10 @@
 
 .c-teaser.dsa-teaser-card {
   --c-teaser--padding: var(--dsa-teaser-card--padding, var(--ks-spacing-inset-l));
-  --c-teaser--background: var(--dsa-teaser-card--background, var(--ks-background-color-interface-interactive));
+  --c-teaser--background: var(--dsa-teaser-card--background, var(--ks-background-color-card-interactive));
   --c-teaser--color: var(--dsa-teaser-card__copy--color, var(--ks-text-color-default));
 
-  --c-teaser--border: var(--dsa-teaser-card--border-color, var(--ks-background-color-interface-interactive))
+  --c-teaser--border: var(--dsa-teaser-card--border-color, var(--ks-background-color-card-interactive))
     var(--dsa-teaser-card--border-width) solid;
 
   --c-teaser--border-radius: var(--dsa-teaser-card--border-radius, var(--ks-border-radius-card));
@@ -27,7 +27,7 @@
   }
 
   &:hover {
-    --c-teaser--border: var(--dsa-teaser-card--border-color_hover, var(--ks-background-color-interface-interactive))
+    --c-teaser--border: var(--dsa-teaser-card--border-color_hover, var(--ks-background-color-card-interactive))
       var(--dsa-teaser-card--border-width) solid;
   }
 

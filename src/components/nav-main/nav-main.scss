@@ -10,13 +10,13 @@
   &--active {
     .nav-main__item {
       .nav-main__link {
-        color: var(--dsa-nav-main--color);
+        color: var(--dsa-nav-main__link--color);
       }
 
       &--active {
         .nav-main__link {
-          color: var(--dsa-nav-main--color_active);
-          font-weight: var(--dsa-nav-main--font-weight_active);
+          color: var(--dsa-nav-main__link--color_active);
+          font-weight: var(--dsa-nav-main__link--font-weight_active);
         }
       }
     }
@@ -43,26 +43,27 @@
   &__list {
     &:hover {
       .nav-main__link {
-        color: var(--dsa-nav-main--color_hover);
+        opacity: var(--dsa-nav-main__link--opacity_hover);
       }
     }
   }
 
   a.nav-main__link {
     /* critical:start */
-    font: var(--dsa-nav-main--font);
-    font-weight: var(--dsa-nav-main--font-weight);
-    color: var(--dsa-nav-main--color);
+    font: var(--dsa-nav-main__link--font);
+    font-weight: var(--dsa-nav-main__link--font-weight);
+    color: var(--dsa-nav-main__link--color);
     position: relative;
     display: block;
-    padding: var(--dsa-nav-main-link--padding);
+    padding: var(--dsa-nav-main__link--padding);
 
     &:hover {
-      color: var(--dsa-nav-main--color);
+      opacity: 1;
+      color: var(--dsa-nav-main__link--color_active);
     }
 
     &:active {
-      color: var(--dsa-nav-main--color_active);
+      color: var(--dsa-nav-main__link--color_active);
     }
     /* critical:end */
   }

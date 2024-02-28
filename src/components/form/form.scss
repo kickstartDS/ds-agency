@@ -2,30 +2,72 @@
 @import "../../selectors";
 
 #{$selectors} {
-  --c-form-check_box--size: var(--dsa-checkbox--size, 1rem);
-  --c-form-check_box--border: var(--dsa-checkbox--border, var(--ks-border-width-default) solid);
-  --c-form-check_box--border-color: var(--dsa-checkbox--border-color, var(--ks-border-color-interface-interactive));
+  .c-form-check {
+    --c-form-check_box--size: var(--dsa-form-check--size, 1rem);
 
-  --c-form-check_box--background: var(--dsa-checkbox--background, var(--ks-background-color-interface-interactive));
+    --c-form-check_box--border: var(--dsa-form-check--border, var(--ks-border-width-default) solid);
+    --c-form-check_box--border-color: var(--dsa-form-check--border-color, var(--ks-border-color-interface-interactive));
+    --c-form-check_box-hover--border-color: var(
+      --dsa-form-check--border-color_hover,
+      var(--ks-border-color-interface-interactive-hover)
+    );
+    --c-form-check_box-focus--border-color: var(
+      --dsa-form-check--border-color_focus,
+      var(--ks-border-color-interface-interactive-active)
+    );
+    --c-form-check_box-checked--border-color: var(
+      --dsa-form-check--border-color_checked,
+      var(--ks-border-color-interface-interactive-selected)
+    );
 
-  --c-form-check_box-hover--border-color: var(
-    --dsa-checkbox--border-color_hover,
-    var(--ks-border-color-interface-interactive-hover)
-  );
+    --c-form-check_box--background: var(--dsa-form-check--background, var(--ks-background-color-interface-interactive));
+    --c-form-check_box-checked--background: var(
+      --dsa-form-check--background_checked,
+      var(--ks-background-color-interface-interactive-selected)
+    );
 
-  --c-form-check_box-focus--border-color: var(
-    --dsa-checkbox--border-color_focus,
-    var(--ks-border-color-interface-interactive-active)
-  );
-  --c-form-check_box-focus--shadow: var(--dsa-checkbox--shadow_focus, 0 0 4px 0);
-  --c-form-check_checkmark--color: var(--dsa-form-checkbox__checkmark--color, var(--ks-color-primary-inverted));
+    --c-form-check_box-focus--shadow: var(--dsa-form-check--shadow_focus, 0 0 4px 0);
 
-  --c-form-check_box-checked--border-color: var(
-    --dsa-checkbox--border-color_checked,
-    var(--ks-border-color-interface-interactive-selected)
-  );
-  --c-form-check_box-checked--background: var(
-    --dsa-checkbox--background_checked,
-    var(--ks-background-color-interface-interactive-selected)
-  );
+    --c-form-check_checkmark--color: var(--dsa-form-check__checkmark--color, var(--ks-color-fg));
+  }
+
+  .c-form-field {
+    --c-form-field--border: var(--dsa-form-field--border, var(--ks-border-width-default) solid);
+    --c-form-field--border-color: var(--dsa-form-field--border-color, var(--ks-border-color-interface-interactive));
+    --c-form-field-hover--border-color: var(
+      --dsa-form-field--border-color_hover,
+      var(--ks-border-color-interface-interactive-hover)
+    );
+    --c-form-field-focus--border-color: var(
+      --dsa-form-field--border-color_focus,
+      var(--ks-border-color-interface-interactive-active)
+    );
+
+    --c-form-field--background: var(--dsa-form-field--background, var(--ks-background-color-interface-interactive));
+
+    --c-form-field_focus--shadow: var(--dsa-form-field--shadow_focus, 0 0 4px 0);
+
+    --c-form-field--background-disabled: var(
+      var(--ks-background-color-intergface-interactive-disabled),
+      var(--ks-background-color-interface-interactive-disabled)
+    );
+    --c-form-field--color: var(--dsa-form-field--color, var(--ks-text-color-interface));
+    --c-form-field_hover--border-color: var(
+      --dsa-form-field--border-color_hover,
+      var(--ks-border-color-interface-interactive-hover)
+    );
+    --c-form-field_focus--border-color: var(
+      --dsa-form-field--border-color_active,
+      var(--ks-border-color-interface-interactive-active)
+    );
+    --c-form-field_focus--shadow: 0 0 4px -1px;
+    --c-form-field_icon--size: calc(var(--ks-line-height-interface-m) * 0.75em);
+    --c-form-field_icon--color: var(--ks-color-fg-alpha-3);
+
+    &__input {
+      &::placeholder {
+        color: var(--dsa-form-field__placeholder--color, var(--ks-color-fg-alpha-5));
+      }
+    }
+  }
 }

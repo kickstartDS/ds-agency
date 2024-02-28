@@ -33,7 +33,7 @@
   }
 
   &__label {
-    color: var(--dsa-stats__label--color, var(--ks-color-fg)); //TBD: semantic fg text color
+    color: var(--dsa-stats__label--color, var(--ks-text-color-display));
     font: var(--dsa-stats__label--font, var(--ks-font-interface-xl));
     text-align: center;
   }

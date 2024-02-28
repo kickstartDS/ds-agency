@@ -1,9 +1,30 @@
 @use "./selectors" as *;
 
 #{$selectors} {
+  --dsa-text-color-on-primary: var(--ks-color-fg);
+  --dsa-text-color-on-primary-inverted: var(--ks-color-fg-inverted);
+
+  --ks-text-color-copy: var(--ks-color-fg-alpha-3);
+  --ks-text-color-display: var(--ks-color-fg);
+
+  --ks-border-color-card: var(--ks-color-fg-alpha-9);
+  --ks-border-color-card-interactive: var(--ks-color-fg-alpha-9);
+  --ks-border-color-card-interactive-hover: var(--ks-color-fg-alpha-7);
+  --ks-border-color-card-interactive-active: var(--ks-color-fg-alpha-7);
+
+  --ks-background-color-card: var(--ks-color-fg-alpha-3);
+  --ks-background-color-card-interactive: var(--ks-color-fg-alpha-9);
+  --ks-background-color-card-interactive-hover: var(--ks-color-fg-alpha-7);
+  --ks-background-color-card-interactive-active: var(--ks-color-fg-alpha-7);
+
+  --ks-text-color-card: var(--ks-color-fg);
+  --ks-text-color-card-interactive: var(--ks-color-fg-alpha-3);
+  --ks-text-color-card-interactive-hover: var(--ks-color-fg-alpha-3);
+  --ks-text-color-card-interactive-active: var(--ks-color-fg-alpha-3);
+
   --dsa-topic--font: var(--ks-font-display-m);
   --dsa-topic--font-weight: var(--ks-font-weight-medium);
-  --dsa-topic--color: var(--ks-color-fg);
+  --dsa-topic--color: var(--ks-text-color-display);
   --dsa-topic--font-family: var(--ks-font-family-display);
 
   --dsa-link--font-weight: var(--ks-font-weight-semi-bold);

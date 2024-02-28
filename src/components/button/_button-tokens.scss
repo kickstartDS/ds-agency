@@ -9,9 +9,9 @@
 
   //PRIMARY
 
-  --dsa-button_primary--color: var(--ks-color-fg);
-  --dsa-button_primary--color_hover: var(--ks-color-fg);
-  --dsa-button_primary--color_active: var(--ks-color-fg);
+  --dsa-button_primary--color: var(--dsa-text-color-on-primary);
+  --dsa-button_primary--color_hover: var(--dsa-text-color-on-primary);
+  --dsa-button_primary--color_active: var(--dsa-text-color-on-primary);
 
   --dsa-button_primary--background-color: var(--ks-background-color-primary-interactive);
   --dsa-button_primary--background-color_hover: var(--ks-background-color-primary-interactive-hover);
@@ -22,9 +22,9 @@
 
   //SECONDARY
 
-  --dsa-button_secondary--color: var(--ks-color-fg-alpha-2);
-  --dsa-button_secondary--color_hover: var(--ks-color-fg);
-  --dsa-button_secondary--color_active: var(--ks-color-fg);
+  --dsa-button_secondary--color: var(--dsa-text-color-on-primary);
+  --dsa-button_secondary--color_hover: var(--dsa-text-color-on-primary);
+  --dsa-button_secondary--color_active: var(--dsa-text-color-on-primary);
 
   --dsa-button_secondary--border-color: transparent;
   --dsa-button_secondary--border-color_hover: transparent;
@@ -37,9 +37,9 @@
   --dsa-button_secondary--background-color_active: var(--ks-background-color-interface-interactive-active);
 
   //TERCIARY
-  --dsa-button_terciary--color: var(--ks-color-fg-alpha-2);
-  --dsa-button_terciary--color_hover: var(--ks-color-fg);
-  --dsa-button_terciary--color_active: var(--ks-color-fg);
+  --dsa-button_terciary--color: var(--dsa-text-color-on-primary);
+  --dsa-button_terciary--color_hover: var(--dsa-text-color-on-primary);
+  --dsa-button_terciary--color_active: var(--dsa-text-color-on-primary);
 
   --dsa-button_terciary--border-color: var(--ks-border-color-interface-interactive);
   --dsa-button_terciary--border-color_hover: var(--ks-border-color-interface-interactive-hover);

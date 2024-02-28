@@ -9,9 +9,9 @@
   --c-button--border-width: var(--dsa-button--border-width, var(--ks-border-width-default));
 
   &.c-button--solid {
-    --c-button--color: var(--dsa-button_primary--color, var(--ks-color-fg));
-    --c-button--color-hover: var(--dsa-button_primary--color_hover, var(--ks-color-fg));
-    --c-button--color-active: var(--dsa-button_primary--color_active, var(--ks-color-fg));
+    --c-button--color: var(--dsa-button_primary--color, var(--dsa-text-color-on-primary));
+    --c-button--color-hover: var(--dsa-button_primary--color_hover, var(--dsa-text-color-on-primary));
+    --c-button--color-active: var(--dsa-button_primary--color_active, var(--dsa-text-color-on-primary));
 
     --c-button--border-color: var(--dsa-button_primary--border-color, none);
     --c-button--border-color-hover: var(--dsa-button_primary--border-color_hover, none);
@@ -40,8 +40,8 @@
     padding: var(--dsa-button--padding);
 
     --c-button--color: var(--dsa-button_secondary--color, var(--ks-color-fg-alpha-2));
-    --c-button--color-hover: var(--dsa-button_secondary--color_hover, var(--ks-color-fg));
-    --c-button--color-active: var(--dsa-button_secondary--color_active, var(--ks-color-fg));
+    --c-button--color-hover: var(--dsa-button_secondary--color_hover, var(--dsa-text-color-on-primary));
+    --c-button--color-active: var(--dsa-button_secondary--color_active, var(--dsa-text-color-on-primary));
 
     --c-button--border-color: var(--dsa-button_secondary--border-color, none);
     --c-button--border-color-hover: var(--dsa-button_secondary--border-color_hover, none);
@@ -70,8 +70,8 @@
     padding: var(--dsa-button--padding);
 
     --c-button--color: var(--dsa-button_terciary--color, var(--ks-color-fg-alpha-2));
-    --c-button--color-hover: var(--dsa-button_terciary--color_hover, var(--ks-color-fg));
-    --c-button--color-active: var(--dsa-button_terciary--color_active, var(--ks-color-fg));
+    --c-button--color-hover: var(--dsa-button_terciary--color_hover, var(--dsa-text-color-on-primary));
+    --c-button--color-active: var(--dsa-button_terciary--color_active, var(--dsa-text-color-on-primary));
 
     --c-button--border-color: var(--dsa-button_terciary--border-color, var(--ks-border-color-interface-interactive));
     --c-button--border-color-hover: var(

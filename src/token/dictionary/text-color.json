@@ -3,7 +3,7 @@
     "text-color": {
       "default": {
         "base": {
-          "value": "{ks.color.fg.alpha.3.base}",
+          "value": "{ks.color.fg.base}",
           "attributes": {
             "category": "color"
           },
@@ -123,7 +123,7 @@
       },
       "interface": {
         "base": {
-          "value": "{ks.color.fg.alpha.2.base}",
+          "value": "{ks.color.fg.alpha.3.base}",
           "attributes": {
             "category": "color"
           },
@@ -134,7 +134,7 @@
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.fg.base}",
+            "value": "{ks.color.fg.alpha.3.base}",
             "attributes": {
               "category": "color"
             },
@@ -194,7 +194,7 @@
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.fg-inverted.base}",
+            "value": "{ks.color.fg-inverted.alpha.3.base}",
             "attributes": {
               "category": "color"
             },

@@ -41,7 +41,7 @@
 
   .dsa-headline__headline {
     font: var(--dsa-headline--font);
-    color: var(--dsa-headline--color, var(--ks-color-fg)); //TBD: semantic fg text color
+    color: var(--dsa-headline--color, var(--ks-text-color-display));
     font-weight: var(--dsa-headline--font-weight);
     margin: 0;
   }

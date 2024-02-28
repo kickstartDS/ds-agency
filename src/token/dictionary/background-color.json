@@ -206,7 +206,7 @@
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.fg.alpha.8.base}",
+            "value": "{ks.color.fg.alpha.9.base}",
             "attributes": {
               "category": "color"
             },
@@ -217,7 +217,7 @@
           },
           "disabled": {
             "base": {
-              "value": "{ks.color.fg.alpha.8.base}",
+              "value": "{ks.color.fg.alpha.5.base}",
               "attributes": {
                 "category": "color"
               },
@@ -253,7 +253,7 @@
           },
           "selected": {
             "base": {
-              "value": "{ks.color.fg.alpha.6.base}",
+              "value": "{ks.color.secondary.base}",
               "attributes": {
                 "category": "color"
               },
@@ -278,7 +278,7 @@
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.fg-inverted.alpha.8.base}",
+            "value": "{ks.color.fg-inverted.alpha.9.base}",
             "attributes": {
               "category": "color"
             },
@@ -289,7 +289,7 @@
           },
           "disabled": {
             "base": {
-              "value": "{ks.color.fg-inverted.alpha.9.base}",
+              "value": "{ks.color.fg-inverted.alpha.5.base}",
               "attributes": {
                 "category": "color"
               },

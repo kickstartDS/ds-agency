@@ -9,11 +9,7 @@
     font: var(--dsa-logos-tagline--font, var(--dsa-headline_h3--font), var(--ks-font-display-m));
     font-weight: var(--dsa-logos-tagline--font-weight, var(--dsa-headline--font-weight), var(--ks-font-weight-medium));
     max-width: var(--l-section--content-width-narrow);
-    color: var(
-      --dsa-logos-tagline--color,
-      var(--dsa-headline--color),
-      var(--ks-color-fg)
-    ); //TBD: semantic fg text color
+    color: var(--dsa-logos-tagline--color, var(--dsa-headline--color), var(--ks-text-color-display));
     width: 100%;
   }
 
