@@ -19,10 +19,10 @@ export const TextContextDefault = forwardRef<
     ref
   ) => {
     const layoutClass = `${
-      layout === "multiColumn" ? "c-rich-text--columns" : ""
+      layout === "multiColumn" ? "dsa-text--columns" : ""
     }`;
-    const highlightClass = `${highlightText ? "c-rich-text--highlight" : ""}`;
-    const alignClass = `${align === "center" ? "c-rich-text--center" : ""}`;
+    const highlightClass = `${highlightText ? "dsa-text--highlight" : ""}`;
+    const alignClass = `${align === "center" ? "dsa-text--center" : ""}`;
 
     return (
       <RichText

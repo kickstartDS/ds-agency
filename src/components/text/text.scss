@@ -5,8 +5,8 @@
   color: var(--dsa-text--color, var(--dsa-rich-text--color), var(--ks-text-color-default));
 
   &--highlight.c-rich-text {
-    color: var(--dsa-text-highlight--color, var(--ks-text-color-primary));
-    font: var(--dsa-text-highlight--font, var(--ks-font-copy-l));
+    color: var(--dsa-text_highlight--color, var(--ks-text-color-default));
+    font: var(--dsa-text_highlight--font, var(--ks-font-copy-l));
   }
 
   &--center.c-rich-text {
