@@ -1,3 +1,22 @@
+# v3.6.5 (Thu Feb 29 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(styledictrionary): update style dictionaries ([@fleven-kds](https://github.com/fleven-kds))
+- feat(branding-token): adjust theme branding files ([@fleven-kds](https://github.com/fleven-kds))
+- feat(token): execute init ([@fleven-kds](https://github.com/fleven-kds))
+- feat(blog-teaser): faulty token fix ([@fleven-kds](https://github.com/fleven-kds))
+- feat(token): minor tweaks ([@fleven-kds](https://github.com/fleven-kds))
+- feat(text): fix faulty selectors ([@fleven-kds](https://github.com/fleven-kds))
+- feat(token): update token ([@fleven-kds](https://github.com/fleven-kds))
+- feat(component-token): add new token ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.4 (Tue Feb 27 2024)
 
 #### ⚠️ Pushed to `main`
