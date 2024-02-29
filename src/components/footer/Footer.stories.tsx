@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { pack, unpack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
+import { pack, unpack, getArgsShared } from "@kickstartds/core/lib/storybook";
+
 import { Footer as FooterComponent } from "./FooterComponent";
 import schema from "./footer.schema.dereffed.json";
 import cssprops from "./footer-tokens.json";
@@ -27,9 +28,11 @@ const meta: Meta = {
   },
   excludeStories: ["footerProps"],
 };
-type Story = StoryObj<typeof FooterComponent>;
 
 export default meta;
+
+type Story = StoryObj<typeof FooterComponent>;
+
 export const Footer: Story = {
   parameters: {
     viewport: {

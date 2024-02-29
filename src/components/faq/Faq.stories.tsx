@@ -2,23 +2,22 @@ import { Meta, StoryObj } from "@storybook/react";
 import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
-import cssprops from "./faq-tokens.json";
 import { Faq } from "./FaqComponent";
 import schema from "./faq.schema.dereffed.json";
+import cssprops from "./faq-tokens.json";
 
-const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
   title: "Components/Faq",
-  args,
-  argTypes,
   component: Faq,
   parameters: {
     jsonschema: schema,
     cssprops,
   },
+  ...getArgsShared(schema as JSONSchema7),
 };
 
 export default meta;
+
 type Story = StoryObj<typeof Faq>;
 
 export const DropdownList: Story = {

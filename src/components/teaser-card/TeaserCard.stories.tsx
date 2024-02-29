@@ -1,22 +1,23 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { JSONSchema7 } from "json-schema";
-import { TeaserCard } from "./TeaserCardComponent";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
+
+import { TeaserCard } from "./TeaserCardComponent";
 import schema from "./teaser-card.schema.dereffed.json";
 import cssprops from "./teaser-card-tokens.json";
 
-const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta<typeof TeaserCard> = {
   title: "Components/Teaser Card",
-  args,
-  argTypes,
   component: TeaserCard,
   parameters: {
     jsonschema: schema,
     cssprops,
   },
+  ...getArgsShared(schema as JSONSchema7),
 };
+
 export default meta;
+
 type Story = StoryObj<typeof TeaserCard>;
 
 export const ProductTiles: Story = {

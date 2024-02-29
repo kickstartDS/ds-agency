@@ -1,24 +1,24 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
+import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
+
 import { Headline } from "./HeadlineComponent";
 import schema from "./headline.schema.dereffed.json";
 import cssprops from "./headline-tokens.json";
 
-const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
   title: "Components/Headline",
-  args,
-  argTypes,
   component: Headline,
   parameters: {
     jsonschema: schema,
     cssprops,
   },
+  ...getArgsShared(schema as JSONSchema7),
 };
-type Story = StoryObj<typeof Headline>;
 
 export default meta;
+
+type Story = StoryObj<typeof Headline>;
 
 export const H1: Story = {
   parameters: {

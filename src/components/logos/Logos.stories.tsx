@@ -15,7 +15,9 @@ const meta: Meta<typeof Logos> = {
   },
   ...getArgsShared(schema as JSONSchema7),
 };
+
 export default meta;
+
 type Story = StoryObj<typeof Logos>;
 
 export const CenteredWithButton: Story = {

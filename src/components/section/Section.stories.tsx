@@ -2,20 +2,21 @@ import { Meta, StoryObj } from "@storybook/react";
 import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import sectionStories from "@kickstartds/base/lib/section/section.stories";
+
 import { TeaserCard } from "../teaser-card/TeaserCardComponent";
-import schema from "./section.schema.dereffed.json";
 import { Section } from "./SectionComponent";
+import schema from "./section.schema.dereffed.json";
 import cssprops from "./section-tokens.json";
 
 const meta: Meta<typeof Section> = {
   ...sectionStories,
   title: "Layout/Section",
-  ...getArgsShared(schema as JSONSchema7),
   component: Section,
   parameters: {
     jsonschema: schema,
     cssprops,
   },
+  ...getArgsShared(schema as JSONSchema7),
   render: (args) => (
     <Section {...args}>
       <TeaserCard
@@ -55,7 +56,9 @@ const meta: Meta<typeof Section> = {
     </Section>
   ),
 };
+
 export default meta;
+
 type Story = StoryObj<typeof Section>;
 
 export const Cards: Story = {

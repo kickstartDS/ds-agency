@@ -1,24 +1,24 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
+import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
+
 import { Checkbox } from "@kickstartds/form/lib/checkbox/";
 import schema from "@kickstartds/form/lib/checkbox/checkbox.schema.dereffed.json";
 import cssprops from "../form-tokens.json";
 
-const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta = {
   title: "Form / Checkbox",
-  args,
-  argTypes,
   component: Checkbox,
   parameters: {
     jsonschema: schema,
     cssprops,
   },
+  ...getArgsShared(schema as JSONSchema7),
 };
-type Story = StoryObj<typeof Checkbox>;
 
 export default meta;
+
+type Story = StoryObj<typeof Checkbox>;
 
 export const Default: Story = {
   parameters: {

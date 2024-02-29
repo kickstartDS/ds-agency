@@ -6,7 +6,6 @@ import { Stats } from "./StatsComponent";
 import schema from "./stats.schema.dereffed.json";
 import cssprops from "./stats-tokens.json";
 
-const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta<typeof Stats> = {
   title: "Components/Stats",
   component: Stats,
@@ -14,10 +13,11 @@ const meta: Meta<typeof Stats> = {
     jsonschema: schema,
     cssprops,
   },
-  args,
-  argTypes,
+  ...getArgsShared(schema as JSONSchema7),
 };
+
 export default meta;
+
 type Story = StoryObj<typeof Stats>;
 
 export const WithDescription: Story = {

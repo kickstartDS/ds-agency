@@ -3,23 +3,21 @@ import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Testimonials } from "./TestimonialsComponent";
+import schema from "./testimonials.schema.dereffed.json";
 import cssprops from "./testimonials-tokens.json";
 
-import schema from "./testimonials.schema.dereffed.json";
-
-const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta<typeof Testimonials> = {
   title: "Components/Testimonials",
-  args,
-  argTypes,
   component: Testimonials,
   parameters: {
     jsonschema: schema,
     cssprops,
   },
+  ...getArgsShared(schema as JSONSchema7),
 };
 
 export default meta;
+
 type Story = StoryObj<typeof Testimonials>;
 
 export const Simple: Story = {

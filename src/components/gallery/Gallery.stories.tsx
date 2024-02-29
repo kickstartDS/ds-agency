@@ -6,19 +6,18 @@ import { Gallery } from "./GalleryComponent";
 import schema from "./gallery.schema.dereffed.json";
 import cssprops from "./gallery-tokens.json";
 
-const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 const meta: Meta<typeof Gallery> = {
   title: "Components/Gallery",
-  args,
-  argTypes,
   component: Gallery,
   parameters: {
     jsonschema: schema,
     cssprops,
   },
+  ...getArgsShared(schema as JSONSchema7),
 };
 
 export default meta;
+
 type Story = StoryObj<typeof Gallery>;
 
 export const SmallSquaresWithLightbox: Story = {

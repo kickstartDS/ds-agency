@@ -1,21 +1,22 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { getArgsShared, pack } from "@kickstartds/core/lib/storybook";
 import { JSONSchema7 } from "json-schema";
+import { getArgsShared, pack } from "@kickstartds/core/lib/storybook";
+
 import { BlogPost as BlogPostComponent } from "./BlogPostComponent";
 import schema from "../blog-post.schema.dereffed.json";
-
-const { args, argTypes } = getArgsShared(schema as JSONSchema7);
 
 const meta: Meta<typeof BlogPostComponent> = {
   component: BlogPostComponent,
   title: "Pages/CMS",
   parameters: {
+    jsonschema: schema,
     layout: "fullscreen",
   },
-  args,
-  argTypes,
+  ...getArgsShared(schema as JSONSchema7),
 };
+
 export default meta;
+
 type Story = StoryObj<typeof BlogPostComponent>;
 
 export const BlogPost: Story = {
