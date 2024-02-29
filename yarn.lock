@@ -2200,10 +2200,10 @@
   resolved "https://registry.npmjs.org/@juggle/resize-observer/-/resize-observer-3.4.0.tgz"
   integrity sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==
 
-"@kickstartds/base@2.3.0-beta.1":
-  version "2.3.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-2.3.0-beta.1.tgz#a070fa9fa88935973d21a1b915dcd1b6f9e54597"
-  integrity sha512-SIsIiao9XuncnE88UO1xDeeOmuhONRff8daw3t0LrYOeXAWAk1Qk6eGjuLiV6d3cR3wuuXor0W6LEtilZkXBJg==
+"@kickstartds/base@2.3.0-canary.1615.6666.0":
+  version "2.3.0-canary.1615.6666.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-2.3.0-canary.1615.6666.0.tgz#715a699cd793447daf01f7fd8478872a08d5f04f"
+  integrity sha512-+BCsZYBLaYxcUIBE+oWTVZYf32RJvR62eBnfvch7UGL7eT1y2uuuBABNrQoR4vHSleLK7rmgim/LICeWRjoy7w==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
@@ -2212,19 +2212,19 @@
     photoswipe "^5.3.7"
     vhtml "^2.2.0"
 
-"@kickstartds/blog@2.3.0-beta.1":
-  version "2.3.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-2.3.0-beta.1.tgz#4d5a6633052b501e1cfc8946de06e1d0a0ff17a8"
-  integrity sha512-Yw66WA3Caa4jDXmkVoCvpWg8yaxZpmkc7XE96OhvfAskaNmt1Fj/QtwgHntnnALELJznDotYv5vWFex8BH1bwg==
+"@kickstartds/blog@2.3.0-canary.1615.6666.0":
+  version "2.3.0-canary.1615.6666.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-2.3.0-canary.1615.6666.0.tgz#4f6638f61850c360e974a8bca0c7e476f74298bf"
+  integrity sha512-MQkEl0qpGZAUdSV/mH50jnFigDTXL4IIhqduJtWq4Ie9Nyc7RtA52NqJdnxbHfphQTYP3lnjxN4pIe2AYvUxeA==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
     date-fns "^2.30.0"
 
-"@kickstartds/core@3.0.0-beta.0":
-  version "3.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/core/-/core-3.0.0-beta.0.tgz#cf8e5e21574d7d170f339e9d08c7278ae2f9f25f"
-  integrity sha512-QcQ8XNtygosOaebNLWQ6UZuFnpB4O1HBhPsLHHH0DlVrYKNisd99nyr1P5zy4GE4Qw9VBpWJao12Ap+e13QuVw==
+"@kickstartds/core@2.3.0-canary.1615.6666.0":
+  version "2.3.0-canary.1615.6666.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/core/-/core-2.3.0-canary.1615.6666.0.tgz#009e8c2029e339aa886cbf662f87e66e35c88aaf"
+  integrity sha512-v/bW6mTE6cWScGb5aYKyenl4EHLQNjb1oppNFOO4iP2ZDcuZT7jWBZnw75gkw7AW01e2vSTn5QKGox32zDzi7g==
   dependencies:
     "@babel/runtime" "^7.21.5"
     bourbon "^7.3.0"
@@ -2239,10 +2239,10 @@
     pubsub-js "^1.9.4"
     sass "^1.62.1"
 
-"@kickstartds/form@2.3.0-beta.1":
-  version "2.3.0-beta.1"
-  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-2.3.0-beta.1.tgz#6286a1b031d7c22e577582a68a7dcd45274018f0"
-  integrity sha512-niZtd1EifOmN2348iXS8QB2lFhSZLTq+RjCCDPc2+sqUK734IUVSClJArTcAOk7ke+R8Oiers9EYkldy/ykw7g==
+"@kickstartds/form@2.3.0-canary.1615.6666.0":
+  version "2.3.0-canary.1615.6666.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-2.3.0-canary.1615.6666.0.tgz#cc995985f09342fbcb54efea471caea21b1fe9e8"
+  integrity sha512-EJ9Q2WNsY/wGbMt20WgYCkf01tkun4rchBrLRTzLLVMgMFmWxgbQvWF/9fMXtwbKtl9WLGyy0ksBMYW475iW/Q==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
@@ -2353,16 +2353,17 @@
   resolved "https://registry.yarnpkg.com/@kickstartds/storybook-addon-jsonschema/-/storybook-addon-jsonschema-2.0.1.tgz#4ed35b2f4647d12169941f76d40b7965db80211b"
   integrity sha512-tjLeFipLK2haHDJ58yiWBpPJmZTjNW1/p3pyjZvrW/GDeiS/NosA9Ybn0gsdVB66ysiSxW8UT7KChuCfYNcLAg==
 
-"@kickstartds/style-dictionary@^3.0.0-next.1":
-  version "3.0.0-next.1"
-  resolved "https://registry.npmjs.org/@kickstartds/style-dictionary/-/style-dictionary-3.0.0-next.1.tgz#c4e92e68cc3fabe0380be063efa331c17a87dca2"
-  integrity sha512-z0qARvD6LL9H+aE7CbgnpeVXpx4kIIyPLU7dnKftNPRoow4UFWoeje4K5LPcaUTjhO/Mv3hbGliILBOyhIOUuQ==
+"@kickstartds/style-dictionary@2.3.0-canary.1615.6666.0":
+  version "2.3.0-canary.1615.6666.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/style-dictionary/-/style-dictionary-2.3.0-canary.1615.6666.0.tgz#a314eea01a24265cb3c3b4e1ea3e37cbecfea08f"
+  integrity sha512-prHsGUKoB/7YrfdWwPZoyWeSHMbOkhE+mECEIbIyAvWcuEjqPX3odtsfqm3hYTBx5NNNVkDfA+8MU9BEXBg6GA==
   dependencies:
     "@babel/core" "^7.21.4"
     "@babel/preset-react" "^7.18.6"
     "@mapbox/hast-util-to-jsx" "^2.0.0"
     ajv "^8.10.0"
     bezier-js "^6.1.0"
+    change-case "^4.1.2"
     lodash "^4.17.21"
     node-html-parser "^5.2.0"
     postcss "^8.4.31"

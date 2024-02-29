@@ -50,19 +50,19 @@
 
     --c-button--background-color: var(
       --dsa-button_secondary--background-color,
-      var(--ks-background-color-clear-interactive)
+      var(--ks-background-color-interface-interactive)
     );
     --c-button--background-color-hover: var(
       --dsa-button_secondary--background-color_hover,
-      var(--ks-background-color-clear-interactive-hover)
+      var(--ks-background-color-interface-interactive-hover)
     );
     --c-button--background-color-active: var(
       --dsa-button_secondary--background-color_active,
-      var(--ks-background-color-clear-interactive-active)
+      var(--ks-background-color-interface-interactive-active)
     );
     --c-button--background-color-selected: var(
       --dsa-button_secondary--background-color_selected,
-      var(--ks-background-color-clear-interactive-selected) ;
+      var(--ks-background-color-interface-interactive-selected) ;
     );
   }
 
