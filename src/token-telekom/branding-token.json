@@ -1,11 +1,13 @@
 {
   "color": {
     "primary": "#e20074",
-    "primary-inverted": "#fff",
+    "primary-inverted": "#e20074",
     "secondary": "#007faf",
-    "secondary-inverted": "#fff",
-    "background": "#fff ",
+    "secondary-inverted": "#007faf",
+    "background": "#fff",
+    "background-inverted": "#383838",
     "foreground": "#2c2c2c",
+    "foreground-inverted": "#fff",
     "bg": "#fff",
     "bg-inverted": "#383838",
     "link": "#007faf",
