@@ -46,6 +46,7 @@
   }
 
   .c-rich-text {
+    font: var(--dsa-blog-teaser__copy--font, var(--ks-font-copy-m));
     transition: var(--ks-transition-hover);
     transition-property: color;
     display: flex;
