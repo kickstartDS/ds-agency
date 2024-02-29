@@ -71,7 +71,7 @@
     "watch:dictionary": "yarn build-tokens && chokidar \"src/token/dictionary/*.json\" -c \"yarn build-tokens\""
   },
   "resolutions": {
-    "@kickstartds/style-dictionary": "2.3.0-canary.1615.6666.0"
+    "@kickstartds/style-dictionary": "2.3.0-canary.1615.6674.0"
   },
   "dependencies": {
     "@bedrock-layout/primitives": "^3.0.23",
@@ -82,11 +82,11 @@
   "devDependencies": {
     "@auto-it/npm": "^11.0.1",
     "@auto-it/released": "^11.0.1",
-    "@kickstartds/base": "2.3.0-canary.1615.6666.0",
-    "@kickstartds/blog": "2.3.0-canary.1615.6666.0",
-    "@kickstartds/core": "2.3.0-canary.1615.6666.0",
-    "@kickstartds/form": "2.3.0-canary.1615.6666.0",
-    "@kickstartds/style-dictionary": "2.3.0-canary.1615.6666.0",
+    "@kickstartds/base": "2.3.0-canary.1615.6674.0",
+    "@kickstartds/blog": "2.3.0-canary.1615.6674.0",
+    "@kickstartds/core": "2.3.0-canary.1615.6674.0",
+    "@kickstartds/form": "2.3.0-canary.1615.6674.0",
+    "@kickstartds/style-dictionary": "2.3.0-canary.1615.6674.0",
     "@kickstartds/storybook-addon-component-tokens": "1.0.0",
     "@kickstartds/storybook-addon-html": "^0.0.2",
     "@kickstartds/storybook-addon-jsonschema": "^2.0.1",

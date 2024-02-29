@@ -31,6 +31,13 @@
       }
     },
     "font-weight": {
+      "light": {
+        "value": 300,
+        "token": {
+          "category": "Font Weights",
+          "presenter": "FontWeight"
+        }
+      },
       "regular": {
         "value": 400,
         "token": {
@@ -38,22 +45,15 @@
           "presenter": "FontWeight"
         }
       },
-      "medium": {
+      "semi-bold": {
         "value": 500,
         "token": {
           "category": "Font Weights",
           "presenter": "FontWeight"
         }
       },
-      "semi-bold": {
-        "value": 700,
-        "token": {
-          "category": "Font Weights",
-          "presenter": "FontWeight"
-        }
-      },
       "bold": {
-        "value": 800,
+        "value": 700,
         "token": {
           "category": "Font Weights",
           "presenter": "FontWeight"
