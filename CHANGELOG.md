@@ -1,3 +1,15 @@
+# v3.6.6 (Thu Feb 29 2024)
+
+#### ⚠️ Pushed to `main`
+
+- chore: align all stories files ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.6.5 (Thu Feb 29 2024)
 
 #### ⚠️ Pushed to `main`
