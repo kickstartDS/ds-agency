@@ -1,3 +1,15 @@
+# v3.6.8 (Fri Mar 01 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: more forms scss ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.6.7 (Fri Mar 01 2024)
 
 #### ⚠️ Pushed to `main`
