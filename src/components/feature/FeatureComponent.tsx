@@ -4,7 +4,6 @@ import { Icon } from "@kickstartds/base/lib/icon";
 import { Button } from "../button/ButtonComponent";
 import { FeatureProps } from "./FeatureProps";
 import { Link } from "@kickstartds/base/lib/link";
-import "./feature.scss";
 
 export const FeatureContextDefault = forwardRef<
   HTMLDivElement,
