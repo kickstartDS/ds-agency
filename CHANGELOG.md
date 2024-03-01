@@ -1,3 +1,15 @@
+# v3.6.9 (Fri Mar 01 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: even more forms css ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.6.8 (Fri Mar 01 2024)
 
 #### ⚠️ Pushed to `main`
