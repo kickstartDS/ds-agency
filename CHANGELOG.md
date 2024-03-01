@@ -1,3 +1,16 @@
+# v3.6.7 (Fri Mar 01 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- fix: forms scss ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.6.6 (Thu Feb 29 2024)
 
 #### ⚠️ Pushed to `main`
