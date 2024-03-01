@@ -1,5 +1,5 @@
 diff --git a/node_modules/storybook-addon-playroom/dist/manager.js b/node_modules/storybook-addon-playroom/dist/manager.js
-index 21ac58f..6589bb7 100644
+index 21ac58f..78e80ed 100644
 --- a/node_modules/storybook-addon-playroom/dist/manager.js
 +++ b/node_modules/storybook-addon-playroom/dist/manager.js
 @@ -8,6 +8,6 @@ function _interopDefault (e) { return e && e.__esModule ? e : { default: e }; }
@@ -10,8 +10,9 @@ index 21ac58f..6589bb7 100644
 +var r="storybook/playroom",e=`${r}/tab`,a="playroom",s={UPDATE:`${r}/update`};var f=theming.styled.p({textAlign:"center"}),A=theming.styled.iframe({border:"0 none",height:"100%",width:"100%"}),p=({active:o})=>{let[t,i]=m.useState("");return managerApi.useChannel({[s.UPDATE]:i}),o?t?m__default.default.createElement(A,{key:t,allowFullScreen:!0,src:t,title:"Playroom"}):m__default.default.createElement(f,null,"Playroom has been disabled for this story."):null};managerApi.addons.register(r,()=>{managerApi.addons.add(e,{type:managerApi.types.PANEL,title:"Playroom",route:({storyId:o})=>`/playroom/${o}`,match:({viewMode:o})=>o==="playroom",render:p,paramKey:a});});
  //# sourceMappingURL=out.js.map
  //# sourceMappingURL=manager.js.map
+\ No newline at end of file
 diff --git a/node_modules/storybook-addon-playroom/dist/manager.mjs b/node_modules/storybook-addon-playroom/dist/manager.mjs
-index aff2d19..1dd6909 100644
+index aff2d19..d7b510f 100644
 --- a/node_modules/storybook-addon-playroom/dist/manager.mjs
 +++ b/node_modules/storybook-addon-playroom/dist/manager.mjs
 @@ -2,6 +2,6 @@ import { addons, types, useChannel } from '@storybook/manager-api';
@@ -22,3 +23,19 @@ index aff2d19..1dd6909 100644
 +var r="storybook/playroom",e=`${r}/tab`,a="playroom",s={UPDATE:`${r}/update`};var f=styled.p({textAlign:"center"}),A=styled.iframe({border:"0 none",height:"100%",width:"100%"}),p=({active:o})=>{let[t,i]=useState("");return useChannel({[s.UPDATE]:i}),o?t?m.createElement(A,{key:t,allowFullScreen:!0,src:t,title:"Playroom"}):m.createElement(f,null,"Playroom has been disabled for this story."):null};addons.register(r,()=>{addons.add(e,{type:types.PANEL,title:"Playroom",route:({storyId:o})=>`/playroom/${o}`,match:({viewMode:o})=>o==="playroom",render:p,paramKey:a});});
  //# sourceMappingURL=out.js.map
  //# sourceMappingURL=manager.mjs.map
+\ No newline at end of file
+diff --git a/node_modules/storybook-addon-playroom/dist/preview.mjs b/node_modules/storybook-addon-playroom/dist/preview.mjs
+index b525c9d..f621745 100644
+--- a/node_modules/storybook-addon-playroom/dist/preview.mjs
++++ b/node_modules/storybook-addon-playroom/dist/preview.mjs
+@@ -1,8 +1,9 @@
+ import { useChannel } from '@storybook/preview-api';
+ import { createUrl } from 'playroom/utils';
+ import A from 'react-element-to-jsx-string';
++import { unpackDecorator } from "@kickstartds/core/lib/storybook";
+ 
+-var p="storybook/playroom",o="playroom",c={UPDATE:`${p}/update`};var l=({url:e="http://localhost:9000",code:t="",disable:r=!1,includeDecorators:n=!1,reactElementToJSXStringOptions:s={sortProps:!1}}={})=>({url:e,code:t,disable:r,includeDecorators:n,reactElementToJSXStringOptions:s});var m=(e,t)=>{let{parameters:r,undecoratedStoryFn:n}=t,s=r[o],{url:i,code:y,includeDecorators:d,reactElementToJSXStringOptions:S}=l(s),a=e(),f=d?a:n(t),E=y||A(f,S),R=i&&createUrl({baseUrl:i,code:E});return useChannel({})(c.UPDATE,R),a};var b={decorators:[m],globals:{[o]:!1}},j=b;
++var p="storybook/playroom",o="playroom",c={UPDATE:`${p}/update`};var l=({url:e="http://localhost:9000",code:t="",disable:r=!1,includeDecorators:n=!1,reactElementToJSXStringOptions:s={sortProps:!1}}={})=>({url:e,code:t,disable:r,includeDecorators:n,reactElementToJSXStringOptions:s});var m=(e,t)=>{let{parameters:r,undecoratedStoryFn:n}=t,s=r[o],{url:i,code:y,includeDecorators:d,reactElementToJSXStringOptions:S}=l(s),a=e(),f=d?a:unpackDecorator(n,t),E=y||A(f,S),R=i&&createUrl({baseUrl:i,code:E});return useChannel({})(c.UPDATE,R),a};var b={decorators:[m],globals:{[o]:!1}},j=b;
+ 
+ export { j as default };
+ //# sourceMappingURL=out.js.map
