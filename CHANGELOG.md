@@ -1,3 +1,19 @@
+# v3.6.10 (Fri Mar 01 2024)
+
+#### ⚠️ Pushed to `main`
+
+- build: build theme tokens ([@lmestel](https://github.com/lmestel))
+- fix: remove import on now deleted file ([@julrich](https://github.com/julrich))
+- fix: modularization of features component ([@julrich](https://github.com/julrich))
+- build: patch storybook-addon-playroom to unpack args in addon panel ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 2
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v3.6.9 (Fri Mar 01 2024)
 
 #### ⚠️ Pushed to `main`
