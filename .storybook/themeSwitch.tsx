@@ -23,6 +23,6 @@ export const globalThemeTypes: GlobalTypes = {
 };
 
 export const themeSwitchDecorator: Decorator<Args> = (storyFn, context) => {
-  useTheme(themes[context.globals.theme]);
+  useTheme(context.globals.theme);
   return storyFn(context);
 };

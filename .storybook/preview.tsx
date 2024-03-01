@@ -6,11 +6,11 @@ import { unpackDecorator } from "@kickstartds/core/lib/storybook";
 import { dark } from "./themes";
 import { themeSwitchDecorator, globalThemeTypes } from "./themeSwitch";
 
-import { RawPageWrapper } from "../src/components/page-wrapper/RawPageWrapperComponent";
+import { PageWrapper } from "../src/components/page-wrapper/PageWrapperComponent";
 import { providerDecorator } from "../src/components/Providers";
 import { LinkProvider } from "../src/docs/LinkProvider";
 
-import "./manager.css";
+import "./preview.css";
 
 const myActions = actions("radio");
 window._ks.radio.on("*", myActions.radio);
@@ -47,9 +47,9 @@ const preview: Preview = {
       theme: dark,
       container: (props: DocsContainerProps) => (
         <LinkProvider>
-          <RawPageWrapper>
+          <PageWrapper>
             <DocsContainer {...props} />
-          </RawPageWrapper>
+          </PageWrapper>
         </LinkProvider>
       ),
     },
@@ -68,9 +68,9 @@ const preview: Preview = {
     unpackDecorator,
     themeSwitchDecorator,
     (Story) => (
-      <RawPageWrapper>
+      <PageWrapper>
         <Story />
-      </RawPageWrapper>
+      </PageWrapper>
     ),
   ],
   globalTypes: {

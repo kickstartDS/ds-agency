@@ -20,3 +20,15 @@ index 0843f0e..242a39c 100644
          base: playroomConfig.baseUrl,
        }),
        new HtmlWebpackPlugin({
+diff --git a/node_modules/playroom/src/Playroom/Playroom.css.ts b/node_modules/playroom/src/Playroom/Playroom.css.ts
+index 84c166f..357c8fb 100644
+--- a/node_modules/playroom/src/Playroom/Playroom.css.ts
++++ b/node_modules/playroom/src/Playroom/Playroom.css.ts
+@@ -15,6 +15,7 @@ globalStyle('html[data-playroom-dark]', {
+ 
+ globalStyle('body', {
+   margin: 0,
++  backgroundColor: 'inherit !important',
+ });
+ 
+ export const root = sprinkles({
