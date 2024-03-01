@@ -49,10 +49,10 @@
 
     --c-form-field--background: var(--dsa-form-field--background, var(--ks-background-color-interface-interactive));
 
-    --c-form-field_focus--shadow: var(--dsa-form-field--shadow_focus, 0 0 4px 0);
+    --c-form-field_focus--shadow: var(--dsa-form-field--shadow_focus) 0 0 4px 0;
 
     --c-form-field--background-disabled: var(
-      var(--ks-background-color-intergface-interactive-disabled),
+      --ks-background-color-interface-interactive-disabled,
       var(--ks-background-color-interface-interactive-disabled)
     );
     --c-form-field--color: var(--dsa-form-field--color, var(--ks-text-color-interface));
