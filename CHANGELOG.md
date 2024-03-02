@@ -1,3 +1,16 @@
+# v3.6.11 (Sat Mar 02 2024)
+
+#### ⚠️ Pushed to `main`
+
+- docs: update component token & json schema addons ([@lmestel](https://github.com/lmestel))
+- docs: fix storybook docs style ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v3.6.10 (Fri Mar 01 2024)
 
 #### ⚠️ Pushed to `main`
