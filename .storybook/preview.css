@@ -1,6 +1,8 @@
 .sbdocs.sbdocs-content {
-  background-color: var(--ks-background-color-default) !important;
   max-width: 1200px;
+}
+.sbdocs.sbdocs-a {
+  color: rgb(183, 165, 255);
 }
 
 .docs-story {
@@ -29,7 +31,7 @@
 }
 
 .docblock-argstable-body tr > td {
-  color: var(--ks-text-color-interface);
+  color: rgba(255, 255, 255, 0.76);
 }
 
 .sb-show-main.sb-main-padded {
