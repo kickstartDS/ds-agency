@@ -4,14 +4,14 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { SelectField } from "@kickstartds/form/lib/select-field/";
 import schema from "@kickstartds/form/lib/select-field/select-field.schema.dereffed.json";
-import cssprops from "../form-tokens.json";
+import customProperties from "../form-tokens.json";
 
 const meta: Meta = {
   title: "Form/ Select Field",
   component: SelectField,
   parameters: {
-    jsonschema: schema,
-    cssprops,
+    jsonschema: { schema },
+    cssprops: { customProperties },
   },
   ...getArgsShared(schema as JSONSchema7),
 };

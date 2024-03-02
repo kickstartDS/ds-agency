@@ -4,14 +4,14 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Headline } from "./HeadlineComponent";
 import schema from "./headline.schema.dereffed.json";
-import cssprops from "./headline-tokens.json";
+import customProperties from "./headline-tokens.json";
 
 const meta: Meta = {
   title: "Components/Headline",
   component: Headline,
   parameters: {
-    jsonschema: schema,
-    cssprops,
+    jsonschema: { schema },
+    cssprops: { customProperties },
   },
   ...getArgsShared(schema as JSONSchema7),
 };

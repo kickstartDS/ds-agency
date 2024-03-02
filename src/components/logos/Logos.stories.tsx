@@ -4,14 +4,14 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Logos } from "./LogosComponent";
 import schema from "./logos.schema.dereffed.json";
-import cssprops from "./logos-tokens.json";
+import customProperties from "./logos-tokens.json";
 
 const meta: Meta<typeof Logos> = {
   title: "Components/Logos",
   component: Logos,
   parameters: {
-    jsonschema: schema,
-    cssprops,
+    jsonschema: { schema },
+    cssprops: { customProperties },
   },
   ...getArgsShared(schema as JSONSchema7),
 };

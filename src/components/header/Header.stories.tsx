@@ -4,7 +4,7 @@ import { pack, unpack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Header as HeaderComponent } from "./HeaderComponent";
 import schema from "./header.schema.dereffed.json";
-import cssprops from "./header-tokens.json";
+import customProperties from "./header-tokens.json";
 import * as themes from "../../themes";
 
 const { args, argTypes } = getArgsShared(schema as JSONSchema7);
@@ -18,8 +18,8 @@ const meta: Meta = {
   argTypes,
   component: HeaderComponent,
   parameters: {
-    jsonschema: schema,
-    cssprops,
+    jsonschema: { schema },
+    cssprops: { customProperties },
   },
   excludeStories: ["headerProps"],
 };

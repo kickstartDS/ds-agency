@@ -3,15 +3,15 @@ import { JSONSchema7 } from "json-schema";
 import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Cta } from "./CtaComponent";
-import cssprops from "./cta-tokens.json";
+import customProperties from "./cta-tokens.json";
 import schema from "./cta.schema.dereffed.json";
 
 const meta: Meta = {
   title: "Components/Cta",
   component: Cta,
   parameters: {
-    jsonschema: schema,
-    cssprops,
+    jsonschema: { schema },
+    cssprops: { customProperties },
   },
   ...getArgsShared(schema as JSONSchema7),
 };

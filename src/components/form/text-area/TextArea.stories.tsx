@@ -4,14 +4,14 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { TextArea } from "@kickstartds/form/lib/text-area/";
 import schema from "@kickstartds/form/lib/text-area/text-area.schema.dereffed.json";
-import cssprops from "../form-tokens.json";
+import customProperties from "../form-tokens.json";
 
 const meta: Meta = {
   title: "Form/ Text Area",
   component: TextArea,
   parameters: {
-    jsonschema: schema,
-    cssprops,
+    jsonschema: { schema },
+    cssprops: { customProperties },
   },
   ...getArgsShared(schema as JSONSchema7),
 };

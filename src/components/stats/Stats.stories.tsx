@@ -4,14 +4,14 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Stats } from "./StatsComponent";
 import schema from "./stats.schema.dereffed.json";
-import cssprops from "./stats-tokens.json";
+import customProperties from "./stats-tokens.json";
 
 const meta: Meta<typeof Stats> = {
   title: "Components/Stats",
   component: Stats,
   parameters: {
-    jsonschema: schema,
-    cssprops,
+    jsonschema: { schema },
+    cssprops: { customProperties },
   },
   ...getArgsShared(schema as JSONSchema7),
 };

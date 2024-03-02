@@ -4,14 +4,14 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Image } from "./ImageComponent";
 import schema from "./image.schema.dereffed.json";
-import cssprops from "./image-tokens.json";
+import customProperties from "./image-tokens.json";
 
 const meta: Meta = {
   title: "Components/Image",
   component: Image,
   parameters: {
-    jsonschema: schema,
-    cssprops,
+    jsonschema: { schema },
+    cssprops: { customProperties },
   },
   ...getArgsShared(schema as JSONSchema7),
 };

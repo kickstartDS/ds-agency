@@ -4,14 +4,14 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Text } from "./TextComponent";
 import schema from "./text.schema.dereffed.json";
-import cssprops from "./text-tokens.json";
+import customProperties from "./text-tokens.json";
 
 const meta: Meta<typeof Text> = {
   title: "Components/Text",
   component: Text,
   parameters: {
-    jsonschema: schema,
-    cssprops,
+    jsonschema: { schema },
+    cssprops: { customProperties },
   },
   ...getArgsShared(schema as JSONSchema7),
 };

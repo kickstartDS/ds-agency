@@ -4,14 +4,14 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Testimonials } from "./TestimonialsComponent";
 import schema from "./testimonials.schema.dereffed.json";
-import cssprops from "./testimonials-tokens.json";
+import customProperties from "./testimonials-tokens.json";
 
 const meta: Meta<typeof Testimonials> = {
   title: "Components/Testimonials",
   component: Testimonials,
   parameters: {
-    jsonschema: schema,
-    cssprops,
+    jsonschema: { schema },
+    cssprops: { customProperties },
   },
   ...getArgsShared(schema as JSONSchema7),
 };

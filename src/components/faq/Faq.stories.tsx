@@ -4,14 +4,14 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { Faq } from "./FaqComponent";
 import schema from "./faq.schema.dereffed.json";
-import cssprops from "./faq-tokens.json";
+import customProperties from "./faq-tokens.json";
 
 const meta: Meta = {
   title: "Components/Faq",
   component: Faq,
   parameters: {
-    jsonschema: schema,
-    cssprops,
+    jsonschema: { schema },
+    cssprops: { customProperties },
   },
   ...getArgsShared(schema as JSONSchema7),
 };

@@ -4,14 +4,14 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { BlogTeaser } from "./BlogTeaserComponent";
 import schema from "./blog-teaser.schema.dereffed.json";
-import cssprops from "./blog-teaser-tokens.json";
+import customProperties from "./blog-teaser-tokens.json";
 
 const meta: Meta<typeof BlogTeaser> = {
   title: "Blog/ Blog Teaser",
   component: BlogTeaser,
   parameters: {
-    jsonschema: schema,
-    cssprops,
+    jsonschema: { schema },
+    cssprops: { customProperties },
   },
   ...getArgsShared(schema as JSONSchema7),
 };

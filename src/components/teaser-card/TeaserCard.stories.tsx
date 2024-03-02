@@ -4,14 +4,14 @@ import { pack, getArgsShared } from "@kickstartds/core/lib/storybook";
 
 import { TeaserCard } from "./TeaserCardComponent";
 import schema from "./teaser-card.schema.dereffed.json";
-import cssprops from "./teaser-card-tokens.json";
+import customProperties from "./teaser-card-tokens.json";
 
 const meta: Meta<typeof TeaserCard> = {
   title: "Components/Teaser Card",
   component: TeaserCard,
   parameters: {
-    jsonschema: schema,
-    cssprops,
+    jsonschema: { schema },
+    cssprops: { customProperties },
   },
   ...getArgsShared(schema as JSONSchema7),
 };
