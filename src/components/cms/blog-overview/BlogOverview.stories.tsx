@@ -7,7 +7,7 @@ import schema from "../blog-overview.schema.dereffed.json";
 
 const meta: Meta<typeof BlogOverviewComponent> = {
   component: BlogOverviewComponent,
-  title: "Pages/CMS",
+  title: "Pages/Archetypes",
   parameters: {
     jsonschema: schema,
     layout: "fullscreen",
