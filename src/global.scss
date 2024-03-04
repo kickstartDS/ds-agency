@@ -67,7 +67,7 @@ body {
 }
 
 [ks-inverted="false"] {
-  --dsa-text-color-on-primary: var(--dsa-text-color-on-primary);
+  --dsa-text-color-on-primary: var(--ks-color-fg);
 }
 
 [ks-inverted="true"] {
