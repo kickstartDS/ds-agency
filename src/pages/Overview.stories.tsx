@@ -38,7 +38,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       }}
     >
       <Image
-        src="/static/img/showcases/comp_audio01.jpg"
+        src="/img/showcases/comp_audio01.jpg"
         alt="Huge Logo of that fake reference customer"
       />
       <Cta
@@ -65,7 +65,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       }}
     >
       <Image
-        src="/static/img/showcases/comp_eco01.jpg"
+        src="/img/showcases/comp_eco01.jpg"
         alt="Huge Logo of that fake reference customer"
       />
       <Cta
@@ -93,7 +93,7 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
       }}
     >
       <Image
-        src="/static/img/showcases/comp_tfe01.jpg"
+        src="/img/showcases/comp_tfe01.jpg"
         alt="Huge Logo of that fake reference customer"
       />
       <Cta
@@ -142,43 +142,43 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
         logo={[
           {
             alt: "Logo 1",
-            src: "/static/img/logos/logoipsum-212.svg",
+            src: "/img/logos/logoipsum-212.svg",
           },
           {
             alt: "Logo 2",
-            src: "/static/img/logos/logoipsum-217.svg",
+            src: "/img/logos/logoipsum-217.svg",
           },
           {
             alt: "Logo 3",
-            src: "/static/img/logos/logoipsum-239.svg",
+            src: "/img/logos/logoipsum-239.svg",
           },
           {
             alt: "Logo 4",
-            src: "/static/img/logos/logoipsum-244.svg",
+            src: "/img/logos/logoipsum-244.svg",
           },
           {
             alt: "Logo 5",
-            src: "/static/img/logos/logoipsum-250.svg",
+            src: "/img/logos/logoipsum-250.svg",
           },
           {
             alt: "Logo 6",
-            src: "/static/img/logos/logoipsum-286.svg",
+            src: "/img/logos/logoipsum-286.svg",
           },
           {
             alt: "Logo 7",
-            src: "/static/img/logos/logoipsum-212.svg",
+            src: "/img/logos/logoipsum-212.svg",
           },
           {
             alt: "Logo 8",
-            src: "/static/img/logos/logoipsum-217.svg",
+            src: "/img/logos/logoipsum-217.svg",
           },
           {
             alt: "Logo 9",
-            src: "/static/img/logos/logoipsum-239.svg",
+            src: "/img/logos/logoipsum-239.svg",
           },
           {
             alt: "Logo 10",
-            src: "/static/img/logos/logoipsum-244.svg",
+            src: "/img/logos/logoipsum-244.svg",
           },
         ]}
         tagline=""

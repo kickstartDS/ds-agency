@@ -14,7 +14,7 @@ const Page = () => (
     <Header {...headerProps} floating />
     <Section width="full" spaceAfter="none" spaceBefore="none">
       <Image
-        src="/static/img/showcases/comp_eco01.jpg"
+        src="/img/showcases/comp_eco01.jpg"
         alt="Fake Showcase Mockup Image"
       />
     </Section>
@@ -49,7 +49,7 @@ EcoTech Solutions, a forward-thinking company in the sustainable PV and wind pow
       spaceBefore="none"
     >
       <Image
-        src="/static/img/showcases/comp_eco02.jpg"
+        src="/img/showcases/comp_eco02.jpg"
         alt="Fake Showcase Mockup Image"
       />
     </Section>
@@ -71,7 +71,7 @@ We collaborated closely with EcoTech's brand team to set up a Design System that
         testimonial={[
           {
             image: {
-              src: "/static/img/people/author-emily.png",
+              src: "/img/people/author-emily.png",
               alt: "Fake Testimonial Portrait",
             },
             name: "- Emily Johnson",
@@ -93,7 +93,7 @@ We collaborated closely with EcoTech's brand team to set up a Design System that
       spaceBefore="none"
     >
       <Image
-        src="/static/img/showcases/comp_eco03.jpg"
+        src="/img/showcases/comp_eco03.jpg"
         alt="Fake Showcase Mockup Image"
       />
     </Section>
@@ -125,7 +125,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
       spaceBefore="none"
     >
       <Image
-        src="/static/img/showcases/comp_eco04.jpg"
+        src="/img/showcases/comp_eco04.jpg"
         alt="Fake Showcase Mockup Image"
       />
     </Section>
@@ -159,7 +159,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
       <TeaserCard
         headline="Transformation Love Story"
         text="See how we saved TechFusions a year's worth of development time"
-        image="/static/img/showcases/comp_tfe01.jpg"
+        image="/img/showcases/comp_tfe01.jpg"
         target="#"
         button={{
           label: "View showcase",
@@ -169,7 +169,7 @@ The implementation of the new **Design System** and migration to **Storyblok** t
       <TeaserCard
         headline="Speed and Scale"
         text="Thanks to rapid landing page creation for LaunchPad Audio Innovations"
-        image="/static/img/showcases/comp_audio01.jpg"
+        image="/img/showcases/comp_audio01.jpg"
         target="#"
         button={{
           label: "View showcase",
