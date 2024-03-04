@@ -1,3 +1,15 @@
+# v3.6.12 (Mon Mar 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- docs: fix image paths in pages ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v3.6.11 (Sat Mar 02 2024)
 
 #### ⚠️ Pushed to `main`
