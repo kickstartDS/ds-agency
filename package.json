@@ -89,7 +89,7 @@
     "@kickstartds/style-dictionary": "2.3.0-canary.1615.6674.0",
     "@kickstartds/storybook-addon-component-tokens": "2.0.0",
     "@kickstartds/storybook-addon-html": "^0.0.2",
-    "@kickstartds/storybook-addon-jsonschema": "^3.0.0",
+    "@kickstartds/storybook-addon-jsonschema": "^3.1.0",
     "@storybook/addon-a11y": "^7.6.7",
     "@storybook/addon-actions": "^7.6.7",
     "@storybook/addon-essentials": "^7.6.7",

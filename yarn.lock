@@ -2319,10 +2319,10 @@
     "@storybook/preview-api" "^7"
     "@storybook/theming" "^7"
 
-"@kickstartds/storybook-addon-jsonschema@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/storybook-addon-jsonschema/-/storybook-addon-jsonschema-3.0.0.tgz#1e12f41cc90f72092da79e6cca86df0ca32622ce"
-  integrity sha512-WNUcRBTAD9DP7m1QLFA4JKUJ4dbZpjeSxPth0ouigSXkKtK8m206d0/gon4QpdSiHF9GZgzZd9byN5Nkv/pbqQ==
+"@kickstartds/storybook-addon-jsonschema@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/storybook-addon-jsonschema/-/storybook-addon-jsonschema-3.1.0.tgz#5f413d2c695190c6d5020125ecc85bd4a2ce12e2"
+  integrity sha512-hiYKP2JIyOfTXZ0wNlKbBOPYzEVp+rCqh7k5at2Jw9T2s0Dbdq2c/xWNn8sLJjDJqtOaAkUnuenGFk6+b/xBWA==
 
 "@kickstartds/style-dictionary@2.3.0-canary.1615.6674.0":
   version "2.3.0-canary.1615.6674.0"

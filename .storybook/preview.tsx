@@ -61,12 +61,7 @@ const preview: Preview = {
       decorators: [unpackDecorator, providerDecorator],
     },
     jsonschema: {
-      async toArgs(obj) {
-        return (await import("@kickstartds/core/lib/storybook")).pack(obj);
-      },
-      async fromArgs(args) {
-        return (await import("@kickstartds/core/lib/storybook")).unpack(args);
-      },
+      packArgs: true,
     },
     cssprops: {
       group({ name, media, selector }) {
