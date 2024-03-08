@@ -1,3 +1,15 @@
+# v3.6.15 (Fri Mar 08 2024)
+
+#### ⚠️ Pushed to `main`
+
+- docs: fix json schema add on ([@lmestel](https://github.com/lmestel))
+
+#### Authors: 1
+
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v3.6.14 (Mon Mar 04 2024)
 
 #### ⚠️ Pushed to `main`
