@@ -10,7 +10,7 @@ const meta: Meta<typeof Features> = {
   title: "Components/Features",
   component: Features,
   parameters: {
-    jsonschema: schema,
+    jsonschema: { schema },
     cssprops: { customProperties },
   },
   ...getArgsShared(schema as JSONSchema7),

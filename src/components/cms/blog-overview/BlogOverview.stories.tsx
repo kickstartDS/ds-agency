@@ -9,7 +9,7 @@ const meta: Meta<typeof BlogOverviewComponent> = {
   component: BlogOverviewComponent,
   title: "Pages/Archetypes",
   parameters: {
-    jsonschema: schema,
+    jsonschema: { schema },
     layout: "fullscreen",
   },
   ...getArgsShared(schema as JSONSchema7),
