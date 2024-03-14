@@ -2171,10 +2171,10 @@
   resolved "https://registry.npmjs.org/@juggle/resize-observer/-/resize-observer-3.4.0.tgz"
   integrity sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==
 
-"@kickstartds/base@2.3.0-canary.1615.6674.0":
-  version "2.3.0-canary.1615.6674.0"
-  resolved "https://registry.npmjs.org/@kickstartds/base/-/base-2.3.0-canary.1615.6674.0.tgz"
-  integrity sha512-KvFZf1AgRqq0ffrDQkupatU4+Uv4t3FLE2ZsoI93+xyMgU3mhlhG3jPErXgyuqyDZnTuNC24PMmS9K5ib/GSeg==
+"@kickstartds/base@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@kickstartds/base/-/base-4.0.2.tgz#7a7067383139fc03208c873dab6bbfbfa6b84389"
+  integrity sha512-LLbLa9WmmiOx/mRGoTF0qdclu2KT3HVSX8cj/PL/qjcE9GheOR+iPNIZ6Xii8b0Q9cYkmm9SYcRlkkfzNNHpOQ==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
@@ -2183,19 +2183,19 @@
     photoswipe "^5.3.7"
     vhtml "^2.2.0"
 
-"@kickstartds/blog@2.3.0-canary.1615.6674.0":
-  version "2.3.0-canary.1615.6674.0"
-  resolved "https://registry.npmjs.org/@kickstartds/blog/-/blog-2.3.0-canary.1615.6674.0.tgz"
-  integrity sha512-SOySnQavFbihupYaNyO3eFvTrGLRjcRWeoaZzlXK//VtziDMow+yXfhWCt2oblB6xiHn/eHpONeuqZppLVRu5w==
+"@kickstartds/blog@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@kickstartds/blog/-/blog-4.0.2.tgz#760568f93e1c6aac966109534b03b4775a59bf5f"
+  integrity sha512-kqqPwsXgXnnZGPDh1BMvx6NMYTWrbKLn6C+H6rjDSuaewqHvfZW/s2wgAX72gcHev29pqYJcncXYCJuqFyUTAw==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
     date-fns "^2.30.0"
 
-"@kickstartds/core@2.3.0-canary.1615.6674.0":
-  version "2.3.0-canary.1615.6674.0"
-  resolved "https://registry.npmjs.org/@kickstartds/core/-/core-2.3.0-canary.1615.6674.0.tgz"
-  integrity sha512-lQ7kJBYeFiCr8uob6ln2eAe9VIGtl0Nj+7rCayiCbto5/d1heM8szq2CmltM1f86kYxelG1K9/TEkp4IeBDYpA==
+"@kickstartds/core@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@kickstartds/core/-/core-4.0.2.tgz#277744da0688cf09c1bb3898ae758bffd1c9f79a"
+  integrity sha512-xLTPOrM0ul2wYxgsUPd6nzqUHmCCiJm/MJqY/JAlIBYTdm0txsZKzItN6JnDRQNwniYcHcl5xPKlZ2NawEnsRQ==
   dependencies:
     "@babel/runtime" "^7.21.5"
     bourbon "^7.3.0"
@@ -2210,17 +2210,17 @@
     pubsub-js "^1.9.4"
     sass "^1.62.1"
 
-"@kickstartds/form@2.3.0-canary.1615.6674.0":
-  version "2.3.0-canary.1615.6674.0"
-  resolved "https://registry.npmjs.org/@kickstartds/form/-/form-2.3.0-canary.1615.6674.0.tgz"
-  integrity sha512-LYtCLzLyNbCly2xo4McAkENr0+6rnoIw5k/y5crgPsS6/LEbnrvrVF5dqm2KLpf3pejTcuAALRG6h1cju9LZKQ==
+"@kickstartds/form@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@kickstartds/form/-/form-4.0.2.tgz#e93bed38de608767e55a8ca1c85e9dfd783c6e5f"
+  integrity sha512-q5j5pDLFRE88/Di2fbUk9zwDH691/VpvUfyu6IXwMuCVvfNH5O8m8tQjHevmrVRM44+QhRl3FYM70ng+DCQGXA==
   dependencies:
     "@babel/runtime" "^7.21.5"
     classnames "^2.3.2"
 
 "@kickstartds/json-schema-to-typescript@~13.1.20":
   version "13.1.20"
-  resolved "https://registry.npmjs.org/@kickstartds/json-schema-to-typescript/-/json-schema-to-typescript-13.1.20.tgz"
+  resolved "https://registry.yarnpkg.com/@kickstartds/json-schema-to-typescript/-/json-schema-to-typescript-13.1.20.tgz#35342eeb3a0654e9fc4f6660902572782a0923cf"
   integrity sha512-do4QWO27yULWjRTv0+tKKZlLVoQp98J35YURKUWhNTUq81REGqOYT8v0OD16tGGrVh8CQ0FILmsLQVRvQSIrbg==
   dependencies:
     "@bcherny/json-schema-ref-parser" "10.0.5-fork"
@@ -2237,70 +2237,67 @@
     mkdirp "^1.0.4"
     prettier "^2.6.2"
 
-"@kickstartds/jsonschema-utils@2.12.1", "@kickstartds/jsonschema-utils@^2.9.0":
-  version "2.12.1"
-  resolved "https://registry.npmjs.org/@kickstartds/jsonschema-utils/-/jsonschema-utils-2.12.1.tgz"
-  integrity sha512-his+z5d3iPShdXzVqp+Ivv7xylV5kspNnT3ClgxWnFD4OzhP1ze12LOLQi0hl7L//TCcEIOxj1xG9BC/EfkAAw==
+"@kickstartds/jsonschema-utils@3.0.1", "@kickstartds/jsonschema-utils@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@kickstartds/jsonschema-utils/-/jsonschema-utils-3.0.1.tgz#5a6e8598d1403beeb83718b29999f5d561bb6d9a"
+  integrity sha512-Yip6vdN0KKB1JiGLFi6dWQPibajbWzsmC4wJvPyKi7es4qmWYjKN+0U9ua1YyAzvnNCF3gnmk8LaF9GWMOvtkg==
   dependencies:
     "@bcherny/json-schema-ref-parser" "10.0.5-fork"
     ajv "^8.12.0"
     change-case "^5.0.2"
+    directed-graph-typed "~1.52.0"
     fast-glob "^3.2.12"
     import-meta-resolve "~3.0.0"
     json-schema-traverse "^1.0.0"
     jsonpointer "~5.0.1"
-    typescript-graph "^0.3.0"
 
-"@kickstartds/jsonschema2netlifycms@^2.6.0":
-  version "2.8.3"
-  resolved "https://registry.npmjs.org/@kickstartds/jsonschema2netlifycms/-/jsonschema2netlifycms-2.8.3.tgz"
-  integrity sha512-K3UMQTgH8kKHg5a+GtQ86lvo6k4i59q4ZcJKtWIQx5EE1tipiyk7x6jdoT+FNQMsjN6Im7l1eG3x6esuV3Z72A==
+"@kickstartds/jsonschema2stackbit@^1.3.4":
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/@kickstartds/jsonschema2stackbit/-/jsonschema2stackbit-1.3.4.tgz#a33e583a060654aad1d02c5cc305b8f5e75773ec"
+  integrity sha512-MbFVPyCoeRMRPOQY+toXEpJKP5/bVtR4rIKHFpoPG1+SqVOyEA1cw3c/LIjSYVurtV4V1W4zNkPKGun8e0WTgA==
   dependencies:
-    "@kickstartds/jsonschema-utils" "2.12.1"
+    "@kickstartds/jsonschema-utils" "3.0.1"
     ajv "^8.12.0"
-    lodash "^4.17.21"
     object-traversal "^1.0.1"
 
-"@kickstartds/jsonschema2stackbit@^1.0.2":
-  version "1.2.3"
-  resolved "https://registry.npmjs.org/@kickstartds/jsonschema2stackbit/-/jsonschema2stackbit-1.2.3.tgz"
-  integrity sha512-dsDI8ZjF5TnjQjCHnjGuR9yaHTbFcoy6B4Z3mGKMFXD2qQhUWK3Sq+xE+wZpYEK2JnFJo+9xz7TQiSz5WmLRng==
+"@kickstartds/jsonschema2staticcms@^2.9.5":
+  version "2.9.5"
+  resolved "https://registry.yarnpkg.com/@kickstartds/jsonschema2staticcms/-/jsonschema2staticcms-2.9.5.tgz#71d543837cf12a3b47e8b7341662c8de9423e2ec"
+  integrity sha512-7zMbXvELD2gUOt/NWqr1OtWDUOXECsunSMvkukKyHye96/tlSF+Vi/nfUgBtx//JA06hOyIUI7/1N+ql79SuKA==
   dependencies:
-    "@kickstartds/jsonschema-utils" "2.12.1"
+    "@kickstartds/jsonschema-utils" "3.0.1"
     ajv "^8.12.0"
-    lodash "^4.17.21"
     object-traversal "^1.0.1"
+    pluralize "^8.0.0"
 
-"@kickstartds/jsonschema2storyblok@^1.1.0":
-  version "1.5.1"
-  resolved "https://registry.npmjs.org/@kickstartds/jsonschema2storyblok/-/jsonschema2storyblok-1.5.1.tgz"
-  integrity sha512-8CeDDxDa0yQ/DmWmD7f61ZiXeaxDetLNSuNCy0FlAjtMawxw5/vUeAHEhs3nFgWOhArP/vuAsfU1YGeCOviTDg==
+"@kickstartds/jsonschema2storyblok@^1.5.9":
+  version "1.5.9"
+  resolved "https://registry.yarnpkg.com/@kickstartds/jsonschema2storyblok/-/jsonschema2storyblok-1.5.9.tgz#8cbd5fd7c5facba3b489c69efd455456cbbadde3"
+  integrity sha512-iJVgZoh09ESks4Y7giyy6jim0j98V55M26AYymknTu0NTGzgtDnl81mpY+d/mb6zP2wU3BjFmR9jDLTbEOwreQ==
   dependencies:
-    "@kickstartds/jsonschema-utils" "2.12.1"
+    "@kickstartds/jsonschema-utils" "3.0.1"
     ajv "^8.12.0"
-    lodash "^4.17.21"
     object-traversal "^1.0.1"
     uuid "~9.0.0"
 
-"@kickstartds/jsonschema2types@^1.1.20":
-  version "1.1.25"
-  resolved "https://registry.npmjs.org/@kickstartds/jsonschema2types/-/jsonschema2types-1.1.25.tgz"
-  integrity sha512-rcNzKzjxdMJFLXYQtxquuaHn6OrCCISspcYUTGAXOMvws0e3FZowNDBp03sZNpv59Sd4ROckLOT0wlutdF9r8Q==
+"@kickstartds/jsonschema2types@^1.1.27":
+  version "1.1.27"
+  resolved "https://registry.yarnpkg.com/@kickstartds/jsonschema2types/-/jsonschema2types-1.1.27.tgz#05ad753df1a96d0695c17635cd98669331e61c12"
+  integrity sha512-hgMfnpObgRa7gHaDSAOi8FiHLjNBQxERuJiw8WouZ/2BVvgOi4iYTUj3UKd/i7jlAFIRFeXA/WZxq5rHxUM5+Q==
   dependencies:
     "@kickstartds/json-schema-to-typescript" "~13.1.20"
-    "@kickstartds/jsonschema-utils" "2.12.1"
+    "@kickstartds/jsonschema-utils" "3.0.1"
     ajv "^8.12.0"
     object-traversal "^1.0.1"
 
-"@kickstartds/jsonschema2uniform@^1.1.0":
-  version "1.3.3"
-  resolved "https://registry.npmjs.org/@kickstartds/jsonschema2uniform/-/jsonschema2uniform-1.3.3.tgz"
-  integrity sha512-owHH3Pvv0Y3/cON80ufdgyzt9UCi7WaJNaNFIdHkWidRVEqzawW4zuafY+9I3Il2myDYLCBjGYvFDnKrDo/ZUQ==
+"@kickstartds/jsonschema2uniform@^1.3.6":
+  version "1.3.6"
+  resolved "https://registry.yarnpkg.com/@kickstartds/jsonschema2uniform/-/jsonschema2uniform-1.3.6.tgz#cc44e59244d0121d8cf5e6aecfb225a57d73fea9"
+  integrity sha512-n66Go0vjIUb8i+sh/mL7N7czGBF+iG4JNF28soTwXH67cLej/4SNBW9nSJBibmVs5f30AzAGxCIQXkDvI3+RKg==
   dependencies:
-    "@kickstartds/jsonschema-utils" "2.12.1"
+    "@kickstartds/jsonschema-utils" "3.0.1"
     ajv "^8.12.0"
     change-case "^5.0.2"
-    lodash "^4.17.21"
     object-traversal "^1.0.1"
     uuid "~9.0.0"
 
@@ -2324,10 +2321,10 @@
   resolved "https://registry.yarnpkg.com/@kickstartds/storybook-addon-jsonschema/-/storybook-addon-jsonschema-3.1.0.tgz#5f413d2c695190c6d5020125ecc85bd4a2ce12e2"
   integrity sha512-hiYKP2JIyOfTXZ0wNlKbBOPYzEVp+rCqh7k5at2Jw9T2s0Dbdq2c/xWNn8sLJjDJqtOaAkUnuenGFk6+b/xBWA==
 
-"@kickstartds/style-dictionary@2.3.0-canary.1615.6674.0":
-  version "2.3.0-canary.1615.6674.0"
-  resolved "https://registry.npmjs.org/@kickstartds/style-dictionary/-/style-dictionary-2.3.0-canary.1615.6674.0.tgz"
-  integrity sha512-mOR1MxDH0tG1/s8z5A7aZsMh8KNbhVS7KeljZQweP+a5Em+TlPTUzNuWw73nL0HO6BTfrMoqVwrwq8Fjp5a9pg==
+"@kickstartds/style-dictionary@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@kickstartds/style-dictionary/-/style-dictionary-4.0.2.tgz#1db0da500c0c37c4b7197dcdae523e23d1d7e4bc"
+  integrity sha512-y/oHzAwW3T24iunCC4oZYnAnWDqnRIVqYXBft2pKpLppAR/owtsslsNx7T/1zop2SqhgOBr0sGSaDqwjV1A38g==
   dependencies:
     "@babel/core" "^7.21.4"
     "@babel/preset-react" "^7.18.6"
@@ -4226,12 +4223,17 @@
 
 "@types/lodash-es@^4.17.9":
   version "4.17.12"
-  resolved "https://registry.npmjs.org/@types/lodash-es/-/lodash-es-4.17.12.tgz"
+  resolved "https://registry.yarnpkg.com/@types/lodash-es/-/lodash-es-4.17.12.tgz#65f6d1e5f80539aa7cfbfc962de5def0cf4f341b"
   integrity sha512-0NgftHUcV4v34VhXm8QBSftKVXtbkBG3ViCjs6+eJ5a6y6Mi/jiFGPc1sC7QK+9BFhWrURE3EOggmWaSxL9OzQ==
   dependencies:
     "@types/lodash" "*"
 
-"@types/lodash@*", "@types/lodash@^4.14.167", "@types/lodash@^4.14.182", "@types/lodash@^4.14.191":
+"@types/lodash@*":
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.17.0.tgz#d774355e41f372d5350a4d0714abb48194a489c3"
+  integrity sha512-t7dhREVv6dbNj0q17X12j7yDG4bD/DHYX7o5/DbDxobP0HnGPgpRz2Ej77aL7TZT3DSw13fqUTj8J4mMnqa7WA==
+
+"@types/lodash@^4.14.167", "@types/lodash@^4.14.182", "@types/lodash@^4.14.191":
   version "4.14.202"
   resolved "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.202.tgz"
   integrity sha512-OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ==
@@ -5668,9 +5670,9 @@ change-case@^4.1.2:
     tslib "^2.0.3"
 
 change-case@^5.0.2:
-  version "5.4.2"
-  resolved "https://registry.npmjs.org/change-case/-/change-case-5.4.2.tgz"
-  integrity sha512-WB3UiTDpT+vrTilAWaJS4gaIH/jc1He4H9f6erQvraUYas90uWT0JOYFkG1imdNv710XJ6gJvqynrgOHc4ihDA==
+  version "5.4.3"
+  resolved "https://registry.yarnpkg.com/change-case/-/change-case-5.4.3.tgz#26cb398945027c894a306198cc72933c3db13588"
+  integrity sha512-4cdyvorTy/lViZlVzw2O8/hHCLUuHqp4KpSSP3DlauhFCf3LdnfF+p5s0EAhjKsU7bqrMzu7iQArYfoPiHO2nw==
 
 char-regex@^1.0.2:
   version "1.0.2"
@@ -6379,6 +6381,11 @@ d@1, d@^1.0.1:
     es5-ext "^0.10.50"
     type "^1.0.1"
 
+data-structure-typed@^1.52.0:
+  version "1.52.0"
+  resolved "https://registry.yarnpkg.com/data-structure-typed/-/data-structure-typed-1.52.0.tgz#7240904ea919d86010709016ce154b02aa1f6329"
+  integrity sha512-jJhARI44PxwvSIHaTl0FyzrlmJodInT+RiVCSZ1l9WqzENQNrupnzCukmmp7OW1/TQE2d17mQvbdrno/ohFn9Q==
+
 data-urls@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/data-urls/-/data-urls-4.0.0.tgz"
@@ -6669,6 +6676,13 @@ dir-glob@^3.0.1:
   integrity sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==
   dependencies:
     path-type "^4.0.0"
+
+directed-graph-typed@~1.52.0:
+  version "1.52.0"
+  resolved "https://registry.yarnpkg.com/directed-graph-typed/-/directed-graph-typed-1.52.0.tgz#d38f33648ba8cf675358e4c8cf9f2a04293f254e"
+  integrity sha512-vzIPQT/1hjCIFLNB1mKZ6t0AFTpkH1/zHDm3uBKCzSMAbgAgUfsbTdBo/XYkn67xx8ExC/qwB30R8VReopMPlg==
+  dependencies:
+    data-structure-typed "^1.52.0"
 
 dns-equal@^1.0.0:
   version "1.0.0"
@@ -8541,7 +8555,7 @@ import-local@^3.0.2:
 
 import-meta-resolve@~3.0.0:
   version "3.0.0"
-  resolved "https://registry.npmjs.org/import-meta-resolve/-/import-meta-resolve-3.0.0.tgz"
+  resolved "https://registry.yarnpkg.com/import-meta-resolve/-/import-meta-resolve-3.0.0.tgz#94a6aabc623874fbc2f3525ec1300db71c6cbc11"
   integrity sha512-4IwhLhNNA8yy445rPjD/lWh++7hMDOml2eHtd58eG7h+qK3EryMuuRbsHGPikCoAgIkkDnckKfWSk2iDla/ejg==
 
 imurmurhash@^0.1.4:
@@ -9786,7 +9800,7 @@ jsonify@^0.0.1:
 
 jsonpointer@~5.0.1:
   version "5.0.1"
-  resolved "https://registry.npmjs.org/jsonpointer/-/jsonpointer-5.0.1.tgz"
+  resolved "https://registry.yarnpkg.com/jsonpointer/-/jsonpointer-5.0.1.tgz#2110e0af0900fd37467b5907ecd13a7884a1b559"
   integrity sha512-p/nXbhSEcu3pZRdkW1OfJhpsVtW1gd4Wa1fnQc9YLiTfAjn0312eMKimbdIQzuZl9aa9xUGaRlP9T/CJE/ditQ==
 
 kebab-case@^1.0.0:
@@ -9794,21 +9808,15 @@ kebab-case@^1.0.0:
   resolved "https://registry.npmjs.org/kebab-case/-/kebab-case-1.0.2.tgz"
   integrity sha512-7n6wXq4gNgBELfDCpzKc+mRrZFs7D+wgfF5WRFLNAr4DA/qtr9Js8uOAVAfHhuLMfAcQ0pRKqbpjx+TcJVdE1Q==
 
-kickstartds@3.0.0-next.7:
-  version "3.0.0-next.7"
-  resolved "https://registry.npmjs.org/kickstartds/-/kickstartds-3.0.0-next.7.tgz"
-  integrity sha512-Nxe/TarGAezZbC3IdGuus8g6GhGKzQZVtnBM0rMaoWZs7LQ55xaIVngnDmZGQEx12oZYf3ono+s0ltj9ukJUWQ==
+kickstartds@3.0.0-next.12:
+  version "3.0.0-next.12"
+  resolved "https://registry.yarnpkg.com/kickstartds/-/kickstartds-3.0.0-next.12.tgz#422fb54be66a4da5c670e221b88266692bbd9f51"
+  integrity sha512-pSgwAHDHafFETnQQHRFZPENzTLlCwgnsr05V6V2NJvAs7xSy/fYFcsIT2P2K2N0A6u0mh1HiRT8jk3zlIO5fYQ==
   dependencies:
     "@apidevtools/json-schema-ref-parser" "^9.0.9"
     "@babel/preset-react" "^7.17.12"
     "@influxdata/influxdb-client" "^1.25.0"
     "@influxdata/influxdb-client-apis" "^1.25.0"
-    "@kickstartds/jsonschema-utils" "^2.9.0"
-    "@kickstartds/jsonschema2netlifycms" "^2.6.0"
-    "@kickstartds/jsonschema2stackbit" "^1.0.2"
-    "@kickstartds/jsonschema2storyblok" "^1.1.0"
-    "@kickstartds/jsonschema2types" "^1.1.20"
-    "@kickstartds/jsonschema2uniform" "^1.1.0"
     ajv "^8.11.0"
     byline "^5.0.0"
     chalk "^5.0.1"
@@ -9992,7 +10000,7 @@ locate-path@^7.1.0:
 
 lodash-es@^4.17.21:
   version "4.17.21"
-  resolved "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.21.tgz"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
   integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
 
 lodash.camelcase@^4.3.0:
@@ -10946,11 +10954,6 @@ object-assign@^4.0.1, object-assign@^4.1.1:
   resolved "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz"
   integrity sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==
 
-object-hash@^2.0.3:
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/object-hash/-/object-hash-2.2.0.tgz"
-  integrity sha512-gScRMn0bS5fH+IuwyIFgnh9zBdo4DV+6GhygmWM9HyNJSgS0hScp1f5vjtm7oIIOiT9trXrShAkLFSc2IqKNgw==
-
 object-inspect@^1.12.3, object-inspect@^1.9.0:
   version "1.12.3"
   resolved "https://registry.npmjs.org/object-inspect/-/object-inspect-1.12.3.tgz"
@@ -11654,6 +11657,11 @@ playwright@^1.14.0:
     playwright-core "1.41.1"
   optionalDependencies:
     fsevents "2.3.2"
+
+pluralize@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-8.0.0.tgz#1a6fa16a38d12a1901e0320fa017051c539ce3b1"
+  integrity sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==
 
 pngjs@^3.4.0:
   version "3.4.0"
@@ -14040,13 +14048,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz"
   integrity sha512-/aCDEGatGvZ2BIk+HmLf4ifCJFwvKFNb9/JeZPMulfgFracn9QFcAf5GO8B/mweUjSoblS5In0cWhqpfs/5PQA==
-
-typescript-graph@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/typescript-graph/-/typescript-graph-0.3.0.tgz"
-  integrity sha512-9OuXEs8QksTao7Aa76sxOtlAZbnjyf1mjG0KO+TFKtG/PaWmnIGrr33gsyc35nfwyNKGHpv6tumW56/DY/68vA==
-  dependencies:
-    object-hash "^2.0.3"
 
 typescript-memoize@^1.0.0-alpha.3:
   version "1.1.1"
