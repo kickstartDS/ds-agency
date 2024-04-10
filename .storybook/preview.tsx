@@ -18,7 +18,6 @@ window._ks.radio.on("*", myActions.radio);
 
 const preview: Preview = {
   parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -63,28 +62,28 @@ const preview: Preview = {
     jsonschema: {
       packArgs: true,
     },
-    cssprops: {
-      group({ name, media, selector }) {
-        let category = selector;
-        let subcategory: string;
-        try {
-          const match = name.match(
-            /^--(?:[a-z]+-?[a-z]+)+(?:_+(?<variant>[a-z]+[-_]?[a-z]+))?(--(?<property>([a-z]+-?[a-z]+)+))?(?:_(?<state>[a-z]+-?[a-z]+))?$/
-          );
-          category = match.groups.variant || "";
-          if (match.groups.variant) {
-            subcategory = match.groups.property;
-          }
-        } catch (e) {
-          console.warn("cannot get category from", name);
-        }
-        return {
-          label: `${name}${media ? ` @ ${media}` : ""}`,
-          category,
-          subcategory,
-        };
-      },
-    } satisfies CssPropsParameter,
+    // cssprops: {
+    //   group({ name, media, selector }) {
+    //     let category = selector;
+    //     let subcategory: string;
+    //     try {
+    //       const match = name.match(
+    //         /^--(?:[a-z]+-?[a-z]+)+(?:_+(?<variant>[a-z]+[-_]?[a-z]+))?(--(?<property>([a-z]+-?[a-z]+)+))?(?:_(?<state>[a-z]+-?[a-z]+))?$/
+    //       );
+    //       category = match.groups.variant || "";
+    //       if (match.groups.variant) {
+    //         subcategory = match.groups.property;
+    //       }
+    //     } catch (e) {
+    //       console.warn("cannot get category from", name);
+    //     }
+    //     return {
+    //       label: `${name}${media ? ` @ ${media}` : ""}`,
+    //       category,
+    //       subcategory,
+    //     };
+    //   },
+    // } satisfies CssPropsParameter,
     viewport: {
       width: 1280,
       height: 720,
