@@ -2275,10 +2275,10 @@
     object-traversal "^1.0.1"
     uuid "~9.0.0"
 
-"@kickstartds/storybook-addon-component-tokens@3.0.0-canary.31.81.0":
-  version "3.0.0-canary.31.81.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/storybook-addon-component-tokens/-/storybook-addon-component-tokens-3.0.0-canary.31.81.0.tgz#1d8922558caa6691eac634bba9fe15ab47ff23d0"
-  integrity sha512-7YmVU+ZfgBTMMVj8Ddta94Ce+ssywf5fNJOSj3llaO5PzCaVPR2ShaeR+6VtvgR3Dmq8L4aup9GaW54EfvFLSQ==
+"@kickstartds/storybook-addon-component-tokens@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/storybook-addon-component-tokens/-/storybook-addon-component-tokens-3.0.0.tgz#096ee0da6128b485ce6554095bcad6726d0d656a"
+  integrity sha512-zzStxvbEi3zhES8bQghBrZxQ6vTEHaQ81cosF5I2F5EZHCJ0a6CMnWmCEoLUDMCMJMUEurTM0ouUwBg2w0fshQ==
   dependencies:
     "@storybook/blocks" "^8"
     handlebars "^4.7.7"

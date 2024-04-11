@@ -16,6 +16,9 @@ import "./preview.css";
 const myActions = actions("radio");
 window._ks.radio.on("*", myActions.radio);
 
+const cssPropsNameRe =
+  "^--(?:[a-z]+-?[a-z]+)+(?:_+(?<variant>[a-z]+[-_]?[a-z]+))?(--(?<property>([a-z]+-?[a-z]+)+))?(?:_(?<state>[a-z]+-?[a-z]+))?$";
+
 const preview: Preview = {
   parameters: {
     controls: {
@@ -62,28 +65,13 @@ const preview: Preview = {
     jsonschema: {
       packArgs: true,
     },
-    // cssprops: {
-    //   group({ name, media, selector }) {
-    //     let category = selector;
-    //     let subcategory: string;
-    //     try {
-    //       const match = name.match(
-    //         /^--(?:[a-z]+-?[a-z]+)+(?:_+(?<variant>[a-z]+[-_]?[a-z]+))?(--(?<property>([a-z]+-?[a-z]+)+))?(?:_(?<state>[a-z]+-?[a-z]+))?$/
-    //       );
-    //       category = match.groups.variant || "";
-    //       if (match.groups.variant) {
-    //         subcategory = match.groups.property;
-    //       }
-    //     } catch (e) {
-    //       console.warn("cannot get category from", name);
-    //     }
-    //     return {
-    //       label: `${name}${media ? ` @ ${media}` : ""}`,
-    //       category,
-    //       subcategory,
-    //     };
-    //   },
-    // } satisfies CssPropsParameter,
+    cssprops: {
+      group: {
+        label: `{{name}}{{#if media}} @ {{media}}{{/if}}`,
+        category: `{{#regex name="${cssPropsNameRe}"}}{{variant}}{{/regex}}`,
+        subcategory: `{{#regex name="${cssPropsNameRe}"}}{{#if variant}}{{property}}{{/if}}{{/regex}}`,
+      },
+    } satisfies CssPropsParameter,
     viewport: {
       width: 1280,
       height: 720,

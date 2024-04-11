@@ -89,7 +89,7 @@
     "@kickstartds/jsonschema2storyblok": "^1.5.9",
     "@kickstartds/jsonschema2types": "^1.1.27",
     "@kickstartds/jsonschema2uniform": "^1.3.6",
-    "@kickstartds/storybook-addon-component-tokens": "3.0.0-canary.31.81.0",
+    "@kickstartds/storybook-addon-component-tokens": "^3.0.0",
     "@kickstartds/storybook-addon-html": "1.0.0--canary.1.8.0",
     "@kickstartds/storybook-addon-jsonschema": "4.0.0--canary.27.b43bfde.0",
     "@kickstartds/style-dictionary": "^4.0.2",
