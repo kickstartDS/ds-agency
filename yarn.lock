@@ -2194,7 +2194,7 @@
 
 "@kickstartds/json-schema-to-typescript@~13.1.20":
   version "13.1.20"
-  resolved "https://registry.yarnpkg.com/@kickstartds/json-schema-to-typescript/-/json-schema-to-typescript-13.1.20.tgz#35342eeb3a0654e9fc4f6660902572782a0923cf"
+  resolved "https://registry.npmjs.org/@kickstartds/json-schema-to-typescript/-/json-schema-to-typescript-13.1.20.tgz#35342eeb3a0654e9fc4f6660902572782a0923cf"
   integrity sha512-do4QWO27yULWjRTv0+tKKZlLVoQp98J35YURKUWhNTUq81REGqOYT8v0OD16tGGrVh8CQ0FILmsLQVRvQSIrbg==
   dependencies:
     "@bcherny/json-schema-ref-parser" "10.0.5-fork"
@@ -2211,10 +2211,10 @@
     mkdirp "^1.0.4"
     prettier "^2.6.2"
 
-"@kickstartds/jsonschema-utils@3.0.1", "@kickstartds/jsonschema-utils@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@kickstartds/jsonschema-utils/-/jsonschema-utils-3.0.1.tgz#5a6e8598d1403beeb83718b29999f5d561bb6d9a"
-  integrity sha512-Yip6vdN0KKB1JiGLFi6dWQPibajbWzsmC4wJvPyKi7es4qmWYjKN+0U9ua1YyAzvnNCF3gnmk8LaF9GWMOvtkg==
+"@kickstartds/jsonschema-utils@3.0.11", "@kickstartds/jsonschema-utils@^3.0.11":
+  version "3.0.11"
+  resolved "https://registry.npmjs.org/@kickstartds/jsonschema-utils/-/jsonschema-utils-3.0.11.tgz#c98a1e42fe1548d2e069e60d813d3960f287a6b0"
+  integrity sha512-miE3/MJDpbItVKcpeG9xnPgzDtmB/1sL7I5h1pU9BGVa4su1vLeOBAtl+vneOFYQkxOwvKzuHeZaJiCWS8nIww==
   dependencies:
     "@bcherny/json-schema-ref-parser" "10.0.5-fork"
     ajv "^8.12.0"
@@ -2225,55 +2225,15 @@
     json-schema-traverse "^1.0.0"
     jsonpointer "~5.0.1"
 
-"@kickstartds/jsonschema2stackbit@^1.3.4":
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/@kickstartds/jsonschema2stackbit/-/jsonschema2stackbit-1.3.4.tgz#a33e583a060654aad1d02c5cc305b8f5e75773ec"
-  integrity sha512-MbFVPyCoeRMRPOQY+toXEpJKP5/bVtR4rIKHFpoPG1+SqVOyEA1cw3c/LIjSYVurtV4V1W4zNkPKGun8e0WTgA==
-  dependencies:
-    "@kickstartds/jsonschema-utils" "3.0.1"
-    ajv "^8.12.0"
-    object-traversal "^1.0.1"
-
-"@kickstartds/jsonschema2staticcms@^2.9.5":
-  version "2.9.5"
-  resolved "https://registry.yarnpkg.com/@kickstartds/jsonschema2staticcms/-/jsonschema2staticcms-2.9.5.tgz#71d543837cf12a3b47e8b7341662c8de9423e2ec"
-  integrity sha512-7zMbXvELD2gUOt/NWqr1OtWDUOXECsunSMvkukKyHye96/tlSF+Vi/nfUgBtx//JA06hOyIUI7/1N+ql79SuKA==
-  dependencies:
-    "@kickstartds/jsonschema-utils" "3.0.1"
-    ajv "^8.12.0"
-    object-traversal "^1.0.1"
-    pluralize "^8.0.0"
-
-"@kickstartds/jsonschema2storyblok@^1.5.9":
-  version "1.5.9"
-  resolved "https://registry.yarnpkg.com/@kickstartds/jsonschema2storyblok/-/jsonschema2storyblok-1.5.9.tgz#8cbd5fd7c5facba3b489c69efd455456cbbadde3"
-  integrity sha512-iJVgZoh09ESks4Y7giyy6jim0j98V55M26AYymknTu0NTGzgtDnl81mpY+d/mb6zP2wU3BjFmR9jDLTbEOwreQ==
-  dependencies:
-    "@kickstartds/jsonschema-utils" "3.0.1"
-    ajv "^8.12.0"
-    object-traversal "^1.0.1"
-    uuid "~9.0.0"
-
-"@kickstartds/jsonschema2types@^1.1.27":
-  version "1.1.27"
-  resolved "https://registry.yarnpkg.com/@kickstartds/jsonschema2types/-/jsonschema2types-1.1.27.tgz#05ad753df1a96d0695c17635cd98669331e61c12"
-  integrity sha512-hgMfnpObgRa7gHaDSAOi8FiHLjNBQxERuJiw8WouZ/2BVvgOi4iYTUj3UKd/i7jlAFIRFeXA/WZxq5rHxUM5+Q==
+"@kickstartds/jsonschema2types@^1.1.37":
+  version "1.1.37"
+  resolved "https://registry.npmjs.org/@kickstartds/jsonschema2types/-/jsonschema2types-1.1.37.tgz#91b820d94c5dbec49ebe99788334c5c2f476eb64"
+  integrity sha512-aSrfryJeHywO2sQh+M/Pr60tvl+CGqs59Irq8+EhNkZ/nIeMZDdjYltqDy1jG+5/Tbth0yi95+0d6Cx/qOkkdA==
   dependencies:
     "@kickstartds/json-schema-to-typescript" "~13.1.20"
-    "@kickstartds/jsonschema-utils" "3.0.1"
+    "@kickstartds/jsonschema-utils" "3.0.11"
     ajv "^8.12.0"
     object-traversal "^1.0.1"
-
-"@kickstartds/jsonschema2uniform@^1.3.6":
-  version "1.3.6"
-  resolved "https://registry.yarnpkg.com/@kickstartds/jsonschema2uniform/-/jsonschema2uniform-1.3.6.tgz#cc44e59244d0121d8cf5e6aecfb225a57d73fea9"
-  integrity sha512-n66Go0vjIUb8i+sh/mL7N7czGBF+iG4JNF28soTwXH67cLej/4SNBW9nSJBibmVs5f30AzAGxCIQXkDvI3+RKg==
-  dependencies:
-    "@kickstartds/jsonschema-utils" "3.0.1"
-    ajv "^8.12.0"
-    change-case "^5.0.2"
-    object-traversal "^1.0.1"
-    uuid "~9.0.0"
 
 "@kickstartds/storybook-addon-component-tokens@^3.0.0":
   version "3.0.0"
@@ -3921,14 +3881,14 @@
 
 "@types/lodash-es@^4.17.9":
   version "4.17.12"
-  resolved "https://registry.yarnpkg.com/@types/lodash-es/-/lodash-es-4.17.12.tgz#65f6d1e5f80539aa7cfbfc962de5def0cf4f341b"
+  resolved "https://registry.npmjs.org/@types/lodash-es/-/lodash-es-4.17.12.tgz#65f6d1e5f80539aa7cfbfc962de5def0cf4f341b"
   integrity sha512-0NgftHUcV4v34VhXm8QBSftKVXtbkBG3ViCjs6+eJ5a6y6Mi/jiFGPc1sC7QK+9BFhWrURE3EOggmWaSxL9OzQ==
   dependencies:
     "@types/lodash" "*"
 
 "@types/lodash@*", "@types/lodash@^4.14.167", "@types/lodash@^4.14.182", "@types/lodash@^4.14.191":
   version "4.17.0"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.17.0.tgz#d774355e41f372d5350a4d0714abb48194a489c3"
+  resolved "https://registry.npmjs.org/@types/lodash/-/lodash-4.17.0.tgz#d774355e41f372d5350a4d0714abb48194a489c3"
   integrity sha512-t7dhREVv6dbNj0q17X12j7yDG4bD/DHYX7o5/DbDxobP0HnGPgpRz2Ej77aL7TZT3DSw13fqUTj8J4mMnqa7WA==
 
 "@types/lz-string@^1.3.34":
@@ -9421,10 +9381,10 @@ kebab-case@^1.0.0:
   resolved "https://registry.npmjs.org/kebab-case/-/kebab-case-1.0.2.tgz"
   integrity sha512-7n6wXq4gNgBELfDCpzKc+mRrZFs7D+wgfF5WRFLNAr4DA/qtr9Js8uOAVAfHhuLMfAcQ0pRKqbpjx+TcJVdE1Q==
 
-kickstartds@3.0.0-next.12:
-  version "3.0.0-next.12"
-  resolved "https://registry.yarnpkg.com/kickstartds/-/kickstartds-3.0.0-next.12.tgz#422fb54be66a4da5c670e221b88266692bbd9f51"
-  integrity sha512-pSgwAHDHafFETnQQHRFZPENzTLlCwgnsr05V6V2NJvAs7xSy/fYFcsIT2P2K2N0A6u0mh1HiRT8jk3zlIO5fYQ==
+kickstartds@3.0.0-next.15:
+  version "3.0.0-next.15"
+  resolved "https://registry.npmjs.org/kickstartds/-/kickstartds-3.0.0-next.15.tgz#9b462d854f4d43ef72820add9a82b6f54d22e9e1"
+  integrity sha512-uXYnSKsZEwjHY9Z2hg7uDWxU9gCC0KweuwTmvwOL1LlsrWZvNoDF/wH/MZQNzTjjtw/WJaXK/ghksg1VbTRhGg==
   dependencies:
     "@apidevtools/json-schema-ref-parser" "^9.0.9"
     "@babel/preset-react" "^7.17.12"
@@ -9613,7 +9573,7 @@ locate-path@^7.1.0:
 
 lodash-es@^4.17.21:
   version "4.17.21"
-  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
+  resolved "https://registry.npmjs.org/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
   integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
 
 lodash.camelcase@^4.3.0:
@@ -11249,11 +11209,6 @@ playwright@^1.14.0:
   optionalDependencies:
     fsevents "2.3.2"
 
-pluralize@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-8.0.0.tgz#1a6fa16a38d12a1901e0320fa017051c539ce3b1"
-  integrity sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==
-
 pngjs@^3.4.0:
   version "3.4.0"
   resolved "https://registry.npmjs.org/pngjs/-/pngjs-3.4.0.tgz"
@@ -12862,8 +12817,7 @@ string-length@^5.0.1:
     char-regex "^2.0.0"
     strip-ansi "^7.0.1"
 
-"string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
-  name string-width-cjs
+"string-width-cjs@npm:string-width@^4.2.0":
   version "4.2.3"
   resolved "https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -12880,6 +12834,15 @@ string-width@^3.0.0, string-width@^3.1.0:
     emoji-regex "^7.0.1"
     is-fullwidth-code-point "^2.0.0"
     strip-ansi "^5.1.0"
+
+string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
+  version "4.2.3"
+  resolved "https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz"
+  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
 
 string-width@^5.0.1, string-width@^5.1.2:
   version "5.1.2"
@@ -12958,7 +12921,7 @@ stringify-object@^3.3.0:
     is-obj "^1.0.1"
     is-regexp "^1.0.0"
 
-"strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+"strip-ansi-cjs@npm:strip-ansi@^6.0.1":
   version "6.0.1"
   resolved "https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
@@ -12971,6 +12934,13 @@ strip-ansi@^5.0.0, strip-ansi@^5.1.0, strip-ansi@^5.2.0:
   integrity sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==
   dependencies:
     ansi-regex "^4.1.0"
+
+strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz"
+  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
+  dependencies:
+    ansi-regex "^5.0.1"
 
 strip-ansi@^7.0.1:
   version "7.1.0"
@@ -13894,7 +13864,7 @@ uuid@^8.3.2:
   resolved "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
-uuid@^9.0.0, uuid@~9.0.0:
+uuid@^9.0.0:
   version "9.0.1"
   resolved "https://registry.npmjs.org/uuid/-/uuid-9.0.1.tgz"
   integrity sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==
@@ -14344,8 +14314,7 @@ wordwrapjs@^4.0.0:
     reduce-flatten "^2.0.0"
     typical "^5.2.0"
 
-"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
-  name wrap-ansi-cjs
+"wrap-ansi-cjs@npm:wrap-ansi@^7.0.0":
   version "7.0.0"
   resolved "https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-7.0.0.tgz"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
@@ -14367,6 +14336,15 @@ wrap-ansi@^6.0.1, wrap-ansi@^6.2.0:
   version "6.2.0"
   resolved "https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-6.2.0.tgz"
   integrity sha512-r6lPcBGxZXlIcymEu7InxDMhdW0KDxpLgoFLcguasxCaJ/SOIZwINatK9KY/tf+ZrlywOKU0UDj3ATXUBfxJXA==
+  dependencies:
+    ansi-styles "^4.0.0"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
+
+wrap-ansi@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-7.0.0.tgz"
+  integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
   dependencies:
     ansi-styles "^4.0.0"
     string-width "^4.1.0"
