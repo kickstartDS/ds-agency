@@ -83,7 +83,6 @@
     "@kickstartds/blog": "^4.0.2",
     "@kickstartds/core": "^4.0.2",
     "@kickstartds/form": "^4.0.2",
-    "@kickstartds/jsonschema-utils": "^3.0.11",
     "@kickstartds/jsonschema2types": "^1.1.37",
     "@kickstartds/storybook-addon-component-tokens": "^3.0.0",
     "@kickstartds/storybook-addon-html": "^1.0.0",

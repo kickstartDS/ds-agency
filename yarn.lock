@@ -2211,7 +2211,7 @@
     mkdirp "^1.0.4"
     prettier "^2.6.2"
 
-"@kickstartds/jsonschema-utils@3.0.11", "@kickstartds/jsonschema-utils@^3.0.11":
+"@kickstartds/jsonschema-utils@3.0.11":
   version "3.0.11"
   resolved "https://registry.npmjs.org/@kickstartds/jsonschema-utils/-/jsonschema-utils-3.0.11.tgz#c98a1e42fe1548d2e069e60d813d3960f287a6b0"
   integrity sha512-miE3/MJDpbItVKcpeG9xnPgzDtmB/1sL7I5h1pU9BGVa4su1vLeOBAtl+vneOFYQkxOwvKzuHeZaJiCWS8nIww==
