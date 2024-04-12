@@ -2,10 +2,7 @@ import { Section } from "../../section/SectionComponent";
 import { BlogTeaser } from "../../blog-teaser/BlogTeaserComponent";
 import { BlogOverviewProps } from "../BlogOverviewProps";
 
-export const BlogOverview = ({
-  latest,
-  more = [],
-}: BlogOverviewProps) => {
+export const BlogOverview = ({ latest, more = [] }: BlogOverviewProps) => {
   return (
     <>
       {latest && (
@@ -23,3 +20,4 @@ export const BlogOverview = ({
     </>
   );
 };
+BlogOverview.displayName = "BlogOverview";

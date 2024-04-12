@@ -1,17 +1,12 @@
 import classnames from "classnames";
 import { HTMLAttributes, FC, PropsWithChildren, forwardRef } from "react";
-
-import ReactMarkdown from "react-markdown";
+import { compiler } from "markdown-to-jsx";
 
 import { HeadlineContext } from "@kickstartds/base/lib/headline";
 import { defaultRenderFn } from "@kickstartds/core/lib/core";
 
 import { HeadlineProps } from "./HeadlineProps";
 import "./headline.scss";
-
-const markdownRenderFn = (text: string) => (
-  <ReactMarkdown children={text} components={{ p: "span" }} />
-);
 
 interface RenderFunctions {
   renderContent?: typeof defaultRenderFn;
@@ -35,8 +30,8 @@ export const Headline = forwardRef<
       style = styleAs || "h2",
       spaceAfter = "small",
       className,
-      renderContent = markdownRenderFn,
-      renderSubheadline = markdownRenderFn,
+      renderContent = compiler,
+      renderSubheadline = compiler,
       ...props
     },
     ref

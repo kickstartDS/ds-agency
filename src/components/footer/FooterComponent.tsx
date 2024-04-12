@@ -37,3 +37,4 @@ export const Footer: FC<FooterProps> = ({
     </div>
   </div>
 );
+Footer.displayName = "Footer";

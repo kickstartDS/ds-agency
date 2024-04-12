@@ -14,3 +14,4 @@ export const Testimonials: FC<
     </div>
   );
 };
+Testimonials.displayName = "Testimonials";

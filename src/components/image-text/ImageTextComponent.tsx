@@ -52,6 +52,7 @@ export const ImageText = forwardRef<
   const Component = useContext(ImageTextContext);
   return <Component {...props} ref={ref} />;
 });
+ImageText.displayName = "ImageText";
 
 export const ImageTextProvider: FC<
   ImageTextProps & HTMLAttributes<HTMLDivElement>

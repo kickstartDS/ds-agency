@@ -24,3 +24,4 @@ export const BlogPost = ({ head, content, aside, cta }: BlogPostProps) => (
     )}
   </>
 );
+BlogPost.displayName = "BlogPost";

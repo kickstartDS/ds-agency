@@ -82,3 +82,4 @@ export const BlogTeaser = forwardRef<HTMLDivElement, BlogTeaserProps>(
     return <Component {...props} ref={ref} />;
   }
 );
+BlogTeaser.displayName = "BlogTeaser";

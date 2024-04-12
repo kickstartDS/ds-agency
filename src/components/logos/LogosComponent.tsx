@@ -58,3 +58,4 @@ export const Logos = forwardRef<
   const Component = useContext(LogosContext);
   return <Component {...props} ref={ref} />;
 });
+Logos.displayName = "Logos";

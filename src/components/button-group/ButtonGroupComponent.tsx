@@ -31,6 +31,7 @@ export const ButtonGroup = forwardRef<HTMLDivElement, ButtonGroupProps>(
     ) : null;
   }
 );
+ButtonGroup.displayName = "ButtonGroup";
 
 export const ButtonGroupProvider: FC<PropsWithChildren> = (props) => (
   <ButtonGroupContext.Provider {...props} value={ButtonGroup} />
