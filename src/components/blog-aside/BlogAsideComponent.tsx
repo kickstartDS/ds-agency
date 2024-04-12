@@ -78,3 +78,4 @@ export const BlogAside = forwardRef<HTMLDivElement, BlogAsideProps>(
     return <Component {...props} ref={ref} />;
   }
 );
+BlogAside.displayName = "BlogAside";

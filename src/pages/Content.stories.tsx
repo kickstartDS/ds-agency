@@ -191,9 +191,10 @@ The implementation of the new **Design System** and migration to **Storyblok** t
 
 export default {
   title: "Pages/Archetypes",
-  render: Page,
+  component: Page,
   parameters: {
     layout: "fullscreen",
+    playroom: { disable: true },
   },
 };
 

@@ -12,6 +12,7 @@ const meta: Meta = {
   parameters: {
     jsonschema: { schema },
     cssprops: { customProperties },
+    playroom: { disable: true },
   },
   ...getArgsShared(schema as JSONSchema7),
 };

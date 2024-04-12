@@ -40,3 +40,4 @@ export const Cta = forwardRef<HTMLDivElement, CtaProps>((props, ref) => {
   const Component = useContext(CtaContext);
   return <Component {...props} ref={ref} />;
 });
+Cta.displayName = "Cta";

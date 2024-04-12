@@ -29,3 +29,4 @@ export const Header: FC<HeaderProps> = ({
     </div>
   </>
 );
+Header.displayName = "Header";

@@ -26,3 +26,4 @@ export const BlogHead = forwardRef<HTMLDivElement, BlogHeadProps>(
     return <Component {...props} ref={ref} />;
   }
 );
+BlogHead.displayName = "BlogHead";
