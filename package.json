@@ -74,7 +74,7 @@
     "@bedrock-layout/primitives": "^3.0.23",
     "@bedrock-layout/spacing-constants": "^3.2.5",
     "classnames": "^2.3.2",
-    "react-markdown": "^8.0.7"
+    "markdown-to-jsx": "^7.3.2"
   },
   "devDependencies": {
     "@auto-it/npm": "^11.0.1",
