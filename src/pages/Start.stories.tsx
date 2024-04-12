@@ -408,9 +408,10 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
 
 export default {
   title: "Pages/Archetypes",
-  render: Page,
+  component: Page,
   parameters: {
     layout: "fullscreen",
+    playroom: { disable: true },
   },
 };
 

@@ -49,3 +49,4 @@ export const Features = forwardRef<
   const Component = useContext(FeaturesContext);
   return <Component {...props} ref={ref} />;
 });
+Features.displayName = "Features";

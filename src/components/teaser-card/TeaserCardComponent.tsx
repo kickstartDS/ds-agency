@@ -68,7 +68,6 @@ export const TeaserCardContextDefault = forwardRef<
     </Container>
   )
 );
-TeaserCardContextDefault.displayName = "TeaserCard";
 
 export const TeaserCardContext = createContext(TeaserCardContextDefault);
 export const TeaserCard = forwardRef<
@@ -78,6 +77,7 @@ export const TeaserCard = forwardRef<
   const Component = useContext(TeaserCardContext);
   return <Component {...props} ref={ref} />;
 });
+TeaserCard.displayName = "TeaserCard";
 
 export const TeaserBoxProvider: FC<PropsWithChildren> = (props) => (
   <TeaserBoxContext.Provider {...props} value={TeaserCard} />

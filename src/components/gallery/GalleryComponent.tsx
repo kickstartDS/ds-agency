@@ -87,3 +87,4 @@ export const Gallery = forwardRef<
   const Component = useContext(GalleryContext);
   return <Component {...props} ref={ref} />;
 });
+Gallery.displayName = "Gallery";
