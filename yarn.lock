@@ -9298,10 +9298,10 @@ kebab-case@^1.0.0:
   resolved "https://registry.npmjs.org/kebab-case/-/kebab-case-1.0.2.tgz"
   integrity sha512-7n6wXq4gNgBELfDCpzKc+mRrZFs7D+wgfF5WRFLNAr4DA/qtr9Js8uOAVAfHhuLMfAcQ0pRKqbpjx+TcJVdE1Q==
 
-kickstartds@3.0.0-next.15:
-  version "3.0.0-next.15"
-  resolved "https://registry.npmjs.org/kickstartds/-/kickstartds-3.0.0-next.15.tgz#9b462d854f4d43ef72820add9a82b6f54d22e9e1"
-  integrity sha512-uXYnSKsZEwjHY9Z2hg7uDWxU9gCC0KweuwTmvwOL1LlsrWZvNoDF/wH/MZQNzTjjtw/WJaXK/ghksg1VbTRhGg==
+kickstartds@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/kickstartds/-/kickstartds-3.0.0.tgz#eaf06f7fc3cb575f45f102f4c38b081c68d30359"
+  integrity sha512-3FoYCJq8BEeNMCbPWmMZ6eI7mSn9iNfH8VDpVxXqWahe4I6tg2P+W0zrgm1Hmm+YTujbkYUP6sZiod3MfP403g==
   dependencies:
     "@apidevtools/json-schema-ref-parser" "^9.0.9"
     "@babel/preset-react" "^7.17.12"
