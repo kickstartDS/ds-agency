@@ -2283,19 +2283,19 @@
     "@storybook/blocks" "^8"
     handlebars "^4.7.7"
 
-"@kickstartds/storybook-addon-html@1.0.0--canary.1.8.0":
-  version "1.0.0--canary.1.8.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/storybook-addon-html/-/storybook-addon-html-1.0.0--canary.1.8.0.tgz#4a9ae4f29e2defeb31eb285c8c976045a46a9f7d"
-  integrity sha512-VDynry3vkjBJXkyl+2uvspkoAiiEojfQyM5eCo5hKObGln/50XARwvvhc1nv8kUGlv8+NQkdZbSDxe+qPlCoqQ==
+"@kickstartds/storybook-addon-html@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/storybook-addon-html/-/storybook-addon-html-1.0.0.tgz#5dfbfe4baca99f5d483fd7961c1336321e345a7c"
+  integrity sha512-vkDDX+NVRDThvRKcDNhbeP2JJz3288D8gCM7DMpeEN3GjCGMqrZAmrNIYozWcoKg5kB2me2j1inGOYxw59qO5w==
   dependencies:
     "@storybook/components" "^8"
     "@storybook/manager-api" "^8"
     "@storybook/preview-api" "^8"
 
-"@kickstartds/storybook-addon-jsonschema@4.0.0--canary.27.b43bfde.0":
-  version "4.0.0--canary.27.b43bfde.0"
-  resolved "https://registry.yarnpkg.com/@kickstartds/storybook-addon-jsonschema/-/storybook-addon-jsonschema-4.0.0--canary.27.b43bfde.0.tgz#b0c75e42b06700ed3b1557060245daebd3cca828"
-  integrity sha512-hdZGMhNBRd/6ehBemO1QiscgGfWshOnB4w+qnG7Wfc/t3rZPNaulaH9V0f9QvAEKTKx2j4Nbhg++NuCqkdZN7A==
+"@kickstartds/storybook-addon-jsonschema@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@kickstartds/storybook-addon-jsonschema/-/storybook-addon-jsonschema-4.0.0.tgz#351d729d0d4d808855f95765218b6d8aff18106a"
+  integrity sha512-/kwjBev1KirHWyZ/Vao3Hf+zLwryZSXMIIg3d7fnVDs1o2D1ahwYXEOHAxO74SpsQTk9FVxBjkhVsiTXcKIhkw==
   dependencies:
     "@storybook/components" "^8"
     "@storybook/manager-api" "^8"
