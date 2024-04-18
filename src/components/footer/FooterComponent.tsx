@@ -5,11 +5,10 @@ import { Link } from "@kickstartds/base/lib/link";
 import "./footer.scss";
 import { FooterProps } from "./FooterProps";
 
-const now = new Date();
-
 export const Footer: FC<FooterProps> = ({
   logo,
   logoHref = "/",
+  byline,
   navItems = [],
 }) => (
   <div className={classnames("c-footer")}>
@@ -18,9 +17,7 @@ export const Footer: FC<FooterProps> = ({
         <Picture {...logo} lazy />
       </Link>
 
-      <span className="c-footer__trademark">
-        © {now.getFullYear()} systemics Inc. All rights reserved.
-      </span>
+      <span className="c-footer__byline">{byline}</span>
       {navItems.length > 0 ? (
         <div className="c-footer__links">
           {navItems.map(({ label, ...linkProps }) => (

@@ -21,10 +21,15 @@ export type Width = number;
  * Height of the picture
  */
 export type Height = number;
+/**
+ * Small line of text displayed below the logo
+ */
+export type Byline = string;
 
 export interface FooterProps {
   logo: Logo;
   logoHref?: string;
+  byline?: Byline;
   navItems?: {
     href: string;
     label: string;

@@ -42,6 +42,12 @@
       "format": "uri",
       "default": "/"
     },
+    "byline": {
+      "title": "Byline",
+      "description": "Small line of text displayed below the logo",
+      "type": "string",
+      "default": "© 2024 systemics Inc. All rights reserved."
+    },
     "navItems": {
       "type": "array",
       "items": {
