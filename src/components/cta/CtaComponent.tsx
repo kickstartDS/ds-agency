@@ -46,3 +46,4 @@ export const Cta = forwardRef<
   const Component = useContext(CtaContext);
   return <Component {...props} ref={ref} />;
 });
+Cta.displayName = "Cta";

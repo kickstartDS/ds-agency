@@ -48,3 +48,4 @@ export const Text = forwardRef<
   const Component = useContext(TextContext);
   return <Component {...props} ref={ref} />;
 });
+Text.displayName = "Text";

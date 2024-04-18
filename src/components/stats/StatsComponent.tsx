@@ -22,3 +22,4 @@ export const Stats = forwardRef<
   const Component = useContext(StatsContext);
   return <Component {...props} ref={ref} />;
 });
+Stats.displayName = "Stats";

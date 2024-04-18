@@ -75,7 +75,7 @@ describe("Create Snippets", () => {
     });
   }
 
-  test("💾 write snippts.json & components.ts", () => {
+  test("💾 write snippets.json & components.ts", () => {
     fs.writeFileSync("snippets.json", JSON.stringify(snippets, null, 2));
     fs.writeFileSync(
       "components.ts",

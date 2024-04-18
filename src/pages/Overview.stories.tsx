@@ -198,9 +198,10 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
 
 export default {
   title: "Pages/Archetypes",
-  render: Page,
+  component: Page,
   parameters: {
     layout: "fullscreen",
+    playroom: { disable: true },
   },
 };
 
