@@ -17,7 +17,7 @@ export const Footer: FC<FooterProps> = ({
         <Picture {...logo} lazy />
       </Link>
 
-      <span className="c-footer__byline">{byline}</span>
+      {byline && <span className="c-footer__byline">{byline}</span>}
       {navItems.length > 0 ? (
         <div className="c-footer__links">
           {navItems.map(({ label, ...linkProps }) => (
