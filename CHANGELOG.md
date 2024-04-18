@@ -1,3 +1,22 @@
+# v3.6.18 (Thu Apr 18 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feature(footer): rename trademark to byline and make it a prop ([@julrich](https://github.com/julrich))
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- fix: minor component fixes ([@julrich](https://github.com/julrich))
+
+#### 📝 Documentation
+
+- Upgrade storybook [#73](https://github.com/kickstartDS/ds-agency/pull/73) ([@lmestel](https://github.com/lmestel) [@julrich](https://github.com/julrich))
+
+#### Authors: 2
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+- Lukas Mestel ([@lmestel](https://github.com/lmestel))
+
+---
+
 # v3.6.17 (Thu Mar 14 2024)
 
 #### 🐛 Bug Fix
