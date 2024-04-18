@@ -39,3 +39,4 @@ export const Testimonial = forwardRef<HTMLDivElement, TestimonialProps>(
     return <Component {...props} ref={ref} />;
   }
 );
+Testimonial.displayName = "Testimonial";

@@ -1,12 +1,15 @@
 import classnames from "classnames";
-import { forwardRef, createContext, useContext } from "react";
+import { forwardRef, createContext, useContext, HTMLAttributes } from "react";
 import { CtaProps } from "./CtaProps";
 import { Headline } from "@kickstartds/base/lib/headline";
 import { Text } from "../text/TextComponent";
 import { ButtonGroup } from "@kickstartds/base/lib/button-group";
 import "./cta.scss";
 
-export const CtaContextDefault = forwardRef<HTMLDivElement, CtaProps>(
+export const CtaContextDefault = forwardRef<
+  HTMLDivElement,
+  CtaProps & HTMLAttributes<HTMLDivElement>
+>(
   (
     { headline, sub, text, highlightText = false, buttons, textAlign = "left" },
     ref
@@ -36,7 +39,10 @@ export const CtaContextDefault = forwardRef<HTMLDivElement, CtaProps>(
 );
 
 export const CtaContext = createContext(CtaContextDefault);
-export const Cta = forwardRef<HTMLDivElement, CtaProps>((props, ref) => {
+export const Cta = forwardRef<
+  HTMLDivElement,
+  CtaProps & HTMLAttributes<HTMLDivElement>
+>((props, ref) => {
   const Component = useContext(CtaContext);
   return <Component {...props} ref={ref} />;
 });
