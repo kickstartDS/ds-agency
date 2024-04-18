@@ -30,7 +30,8 @@
     "cardImage": {
       "type": "string",
       "title": "Card Preview Image",
-      "description": "Card preview image (larger, e.g. Twitter) used for the page"
+      "description": "Card preview image (larger, e.g. Twitter) used for the page",
+      "format": "image"
     }
   }
 }
