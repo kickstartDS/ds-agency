@@ -1,3 +1,15 @@
+# v3.6.19 (Thu Apr 18 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: only render byline in footer if it exists ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.6.18 (Thu Apr 18 2024)
 
 #### ⚠️ Pushed to `main`
