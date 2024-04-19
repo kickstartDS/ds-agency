@@ -12,14 +12,41 @@ import type {SeoProps} from "../seo/SeoProps";
  * Collection of sections (with their contents) to render on the page
  */
 export type Sections = SectionProps[];
+/**
+ * Whether the header should float on scroll
+ */
+export type Floating = boolean;
+/**
+ * Whether the header should have an inverted color scheme
+ */
+export type Inverted = boolean;
+/**
+ * Whether the footer should have an inverted color scheme
+ */
+export type Inverted1 = boolean;
 
 /**
  * Abstracts a page concept into JSON schema
  */
 export interface PageProps {
   section?: Sections;
+  header?: Header;
+  footer?: Footer;
   /**
    * Referenced component SeoProps
    */
   seo: SeoProps;
+}
+/**
+ * Header settings for the page
+ */
+export interface Header {
+  floating?: Floating;
+  inverted?: Inverted;
+}
+/**
+ * Footer settings for the page
+ */
+export interface Footer {
+  inverted?: Inverted1;
 }

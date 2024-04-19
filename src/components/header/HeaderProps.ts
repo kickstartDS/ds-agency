@@ -25,11 +25,16 @@ export type Height = number;
  * Make the header float over the first Section
  */
 export type Floating = boolean;
+/**
+ * Invert the color scheme of the header
+ */
+export type Inverted = boolean;
 
 export interface HeaderProps {
   logo: Logo;
   logoHref?: string;
   floating?: Floating;
+  inverted?: Inverted;
   navItems?: {
     href: string;
     label: string;

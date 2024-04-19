@@ -25,11 +25,16 @@ export type Height = number;
  * Small line of text displayed below the logo
  */
 export type Byline = string;
+/**
+ * Invert the color scheme of the footer
+ */
+export type Inverted = boolean;
 
 export interface FooterProps {
   logo: Logo;
   logoHref?: string;
   byline?: Byline;
+  inverted?: Inverted;
   navItems?: {
     href: string;
     label: string;
