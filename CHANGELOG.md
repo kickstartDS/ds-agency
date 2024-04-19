@@ -1,3 +1,15 @@
+# v3.6.22 (Fri Apr 19 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: change default mode of section to list ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.6.21 (Fri Apr 19 2024)
 
 #### ⚠️ Pushed to `main`
