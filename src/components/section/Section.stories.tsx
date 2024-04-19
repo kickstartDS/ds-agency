@@ -245,7 +245,7 @@ export const Inverted: Story = {
   args: pack({
     inverted: true,
     content: {
-      mode: "tile",
+      mode: "list",
     },
     headline: {
       text: "Happy Customers Showcases",
@@ -264,7 +264,7 @@ export const Spotlight: Story = {
   },
   args: pack({
     content: {
-      mode: "tile",
+      mode: "list",
     },
     headline: {
       text: "Happy Customers Showcases",
@@ -284,7 +284,7 @@ export const Stagelights: Story = {
   },
   args: pack({
     content: {
-      mode: "tile",
+      mode: "list",
     },
     headline: {
       text: "Happy Customers Showcases",
@@ -305,7 +305,7 @@ export const AccentBackground: Story = {
   },
   args: pack({
     content: {
-      mode: "tile",
+      mode: "list",
     },
     backgroundColor: "accent",
     headline: {
@@ -326,7 +326,7 @@ export const BoldBackground: Story = {
   },
   args: pack({
     content: {
-      mode: "tile",
+      mode: "list",
     },
     backgroundColor: "bold",
     headline: {
@@ -347,7 +347,7 @@ export const ColorfulGradient: Story = {
   },
   args: pack({
     content: {
-      mode: "tile",
+      mode: "list",
     },
     headline: {
       text: "Happy Customers Showcases",
@@ -368,7 +368,7 @@ export const WithButtons: Story = {
   },
   args: pack({
     content: {
-      mode: "default",
+      mode: "list",
     },
     headline: {
       text: "Happy Customers Showcases",

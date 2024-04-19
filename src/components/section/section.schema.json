@@ -144,7 +144,7 @@
           "title": "Mode",
           "description": "Layout mode used for section contents",
           "enum": ["default", "tile", "list", "slider"],
-          "default": "default"
+          "default": "list"
         },
         "tileWidth": {
           "type": "string",
