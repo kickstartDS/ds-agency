@@ -9,9 +9,10 @@ export const Footer: FC<FooterProps> = ({
   logo,
   logoHref = "/",
   byline,
+  inverted = false,
   navItems = [],
 }) => (
-  <div className={classnames("c-footer")}>
+  <div className={classnames("c-footer")} ks-inverted={inverted}>
     <div className="c-footer__content">
       <Link className="c-footer__logo" href={logoHref}>
         <Picture {...logo} lazy />

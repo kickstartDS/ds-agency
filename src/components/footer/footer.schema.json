@@ -48,6 +48,12 @@
       "type": "string",
       "default": "© 2024 systemics Inc. All rights reserved."
     },
+    "inverted": {
+      "type": "boolean",
+      "title": "Inverted",
+      "description": "Invert the color scheme of the footer",
+      "default": false
+    },
     "navItems": {
       "type": "array",
       "items": {

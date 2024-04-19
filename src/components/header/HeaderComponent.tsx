@@ -8,8 +8,9 @@ import "./header.scss";
 
 export const Header: FC<HeaderProps> = ({
   logo,
-  floating,
   logoHref = "/",
+  floating,
+  inverted = false,
   navItems = [],
 }) => (
   <>
@@ -18,6 +19,7 @@ export const Header: FC<HeaderProps> = ({
         "dsa-header",
         floating ? `dsa-header--floating` : ""
       )}
+      ks-inverted={inverted}
     >
       <div className="dsa-header__content">
         <Link className="dsa-header__logo" href={logoHref}>
