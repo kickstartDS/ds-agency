@@ -1,3 +1,17 @@
+# v3.6.21 (Fri Apr 19 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- fix: update types for changed header and footer ([@julrich](https://github.com/julrich))
+- feature: add header and footer options ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.6.20 (Thu Apr 18 2024)
 
 #### ⚠️ Pushed to `main`
