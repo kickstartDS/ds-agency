@@ -21,6 +21,7 @@
       "type": "string",
       "title": "Text",
       "description": "The description of the feature",
+      "format": "markdown",
       "examples": ["This is a feature"]
     },
     "style": {
