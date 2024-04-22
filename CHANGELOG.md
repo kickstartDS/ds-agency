@@ -1,3 +1,16 @@
+# v3.6.23 (Mon Apr 22 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(typo): add font-weight token ([@fleven-kds](https://github.com/fleven-kds))
+- feat(section-token): adjust default max-width token ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.22 (Fri Apr 19 2024)
 
 #### ⚠️ Pushed to `main`
