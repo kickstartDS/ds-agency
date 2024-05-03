@@ -19,7 +19,7 @@ export const Header: FC<HeaderProps> = ({
         "dsa-header",
         floating ? `dsa-header--floating` : ""
       )}
-      ks-inverted={inverted}
+      ks-inverted={inverted.toString()}
     >
       <div className="dsa-header__content">
         <Link className="dsa-header__logo" href={logoHref}>

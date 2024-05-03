@@ -12,7 +12,7 @@ export const Footer: FC<FooterProps> = ({
   inverted = false,
   navItems = [],
 }) => (
-  <div className={classnames("c-footer")} ks-inverted={inverted}>
+  <div className={classnames("c-footer")} ks-inverted={inverted.toString()}>
     <div className="c-footer__content">
       <Link className="c-footer__logo" href={logoHref}>
         <Picture {...logo} lazy />
