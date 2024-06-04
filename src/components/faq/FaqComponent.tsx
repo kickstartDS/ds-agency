@@ -7,7 +7,7 @@ export const FaqContextDefault = forwardRef<
   HTMLDivElement,
   FaqProps & HTMLAttributes<HTMLDivElement>
 >(({ questions, ...rest }, ref) => (
-  <div {...rest} ref={ref} className={`c-faq`}>
+  <div {...rest} ref={ref} className={`dsa-faq`}>
     {questions.map((question, index) => (
       <CollapsibleBox
         key={index}

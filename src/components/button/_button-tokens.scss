@@ -1,8 +1,9 @@
 @import "../../selectors";
 
 .dsa-button {
-  --dsa-button--border-radius: var(--ks-border-radius-pill);
   --dsa-button--padding: 0.75em 2em;
+  --dsa-button--border-width: var(--ks-border-width-default);
+  --dsa-button--border-radius: var(--ks-border-radius-pill);
   --dsa-button--font-weight: var(--ks-font-weight-semi-bold);
 
   //PRIMARY

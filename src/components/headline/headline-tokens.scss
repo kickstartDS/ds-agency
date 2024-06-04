@@ -1,10 +1,11 @@
 @import "../../selectors";
 
 #{$selectors} {
-  --dsa-headline--higlight-gradient: linear-gradient(90deg, var(--ks-color-secondary), var(--ks-color-primary));
-
   --dsa-headline--color: var(--ks-text-color-display);
   --dsa-headline--font-weight: var(--ks-font-weight-medium);
+  --dsa-headline--text-transform: none;
+
+  --dsa-headline--higlight-background: linear-gradient(90deg, var(--ks-color-secondary), var(--ks-color-primary));
 
   --dsa-headline__subheadline--color: var(--ks-text-color-primary);
   --dsa-headline__subheadline--font-weight: var(--ks-font-weight-semi-bold);

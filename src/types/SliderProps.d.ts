@@ -6,6 +6,17 @@ declare module "@kickstartds/content/lib/slider/typing" {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {CtaProps} from "@kickstartds/cta.schema.json/lib/cta/typing";
+import type {FeaturesProps} from "@kickstartds/features.schema.json/lib/features/typing";
+import type {GalleryProps} from "@kickstartds/gallery.schema.json/lib/gallery/typing";
+import type {HeroProps} from "@kickstartds/hero.schema.json/lib/hero/typing";
+import type {ImageTextProps} from "@kickstartds/image-text.schema.json/lib/image-text/typing";
+import type {LogosProps} from "@kickstartds/logos.schema.json/lib/logos/typing";
+import type {StatsProps} from "@kickstartds/stats.schema.json/lib/stats/typing";
+import type {TeaserCardProps} from "@kickstartds/teaser-card.schema.json/lib/teaser-card/typing";
+import type {TestimonialsProps} from "@kickstartds/testimonials.schema.json/lib/testimonials/typing";
+import type {TextProps} from "@kickstartds/text.schema.json/lib/text/typing";
+
 /**
  * Automatically move to next slide after 4 seconds without user interaction
  */
@@ -32,6 +43,21 @@ export type Type = "slider" | "carousel";
  * Additional css classes attached to the wrapping element
  */
 export type Class = string;
+/**
+ * Allowed components for content
+ */
+export type Content = (
+  | CtaProps
+  | FeaturesProps
+  | GalleryProps
+  | HeroProps
+  | ImageTextProps
+  | LogosProps
+  | StatsProps
+  | TeaserCardProps
+  | TestimonialsProps
+  | TextProps
+)[];
 
 export interface SliderProps {
   autoplay?: AutoPlay;
@@ -42,6 +68,7 @@ export interface SliderProps {
   arrows?: ShowArrows;
   type?: Type;
   className?: Class;
+  components?: Content;
 }
 
 }

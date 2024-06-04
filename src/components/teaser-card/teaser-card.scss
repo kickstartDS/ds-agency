@@ -20,6 +20,7 @@
   position: relative;
   overflow: visible;
   transition-property: border-color, background-color, box-shadow;
+  box-shadow: var(--dsa-teaser-card--shadow, var(--ks-box-shadow-card));
 
   > :first-child:not(.c-teaser__body) {
     overflow: hidden;
@@ -58,8 +59,8 @@
   }
 
   .c-teaser__topic {
-    font: var(--dsa-teaser-card__topic--font, var(--dsa-topic-font));
-    font-weight: var(--dsa-teaser-card__topic--font-weight, var(--dsa-topic-font-weight));
+    font: var(--dsa-teaser-card__topic--font, var(--dsa-topic--font));
+    font-weight: var(--dsa-teaser-card__topic--font-weight, var(--dsa-topic--font-weight));
   }
 
   @include container.size("≥", 640px, "teaser-card") {
