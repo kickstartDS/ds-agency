@@ -1,3 +1,15 @@
+# v3.6.25 (Wed Jun 05 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(token): fix component token integrations ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.24 (Fri May 03 2024)
 
 #### ⚠️ Pushed to `main`
