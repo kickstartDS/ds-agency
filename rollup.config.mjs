@@ -9,6 +9,7 @@ import scss from "./scripts/rollupPluginScss.js";
 
 const componentFiles = fg.sync([
   "src/components/**/*Component.(t|j)sx",
+  "src/components/**/*Context.(t|j)sx",
   "src/components/Providers.(t|j)sx",
   "src/components/cms/index.ts",
 ]);

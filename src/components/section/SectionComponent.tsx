@@ -7,6 +7,7 @@ import {
   SectionContext,
 } from "@kickstartds/base/lib/section";
 
+import { HeadlineLevelProvider } from "../headline/HeadlineLevelContext";
 import { SectionProps } from "./SectionProps";
 import "./section.scss";
 import { identifier } from "./js/Section.client";
@@ -42,54 +43,56 @@ export const Section = forwardRef<
       content?.mode === "slider",
     ]);
     return (
-      <SectionContextDefault
-        {...props}
-        {...componentProps}
-        className={classnames(
-          "dsa-section",
-          style !== "default" &&
-            `dsa-section-style--${
-              style === "verticalGradient"
-                ? "vertical-gradient"
-                : style === "horizontalGradient"
-                ? "horizontal-gradient"
-                : style === "accentTransition"
-                ? "accent-transition"
-                : style === "boldTransition"
-                ? "bold-transition"
-                : style === "symmetricGlow"
-                ? "symmetric-glow"
-                : style === "anchorGlow"
-                ? "anchor-glow"
-                : style
-            }`,
-          headerSpacing && "dsa-section--header-spacing",
-          spotlight && "dsa-section--spotlight",
-          className
-        )}
-        background={backgroundColor}
-        content={content}
-        headline={{
-          ...headlineRest,
-          spaceAfter: "large",
-          // @ts-expect-error
-          content: headlineRest.text,
-          level: "h2",
-          style: headlineLarge ? "h1" : "h2",
-        }}
-        buttons={{
-          buttons,
-          // @ts-expect-error
-          items: buttons,
-        }}
-        width={width}
-        spaceBefore={spaceBefore}
-        spaceAfter={spaceAfter}
-        inverted={inverted}
-        ref={ref}
-      >
-        {props.children}
-      </SectionContextDefault>
+      <HeadlineLevelProvider>
+        <SectionContextDefault
+          {...props}
+          {...componentProps}
+          className={classnames(
+            "dsa-section",
+            style !== "default" &&
+              `dsa-section-style--${
+                style === "verticalGradient"
+                  ? "vertical-gradient"
+                  : style === "horizontalGradient"
+                  ? "horizontal-gradient"
+                  : style === "accentTransition"
+                  ? "accent-transition"
+                  : style === "boldTransition"
+                  ? "bold-transition"
+                  : style === "symmetricGlow"
+                  ? "symmetric-glow"
+                  : style === "anchorGlow"
+                  ? "anchor-glow"
+                  : style
+              }`,
+            headerSpacing && "dsa-section--header-spacing",
+            spotlight && "dsa-section--spotlight",
+            className
+          )}
+          background={backgroundColor}
+          content={content}
+          headline={{
+            ...headlineRest,
+            spaceAfter: "large",
+            // @ts-expect-error
+            content: headlineRest.text,
+            level: "h2",
+            style: headlineLarge ? "h1" : "h2",
+          }}
+          buttons={{
+            buttons,
+            // @ts-expect-error
+            items: buttons,
+          }}
+          width={width}
+          spaceBefore={spaceBefore}
+          spaceAfter={spaceAfter}
+          inverted={inverted}
+          ref={ref}
+        >
+          {props.children}
+        </SectionContextDefault>
+      </HeadlineLevelProvider>
     );
   }
 );

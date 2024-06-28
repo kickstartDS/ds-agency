@@ -5,6 +5,7 @@ import { compiler } from "markdown-to-jsx";
 import { HeadlineContext } from "@kickstartds/base/lib/headline";
 import { defaultRenderFn } from "@kickstartds/core/lib/core";
 
+import { useHeadlineLevel } from "./HeadlineLevelContext";
 import { HeadlineProps } from "./HeadlineProps";
 import "./headline.scss";
 
@@ -36,7 +37,14 @@ export const Headline = forwardRef<
     },
     ref
   ) => {
-    const TagName = level;
+    const computedLevel = useHeadlineLevel();
+    const TagName =
+      level === "p"
+        ? level
+        : computedLevel
+        ? (("h" + computedLevel) as "h1" | "h2" | "h3")
+        : level;
+
     return text || sub ? (
       <header
         className={classnames(
