@@ -21,14 +21,14 @@
       "properties": {
         "floating": {
           "type": "boolean",
-          "title": "Floating",
-          "description": "Whether the header should float on scroll",
+          "title": "Toggle Floating",
+          "description": "Toggle default floating header behaviour set in global settings",
           "default": false
         },
         "inverted": {
           "type": "boolean",
-          "title": "Inverted",
-          "description": "Whether the header should have an inverted color scheme",
+          "title": "Toggle Inverted",
+          "description": "Toggle default inverted header behaviour set in global settings",
           "default": false
         }
       }
@@ -40,8 +40,8 @@
       "properties": {
         "inverted": {
           "type": "boolean",
-          "title": "Inverted",
-          "description": "Whether the footer should have an inverted color scheme",
+          "title": "Toggle Inverted",
+          "description": "Toggle default inverted footer behaviour set in global settings",
           "default": false
         }
       }

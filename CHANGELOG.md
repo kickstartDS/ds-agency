@@ -1,3 +1,17 @@
+# v3.6.26 (Fri Jul 19 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- fix: add missing, changed PageProps ([@julrich](https://github.com/julrich))
+- fix: change page header / footer toggle behaviour ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.6.25 (Wed Jun 05 2024)
 
 #### ⚠️ Pushed to `main`
