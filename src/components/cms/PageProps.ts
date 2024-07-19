@@ -13,17 +13,17 @@ import type {SeoProps} from "../seo/SeoProps";
  */
 export type Sections = SectionProps[];
 /**
- * Whether the header should float on scroll
+ * Toggle default floating header behaviour set in global settings
  */
-export type Floating = boolean;
+export type ToggleFloating = boolean;
 /**
- * Whether the header should have an inverted color scheme
+ * Toggle default inverted header behaviour set in global settings
  */
-export type Inverted = boolean;
+export type ToggleInverted = boolean;
 /**
- * Whether the footer should have an inverted color scheme
+ * Toggle default inverted footer behaviour set in global settings
  */
-export type Inverted1 = boolean;
+export type ToggleInverted1 = boolean;
 
 /**
  * Abstracts a page concept into JSON schema
@@ -41,12 +41,12 @@ export interface PageProps {
  * Header settings for the page
  */
 export interface Header {
-  floating?: Floating;
-  inverted?: Inverted;
+  floating?: ToggleFloating;
+  inverted?: ToggleInverted;
 }
 /**
  * Footer settings for the page
  */
 export interface Footer {
-  inverted?: Inverted1;
+  inverted?: ToggleInverted1;
 }
