@@ -55,7 +55,7 @@
   }
 
   .c-rich-text {
-    font: var(--dsa-teaser-card-card--font, var(--dsa-rich-text--font), var(--ks-font-copy-m));
+    font: var(--dsa-teaser-card__copy--font, var(--dsa-rich-text--font, var(--ks-font-copy-m)));
   }
 
   .c-teaser__topic {
