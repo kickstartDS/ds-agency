@@ -22,10 +22,7 @@
 
   --l-section--background-default: var(--dsa-section--background-color_default, var(--ks-background-color-default));
   --l-section--background-accent: var(--dsa-section--background-color_accent, var(--ks-background-color-accent));
-  --l-section--background-bold: var(
-    --dsa-section--background-color_bold,
-    var(--ks-background-color-primary)
-  ); //TBD: Bold Background color
+  --l-section--background-bold: var(--dsa-section--background-color_bold, var(--ks-background-color-primary));
 
   --l-section--space-default: var(--dsa-section--space_default, var(--ks-spacing-xxl));
   --l-section--space-small: var(--dsa-section--space_small, calc(var(--l-section--space-default) / 2));
@@ -81,9 +78,11 @@
   }
 
   &-style--stagelights {
-    background-image: var(--dsa-section_stagelights--background-image),
+    background-image: var(
+      --dsa-section_stagelights--background-image,
       radial-gradient(50% 150% at 100% -50%, var(--ks-color-primary-inverted-alpha-3) 0%, transparent 100%),
-      radial-gradient(50% 150% at 0% -50%, var(--ks-color-primary-alpha-3) 0%, transparent 100%);
+      radial-gradient(50% 150% at 0% -50%, var(--ks-color-primary-alpha-3) 0%, transparent 100%)
+    );
   }
 
   &-style--anchor-glow {
@@ -148,9 +147,11 @@
       height: 100%;
       position: absolute;
       background-image: radial-gradient(
-        650px circle at var(--dsa-section__spotlight--left) var(--dsa-section__spotlight--top),
-        var(--dsa-section__spotlight--color),
-        transparent 80%
+        150px circle at var(--dsa-section__spotlight--left) var(--dsa-section__spotlight--top),
+        var(--dsa-section__spotlight--color) 0%,
+        var(--dsa-section__spotlight--color) 80%,
+        transparent 80%,
+        transparent 100%
       );
     }
   }

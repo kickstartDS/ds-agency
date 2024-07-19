@@ -2,7 +2,7 @@
 
 .dsa-header {
   &--floating {
-    background: linear-gradient(var(--ks-color-bg-alpha-5), transparent);
+    background: var(--dsa-header_floating--background, linear-gradient(var(--ks-color-bg-alpha-5), transparent));
     position: absolute;
     z-index: 999;
 
@@ -11,12 +11,12 @@
     }
   }
 
-  position: relative;
-  background-color: var(--dsa-header--background-color);
+  background: var(--dsa-header--background, var(--ks-background-color-default));
   z-index: 1;
   width: 100%;
   display: flex;
   padding: var(--dsa-header--spacing-vertical) 0;
+  position: relative;
 
   &__content {
     padding: 0 var(--dsa-header--spacing-horizontal);

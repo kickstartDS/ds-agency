@@ -2,17 +2,20 @@
 @import "../../selectors";
 @include container.wrapper("teaser-card");
 
-.c-teaser.dsa-teaser-card {
+.dsa-teaser-card {
   --dsa-teaser-card--background: var(--ks-background-color-card-interactive);
+
   --dsa-teaser-card--border-width: var(--ks-border-width-default);
   --dsa-teaser-card--border-color: var(--ks-border-color-card-interactive);
   --dsa-teaser-card--border-color_hover: var(--ks-border-color-card-interactive-hover);
   --dsa-teaser-card--border-radius: var(--ks-border-radius-card);
+
+  --dsa-teaser-card--shadow: var(--ks-box-shadow-card);
   --dsa-teaser-card--shadow_hover: var(--ks-box-shadow-card-hover);
 
   --dsa-teaser-card__label--font: var(--ks-font-interface-m);
   --dsa-teaser-card__label--font-weight: var(--ks-font-weight-semi-bold);
-  --dsa-teaser-card__label--color: var(--ks-color-fg-base);
+  --dsa-teaser-card__label--color: var(--dsa-text-color-on-primary);
   --dsa-teaser-card__label--background-color: var(--ks-background-color-primary);
   --dsa-teaser-card__label--padding: 0.5em 1em;
   --dsa-teaser-card__label--border-radius: var(--ks-border-radius-pill);

@@ -19,6 +19,11 @@ button.nav-toggle {
   padding: 0 var(--dsa-header--spacing-horizontal);
   transform: translateX(var(--dsa-header--spacing-horizontal));
 
+  --nav-toggle__icon-bar--offset: 14px;
+  @media (min-width: 42em) {
+    --nav-toggle__icon-bar--offset: 18px;
+  }
+
   @media (min-width: 62em) {
     display: none;
   }
@@ -32,18 +37,29 @@ button.nav-toggle {
     display: block;
     cursor: pointer;
     height: var(--dsa-logo--height);
-    width: 31px;
+    width: var(--dsa-logo--height);
     transform: scale(0.7) translate(7.5%, 7.5%);
     transition: inherit;
     color: var(--nav-toggle--color);
 
+    .dsa-header--floating & {
+      color: var(--nav-toggle_floating--color);
+    }
+
     @media (min-width: 40rem) {
-      transform: scale(0.9) translate(2.5%, 2.5%);
+      transform: scale(0.8) translate(2.5%, 2.5%);
     }
 
     .overlay-open &,
     .overlay-open .header-is-scrolling & {
       color: var(--nav-toggle--color_open);
+    }
+
+    .dsa-header--floating & {
+      .overlay-open &,
+      .overlay-open .header-is-scrolling & {
+        color: var(--nav-toggle_floating--color_open);
+      }
     }
 
     .header-is-scrolling-up & {
@@ -91,7 +107,7 @@ button.nav-toggle {
       }
 
       &::before {
-        top: 14px;
+        top: var(--nav-toggle__icon-bar--offset);
         transition:
           top $ease math.div($duration, 2),
           transform math.div($duration, 2) $ease math.div($duration, 2);
@@ -99,7 +115,7 @@ button.nav-toggle {
       }
 
       &::after {
-        bottom: 14px;
+        bottom: var(--nav-toggle__icon-bar--offset);
         transition:
           bottom $ease math.div($duration, 2),
           transform math.div($duration, 2) $ease math.div($duration, 2);

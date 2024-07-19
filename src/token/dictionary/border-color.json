@@ -326,7 +326,7 @@
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.fg.alpha.7.base}",
+            "value": "{ks.color.fg.alpha.9.base}",
             "attributes": {
               "category": "color"
             },
@@ -349,7 +349,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.fg.alpha.5.base}",
+              "value": "{ks.color.fg.alpha.7.base}",
               "attributes": {
                 "category": "color"
               },
@@ -361,7 +361,7 @@
           },
           "active": {
             "base": {
-              "value": "{ks.color.fg.alpha.3.base}",
+              "value": "{ks.color.fg.alpha.7.base}",
               "attributes": {
                 "category": "color"
               },
@@ -398,7 +398,7 @@
         },
         "interactive": {
           "base": {
-            "value": "{ks.color.fg-inverted.alpha.5.base}",
+            "value": "{ks.color.fg-inverted.alpha.9.base}",
             "attributes": {
               "category": "color"
             },
@@ -421,7 +421,7 @@
           },
           "hover": {
             "base": {
-              "value": "{ks.color.fg-inverted.alpha.3.base}",
+              "value": "{ks.color.fg-inverted.alpha.7.base}",
               "attributes": {
                 "category": "color"
               },
@@ -433,7 +433,7 @@
           },
           "active": {
             "base": {
-              "value": "{ks.color.fg-inverted.alpha.1.base}",
+              "value": "{ks.color.fg-inverted.alpha.7.base}",
               "attributes": {
                 "category": "color"
               },

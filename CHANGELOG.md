@@ -1,3 +1,27 @@
+# v3.6.25 (Wed Jun 05 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(token): fix component token integrations ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
+# v3.6.24 (Fri May 03 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: inverted attribute use in DOM ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.6.23 (Mon Apr 22 2024)
 
 #### ⚠️ Pushed to `main`

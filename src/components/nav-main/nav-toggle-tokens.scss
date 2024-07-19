@@ -1,4 +1,7 @@
 .nav-toggle {
   --nav-toggle--color: var(--ks-text-color-default);
   --nav-toggle--color_open: var(--ks-text-color-default);
+
+  --nav-toggle_floating--color: var(--ks-text-color-interface-interactive);
+  --nav-toggle_floating--color_open: var(--ks-text-color-interface-interactive);
 }
