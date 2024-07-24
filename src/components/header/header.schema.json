@@ -10,10 +10,17 @@
       "properties": {
         "src": {
           "title": "Source",
-          "description": "Picture source",
+          "description": "Logo file source",
           "type": "string",
           "format": "image",
-          "examples": ["https://picsum.photos/seed/kdspicture/300/300"]
+          "examples": ["logo.svg"]
+        },
+        "srcInverted": {
+          "title": "Source Inverted",
+          "description": "Logo inverted file source",
+          "type": "string",
+          "format": "image",
+          "examples": ["logo-inverted.svg"]
         },
         "alt": {
           "title": "Alt text",

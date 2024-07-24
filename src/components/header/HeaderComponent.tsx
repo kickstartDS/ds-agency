@@ -23,7 +23,22 @@ export const Header: FC<HeaderProps> = ({
     >
       <div className="dsa-header__content">
         <Link className="dsa-header__logo" href={logoHref}>
-          <Picture {...logo} lazy={false} />
+          <Picture
+            className="dsa-header__logo__img"
+            src={logo?.src}
+            alt={logo?.alt}
+            width={logo?.width}
+            height={logo?.height}
+            lazy={false}
+          />
+          <Picture
+            className="dsa-header__logo__img dsa-header__logo__img--inverted"
+            src={logo?.srcInverted || logo?.src}
+            alt={logo?.alt}
+            width={logo?.width}
+            height={logo?.height}
+            lazy={false}
+          />
         </Link>
 
         <NavMain logo={logo} logoHref={logoHref} items={navItems} />

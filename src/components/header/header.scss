@@ -30,9 +30,21 @@
   &__logo {
     display: block;
 
-    img {
+    &__img {
       height: var(--dsa-header__logo--height);
       width: auto;
+
+      [ks-inverted="true"] & {
+        display: none;
+      }
+
+      &--inverted {
+        display: none;
+
+        [ks-inverted="true"] & {
+          display: block;
+        }
+      }
     }
   }
 }

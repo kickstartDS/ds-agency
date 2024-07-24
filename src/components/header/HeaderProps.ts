@@ -6,9 +6,13 @@
  */
 
 /**
- * Picture source
+ * Logo file source
  */
 export type Source = string;
+/**
+ * Logo inverted file source
+ */
+export type SourceInverted = string;
 /**
  * Alt text to display for picture
  */
@@ -43,6 +47,7 @@ export interface HeaderProps {
 }
 export interface Logo {
   src?: Source;
+  srcInverted?: SourceInverted;
   alt?: AltText;
   width?: Width;
   height?: Height;

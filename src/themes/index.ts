@@ -3,6 +3,7 @@ export const dsa = {
   tokens: "/tokens.css",
   logo: {
     src: "/logo.svg",
+    srcInverted: "/logo-inverted.svg",
     alt: "Systemics Logo",
     width: 176,
     height: 40,
