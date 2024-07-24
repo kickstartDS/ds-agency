@@ -29,7 +29,7 @@ export const Header: FC<HeaderProps> = ({
             alt={logo?.alt}
             width={logo?.width}
             height={logo?.height}
-            lazy={false}
+            lazy={inverted === false}
           />
           <Picture
             className="dsa-header__logo__img dsa-header__logo__img--inverted"
@@ -37,7 +37,7 @@ export const Header: FC<HeaderProps> = ({
             alt={logo?.alt}
             width={logo?.width}
             height={logo?.height}
-            lazy={false}
+            lazy={inverted === true}
           />
         </Link>
 
