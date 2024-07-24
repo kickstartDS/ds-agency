@@ -1,3 +1,15 @@
+# v3.6.31 (Wed Jul 24 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: header logo preloading behaviour ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.6.30 (Wed Jul 24 2024)
 
 #### ⚠️ Pushed to `main`
