@@ -1,3 +1,15 @@
+# v3.6.28 (Tue Jul 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(button): add button token ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.27 (Fri Jul 19 2024)
 
 #### ⚠️ Pushed to `main`
