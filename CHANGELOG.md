@@ -1,3 +1,16 @@
+# v3.6.29 (Wed Jul 24 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(section): add new spotlight token ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.28 (Tue Jul 23 2024)
 
 #### ⚠️ Pushed to `main`
