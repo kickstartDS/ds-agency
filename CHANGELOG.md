@@ -1,3 +1,17 @@
+# v3.6.31 (Thu Jul 25 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add context to Section component ([@julrich](https://github.com/julrich))
+- fix: header preloading behaviour ([@julrich](https://github.com/julrich))
+- fix: header logo preloading behaviour ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.6.30 (Wed Jul 24 2024)
 
 #### ⚠️ Pushed to `main`
