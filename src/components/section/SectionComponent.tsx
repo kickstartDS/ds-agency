@@ -1,17 +1,24 @@
-import { HTMLAttributes, FC, PropsWithChildren, forwardRef } from "react";
+import {
+  HTMLAttributes,
+  FC,
+  PropsWithChildren,
+  forwardRef,
+  createContext,
+  useContext,
+} from "react";
 import classnames from "classnames";
 import { useKsComponent } from "@kickstartds/core/lib/react";
 
 import {
-  SectionContextDefault,
-  SectionContext,
+  SectionContextDefault as KdsSectionContextDefault,
+  SectionContext as KdsSectionContext,
 } from "@kickstartds/base/lib/section";
 
 import { SectionProps } from "./SectionProps";
 import "./section.scss";
 import { identifier } from "./js/Section.client";
 
-export const Section = forwardRef<
+export const SectionContextDefault = forwardRef<
   HTMLDivElement,
   SectionProps & Omit<HTMLAttributes<HTMLElement>, "style" | "content">
 >(
@@ -42,7 +49,7 @@ export const Section = forwardRef<
       content?.mode === "slider",
     ]);
     return (
-      <SectionContextDefault
+      <KdsSectionContextDefault
         {...props}
         {...componentProps}
         className={classnames(
@@ -89,12 +96,21 @@ export const Section = forwardRef<
         ref={ref}
       >
         {props.children}
-      </SectionContextDefault>
+      </KdsSectionContextDefault>
     );
   }
 );
+
+export const SectionContext = createContext(SectionContextDefault);
+export const Section = forwardRef<
+  HTMLDivElement,
+  SectionProps & HTMLAttributes<HTMLDivElement>
+>((props, ref) => {
+  const Component = useContext(SectionContext);
+  return <Component {...props} ref={ref} />;
+});
 Section.displayName = "Section";
 
 export const SectionProvider: FC<PropsWithChildren<any>> = (props) => (
-  <SectionContext.Provider {...props} value={Section} />
+  <KdsSectionContext.Provider {...props} value={Section} />
 );
