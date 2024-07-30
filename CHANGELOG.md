@@ -1,3 +1,15 @@
+# v3.6.33 (Tue Jul 30 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: typo in button scss ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.6.31 (Thu Jul 25 2024)
 
 #### ⚠️ Pushed to `main`
