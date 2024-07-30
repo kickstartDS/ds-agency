@@ -1,3 +1,16 @@
+# v3.6.35 (Tue Jul 30 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(logos-tokens): reintegrate token ([@fleven-kds](https://github.com/fleven-kds))
+- feat(logos-token): remove unused token ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.34 (Tue Jul 30 2024)
 
 #### ⚠️ Pushed to `main`
