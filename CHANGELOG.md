@@ -1,3 +1,15 @@
+# v3.6.34 (Tue Jul 30 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(header): add inversino to nav logo ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.33 (Tue Jul 30 2024)
 
 #### ⚠️ Pushed to `main`
