@@ -1,3 +1,15 @@
+# v3.6.37 (Tue Jul 30 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(logos): update token naming ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.35 (Tue Jul 30 2024)
 
 #### ⚠️ Pushed to `main`
