@@ -6,7 +6,7 @@ html.overlay-open {
   overflow: hidden;
 }
 
-button.nav-toggle {
+button.dsa-nav-toggle {
   $ease: ease;
   $duration: 300ms;
 
@@ -28,11 +28,11 @@ button.nav-toggle {
     display: none;
   }
 
-  .nav-toggle__label {
+  .dsa-nav-toggle__label {
     @include bourbon.hide-visually;
   }
 
-  .nav-toggle__icon {
+  .dsa-nav-toggle__icon {
     position: relative;
     display: block;
     cursor: pointer;
@@ -71,7 +71,7 @@ button.nav-toggle {
       content: "";
     }
 
-    .nav-toggle__icon__middle,
+    .dsa-nav-toggle__icon__middle,
     &::before,
     &::after {
       position: absolute;
@@ -80,7 +80,7 @@ button.nav-toggle {
       background-color: currentColor;
     }
 
-    .nav-toggle__icon__middle {
+    .dsa-nav-toggle__icon__middle {
       top: 50%;
       margin-top: -1.5px;
     }
@@ -101,7 +101,7 @@ button.nav-toggle {
   }
 
   &[aria-expanded="true"] {
-    .nav-toggle__icon {
+    .dsa-nav-toggle__icon {
       &__middle {
         display: none;
       }

@@ -5,17 +5,50 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {PictureProps} from "@kickstartds/base/lib/picture/typing";
+/**
+ * Add a link to the logo
+ */
+export type Link = string;
+/**
+ * Logo file source
+ */
+export type Source = string;
+/**
+ * Logo inverted file source
+ */
+export type SourceInverted = string;
+/**
+ * Alt text to display for picture
+ */
+export type AltText = string;
+/**
+ * Width of the picture
+ */
+export type Width = number;
+/**
+ * Height of the picture
+ */
+export type Height = number;
+/**
+ * Toggle the inversion of the logo inside the mobile navigation
+ */
+export type FlyoutLogoInverted = boolean;
 
 export interface NavMainProps {
-  /**
-   * Referenced component PictureProps
-   */
-  logo: PictureProps;
+  logo: Logo;
   logoHref?: string;
+  flyoutLogoInverted?: FlyoutLogoInverted;
   items?: {
     href: string;
     label: string;
     active?: boolean;
   }[];
+}
+export interface Logo {
+  href?: Link;
+  src?: Source;
+  srcInverted?: SourceInverted;
+  alt?: AltText;
+  width?: Width;
+  height?: Height;
 }

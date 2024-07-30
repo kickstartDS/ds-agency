@@ -5,47 +5,13 @@
   "type": "object",
   "properties": {
     "logo": {
-      "title": "Logo",
-      "type": "object",
-      "properties": {
-        "src": {
-          "title": "Source",
-          "description": "Logo file source",
-          "type": "string",
-          "format": "image",
-          "examples": ["logo.svg"]
-        },
-        "srcInverted": {
-          "title": "Source Inverted",
-          "description": "Logo inverted file source",
-          "type": "string",
-          "format": "image",
-          "examples": ["logo-inverted.svg"]
-        },
-        "alt": {
-          "title": "Alt text",
-          "description": "Alt text to display for picture",
-          "type": "string"
-        },
-        "width": {
-          "title": "Width",
-          "description": "Width of the picture",
-          "type": "integer",
-          "minimum": 0,
-          "examples": [300]
-        },
-        "height": {
-          "title": "Height",
-          "description": "Height of the picture",
-          "type": "integer",
-          "minimum": 0,
-          "examples": [300]
-        }
-      },
-      "additionalProperties": false
+      "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/logo"
     },
     "logoHref": {
       "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/logoHref"
+    },
+    "flyoutLogoInverted": {
+      "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/flyoutLogoInverted"
     },
     "floating": {
       "type": "boolean",

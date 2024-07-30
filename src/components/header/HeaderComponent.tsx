@@ -11,6 +11,7 @@ export const Header: FC<HeaderProps> = ({
   logoHref = "/",
   floating,
   inverted = false,
+  flyoutLogoInverted = false,
   navItems = [],
 }) => (
   <>
@@ -41,7 +42,12 @@ export const Header: FC<HeaderProps> = ({
           />
         </Link>
 
-        <NavMain logo={logo} logoHref={logoHref} items={navItems} />
+        <NavMain
+          flyoutLogoInverted={flyoutLogoInverted}
+          logo={logo}
+          logoHref={logoHref}
+          items={navItems}
+        />
       </div>
     </div>
   </>
