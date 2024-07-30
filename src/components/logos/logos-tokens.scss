@@ -2,7 +2,6 @@
 @include container.wrapper("logos");
 
 .dsa-logos {
-  --dsa-logos-gap: var(--ks-spacing-stack-m);
   --dsa-logos-tagline--font: var(--dsa-headline_h3--font);
   --dsa-logos-tagline--font-weight: var(--dsa-headline--font-weight);
   --dsa-logos-tagline--color: var(--dsa-headline--color);
