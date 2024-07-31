@@ -5,8 +5,6 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {LogoProps} from "../logo/LogoProps";
-
 /**
  * A short tagline atop the logos
  */
@@ -18,191 +16,55 @@ export type LogoTagline = string;
  * @maxItems 20
  */
 export type Logos =
-  | [LogoProps]
-  | [LogoProps, LogoProps]
-  | [LogoProps, LogoProps, LogoProps]
-  | [LogoProps, LogoProps, LogoProps, LogoProps]
-  | [LogoProps, LogoProps, LogoProps, LogoProps, LogoProps]
-  | [LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps]
-  | [LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps]
-  | [LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps]
-  | [LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps]
-  | [LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps, LogoProps]
+  | [Logo]
+  | [Logo, Logo]
+  | [Logo, Logo, Logo]
+  | [Logo, Logo, Logo, Logo]
+  | [Logo, Logo, Logo, Logo, Logo]
+  | [Logo, Logo, Logo, Logo, Logo, Logo]
+  | [Logo, Logo, Logo, Logo, Logo, Logo, Logo]
+  | [Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo]
+  | [Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo]
+  | [Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo]
+  | [Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo]
+  | [Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo]
+  | [Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo]
+  | [Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo]
+  | [Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo]
+  | [Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo]
+  | [Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo]
+  | [Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo]
+  | [Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo, Logo]
   | [
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps
-    ]
-  | [
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps
-    ]
-  | [
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps
-    ]
-  | [
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps
-    ]
-  | [
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps
-    ]
-  | [
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps
-    ]
-  | [
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps
-    ]
-  | [
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps
-    ]
-  | [
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps
-    ]
-  | [
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps,
-      LogoProps
+      Logo,
+      Logo,
+      Logo,
+      Logo,
+      Logo,
+      Logo,
+      Logo,
+      Logo,
+      Logo,
+      Logo,
+      Logo,
+      Logo,
+      Logo,
+      Logo,
+      Logo,
+      Logo,
+      Logo,
+      Logo,
+      Logo,
+      Logo
     ];
+/**
+ * The URL of the logo image
+ */
+export type URL = string;
+/**
+ * The alt text of the logo
+ */
+export type Caption = string;
 /**
  * The alignment of the logo layout
  */
@@ -232,6 +94,13 @@ export interface LogosProps {
   logo?: Logos;
   align?: Alignment;
   cta?: CallToAction;
+}
+/**
+ * Logo entry for Logos component
+ */
+export interface Logo {
+  src: URL;
+  alt?: Caption;
 }
 /**
  * The call to action
