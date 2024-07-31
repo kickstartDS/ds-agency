@@ -5,50 +5,22 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {LogoProps} from "../logo/LogoProps";
+
 /**
- * Add a link to the logo
+ * Toggle the inversion of the flyout navigation
  */
-export type Link = string;
-/**
- * Logo file source
- */
-export type Source = string;
-/**
- * Logo inverted file source
- */
-export type SourceInverted = string;
-/**
- * Alt text to display for picture
- */
-export type AltText = string;
-/**
- * Width of the picture
- */
-export type Width = number;
-/**
- * Height of the picture
- */
-export type Height = number;
-/**
- * Toggle the inversion of the logo inside the mobile navigation
- */
-export type FlyoutLogoInverted = boolean;
+export type FlyoutInverted = boolean;
 
 export interface NavMainProps {
-  logo: Logo;
-  logoHref?: string;
-  flyoutLogoInverted?: FlyoutLogoInverted;
+  /**
+   * Referenced component LogoProps
+   */
+  logo: LogoProps;
+  flyoutInverted?: FlyoutInverted;
   items?: {
     href: string;
     label: string;
     active?: boolean;
   }[];
-}
-export interface Logo {
-  href?: Link;
-  src?: Source;
-  srcInverted?: SourceInverted;
-  alt?: AltText;
-  width?: Width;
-  height?: Height;
 }

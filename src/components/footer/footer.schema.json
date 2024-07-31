@@ -9,38 +9,24 @@
       "type": "object",
       "properties": {
         "src": {
-          "title": "Source",
-          "description": "Picture source",
-          "type": "string",
-          "format": "image",
-          "examples": ["https://picsum.photos/seed/kdspicture/300/300"]
+          "$ref": "http://schema.mydesignsystem.com/logo.schema.json#/properties/src"
+        },
+        "srcInverted": {
+          "$ref": "http://schema.mydesignsystem.com/logo.schema.json#/properties/srcInverted"
         },
         "alt": {
-          "title": "Alt text",
-          "description": "Alt text to display for picture",
-          "type": "string"
+          "$ref": "http://schema.mydesignsystem.com/logo.schema.json#/properties/alt"
+        },
+        "homepageHref": {
+          "$ref": "http://schema.mydesignsystem.com/logo.schema.json#/properties/homepageHref"
         },
         "width": {
-          "title": "Width",
-          "description": "Width of the picture",
-          "type": "integer",
-          "minimum": 0,
-          "examples": [300]
+          "$ref": "http://schema.mydesignsystem.com/logo.schema.json#/properties/width"
         },
         "height": {
-          "title": "Height",
-          "description": "Height of the picture",
-          "type": "integer",
-          "minimum": 0,
-          "examples": [300]
+          "$ref": "http://schema.mydesignsystem.com/logo.schema.json#/properties/height"
         }
-      },
-      "additionalProperties": false
-    },
-    "logoHref": {
-      "type": "string",
-      "format": "uri",
-      "default": "/"
+      }
     },
     "byline": {
       "title": "Byline",
@@ -55,34 +41,7 @@
       "default": false
     },
     "navItems": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "href": { "type": "string", "format": "uri" },
-          "label": { "type": "string" },
-          "target": { "type": "string" }
-        },
-        "additionalProperties": false,
-        "required": ["href", "label"]
-      },
-      "examples": [
-        [
-          {
-            "href": "#privacy-policy",
-            "label": "Privacy policy"
-          },
-          {
-            "href": "#changelog",
-            "label": "Changelog"
-          },
-          {
-            "href": "https://main--64f08cbba622af835d382b4f.chromatic.com/",
-            "label": "Storybook",
-            "target": "_blank"
-          }
-        ]
-      ]
+      "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/items"
     }
   },
   "required": ["logo"],

@@ -6,18 +6,41 @@
  */
 
 /**
- * The URL of the logo image
+ * Picture source
  */
-export type URL = string;
+export type Source = string;
 /**
- * The alt text of the logo
+ * Picture source
  */
-export type Caption = string;
+export type Source1 = string;
+/**
+ * Alt text to display for picture
+ */
+export type AltText = string;
+/**
+ * Toggle wether the inverted or default version of the logo is being displayed
+ */
+export type Inverted = boolean;
+/**
+ * Width of the picture
+ */
+export type Width = number;
+/**
+ * Height of the picture
+ */
+export type Height = number;
+/**
+ * Add additional css classes that should be applied to the logo
+ */
+export type AdditionalClasses = string;
 
-/**
- * Logo entry for Logos component
- */
 export interface LogoProps {
-  src: URL;
-  alt?: Caption;
+  src?: Source;
+  srcInverted?: Source1;
+  alt?: AltText;
+  homepageHref?: string;
+  inverted?: Inverted;
+  width?: Width;
+  height?: Height;
+  className?: AdditionalClasses;
 }

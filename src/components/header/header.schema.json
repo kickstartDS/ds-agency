@@ -5,13 +5,31 @@
   "type": "object",
   "properties": {
     "logo": {
-      "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/logo"
+      "title": "Logo",
+      "type": "object",
+      "properties": {
+        "src": {
+          "$ref": "http://schema.mydesignsystem.com/logo.schema.json#/properties/src"
+        },
+        "srcInverted": {
+          "$ref": "http://schema.mydesignsystem.com/logo.schema.json#/properties/srcInverted"
+        },
+        "alt": {
+          "$ref": "http://schema.mydesignsystem.com/logo.schema.json#/properties/alt"
+        },
+        "homepageHref": {
+          "$ref": "http://schema.mydesignsystem.com/logo.schema.json#/properties/homepageHref"
+        },
+        "width": {
+          "$ref": "http://schema.mydesignsystem.com/logo.schema.json#/properties/width"
+        },
+        "height": {
+          "$ref": "http://schema.mydesignsystem.com/logo.schema.json#/properties/height"
+        }
+      }
     },
-    "logoHref": {
-      "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/logoHref"
-    },
-    "flyoutLogoInverted": {
-      "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/flyoutLogoInverted"
+    "flyoutInverted": {
+      "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/flyoutInverted"
     },
     "floating": {
       "type": "boolean",

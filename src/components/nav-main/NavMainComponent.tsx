@@ -1,8 +1,8 @@
 import classnames from "classnames";
 import { FC } from "react";
 import { Link } from "@kickstartds/base/lib/link";
-import { Picture } from "@kickstartds/base/lib/picture";
 import { NavMainProps } from "./NavMainProps";
+import { Logo } from "../logo/LogoComponent";
 import "./nav-main.scss";
 import "./nav-toggle.scss";
 import "./js/NavToggle.client";
@@ -41,44 +41,41 @@ export const NavMainItem: FC<{
   </li>
 );
 
-export const NavMain: FC<NavMainProps> = ({
-  logo,
-  items,
-  flyoutLogoInverted,
-}) =>
+export const NavMain: FC<NavMainProps> = ({ logo, items, flyoutInverted }) =>
   items && items.length > 0 ? (
     <div className="dsa-nav-main__wrap">
       <NavToggleComponent />
       <nav
+        ks-inverted={flyoutInverted.toString()}
         className={classnames(
           "dsa-nav-main",
+          "dsa-nav-main--flyout",
           items.some((item) => item.active) ? "dsa-nav-main--active" : ""
         )}
         id="dsa-nav-main"
         aria-label="Hauptnavigation"
       >
-        <Link
-          className="dsa-nav-main__logo"
-          ks-inverted={flyoutLogoInverted === true ? "true" : "false"}
-          href={logo?.href}
-        >
-          <Picture
-            className="dsa-nav-main__logo__img"
-            src={logo?.src}
-            alt={logo?.alt}
-            width={logo?.width}
-            height={logo?.height}
-            lazy={flyoutLogoInverted}
-          />
-          <Picture
-            className="dsa-nav-main__logo__img dsa-nav-main__logo__img--inverted"
-            src={logo?.srcInverted || logo?.src}
-            alt={logo?.alt}
-            width={logo?.width}
-            height={logo?.height}
-            lazy={!flyoutLogoInverted}
-          />
-        </Link>
+        <Logo {...logo} className="dsa-nav-main__logo" />
+        <ul className="dsa-nav-main__list">
+          {items.map((item) => (
+            <NavMainItem
+              {...item}
+              active={item.active ?? false}
+              key={item.href + item.label}
+            />
+          ))}
+        </ul>
+      </nav>
+      <nav
+        className={classnames(
+          "dsa-nav-main",
+          "dsa-nav-main--topbar",
+          items.some((item) => item.active) ? "dsa-nav-main--active" : ""
+        )}
+        id="dsa-nav-main"
+        aria-label="Hauptnavigation"
+      >
+        <Logo {...logo} className="dsa-nav-main__logo" />
         <ul className="dsa-nav-main__list">
           {items.map((item) => (
             <NavMainItem

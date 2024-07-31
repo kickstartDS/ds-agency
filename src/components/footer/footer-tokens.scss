@@ -1,4 +1,4 @@
-.c-footer {
+.dsa-footer {
   --dsa-footer--background-color: var(--ks-background-color-default);
   --dsa-footer--border-top: 1px solid var(--ks-border-color-accent);
   --dsa-footer--max-width: var(--l-section--content-width-wide);
@@ -14,6 +14,6 @@
   --dsa-footer__logo--height: 1.5rem;
 
   @media (min-width: 62em) {
-    --dsa-footer__logo--height: 2rem;
+    --dsa-footer__logo--height: 4rem;
   }
 }

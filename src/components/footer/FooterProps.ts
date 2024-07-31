@@ -10,6 +10,10 @@
  */
 export type Source = string;
 /**
+ * Picture source
+ */
+export type Source1 = string;
+/**
  * Alt text to display for picture
  */
 export type AltText = string;
@@ -32,18 +36,19 @@ export type Inverted = boolean;
 
 export interface FooterProps {
   logo: Logo;
-  logoHref?: string;
   byline?: Byline;
   inverted?: Inverted;
   navItems?: {
     href: string;
     label: string;
-    target?: string;
+    active?: boolean;
   }[];
 }
 export interface Logo {
   src?: Source;
+  srcInverted?: Source1;
   alt?: AltText;
+  homepageHref?: string;
   width?: Width;
   height?: Height;
 }

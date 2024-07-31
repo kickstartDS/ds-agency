@@ -1,25 +1,16 @@
 @import "./footer-tokens.scss";
 
-.c-footer {
+.dsa-footer {
   position: relative;
   z-index: 1;
   width: 100%;
   display: flex;
-  background-color: var(
-    --dsa-footer--background-color,
-    var(--ks-background-color-default)
-  );
+  background-color: var(--dsa-footer--background-color, var(--ks-background-color-default));
 
   &__content {
     padding: var(--l-section--space-small) var(--l-section--content-padding);
-    border-top: var(
-      --dsa-footer--border-top,
-      1px solid var(--ks-border-color-accent)
-    );
-    max-width: var(
-      --dsa-footer--max-width,
-      var(--l-section--content-width-wide)
-    );
+    border-top: var(--dsa-footer--border-top, 1px solid var(--ks-border-color-accent));
+    max-width: var(--dsa-footer--max-width, var(--l-section--content-width-wide));
     width: 100%;
     margin: auto;
     display: flex;
@@ -29,12 +20,7 @@
   }
 
   &__logo {
-    display: block;
-
-    img {
-      height: var(--dsa-footer__logo--height);
-      width: auto;
-    }
+    --dsa-logo--height: var(--dsa-footer__logo--height) !important;
   }
 
   &__byline {
@@ -46,10 +32,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: var(
-      --dsa-footer__links--gap,
-      var(--ks-spacing-stack-s) var(--ks-spacing-inline-m)
-    );
+    gap: var(--dsa-footer__links--gap, var(--ks-spacing-stack-s) var(--ks-spacing-inline-m));
   }
 
   &__link {

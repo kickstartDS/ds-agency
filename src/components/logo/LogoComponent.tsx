@@ -1,21 +1,31 @@
-import { forwardRef, createContext, useContext, HTMLAttributes } from "react";
+import classnames from "classnames";
+import { FC } from "react";
 import { LogoProps } from "./LogoProps";
 import { Picture } from "@kickstartds/base/lib/picture";
+import { Link } from "@kickstartds/base/lib/link";
+import "./logo.scss";
 
-export const LogoContextDefault = forwardRef<
-  HTMLDivElement,
-  LogoProps & HTMLAttributes<HTMLDivElement>
->(({ src, ...rest }, ref) => (
-  <div {...rest} ref={ref} className="c-logos__logo">
-    <Picture src={src} />
-  </div>
-));
+export const Logo: FC<LogoProps> = ({
+  src,
+  srcInverted,
+  alt,
+  inverted = false,
+  width,
+  height,
+  homepageHref,
+  className,
+}) => {
+  return (
+    <Link className={classnames("dsa-logo", className)} href={homepageHref}>
+      <Picture
+        className="dsa-logo__img"
+        src={inverted && srcInverted ? srcInverted : src}
+        alt={alt}
+        width={width}
+        height={height}
+      />
+    </Link>
+  );
+};
 
-export const LogoContext = createContext(LogoContextDefault);
-export const Logo = forwardRef<
-  HTMLDivElement,
-  LogoProps & HTMLAttributes<HTMLDivElement>
->((props, ref) => {
-  const Component = useContext(LogoContext);
-  return <Component {...props} ref={ref} />;
-});
+Logo.displayName = "Logo";

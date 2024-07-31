@@ -6,17 +6,13 @@
  */
 
 /**
- * Add a link to the logo
- */
-export type Link = string;
-/**
- * Logo file source
+ * Picture source
  */
 export type Source = string;
 /**
- * Logo inverted file source
+ * Picture source
  */
-export type SourceInverted = string;
+export type Source1 = string;
 /**
  * Alt text to display for picture
  */
@@ -30,9 +26,9 @@ export type Width = number;
  */
 export type Height = number;
 /**
- * Toggle the inversion of the logo inside the mobile navigation
+ * Toggle the inversion of the flyout navigation
  */
-export type FlyoutLogoInverted = boolean;
+export type FlyoutInverted = boolean;
 /**
  * Make the header float over the first Section
  */
@@ -44,8 +40,7 @@ export type Inverted = boolean;
 
 export interface HeaderProps {
   logo: Logo;
-  logoHref?: string;
-  flyoutLogoInverted?: FlyoutLogoInverted;
+  flyoutInverted?: FlyoutInverted;
   floating?: Floating;
   inverted?: Inverted;
   navItems?: {
@@ -55,10 +50,10 @@ export interface HeaderProps {
   }[];
 }
 export interface Logo {
-  href?: Link;
   src?: Source;
-  srcInverted?: SourceInverted;
+  srcInverted?: Source1;
   alt?: AltText;
+  homepageHref?: string;
   width?: Width;
   height?: Height;
 }

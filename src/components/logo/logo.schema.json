@@ -2,30 +2,54 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://schema.mydesignsystem.com/logo.schema.json",
   "title": "Logo",
-  "description": "Logo entry for Logos component",
   "type": "object",
   "properties": {
     "src": {
+      "title": "Source",
+      "description": "Picture source",
       "type": "string",
-      "format": "image",
-      "title": "URL",
-      "description": "The URL of the logo image",
-      "examples": [
-        "img/logos/logoipsum-212.svg",
-        "img/logos/logoipsum-217.svg",
-        "img/logos/logoipsum-239.svg",
-        "img/logos/logoipsum-244.svg",
-        "img/logos/logoipsum-250.svg",
-        "img/logos/logoipsum-286.svg"
-      ]
+      "format": "image"
+    },
+    "srcInverted": {
+      "title": "Source",
+      "description": "Picture source",
+      "type": "string",
+      "format": "image"
     },
     "alt": {
+      "title": "Alt text",
+      "description": "Alt text to display for picture",
+      "type": "string"
+    },
+    "homepageHref": {
       "type": "string",
-      "title": "Caption",
-      "description": "The alt text of the logo",
-      "examples": ["Logo 1"]
+      "format": "uri",
+      "default": "/"
+    },
+    "inverted": {
+      "type": "boolean",
+      "title": "Inverted",
+      "description": "Toggle wether the inverted or default version of the logo is being displayed"
+    },
+    "width": {
+      "title": "Width",
+      "description": "Width of the picture",
+      "type": "integer",
+      "minimum": 0,
+      "examples": [300]
+    },
+    "height": {
+      "title": "Height",
+      "description": "Height of the picture",
+      "type": "integer",
+      "minimum": 0,
+      "examples": [300]
+    },
+    "className": {
+      "title": "Additional Classes",
+      "description": "Add additional css classes that should be applied to the logo",
+      "type": "string"
     }
   },
-  "additionalProperties": false,
-  "required": ["src"]
+  "additionalProperties": false
 }

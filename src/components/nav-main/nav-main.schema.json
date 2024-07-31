@@ -5,61 +5,12 @@
   "type": "object",
   "properties": {
     "logo": {
-      "title": "Logo",
-      "type": "object",
-      "properties": {
-        "href": {
-          "title": "Link",
-          "description": "Add a link to the logo",
-          "type": "string",
-          "format": "uri",
-          "default": "/"
-        },
-        "src": {
-          "title": "Source",
-          "description": "Logo file source",
-          "type": "string",
-          "format": "image",
-          "examples": ["logo.svg"]
-        },
-        "srcInverted": {
-          "title": "Source Inverted",
-          "description": "Logo inverted file source",
-          "type": "string",
-          "format": "image",
-          "examples": ["logo-inverted.svg"]
-        },
-        "alt": {
-          "title": "Alt text",
-          "description": "Alt text to display for picture",
-          "type": "string"
-        },
-        "width": {
-          "title": "Width",
-          "description": "Width of the picture",
-          "type": "integer",
-          "minimum": 0,
-          "examples": [300]
-        },
-        "height": {
-          "title": "Height",
-          "description": "Height of the picture",
-          "type": "integer",
-          "minimum": 0,
-          "examples": [300]
-        }
-      },
-      "additionalProperties": false
+      "$ref": "http://schema.mydesignsystem.com/logo.schema.json"
     },
-    "logoHref": {
-      "type": "string",
-      "format": "uri",
-      "default": "/"
-    },
-    "flyoutLogoInverted": {
+    "flyoutInverted": {
       "type": "boolean",
-      "title": "Flyout Logo Inverted",
-      "description": "Toggle the inversion of the logo inside the mobile navigation",
+      "title": "Flyout Inverted",
+      "description": "Toggle the inversion of the flyout navigation",
       "default": false
     },
     "items": {

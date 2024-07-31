@@ -1,0 +1,10 @@
+@import "logo-tokens.scss";
+
+.dsa-logo {
+  display: block;
+
+  &__img {
+    height: var(--dsa-logo--height);
+    width: auto;
+  }
+}

@@ -11,12 +11,15 @@ export const footerProps = {
   ...unpack(args),
   logo: {
     src: "/logo.svg",
+    srcInverted: "/logo-inverted.svg",
+    inverted: false,
+    homepageHref: "#",
     alt: "Systemics Logo",
     width: 176,
     height: 40,
-    lazy: false,
   },
 };
+
 const meta: Meta = {
   title: "Layout/Footer",
   args: pack(footerProps),
