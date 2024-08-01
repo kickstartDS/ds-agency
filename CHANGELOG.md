@@ -1,3 +1,16 @@
+# v3.6.38 (Wed Jul 31 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(logoProps.ts): push changes ([@fleven-kds](https://github.com/fleven-kds))
+- feat(logo): add + implement logo component ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.37 (Tue Jul 30 2024)
 
 #### ⚠️ Pushed to `main`
