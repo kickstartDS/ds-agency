@@ -7,6 +7,12 @@
   --dsa-button--font-weight: var(--ks-font-weight-semi-bold);
   --dsa-button--text-transform: default;
 
+  // Sizes
+
+  --dsa-button_small--font: var(--ks-font-interface-s);
+  --dsa-button_medium--font: var(--ks-font-interface-m);
+  --dsa-button_large--font: var(--ks-font-interface-l);
+
   //PRIMARY
 
   --dsa-button_primary--color: var(--dsa-text-color-on-primary);

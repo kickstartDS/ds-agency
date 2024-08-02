@@ -9,6 +9,18 @@
   --c-button--border-width: var(--dsa-button--border-width, var(--ks-border-width-default));
   text-transform: var(--dsa-button--text-transform);
 
+  &.c-button--small {
+    --c-button--font: var(--dsa-button_small--font, var(--ks-font-interface-s));
+  }
+
+  &.c-button--medium {
+    --c-button--font: var(--dsa-button_medium--font, var(--ks-font-interface-m));
+  }
+
+  &.c-button--large {
+    --c-button--font: var(--dsa-button_large--font, var(--ks-font-interface-l));
+  }
+
   &.c-button--solid {
     --c-button--color: var(--dsa-button_primary--color, var(--dsa-text-color-on-primary));
     --c-button--color-hover: var(--dsa-button_primary--color_hover, var(--dsa-text-color-on-primary));
