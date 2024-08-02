@@ -80,7 +80,7 @@
   // Mobile Nav
   &.dsa-nav-main--flyout {
     display: none;
-    @media (max-width: "62rem") {
+    @media (max-width: "62em") {
       display: block;
       /* critical:start */
       left: -100%;
@@ -139,7 +139,7 @@
   // Desktop Nav
   &.dsa-nav-main--topbar {
     display: none;
-    @media (min-width: "62rem") {
+    @media (min-width: "62em") {
       display: block;
       /* critical:start */
       > .dsa-nav-main__logo {

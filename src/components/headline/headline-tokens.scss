@@ -15,14 +15,14 @@
   --dsa-headline_h1--font: var(--ks-font-display-xxl);
   --dsa-headline_h1__subheadline--font: var(--ks-font-copy-l);
 
-  @media (min-width: 42rem) {
+  @media (min-width: 48em) {
     --dsa-headline_h1__subheadline--font: var(--ks-font-copy-xl);
   }
 
   --dsa-headline_h2--font: var(--ks-font-display-xl);
   --dsa-headline_h2__subheadline--font: var(--ks-font-copy-m);
 
-  @media (min-width: 42rem) {
+  @media (min-width: 48em) {
     --dsa-headline_h2__subheadline--font: var(--ks-font-copy-l);
   }
 

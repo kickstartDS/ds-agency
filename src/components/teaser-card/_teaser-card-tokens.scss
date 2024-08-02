@@ -29,7 +29,7 @@
 
   --dsa-teaser-card--padding: var(--ks-spacing-inset-l);
 
-  @media (min-width: 48rem) {
+  @media (min-width: 48em) {
     //Scaling for Desktop Breakpoint SmallTiles
     --dsa-teaser-card__topic--font: var(--ks-font-display-s);
     --dsa-teaser-card__copy--font: var(--ks-font-copy-s);

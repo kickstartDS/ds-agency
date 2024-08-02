@@ -22,7 +22,7 @@
 
   --dsa-section__content--padding: var(--ks-spacing-inset-l);
 
-  @media (min-width: 42rem) {
+  @media (min-width: 48em) {
     --dsa-section__content--padding: var(--ks-spacing-inset-xl);
   }
 
@@ -30,7 +30,7 @@
 
   --dsa-logo--height: 2rem;
 
-  @media (min-width: 42rem) {
+  @media (min-width: 48em) {
     --dsa-logo--height: 2.5rem;
   }
 
