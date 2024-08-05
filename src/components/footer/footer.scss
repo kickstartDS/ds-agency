@@ -1,6 +1,8 @@
 @import "./footer-tokens.scss";
 
 .dsa-footer {
+  --g-link--text-decoration: none;
+  --g-link--text-decoration_hover: none;
   position: relative;
   z-index: 1;
   width: 100%;
