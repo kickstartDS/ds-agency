@@ -1,3 +1,16 @@
+# v3.6.41 (Mon Aug 05 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(logo): remove logo story ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.40 (Fri Aug 02 2024)
 
 #### ⚠️ Pushed to `main`
