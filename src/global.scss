@@ -35,7 +35,7 @@ body {
   --g-link--text-decoration-hover: var(--dsa-link--text-decoration_hover, none);
 
   --g-link--color: var(--dsa-link--color, var(--ks-text-color-default-interactive));
-  --g-link--color-hover: var(--dsa-link_hover--color, var(--ks-text-color-default-interactive-hover));
+  --g-link--color-hover: var(--dsa-link--color_hover, var(--ks-text-color-default-interactive-hover));
   --g-link--background: var(--dsa-link--background, transparent);
   --g-link--border-radius: var(--dsa-link--border-radius, 0);
 
