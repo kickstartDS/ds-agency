@@ -138,6 +138,7 @@
       }
     }
   }
+
   // Desktop Nav
   &.dsa-nav-main--topbar {
     display: none;
@@ -177,6 +178,12 @@
           .dsa-nav-main__link {
             .dsa-header--floating & {
               opacity: var(--dsa-nav-main_floating__link--opacity_hover);
+            }
+
+            &:hover {
+              .dsa-header--floating & {
+                opacity: 1;
+              }
             }
           }
         }
