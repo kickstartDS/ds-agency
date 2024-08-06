@@ -1,3 +1,15 @@
+# v3.6.44 (Tue Aug 06 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(global): fix token syntax ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.43 (Tue Aug 06 2024)
 
 #### ⚠️ Pushed to `main`
