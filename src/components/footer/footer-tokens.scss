@@ -8,8 +8,12 @@
   --dsa-footer__byline--color: var(--ks-text-color-default);
 
   --dsa-footer__links--gap: var(--ks-spacing-stack-s) var(--ks-spacing-inline-m);
-  --dsa-footer__links--font: var(--ks-font-interface-s);
-  --dsa-footer__links--color: var(--dsa-link--color);
+
+  --dsa-footer__link--font: var(--ks-font-interface-s);
+  --dsa-footer__link--font-weight: var(--dsa-link--font-weight);
+  --dsa-footer__link--color: var(--dsa-link--color);
+  --dsa-footer__link--text-tecoration: none;
+  --dsa-footer__link--text-tecorationhover: underline;
 
   --dsa-footer__logo--height: 1.5rem;
 

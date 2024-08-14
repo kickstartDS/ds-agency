@@ -29,17 +29,21 @@
   }
 
   &__links {
-    --g-link--text-decoration: none;
-    --g-link--text-decoration_hover: none;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: var(--dsa-footer__links--gap, var(--ks-spacing-stack-s) var(--ks-spacing-inline-m));
   }
 
-  &__link {
-    font: var(--dsa-footer__links--font, var(--ks-font-interface-s));
-    color: var(--dsa-footer__links--color, var(--dsa-link--color));
+  &__link:not(.c-button) {
+    font: var(--dsa-footer__link--font, var(--ks-font-interface-s));
+    font-weight: var(--dsa-footer__link--font-weight, var(--ks-font-interface-s));
+    color: var(--dsa-footer__link--color, var(--dsa-link--color));
+    text-decoration: var(--dsa-footer__link--text-tecoration, none);
+
+    &:hover {
+      text-decoration: var(--dsa-footer__link--text-tecoration-hover, underline);
+      color: var(--dsa-footer__link--color_hover, var(--dsa-link--color_hover));
+    }
   }
 }
