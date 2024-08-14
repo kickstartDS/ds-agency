@@ -1,3 +1,16 @@
+# v3.6.45 (Wed Aug 14 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(footer): make link text-decoration more specific ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.44 (Tue Aug 06 2024)
 
 #### ⚠️ Pushed to `main`
