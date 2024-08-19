@@ -7,39 +7,39 @@
   gap: var(--dsa-headline--gap, 0.25em);
 
   .dsa-headline__headline {
-    font: var(--dsa-headline--font);
+    font: var(--headline--font);
     text-transform: var(--dsa-headline--text-transform);
   }
 
   &--h1 {
-    --dsa-headline--font: var(--dsa-headline_h1--font, var(--ks-font-display-xxl));
+    --headline--font: var(--dsa-headline_h1--font, var(--ks-font-display-xxl));
     --subheadline--font: var(--dsa-headline_h1__subheadline--font, var(--ks-font-copy-xl));
   }
 
   &--h2 {
-    --dsa-headline--font: var(--dsa-headline_h2--font, var(--ks-font-display-xl));
+    --headline--font: var(--dsa-headline_h2--font, var(--ks-font-display-xl));
     --subheadline--font: var(--dsa-headline_h2__subheadline--font, var(--ks-font-copy-l));
   }
 
   &--h3 {
-    --dsa-headline--font: var(--dsa-headline_h3--font, var(--ks-font-display-l));
+    --headline--font: var(--dsa-headline_h3--font, var(--ks-font-display-l));
     --subheadline--font: var(--dsa-headline_h3__subheadline--font, var(--ks-font-copy-l));
   }
 
   &--h4 {
-    --dsa-headline--font: var(--dsa-headline_h4--font, var(--ks-font-display-m));
+    --headline--font: var(--dsa-headline_h4--font, var(--ks-font-display-m));
     --subheadline--font: var(--dsa-headline_h4__subheadline--font, var(--ks-font-copy-m));
   }
 
   &--p {
-    --dsa-headline--font: var(--dsa-headline__p--font, var(--ks-font-copy-m));
+    --headline--font: var(--dsa-headline__p--font, var(--ks-font-copy-m));
     --subheadline--font: var(--dsa-headline__p__subheadline--font, var(--ks-font-copy-s));
   }
 
   .dsa-headline__headline {
-    font: var(--dsa-headline--font);
+    font: var(--headline--font);
     color: var(--dsa-headline--color, var(--ks-text-color-display));
-    font-weight: var(--dsa-headline--font-weight);
+    font-weight: var(--headline--font-weight);
     margin: 0;
   }
 
