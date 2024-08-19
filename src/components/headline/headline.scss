@@ -11,33 +11,29 @@
     text-transform: var(--dsa-headline--text-transform);
   }
 
-  .dsa-headline__subheadline {
-    font: var(--dsa-headline__subheadline--font);
-  }
-
   &--h1 {
     --dsa-headline--font: var(--dsa-headline_h1--font, var(--ks-font-display-xxl));
-    --dsa-subheadline--font: var(--dsa-headline_h1__subheadline--font, var(--ks-font-copy-xl));
+    --subheadline--font: var(--dsa-headline_h1__subheadline--font, var(--ks-font-copy-xl));
   }
 
   &--h2 {
     --dsa-headline--font: var(--dsa-headline_h2--font, var(--ks-font-display-xl));
-    --dsa-subheadline--font: var(--dsa-headline_h2__subheadline--font, var(--ks-font-copy-l));
+    --subheadline--font: var(--dsa-headline_h2__subheadline--font, var(--ks-font-copy-l));
   }
 
   &--h3 {
     --dsa-headline--font: var(--dsa-headline_h3--font, var(--ks-font-display-l));
-    --dsa-subheadline--font: var(--dsa-headline_h3__subheadline--font, var(--ks-font-copy-l));
+    --subheadline--font: var(--dsa-headline_h3__subheadline--font, var(--ks-font-copy-l));
   }
 
   &--h4 {
     --dsa-headline--font: var(--dsa-headline_h4--font, var(--ks-font-display-m));
-    --dsa-subheadline--font: var(--dsa-headline_h4__subheadline--font, var(--ks-font-copy-m));
+    --subheadline--font: var(--dsa-headline_h4__subheadline--font, var(--ks-font-copy-m));
   }
 
   &--p {
     --dsa-headline--font: var(--dsa-headline__p--font, var(--ks-font-copy-m));
-    --dsa-subheadline--font: var(--dsa-headline__p__subheadline--font, var(--ks-font-copy-s));
+    --subheadline--font: var(--dsa-headline__p__subheadline--font, var(--ks-font-copy-s));
   }
 
   .dsa-headline__headline {
@@ -48,7 +44,7 @@
   }
 
   .dsa-headline__subheadline {
-    font: var(--dsa-subheadline--font);
+    font: var(--subheadline--font);
     margin: 0;
     max-width: var(--l-section--content-width-default);
     color: var(--dsa-headline__subheadline--color, var(--ks-text-color-primary));
@@ -97,7 +93,7 @@ h4,
 h5 {
   strong {
     font-weight: inherit;
-    background: var(--dsa-headline--higlight-gradient);
+    background: var(--dsa-headline--higlight-background);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
