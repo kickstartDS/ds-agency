@@ -7,13 +7,18 @@
 
 import type {BlogHeadProps} from "../blog-head/BlogHeadProps";
 import type {BlogAsideProps} from "../blog-aside/BlogAsideProps";
+import type {SectionProps} from "../section/SectionProps";
 import type {CtaProps} from "../cta/CtaProps";
 import type {SeoProps} from "../seo/SeoProps";
 
 /**
- * Body text for the blog post
+ * Body text for the blog post, overwrites sections if present
  */
 export type Text = string;
+/**
+ * Collection of sections (with their contents) to render on the blog post
+ */
+export type BlogSections = SectionProps[];
 
 /**
  * Abstracts a blog post concept into JSON schema
@@ -28,6 +33,7 @@ export interface BlogPostProps {
    */
   aside?: BlogAsideProps;
   content?: Text;
+  section?: BlogSections;
   /**
    * Referenced component CtaProps
    */

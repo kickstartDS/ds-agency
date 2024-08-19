@@ -7,7 +7,7 @@ import "./blog-aside.scss";
 export const BlogAsideContextDefault = forwardRef<
   HTMLDivElement,
   BlogAsideProps
->(({ author, socialSharing, readingTime, date, className }, ref) => {
+>(({ author, socialSharing, readingTime, date, className, ...rest }, ref) => {
   const socialLinks = socialSharing?.map((link) => {
     return {
       icon: link.icon,
@@ -49,6 +49,7 @@ export const BlogAsideContextDefault = forwardRef<
 
   return (
     <PostAside
+      {...rest}
       className={classnames(className, "dsa-blog-aside")}
       author={{
         title: author?.name,

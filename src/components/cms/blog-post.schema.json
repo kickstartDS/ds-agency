@@ -15,8 +15,16 @@
     "content": {
       "type": "string",
       "title": "Text",
-      "description": "Body text for the blog post",
+      "description": "Body text for the blog post, overwrites sections if present",
       "format": "markdown"
+    },
+    "section": {
+      "type": "array",
+      "title": "Blog Sections",
+      "description": "Collection of sections (with their contents) to render on the blog post",
+      "items": {
+        "$ref": "http://schema.mydesignsystem.com/section.schema.json"
+      }
     },
     "cta": {
       "$ref": "http://schema.mydesignsystem.com/cta.schema.json"
