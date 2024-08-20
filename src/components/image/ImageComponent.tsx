@@ -45,8 +45,8 @@ export const Image = forwardRef<
       pictureClassName={pictureClassName}
       ref={ref}
       className={classnames(
-        "c-image",
-        aspectRatio !== "unset" && `c-image--${aspectRatio}`,
+        "dsa-image",
+        aspectRatio !== "unset" && `dsa-image--${aspectRatio}`,
         className
       )}
     />

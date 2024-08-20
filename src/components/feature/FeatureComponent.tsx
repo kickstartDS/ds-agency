@@ -29,27 +29,27 @@ export const FeatureContextDefault = forwardRef<
       {...rest}
       ref={ref}
       className={classnames(
-        `c-feature c-feature--${
+        `dsa-feature dsa-feature--${
           style === `stack`
-            ? `stack c-feature--large`
+            ? `stack dsa-feature--large`
             : style === `besideSmall`
-            ? `beside c-feature--small`
+            ? `beside dsa-feature--small`
             : style === `besideLarge`
-            ? `beside c-feature--large`
+            ? `beside dsa-feature--large`
             : style === `intext`
-            ? `intext c-feature--small`
+            ? `intext dsa-feature--small`
             : style === `centered`
-            ? `centered c-feature--large`
+            ? `centered dsa-feature--large`
             : `${style}`
         }`
       )}
     >
-      <div className="c-feature__header">
-        {icon && <Icon className="c-feature__icon" icon={icon} />}
-        <span className="c-feature__title">{title}</span>
+      <div className="dsa-feature__header">
+        {icon && <Icon className="dsa-feature__icon" icon={icon} />}
+        <span className="dsa-feature__title">{title}</span>
       </div>
       {text || ctaStyle === "intext" ? (
-        <p className="c-feature__text">
+        <p className="dsa-feature__text">
           {text}
           {ctaStyle === "intext" && toggle ? (
             <>
@@ -64,15 +64,15 @@ export const FeatureContextDefault = forwardRef<
       )}
 
       {toggle && (ctaStyle === "link" || ctaStyle === "button") && (
-        <div className="c-feature__cta">
+        <div className="dsa-feature__cta">
           {ctaStyle === "link" ? (
-            <Link className="c-feature__link" href={target}>
+            <Link className="dsa-feature__link" href={target}>
               {label ? label : "See more"}
               <Icon icon="arrow-right" />
             </Link>
           ) : ctaStyle === "button" ? (
             <Button
-              className="c-feature__button"
+              className="dsa-feature__button"
               size="small"
               target={target}
               label={label ? label : "See more"}
