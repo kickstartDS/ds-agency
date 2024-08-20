@@ -1,3 +1,16 @@
+# v3.6.50 (Tue Aug 20 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@fleven-kds](https://github.com/fleven-kds))
+- feat(components): update component + token prefix ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.49 (Mon Aug 19 2024)
 
 #### ⚠️ Pushed to `main`
