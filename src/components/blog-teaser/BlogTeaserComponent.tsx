@@ -21,6 +21,7 @@ export const BlogTeaserContextDefault = forwardRef<
       readingTime,
       author,
       className,
+      ...rest
     },
     ref
   ) => {
@@ -42,6 +43,7 @@ export const BlogTeaserContextDefault = forwardRef<
     return (
       <Container name="post-teaser">
         <PostTeaserContextDefault
+          {...rest}
           className={classnames(className, "dsa-blog-teaser")}
           // @ts-expect-error
           image={{ src: image }}

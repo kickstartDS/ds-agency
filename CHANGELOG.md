@@ -1,3 +1,28 @@
+# v3.6.49 (Mon Aug 19 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feature: add sections to blog post ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
+# v3.6.47 (Mon Aug 19 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(headline): refactor component token ([@fleven-kds](https://github.com/fleven-kds))
+- feat(headline):refactor headline token ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.46 (Wed Aug 14 2024)
 
 #### ⚠️ Pushed to `main`

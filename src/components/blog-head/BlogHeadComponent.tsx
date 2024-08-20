@@ -4,9 +4,10 @@ import { BlogHeadProps } from "./BlogHeadProps";
 import "./blog-head.scss";
 
 export const BlogHeadContextDefault = forwardRef<HTMLDivElement, BlogHeadProps>(
-  ({ date, tags = [], headline, image }, ref) => {
+  ({ date, tags = [], headline, image, ...rest }, ref) => {
     return (
       <PostHead
+        {...rest}
         date={date}
         headline={{ text: headline, level: "h1", align: "left" }}
         image={{ src: image }}
