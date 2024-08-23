@@ -25,7 +25,7 @@ export const BlogPost: FC<PropsWithChildren<BlogPostProps>> = ({
       </Split>
     </Section>
     {cta && (
-      <Section>
+      <Section content={{ mode: "list" }}>
         <Cta {...cta} />
       </Section>
     )}

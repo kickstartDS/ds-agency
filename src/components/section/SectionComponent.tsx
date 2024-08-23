@@ -104,7 +104,7 @@ export const SectionContextDefault = forwardRef<
 export const SectionContext = createContext(SectionContextDefault);
 export const Section = forwardRef<
   HTMLDivElement,
-  SectionProps & HTMLAttributes<HTMLDivElement>
+  SectionProps & Omit<HTMLAttributes<HTMLElement>, "style" | "content">
 >((props, ref) => {
   const Component = useContext(SectionContext);
   return <Component {...props} ref={ref} />;
