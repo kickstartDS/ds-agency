@@ -1,3 +1,15 @@
+# v3.6.52 (Fri Aug 23 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: section layout for blog cta ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.6.51 (Wed Aug 21 2024)
 
 #### ⚠️ Pushed to `main`
