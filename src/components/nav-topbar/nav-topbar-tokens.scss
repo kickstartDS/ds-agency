@@ -1,0 +1,21 @@
+.dsa-nav-topbar {
+  // Topbar
+  --dsa-nav-topbar__label--color: var(--ks-color-fg);
+  --dsa-nav-topbar__label--color_hover: var(--ks-text-color-interface-interactive-hover);
+  --dsa-nav-topbar__label--color_active: var(--ks-text-color-interface-interactive-active);
+  --dsa-nav-topbar__label--font: var(--ks-font-interface-m);
+  --dsa-nav-topbar__label--font-weight: var(--ks-font-weight-semi-bold);
+  --dsa-nav-topbar__label--font-weight_active: var(--ks-font-weight-bold);
+  --dsa-nav-topbar__label--padding: 0.75em 0.75em;
+  --dsa-nav-topbar__label--text-decoration: none;
+  --dsa-nav-topbar__label--text-decoration_hover: none;
+  --dsa-nav-topbar__label_dimmed--opacity: 0.6;
+
+  --dsa-nav-topbar__label__icon--size: 1.5em;
+
+  /// Floating
+  --dsa-nav-topbar_floating__label_dimmed--opacity: 0.85;
+  --dsa-nav-topbar_floating__label--color: var(--ks-color-fg);
+  --dsa-nav-topbar_floating__label--color_active: var(--ks-color-fg);
+  --dsa-nav-topbar_floating__label--color_hover: var(--ks-color-fg);
+}

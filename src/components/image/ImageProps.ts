@@ -30,7 +30,7 @@ export type Height = number;
  */
 export type AspectRatio = "unset" | "square" | "wide" | "landscape";
 /**
- * Add additional css classes that should be applied to the button
+ * Add additional css classes that should be applied to the image
  */
 export type AdditionalClasses = string;
 /**

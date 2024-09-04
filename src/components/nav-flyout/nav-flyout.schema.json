@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/nav-flyout.schema.json",
+  "title": "Nav Flyout",
+  "type": "object",
+  "properties": {
+    "items": {
+      "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/items"
+    },
+    "inverted": {
+      "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/flyoutInverted"
+    },
+    "logo": {
+      "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/logo"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["logo"]
+}

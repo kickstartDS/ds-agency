@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/blog-tag.schema.json",
+  "title": "Blog Tag",
+  "description": "Tag given to a blog post",
+  "type": "object",
+  "properties": {
+    "entry": {
+      "title": "Entry",
+      "description": "Name of the tag entry",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["entry"]
+}

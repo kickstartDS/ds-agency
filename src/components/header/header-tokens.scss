@@ -1,12 +1,18 @@
-@import "../../selectors";
-
-#{$selectors} {
+:root,
+[ks-theme],
+[ks-inverted] {
   //Global token for calculation of header height
-  --dsa-header--spacing-vertical: var(--ks-spacing-stack-m);
-  --dsa-header--spacing-horizontal: var(--l-section--content-padding);
+  --dsa-header--spacing-vertical: var(--ks-spacing-inset-m);
+  --dsa-header--spacing-horizontal: var(--ks-spacing-inset-xl);
+
+  @media (min-width: 62em) {
+    --dsa-header--spacing-vertical: var(--ks-spacing-stack-s);
+    --dsa-header--spacing-horizontal: var(--l-section--content-padding);
+  }
 }
 
 .dsa-header {
+  --dsa-header--max-width: var(--l-section--content-width-max);
   --dsa-header--background: var(--ks-background-color-default);
   --dsa-header_floating--background: linear-gradient(var(--ks-color-bg), transparent);
   --dsa-header__logo--height: var(--dsa-logo--height);

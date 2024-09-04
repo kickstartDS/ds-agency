@@ -6,8 +6,28 @@
   "type": "object",
   "required": ["seo"],
   "properties": {
+    "section": {
+      "type": "array",
+      "title": "Overview Intro",
+      "description": "Collection of sections (with their contents) to render as the blog overview intro",
+      "items": {
+        "$ref": "http://schema.mydesignsystem.com/section.schema.json"
+      }
+    },
+    "latestTitle": {
+      "type": "string",
+      "title": "Latest Title",
+      "description": "Title for the latest post section",
+      "default": "Latest Post"
+    },
     "latest": {
       "$ref": "http://schema.mydesignsystem.com/blog-teaser.schema.json"
+    },
+    "listTitle": {
+      "type": "string",
+      "title": "List Title",
+      "description": "Title for the list of posts section",
+      "default": "Recent Posts"
     },
     "list": {
       "type": "array",
@@ -16,6 +36,12 @@
       "items": {
         "$ref": "http://schema.mydesignsystem.com/blog-teaser.schema.json"
       }
+    },
+    "moreTitle": {
+      "type": "string",
+      "title": "More Title",
+      "description": "Title for the more featured posts section",
+      "default": "Featured Posts"
     },
     "more": {
       "type": "array",

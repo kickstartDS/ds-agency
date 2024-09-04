@@ -4,31 +4,51 @@
   --dsa-headline--color: var(--ks-text-color-display);
   --dsa-headline--font-weight: var(--ks-font-weight-medium);
   --dsa-headline--text-transform: none;
+  --dsa-headline--gap: 0.25em;
+
+  --dsa-headline--space-after_large: var(--ks-spacing-stack-l);
+  --dsa-headline--space-after_small: var(--ks-spacing-stack-m);
+  --dsa-headline--space-after_minimum: var(--ks-spacing-stack-s);
 
   --dsa-headline--higlight-background: linear-gradient(90deg, var(--ks-color-secondary), var(--ks-color-primary));
 
   --dsa-headline__subheadline--color: var(--ks-text-color-primary);
   --dsa-headline__subheadline--font-weight: var(--ks-font-weight-semi-bold);
 
-  --dsa-headline--gap: 0.25em;
-
   --dsa-headline_h1--font: var(--ks-font-display-xxl);
   --dsa-headline_h1__subheadline--font: var(--ks-font-copy-l);
-
+  --dsa-headline_h1--space-after_large: var(--ks-spacing-stack-l);
+  --dsa-headline_h1--space-after_small: var(--ks-spacing-stack-m);
+  --dsa-headline_h1--space-after_minimum: var(--ks-spacing-stack-s);
   @media (min-width: 48em) {
     --dsa-headline_h1__subheadline--font: var(--ks-font-copy-xl);
   }
 
   --dsa-headline_h2--font: var(--ks-font-display-xl);
   --dsa-headline_h2__subheadline--font: var(--ks-font-copy-m);
-
+  --dsa-headline_h2--space-after_large: var(--ks-spacing-stack-l);
+  --dsa-headline_h2--space-after_small: var(--ks-spacing-stack-m);
+  --dsa-headline_h2--space-after_minimum: var(--ks-spacing-stack-s);
   @media (min-width: 48em) {
     --dsa-headline_h2__subheadline--font: var(--ks-font-copy-l);
   }
 
   --dsa-headline_h3--font: var(--ks-font-display-l);
   --dsa-headline_h3__subheadline--font: var(--ks-font-copy-m);
+  --dsa-headline_h3--space-after_large: var(--ks-spacing-stack-m);
+  --dsa-headline_h3--space-after_small: var(--ks-spacing-stack-s);
+  --dsa-headline_h3--space-after_minimum: var(--ks-spacing-stack-xs);
 
   --dsa-headline_h4--font: var(--ks-font-display-m);
-  --dsa-headline__p--font: var(--ks-font-copy-m);
+  --dsa-headline_h4__subheadline--font: var(--ks-font-copy-s);
+  --dsa-headline_h4--space-after_large: var(--ks-spacing-stack-m);
+  --dsa-headline_h4--space-after_small: var(--ks-spacing-stack-s);
+  --dsa-headline_h4--space-after_minimum: var(--ks-spacing-stack-xs);
+
+  --dsa-headline_p--font: var(--ks-font-copy-m);
+  --dsa-headline__subheadline_p--font: var(--ks-font-copy-s);
+  --dsa-headline_p__subheadline--font: var(--ks-font-copy-s);
+  --dsa-headline_p--space-after_large: var(--ks-spacing-stack-xs);
+  --dsa-headline_p--space-after_small: var(--ks-spacing-xxs);
+  --dsa-headline_p--space-after_minimum: none;
 }

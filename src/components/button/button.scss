@@ -1,7 +1,5 @@
 @use "button-tokens.scss";
 
-//TBD: semantic fg text color
-
 .dsa-button.c-button {
   --c-button--border-radius: var(--dsa-button--border-radius, var(--ks-border-radius-control));
   --c-button--padding: var(--dsa-button--padding, 0.75em 2em);
@@ -63,19 +61,19 @@
 
     --c-button--background-color: var(
       --dsa-button_secondary--background-color,
-      var(--ks-background-color-interface-interactive)
+      var(--ks-background-color-clear-interactive)
     );
     --c-button--background-color-hover: var(
       --dsa-button_secondary--background-color_hover,
-      var(--ks-background-color-interface-interactive-hover)
+      var(--ks-background-color-clear-interactive-hover)
     );
     --c-button--background-color-active: var(
       --dsa-button_secondary--background-color_active,
-      var(--ks-background-color-interface-interactive-active)
+      var(--ks-background-color-clear-interactive-active)
     );
     --c-button--background-color-selected: var(
       --dsa-button_secondary--background-color_selected,
-      var(--ks-background-color-interface-interactive-selected)
+      var(--ks-background-color-clear-interactive-selected)
     );
   }
 

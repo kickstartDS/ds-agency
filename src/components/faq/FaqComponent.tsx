@@ -26,5 +26,4 @@ export const Faq = forwardRef<
   const Component = useContext(FaqContext);
   return <Component {...props} ref={ref} />;
 });
-
 Faq.displayName = "Faq";

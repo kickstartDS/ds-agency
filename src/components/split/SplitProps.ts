@@ -6,5 +6,6 @@
  */
 
 export interface SplitProps {
-  layout?: "sidebarRight" | "sidebarLeft" | "even";
+  layout?: "sidebarRight" | "sidebarLeft";
+  mainSectionWidth?: "narrow" | "medium" | "wide";
 }

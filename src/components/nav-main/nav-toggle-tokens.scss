@@ -1,7 +1,10 @@
 .dsa-nav-toggle {
-  --nav-toggle--color: var(--ks-text-color-default);
-  --nav-toggle--color_open: var(--ks-text-color-default);
+  --dsa-nav-toggle--size: var(--dsa-logo--height);
+  --dsa-nav-toggle--color: var(--ks-text-color-default);
+  --dsa-nav-toggle--color_open: var(--ks-text-color-default);
+  --dsa-nav-toggle--shadow: none;
 
-  --nav-toggle_floating--color: var(--ks-text-color-interface-interactive);
-  --nav-toggle_floating--color_open: var(--ks-text-color-interface-interactive);
+  --dsa-nav-toggle_floating--shadow: 2px 4px 6px var(--ks-color-fg-inverted);
+  --dsa-nav-toggle_floating--color: var(--ks-color-fg);
+  --dsa-nav-toggle_floating--color_open: var(--ks-color-fg);
 }

@@ -6,7 +6,13 @@
   "properties": {
     "layout": {
       "type": "string",
-      "enum": ["sidebarRight", "sidebarLeft", "even"]
+      "enum": ["sidebarRight", "sidebarLeft"],
+      "default": "sidebarRight"
+    },
+    "mainSectionWidth": {
+      "type": "string",
+      "enum": ["narrow", "medium", "wide"],
+      "default": "medium"
     }
   },
   "additionalProperties": false

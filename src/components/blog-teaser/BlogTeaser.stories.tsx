@@ -29,7 +29,14 @@ export const Default: Story = {
   },
   args: pack({
     date: "12/30/2022",
-    tags: ["Technology", "AI"],
+    tags: [
+      {
+        entry: "Technology",
+      },
+      {
+        entry: "AI",
+      },
+    ],
     headline: "The Future of AI",
     teaserText:
       "Dive into the future of AI in this detailed blog post. Discover how technology is rapidly evolving, the impact of AI on various industries, and what to expect in the coming years. Learn about the latest advancements, challenges, and the potential solutions that AI brings to the table.",

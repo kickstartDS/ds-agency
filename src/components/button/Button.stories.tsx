@@ -10,7 +10,6 @@ const meta: Meta = {
   title: "Components/Button",
   component: Button,
   parameters: {
-    layout: "centered",
     jsonschema: { schema },
     cssprops: { customProperties },
   },

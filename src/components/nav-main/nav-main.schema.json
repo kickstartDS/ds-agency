@@ -13,6 +13,12 @@
       "description": "Toggle the inversion of the flyout navigation",
       "default": false
     },
+    "dropdownInverted": {
+      "type": "boolean",
+      "title": "Dropdown Inverted",
+      "description": "Toggle the inversion of the dropdown navigation",
+      "default": false
+    },
     "items": {
       "type": "array",
       "items": {
@@ -28,17 +34,36 @@
       "examples": [
         [
           {
-            "label": "Nav Item",
-            "href": "#"
-          },
-          {
             "label": "Active Item",
             "href": "#",
             "active": true
           },
           {
-            "label": "Another Item",
+            "label": "Navigation Item",
             "href": "#"
+          },
+          {
+            "label": "Dropdown",
+            "href": "#",
+            "items": [
+              {
+                "label": "Level 2 Item",
+                "href": "#"
+              },
+              {
+                "label": "Active Item",
+                "active": true,
+                "href": "#"
+              },
+              {
+                "label": "An Item with a longer Label",
+                "href": "#"
+              },
+              {
+                "label": "And One last one",
+                "href": "#"
+              }
+            ]
           },
           {
             "label": "One more Item",
@@ -50,6 +75,25 @@
           }
         ]
       ]
+    },
+    "cta": {
+      "type": "object",
+      "title": "CTA",
+      "description": "Add a CTA to the Navigation",
+      "properties": {
+        "toggle": {
+          "title": "Toggle CTA",
+          "description": "Toggle the CTA",
+          "type": "boolean",
+          "default": false
+        },
+        "label": {
+          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/label"
+        },
+        "target": {
+          "$ref": "http://schema.mydesignsystem.com/button.schema.json#/properties/target"
+        }
+      }
     }
   },
   "additionalProperties": false,

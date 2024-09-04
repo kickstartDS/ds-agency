@@ -5,10 +5,6 @@
   .c-form-check {
     --c-form-check_box--size: var(--dsa-form-check--size, 1rem);
 
-    &.c-form-check--checkbox {
-      --c-form-check_box--border-radius: var(--dsa-form-check_checkbox--border-radius, 4px);
-    }
-
     --c-form-check_box--border: var(--dsa-form-check--border, var(--ks-border-width-default)) solid;
     --c-form-check_box--border-color: var(--dsa-form-check--border-color, var(--ks-border-color-interface-interactive));
     --c-form-check_box-hover--border-color: var(

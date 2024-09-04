@@ -1,7 +1,6 @@
 import classnames from "classnames";
 import { forwardRef, createContext, useContext } from "react";
 import { PostTeaserContextDefault } from "@kickstartds/blog/lib/post-teaser";
-
 import { BlogTeaserProps } from "./BlogTeaserProps";
 import "./blog-teaser.scss";
 import { Container } from "@kickstartds/core/lib/container";
@@ -68,7 +67,7 @@ export const BlogTeaserContextDefault = forwardRef<
           title={headline}
           body={teaserText}
           categories={tags.map((tag) => {
-            return { label: tag };
+            return { label: tag.entry };
           })}
           ref={ref}
         />

@@ -17,8 +17,7 @@
       "title": "Tags",
       "description": "The tags for the blog post",
       "items": {
-        "type": "string",
-        "examples": ["tech", "programming"]
+        "$ref": "http://schema.mydesignsystem.com/blog-tag.schema.json"
       }
     },
     "headline": {

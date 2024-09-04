@@ -16,7 +16,7 @@ export const BlogPost: FC<PropsWithChildren<BlogPostProps>> = ({
 }) => (
   <>
     <Section width="wide">
-      <Split layout="sidebarRight">
+      <Split mainSectionWidth="narrow" layout="sidebarRight">
         <div>
           {head && <BlogHead {...head} />}
           {content ? <Text text={content} /> : children}

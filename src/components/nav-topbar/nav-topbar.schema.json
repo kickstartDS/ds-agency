@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/nav-topbar.schema.json",
+  "title": "Nav Topbar",
+  "type": "object",
+  "properties": {
+    "items": {
+      "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/items"
+    },
+    "inverted": {
+      "$ref": "http://schema.mydesignsystem.com/nav-main.schema.json#/properties/dropdownInverted"
+    }
+  },
+  "additionalProperties": false,
+  "required": ["logo"]
+}

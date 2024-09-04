@@ -19,14 +19,7 @@ button.dsa-nav-toggle {
   padding: 0 var(--dsa-header--spacing-horizontal);
   transform: translateX(var(--dsa-header--spacing-horizontal));
 
-  --nav-toggle__icon-bar--offset: 14px;
-  @media (min-width: 42em) {
-    --nav-toggle__icon-bar--offset: 18px;
-  }
-
-  @media (min-width: 62em) {
-    display: none;
-  }
+  --toggle__icon-bar--offset: 45%;
 
   .dsa-nav-toggle__label {
     @include bourbon.hide-visually;
@@ -36,34 +29,24 @@ button.dsa-nav-toggle {
     position: relative;
     display: block;
     cursor: pointer;
-    height: var(--dsa-logo--height);
-    width: var(--dsa-logo--height);
+    height: var(--dsa-nav-toggle--size);
+    width: var(--dsa-nav-toggle--size);
     transform: scale(0.7) translate(7.5%, 7.5%);
     transition: inherit;
-    color: var(--nav-toggle--color);
+    color: var(--dsa-nav-toggle--color);
+    filter: drop-shadow(var(--dsa-nav-toggle--shadow));
 
     .dsa-header--floating & {
-      color: var(--nav-toggle_floating--color);
+      color: var(--dsa-nav-toggle_floating--color);
+      filter: drop-shadow(var(--dsa-nav-toggle_floating--shadow));
     }
 
-    @media (min-width: 40rem) {
+    @media (min-width: 40em) {
       transform: scale(0.8) translate(2.5%, 2.5%);
     }
 
-    .overlay-open &,
-    .overlay-open .header-is-scrolling & {
-      color: var(--nav-toggle--color_open);
-    }
-
-    .dsa-header--floating & {
-      .overlay-open &,
-      .overlay-open .header-is-scrolling & {
-        color: var(--nav-toggle_floating--color_open);
-      }
-    }
-
-    .header-is-scrolling-up & {
-      color: var(--nav-toggle--color_open);
+    .overlay-open & {
+      color: var(--dsa-nav-toggle--color_open);
     }
 
     &::before,
@@ -74,6 +57,7 @@ button.dsa-nav-toggle {
     .dsa-nav-toggle__icon__middle,
     &::before,
     &::after {
+      box-shadow: var(--dsa-nav-toggle--shadow);
       position: absolute;
       width: 100%;
       height: 3px;
@@ -107,7 +91,7 @@ button.dsa-nav-toggle {
       }
 
       &::before {
-        top: var(--nav-toggle__icon-bar--offset);
+        top: var(--toggle__icon-bar--offset);
         transition:
           top $ease math.div($duration, 2),
           transform math.div($duration, 2) $ease math.div($duration, 2);
@@ -115,7 +99,7 @@ button.dsa-nav-toggle {
       }
 
       &::after {
-        bottom: var(--nav-toggle__icon-bar--offset);
+        bottom: var(--toggle__icon-bar--offset);
         transition:
           bottom $ease math.div($duration, 2),
           transform math.div($duration, 2) $ease math.div($duration, 2);

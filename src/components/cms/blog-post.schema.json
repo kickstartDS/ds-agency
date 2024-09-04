@@ -4,7 +4,7 @@
   "title": "Blog Post",
   "description": "Abstracts a blog post concept into JSON schema",
   "type": "object",
-  "required": ["seo"],
+  "required": ["head", "seo"],
   "properties": {
     "head": {
       "$ref": "http://schema.mydesignsystem.com/blog-head.schema.json"

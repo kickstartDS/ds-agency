@@ -4,28 +4,34 @@
 .dsa-blog-teaser {
   --dsa-blog-teaser--background: transparent;
 
-  --dsa-blog-teaser__topic--font: var(--ks-font-display-l);
+  --dsa-blog-teaser--gap: var(--ks-spacing-stack-xs) var(--ks-spacing-inline-xs);
+
+  --dsa-blog-teaser__topic--font: var(--dsa-topic--font);
+  --dsa-blog-teaser__topic--font-size: var(--ks-font-size-copy-l);
+  --dsa-blog-teaser__topic--font-weight: var(--dsa-topic--font-weight);
 
   --dsa-blog-teaser__tag-label--font: var(--ks-font-interface-xs);
 
   --dsa-blog-teaser__copy--font: var(--ks-font-copy-s);
   --dsa-blog-teaser__copy--color: var(--dsa-rich-text--color);
   --dsa-blog-teaser__copy--color_hover: var(--ks-text-color-default);
-  --dsa-blog-teaser__copy--margin-top: var(--ks-spacing-stack-s);
+  --dsa-blog-teaser__copy--margin-top: 0.5em;
 
   --dsa-blog-teaser__meta--font: var(--ks-spacing-stack-s);
-  --dsa-blog-teaser__meta--color: var(--c-post-meta_item--color);
+  --dsa-blog-teaser__meta--color: var(--ks-text-color-interface);
   --dsa-blog-teaser__meta__author--font-weight: var(--ks-font-weight-semi-bold);
 
   --dsa-post-teaser__image--border-radius: var(--ks-border-radius-card);
 
   @include container.size("≥", 640px, "post-teaser") {
+    --dsa-blog-teaser--gap: var(--ks-spacing-stack-s) var(--ks-spacing-inline-s);
+
+    --dsa-blog-teaser__topic--font-size: var(--ks-font-size-copy-xl);
     --dsa-blog-teaser__copy--font: var(--ks-font-copy-m);
-    --dsa-blog-teaser__topic--font: var(--ks-font-display-l);
     --dsa-blog-teaser__tag-label--font: var(--ks-font-interface-s);
   }
 
   @include container.size("≥", 1000px, "post-teaser") {
-    --dsa-blog-teaser__topic--font: var(--ks-font-display-xl);
+    --dsa-blog-teaser__topic--font-size: var(--ks-font-size-copy-xxl);
   }
 }

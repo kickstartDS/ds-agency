@@ -27,7 +27,7 @@ export interface BlogPostProps {
   /**
    * Referenced component BlogHeadProps
    */
-  head?: BlogHeadProps;
+  head: BlogHeadProps;
   /**
    * Referenced component BlogAsideProps
    */

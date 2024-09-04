@@ -37,7 +37,7 @@
     },
     "className": {
       "title": "Additional Classes",
-      "description": "Add additional css classes that should be applied to the button",
+      "description": "Add additional css classes that should be applied to the picture",
       "type": "string"
     },
     "style": {

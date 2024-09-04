@@ -30,6 +30,10 @@ export type Height = number;
  */
 export type FlyoutInverted = boolean;
 /**
+ * Toggle the inversion of the dropdown navigation
+ */
+export type DropdownInverted = boolean;
+/**
  * Make the header float over the first Section
  */
 export type Floating = boolean;
@@ -38,9 +42,13 @@ export type Floating = boolean;
  */
 export type Inverted = boolean;
 
+/**
+ * Header layered on top by the CMS
+ */
 export interface HeaderProps {
-  logo: Logo;
+  logo?: Logo;
   flyoutInverted?: FlyoutInverted;
+  dropdownInverted?: DropdownInverted;
   floating?: Floating;
   inverted?: Inverted;
   navItems?: {

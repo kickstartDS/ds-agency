@@ -20,7 +20,7 @@
 
   &__content {
     padding: 0 var(--dsa-header--spacing-horizontal);
-    max-width: var(--l-section--content-width-max);
+    max-width: var(--dsa-header--max-width);
     width: 100%;
     margin: auto;
     display: flex;

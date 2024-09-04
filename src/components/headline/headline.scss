@@ -14,26 +14,41 @@
   &--h1 {
     --headline--font: var(--dsa-headline_h1--font, var(--ks-font-display-xxl));
     --subheadline--font: var(--dsa-headline_h1__subheadline--font, var(--ks-font-copy-xl));
+    --headline--space-after_minimum: var(--dsa-headline_h1--space-after_minimum);
+    --headline--space-after_small: var(--dsa-headline_h1--space-after_small);
+    --headline--space-after_large: var(--dsa-headline_h1--space-after_large);
   }
 
   &--h2 {
     --headline--font: var(--dsa-headline_h2--font, var(--ks-font-display-xl));
     --subheadline--font: var(--dsa-headline_h2__subheadline--font, var(--ks-font-copy-l));
+    --headline--space-after_minimum: var(--dsa-headline_h2--space-after_minimum);
+    --headline--space-after_small: var(--dsa-headline_h2--space-after_small);
+    --headline--space-after_large: var(--dsa-headline_h2--space-after_large);
   }
 
   &--h3 {
     --headline--font: var(--dsa-headline_h3--font, var(--ks-font-display-l));
     --subheadline--font: var(--dsa-headline_h3__subheadline--font, var(--ks-font-copy-l));
+    --headline--space-after_minimum: var(--dsa-headline_h3--space-after_minimum);
+    --headline--space-after_small: var(--dsa-headline_h3--space-after_small);
+    --headline--space-after_large: var(--dsa-headline_h3--space-after_large);
   }
 
   &--h4 {
     --headline--font: var(--dsa-headline_h4--font, var(--ks-font-display-m));
     --subheadline--font: var(--dsa-headline_h4__subheadline--font, var(--ks-font-copy-m));
+    --headline--space-after_minimum: var(--dsa-headline_h4--space-after_minimum);
+    --headline--space-after_small: var(--dsa-headline_h4--space-after_small);
+    --headline--space-after_large: var(--dsa-headline_h4--space-after_large);
   }
 
   &--p {
-    --headline--font: var(--dsa-headline__p--font, var(--ks-font-copy-m));
-    --subheadline--font: var(--dsa-headline__p__subheadline--font, var(--ks-font-copy-s));
+    --headline--font: var(--dsa-headline_p--font, var(--ks-font-copy-m));
+    --subheadline--font: var(--dsa-headline_p__subheadline--font, var(--ks-font-copy-s));
+    --headline--space-after_minimum: var(--dsa-headline_p--space-after_minimum);
+    --headline--space-after_small: var(--dsa-headline_p--space-after_small);
+    --headline--space-after_large: var(--dsa-headline_p--space-after_large);
   }
 
   .dsa-headline__headline {
@@ -52,15 +67,15 @@
   }
 
   &--space-after-minimum {
-    margin-bottom: var(--ks-spacing-stack-s);
+    margin-bottom: var(--headline--space-after_minimum);
   }
 
   &--space-after-small {
-    margin-bottom: var(--ks-spacing-stack-m);
+    margin-bottom: var(--headline--space-after_small);
   }
 
   &--space-after-large {
-    margin-bottom: var(--ks-spacing-stack-l);
+    margin-bottom: var(--headline--space-after_large);
   }
 
   &--align-center {

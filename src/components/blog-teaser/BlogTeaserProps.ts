@@ -5,6 +5,8 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+import type {BlogTagProps} from "../blog-tag/BlogTagProps";
+
 /**
  * The date of the blog post
  */
@@ -12,7 +14,7 @@ export type Date = string;
 /**
  * The tags for the blog post
  */
-export type Tags = string[];
+export type Tags = BlogTagProps[];
 /**
  * The headline of the blog post
  */

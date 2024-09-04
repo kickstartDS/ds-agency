@@ -1,0 +1,8 @@
+.l-split {
+  --dsa-split--gap-vertical: var(--ks-spacing-stack-l);
+  --dsa-split--gap-horizontal: var(--ks-spacing-inline-l);
+
+  --dsa-split__side--top-offset: var(--ks-spacing-stack-l);
+  --dsa-split__side--top-margin: var(--ks-spacing-stack-l);
+  --dsa-split__side--flex-basis: 210px;
+}

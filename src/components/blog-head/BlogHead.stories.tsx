@@ -29,7 +29,14 @@ export const Default: Story = {
   },
   args: pack({
     date: "12/30/2022",
-    tags: ["Technology", "AI"],
+    tags: [
+      {
+        entry: "Technology",
+      },
+      {
+        entry: "AI",
+      },
+    ],
     headline: "The Future of AI",
     image: "img/close-up-young-business-team-working.png",
   }),
