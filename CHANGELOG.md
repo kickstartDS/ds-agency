@@ -1,3 +1,15 @@
+# v3.6.53 (Wed Sep 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(various): import update from premium ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.52 (Fri Aug 23 2024)
 
 #### ⚠️ Pushed to `main`
