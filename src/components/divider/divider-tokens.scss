@@ -1,4 +1,5 @@
-.c-divider {
-  --dsa-divider--background: var(--ks-border-color-accent);
-  --dsa-divider--height: var(--ks-border-widht-default);
+.dsa-divider {
+  --dsa-divider--background: var(--ks-border-color-interface);
+  --dsa-divider--background_accent: var(--ks-border-color-interface);
+  --dsa-divider--height: var(--ks-border-width-default);
 }

@@ -54,7 +54,7 @@
     "presets": "vitest run scripts/generatePresets.test.ts",
     "husky:precommit": "yarn schema && rollup -c",
     "prepare": "patch-package && husky install",
-    "prepublishOnly": "rimraf dist && yarn build-tokens && yarn schema && rollup -c && yarn build-storybook",
+    "prepublishOnly": "rm -rf dist && yarn build-tokens && yarn schema && rollup -c && yarn build-storybook",
     "schema": "run-p schema:*",
     "schema:dereference-schemas": "kickstartDS schema dereference --schema-domain schema.mydesignsystem.com",
     "schema:generate-props": "kickstartDS schema types",
@@ -74,16 +74,18 @@
     "@bedrock-layout/primitives": "^3.0.23",
     "@bedrock-layout/spacing-constants": "^3.2.5",
     "classnames": "^2.3.2",
-    "markdown-to-jsx": "^7.3.2"
+    "markdown-to-jsx": "^7.5.0"
   },
   "devDependencies": {
     "@auto-it/npm": "^11.0.1",
     "@auto-it/released": "^11.0.1",
     "@kickstartds/base": "^4.0.2",
     "@kickstartds/blog": "^4.0.2",
+    "@kickstartds/content": "^4.0.0",
     "@kickstartds/core": "^4.0.2",
     "@kickstartds/form": "^4.0.2",
-    "@kickstartds/jsonschema2types": "^1.1.37",
+    "@kickstartds/jsonschema-utils": "^3.4.2",
+    "@kickstartds/jsonschema2types": "^1.1.51",
     "@kickstartds/storybook-addon-component-tokens": "^3.0.0",
     "@kickstartds/storybook-addon-html": "^1.0.0",
     "@kickstartds/storybook-addon-jsonschema": "^4.0.0",
@@ -137,6 +139,7 @@
   "peerDependencies": {
     "@kickstartds/base": "^4.0.2",
     "@kickstartds/blog": "^4.0.2",
+    "@kickstartds/content": "^4.1.1",
     "@kickstartds/core": "^4.0.2",
     "@kickstartds/form": "^4.0.2",
     "react": "^17 || ^18",

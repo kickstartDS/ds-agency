@@ -10,6 +10,8 @@ import { GalleryProps } from "./GalleryProps";
 import "./gallery.scss";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 
+export type { GalleryProps };
+
 export const GalleryContextDefault = forwardRef<
   HTMLDivElement,
   GalleryProps & HTMLAttributes<HTMLDivElement>

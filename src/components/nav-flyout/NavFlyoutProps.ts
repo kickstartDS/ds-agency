@@ -17,6 +17,11 @@ export interface NavFlyoutProps {
     href: string;
     label: string;
     active?: boolean;
+    items?: {
+      href?: string;
+      label?: string;
+      active?: boolean;
+    }[];
   }[];
   inverted?: FlyoutInverted;
   /**

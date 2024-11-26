@@ -2,6 +2,7 @@
 @use "./global-token";
 @use "./components/blog-teaser/blog-teaser";
 @use "./components/form/form";
+@use "./components/lightbox/lightbox";
 @use "./fonts-dsa";
 @use "./fonts-business";
 @use "./fonts-telekom";
@@ -27,6 +28,10 @@ body.sb-show-main.sb-main-padded {
 
 body {
   background: var(--ks-background-color-default);
+}
+
+hr.c-divider {
+  --c-divider--background: var(--ks-border-color-accent);
 }
 
 #{$selectors} {
@@ -66,10 +71,14 @@ body {
   --c-rich-text_headline--margin: var(--dsa-rich-text__headline--margin, 0.75em 0 0.5em);
 }
 
-[ks-inverted="false"] {
-  --dsa-text-color-on-primary: var(--ks-color-fg);
+[ks-inverted="false"],
+:root,
+#root {
+  --dsa-text-color-on-primary: var(--dsa-text-color-on-primary-base);
+  --dsa-text-color-on-primary-inverted: var(--dsa-text-color-on-primary-inverted-base);
 }
 
 [ks-inverted="true"] {
-  --dsa-text-color-on-primary: var(--dsa-text-color-on-primary-inverted);
+  --dsa-text-color-on-primary: var(--dsa-text-color-on-primary-inverted-base);
+  --dsa-text-color-on-primary-inverted: var(--dsa-text-color-on-primary-base);
 }

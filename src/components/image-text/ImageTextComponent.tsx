@@ -14,6 +14,8 @@ import { ImageTextProps } from "./ImageTextProps";
 import { Container } from "@kickstartds/core/lib/container";
 import "./image-text.scss";
 
+export type { ImageTextProps };
+
 export const ImageTextContextDefault = forwardRef<
   HTMLDivElement,
   ImageTextProps & HTMLAttributes<HTMLDivElement>

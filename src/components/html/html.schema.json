@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://schema.mydesignsystem.com/html.schema.json",
+  "title": "Html",
+  "description": "Display raw HTML.",
+  "type": "object",
+  "properties": {
+    "html": {
+      "title": "HTML string",
+      "type": "string",
+      "examples": [
+        "<p style=\"color: var(--ks-text-color-default);\">Hello World</p>"
+      ]
+    },
+    "consent": {
+      "title": "Show HTML after consent",
+      "type": "boolean",
+      "default": false
+    },
+    "consentText": {
+      "type": "string"
+    },
+    "consentButtonLabel": {
+      "type": "string"
+    },
+    "consentBackgroundImage": {
+      "type": "string",
+      "format": "image"
+    },
+    "consentAspectRatio": {
+      "type": "string",
+      "enum": [
+        "16:9",
+        "16:10",
+        "4:3",
+        "1:1"
+      ],
+      "default": "16:9"
+    },
+    "className": {
+      "title": "Additional Classes",
+      "description": "Add additional css classes that should be applied to the element",
+      "type": "string"
+    },
+    "component": {
+      "title": "`ks-component` attribute",
+      "description": "Optional custom component identifier",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

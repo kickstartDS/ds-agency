@@ -131,13 +131,18 @@
   &--spotlight {
     position: relative;
 
+    .l-section__container {
+      position: relative;
+      z-index: 1;
+    }
+
     &:hover {
-      &::before {
+      &::after {
         opacity: 1;
       }
     }
 
-    &::before {
+    &::after {
       transition: opacity var(--ks-transition-fade);
       opacity: 0;
       top: 0;
@@ -147,7 +152,8 @@
       height: 100%;
       position: absolute;
       background-image: radial-gradient(
-        var(--dsa-section__spotlight--size) circle,
+        var(--dsa-section__spotlight--size) circle at var(--dsa-section__spotlight--left)
+          var(--dsa-section__spotlight--top),
         var(--dsa-section__spotlight--color) 0%,
         var(--dsa-section__spotlight--color) calc(100% - var(--dsa-section__spotlight--blur)),
         transparent 100%,

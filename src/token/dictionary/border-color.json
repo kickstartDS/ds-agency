@@ -3,7 +3,7 @@
     "border-color": {
       "accent": {
         "base": {
-          "value": "{ks.color.primary.to-bg.8.base}",
+          "value": "{ks.color.primary.alpha.7.base}",
           "attributes": {
             "category": "color"
           },
@@ -15,7 +15,7 @@
       },
       "accent-inverted": {
         "base": {
-          "value": "{ks.color.primary-inverted.to-bg.8.base}",
+          "value": "{ks.color.primary-inverted.alpha.7.base}",
           "attributes": {
             "category": "color"
           },
@@ -147,7 +147,7 @@
       },
       "default": {
         "base": {
-          "value": "{ks.color.fg-inverted.base}",
+          "value": "{ks.color.fg.alpha.7.base}",
           "attributes": {
             "category": "color"
           },
@@ -159,7 +159,7 @@
       },
       "default-inverted": {
         "base": {
-          "value": "{ks.color.fg.alpha.3.base}",
+          "value": "{ks.color.fg-inverted.alpha.7.base}",
           "attributes": {
             "category": "color"
           },

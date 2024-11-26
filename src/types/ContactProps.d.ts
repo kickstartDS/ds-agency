@@ -6,8 +6,22 @@ declare module "@kickstartds/base/lib/contact/typing" {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {PictureProps} from "@kickstartds/base/lib/picture/typing";
-
+/**
+ * URL of the image to display
+ */
+export type ImageSource = string;
+/**
+ * Alt text of the image
+ */
+export type AltText = string;
+/**
+ * Image uses all the horizontal space vailable
+ */
+export type FullWidth = boolean;
+/**
+ * Aspect Ratio of the Images
+ */
+export type AspectRatio = "wide" | "square" | "vertical";
 /**
  * Name, company name, etc.
  */
@@ -31,13 +45,15 @@ export type Class = string;
 export type KsComponentAttribute = string;
 
 /**
- * Component to show contact information
+ * Component used for user interaction
  */
 export interface ContactProps {
-  /**
-   * Referenced component PictureProps
-   */
-  image?: PictureProps;
+  image?: {
+    src?: ImageSource;
+    alt?: AltText;
+    fullWidth?: FullWidth;
+    aspectRatio?: AspectRatio;
+  };
   title?: Title;
   subtitle?: Subtitle;
   links?: {

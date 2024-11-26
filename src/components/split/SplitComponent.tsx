@@ -3,6 +3,8 @@ import { FC, PropsWithChildren } from "react";
 import { SplitProps } from "./SplitProps";
 import "./split.scss";
 
+export type { SplitProps };
+
 export const Split: FC<PropsWithChildren<SplitProps>> = ({
   layout = "sidebarRight",
   mainSectionWidth = "default",

@@ -1,6 +1,6 @@
 .dsa-footer {
   --dsa-footer--background-color: var(--ks-background-color-default);
-  --dsa-footer--border-top: 1px solid var(--ks-border-color-accent);
+  --dsa-footer--border-top: 1px solid var(--ks-border-color-default);
   --dsa-footer--max-width: var(--l-section--content-width-wide);
   --dsa-footer--gap-vertical: var(--ks-spacing-stack-m);
 
@@ -13,7 +13,7 @@
   --dsa-footer__link--font-weight: var(--dsa-link--font-weight);
   --dsa-footer__link--color: var(--dsa-link--color);
   --dsa-footer__link--text-tecoration: none;
-  --dsa-footer__link--text-tecorationhover: underline;
+  --dsa-footer__link--text-tecoration_hover: underline;
 
   --dsa-footer__logo--height: 1.5rem;
 

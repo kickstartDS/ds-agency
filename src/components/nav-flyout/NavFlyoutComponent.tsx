@@ -5,6 +5,8 @@ import { Logo } from "../logo/LogoComponent";
 import "./nav-flyout.scss";
 import { createContext, forwardRef, HTMLAttributes, useContext } from "react";
 
+export type { NavFlyoutProps };
+
 export const NavFlyoutContextDefault = forwardRef<
   HTMLElement,
   NavFlyoutProps & HTMLAttributes<HTMLElement>
@@ -20,7 +22,7 @@ export const NavFlyoutContextDefault = forwardRef<
       <Logo {...logo} className="dsa-nav-flyout__logo" />
 
       <ul className="dsa-nav-flyout__list">
-        {items.map(({ label, href, active }) => {
+        {items.map(({ label, href, active, items: subItems }) => {
           return (
             <li
               className={classnames(
@@ -29,12 +31,40 @@ export const NavFlyoutContextDefault = forwardRef<
               )}
               key={href}
             >
-              <Link
-                href={href}
-                className={`dsa-nav-flyout__label dsa-nav-flyout__link`}
-              >
-                {label}
-              </Link>
+              {subItems?.length ? (
+                <span tabIndex={0} className="dsa-nav-flyout__label">
+                  {label}
+                </span>
+              ) : (
+                <Link
+                  href={href}
+                  className={`dsa-nav-flyout__label dsa-nav-flyout__link`}
+                >
+                  {label}
+                </Link>
+              )}
+              {subItems?.length ? (
+                <ul className="dsa-nav-flyout__sublist">
+                  {subItems.map(({ label, href, active }) => {
+                    return (
+                      <li
+                        className={classnames(
+                          "dsa-nav-flyout__item",
+                          active && "dsa-nav-flyout__item--active"
+                        )}
+                        key={href}
+                      >
+                        <Link
+                          href={href}
+                          className={`dsa-nav-flyout__label dsa-nav-flyout__link`}
+                        >
+                          {label}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              ) : null}
             </li>
           );
         })}

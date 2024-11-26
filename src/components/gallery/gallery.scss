@@ -47,24 +47,3 @@
     }
   }
 }
-
-.pswp {
-  .pswp__img {
-    object-fit: contain;
-  }
-
-  .pswp__caption {
-    background-color: var(--ks-color-bg-alpha-3);
-    color: var(--dsa-text-color-on-primary);
-  }
-}
-
-#{$selectors} {
-  --c-lightbox--bg: var(--ks-background-color-default) !important;
-  --c-lightbox--placeholder-bg: var(--ks-color-fg-to-bg-1) !important;
-  --c-lightbox--root-z-index: var(--ks-depth-modal) !important;
-  --c-lightbox--icon-color: var(--dsa-text-color-on-primary) !important;
-  --c-lightbox--icon-color-secondary: var(--ks-color-fg-inverted) !important;
-  --c-lightbox--stroke-width: 0px !important;
-  --c-lightbox--error-text-color: var(--ks-color-error) !important;
-}

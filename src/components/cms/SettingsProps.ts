@@ -10,6 +10,11 @@ import type {FooterProps} from "../footer/FooterProps";
 import type {SeoProps} from "../seo/SeoProps";
 
 /**
+ * Content of the icon sprite for this project
+ */
+export type IconSprite = string;
+
+/**
  * Abstracts global settings made for a website into JSON Schema
  */
 export interface SettingsProps {
@@ -25,4 +30,5 @@ export interface SettingsProps {
    * Referenced component SeoProps
    */
   seo: SeoProps;
+  iconSprite?: IconSprite;
 }

@@ -6,25 +6,50 @@ declare module "@kickstartds/content/lib/slider/typing" {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {CtaProps} from "@kickstartds/cta.schema.json/lib/cta/typing";
-import type {FeaturesProps} from "@kickstartds/features.schema.json/lib/features/typing";
-import type {GalleryProps} from "@kickstartds/gallery.schema.json/lib/gallery/typing";
-import type {HeroProps} from "@kickstartds/hero.schema.json/lib/hero/typing";
-import type {ImageTextProps} from "@kickstartds/image-text.schema.json/lib/image-text/typing";
-import type {LogosProps} from "@kickstartds/logos.schema.json/lib/logos/typing";
-import type {StatsProps} from "@kickstartds/stats.schema.json/lib/stats/typing";
-import type {TeaserCardProps} from "@kickstartds/teaser-card.schema.json/lib/teaser-card/typing";
-import type {TestimonialsProps} from "@kickstartds/testimonials.schema.json/lib/testimonials/typing";
-import type {TextProps} from "@kickstartds/text.schema.json/lib/text/typing";
-
 /**
  * Automatically move to next slide after 4 seconds without user interaction
  */
 export type AutoPlay = boolean;
 /**
+ * Additional css classes attached to the wrapping element
+ */
+export type Class = string;
+/**
+ * Optional custom component identifier
+ */
+export type Component = string;
+/**
+ * Add arrows on the left and right to navigate to next or previous slide
+ */
+export type ShowArrows = boolean;
+/**
+ * Title for left button
+ */
+export type ArrowPrevTitle = string;
+/**
+ * Icon identifier for left button
+ */
+export type ArrowPrevIcon = string;
+/**
+ * Title for right button
+ */
+export type ArrowNextTitle = string;
+/**
+ * Icon identifier for right button
+ */
+export type ArrowNextIcon = string;
+/**
  * Add bullet navigation
  */
 export type ShowNavigation = boolean;
+/**
+ * Prop name to use for bullet nav title
+ */
+export type NavigationTitleProp = string;
+/**
+ * Disable dragging slides with mouse or touch
+ */
+export type DisableDragging = boolean;
 export type TeaseNeighbourSlides = boolean;
 export type EqualizeSlidesHeights = boolean;
 /**
@@ -32,43 +57,29 @@ export type EqualizeSlidesHeights = boolean;
  */
 export type Gap = number;
 /**
- * Add arrows on the left and right to navigate to next or previous slide
- */
-export type ShowArrows = boolean;
-/**
  * Type of the movement
  */
 export type Type = "slider" | "carousel";
-/**
- * Additional css classes attached to the wrapping element
- */
-export type Class = string;
-/**
- * Allowed components for content
- */
-export type Content = (
-  | CtaProps
-  | FeaturesProps
-  | GalleryProps
-  | HeroProps
-  | ImageTextProps
-  | LogosProps
-  | StatsProps
-  | TeaserCardProps
-  | TestimonialsProps
-  | TextProps
-)[];
 
+/**
+ * Slider
+ */
 export interface SliderProps {
   autoplay?: AutoPlay;
+  className?: Class;
+  component?: Component;
+  arrows?: ShowArrows;
+  arrowPrefTitle?: ArrowPrevTitle;
+  arrowPrevIcon?: ArrowPrevIcon;
+  arrowNextTitle?: ArrowNextTitle;
+  arrowNextIcon?: ArrowNextIcon;
   nav?: ShowNavigation;
+  navTitleProp?: NavigationTitleProp;
+  disableDragging?: DisableDragging;
   teaseNeighbours?: TeaseNeighbourSlides;
   equalHeight?: EqualizeSlidesHeights;
   gap?: Gap;
-  arrows?: ShowArrows;
   type?: Type;
-  className?: Class;
-  components?: Content;
 }
 
 }

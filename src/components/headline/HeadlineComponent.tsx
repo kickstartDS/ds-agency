@@ -8,6 +8,8 @@ import { defaultRenderFn } from "@kickstartds/core/lib/core";
 import { HeadlineProps } from "./HeadlineProps";
 import "./headline.scss";
 
+export type { HeadlineProps };
+
 interface RenderFunctions {
   renderContent?: typeof defaultRenderFn;
   renderSubheadline?: typeof defaultRenderFn;
@@ -53,9 +55,23 @@ export const Headline = forwardRef<
         {sub && switchOrder && (
           <p className="dsa-headline__subheadline">{renderSubheadline(sub)}</p>
         )}
+
         <TagName className={classnames("dsa-headline__headline")}>
-          {renderContent(text)}
+          <span className="dsa-headline__inner">
+            {renderContent(text)}
+            {props.id && level === "h2" && (
+              <a
+                href={`#${props.id}`}
+                className="dsa-headline__anchor"
+                aria-label="Link to this section"
+                title="Link to this section"
+              >
+                #
+              </a>
+            )}
+          </span>
         </TagName>
+
         {sub && !switchOrder && (
           <p className="dsa-headline__subheadline">{renderSubheadline(sub)}</p>
         )}

@@ -42,6 +42,11 @@ export interface FooterProps {
     href: string;
     label: string;
     active?: boolean;
+    items?: {
+      href?: string;
+      label?: string;
+      active?: boolean;
+    }[];
   }[];
 }
 export interface Logo {

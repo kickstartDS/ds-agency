@@ -53,6 +53,11 @@
       "type": "string",
       "title": "Class Name",
       "description": "Set a custom class name"
+    },
+    "id": {
+      "type": "string",
+      "title": "ID",
+      "description": "Set a custom id attribute"
     }
   },
   "additionalProperties": false,

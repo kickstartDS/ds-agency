@@ -1,0 +1,38 @@
+@use "@kickstartds/core/source/core/container";
+@include container.wrapper("contact");
+
+.dsa-contact {
+  --dsa-contact--gap-horizontal: var(--ks-spacing-inline-m);
+  --dsa-contact--gap-vertical: var(--ks-spacing-stack-m);
+
+  --dsa-contact__header--gap: 0;
+
+  --dsa-contact__image--flex-basis: 200px;
+  --dsa-contact__image--border-radius: var(--ks-border-radius-card);
+
+  --dsa-contact__body--gap: var(--ks-spacing-stack-xs);
+  --dsa-contact__body--flex-basis: 300px;
+
+  --dsa-contact__copy--font: var(--dsa-rich-text--font);
+  --dsa-contact__copy--color: var(--dsa-rich-text--color);
+
+  --dsa-contact__title--color: var(--ks-text-color-display);
+  --dsa-contact__title--font: var(--ks-font-copy-l);
+  --dsa-contact__title--font-weight: var(--ks-font-weight-bold);
+
+  --dsa-contact__subtitle--color: var(--ks-text-color-display);
+  --dsa-contact__subtitle--font: var(--ks-font-copy-m);
+  --dsa-contact__subtitle--font-weight: var(--ks-font-weight-regular);
+
+  --dsa-contact__links--gap: 0;
+
+  --dsa-contact__link--color: var(--dsa-link--color);
+  --dsa-contact__link--color_hover: var(--dsa-link--color_hover);
+  --dsa-contact__link--font: var(--ks-font-interface-m);
+  --dsa-contact__link--font-weight: var(--dsa-link--font-weight);
+  --dsa-contact__link__icon--margin-right: 0.5em;
+  --dsa-contact__link__icon--size: 1.5em;
+  --dsa-contact__link__icon--color: inherit;
+  --dsa-contact__link--text-decoration: none;
+  --dsa-contact__link--text-decoration_hover: none;
+}

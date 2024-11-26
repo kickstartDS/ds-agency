@@ -117,12 +117,19 @@
     }
 
     &__link {
-      font: var(--dsa-feature__link-font, var(--ks-font-copy-s));
+      font: var(--dsa-feature__link--font, var(--ks-font-copy-s));
+      color: var(--dsa-feature__link--color, var(--dsa-link--color));
+      font-weight: var(--dsa-feature__link--font-weight, var(--dsa-link--font-weight));
+      text-decoration: var(--dsa-feature__link--text-decoration, var(--dsa-link--text-decoration));
       display: flex;
       align-items: center;
-      gap: var(--ks-spacing-xxs);
-
+      gap: var(--dsa-feature__link--gap, 0.35em);
       width: fit-content;
+
+      &:hover {
+        color: var(--dsa-feature__link--color_hover, var(--dsa-link--color_hover));
+        text-decoration: var(--dsa-feature__link--text-decoration_hover, var(--dsa-link--text-decoration_hover));
+      }
 
       .icon {
         width: 1.125em;

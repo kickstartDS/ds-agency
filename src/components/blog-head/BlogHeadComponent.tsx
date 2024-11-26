@@ -3,6 +3,8 @@ import { PostHead } from "@kickstartds/blog/lib/post-head";
 import { BlogHeadProps } from "./BlogHeadProps";
 import "./blog-head.scss";
 
+export type { BlogHeadProps };
+
 export const BlogHeadContextDefault = forwardRef<HTMLDivElement, BlogHeadProps>(
   ({ date, tags = [], headline, image, ...rest }, ref) => {
     return (
@@ -10,7 +12,7 @@ export const BlogHeadContextDefault = forwardRef<HTMLDivElement, BlogHeadProps>(
         {...rest}
         date={date}
         headline={{ text: headline, level: "h1", align: "left" }}
-        image={{ src: image }}
+        image={{ src: image, alt: headline }}
         categories={tags.map((tag) => {
           return { label: tag.entry };
         })}

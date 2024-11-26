@@ -166,6 +166,9 @@
             "$ref": "http://schema.mydesignsystem.com/cta.schema.json"
           },
           {
+            "$ref": "http://schema.mydesignsystem.com/divider.schema.json"
+          },
+          {
             "$ref": "http://schema.mydesignsystem.com/faq.schema.json"
           },
           {
@@ -173,6 +176,9 @@
           },
           {
             "$ref": "http://schema.mydesignsystem.com/gallery.schema.json"
+          },
+          {
+            "$ref": "http://schema.mydesignsystem.com/html.schema.json"
           },
           {
             "$ref": "http://schema.mydesignsystem.com/image-text.schema.json"

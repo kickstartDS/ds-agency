@@ -5,9 +5,11 @@ import { NavMain } from "../nav-main/NavMainComponent";
 import { Logo } from "../logo/LogoComponent";
 import "./header.scss";
 
+export type { HeaderProps };
+
 export const HeaderContextDefault = forwardRef<
-  HTMLDivElement,
-  HeaderProps & HTMLAttributes<HTMLDivElement>
+  HTMLElement,
+  HeaderProps & HTMLAttributes<HTMLElement>
 >(
   (
     {
@@ -20,7 +22,7 @@ export const HeaderContextDefault = forwardRef<
     },
     ref
   ) => (
-    <div
+    <header
       className={classnames(
         "dsa-header",
         floating ? `dsa-header--floating` : ""
@@ -40,14 +42,14 @@ export const HeaderContextDefault = forwardRef<
           }}
         />
       </div>
-    </div>
+    </header>
   )
 );
 
 export const HeaderContext = createContext(HeaderContextDefault);
 export const Header = forwardRef<
-  HTMLDivElement,
-  HeaderProps & HTMLAttributes<HTMLDivElement>
+  HTMLElement,
+  HeaderProps & HTMLAttributes<HTMLElement>
 >((props, ref) => {
   const Component = useContext(HeaderContext);
   return <Component {...props} ref={ref} />;

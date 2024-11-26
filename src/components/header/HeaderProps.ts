@@ -55,6 +55,11 @@ export interface HeaderProps {
     href: string;
     label: string;
     active?: boolean;
+    items?: {
+      href?: string;
+      label?: string;
+      active?: boolean;
+    }[];
   }[];
 }
 export interface Logo {

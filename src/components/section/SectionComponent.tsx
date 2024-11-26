@@ -18,6 +18,8 @@ import { SectionProps } from "./SectionProps";
 import "./section.scss";
 import { identifier } from "./js/Section.client";
 
+export type { SectionProps };
+
 export const SectionContextDefault = forwardRef<
   HTMLDivElement,
   SectionProps & Omit<HTMLAttributes<HTMLElement>, "style" | "content">
@@ -54,7 +56,8 @@ export const SectionContextDefault = forwardRef<
         {...componentProps}
         className={classnames(
           "dsa-section",
-          style !== "default" &&
+          style &&
+            style !== "default" &&
             `dsa-section-style--${
               style === "verticalGradient"
                 ? "vertical-gradient"
