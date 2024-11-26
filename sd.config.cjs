@@ -5,7 +5,7 @@ const { config } = require("@kickstartds/style-dictionary");
 module.exports = StyleDictionary.extend(config).extend({
   source: [
     "src/token/dictionary/**/*.json",
-    path.join(__dirname, "token/dictionary/**/*.svg"),
+    path.join(__dirname, "src/token/dictionary/**/*.svg"),
   ],
   platforms: {
     css: {
