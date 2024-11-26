@@ -6,13 +6,14 @@ import "./blog-head.scss";
 export type { BlogHeadProps };
 
 export const BlogHeadContextDefault = forwardRef<HTMLDivElement, BlogHeadProps>(
-  ({ date, tags = [], headline, image, ...rest }, ref) => {
+  ({ date, tags = [], headline, image, alt, ...rest }, ref) => {
     return (
       <PostHead
         {...rest}
+        className="dsa-blog-head"
         date={date}
         headline={{ text: headline, level: "h1", align: "left" }}
-        image={{ src: image, alt: headline }}
+        image={{ src: image, alt: alt || headline }}
         categories={tags.map((tag) => {
           return { label: tag.entry };
         })}
