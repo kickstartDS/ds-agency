@@ -18,6 +18,7 @@ export const BlogTeaserContextDefault = forwardRef<
       headline,
       teaserText,
       image,
+      alt,
       link,
       readingTime,
       author,
@@ -47,7 +48,7 @@ export const BlogTeaserContextDefault = forwardRef<
           {...rest}
           className={classnames(className, "dsa-blog-teaser")}
           // @ts-expect-error
-          image={{ src: image, alt: headline }}
+          image={{ src: image, alt: alt || headline }}
           meta={{
             author: author
               ? {

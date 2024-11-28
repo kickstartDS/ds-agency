@@ -28,6 +28,10 @@ export type TeaserText = string;
  */
 export type Image = string;
 /**
+ * The alt text for the preview image
+ */
+export type Alt = string;
+/**
  * The blog entry URL to link
  */
 export type URL = string;
@@ -61,6 +65,7 @@ export interface BlogTeaserProps {
   headline: Headline;
   teaserText: TeaserText;
   image?: Image;
+  alt?: Alt;
   link?: Link;
   readingTime?: ReadingTime;
   author?: Author;

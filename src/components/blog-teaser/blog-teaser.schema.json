@@ -41,6 +41,12 @@
       "format": "image",
       "examples": ["img/close-up-young-business-team-working.png"]
     },
+    "alt": {
+      "title": "Alt",
+      "description": "The alt text for the preview image",
+      "type": "string",
+      "examples": ["Image of a business team working"]
+    },
     "link": {
       "type": "object",
       "title": "Link",
@@ -93,12 +99,6 @@
           "type": "string",
           "format": "image",
           "examples": ["img/people/author-emily.png"]
-        },
-        "alt": {
-          "title": "Alt",
-          "description": "The alt text for the preview image",
-          "type": "string",
-          "examples": ["Image of a business team working"]
         }
       },
       "additionalProperties": false,
