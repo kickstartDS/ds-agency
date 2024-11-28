@@ -6,6 +6,24 @@
   flex-direction: column;
   gap: var(--dsa-headline--gap, 0.25em);
 
+  &__inner {
+    position: relative;
+  }
+
+  &__anchor {
+    --g-link--text-decoration: none;
+
+    visibility: hidden;
+    position: absolute;
+    margin: 0 var(--ks-spacing-inline-s);
+  }
+
+  &:hover {
+    .dsa-headline__anchor {
+      visibility: visible;
+    }
+  }
+
   .dsa-headline__headline {
     font: var(--headline--font);
     text-transform: var(--dsa-headline--text-transform);
@@ -96,6 +114,11 @@
     .dsa-headline__subheadline {
       text-align: right;
       margin-left: auto;
+    }
+
+    .dsa-headline__anchor {
+      top: 0;
+      right: 100%;
     }
   }
 }

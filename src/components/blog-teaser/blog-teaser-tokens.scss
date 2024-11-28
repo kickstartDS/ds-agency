@@ -1,5 +1,5 @@
 @use "@kickstartds/core/source/core/container";
-@include container.wrapper("post-teaser");
+@include container.wrapper("blog-teaser");
 
 .dsa-blog-teaser {
   --dsa-blog-teaser--background: transparent;
@@ -21,9 +21,11 @@
   --dsa-blog-teaser__meta--color: var(--ks-text-color-interface);
   --dsa-blog-teaser__meta__author--font-weight: var(--ks-font-weight-semi-bold);
 
-  --dsa-post-teaser__image--border-radius: var(--ks-border-radius-card);
+  --dsa-blog-teaser__avatar--size: 2em;
 
-  @include container.size("≥", 640px, "post-teaser") {
+  --dsa-blog-teaser__image--border-radius: var(--ks-border-radius-card);
+
+  @include container.size("≥", 640px, "blog-teaser") {
     --dsa-blog-teaser--gap: var(--ks-spacing-stack-s) var(--ks-spacing-inline-s);
 
     --dsa-blog-teaser__topic--font-size: var(--ks-font-size-copy-xl);
@@ -31,7 +33,7 @@
     --dsa-blog-teaser__tag-label--font: var(--ks-font-interface-s);
   }
 
-  @include container.size("≥", 1000px, "post-teaser") {
+  @include container.size("≥", 1000px, "blog-teaser") {
     --dsa-blog-teaser__topic--font-size: var(--ks-font-size-copy-xxl);
   }
 }

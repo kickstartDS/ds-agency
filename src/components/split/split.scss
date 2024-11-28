@@ -28,7 +28,7 @@
 
   &--sidebar-right {
     > :first-child {
-      flex-basis: calc(var(--split__main--flex-basis) - calc(var(--l-section--content-padding) * 2));
+      flex-basis: calc(var(--split__main--flex-basis) - calc(var(--dsa-content--spacing) * 2));
     }
 
     > :last-child {
@@ -43,7 +43,7 @@
 
   &--sidebar-left {
     > :last-child {
-      flex-basis: calc(var(--split__main--flex-basis) - calc(var(--l-section--content-padding) * 2));
+      flex-basis: calc(var(--split__main--flex-basis) - calc(var(--dsa-content--spacing) * 2));
     }
 
     > :first-child {

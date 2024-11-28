@@ -39,6 +39,11 @@ export interface NavMainProps {
     href: string;
     label: string;
     active?: boolean;
+    items?: {
+      href?: string;
+      label?: string;
+      active?: boolean;
+    }[];
   }[];
   cta?: CTA;
 }

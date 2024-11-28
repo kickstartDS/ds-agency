@@ -4,10 +4,10 @@ export const dsa = {
   logo: {
     src: "/logo.svg",
     srcInverted: "/logo-inverted.svg",
+    homepageHref: "#",
     alt: "Systemics Logo",
     width: 176,
     height: 40,
-    lazy: false,
   },
 };
 
@@ -19,7 +19,6 @@ export const business = {
     alt: "Business Logo",
     width: 342,
     height: 80,
-    lazy: false,
   },
 };
 
@@ -31,7 +30,6 @@ export const google = {
     alt: "Google Logo",
     width: 75,
     height: 24,
-    lazy: false,
   },
 };
 
@@ -43,7 +41,6 @@ export const telekom = {
     alt: "Telekom Logo",
     width: 342,
     height: 80,
-    lazy: false,
   },
 };
 

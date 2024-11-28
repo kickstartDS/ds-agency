@@ -33,6 +33,12 @@
       "type": "string",
       "format": "image",
       "examples": ["img/close-up-young-business-team-working.png"]
+    },
+    "alt": {
+      "title": "Alt Text",
+      "description": "The alt text for the cover image",
+      "type": "string",
+      "examples": ["Image of a business team working"]
     }
   },
   "additionalProperties": false,

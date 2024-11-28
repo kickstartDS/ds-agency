@@ -148,23 +148,35 @@ export const BlogOverview: Story = {
       },
     ],
     cta: {
-      headline: "Ready to Transform Your Development Process?",
-      sub: "Start your journey today.",
+      headline: "Get in touch",
+      sub: "Chat with us about getting your product or platform to market faster",
       highlightText: false,
+      colorNeutral: false,
+      fullWidth: true,
       buttons: [
         {
-          label: "Contact Us",
-          target: "#",
+          label: "Contact us",
           icon: "person",
+          target: "#",
         },
         {
-          label: "Learn More",
-          target: "#",
+          label: "Book a meeting",
           icon: "date",
+          target: "#",
         },
       ],
-      textAlign: "center",
-      text: "Get started with our design system today and experience a new level of efficiency and consistency in your projects.",
+      image: {
+        padding: false,
+        src: "img/contact-person.png",
+      },
+      order: {
+        mobileImageLast: false,
+        desktopImageLast: false,
+      },
+      textAlign: "left",
+      contentAlign: "center",
+      text: "Our modular design approach allows for flexibility and scalability in your application's architecture.",
+      width: "wide",
     },
   }),
 };

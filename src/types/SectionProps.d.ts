@@ -7,9 +7,11 @@ declare module "@kickstartds/base/lib/section/typing" {
  */
 
 import type {CtaProps} from "@kickstartds/cta.schema.json/lib/cta/typing";
+import type {DividerProps} from "@kickstartds/base/lib/divider/typing";
 import type {FaqProps} from "@kickstartds/faq.schema.json/lib/faq/typing";
 import type {FeaturesProps} from "@kickstartds/features.schema.json/lib/features/typing";
 import type {GalleryProps} from "@kickstartds/gallery.schema.json/lib/gallery/typing";
+import type {HtmlProps} from "@kickstartds/base/lib/html/typing";
 import type {ImageTextProps} from "@kickstartds/image-text.schema.json/lib/image-text/typing";
 import type {LogosProps} from "@kickstartds/logos.schema.json/lib/logos/typing";
 import type {StatsProps} from "@kickstartds/stats.schema.json/lib/stats/typing";
@@ -110,9 +112,11 @@ export type TileWidth = "smallest" | "default" | "medium" | "large" | "largest";
  */
 export type Content = (
   | CtaProps
+  | DividerProps
   | FaqProps
   | FeaturesProps
   | GalleryProps
+  | HtmlProps
   | ImageTextProps
   | LogosProps
   | StatsProps

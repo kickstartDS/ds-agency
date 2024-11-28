@@ -5,26 +5,8 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-/**
- * The name of the author
- */
-export type Name = string;
-/**
- * The byline of the author
- */
-export type Byline = string;
-/**
- * The image URL of the author
- */
-export type Image = string;
-/**
- * The Twitter name of the author
- */
-export type Twitter = string;
-/**
- * The Email of the author
- */
-export type Email = string;
+import type {BlogAuthorProps} from "../blog-author/BlogAuthorProps";
+
 /**
  * The icon name for the social link
  */
@@ -58,19 +40,12 @@ export type PublishedDate = string;
  * Meta info for a singular blog entry
  */
 export interface BlogAsideProps {
-  author: Author;
+  /**
+   * Referenced component BlogAuthorProps
+   */
+  author: BlogAuthorProps;
   socialSharing?: SocialSharing;
   readingTime?: ReadingTime;
   date: PublishedDate;
   className?: string;
-}
-/**
- * The author of the blog post
- */
-export interface Author {
-  name: Name;
-  byline?: Byline;
-  image?: Image;
-  twitter?: Twitter;
-  email?: Email;
 }

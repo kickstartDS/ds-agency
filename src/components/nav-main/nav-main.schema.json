@@ -26,7 +26,18 @@
         "properties": {
           "href": { "type": "string", "format": "uri" },
           "label": { "type": "string" },
-          "active": { "type": "boolean" }
+          "active": { "type": "boolean" },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "href": { "type": "string", "format": "uri" },
+                "label": { "type": "string" },
+                "active": { "type": "boolean" }
+              }
+            }
+          }
         },
         "additionalProperties": false,
         "required": ["href", "label"]

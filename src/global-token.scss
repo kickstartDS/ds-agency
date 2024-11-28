@@ -1,8 +1,8 @@
 @use "./selectors" as *;
 
 #{$selectors} {
-  --dsa-text-color-on-primary: var(--ks-color-fg);
-  --dsa-text-color-on-primary-inverted: var(--ks-color-fg-inverted);
+  --dsa-text-color-on-primary-base: var(--ks-color-fg);
+  --dsa-text-color-on-primary-inverted-base: var(--ks-color-fg-inverted);
 
   --dsa-topic--font: var(--ks-font-display-m);
   --dsa-topic--font-weight: var(--ks-font-weight-medium);
@@ -12,23 +12,22 @@
   --dsa-link--font-weight: var(--ks-font-weight-semi-bold);
   --dsa-link--color: var(--ks-text-color-default-interactive);
   --dsa-link--color_hover: var(--ks-text-color-default-interactive-hover);
-
-  --dsa-link--text-decoration: none;
-  --dsa-link--text-decoration_hover: none;
+  --dsa-link--text-decoration: underline;
+  --dsa-link--text-decoration_hover: underline;
 
   --dsa-header--height: calc(var(--dsa-logo--height) + var(--ks-spacing-stack-m) + var(--ks-spacing-stack-m));
 
   --dsa-gradient--higlight: linear-gradient(135deg, var(--ks-color-primary) 0%, var(--ks-color-secondary) 100%);
 
-  --dsa-section__content--padding: var(--ks-spacing-inset-l);
+  --dsa-content--spacing: var(--ks-spacing-inset-l);
 
   @media (min-width: 48em) {
-    --dsa-section__content--padding: var(--ks-spacing-inset-xl);
+    --dsa-content--spacing: var(--ks-spacing-inset-xl);
   }
 
   --dsa-section__content_wide--width: 1440px;
 
-  --dsa-logo--height: 2rem;
+  --dsa-logo--height: 2.25rem;
 
   @media (min-width: 48em) {
     --dsa-logo--height: 2.5rem;

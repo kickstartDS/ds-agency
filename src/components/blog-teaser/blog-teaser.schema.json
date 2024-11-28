@@ -53,12 +53,12 @@
           "format": "uri",
           "examples": ["https://example.com"]
         },
-        "label": {
-          "title": "Label",
-          "description": "The label to use for the link",
+        "text": {
+          "title": "Text",
+          "description": "The text for the link",
           "type": "string",
-          "examples": ["Read more"],
-          "default": "Read more"
+          "default": "Read article",
+          "examples": ["Read article"]
         }
       },
       "additionalProperties": false,

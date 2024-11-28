@@ -14,6 +14,11 @@
     },
     "seo": {
       "$ref": "http://schema.mydesignsystem.com/cms/seo.schema.json"
+    },
+    "iconSprite": {
+      "type": "string",
+      "title": "Icon Sprite",
+      "description": "Content of the icon sprite for this project"
     }
   }
 }

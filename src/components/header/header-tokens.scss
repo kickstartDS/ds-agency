@@ -7,7 +7,7 @@
 
   @media (min-width: 62em) {
     --dsa-header--spacing-vertical: var(--ks-spacing-stack-s);
-    --dsa-header--spacing-horizontal: var(--l-section--content-padding);
+    --dsa-header--spacing-horizontal: var(--dsa-content--spacing);
   }
 }
 

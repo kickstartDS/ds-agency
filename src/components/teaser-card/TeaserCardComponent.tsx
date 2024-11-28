@@ -15,6 +15,8 @@ import { TeaserCardProps } from "./TeaserCardProps";
 import "./teaser-card.scss";
 import { Container } from "@kickstartds/core/lib/container";
 
+export type { TeaserCardProps };
+
 export const TeaserCardContextDefault = forwardRef<
   HTMLDivElement,
   TeaserCardProps & HTMLAttributes<HTMLDivElement>

@@ -34,6 +34,10 @@ export type SpaceAfter = "minimum" | "small" | "large";
  * Set a custom class name
  */
 export type ClassName = string;
+/**
+ * Set a custom id attribute
+ */
+export type ID = string;
 
 /**
  * Component used for headlines
@@ -47,4 +51,5 @@ export interface HeadlineProps {
   style?: Style;
   spaceAfter?: SpaceAfter;
   className?: ClassName;
+  id?: ID;
 }

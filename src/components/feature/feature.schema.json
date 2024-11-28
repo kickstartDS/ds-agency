@@ -7,6 +7,7 @@
   "properties": {
     "icon": {
       "type": "string",
+      "format": "icon",
       "title": "Icon",
       "description": "The icon for the feature",
       "examples": ["person"]

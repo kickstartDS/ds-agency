@@ -4,7 +4,7 @@ import { headerProps } from "../components/header/Header.stories";
 import { Footer } from "../components/footer/FooterComponent";
 import { footerProps } from "../components/footer/Footer.stories";
 import { Text } from "../components/text/TextComponent";
-import { Image } from "../components/image/ImageComponent";
+import { ImageText } from "../components/image-text/ImageTextComponent";
 import { Logos } from "../components/logos/LogosComponent";
 import { Cta } from "../components/cta/CtaComponent";
 
@@ -37,9 +37,13 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
         text: "**01**",
       }}
     >
-      <Image
-        src="/img/showcases/comp_audio01.jpg"
-        alt="Huge Logo of that fake reference customer"
+      <ImageText
+        image={{
+          src: "/img/showcases/comp_audio01.jpg",
+          alt: "Huge Logo of that fake reference customer",
+        }}
+        text={""}
+        layout={"above"}
       />
       <Cta
         headline="Speed and Scale"
@@ -64,9 +68,13 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
         text: "**02**",
       }}
     >
-      <Image
-        src="/img/showcases/comp_eco01.jpg"
-        alt="Huge Logo of that fake reference customer"
+      <ImageText
+        image={{
+          src: "/img/showcases/comp_eco01.jpg",
+          alt: "Huge Logo of that fake reference customer",
+        }}
+        text={""}
+        layout={"above"}
       />
       <Cta
         headline="Savigating the Headless Frontier for Brand Consistency"
@@ -92,9 +100,13 @@ Welcome to our showcase of success stories. Here, you'll discover how we've part
         text: "**03**",
       }}
     >
-      <Image
-        src="/img/showcases/comp_tfe01.jpg"
-        alt="Huge Logo of that fake reference customer"
+      <ImageText
+        image={{
+          src: "/img/showcases/comp_tfe01.jpg",
+          alt: "Huge Logo of that fake reference customer",
+        }}
+        text={""}
+        layout={"above"}
       />
       <Cta
         headline="A Digital Transformation Love Story"

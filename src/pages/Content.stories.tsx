@@ -7,15 +7,19 @@ import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
 import { Testimonials } from "../components/testimonials/TestimonialsComponent";
 import { Cta } from "../components/cta/CtaComponent";
 import { Text } from "../components/text/TextComponent";
-import { Image } from "../components/image/ImageComponent";
+import { ImageText } from "../components/image-text/ImageTextComponent";
 
 const Page = () => (
   <>
     <Header {...headerProps} floating />
     <Section width="full" spaceAfter="none" spaceBefore="none">
-      <Image
-        src="/img/showcases/comp_eco01.jpg"
-        alt="Fake Showcase Mockup Image"
+      <ImageText
+        image={{
+          src: "/img/showcases/comp_eco01.jpg",
+          alt: "Fake Showcase Mockup Image",
+        }}
+        text={""}
+        layout={"above"}
       />
     </Section>
 
@@ -48,9 +52,13 @@ EcoTech Solutions, a forward-thinking company in the sustainable PV and wind pow
       spaceAfter="none"
       spaceBefore="none"
     >
-      <Image
-        src="/img/showcases/comp_eco02.jpg"
-        alt="Fake Showcase Mockup Image"
+      <ImageText
+        image={{
+          src: "/img/showcases/comp_eco02.jpg",
+          alt: "Fake Showcase Mockup Image",
+        }}
+        text={""}
+        layout={"above"}
       />
     </Section>
 
@@ -92,9 +100,13 @@ We collaborated closely with EcoTech's brand team to set up a Design System that
       spaceAfter="none"
       spaceBefore="none"
     >
-      <Image
-        src="/img/showcases/comp_eco03.jpg"
-        alt="Fake Showcase Mockup Image"
+      <ImageText
+        image={{
+          src: "/img/showcases/comp_eco03.jpg",
+          alt: "Fake Showcase Mockup Image",
+        }}
+        text={""}
+        layout={"above"}
       />
     </Section>
 
@@ -124,9 +136,13 @@ The implementation of the new **Design System** and migration to **Storyblok** t
       spaceAfter="none"
       spaceBefore="none"
     >
-      <Image
-        src="/img/showcases/comp_eco04.jpg"
-        alt="Fake Showcase Mockup Image"
+      <ImageText
+        image={{
+          src: "/img/showcases/comp_eco04.jpg",
+          alt: "Fake Showcase Mockup Image",
+        }}
+        text={""}
+        layout={"above"}
       />
     </Section>
 

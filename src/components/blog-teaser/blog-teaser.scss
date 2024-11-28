@@ -39,6 +39,7 @@
     --c-post-meta_item--font: var(--dsa-blog-teaser__meta--font, var(--ks-font-interface-s));
     --c-post-meta_item--gap: 0.35em;
     --c-post-meta_author--color: var(--dsa-blog-teaser__meta--color, var(--c-post-meta_item--color));
+    --c-post-meta_author--avatar-size: var(--dsa-blog-teaser__avatar--size, 2em);
     --c-post-meta_author--gap: 0.35em;
     --c-post-meta_author--font-weight: var(
       --dsa-blog-teaser__meta__author--font-weight,

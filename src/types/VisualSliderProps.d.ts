@@ -6,9 +6,12 @@ declare module "@kickstartds/content/lib/visual-slider/typing" {
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-import type {SliderProps} from "@kickstartds/content/lib/slider/typing";
 import type {VisualProps} from "@kickstartds/content/lib/visual/typing";
 
+/**
+ * Automatically move to next slide after 4 seconds without user interaction
+ */
+export type AutoPlay = boolean;
 /**
  * preview label
  */
@@ -26,10 +29,7 @@ export type KsComponentAttribute = string;
  * Visual Slider
  */
 export interface VisualSliderProps {
-  /**
-   * Referenced component SliderProps
-   */
-  autoplay?: SliderProps;
+  autoplay?: AutoPlay;
   slides: (VisualProps & {
     label?: SlidePreviewLabel;
   })[];

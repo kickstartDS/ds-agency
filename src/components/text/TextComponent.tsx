@@ -4,6 +4,8 @@ import { TextProps } from "./TextProps";
 import "./text.scss";
 import { RichText } from "@kickstartds/base/lib/rich-text";
 
+export type { TextProps };
+
 export const TextContextDefault = forwardRef<
   HTMLDivElement,
   TextProps & HTMLAttributes<HTMLDivElement>

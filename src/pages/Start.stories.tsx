@@ -8,7 +8,6 @@ import { TeaserCard } from "../components/teaser-card/TeaserCardComponent";
 import { Testimonials } from "../components/testimonials/TestimonialsComponent";
 import { Text } from "../components/text/TextComponent";
 import { Cta } from "../components/cta/CtaComponent";
-import { Image } from "../components/image/ImageComponent";
 import { ImageText } from "../components/image-text/ImageTextComponent";
 import { Features } from "../components/features/FeaturesComponent";
 import { Logos } from "../components/logos/LogosComponent";
@@ -162,14 +161,15 @@ const Page = () => (
         sub: "Own a design system without investing years of development.",
       }}
     >
-      <Text
+      <ImageText
         text={`
 We value efficiency without compromising quality. Our secret weapon? **kickstartDS**, a revolutionary code-first and open source framework for creating design systems. This tool accelerates our development, saving you valuable time and helping us deliver top-notch results faster. With kickstartDS, turning your design system dreams into reality is quicker than ever. `}
+        image={{
+          src: "/img/infos/adapt_kickstartds_mobile_clear.svg",
+          alt: "Info graphic displaying the pains and gains of adopting, adapting or creating an own design system vs. what you gain relying on kickstartDS for this as a meta framework for design system creation ",
+        }}
         highlightText
-      />
-      <Image
-        src="/img/infos/adapt_kickstartds_mobile_clear.svg"
-        alt="Info graphic displaying the pains and gains of adopting, adapting or creating an own design system vs. what you gain relying on kickstartDS for this as a meta framework for design system creation "
+        layout={"below"}
       />
     </Section>
 
@@ -340,9 +340,13 @@ We value efficiency without compromising quality. Our secret weapon? **kickstart
         align: "center",
       }}
     >
-      <Image
-        src="/img/office-divider-dotted.png"
-        alt="Photorealistic image Super wide scale of a view into a hyper modern design & web development agency, glass walls, no people, wide angle, blade runner movie like aesthetics, neon-light, lens-flare, pink, blue, and cyan color tonality, wide angle, sharp, "
+      <ImageText
+        image={{
+          src: "/img/office-divider-dotted.png",
+          alt: "Photorealistic image Super wide scale of a view into a hyper modern design & web development agency, glass walls, no people, wide angle, blade runner movie like aesthetics, neon-light, lens-flare, pink, blue, and cyan color tonality, wide angle, sharp, ",
+        }}
+        text={""}
+        layout={"above"}
       />
     </Section>
 

@@ -26,6 +26,7 @@
     },
     "icon": {
       "type": "string",
+      "format": "icon",
       "title": "Icon",
       "description": "Choose an icon"
     },

@@ -1,6 +1,19 @@
 @import "./divider-tokens.scss";
 
 hr.c-divider {
-  --c-divider--background: var(--dsa-divider--background, var(--ks-border-color-accent));
-  --c-divider--height: var(--dsa-divider--height, var(--ks-border-width-default));
+  --c-divider--background: var(
+    --dsa-divider--background,
+    var(--ks-border-color-default)
+  );
+  --c-divider--height: var(
+    --dsa-divider--height,
+    var(--ks-border-width-default)
+  );
+
+  &--accent {
+    --c-divider--background: var(
+      --dsa-divider--background_accent,
+      var(--ks-border-color-accent)
+    );
+  }
 }

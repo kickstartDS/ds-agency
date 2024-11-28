@@ -6,7 +6,7 @@ class Section extends Component {
   constructor(element) {
     super(element);
 
-    if (element.classList.contains("l-section--spotlight")) {
+    if (element.classList.contains("dsa-section--spotlight")) {
       import("./spotlight.client").then((mod) => {
         const cleanup = mod.initSpotlight(element);
         this.onDisconnect(cleanup);

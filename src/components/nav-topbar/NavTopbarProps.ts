@@ -15,6 +15,11 @@ export interface NavTopbarProps {
     href: string;
     label: string;
     active?: boolean;
+    items?: {
+      href?: string;
+      label?: string;
+      active?: boolean;
+    }[];
   }[];
   inverted?: DropdownInverted;
 }

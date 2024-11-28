@@ -92,6 +92,7 @@
   &--label {
     .dsa-teaser-card__label {
       border-radius: var(--dsa-teaser-card__label--border-radius);
+      border: var(--dsa-teaser-card__label--border, 0);
       pointer-events: initial;
       padding: var(--dsa-teaser-card__label--padding);
       transform: translate(0.5em, -50%);

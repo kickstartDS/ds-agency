@@ -5,6 +5,8 @@ import { Button } from "../button/ButtonComponent";
 import { FeatureProps } from "./FeatureProps";
 import { Link } from "@kickstartds/base/lib/link";
 
+export type { FeatureProps };
+
 export const FeatureContextDefault = forwardRef<
   HTMLDivElement,
   FeatureProps & Omit<HTMLAttributes<HTMLDivElement>, "style">

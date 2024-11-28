@@ -1,13 +1,15 @@
 import classnames from "classnames";
-import { forwardRef, createContext, useContext } from "react";
+import { forwardRef, createContext, useContext, HTMLAttributes } from "react";
 import { PostTeaserContextDefault } from "@kickstartds/blog/lib/post-teaser";
 import { BlogTeaserProps } from "./BlogTeaserProps";
 import "./blog-teaser.scss";
 import { Container } from "@kickstartds/core/lib/container";
 
+export type { BlogTeaserProps };
+
 export const BlogTeaserContextDefault = forwardRef<
   HTMLDivElement,
-  BlogTeaserProps
+  BlogTeaserProps & HTMLAttributes<HTMLDivElement>
 >(
   (
     {
@@ -40,12 +42,12 @@ export const BlogTeaserContextDefault = forwardRef<
       });
 
     return (
-      <Container name="post-teaser">
+      <Container name="blog-teaser">
         <PostTeaserContextDefault
           {...rest}
           className={classnames(className, "dsa-blog-teaser")}
           // @ts-expect-error
-          image={{ src: image }}
+          image={{ src: image, alt: headline }}
           meta={{
             author: author
               ? {
@@ -58,9 +60,9 @@ export const BlogTeaserContextDefault = forwardRef<
           link={
             link
               ? {
-                  label: link.label || "Read more",
                   // @ts-expect-error
                   target: link.url,
+                  label: link.text || "Read article",
                 }
               : undefined
           }
@@ -77,10 +79,11 @@ export const BlogTeaserContextDefault = forwardRef<
 );
 
 export const BlogTeaserContext = createContext(BlogTeaserContextDefault);
-export const BlogTeaser = forwardRef<HTMLDivElement, BlogTeaserProps>(
-  (props, ref) => {
-    const Component = useContext(BlogTeaserContext);
-    return <Component {...props} ref={ref} />;
-  }
-);
+export const BlogTeaser = forwardRef<
+  HTMLDivElement,
+  BlogTeaserProps & HTMLAttributes<HTMLDivElement>
+>((props, ref) => {
+  const Component = useContext(BlogTeaserContext);
+  return <Component {...props} ref={ref} />;
+});
 BlogTeaser.displayName = "BlogTeaser";

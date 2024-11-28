@@ -39,7 +39,7 @@
         "value": "{ks.duration.fast} {ks.timing-function.ease-in-out}"
       },
       "fade": {
-        "value": "{ks.duration.slow} {ks.timing-function.ease-out}"
+        "value": "{ks.duration.fast} {ks.timing-function.ease-out}"
       }
     }
   }
