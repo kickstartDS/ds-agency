@@ -1,3 +1,16 @@
+# v3.6.55 (Thu Nov 28 2024)
+
+#### ⚠️ Pushed to `main`
+
+- feat(blogTeaser): update component ([@fleven-kds](https://github.com/fleven-kds))
+- feat(blog-teaser): add missing property ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.54 (Thu Nov 28 2024)
 
 #### 🐛 Bug Fix
