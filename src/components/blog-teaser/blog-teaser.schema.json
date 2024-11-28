@@ -93,6 +93,12 @@
           "type": "string",
           "format": "image",
           "examples": ["img/people/author-emily.png"]
+        },
+        "alt": {
+          "title": "Alt",
+          "description": "The alt text for the preview image",
+          "type": "string",
+          "examples": ["Image of a business team working"]
         }
       },
       "additionalProperties": false,
