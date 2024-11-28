@@ -1,3 +1,15 @@
+# v3.6.54 (Thu Nov 28 2024)
+
+#### 🐛 Bug Fix
+
+- Update from premium [#77](https://github.com/kickstartDS/ds-agency/pull/77) ([@fleven-kds](https://github.com/fleven-kds))
+
+#### Authors: 1
+
+- Franz ([@fleven-kds](https://github.com/fleven-kds))
+
+---
+
 # v3.6.53 (Wed Sep 04 2024)
 
 #### ⚠️ Pushed to `main`
