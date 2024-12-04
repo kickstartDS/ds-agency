@@ -1,3 +1,16 @@
+# v3.6.59 (Wed Dec 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- Merge branch 'main' of github.com:kickstartDS/ds-agency ([@julrich](https://github.com/julrich))
+- fix: add markdown capabilities to teaser card headline ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.6.58 (Wed Dec 04 2024)
 
 #### ⚠️ Pushed to `main`
