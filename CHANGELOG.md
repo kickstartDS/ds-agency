@@ -1,3 +1,15 @@
+# v3.6.58 (Wed Dec 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add markdown compilation to testimonial text ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.6.57 (Wed Dec 04 2024)
 
 #### ⚠️ Pushed to `main`
