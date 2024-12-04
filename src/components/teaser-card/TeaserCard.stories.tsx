@@ -28,7 +28,7 @@ export const ProductTiles: Story = {
     },
   },
   args: pack({
-    headline: "Castaway",
+    headline: "**Castaway** CMS",
     text: "Transforming Ideas into Code",
     image: "img/logos/castaway.svg",
     target: "#",
