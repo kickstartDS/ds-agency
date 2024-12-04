@@ -8,6 +8,8 @@ import { Link } from "@kickstartds/base/lib/link";
 import { Container } from "@kickstartds/core/lib/container";
 import { Logo } from "../logo/LogoComponent";
 
+export type { LogosProps };
+
 export const LogosContextDefault = forwardRef<
   HTMLDivElement,
   LogosProps & HTMLAttributes<HTMLDivElement>

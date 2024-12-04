@@ -2,6 +2,8 @@ import { forwardRef, createContext, useContext, HTMLAttributes } from "react";
 import { TestimonialProps } from "./TestimonialProps";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 
+export type { TestimonialProps };
+
 export const TestimonialContextDefault = forwardRef<
   HTMLDivElement,
   TestimonialProps & HTMLAttributes<HTMLDivElement>

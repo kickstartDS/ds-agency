@@ -3,6 +3,8 @@ import { TestimonialsProps } from "./TestimonialsProps";
 import "./testimonials.scss";
 import { Testimonial } from "../testimonial/TestimonialComponent";
 
+export type { TestimonialsProps };
+
 export const TestimonialsContextDefault = forwardRef<
   HTMLDivElement,
   TestimonialsProps & HTMLAttributes<HTMLDivElement>

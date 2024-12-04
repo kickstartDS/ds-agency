@@ -6,6 +6,8 @@ import { Text } from "../text/TextComponent";
 import { ButtonGroup } from "@kickstartds/base/lib/button-group";
 import "./cta.scss";
 
+export type { CtaProps };
+
 export const CtaContextDefault = forwardRef<
   HTMLDivElement,
   CtaProps & HTMLAttributes<HTMLDivElement>

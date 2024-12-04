@@ -1,6 +1,8 @@
 import { forwardRef, createContext, useContext, HTMLAttributes } from "react";
 import { StatProps } from "./StatProps";
 
+export type { StatProps };
+
 export const StatContextDefault = forwardRef<
   HTMLDivElement,
   StatProps & HTMLAttributes<HTMLDivElement>
