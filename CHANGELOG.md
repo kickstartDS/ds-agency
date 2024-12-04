@@ -1,3 +1,15 @@
+# v3.6.57 (Wed Dec 04 2024)
+
+#### ⚠️ Pushed to `main`
+
+- fix: add missing type exports to some components ([@julrich](https://github.com/julrich))
+
+#### Authors: 1
+
+- Jonas Ulrich ([@julrich](https://github.com/julrich))
+
+---
+
 # v3.6.56 (Thu Nov 28 2024)
 
 #### ⚠️ Pushed to `main`
