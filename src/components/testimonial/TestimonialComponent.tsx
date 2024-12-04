@@ -2,6 +2,8 @@ import { forwardRef, createContext, useContext, HTMLAttributes } from "react";
 import { TestimonialProps } from "./TestimonialProps";
 import { TextMedia } from "@kickstartds/base/lib/text-media";
 
+import { compiler } from "markdown-to-jsx";
+
 export type { TestimonialProps };
 
 export const TestimonialContextDefault = forwardRef<
@@ -23,7 +25,7 @@ export const TestimonialContextDefault = forwardRef<
     text={quote}
     renderText={() => (
       <>
-        "{quote}"
+        "{compiler(quote)}"
         <br />
         <br />
         <b>{name}</b>
